@@ -58,7 +58,7 @@ module.exports = {
               href: 'https://www.linkedin.com/company/3581947',
             },
             {
-              label: 'Contact Us (Email)',
+              label: 'Contact Us',
               href: 'mailto:info@automationsolutionz.com',
             },
           ],
