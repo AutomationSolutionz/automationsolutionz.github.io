@@ -1,6 +1,19 @@
 module.exports = {
-  someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+  docs: {
+    Guide: ['welcome'],
+    'Zeuz Node': [
+      'zeuz-node',
+      {
+        Actions: [
+          'actions-common',
+          'actions-web',
+          'actions-mobile',
+          'actions-rest-api',
+          'actions-performance',
+          'actions-database',
+        ]
+      }
+    ],
+    'Zeuz Server': ['zeuz-server'],
   },
 };

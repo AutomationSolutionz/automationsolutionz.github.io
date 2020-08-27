@@ -6,7 +6,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'AutomationSolutionz', // Usually your GitHub org/user name.
-  projectName: 'Docs & Blog', // Usually your repo name.
+  projectName: 'automationsolutionz.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Automation Solutionz',
@@ -41,12 +41,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Zeuz Node',
+              to: 'docs/zeuz-node/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Zeuz Server',
+              to: 'docs/zeuz-server/',
             },
           ],
         },
@@ -77,7 +77,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Automation Solutionz, Inc.`,
     },
   },
   presets: [
@@ -86,17 +86,11 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
+          homePageId: 'welcome',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
