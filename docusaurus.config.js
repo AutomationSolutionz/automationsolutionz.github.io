@@ -102,6 +102,8 @@ module.exports = {
     [
       '@docusaurus/plugin-pwa',
       {
+        debug: false,
+        offlineModeActivationStrategies: ['appInstalled', 'queryString'],
         pwaHead: [
           {
             tagName: 'link',
@@ -111,7 +113,7 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/manifest.json',
+            href: '/manifest.webmanifest',
           },
           {
             tagName: 'meta',
@@ -131,12 +133,12 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'apple-touch-icon',
-            href: '/img/zeuz-logo.png',
+            href: '/img/icons/apple-touch-icon-180x180.png',
           },
           {
             tagName: 'link',
             rel: 'mask-icon',
-            href: '/img/zeuz-logo.png',
+            href: '/img/icons/apple-touch-icon-180x180.png',
             color: 'rgb(37, 194, 160)',
           },
           {
