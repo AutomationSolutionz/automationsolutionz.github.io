@@ -10,3 +10,7 @@ title: Performance Actions
 :::
 
 This category of actions are used to test the performance of an API endpoint.
+
+## Examples
+
+TBD.
