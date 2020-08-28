@@ -3,6 +3,8 @@ id: actions-mobile
 title: Mobile Actions
 ---
 
+import Link from '@docusaurus/Link';
+
 :::tip
 
 - **Drivers**: Appium, Selenium (hybrid apps, iOS Safari)
