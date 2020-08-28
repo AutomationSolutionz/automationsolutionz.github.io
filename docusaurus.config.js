@@ -12,7 +12,7 @@ module.exports = {
       title: 'Automation Solutionz',
       logo: {
         alt: 'Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/zeuz-logo.png',
       },
       items: [
         {
@@ -21,7 +21,7 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/AutomationSolutionz',
           label: 'GitHub',
@@ -98,7 +98,7 @@ module.exports = {
       },
     ],
   ],
-   plugins: [
+  plugins: [
     [
       '@docusaurus/plugin-pwa',
       {
@@ -106,7 +106,7 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/img/docusaurus.png',
+            href: '/img/zeuz-logo.png',
           },
           {
             tagName: 'link',
@@ -131,18 +131,18 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'apple-touch-icon',
-            href: '/img/docusaurus.png',
+            href: '/img/zeuz-logo.png',
           },
           {
             tagName: 'link',
             rel: 'mask-icon',
-            href: '/img/docusaurus.svg',
+            href: '/img/zeuz-logo.png',
             color: 'rgb(37, 194, 160)',
           },
           {
             tagName: 'meta',
             name: 'msapplication-TileImage',
-            content: '/img/docusaurus.png',
+            content: '/img/zeuz-logo.png',
           },
           {
             tagName: 'meta',
