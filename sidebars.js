@@ -1,6 +1,9 @@
 module.exports = {
   docs: {
-    Guide: ['welcome'],
+    Guide: [
+      'welcome',
+      'offline-access',
+    ],
     'Zeuz Node': [
       'zeuz-node',
       'zeuz-node-setup',
