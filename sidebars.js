@@ -19,8 +19,12 @@ module.exports = {
           'actions-performance',
           'actions-database',
         ]
-      }
+      },
+      'zeuz-node-changelogs',
     ],
-    'Zeuz Server': ['zeuz-server'],
+    'Zeuz Server': [
+      'zeuz-server',
+      'zeuz-server-changelogs',
+    ],
   },
 };
