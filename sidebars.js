@@ -3,6 +3,7 @@ module.exports = {
     Guide: ['welcome'],
     'Zeuz Node': [
       'zeuz-node',
+      'zeuz-node-setup',
       'variables-and-indexed-access',
       'condition',
       'loop',
