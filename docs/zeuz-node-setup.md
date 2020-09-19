@@ -20,6 +20,12 @@ Zeuz Node requires Python 3 to run.
 
 :::
 
+## Video instructions
+
+- [Windows Setup](https://youtu.be/LGmr6ZpoPGk)
+- [Mac/OS X Setup](https://youtu.be/TCPmaUgS8hk)
+
+
 ## Python setup
 
 Please download and install the latest Python 3.x version available
