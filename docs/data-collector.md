@@ -9,8 +9,8 @@ number of actions that you have to write in order to access and save
 nested data to only a single action, whereas, this would otherwise
 take around 10-20 actions in general.
 
-Let's go through a simple example to understand how this works. Given
-the following data (a random json data):
+Let's go through a simple example to understand how this works. We're
+assuming that the following data is saved in the variable `%|data|%`:
 
 ```json
 [
@@ -74,14 +74,22 @@ Pattern:
 
 ```python
 # Pattern
-pattern = "_all_, _all_, occurrence, _all_, line"
+%|data{_all_, _all_, occurrence, _all_, line}|%
 
 # Output
 [10, 20, 50, 64, 70, 500, 640, 700, 100, 200, 341, 4, 74]
 ```
 
-The first thing you notice is that the pattern is a string with some
-comma-separated items. And it contains some mysterious `_all_` in it.
+There are a few things to note here:
+
+1. Patterns are specified when accessing a variable.
+2. Patterns are defined inside curly braces after the variable name.
+   No spaces allowed. Multiple sets of curly braces `{patter
+   1}{pattern 2}...` can be specified without any spaces (see example
+   at the end).
+3. Items in the pattern are comma-separated.
+4. `_all_` as described in the next paragraphs, signals to Zeuz Node
+   to loop through all the values in the list/dictionary.
 
 What's `_all_`? By putting the `_all_` property you're essentially
 asking the collector to loop through any items (be it a list or a
@@ -96,15 +104,15 @@ that, `occurrence` itself is yet another list. So, we loop through
 Let's see a few more patterns and their outputs:
 
 ```python
-pattern_1 = "_all_, _all_, type"
+%|data{_all_, _all_, type}|%
 # Output of pattern 1
 ['Runtime Error', 'Compiler Error', 'Compiler Error', 'Runtime Error', 'Computer crashed']
 
-pattern_2 = "_all_, *error, type"
+%|data{_all_, *error, type}|%
 # Output of pattern 2
 ['Compiler Error', 'Runtime Error', 'Computer crashed']
 
-pattern_3 = "_all_, error*, occurrence, _all_, line"
+%|data{_all_, error*, occurrence, _all_, line}|%
 # Output of pattern_3
 [10, 20, 50, 64, 70, 341, 4, 74]
 ```
@@ -114,3 +122,23 @@ Notice that you can specify partial names for dictionary keys using
 all errors ending with the word "error". So the pattern is `*error`.
 In case of **pattern 3** we wanted all errors ending with the word
 "error", so the pattern is `error*`.
+
+You can also zip together multiple collected items using the syntax
+`%|data{pattern_1}{pattern_2}|%`. For example:
+
+```python
+%|data{_all_, _all_, occurrence, _all_, line}{all_, _all_, occurrence, _all_, message}|%
+
+# Output
+[
+    (10, "fail"),
+    (20, "block"),
+    (50, "fail"),
+    (64, "xyz"),
+    (70, "pqr"),
+    (100, "fail"),
+    (200, "block"),
+    (500, "fail"),
+    (640, "xyz"),
+    (700, "pqr")
+]
