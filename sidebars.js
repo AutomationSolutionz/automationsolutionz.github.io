@@ -28,5 +28,12 @@ module.exports = {
       'zeuz-server',
       'zeuz-server-changelogs',
     ],
+    'Course': [
+      'course-info',
+      'course-web',
+      'course-mobile',
+      'course-rest-api',
+      'course-desktop',
+    ],
   },
 };
