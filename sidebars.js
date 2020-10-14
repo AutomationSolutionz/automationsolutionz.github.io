@@ -9,6 +9,7 @@ module.exports = {
       'zeuz-node-setup',
       'zeuz-node-usage',
       'variables-and-indexed-access',
+      'data-collector',
       'condition',
       'loop',
       {
