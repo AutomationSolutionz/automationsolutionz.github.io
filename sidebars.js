@@ -30,9 +30,9 @@ module.exports = {
     'Course': [
       'course-info',
       'course-web',
-      'course-mobile',
-      'course-rest-api',
-      'course-desktop',
+      // 'course-mobile',
+      // 'course-rest-api',
+      // 'course-desktop',
     ],
   },
 };
