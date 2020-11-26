@@ -11,10 +11,11 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.61",
-    "@docusaurus/plugin-pwa": "^2.0.0-alpha.59",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.61",
-    "@mdx-js/react": "^1.5.8",
+    "@cmfcmf/docusaurus-search-local": "^0.4.0",
+    "@docusaurus/core": "^2.0.0-alpha.69",
+    "@docusaurus/plugin-pwa": "^2.0.0-alpha.69",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.69",
+    "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

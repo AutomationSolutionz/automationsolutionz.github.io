@@ -1,6 +1,7 @@
 ---
 id: welcome
 title: Welcome
+slug: /
 ---
 
 Welcome to Zeuz documentation site. This houses the documentation for both Zeuz Node and Zeuz Server. We also have a Blog where we discuss and share our ideas, expertise, problems and solutions among other interesting stuffs, be sure to check that out on a regular basis!

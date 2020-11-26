@@ -33,6 +33,11 @@ module.exports = {
           position: 'right',
         },
         {
+          href: 'https://forum.automationsolutionz.com/',
+          label: 'Forum',
+          position: 'right',
+        },
+        {
           href: 'https://automationsolutionz.com',
           label: 'Website',
           position: 'right',
@@ -91,7 +96,6 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'welcome',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: {
@@ -104,6 +108,7 @@ module.exports = {
     ],
   ],
   plugins: [
+    require.resolve('@cmfcmf/docusaurus-search-local'),
     [
       '@docusaurus/plugin-pwa',
       {
