@@ -126,14 +126,15 @@ exists).
     
 5. ### Get Zeuz Node (machine) ID [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#3439a31e-c965-4fbc-83b7-b4727fef7a88)
 
-   You need to get the Zeuz Node/machine ID to tell the server that you
-   want to deploy/run your test set in that particular machine/zeuz node.
-   If you have Zeuz Nodeinstalled locally, navigate to the folder where it is installed
-   (usually "Desktop > Zeuz_Node) and open the `node_id.conf` file.
-   The `id` specified here will become a part of the name of the
-   machine. For example, if my username is **foo** and the `id`
-   specified in `node_id.conf` file is set to **cicd**, the name of the
-   Zeuz Node instance will become available as **foo_cicd**.
+   You need to get the Zeuz Node/machine ID to tell the server that
+   you want to deploy/run your test set in that particular
+   machine/zeuz node. If you have Zeuz Node installed locally,
+   navigate to the folder where it is installed (usually "Desktop >
+   Zeuz_Node") and open the `node_id.conf` file. The `id` specified
+   here will become a part of the name of the machine. For example, if
+   my username is **foo** and the `id` specified in `node_id.conf`
+   file is set to **cicd**, the name of the Zeuz Node instance will
+   become available as **foo_cicd**.
 
    ```json
     [
