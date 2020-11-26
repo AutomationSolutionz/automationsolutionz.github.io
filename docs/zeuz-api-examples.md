@@ -50,12 +50,12 @@ exists).
     ```bash
     curl --location --request GET 'https://qa.zeuz.ai/api/set/list?project=PROJ-17&team=2&search_term=cicd' \
     --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmdWxsX25hbWUiOiJNb2hhbW1lZCBTYXppZCBBbCBSYXNoaWQiLCJ1c2VybmFtZSI6InNhemlkIiwiaWQiOjMzLCJleHAiOjE2MDg5NTQ4OTF9.trywpchrfW5WvFdgglbNGyzRbeVdybq1H8wLfjiSMQo'
-        ```
+    ```
 
-        In this case `project` and `team` can be found by clicking on your
-        username. Take the values inside parentheses. `search_term` is the
-        name of the set that you just created. For this example, it is
-        `cicd`.
+    In this case `project` and `team` can be found by clicking on your
+    username. Take the values inside parentheses. `search_term` is the
+    name of the set that you just created. For this example, it is
+    `cicd`.
 
 3. ### [OPT] Verify milestone [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#ae90b979-b8a1-4823-869b-f0f81019d6df)
 
