@@ -26,6 +26,7 @@ module.exports = {
     ],
     'Zeuz Server': [
       'zeuz-server',
+      'zeuz-api-examples',
       'zeuz-server-changelogs',
     ],
     'Course': [
