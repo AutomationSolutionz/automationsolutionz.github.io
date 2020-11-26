@@ -247,7 +247,7 @@ exists).
 
 [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#a593befd-2c02-4b25-92a1-2f1629bd1fcc)
 
-```
+```bash
 curl --location --request GET 'https://qa.zeuz.ai/api/run/status?run_id=Sun-Jul-7-08:39:13-2019' \
 --header 'Authorization: Bearer
 eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmdWxsX25hbWUiOiJNb2hhbW1lZCBTYXppZCBBbCBSYXNoaWQiLCJ1c2VybmFtZSI6InNhemlkIiwiaWQiOjMzLCJleHAiOjE2MDg5NTQ4OTF9.trywpchrfW5WvFdgglbNGyzRbeVdybq1H8wLfjiSMQo'
