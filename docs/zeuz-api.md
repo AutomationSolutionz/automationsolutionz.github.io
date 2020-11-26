@@ -71,7 +71,60 @@ exists).
     `status` can be either **started** or **not_started**.
 
 
-4. ### Get Zeuz Node (machine) ID [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#3439a31e-c965-4fbc-83b7-b4727fef7a88)
+4. ### [OPT] Create on-demand Zeuz Node
+
+    You can also create an On-demand Zeuz Node that runs in your Zeuz Server.
+    This enables you to run test cases without even having a Zeuz Node running already.
+
+    To acheive this, you first need to get the current user's `uid` and `username`.
+    This can be fetched via the following [API call](https://documenter.getpostman.com/view/10815312/SzfAzSWj#8a04ed77-99c4-4ad0-9926-a87f80afdf32)
+
+    ```bash
+    curl --location --request GET 'https://qa.zeuz.ai/api/user' \
+    --header 'Authorization:
+    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmdWxsX25hbWUiOiJNb2hhbW1lZCBTYXppZCBBbCBSYXNoaWQiLCJ1c2VybmFtZSI6InNhemlkIiwiaWQiOjMzLCJleHAiOjE2MDg5NTQ4OTF9.trywpchrfW5WvFdgglbNGyzRbeVdybq1H8wLfjiSMQo'
+    ```
+
+    ```json
+    [
+        {
+            "username": "hello",
+            "full_name": "Hello World",
+            "profile_picture_name": "cat.png",
+            "uid": 10,
+            "designation": null,
+            "department": null,
+            "is_active": true,
+            "team_id": 2,
+            "project_id": "PROJ-17"
+        }
+    ]
+    ```
+
+    Note that this may return multiple results for the same user
+    (multiple team and projects). You can simply parse the `uid` and
+    `username` from this response from the first item of the list.
+
+    Next, make the following request to deploy an on-demand node in
+    the Zeuz Server.
+
+    ```bash
+    curl --location --request GET 'https://qa.zeuz.ai/Home/ManageMachine/on_demand_node?user_id=10&username=hello'
+    ```
+
+    Substitute `user_id` and `username` with the ones you received
+    from the previous response. This API call will result in the
+    following response:
+
+    ```json
+    {
+        "node_id": "hello_7219_ondemand"
+    }
+    ```
+
+    You can now use this `node_id` value in the next step.
+    
+5. ### Get Zeuz Node (machine) ID [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#3439a31e-c965-4fbc-83b7-b4727fef7a88)
 
    You need to get the Zeuz Node/machine ID to tell the server that you
    want to deploy/run your test set in that particular machine/zeuz node.
@@ -100,7 +153,7 @@ exists).
     curl --location --request GET 'https://qa.zeuz.ai/api/machines/list?project=PROJ-17&team=2' \
     --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmdWxsX25hbWUiOiJNb2hhbW1lZCBTYXppZCBBbCBSYXNoaWQiLCJ1c2VybmFtZSI6InNhemlkIiwiaWQiOjMzLCJleHAiOjE2MDg5NTQ4OTF9.trywpchrfW5WvFdgglbNGyzRbeVdybq1H8wLfjiSMQo'
 
-5. ### Deploy/Run Test Set [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#2a542025-5b65-464a-843a-9d7a38f73349)
+6. ### Deploy/Run Test Set [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#2a542025-5b65-464a-843a-9d7a38f73349)
 
     Now you can deploy/run your test set using the following request:
 
