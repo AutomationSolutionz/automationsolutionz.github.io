@@ -228,3 +228,63 @@ exists).
       `Mobile` key to **iOS** or **Android**.
     - `test_set_name [str]`: Name of the test set to deploy/run. See
       step #2.
+
+    Executing this API endpoint will give back the `run_id` that you
+    can then use to periodically check for status.
+
+    ```json
+    {
+        "status": {
+            "status": "Submitted",
+            "count": 1
+        },
+        "run_id": "Fri-Nov-1-00:27:52-2019"
+    }
+    ```
+
+
+## Check Deploy/Run history/status/details
+
+[[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#a593befd-2c02-4b25-92a1-2f1629bd1fcc)
+
+```
+curl --location --request GET 'https://qa.zeuz.ai/api/run/status?run_id=Sun-Jul-7-08:39:13-2019' \
+--header 'Authorization: Bearer
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmdWxsX25hbWUiOiJNb2hhbW1lZCBTYXppZCBBbCBSYXNoaWQiLCJ1c2VybmFtZSI6InNhemlkIiwiaWQiOjMzLCJleHAiOjE2MDg5NTQ4OTF9.trywpchrfW5WvFdgglbNGyzRbeVdybq1H8wLfjiSMQo'
+```
+
+`run_id` parameter will be provided by the Deploy/Run Test set api which is
+mentioned above. Use this to fetch the status of any test set.
+
+```json
+{
+    "status":{
+        "Passed":19
+    },
+    "run_id":"Sun-Jul-7-08:39:13-2019",
+    "detail":[
+        {
+            "tc_id":"TEST-3180",
+            "tc_name":"ABC Test",
+            "status":"Passed",
+            "test_case_type":"Automated",
+            "duration":"00:01:06",
+            "failreason":""
+        },
+        {
+            "tc_id":"TEST-3181",
+            "tc_name":"PQR Test",
+            "status":"Passed",
+            "test_case_type":"Automated",
+            "duration":"00:02:24",
+            "failreason":""
+        }
+    ],
+    "run_id_status":"Complete"
+}
+```
+
+`run_id_status` represents the overall status of the whole run/deploy
+session. It can be one of the three values - **Complete**,
+**In-progress**, **Cancelled**. You're advised to make all the
+characters lower case if you want to compare the progress string.
