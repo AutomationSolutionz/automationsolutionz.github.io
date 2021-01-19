@@ -5,11 +5,11 @@ title: Add new actions
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Adding new actions If any of the hundreds of different actions currently
-available still does not suit your needs, that's okay. You can easily extend
-Zeuz Node by adding new actions to it or even better, contribute to our
-repository so that everyone has access to them! Follow this guide to learn how
-you can create a new action very easily.
+If any of the hundreds of different actions currently available still does not
+suit your needs, that's okay. You can easily extend Zeuz Node by adding new
+actions to it or even better, contribute to our repository so that everyone has
+access to them! Follow this guide to learn how you can create a new action very
+easily.
 
 Our built in actions are called sequential actions.
 
@@ -21,7 +21,7 @@ Our built in actions are called sequential actions.
    directory/folder inside "Zeuz Node > Framework > Sequential_Actions".
 
     ![](/img/action-declarations.png)
-    ￼
+
     Each of the files listed above are a mapping of the following type of actions:
     - Mobile actions (Android/iOS) > appium.py
     - Web actions > selenium.py
