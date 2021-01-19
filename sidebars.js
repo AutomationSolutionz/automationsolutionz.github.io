@@ -13,6 +13,7 @@ module.exports = {
       'condition',
       'loop',
       'add-new-actions',
+      'custom-driver',
       {
         Actions: [
           'actions-common',
