@@ -12,6 +12,7 @@ module.exports = {
       'data-collector',
       'condition',
       'loop',
+      'add-new-actions',
       {
         Actions: [
           'actions-common',

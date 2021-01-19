@@ -1,5 +1,5 @@
 ---
-id: hello-world
+slug: hello-world
 title: Hello
 author: Mohammed Sazid Al Rashid
 author_title: Software Engineer
