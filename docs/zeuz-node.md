@@ -37,8 +37,26 @@ test cases. Example scenario:
 
 ## Architecture
 
-TBD.
+All the test case data lives in the Zeuz Server. You use the Zeuz Server to
+construct the test cases and then they are sent to Zeuz Node as a JSON file
+representing all the test cases and the attachment files (if any). Note that,
+the server is not required to run Zeuz Node or the test cases, it is only an
+interface for constructing the test case data. Once Zeuz Node has the JSON data
+ready for it to be consumed, it simply takes it and starts executing the test
+cases one by one. Zeuz Node (`node_cli.py`) has a built in `-r` or `--local-run`
+flag, which if provided, will run the test cases from `Zeuz Node > Projects >
+Local_run.json` file without communicating with the server. A report is then
+generated inside the **AutomationLog** folder. Every test case session has a
+unique identifier called **Run ID**, there's a folder with the same name inside
+**AutomationLog** folder which contains the screenshots, logs and any other
+relevant resulting data (while/after running tests).
 
 ## Drivers
 
-TBD.
+Drivers are the entry point to Zeuz Node (similar to `main()` function in many
+languages). Zeuz Node has a `MainDriver` by default that handles communication
+with the Zeuz Server and run the test cases based on the data received. A driver
+is responsible for handling which action to execute based on the data. You can
+also write a custom driver that has custom actions or perform other tasks aside
+from just executing the actions. See [Custom Driver](custom-driver) for more
+information.
