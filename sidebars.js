@@ -3,6 +3,10 @@ module.exports = {
     Guide: [
       'welcome',
       'offline-access',
+      'guide/1-introduction',
+      'guide/2-first-test-case',
+      'guide/3-actions',
+      'guide/4-debugging',
     ],
     'Zeuz Node': [
       'zeuz-node',
