@@ -183,7 +183,7 @@ to run.
 
 ```sh
 $ cd /path/to/Zeuz_Python_Node
-$ python -m venv .venv
+$ python3 -m venv .venv
 $ source .venv/bin/activate
 $ pip install -r requirements-linux.txt
 ```
@@ -192,7 +192,7 @@ $ pip install -r requirements-linux.txt
 
 ```sh
 $ cd /path/to/Zeuz_Python_Node
-$ python -m venv .venv
+$ python3 -m venv .venv
 $ source .venv/bin/activate
 $ pip install -r requirements-mac.txt
 ```
@@ -201,7 +201,7 @@ $ pip install -r requirements-mac.txt
 
 ```batch
 > cd /path/to/Zeuz_Python_Node
-> python -m venv .venv
+> python3 -m venv .venv
 > .venv/Scripts/activate
 > pip install -r requirements-win.txt
 ```
