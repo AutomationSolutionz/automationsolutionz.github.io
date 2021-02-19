@@ -172,3 +172,36 @@ Xcode.
 
 Once done with the pre-requisites, uncheck all the checkboxes and
 select **iOS Setup** only. Then click on `Install`.
+
+## Virtual Environment Setup (Advanced)
+
+You can also install use Zeuz Node by setting up a Python virtual enviornment.
+Doing so requires manually installing the python modules required for Zeuz Node
+to run.
+
+### Linux
+
+```sh
+$ cd /path/to/Zeuz_Python_Node
+$ python -m venv .venv
+$ source .venv/bin/activate
+$ pip install -r requirements-linux.txt
+```
+
+### Mac
+
+```sh
+$ cd /path/to/Zeuz_Python_Node
+$ python -m venv .venv
+$ source .venv/bin/activate
+$ pip install -r requirements-mac.txt
+```
+
+### Windows
+
+```batch
+> cd /path/to/Zeuz_Python_Node
+> python -m venv .venv
+> .venv/Scripts/activate
+> pip install -r requirements-win.txt
+```
