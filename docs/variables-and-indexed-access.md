@@ -39,6 +39,19 @@ There are a few important points to take note of:
 4. Last item of a list can be accessed using `[-1]` like so: `%|variable_name[-1]|%`.
 5. Data can be nested as much as needed and Zeuz Node will be able to handle it easily.
 
+You can also index using range syntax like so:
+
+```
+%|my_list|%      = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+%|my_list[0]|%   = 0
+%|my_list[-2]|%  = 9
+%|my_list[2:5]|% = [2, 3, 4]
+%|my_list[:3]|%  = [0, 1, 2]
+%|my_list[:-1]|% = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+%|my_list[3:]|%  = [3, 4, 5, 6, 7, 8, 9, 10]
+%|my_list[1:]|%  = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
 There is one very powerful feature of variable access in Zeuz Node that's not
 covered in this section. It is immensely helpful when you're working with nested
 structures of data (specially in case of REST API and database actions). See the
