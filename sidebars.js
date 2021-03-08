@@ -7,6 +7,7 @@ module.exports = {
       'guide/2-first-test-case',
       'guide/3-actions',
       'guide/4-debugging',
+      'guide/5-runtime-params',
     ],
     'Zeuz Node': [
       'zeuz-node',
