@@ -15,7 +15,6 @@ module.exports = {
       'zeuz-node-usage',
       'variables-and-indexed-access',
       'data-collector',
-      'condition',
       'loop',
       'add-new-actions',
       'custom-driver',
