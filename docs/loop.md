@@ -9,13 +9,33 @@ Loops are a type of flow control actions in Zeuz Node, just like <Link to="/docs
 execute one or more actions multiple times.
 
 We will see following loop scenarios-
-1. Loop through a single list (with "*Loop*" action)
-2. Loop through a single list (with "*Loop through a list*" action)
+1. Loop through a single list (with "*Loop through a list*" action)
+2. Loop through a single list (with "*Loop*" action)
 3. Loop through a 2 Dimensional list (with "*Loop*" action)
 4. Call previous actions
 5. Create List of actions
+6. If else inside a Loop with step exit
 
-**1. Loop through a single list (with "*Loop*" action):** We will loop through every element of a 1 Dimensional list and print all the values.
+**1. Loop through a single list (with "*Loop through a list*" action):** We will now loop through a list with an easier approach
+
+**Pseudocode:**
+```
+Single_List = [1, "string", True, 2, 3]
+for element in Single_List:
+    Print(element)
+```
+**Actions Used:**
+1. Save variable - number string list dictionary
+2. Loop through a list
+3. Log Info
+
+![](/img/zeuz-node/Loop/pic2.jpg)
+
+**Explanation:**
+- As Print statement (Action 3) is inside the Loop's parenthesis we have put 3 inside the Loop
+- element is a variable and to print the value of element we have used ZEUZ syntax %|element|%
+
+**2. Loop through a single list (with "*Loop*" action):** We will loop through every element of a 1 Dimensional list and print all the values.
 
 **Pseudocode:**
 ```
@@ -37,25 +57,6 @@ Loop "LEN" times:
 **Explanation:**
 - As Print statement (Action 5) and i = i + 1 statement (Action 6) are inside the Loop's parenthesis we have put 5,6 in the run action row
 - i is a variable and Single_List is also a variable. To access the i th element of the Single_List we have used the ZEUZ syntax %|Single_List[i]|%
-
-**2. Loop through a single list (with "*Loop through a list*" action):** We will now loop through a list with an easier approach
-
-**Pseudocode:**
-```
-Single_List = [1, "string", True, 2, 3]
-for element in Single_List:
-    Print(element)
-```
-**Actions Used:**
-1. Save variable - number string list dictionary
-2. Loop through a list
-3. Log Info
-
-![](/img/zeuz-node/Loop/pic2.jpg)
-
-**Explanation:**
-- As Print statement (Action 3) is inside the Loop's parenthesis we have put 3 inside the Loop
-- element is a variable and to print the value of element we have used ZEUZ syntax %|element|%
 
 **3. Loop through a 2 Dimensional list (with "*Loop*" action):** We will now loop through every element of a 2 dimensional list
 
@@ -133,3 +134,14 @@ for action in all_actions:
 **Explanation:**
 - We are putting `%|action[0]|%` at the left and `%|action[1]|%` at the right so on 1st iteration it will click the web element
 with value="desktop" and on 2nd iteration it will click value="notebook" and so on
+  
+**6. If else inside a Loop with step exit:** In this scenario we will,
+- go to "https://demo.zeuz.ai"
+- Click some buttons and each time we will check if "ZeuZ Features" disappears or not
+- if "ZeuZ Features" is not found within 10 seconds of searching then **break the loop** and **Fail the step**
+
+![](/img/zeuz-node/Loop/pic6.jpg)
+
+**Explanation:**
+- Running `action 2` every time after action 3,4,5,6 to check if "ZeuZ Features" exists
+- If "ZeuZ Features" does not exist then Red colored `fail` means stop executing any other actions and fail the step immediately
