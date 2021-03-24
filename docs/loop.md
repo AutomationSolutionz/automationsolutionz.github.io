@@ -11,7 +11,7 @@ execute one or more actions multiple times.
 We will see following loop scenarios-
 1. Loop through a single list (with "*Loop through a list*" action)
 2. Loop through a single list (with "*Loop*" action)
-3. Loop through a 2 Dimensional list (with "*Loop*" action)
+3. Loop through a 2 Dimensional list and break if condition matches (with "*Loop through a list*" action)
 4. Call previous actions
 5. Create List of actions
 6. If else inside a Loop with step exit
@@ -58,32 +58,27 @@ Loop "LEN" times:
 - As Print statement (Action 5) and i = i + 1 statement (Action 6) are inside the Loop's parenthesis we have put 5,6 in the run action row
 - i is a variable and Single_List is also a variable. To access the i th element of the Single_List we have used the ZEUZ syntax %|Single_List[i]|%
 
-**3. Loop through a 2 Dimensional list (with "*Loop*" action):** We will now loop through every element of a 2 dimensional list
+**3. Loop through a 2 Dimensional list and break if condition matches (with "*Loop through a list*" action):** We will now loop through every element of a 2 dimensional list
 
 **Pseudocode:**
 ```
 L = [[1,2],[3,4,4.5],[5,6]]
-parent_len = len(L)
-i = 0
-Loop "parent_len" times:
-    nested_len = len(L[i])
-    j = 0
-    Loop "nested_len" times:
-        Print(index value of list is L[i][j])
-        j = j + 1
-    i = i + 1
+for sub_list in L:
+    for each in sub_list:
+        print(each)
+        if %|each|% == 4.5:
+            break both loop
 ```
 **Actions Used:**
 1. Save variable - number string list dictionary
-2. Loop
+2. Loop through a list
 3. Log Info
-4. Math utility action
 
 ![](/img/zeuz-node/Loop/pic3.jpg)
 
 **Explanation:**
-- Check the **Parenthesis** and note that the nested loop is inside the parent loop. So we had to put **Action 5-10** inside the parent loop
-- Print statement and j = j + 1 statements are inside the nested loop. So we had put **Action 8,9** inside the nested loop
+- Check the **Parenthesis** and note that the nested loop is inside the parent loop. So we had to put **Action 3-4** inside the parent loop
+- To break both loop when each == 4.5 we had to put "exit loop" row in both parent and child loop
 
 **4. Call previous actions:** Suppose you have writen some actions and after certain actions you need those previously added actions again.
 In this case instead of writing those actions again you can use Loop action to call the previous actions
