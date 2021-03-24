@@ -9,14 +9,14 @@ Loops are a type of flow control actions in Zeuz Node that allows you to
 execute one or more actions multiple times.
 
 We will see following loop scenarios-
-1. Loop through a single list (with "*Loop through a list*" action)
-2. Loop through a single list (with "*Loop*" action)
-3. Loop through a 2 Dimensional list and break if condition matches (with "*Loop through a list*" action)
+1. Loop through a single list (with "*For Loop*" action)
+2. Loop through a single list (with "*While Loop*" action)
+3. Loop through a 2 Dimensional list and break if condition matches (with "*For Loop*" action)
 4. Call previous actions
 5. Create List of actions
 6. If else inside a Loop with step exit
 
-**1. Loop through a single list (with "*Loop through a list*" action):** We will now loop through a list with an easier approach
+**1. Loop through a single list (with "*For Loop*" action):** We will now loop through a list with an easier approach
 
 **Pseudocode:**
 ```
@@ -26,7 +26,7 @@ for element in Single_List:
 ```
 **Actions Used:**
 1. Save variable - number string list dictionary
-2. Loop through a list
+2. For Loop
 3. Log Info
 
 ![](/img/zeuz-node/Loop/pic2.jpg)
@@ -35,7 +35,7 @@ for element in Single_List:
 - As Print statement (Action 3) is inside the Loop's parenthesis we have put 3 inside the Loop
 - element is a variable and to print the value of element we have used ZEUZ syntax %|element|%
 
-**2. Loop through a single list (with "*Loop*" action):** We will loop through every element of a 1 Dimensional list and print all the values.
+**2. Loop through a single list (with "*While Loop*" action):** We will loop through every element of a 1 Dimensional list and print all the values.
 
 **Pseudocode:**
 ```
@@ -48,7 +48,7 @@ Loop "LEN" times:
 ```
 **Actions Used:**
 1. Save variable - number string list dictionary
-2. Loop
+2. While Loop
 3. Log Info
 4. Math utility action
 
@@ -58,7 +58,7 @@ Loop "LEN" times:
 - As Print statement (Action 5) and i = i + 1 statement (Action 6) are inside the Loop's parenthesis we have put 5,6 in the run action row
 - i is a variable and Single_List is also a variable. To access the i th element of the Single_List we have used the ZEUZ syntax %|Single_List[i]|%
 
-**3. Loop through a 2 Dimensional list and break if condition matches (with "*Loop through a list*" action):** We will now loop through every element of a 2 dimensional list
+**3. Loop through a 2 Dimensional list and break if condition matches (with "*For Loop*" action):** We will now loop through every element of a 2 dimensional list
 
 **Pseudocode:**
 ```
@@ -71,7 +71,7 @@ for sub_list in L:
 ```
 **Actions Used:**
 1. Save variable - number string list dictionary
-2. Loop through a list
+2. For Loop
 3. Log Info
 
 ![](/img/zeuz-node/Loop/pic3.jpg)
@@ -121,7 +121,7 @@ for action in all_actions:
 **Actions Used:**
 1. Go to Webpage
 2. Save variable - number string list dictionary
-3. Loop through a list
+3. For Loop
 4. Click element
 
 ![](/img/zeuz-node/Loop/pic5.jpg)
