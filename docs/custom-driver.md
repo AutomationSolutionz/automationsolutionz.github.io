@@ -33,27 +33,28 @@ by Built_In_Driver.
 ![](/img/custom-driver/2.jpeg)
 
 Here, we have created Step 2. Now lets click the “Step info” button
+![](/img/custom-driver/3.jpeg)
 A pop up will appear. Then click on the “View/Edit Step” button
 
-![](/img/custom-driver/3.jpeg)
+![](/img/custom-driver/4.jpeg)
 
 A new window will be created. From that window you can see the default driver is
 our Buil_In_Driver. Now we will create our own driver by clicking the “CREATE
 DRIVER” button.
 
-![](/img/custom-driver/4.jpeg)
+![](/img/custom-driver/5.jpeg)
 
 Click on the “CREATE DRIVER” at the bottom of the page.
 
-![](/img/custom-driver/5.jpeg)
+![](/img/custom-driver/6.jpeg)
 
 Provide a Driver Name suppose “My_driver” and click “OK”
 
-![](/img/custom-driver/6.jpeg)
+![](/img/custom-driver/7.jpeg)
 
 Make Sure the driver remains at the “Assigned Driver”.
 
-![](/img/custom-driver/7.jpeg)
+![](/img/custom-driver/8.jpeg)
 
 Now go back to the Edit Step page and REFRESH. There you will see your newly
 created driver. Select your driver from the drop down list. Thats it now the
@@ -63,7 +64,7 @@ So at this point, we need some action dataset to pass through the My_driver and
 write code for the My_driver. You can set any dataset you want but your code and
 dataset should match.
 
-![](/img/custom-driver/8.jpeg)
+![](/img/custom-driver/9.jpeg)
 
 So go back to the Test case and REFRESH. Then again enter Step-2. Then add 2
 actions randomly so that we can then edit them and make our own dataset. You can
@@ -73,7 +74,7 @@ code for the driver and execute selenium scripts with the dataset we just
 created. First of all we need to create a python file at this location ..\Zeuz
 Node\ZeuzPythonNode\Drivers\ and name the file exactly “My_driver.py”
 
-![](/img/custom-driver/9.jpeg)
+![](/img/custom-driver/10.jpeg)
 
 Now, open “My_driver.py” file in an Editor and write the codes for the driver.
 
@@ -136,4 +137,4 @@ After we have written the code, now if we run node_cli.py and run the test case
 from the server  we will see the Login was successful from the automation
 browser.
 
-![](/img/custom-driver/10.jpeg)
+![](/img/custom-driver/11.jpeg)
