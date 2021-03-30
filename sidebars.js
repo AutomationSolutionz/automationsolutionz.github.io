@@ -16,6 +16,7 @@ module.exports = {
       'variables-and-indexed-access',
       'data-collector',
       'loop',
+      'element-detection',
       'add-new-actions',
       'custom-driver',
       {
