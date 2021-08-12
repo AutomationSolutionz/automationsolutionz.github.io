@@ -51,6 +51,74 @@ You can also index using range syntax like so:
 %|my_list[3:]|%  = [3, 4, 5, 6, 7, 8, 9, 10]
 %|my_list[1:]|%  = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
+**Nested data access using indexing**
+
+Take a look at the JSON data below. It comes from an apartment building and has some data 
+about its address and the apartments inside it. Apartment number 1 and 2 have two residents.
+```
+{
+    "ApartmentBuilding":{
+        "Address":{
+            "HouseNumber": 5,
+            "Street": "DataStreet",
+            "ZipCode": 5100
+        },
+        "Apartments":[
+            {
+                "Number": 1,
+                "Price": 500,
+                "Residents": [
+                    {
+                        "Name": "Bob",
+                        "Age": 43
+                    },
+                    {
+                        "Name": "Alice",
+                        "Age": 42
+                    }
+                ]
+            },
+            {
+                "Number": 2,
+                "Price": 750,
+                "Residents": [
+                    {
+                        "Name": "Jane",
+                        "Age": 43
+                    },
+                    {
+                        "Name": "William",
+                        "Age": 42
+                    }
+                ]
+            },
+            {
+                "Number": 3,
+                "Price": 1000,
+                "Residents": []
+            }
+        ]      
+    }
+}
+```
+The above data is saved in a variable called `%|data|%`.Suppose  you want to get the name of the first person in the first apartment. You would write the following:
+
+```
+%|data["ApartmentBuilding"]["Apartments"][0]["Residents"][0]["Name"]|%
+
+#Output
+Bob
+```
+
+you can see that the first key is `ApartmentBuilding`. By writing the name of the key in square brackets 
+beside the variable name we get the corresponding value which is another dictionary. This dictionary has two key value pairs:
+`Address` & `Appartments` . we wanted to access the first resident in the first apartment, so you put `Apartments` in square brackets
+to get the corresponding value, which is a list.We follow this with index 0 in square brackets to access the first element of the list.
+ Next comes `Residents`, followed by another index 0 to access the first person,and finally `Name` to get the name of that person.
+
+Now suppose you don't want to access into specific data instead you want to extract residents name of all apartments.
+you have to use nested loop to access into all the elements of all of the dictionaries. Zeuz
+has a unique feature to perform this in a simple way.
 
 There is one very powerful feature of variable access in Zeuz Node that's not
 covered in this section. It is immensely helpful when you're working with nested
