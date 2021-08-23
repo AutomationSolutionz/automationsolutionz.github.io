@@ -47,7 +47,7 @@ assuming that the following data is saved in the variable `%|data|%`:
         },
     },
     {
-        "error": {
+        "bug": {
             "type": "Brain malfunctioned",
             "occurrence": [
                 {"line": 150, "message": "abort!"},
@@ -77,7 +77,7 @@ Pattern:
 %|data{_all_, _all_, occurrence, _all_, line}|%
 
 # Output
-[10, 20, 50, 64, 70, 500, 640, 700, 100, 200, 341, 4, 74]
+[10, 20, 50, 64, 70, 100, 200, 500, 640, 700, 150, 23, 341, 4, 74]
 ```
 
 There are a few things to note here:
@@ -106,22 +106,28 @@ Let's see a few more patterns and their outputs:
 ```python
 %|data{_all_, _all_, type}|%
 # Output of pattern 1
-['Runtime Error', 'Compiler Error', 'Compiler Error', 'Runtime Error', 'Computer crashed']
+['Runtime Error', 'Compiler Error', 'Runtime Error', 'Compiler Error', 'Brain malfunctioned', 'Computer crashed']
 
 %|data{_all_, *error, type}|%
 # Output of pattern 2
-['Compiler Error', 'Runtime Error', 'Computer crashed']
+['Runtime Error', 'Compiler Error', 'Computer crashed']
 
 %|data{_all_, error*, occurrence, _all_, line}|%
 # Output of pattern_3
 [10, 20, 50, 64, 70, 341, 4, 74]
+
+%|data{1, bug, occurrence, 1, message}|%
+# Output of pattern 4
+'shutdown'
 ```
 
 Notice that you can specify partial names for dictionary keys using
 `*` before or after a name. In the case of **pattern 2**, we wanted
 all errors ending with the word "error". So the pattern is `*error`.
-In case of **pattern 3** we wanted all errors ending with the word
-"error", so the pattern is `error*`.
+In case of **pattern 3** we wanted all errors starting with the word
+"error", so the pattern is `error*`.You can access to specific data using the index value in data-collector like **pattern 4**.
+
+
 
 You can also zip together multiple collected items using the syntax
 `%|data{pattern_1}{pattern_2}|%`. For example:
@@ -140,5 +146,37 @@ You can also zip together multiple collected items using the syntax
     (200, "block"),
     (500, "fail"),
     (640, "xyz"),
-    (700, "pqr")
+    (700, "pqr"),
+    (150, "abort!"),
+    (23, "shutdown"),
+    (341, "blocked"),
+    (4, "blocked"),
+    (74, "math error")
 ]
+```
+
+**Key collector**
+
+Key collector collects all the values of  specific key from the data .Sometimes data can be
+so nested or complex that you have to access into so many elements to get the value of your specific key.
+Key collector tool can handle this quite easily.You have to just pass the key name into round bracket along 
+with data name.
+```python
+ #pattern 1
+ %|data(line)|%
+ # Output
+ {'line': [10, 20, 50, 64, 70, 100, 200, 500, 640, 700]}
+ 
+ #pattern 2
+ %|data(line, message)|%
+ # Output
+ {'line': [10, 20, 50, 64, 70, 100, 200, 500, 640, 700], 'message': ['fail', 'block', 'fail', 'xyz', 'pqr', 'fail', 'block', 'fail', 'xyz', 'pqr']}
+ 
+ #pattern3
+ %|data(line)(message, type)|% 
+ # Output
+ [{'line': [10, 20, 50, 64, 70, 100, 200, 500, 640, 700]}, {'message': ['fail', 'block', 'fail', 'xyz', 'pqr', 'fail', 'block', 'fail', 'xyz', 'pqr'], 'type': ['Runtime Error', 'Compiler Error', 'Runtime Error', 'Compiler Error']}]
+```
+
+Key collector will extract all the value of the given key from all over the data. You can also
+use multiple keys in key collector like **pattern 2** & **pattern 3** above.

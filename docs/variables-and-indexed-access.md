@@ -39,7 +39,7 @@ There are a few important points to take note of:
 4. Last item of a list can be accessed using `[-1]` like so: `%|variable_name[-1]|%`.
 5. Data can be nested as much as needed and Zeuz Node will be able to handle it easily.
 
-You can also index using range syntax like so:
+You can index using range syntax like so:
 
 ```
 %|my_list|%      = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -51,11 +51,21 @@ You can also index using range syntax like so:
 %|my_list[3:]|%  = [3, 4, 5, 6, 7, 8, 9, 10]
 %|my_list[1:]|%  = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
+
+You can also use variable as index. Suppose you put value into variable as num1 = 2 & num2 = 5.
+You can use this variable as index to access into data as below.
+```
+%|my_list[num1]|%   = 2
+%|my_list[num1:num2]|% = [2, 3, 4]
+%|my_list[num2:]|%  = [5, 6, 7, 8, 9, 10]
+```
+
+
 **Nested data access using indexing**
 
 Take a look at the JSON data below. It comes from an apartment building and has some data 
 about its address and the apartments inside it. Apartment number 1 and 2 have two residents.
-```
+```json
 {
     "ApartmentBuilding":{
         "Address":{
@@ -103,7 +113,7 @@ about its address and the apartments inside it. Apartment number 1 and 2 have tw
 ```
 The above data is saved in a variable called `%|data|%`.Suppose  you want to get the name of the first person in the first apartment. You would write the following:
 
-```
+```python
 %|data["ApartmentBuilding"]["Apartments"][0]["Residents"][0]["Name"]|%
 
 #Output
