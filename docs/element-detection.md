@@ -85,6 +85,9 @@ text is dynamic so the identifier of that element is static part of the text and
 or dont know whether there is spaces at end or starting you can search with the partial text.
 
 ![](/img/zeuz-node/Element_locator/pic9.jpg)
+     **Double Asterisk(\*\*)** can be used before attribute name in action if you want to search the value partially & also
+in a case-insensitive way . In the earlier example of ***Sign in*** button we can add `**text = "sign"`. Though our given value of text is in lowercase but it 
+can locate the element as we are using double asterisk. 
 
 **7. Android-IOS separator |\*| :** We know Android and IOS has different method of locating an element but we can locate and perform
 an action with the same testcase just need to add a separator sign |\*| and no need to write seperate testcases for Android and IOS.
