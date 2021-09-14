@@ -14,31 +14,34 @@ the automated process sometimes may not work out 100% correctly.
 Specially, setting different `PATH` variables for moving components
 required by Zeuz Node.
 
-:::info
-
-Zeuz Node requires Python 3 to run. 
-
-:::
-
 ## Video instructions
 
 - [Windows Setup](https://youtu.be/LGmr6ZpoPGk)
 - [Mac/OS X Setup](https://youtu.be/TCPmaUgS8hk)
 
 
-## Python setup
+## `Core setup`
 
+
+Before starting core setup you have to setup python on your machine first.
 Please download and install the latest Python 3.x version available
 from [python.org](https://www.python.org/downloads/). If you're on
 Windows, make sure to download the **32-bit version** and not the
 ~~64-bit version~~.
 
-### Windows
+:::info
+
+Zeuz Node requires Python 3 to run. 
+
+:::
+
+### Python Setup
 
 When installing on Windows, please check that **Add Python 3.x to
-PATH** checkbox is selected.
+PATH** checkbox is selected. Also make it sure that previous checkbox of **Install
+launcher for all users** is not selected.
 
-![](/img/windows-python-path.png)
+![](/img/python_setup-path.png)
 
 ### Linux
 
@@ -85,7 +88,7 @@ These should print Python 3.x as output where x is the version that
 you downloaded. Also, if you're on Windows make sure that its the
 32-bit version.
 
-## Core setup
+### Core setup & node launch 
 
 The core setup is for installing Zeuz Node and some core automation
 components. The core setup is the same for all platforms and is less
@@ -134,7 +137,9 @@ features after the Core setup has been completed successfully.
 
 Provide your root password and click on `Install`.
 
-## Android setup
+## `Mobile setup`
+
+### Android setup
 
 Android automation is supported on all three of the platforms -
 Windows, Mac and Linux.
@@ -158,7 +163,7 @@ Once the Core setup and Android SDK setup have completed, uncheck all
 the checkboxes, and only select **Android setup** and then click on
 `Install`.
 
-## iOS setup
+### iOS setup
 
 iOS automation is only available on Mac OS X.
 
@@ -173,7 +178,7 @@ Xcode.
 Once done with the pre-requisites, uncheck all the checkboxes and
 select **iOS Setup** only. Then click on `Install`.
 
-## Virtual Environment Setup (Advanced)
+## `Virtual Environment Setup` (Advanced)
 
 You can also install use Zeuz Node by setting up a Python virtual enviornment.
 Doing so requires manually installing the python modules required for Zeuz Node
