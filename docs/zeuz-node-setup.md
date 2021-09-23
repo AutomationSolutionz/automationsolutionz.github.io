@@ -23,7 +23,7 @@ required by Zeuz Node.
 ## `Core setup`
 
 
-Before starting core setup you have to setup python on your machine first.
+At the start of core setup you have to setup python on your machine.
 Please download and install the latest Python 3.x version available
 from [python.org](https://www.python.org/downloads/). If you're on
 Windows, make sure to download the **32-bit version** and not the
@@ -111,31 +111,19 @@ that are installed:
 
 :::
 
-To start the setup, run the `ZeuZ_Node_Installer.py` file. Double
-click to open the file on Windows. For Mac/Linux, launch the terminal
-and navigate to the directory where the Zeuz Node installer file is
+To start the setup, open the `Zeuz_Python_Node` folder. Double click to run the 
+`node_cli.py` file which will automatically launch the node & start core setup.
+For Mac/Linux, launch the terminal
+and navigate to the directory where the `node_cli.py` file is
 present and then launch it. As an example, if you've downloaded the
-`Zeuz_Python_Node_Setup.zip` file in your `Downloads` folder and
-extracted it there, start the installer by running the following
+`Zeuz_Python_Node` folder in your `Downloads` folder and
+extracted it there, start the setup by running the following
 commands:
 
 ```bash
-$ cd ~/Downloads/Zeuz_Python_Node_Setup/
-$ python Zeuz_Node_Installer.py
+$ cd ~/Downloads/Zeuz_Python_Node/
+$ python node_cli.py
 ```
-
-![](/img/zeuz-node-installer.png)
-
-:::caution
-
-If you're installing Zeuz Node for the first time, make sure that only
-**Core Setup** and **Install Zeuz Node** checkboxes are checked.
-Uncheck all the other check boxes, you'll be able to install the other
-features after the Core setup has been completed successfully.
-
-:::
-
-Provide your root password and click on `Install`.
 
 ## `Mobile setup`
 
@@ -159,8 +147,22 @@ Windows, Mac and Linux.
 
 ### Automation setup
 
-Once the Core setup and Android SDK setup have completed, uncheck all
-the checkboxes, and only select **Android setup** and then click on
+To start the android setup, run the `ZeuZ_Node_Installer.py` file. Double
+click to open the file on Windows. For Mac/Linux, launch the terminal
+and navigate to the directory where the Zeuz Node installer file is
+present and then launch it. As an example, if you've downloaded the
+`Zeuz_Python_Node_Setup.zip` file in your `Downloads` folder and
+extracted it there, start the installer by running the following
+commands:
+
+```bash
+$ cd ~/Downloads/Zeuz_Python_Node_Setup/
+$ python Zeuz_Node_Installer.py
+```
+
+![](/img/android_setup.png)
+
+As the Core setup and Android SDK setup have already been completed on your machine,only select **Android setup** and then click on
 `Install`.
 
 ### iOS setup
