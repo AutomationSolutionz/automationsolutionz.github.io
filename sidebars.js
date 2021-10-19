@@ -15,6 +15,7 @@ module.exports = {
       'zeuz-node-usage',
       'variables-and-indexed-access',
       'data-collector',
+      'Calling-method-on-variable',
       'loop',
       'element-detection',
       'add-new-actions',

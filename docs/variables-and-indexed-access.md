@@ -29,7 +29,7 @@ string list dictionary** action, you can access the values in the following way:
 
 | FIELD | SUBFIELD | VALUE |
 |-|-|-|
-| log 1 | utility action | Variable values:<br/><br/>Whole variable: %\|my_var\|%<br/>Access "hello": %\|my_var["hello"]\|%<br/>Access "num": %\|my_var["num"]\|%<br/><br/>Access nested list: %\|my_var["my_list"]\|%<br/>Access first element of nested list: %\|my_var["my_list"][0]\|%<br/>Access second element of nested list: %\|my_var["my_list"][0]\|%<br/>Access last element of nested list: %\|my_var["my_list"][-1]\|% |
+| log 1 | utility action | Variable values:<br/><br/>Whole variable: %\|my_var\|%<br/>Access "hello": %\|my_var["hello"]\|%<br/>Access "num": %\|my_var["num"]\|%<br/><br/>Access nested list: %\|my_var["my_list"]\|%<br/>Access first element of nested list: %\|my_var["my_list"][0]\|%<br/>Access second element of nested list: %\|my_var["my_list"][1]\|%<br/>Access last element of nested list: %\|my_var["my_list"][-1]\|% |
 
 There are a few important points to take note of:
 1. Variables are accessed using `%|variable_name|%` syntax.
