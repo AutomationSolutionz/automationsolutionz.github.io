@@ -1,6 +1,6 @@
 module.exports = {
   docs: {
-    Guide: [
+    'Get started': [
       'welcome',
       'offline-access',
       'guide/1-introduction',
@@ -8,6 +8,12 @@ module.exports = {
       'guide/3-actions',
       'guide/4-debugging',
       'guide/5-runtime-params',
+    ],
+    'Guides': [
+      'how-tos/how-to-create-a-test-case',
+      'how-tos/how-to-login-to-node',
+      'how-tos/how-to-debug-a-test-case',
+      'how-tos/how-to-deploy-a-test-case',
     ],
     'Zeuz Node': [
       'zeuz-node',
