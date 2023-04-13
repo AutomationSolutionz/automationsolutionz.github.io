@@ -23,3 +23,8 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+img {
+  border: 1px dashed rgb(50, 50, 50);
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.4);
+}
