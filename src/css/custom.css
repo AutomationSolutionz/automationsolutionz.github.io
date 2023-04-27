@@ -28,3 +28,8 @@ img {
   border: 1px dashed rgb(50, 50, 50);
   box-shadow: 0 3px 8px rgb(0 0 0 / 0.4);
 }
+
+.navbar__logo, .featureImage_src-pages- {
+  border: 0 !important;
+  box-shadow: 0 0 !important;
+}
