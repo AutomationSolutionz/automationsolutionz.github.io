@@ -15,6 +15,8 @@ module.exports = {
       'how-tos/how-to-debug-a-test-case',
       'how-tos/how-to-deploy-a-test-case',
       'how-tos/how-to-create-a-milestone',
+      'how-tos/how-to-create-a-team',
+      'how-tos/how-to-create-a-project',
     ],
     'Zeuz Node': [
       'zeuz-node',
