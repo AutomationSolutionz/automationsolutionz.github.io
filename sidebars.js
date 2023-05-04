@@ -12,11 +12,24 @@ module.exports = {
     'Guides': [
       // 'how-tos/how-to-create-a-test-case',
       // 'how-tos/how-to-login-to-node',
-      'how-tos/how-to-debug-a-test-case',
-      'how-tos/how-to-deploy-a-test-case',
-      'how-tos/how-to-create-a-milestone',
-      'how-tos/how-to-create-a-team',
-      'how-tos/how-to-create-a-project',
+      {
+        "Testing": [
+          'how-tos/how-to-debug-a-test-case',
+          'how-tos/how-to-deploy-a-test-case',    
+          'how-tos/how-to-create-webhook-for-cicd',
+        ],
+        "Project": [
+          'how-tos/how-to-create-a-milestone',
+          'how-tos/how-to-create-a-team',
+          'how-tos/how-to-create-a-project',
+          'how-tos/how-to-link-project-to-a-team',
+        ],
+        "User Management": [
+          'how-tos/how-to-create-a-user',
+          'how-tos/how-to-activate-a-user',
+          'how-tos/how-to-deactivate-a-user',
+        ],
+      },
     ],
     'Zeuz Node': [
       'zeuz-node',

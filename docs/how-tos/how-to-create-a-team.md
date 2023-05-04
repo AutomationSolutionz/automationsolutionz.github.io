@@ -24,6 +24,6 @@ title: How to create a Team
 
 ![](/img/how-tos/how-to-create-a-team/select-all.png)
 
-8. To remove any selected member, firstn click on the **Remove** button then click on the **Remove Selected** button.
+8. To remove any selected member, first click on the **Remove** option then click on the **Remove Selected** button.
 
 ![](/img/how-tos/how-to-create-a-team/remove-selected.png)
