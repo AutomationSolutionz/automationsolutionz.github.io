@@ -8,7 +8,16 @@ title: How to create a User
 ![](/img/how-tos/how-to-create-a-user/create-user.png)
 
 2. Go to the **Create/Edit User** page.
-3. Fill up the informations like **Full Name**, **Email**, **Designation**, **Username**, **Password**, **Confirm password**, **Teams** and **Policy**.
+3. Fill up the informations like:
+
+   * Full Name, 
+   * Email, 
+   * Designation, 
+   * Username, 
+   * Password, 
+   * Confirm password, 
+   * Teams, 
+   * Policy.
 
 ![](/img/how-tos/how-to-create-a-user/user-informations.png)
 

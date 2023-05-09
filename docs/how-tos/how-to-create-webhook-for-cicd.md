@@ -23,7 +23,13 @@ title: How to create Webhook for CI/CD
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/search-set.png)
 
-9. Fill up the **Information** of the **Preset Deployment** tab like **Assigned testers**, **Send report to**, **Milestone**, **Run Objective**, **Version** and **Platform (Browser, Mobile)**.
+9. Fill up the **Information** of the **Preset Deployment** tab like:
+ * Assigned testers, 
+ * Send report to, 
+ * Milestone, 
+ * Run Objective, 
+ * Version 
+ * Platform (Browser, Mobile).
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/preset-information.png)
 

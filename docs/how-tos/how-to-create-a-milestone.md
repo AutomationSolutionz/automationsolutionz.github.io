@@ -20,11 +20,16 @@ title: How to create a Milestone
 ![](/img/how-tos/how-to-create-a-milestone/title-of-milestone.png)
 
 
-6. Fill up the information of **Details** tab like **Status**, **Description**, **Start Date**, **End Date**.
+6. Fill up the information of **Details** tab like:
+  * Status, 
+  * Description, 
+  * Start Date, 
+  * End Date.
+
+
 7. Click on the **Save** button.
 
 ![](/img/how-tos/how-to-create-a-milestone/details-tab.png)
-
 
 8. Modify the informations **(If it is needed)**.
 9. Click on the **Save** button.

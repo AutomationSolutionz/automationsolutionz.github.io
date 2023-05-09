@@ -17,12 +17,18 @@ module.exports = {
           'how-tos/how-to-debug-a-test-case',
           'how-tos/how-to-deploy-a-test-case',    
           'how-tos/how-to-create-webhook-for-cicd',
+          'how-tos/how-to-generate-execution-report',
+          'how-tos/how-to-execute-manual-test-case',
         ],
         "Project": [
           'how-tos/how-to-create-a-milestone',
           'how-tos/how-to-create-a-team',
           'how-tos/how-to-create-a-project',
           'how-tos/how-to-link-project-to-a-team',
+          'how-tos/how-to-create-a-requirement',
+          'how-tos/how-to-create-a-task',
+          'how-tos/how-to-create-a-bug',
+          'how-tos/how-to-link-requirement-to-a-bug',
         ],
         "User Management": [
           'how-tos/how-to-create-a-user',
