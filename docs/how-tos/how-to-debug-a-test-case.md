@@ -3,6 +3,18 @@ id: how-to-debug-a-test-case
 title: How to Debug a Test Case
 ---
 
+## Description
+
+### What is Debugging in automated test cases and Why is it necessary?
+
+Debugging in automated test cases is the process of identifying and removing errors from software applications using automated testing tools.
+
+Debugging is necessary because it helps to identify and fix defects in the system.
+
+Debugging is crucial for writing clean code, minimizing errors, and creating top-quality software as a result. Any successful program requires hours of debugging to make it behave as expected.
+
+## Steps
+
 1. Go from the **View/Edit Test Case** page and click on the **DEBUG** button.
 
 ![](/img/how-tos/how-to-debug-a-test-case/tc-debug-icon.png)

@@ -2,7 +2,13 @@
 id: how-to-create-a-user
 title: How to create a User
 ---
+## Description
 
+## What do you mean by a user in software testing?  
+
+In software testing, a user is someone who interacts with the software being tested. This can include end-users, administrators, developers, and other stackholders. The goal of testing is to ensure that the software meets the needs of its user and performs as expected.  
+
+## Steps
 1. From the **Menu bar**, go to the **Admin** then **Create User** option.
 
 ![](/img/how-tos/how-to-create-a-user/create-user.png)

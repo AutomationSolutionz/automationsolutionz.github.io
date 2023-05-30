@@ -22,7 +22,9 @@ module.exports = {
           'how-tos/how-to-add-runtime-parameters',
           'how-tos/how-to-setup-test-scheduler',
           'how-tos/how-to-create-a-test-case',
-          'how-tos/how-to-create-a-folder',
+          'how-tos/how-to-create-a-folder-and-feature',
+          'how-tos/how-to-export-and-import-test-cases',
+           
 
           {
             "Set": [
@@ -41,6 +43,7 @@ module.exports = {
           'how-tos/how-to-link-requirement-to-a-bug',
           'how-tos/how-to-create-a-document',
           'how-tos/how-to-setup-email-notification',
+          'how-tos/how-to-create-and-manage-labels',
         ],
         "User Management": [
           'how-tos/how-to-create-a-user',

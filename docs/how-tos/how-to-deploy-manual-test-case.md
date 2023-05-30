@@ -3,6 +3,23 @@ id: how-to-deploy-manual-test-case
 title: How to Deploy manual test case
 ---
 
+## Description
+
+### What is a manual test case?
+
+A manual test case is a test case that is executed manually by a tester without using any automated tools.  
+The purpose of manual testing is to identify the bugs, issues and defects in the software application.  
+Manual test cases are used to check the functionality of a system. Test cases can include checking the results of entering valid and invalid user IDs and password.  
+Another example of a manual test is creating a to-do list and checking that all fields are filled in correctly and the newly created listis displayed correctly.
+
+### What is deploying in manual test cases and why is it necessary?
+
+Deploying manual test cases means running test cases manually on the application without using any automation tools.  
+Manual testing is the process of manually testing software for defects. It requires a tester to play the role of an end user and use most of all features of the application to ensure correct behaviour.  
+Manual testing is necessary because it helps find defects that are not easily found through automation.  
+
+## Steps
+
 1. From the **Menu bar**, go to the **Testing** then **Run Tests** option.
 
 ![](/img/how-tos/how-to-deploy-manual-test-case/run-tests.png)
