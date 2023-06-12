@@ -5,12 +5,12 @@ title: How to create a Document
 
 ## Description
 
-**What does Document mean in software testing?**  
+### What does Document mean in software testing? 
 
 In software testing, document refers to the documentation of artifacts that should be developed before or during the testing of software.  
 Test documentation helps in estimating the testing effort required, test coverage, requirement tracking/tracing, etc.
 
-**How to Create/Edit Document?**  
+### How to Create/Edit Document?
 
 1. At the first step, we need to **Enter the Title** of the document.
 
@@ -18,7 +18,15 @@ Test documentation helps in estimating the testing effort required, test coverag
 
 3. Then there is a **Description** box where we need to write a description.
 
-4. Next click on the **SAVE** button at the top right side of the page and the **Doc** will be saved with **Description**, **Folder** and **Title**.
+4. Next click on the **SAVE** button at the top right side of the page and the **Doc** will be saved with **Description**, **Folder** and **Title**.  
+
+### What is the importance of the Document in software testing?
+
+Documentation is highly important in software testing due to its role in ensuring clarity, consistency, traceability, knowledge transfer, and compliance. It helps testers and stakeholders understand the testing process, maintain consistency in practices, and establish traceability between requirements, test cases, and defects.  
+
+Documentation supports knowledge sharing, assists in test maintenance and regression testing, and provides evidence for compliance and audits. It facilitates effective communication, decision-making, and transparency among team members.  
+
+Overall, documentation enhances the testing process by providing guidance, promoting understanding, and supporting quality assurance practices.
 
 ## Steps
 

@@ -24,7 +24,8 @@ module.exports = {
           'how-tos/how-to-create-a-test-case',
           'how-tos/how-to-create-a-folder-and-feature',
           'how-tos/how-to-export-and-import-test-cases',
-           
+          'how-tos/how-to-move-test-cases-to-folder-and-feature',
+          
 
           {
             "Set": [
@@ -44,12 +45,17 @@ module.exports = {
           'how-tos/how-to-create-a-document',
           'how-tos/how-to-setup-email-notification',
           'how-tos/how-to-create-and-manage-labels',
+          'how-tos/how-to-create-a-document-through-details-tab',
+          'how-tos/what-do-you-mean-by-different-fields',
         ],
         "User Management": [
           'how-tos/how-to-create-a-user',
           'how-tos/how-to-activate-a-user',
           'how-tos/how-to-deactivate-a-user',
         ],
+        "Version": [
+          'how-tos/how-to-create-a-branch',
+        ]
     
       },
     ],

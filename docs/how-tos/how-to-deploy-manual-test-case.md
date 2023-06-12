@@ -18,6 +18,24 @@ Deploying manual test cases means running test cases manually on the application
 Manual testing is the process of manually testing software for defects. It requires a tester to play the role of an end user and use most of all features of the application to ensure correct behaviour.  
 Manual testing is necessary because it helps find defects that are not easily found through automation.  
 
+### What is the importance of deploying manual test case?
+
+Deploying a manual test case is an important aspect of software testing. Here are some reasons why it is important:  
+
+* **Verification of Functionality**: Manual test cases help verify that the software or system being tested is functioning as intended. By following predefine test steps, testers can validate whether the expected behaviour is consistent with the actual behaviour of the software. This ensures that the software meets the functional requirements and performs its intended tasks correctly.
+
+* **Error Identification**: Manual test cases are designed to identify errors, bugs, or defects in the software. Testers execute various test scenarios, inputs, and interactions to uncover any issues that may exist. By thoroughly examining the software through manual testing, testers can detect the problems that automated tests might miss. This helps improve the overall quality and reliability of the software.  
+
+* **User Perspective**: Manual testing allows testers to simulate real-world interactions with the software. By putting themseleves in the shoes of the end users, testers can assess the user experience, usability, and inituitiveness of the software. This helps identify any design flaws, inconsistencies, or issues that may impact user satisfaction. Manual testing helps ensure that the software meets the expectations and needs of its intended users.  
+
+* **Ad hoc Testing**: Manual test cases enable testers to perform ad hoc testing, which involves exploring the software in an unplanned and unscripted manner. This allows testers to think creatively and investigate the software for potential issues that were not anticipated during the test case design phase. Ad hoc testing can help uncover unexpected bugs, usability problems, or edge cases that automated tests may not cover.  
+
+* **Early Testing**: Manual test cases can be developed and executed during the early stages of the software development lifecycle. They can help validate requirements, clarify ambiguities, and identify defects at an early stage. This enables the development team to address issues promptly, reducing the cost and effort of fixing them later in the development process.  
+
+* **Test Coverage Gaps**: While automated tests are different for repetitive and large-scale testing, they may not cover certain aspects of the software adequately. Manual test cases can be used to fill in the gaps and cover scenarios that are difficult to automate or require human judgement. This ensure a more comprehensive test coverage and reduces the risk of critical issues slipping through the automated tests.  
+
+In summary, deploying manual test cases is important for varifying functionality, identifying errors, evaluating the user perspective, conducting ad hoc testing, performing early testing, and achieving comprehensive test coverage. Manual testing complements automated testing approaches, helping to improve software quality and provide a better user experience.
+
 ## Steps
 
 1. From the **Menu bar**, go to the **Testing** then **Run Tests** option.

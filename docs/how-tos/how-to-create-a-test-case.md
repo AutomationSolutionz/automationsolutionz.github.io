@@ -49,7 +49,7 @@ Priority is an attribute that help users define the order in which they want the
 
 A browser is needed to run a test case because it is the platform on which the application is tested. The browser is used to interact with the application and test its functionality.  
 
-### Name the functions that are needed to edit a Test Case.  
+### Functions that are needed to edit a Test Case: 
 
 |  Functions  |  Description  |
 |------------------------|------------|
@@ -60,7 +60,7 @@ A browser is needed to run a test case because it is the platform on which the a
 | Step's Action Format   | It is the basic format that is used for preparing a test case.  |
 | Auto Calculate Average Step Time  |  It is the automated calculation system for getting the average step duration from previous run histories. |  
 
-### Mention the tabs needed for edit a Test Case.  
+### The tabs needed for edit a Test Case:  
 
 | Tab  | Description  |
 |------|--------------|
@@ -79,7 +79,7 @@ A browser is needed to run a test case because it is the platform on which the a
 | Follow  | Allows adding / customizing followers (other users) so that they get notified of the changes for the followed items. |
 | Review  | Mainly Review about the test cases that have been prepared.  |  
 
-### Details Tab of the Test Case.
+### Details Tab of the Test Case:
 
    1. **Status**: It is the required item of the test case.  
     And it indicates whether the test case is ready to deploy.  
@@ -110,7 +110,7 @@ A browser is needed to run a test case because it is the platform on which the a
 
     > Possible Values: Any test set of ZeuZ and click on "+ NEW SET" sign to create a new set.  
 
-### Steps Tab of the Test Case.  
+### Steps Tab of the Test Case:  
 
    1. **Add Button**: This is mainly used for adding a new row during making a test case and for addition of a new row, click on the "+" sign.  
 

@@ -3,6 +3,22 @@ id: how-to-add-runtime-parameters
 title: How to add Runtime parameters
 ---
 
+## Description
+
+### What is Runtime parameters in software testing and why it is necessary to add?
+
+In software testing, runtime parameters refer to the values or settings that can be passed to a test cases during its execution or runtime. These parameters are typically used to control the behaviour of the test cases or to customize its execution based on specific requirements.  
+
+They allow testers or users to influence the execution flow of the software and observe how it behaves under different conditions.  
+
+Runtime parameters are added in software testing to make the testing process more flexible and effective. It enhance testing process by allowing testers to control and customize the software's behaviour during testing.  
+
+Overall, runtime parameters play a crucial role in enhancing the testing process and ensuring comprehensive software testing.  
+
+## Steps
+
+
+
 1. From the **Menu bar**, go to the **Testing** then **Run Tests** option.
 
 ![](/img/how-tos/how-to-add-runtime-parameters/test-run.png)
