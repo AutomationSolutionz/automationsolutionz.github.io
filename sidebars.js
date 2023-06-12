@@ -15,7 +15,7 @@ module.exports = {
       {
         "Testing": [
           'how-tos/how-to-debug-a-test-case',
-          'how-tos/how-to-deploy-a-test-case',    
+          'how-tos/how-to-deploy-a-test-case',
           'how-tos/how-to-create-webhook-for-cicd',
           'how-tos/how-to-generate-execution-report',
           'how-tos/how-to-deploy-manual-test-case',
@@ -25,13 +25,15 @@ module.exports = {
           'how-tos/how-to-create-a-folder-and-feature',
           'how-tos/how-to-export-and-import-test-cases',
           'how-tos/how-to-move-test-cases-to-folder-and-feature',
-          
-
           {
             "Set": [
-            'how-tos/how-to-create-a-test-set',
-            'how-tos/how-to-deploy-a-test-set',
-          ]}
+              'how-tos/how-to-create-a-test-set',
+              'how-tos/how-to-deploy-a-test-set',
+            ],
+            "Version": [
+              'how-tos/how-to-create-a-branch',
+            ]
+          }
         ],
         "Project": [
           'how-tos/how-to-create-a-milestone',
@@ -53,10 +55,6 @@ module.exports = {
           'how-tos/how-to-activate-a-user',
           'how-tos/how-to-deactivate-a-user',
         ],
-        "Version": [
-          'how-tos/how-to-create-a-branch',
-        ]
-    
       },
     ],
     'Zeuz Node': [
