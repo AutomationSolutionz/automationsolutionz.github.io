@@ -63,7 +63,7 @@ function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <Head>
-        <script src="/static/js/command_bar.js">
+        <script src="js/command_bar.js">
         </script>
       </Head>
 
