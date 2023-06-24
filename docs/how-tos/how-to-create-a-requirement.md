@@ -7,21 +7,21 @@ title: How to create a Requirement
 
 ### What is a Requirement in software testing?
 
-In software testing, requirements are specific functions, features, or capabilities that the software must have. They serve as foundation for testing by guiding test coverage, design, evaluation, and traceability.  
+In software testing, **Requirements** are specific functions, features, or capabilities that the software must have. They serve as foundation for testing by guiding test coverage, design, evaluation, and traceability.  
 
-Requirements validate and verify the software's behaviour and support change management. By using requirements effectively, testers ensure that the software meets expectations and satisfies stakeholders.  
+**Requirements** validate and verify the software's behaviour and support change management. By using requirements effectively, testers ensure that the software meets expectations and satisfies stakeholders.  
 
-Requirements serve as the foundation for the software development and testing proccesses, outlining the expectations and criteria for the software's behaviour, performance and quality. They are typically documented in a requirements specification or a functional requirements document.  
+**Requirements** serve as the foundation for the software development and testing proccesses, outlining the expectations and criteria for the software's behaviour, performance and quality. They are typically documented in a requirements specification or a functional requirements document.  
 
 ### What is the importance of Requirement in software testing?
 
-Requirements are highly important in software testing for several reasons. 
+**Requirements** are highly important in software testing for several reasons. 
 * They provide clear objectives and goals for testing, ensuring that testers have a well-defined focus.
-* Requirements guide test coverage, helping testers identify what functionalities and areas need to be tested.
+* **Requirements** guide test coverage, helping testers identify what functionalities and areas need to be tested.
 * They serve as a benchmark for evaluating the actual behaviour of the software during testing and enable traceability between requirements and test cases.
-* Requirements also support effective communication among stakeholders and assist in managing changes in the software.  
+* **Requirements** also support effective communication among stakeholders and assist in managing changes in the software.  
 
-Ultimately, requirements ensure that the software meets expectations, performs as intended, and satisfies the need of stakeholders.  
+Ultimately, **Requirements** ensure that the software meets expectations, performs as intended, and satisfies the need of stakeholders.  
 
 ## Steps
 

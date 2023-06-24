@@ -12,6 +12,8 @@ module.exports = {
     'Guides': [
       // 'how-tos/how-to-create-a-test-case',
       // 'how-tos/how-to-login-to-node',
+      'how-tos/guides',
+      'how-tos/field-definitions',
       {
         "Testing": [
           'how-tos/how-to-debug-a-test-case',
@@ -29,6 +31,7 @@ module.exports = {
             "Set": [
               'how-tos/how-to-create-a-test-set',
               'how-tos/how-to-deploy-a-test-set',
+              'how-tos/how-to-rearrange-test-cases-in-a-set',
             ],
             "Version": [
               'how-tos/how-to-create-a-branch',
@@ -48,7 +51,8 @@ module.exports = {
           'how-tos/how-to-setup-email-notification',
           'how-tos/how-to-create-and-manage-labels',
           'how-tos/how-to-create-a-document-through-details-tab',
-          'how-tos/what-do-you-mean-by-different-fields',
+          'how-tos/how-to-setup-work-schedule',
+          'how-tos/how-to-create-a-label',
         ],
         "User Management": [
           'how-tos/how-to-create-a-user',

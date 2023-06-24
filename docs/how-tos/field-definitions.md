@@ -1,12 +1,17 @@
 ---
-id: what-do-you-mean-by-different-fields
-title: What do you mean by different fields
+id: field-definitions
+title: Field definitions
 ---
 
 ## Status
 
+In software testing, the **Status** refers to the current state or condition of a test case, test execution, defect, or any other testing-related item, indicating its progress, outcome, or position in the testing lifecycle. 
+
+### Different types of possible Status
+
 | Fields  | Explanation  |
 |---|---|
+| *In Progress*  | *In software testing, the "In Progress" status indicates that a test case, test execution, or testing activity is currently ongoing and has not yet been completed.*
 | _Not Started_ |  _This status indicates that the test case has not been initiated or started yet._ |
 | _Started_  |  _This status means that the test case has been initiated and work has begun on executing the test steps or conducting the necessary activities._ |
 | _Overdue_  | _This status indicates that the test case has exceeded the expected completion date or deadline. It implies that the test case should have been completed by now, but it is still pending._  |
@@ -38,6 +43,10 @@ In software testing, the **Owner** refers to the individual or team responsible 
 
 In software testing, the **Description** refers to a concise and clear explanation of the purpose, scope, and details of a test case or test scenario.
 
+## Folder
+
+In software testing, a **Folder** refers to a container or directory used to organize and categorize test cases, test scripts or other testing artifacts for efficient management and navigation.
+
 ## Feature
 
 In software testing, a **Feature** refers to a distinct functionality or capability of a software system that is tested individually to ensure its proper functioning.
@@ -66,6 +75,67 @@ In software testing, the **Start Date** refers to the planned or actual date on 
 ## End date
 
 In software testing, the **End Date** refers to the planned or actual date on which a particular testing activity, phase, or test execution period is expected to be completed or has been completed.
+
+## Automatability
+
+**Automatability** in software testing refers to the extent to which a test case or a specific testing activity can be automated using test automation tools or frameworks.
+
+### Different types of Automatability
+
+|  Automatability   | Description  |
+|---|---|
+|  *Automation* | *Automation in software testing refers to the use of tools, scripts, or frameworks to execute tests, perform actions, and verify expected outcomes without manual intervention.*  |
+| *Easy to Automate*  | *Easy to automate in software testing refers to test cases or scenarios that have clear and well-defined steps, predictable outcomes, and can be efficiently executed using automation tools or frameworks.*  |
+| *Hard to Automate*  | *Hard to automate in software testing refers to test cases or scenarios that involve complex user interactions, non-deterministic behaviour, or require human judgement, making it challenging to replicate and automate accurately.*  |
+| *Not Automatable*  | *Not automatable in software testing refers to test cases or scenarios that cannot be effectively or efficiently automated due to their inherent complexity, reliance on human judgement, or lack of appropriate automation tools or frameworks.*  |
+| *Performance*  | *Performance automatability in software testing refers to the degree to which performance testing activities and performance-related metrics can be automated using specialized tools or frameworks.*  |
+| *Undefined*   | *Undefined automatability in software testing refers to the lack of clear guidelines or criteria to determine whether a particular test case or testing activity can be effectively automated or not.*  |
+
+## Testing Required
+
+**Testing required** in software testing refers to the determination that a particular test or set of tests needs to be executed to validate the functionality, performance, or quality of the software being tested.
+
+## Testing Ignored
+
+**Testing ignored** in software testing refers to a decision or action taken to intentionally skip or neglect the execution of a particular test or set of tests, potentially due to factors such as time constraints, low priority, or perceived insignificance.
+
+## Private
+
+**Private** refers to a visibility setting that restricts access to certain test cases, test suites, or testing artifacts, making them only accessible to authorized individuals or teams rather than the entire testing community.
+
+## Make Private
+
+**Make Private** refers to the action of changing visibility settings of test cases, test suites, or testing artifacts to restricts access, making them accessible only to authorized individuals or teams rather than the entire testing community.
+
+## Rejected
+
+**Rejected** refers to the status of a test case, requirement, or defect that has been reviewed and determined as not meeting the specified criteria or not being valid, and thus, it is not considered for further action or implementation.
+
+## Not Rejected
+
+**Not Rejected** refers to the status of a test case, requirement, or defect that has not been deemed invalid or non-compliant during the review process, indicating that it is considered valid and may require further action or implementation.
+
+## Version
+
+In software testing, a **Version** refers to a distinct iteration or release of a software system or component, typically identified by a specific number or designation, representing a snapshot of the software at a particular point in time.
+
+### Different types of possible Versions
+
+| Version  |  Description |
+|---|---|
+| *Found Version*  | *Found Version refers to the specific version or iteration of the software in which a particular defect or issue was identified or discovered*.  |
+| *Fixed Version*  | *Fixed Version refers to the specific version or iteration of the software in which a reported defect or issue has been resolved or fixed by the development team.*  |
+| *Subversion*  | *Subversion refers to a version control system that tracks changes to source code, allowing teams to manage and collaborate on software development projects effectively.*  |
+| *Verified Version*  | *Verified Version refers to the specific version or iteration of the software that has undergone testing and validation, confirming that it meets the specified requirements and quality standards.*  |
+| *Branch*   |  *Branch refers to a parallel version of the source code or a seperate development line that allows independent development and testing of new features or bug fixes without affecting the main codebase.*  |
+
+
+
+
+
+
+
+
 
 
 

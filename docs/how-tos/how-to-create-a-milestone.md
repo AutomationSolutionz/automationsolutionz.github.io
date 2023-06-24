@@ -7,19 +7,19 @@ title: How to create a Milestone
 
 ### What is a Milestone in software testing?
 
-In software testing, a milestone is a significant event or stage that marks the completion of a specific phase or achievement of a goal. It helps track process, evaluate project status, and ensure testing aligns with the overall timeline.  
+In software testing, a **Milestone** is a significant event or stage that marks the completion of a specific phase or achievement of a goal. It helps track process, evaluate project status, and ensure testing aligns with the overall timeline.  
 
 Example includes completing the test plan, designing test cases, setting up the test environment, starting test execution, completing all planned tests, resolving defects, conducting user acceptance testing, and obtaining final test sign-off. These milestones vary based on the software development life cycle and serve as checkpoints to ensure the software meets quality standards before deployment.  
 
 ### What are the functions of Milestone in software testing?
 
-The functions of Milestone in software testing is to track progress, evaluate project status, and aid decision making. They serve as checkpoints to assess the completion of testing phases and align with the overall timeline.  
+The functions of **Milestone** in software testing is to track progress, evaluate project status, and aid decision making. They serve as checkpoints to assess the completion of testing phases and align with the overall timeline.  
 
-Milestone help ensure software quality, facilitate communication and collaboration among team members and stakeholders, and keep testing efforts in line with project goals. They play a vital role in monitoring progress, assessing readiness for deployment and maintaining project timelines and standards.  
+**Milestone** help ensure software quality, facilitate communication and collaboration among team members and stakeholders, and keep testing efforts in line with project goals. They play a vital role in monitoring progress, assessing readiness for deployment and maintaining project timelines and standards.  
 
 ### Why Milestone is necessary in case of software testing?
 
-Milestones are necessary in software testing for several reasons like:  
+**Milestones** are necessary in software testing for several reasons like:  
 
 * They help track progress
 * Evaluate project status
@@ -29,7 +29,15 @@ By providing specific checkpoints, milestones enable stackholders to assess if t
 
 They also serve as opportunities to evaluate the software's quality, address any defects, and make informed decisions about readiness for deployment.  
 
-Milestones facilitate effective communication and collaboration among team members and ensure that testing efforts allign with project goals. Ultimately, milestones provide structure and clarity to the testing process, ensuring a high-quality software product.
+**Milestones** facilitate effective communication and collaboration among team members and ensure that testing efforts allign with project goals. Ultimately, milestones provide structure and clarity to the testing process, ensuring a high-quality software product.
+
+### Important roles of Milestone in software testing
+
+**Milestones** have important roles in software testing. They track progress, help with test planning and scheduling, managing risks, act as decision points, foster communication, and ensures software quality.
+
+**Milestones** provide markers to evaluate testing phases, set deadlines, and make informed decisions. They facilitate collaboration and transparency among stakeholders and enable the measurement of software quality at different stages. 
+
+Overall, **Milestones** play a vital role in managing project timelimes, managing risks, and ensuring the desired quality of the tested software.
 
 ## Steps
 

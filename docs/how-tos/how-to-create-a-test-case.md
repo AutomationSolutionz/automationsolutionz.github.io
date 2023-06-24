@@ -7,29 +7,29 @@ title: How to create a Test Case
 
 ### What is a Test Case?
 
-A test case is a set of instructions that describe the steps to be taken to verify that a particular software feature or function works as expected. It includes test data, preconditions, expected results and postconditions.
+A **Test Case** is a set of instructions that describe the steps to be taken to verify that a particular software feature or function works as expected. It includes test data, preconditions, expected results and postconditions.
 
-Test cases are beneficial in exhaustive testing-a software testing approach that involves testing every possible data combination.
+**Test cases** are beneficial in exhaustive testing-a software testing approach that involves testing every possible data combination.
 
 ### What are the features of a Test Case?
 
 The feature of a test case includes the following:  
 
-    1. Test Case ID
-    2. Test Case Description
-    3. Test Steps
-    4. Test Data
-    5. Expected Result
+1. Test Case ID  
+2. Test Case Description  
+3. Test Steps  
+4. Test Data  
+5. Expected Result
 
 ### What is the purpose of a Test Case?
 
-The purpose of a test case is to determine if different features within a system are performing as expected and to confirm that the system satisfies all related standards, guidelines, and customer requirements.
+The purpose of a **Test Case** is to determine if different features within a system are performing as expected and to confirm that the system satisfies all related standards, guidelines, and customer requirements.
 
-Test cases help to check if a particular module/software is meeting the specified requirement or not. They determine if a particular module/ software work with a given set of conditions and help to narrow down the software needs and required updates.
+**Test cases** help to check if a particular module/software is meeting the specified requirement or not. They determine if a particular module/ software work with a given set of conditions and help to narrow down the software needs and required updates.
 
 ### Why steps are needed in test cases?
 
-Test cases are the set of steps that need to be done in order to test a specific function of the software. They are developed for various scenarios so that testers can determine whether the software is working the way it should and producing the expected results.
+**Test cases** are the set of steps that need to be done in order to test a specific function of the software. They are developed for various scenarios so that testers can determine whether the software is working the way it should and producing the expected results.
 
 The steps are an essential part of the test case because without them, you can't understand the test cases. When you hand over the tests, it will be easier for the other person to execute those test cases.
 

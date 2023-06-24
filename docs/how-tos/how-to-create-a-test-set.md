@@ -7,15 +7,23 @@ title: How to create a Test Set
 
 ### What is a Test Set?
 
-A test set is a collection of test cases that are grouped together for execution purposes. Test sets are used to organize and execute tests in a logical.
+A **Test Set** is a collection of test cases that are grouped together for execution purposes. Test sets are used to organize and execute tests in a logical.
 
 ### How Test Set works in automated test cases?
 
-In automated testing, test sets are used to organize and execute tests in a logical order. Test sets are created by grouping together related tests into a single unit. This allows testers to execute multiple tests at once and ensures that tests are executed in the correct order. Test sets can be created manually or automatically using automation tools.
+In automated testing, **Test Sets** are used to organize and execute tests in a logical order. **Test Sets** are created by grouping together related tests into a single unit. This allows testers to execute multiple tests at once and ensures that tests are executed in the correct order. Test sets can be created manually or automatically using automation tools.
 
 ### What is the importance of Test set?
 
-Test sets are important in software testing because they help to organize test cases and make it easier to manage them. Test sets can be used to group test cases by feature, priority or any other criteria that is relevant to your testing process. This can help to ensure that all test cases are executed and that any issues are detected as soon as possible. Test sets can also be used to track the progress of testing and to identify areas that require additional testing.
+**Test Sets** are important in software testing because they help to organize test cases and make it easier to manage them. **Test Sets** can be used to group test cases by feature, priority or any other criteria that is relevant to your testing process. This can help to ensure that all test cases are executed and that any issues are detected as soon as possible. Test sets can also be used to track the progress of testing and to identify areas that require additional testing.
+
+### Roles of a Test Set
+
+A **Test Set** serves important roles in software testing. It organizes related test cases, making them easier to manage and execute. It ensures that all relevant test cases are executed together, providing a structured approach to testing. 
+
+The **Test Set** helps achieve test coverage goals and facilities regression testing by including relevant test cases. It aids in test planning, documentation, and reporting, providing valuable insights into test execution progress and results.
+
+Overall, the **Test Set** enhances efficiency, ensures comprehensive testing, and supports effective test management and reporting.
 
 ## Steps
 

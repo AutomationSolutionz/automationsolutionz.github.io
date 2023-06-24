@@ -7,23 +7,23 @@ title: How to setup Test Scheduler
 
 ### What is a Test Schedular in software testing?  
 
-A test schedular is a tool used in software testing to schedule and run tests at predetermined times and frequency. It helps manage large and complex tests by automating the process of scheduling and checking complex processes from one streamlined, intuitive interface.
+A **Test Schedular** is a tool used in software testing to schedule and run tests at predetermined times and frequency. It helps manage large and complex tests by automating the process of scheduling and checking complex processes from one streamlined, intuitive interface.
 
 ### Why is it necessary to setup Test Schedular in software testing?
 
-Setting up a test schedular in software testing is necessary for automation, efficiency, comprehensive test coverage, regression testing, reporting and analysis, CI/CD integration, and global testing. It automates test execution, saving time and improving productivity.  
+Setting up a **Test Schedular** in software testing is necessary for automation, efficiency, comprehensive test coverage, regression testing, reporting and analysis, CI/CD integration, and global testing. It automates test execution, saving time and improving productivity.  
 
 Scheduled tests ensure that all relevant test cases are consistently executed, increasing the chances of detecting defects and regressions.  
 
-Test schedular reports provide insights into software stability and performance. Integration with CI/CD pipelines ensure thorough testing before release. Additionally, scheduling tests based on time zone enables global coverage.  
+**Test Schedular** reports provide insights into software stability and performance. Integration with CI/CD pipelines ensure thorough testing before release. Additionally, scheduling tests based on time zone enables global coverage.  
 
-Overall, a test scheduler enhances the testing process by optimizing resources, providing valuable data, and ensuring high-quality software.
+Overall, a **Test Schedular** enhances the testing process by optimizing resources, providing valuable data, and ensuring high-quality software.
 
 ### What is the importance of setting up Test Schedular?
 
-Setting up a test schedular is important in software testing because it helps to automate the testing process. A test schedular allows you to schedule tests to run automatically at specific times or intervals. This can help to ensure that tests are run consistently and that any issues are detected as soon as possible.  
+Setting up a **Test Schedular** is important in software testing because it helps to automate the testing process. A test schedular allows you to schedule tests to run automatically at specific times or intervals. This can help to ensure that tests are run consistently and that any issues are detected as soon as possible.  
 
-Test schedulars can also help to reduce the time and effort required to run tests manually. They can be used to run tests overnight or during weekends when there are fewer users on the system.
+**Test Schedulars** can also help to reduce the time and effort required to run tests manually. They can be used to run tests overnight or during weekends when there are fewer users on the system.
 
 ## Steps
 

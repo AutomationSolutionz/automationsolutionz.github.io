@@ -15,6 +15,14 @@ Runtime parameters are added in software testing to make the testing process mor
 
 Overall, runtime parameters play a crucial role in enhancing the testing process and ensuring comprehensive software testing.  
 
+### Important roles of Runtime parameters
+
+**Runtime parameters** play important roles in software testing. They enable the configurations of test environment, variation of test data, performance testing, and achieving better test coverage.
+
+**Runtime parameters** also help adapt the software to different environments and aid in debugging and troubleshooting. By adjusting these parameters, testers can control inputs, conditions, and settings during test execution, ensuring comprehensive testing and identification of potential issues.
+
+Overall, **Runtime parameters** enhance the effectiveness and flexibility of software testing processes, enabling testers to validate software behaviour under various scenarios and conditions.
+
 ## Steps
 
 
