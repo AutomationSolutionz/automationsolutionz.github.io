@@ -31,11 +31,16 @@ Overall, the **Test Set** enhances efficiency, ensures comprehensive testing, an
 
 ![](/img/how-tos/how-to-create-a-test-set/set-option.png)
 
-2. Go to the **Test Set** page.
+2. Go to the **Test Set** page.  
+   > Here, the *Test Set* page contains a tab named **All**.  
+   A *Test Set* page is a dedicated page that organizes and manages a collection of related test cases, providing an overview and allowing for efficient execution and tracking of multiple tests.  
+
+   > The *All* tab shows the *Search Set* option and the *Sets* which will be searched on *Search Set* bar.
 
 ![](/img/how-tos/how-to-create-a-test-set/test-set.png)
 
-3. Click on the **+ NEW SET** button.
+3. Click on the **+ NEW SET** button.  
+   > The function of *+ NEW SET* button is to create a new test set, enabling the organization and grouping of test cases for a specific testing scenario or objective.
 
 ![](/img/how-tos/how-to-create-a-test-set/new-set.png)
 

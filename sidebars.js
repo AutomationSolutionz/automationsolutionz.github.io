@@ -13,14 +13,15 @@ module.exports = {
       // 'how-tos/how-to-create-a-test-case',
       // 'how-tos/how-to-login-to-node',
       'how-tos/guides',
+      'how-tos/zeuz-server-sitemap',
       'how-tos/field-definitions',
       {
         "Testing": [
           'how-tos/how-to-debug-a-test-case',
-          'how-tos/how-to-deploy-a-test-case',
+          'how-tos/how-to-deploy-test-cases',
           'how-tos/how-to-create-webhook-for-cicd',
           'how-tos/how-to-generate-execution-report',
-          'how-tos/how-to-deploy-manual-test-case',
+          'how-tos/how-to-deploy-and-execute-manual-test-cases',
           'how-tos/how-to-add-runtime-parameters',
           'how-tos/how-to-setup-test-scheduler',
           'how-tos/how-to-create-a-test-case',
@@ -53,6 +54,7 @@ module.exports = {
           'how-tos/how-to-create-a-document-through-details-tab',
           'how-tos/how-to-setup-work-schedule',
           'how-tos/how-to-create-a-label',
+          'how-tos/how-to-create-a-template',
         ],
         "User Management": [
           'how-tos/how-to-create-a-user',
