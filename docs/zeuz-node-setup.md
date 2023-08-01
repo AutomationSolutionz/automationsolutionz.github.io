@@ -1,18 +1,18 @@
 ---
 id: zeuz-node-setup
-title: Zeuz Node Setup
+title: ZeuZ Node Setup
 sidebar_label: Setup
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This document walks you through the setup process of Zeuz Node. We've
+This document walks you through the setup process of ZeuZ Node. We've
 tried to make sure that as many of the steps of the setup process are
 automated, so that you don't have to go and manually figure things
 out. However, due to differences in how different machines are set up,
 the automated process sometimes may not work out 100% correctly.
 Specially, setting different `PATH` variables for moving components
-required by Zeuz Node.
+required by ZeuZ Node.
 
 ## Video instructions
 
@@ -25,13 +25,13 @@ required by Zeuz Node.
 
 At the start of core setup you have to setup python on your machine.
 Please download and install the latest Python 3.x version available
-from [python.org](https://www.python.org/downloads/). If you're on
-Windows, make sure to download the **32-bit version** and not the
-~~64-bit version~~.
+from [python.org](https://www.python.org/downloads/). You can download
+the last tested (by ZeuZ team) Python version from
+[this link](https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe).
 
 :::info
 
-Zeuz Node requires Python 3 to run. 
+ZeuZ Node requires Python 3 to run. 
 
 :::
 
@@ -90,7 +90,7 @@ you downloaded. Also, if you're on Windows make sure that its the
 
 ### Core setup & node launch 
 
-The core setup is for installing Zeuz Node and some core automation
+The core setup is for installing ZeuZ Node and some core automation
 components. The core setup is the same for all platforms and is less
 likely to fail. The following is a non-exhaustive list of components
 that are installed:
@@ -111,17 +111,17 @@ that are installed:
 
 :::
 
-To start the setup, open the `Zeuz_Python_Node` folder. Double click to run the 
+To start the setup, open the `ZeuZ_Python_Node` folder. Double click to run the 
 `node_cli.py` file which will automatically launch the node & start core setup.
 For Mac/Linux, launch the terminal
 and navigate to the directory where the `node_cli.py` file is
 present and then launch it. As an example, if you've downloaded the
-`Zeuz_Python_Node` folder in your `Downloads` folder and
+`ZeuZ_Python_Node` folder in your `Downloads` folder and
 extracted it there, start the setup by running the following
 commands:
 
 ```bash
-$ cd ~/Downloads/Zeuz_Python_Node/
+$ cd ~/Downloads/ZeuZ_Python_Node/
 $ python node_cli.py
 ```
 
@@ -151,13 +151,13 @@ To start the android setup, run the `ZeuZ_Node_Installer.py` file. Double
 click to open the file on Windows. For Mac/Linux, launch the terminal
 and navigate to the directory where the Zeuz Node installer file is
 present and then launch it. As an example, if you've downloaded the
-`Zeuz_Python_Node_Setup.zip` file in your `Downloads` folder and
+`ZeuZ_Python_Node_Setup.zip` file in your `Downloads` folder and
 extracted it there, start the installer by running the following
 commands:
 
 ```bash
-$ cd ~/Downloads/Zeuz_Python_Node_Setup/
-$ python Zeuz_Node_Installer.py
+$ cd ~/Downloads/ZeuZ_Python_Node_Setup/
+$ python ZeuZ_Node_Installer.py
 ```
 
 ![](/img/android_setup.png)
@@ -182,14 +182,14 @@ select **iOS Setup** only. Then click on `Install`.
 
 ## `Virtual Environment Setup` (Advanced)
 
-You can also install use Zeuz Node by setting up a Python virtual enviornment.
-Doing so requires manually installing the python modules required for Zeuz Node
+You can also install use ZeuZ Node by setting up a Python virtual enviornment.
+Doing so requires manually installing the python modules required for ZeuZ Node
 to run.
 
 ### Linux
 
 ```sh
-$ cd /path/to/Zeuz_Python_Node
+$ cd /path/to/ZeuZ_Python_Node
 $ python3 -m venv .venv
 $ source .venv/bin/activate
 $ pip install -r requirements-linux.txt
@@ -198,7 +198,7 @@ $ pip install -r requirements-linux.txt
 ### Mac
 
 ```sh
-$ cd /path/to/Zeuz_Python_Node
+$ cd /path/to/ZeuZ_Python_Node
 $ python3 -m venv .venv
 $ source .venv/bin/activate
 $ pip install -r requirements-mac.txt
@@ -207,7 +207,7 @@ $ pip install -r requirements-mac.txt
 ### Windows
 
 ```batch
-> cd /path/to/Zeuz_Python_Node
+> cd /path/to/ZeuZ_Python_Node
 > python3 -m venv .venv
 > .venv/Scripts/activate
 > pip install -r requirements-win.txt

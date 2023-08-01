@@ -19,11 +19,6 @@ Scheduled tests ensure that all relevant test cases are consistently executed, i
 
 Overall, a **Test Schedular** enhances the testing process by optimizing resources, providing valuable data, and ensuring high-quality software.
 
-### What is the importance of setting up Test Schedular?
-
-Setting up a **Test Schedular** is important in software testing because it helps to automate the testing process. A test schedular allows you to schedule tests to run automatically at specific times or intervals. This can help to ensure that tests are run consistently and that any issues are detected as soon as possible.  
-
-**Test Schedulars** can also help to reduce the time and effort required to run tests manually. They can be used to run tests overnight or during weekends when there are fewer users on the system.
 
 ## Steps
 
@@ -32,35 +27,57 @@ Setting up a **Test Schedular** is important in software testing because it help
 ![](/img/how-tos/how-to-setup-test-scheduler/run-tests.png)
 
 2. Go to the **Run Tests/Deploy** page.
+   > The *Run Tests/Deploy* page refers to a dedicated interface or platform where test cases are executed or deployed for the purpose of evaluating software functionality and performance.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/run-deploy.png)
 
 3. Click on the **More** option.
+   > The *More* option typically refers to additional or extended functionalities, options, or settings that are not immediately visible but can be accessed to access advanced features or information.
+
+   > Following More options are:
+     * **Run Parameter**
+     * **External Services**
+     * **Schedule**
+     * **Objectives**.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/run-more.png)
 
 4. Click on the **Schedule** option.
+   > The function of the *Schedule* option is to plan and allocate time effectively for executing testing activities within the project timeline.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/schedule-option.png)
 
 5. Go to the **Schedule Run** page.
+   > The *Schedule Run* page refers to a user interface where testers can set specific time and date for the automated or manual execution of test cases and test suites.
+
+   > *Schedule Run* page has two type of tabs:
+     * **Scheduled Runs**
+     * **Environments**.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/schedule-run.png)
 
 6. Click on the **Create Schedule Run** button.
+   > The function of *Create Schedule Run* button is to initiate the process of setting up a scheduled test run, allowing testers to specify the execution time and parameters for automated or manual tests.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/create-schedule.png)
 
 7. Enter the **Schedule Run Title** of the **Schedule Runs** tab.
 8. Click and select one **Set** (**Only one set can be selected**).
+9. Select the **Version**.
+   > Entering the title of *Schedule Run* is necessary for organizing and tracking planned test runs efficiently.
+
+   > In the *Test Scheduler* of software testing, only one *Set* can be selected to ensure a clear and focused execution plan for better test management and tracking.
+
+   > Selecting the *Version* allows for targeted testing against specific software versions, ensuring version-specific validation and tracking of test results.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/schedule-set.png)
 
-9. Select the **Platform** (**Browser**, **Mobile**).
+
+10. Select the **Platform** (**Browser**, **Mobile**).
 
 ![](/img/how-tos/how-to-setup-test-scheduler/schedule-platform.png)
 
-10. Fill up the informations of **Schedule Runs** tab like:
+11. Fill up the informations of **Schedule Runs** tab like:
     * Assigned testers,
     * Send Emails,
     * Run Objective,
@@ -68,19 +85,23 @@ Setting up a **Test Schedular** is important in software testing because it help
     * Partial/exact node name,
     * Run Frequency.
 
-11. Multiple of **Assigned Testers** can be selected.
-12. Multiple of **Testers** can be selected to whom **Emails** will be sent.
+12. Multiple of **Assigned Testers** can be selected.
+13. Multiple of **Testers** can be selected to whom **Emails** will be sent.
+    > Selecting multiple of *Assigned Testers* ensures effective distribution of testing responsibilities, optimizing test coverage, and facilitating collaborative testing efforts.
+
+    > Selection of multiple *Testers* to whom *Emails* will be sent ensures that all relevant team members are informed of the test schedule, updates, and results, promoting effective communication and collaboration.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/schedule-info.png)
 
-13. If the time is set in **Minutes** or in **Hours** then the test set will run after every specified minutes or hours.
+14. If the time is set in **Minutes** or in **Hours** then the test set will run after every specified minutes or hours.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/minute-frquency.png)
 
-14. If the **Day** (Sun, Mon, Tue, Wed, Thur, Fri, Sat) is set and the time is specified for that day then the test set will run at the the time which will be specified for that day.
+15. If the **Day** (Sun, Mon, Tue, Wed, Thur, Fri, Sat) is set and the time is specified for that day then the test set will run at the the time which will be specified for that day.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/day-frequency.png)
 
-15. Click on the **Save Schedule** button.
+16. Click on the **Save Schedule** button.
+    > The *Save Schedule* button is used to save the configured test schedule with all the selected settings and options for future reference and execution.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/save-schedule.png)

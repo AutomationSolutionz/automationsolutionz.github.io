@@ -30,18 +30,36 @@ By leveraging webhooks, **CI/CD** pipelines can be designed to respond to change
 ![](/img/how-tos/how-to-create-webhook-for-cicd/run-ci.png)
 
 2. Go to the **Preset** page.
+   > A *Preset* page refers to a preconfigured or predefined test page that serves as a starting point for conducting specific tests or simulations.  
+
+   > The *Preset* page has a table named *View/Edit Preset* which contain the following informations like:
+    * **Preset Name**
+    * **Created By**
+    * **Modified By**
+    * **Created On**
+    * **Modified On**
+    * **Webhook ID**
+    * **Webhook URL**
+    * **Curl Command**
+    * **Delete**.
 3. Click on the **Create New Preset +** button.
+   > *Create New Preset* button allow users to generate a new preconfigured template or settings for conducting tests or simulations with specific parameters.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/preset-pg.png)
 
 4. Go to the **Deploy Presets** page.
+   > The function of *Deploy Presets* page is to manage and apply preconfigured settings or configurations to relevant test scenarios for streamlined and standerdized testing processes.
 5. Enter the **Preset Name**.
+   > Entering the *Preset Name* is necessary for easy identification and categorization of preconfigured settings, ensuring clarity and organization in managing various test scenarios.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/preset-name.png)
 
 6. Click to **Search Set** of the **Preset Deployment** tab.
 7. Multiple of **Sets** can be added.
 8. Click on the **Search** button.
+   > In the *Preset Deployment* tab, the *Search Set* allows users to filter and display specific preconfigured settings, making it easier to locate and apply the desired presets to relevant test scenarios.
+
+   > Adding *Multiple Sets* is necessary to accommodate various combinations of preconfigured settings, allowing testers to quickly apply different configurations to specific test scenarios and improve testing efficiency.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/search-set.png)
 
@@ -57,6 +75,13 @@ By leveraging webhooks, **CI/CD** pipelines can be designed to respond to change
 
 10. Multiple of **Assigned testers** and **Send report to** can be selected.
 11. To remove any **Assigned testers** or **Send report to**, click on the **Cross sign (X)** button.
+    > *Assigned Testers* refers to the individuals or team members who are granted access to and can utilize specific preconfigured settings for executing tests or simulations.
+
+    > *Send report to* indicates the designated recipents or stakeholders who will receive the test results and findings generated using the preconfigured settings after testing is completed.
+
+    > Selecting multiple of *Assigned testers* and *Send report to* in terms of presets allows for efficient distribution of testing responsibilities and comprehensive communication of test results to various team members and stakeholders, ensuring a coordinated and thorough testing process.
+
+    > Removing any *Assigned testers* and *Send report to* may be necessary to update or reassign testing responsibilities and recipents, ensuring the most relevant and up-to-date individuals receive the test tasks and results.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/remove-report.png)
 

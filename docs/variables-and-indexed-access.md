@@ -3,13 +3,13 @@ id: variables-and-indexed-access
 title: Variables and Indexed Access
 ---
 
-With Zeuz Node, you can store complex variables of any common type - integers,
+With ZeuZ Node, you can store complex variables of any common type - integers,
 floats, strings, lists and dictionaries. You can even nest lists and
 dictionaries inside each other as much as you like and then later access them
 very easily with the indexed syntax that is very similar to Python or most other
 language's array access syntax using `[ ]`.
 
-Any value that is stored in Zeuz Node that is either a valid JSON or Python data
+Any value that is stored in ZeuZ Node that is either a valid JSON or Python data
 type will be automatically converted to ints, floats, strings, dictionaries,
 lists, etc. even if the value is in string (text) format. This means that you
 don't have to worry about converting them back and forth when using the values.
@@ -127,10 +127,10 @@ to get the corresponding value, which is a list.We follow this with index 0 in s
  Next comes `Residents`, followed by another index 0 to access the first person,and finally `Name` to get the name of that person.
 
 Now suppose you don't want to access into specific data instead you want to extract residents name of all apartments.
-you have to use nested loop to access into all the elements of all of the dictionaries. Zeuz
+you have to use nested loop to access into all the elements of all of the dictionaries. ZeuZ
 has a unique feature to perform this in a simple way.
 
-There is one very powerful feature of variable access in Zeuz Node that's not
+There is one very powerful feature of variable access in ZeuZ Node that's not
 covered in this section. It is immensely helpful when you're working with nested
 structures of data (specially in case of REST API and database actions). See the
 next section [Data Collector](data-collector) to learn more about it.

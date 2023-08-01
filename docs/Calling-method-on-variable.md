@@ -3,7 +3,7 @@ id: Calling-method-on-variable
 title: Calling method on variable
 ---
 
-Zeuz node allow you to use any kind of python built-in method on variable. Example: **%|var_name.capitalize()|%**,where `var_name` is the name of the variable . You can also use several methods at a time.
+ZeuZ node allow you to use any kind of python built-in method on variable. Example: **%|var_name.capitalize()|%**,where `var_name` is the name of the variable . You can also use several methods at a time.
 Example:**%|var_name.upper().strip().split(" ")|%**. 
 
 Suppose a string value **Hello ZEUZ Client** is saved into a variable named **var**. We want to extract every word from the variable in lowercase & make a list of it.

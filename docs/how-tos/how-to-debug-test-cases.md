@@ -1,6 +1,6 @@
 ---
-id: how-to-debug-a-test-case
-title: How to Debug a Test Case
+id: how-to-debug-test-cases
+title: How to Debug Test Cases
 ---
 
 ## Description
@@ -15,26 +15,29 @@ Debugging is crucial for writing clean code, minimizing errors, and creating top
 
 ## Steps
 
-1. Go from the **View/Edit Test Case** page and click on the **DEBUG** button.
+1. Go from the **View/Edit Test Case** and click on the **DEBUG** button.
 
-![](/img/how-tos/how-to-debug-a-test-case/tc-debug-icon.png)
+   > The *DEBUG* button is a feature in software development tools that allows developers to pause program execution at specific points, inspect variables, and step through code to identify and fix issues.  
+
+![](/img/how-tos/how-to-debug-test-cases/tc-debug-icon.png)
 
 2. Go to the **Debug Test Case** page.  
 3. Click on **Select Machine** to select the required machine.  
+   > Selecting a machine for debugging test cases is necessary to ensure compatability, reproduce issues, accurately investigate and fix bugs specific to the target environment.
 
-![](/img/how-tos/how-to-debug-a-test-case/select-machine-icon.png)
+![](/img/how-tos/how-to-debug-test-cases/select-machine-icon.png)
 
 4. There are **two** types of step selection  
 5. Either select **All the steps** of the test case or select any **Required steps** that needs to be debug.  
 
 6. Click to **Select All Steps** for the selection of all steps.
 
-![](/img/how-tos/how-to-debug-a-test-case/select-all-steps.png)
+![](/img/how-tos/how-to-debug-test-cases/select-all-steps.png)
 
 7. For the debug of selected steps, click to select the required steps.
 
-![](/img/how-tos/how-to-debug-a-test-case/selected-steps.png)
+![](/img/how-tos/how-to-debug-test-cases/selected-steps.png)
 
 8. Click on the **Debug** button.  
 
-![](/img/how-tos/how-to-debug-a-test-case/debug-button.png)
+![](/img/how-tos/how-to-debug-test-cases/debug-button.png)

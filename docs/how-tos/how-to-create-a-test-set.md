@@ -44,18 +44,41 @@ Overall, the **Test Set** enhances efficiency, ensures comprehensive testing, an
 
 ![](/img/how-tos/how-to-create-a-test-set/new-set.png)
 
-4. Click and **Enter Set Name**.
+4. Click and **Enter Set Name**.  
+   > *Entering a set name* is necessary to provide a clear and descriptive label for the test set, facilitating easy identification, organization, and reference of the associated test cases.
 5. Click on the **OK** button.
 
 ![](/img/how-tos/how-to-create-a-test-set/set-name.png)
 
-6. To add **Test Cases**, click on the required **Set**.
+6. To add **Test Cases**, click on the required **Set**.  
+   > Adding *Test Cases* to a specific *Test Set* is necessary to categorize and group related tests together, ensuring organized execution, tracking, and management of test coverage for specific scenarios or objectives.
 
 ![](/img/how-tos/how-to-create-a-test-set/req-set.png)
 
 7. Click on the **Add** tab of the page. 
 8. Select the required **Test Cases**.
-9. Click on the **ADD SELECTED** button.
+9. Click on the **ADD SELECTED** button.  
+   > The *Add* tab contains a table which have following informations in the column:
+     * **ID**
+     * **Title**
+     * **Feature**
+     * **Folder**
+     * **P (Priority**)
+     * **Type (Manual or Automated)**
+     * **Time**
+     * **CR (Created By)**
+     * **LM (Last Modified By)**
+     * **CRT (Created Time)**
+     * **LMT (Last Modified Time)**
+     * **LR (Last Run)**
+     * **LRS (Last Run Status)**
+     * **Edit**
+     * **Copy**
+     * **Select**.  
+
+    > Selecting required *Test Cases* from a *Test Set* is necessary to focus testing efforts on specific functionalities or areas of the software, optimizing resource utilization and ensuring targeted coverage.  
+
+    > The function of the *ADD SELECTED* button is to include or add the currently selected test cases to the test execution or test plan, allowing for efficient selection and inclusion of desired tests.
 
 ![](/img/how-tos/how-to-create-a-test-set/add-tab.png)
 

@@ -1,11 +1,11 @@
 ---
 id: zeuz-node-usage
-title: Zeuz Node usage
+title: ZeuZ Node usage
 sidebar_label: Usage
 ---
 
-Zeuz Node can be launched via the CLI from any terminal/cmd prompt.
-`node_cli.py` file is the entry point of Zeuz Node.
+ZeuZ Node can be launched via the CLI from any terminal/cmd prompt.
+`node_cli.py` file is the entry point of ZeuZ Node.
 
 ## Command Line Interface
 

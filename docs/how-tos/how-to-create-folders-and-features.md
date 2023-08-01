@@ -1,6 +1,6 @@
 ---
-id: how-to-create-a-folder-and-feature
-title: How to create a Folder and Feature
+id: how-to-create-folders-and-features
+title: How to create Folders and Features
 ---
 
 ## Description
@@ -35,26 +35,35 @@ Overall, **Folders** and **Features** enhance the organization, effectiveness, a
 
 1. From the **Menu bar**, go to the **Testing** then **Search** option.
 
-![](/img/how-tos/how-to-create-a-folder-and-feature/test-search.png)
+![](/img/how-tos/how-to-create-folders-and-features/test-search.png)
 
 2. Click on the **Toggle Tree** button.
+   > The *Toggle Tree* button allow users to expand or collapse the hierarchial test case folders and features for better organization and navigation.
 
-![](/img/how-tos/how-to-create-a-folder-and-feature/toggle-free.png)
+![](/img/how-tos/how-to-create-folders-and-features/toggle-free.png)
 
 3. To create a **Folder**, click on the **Create top level Folder** button.
+   > Creating *Folder* for test cases is necessary for better organization, categorization, and efficient management of test cases, improving overall test suite maintenance.
 
-![](/img/how-tos/how-to-create-a-folder-and-feature/top-folder.png)
+   > The *Create top level Folder* button is used to create a new folder or feature at the top level of the test case hierarchy for better categorization and management.
+
+![](/img/how-tos/how-to-create-folders-and-features/top-folder.png)
 
 4. Click and enter the **Name of the new folder**.
 5. Click on the **OK** button.
+   > Entering the *Name of the new folder* is necessary for clear identification and effective organization of test cases under the appropriate folder.
 
-![](/img/how-tos/how-to-create-a-folder-and-feature/name-folder.png)
+![](/img/how-tos/how-to-create-folders-and-features/name-folder.png)
 
 6. Similarly, to create a **Feature**, click on the **Create top level Feature** button.
+   > Creating *Feature* is necessary for grouping related test scenarios, providing better traceability, and enabling more focused testing efforts on specific functionalities or components.
 
-![](/img/how-tos/how-to-create-a-folder-and-feature/top-feature.png)
+   > The *Create top level Feature* button allow users to create a new feature or functionality at the highest level of the test case hierarchy, enabling better organization and focused testing efforts.
+
+![](/img/how-tos/how-to-create-folders-and-features/top-feature.png)
 
 7. Click and enter the **Name of the Feature**.
 8. Click on the **OK** button.
+   > Entering the *Name of the Feature* is necessary for clear identification, proper categorization, and effective traceability of test scenarios related to that feature.
 
-![](/img/how-tos/how-to-create-a-folder-and-feature/name-feature.png)
+![](/img/how-tos/how-to-create-folders-and-features/name-feature.png)

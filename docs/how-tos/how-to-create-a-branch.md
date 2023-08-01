@@ -41,24 +41,39 @@ On the other hand, **Branches** represent different paths or alternative flows w
 
 ![](/img/how-tos/how-to-create-a-branch/version-branch.png)
 
-2. Go to the **Bundle Version** page.
+2. Go to the **Bundle Version** page.  
+   > The *Bundle Version* refers to a unique identifier assigned to a software package that helps in tracking and managing different versions of the software.  
+
+   > The *Bundle Version* page serves as a reference to track and manage the version history, changes, and updates of a software bundle or package.  
+
+   > Two type of *Branches* are available on the *Bundle Version* page:  
+     * **Assigned Branch**
+     * **Global Branch**.  
+
+   > * **Assigned Branch**: An *Assigned Branch* refers to a specific set of code changes or enhancements made to a software application that is isolated from the main development branch for testing purposes.  
+   > * **Global Branch**: A *Global Branch* refers to the main or central branch in version control where the development codebase is managed and merged with other branches.
 
 ![](/img/how-tos/how-to-create-a-branch/bundle-version.png)
 
-3. Click on the **CREATE BRANCH** button.
+3. Click on the **CREATE BRANCH** button.  
+   > *CREATE BRANCH* button allows for the creation of a new branch from an existing branch, enabling parallel development and isolation of code changes for testing or experimentation.
 
 ![](/img/how-tos/how-to-create-a-branch/create-branch.png)
 
-4. Enter the **Branch Name**.
+4. Enter the **Branch Name**.  
+   > Entering a *Branch Name* is necessary to provide a unique and descriptive identifier for the branch, facilitating organization, collaboration, and tracking of code changes during development and testing processes.
+
 5. Next click on the **OK** button.
 
 ![](/img/how-tos/how-to-create-a-branch/branch-name.png)
 
-6. Created **Branch** will be shown under **Global Branch**.
+6. Created **Branch** will be shown under **Global Branch**.  
+   > The *Global Branch* show all the branches that have been created.
 
 ![](/img/how-tos/how-to-create-a-branch/test-branch.png)
 
-7. To link the created **Branch**, click on the **Plus sign (+)** at the right side of it.
+7. To link the created **Branch**, click on the **Plus sign (+)** at the right side of it.  
+   > Linking the created *Branch* to the *Assigned Branch* ensures that the specific code changes or enhancements being tested are associated with the designated branch, facilitating traceability and accurate tracking of testing efforts.
 
 ![](/img/how-tos/how-to-create-a-branch/link-branch.png)
 
@@ -66,11 +81,13 @@ On the other hand, **Branches** represent different paths or alternative flows w
 
 ![](/img/how-tos/how-to-create-a-branch/link-ok.png)
 
-9. Required **Branch** will be linked under the **Assigned Branch**.
+9. Required **Branch** will be linked under the **Assigned Branch**.  
+   > All the linked *Branches* are displayed in the *Assigned Branch*, providing a consolidated view of the *Branches* associated with specific code changes or enhancements being tested.
 
 ![](/img/how-tos/how-to-create-a-branch/assigned-branch.png)
 
-10. To unlink the required **Branch**, click on the **Minus sign(-)** at the right side of it.
+10. To unlink the required **Branch**, click on the **Minus sign(-)** at the right side of it.  
+> Unlinking a *Branch* from the *Assigned Branch* is necessary to disassociate specific code changes or enhancements from the designated *Branch*, allowing for reassignment or independent testing of the code in a different context.
 
 ![](/img/how-tos/how-to-create-a-branch/unlink-branch.png)
 

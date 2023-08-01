@@ -88,7 +88,7 @@ There are a few things to note here:
    1}{pattern 2}...` can be specified without any spaces (see example
    at the end).
 3. Items in the pattern are comma-separated.
-4. `_all_` as described in the next paragraphs, signals to Zeuz Node
+4. `_all_` as described in the next paragraphs, signals to ZeuZ Node
    to loop through all the values in the list/dictionary.
 
 What's `_all_`? By putting the `_all_` property you're essentially

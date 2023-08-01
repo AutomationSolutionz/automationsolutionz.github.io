@@ -6,7 +6,7 @@ title: Add new actions
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 If any of the hundreds of different actions currently available still does not
-suit your needs, that's okay. You can easily extend Zeuz Node by adding new
+suit your needs, that's okay. You can easily extend ZeuZ Node by adding new
 actions to it or even better, contribute to our repository so that everyone has
 access to them! Follow this guide to learn how you can create a new action very
 easily.
@@ -18,7 +18,7 @@ Our built in actions are called sequential actions.
    You first need to decide which category your new action will belong to. For
    example, if you're trying to write an action for web automation, it should go
    into the Web/Selenium category. Find the "action_declarations"
-   directory/folder inside "Zeuz Node > Framework > Sequential_Actions".
+   directory/folder inside "ZeuZ Node > Framework > Sequential_Actions".
 
     ![](/img/action-declarations.png)
 
@@ -48,7 +48,7 @@ Our built in actions are called sequential actions.
 2. **Write the action**
 
    Time to write the actual code for the action! Common actions live in the
-   "Zeuz node > Framework > Built_In_Automation > Sequential_Actions >
+   "ZeuZ node > Framework > Built_In_Automation > Sequential_Actions >
    common_functions.py" file. All actions have the same code skeleton. Add the
    following code to add our new `hello_name` action.
 

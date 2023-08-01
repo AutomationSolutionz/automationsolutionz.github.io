@@ -17,21 +17,23 @@ module.exports = {
       'how-tos/field-definitions',
       {
         "Testing": [
-          'how-tos/how-to-debug-a-test-case',
+          'how-tos/how-to-debug-test-cases',
           'how-tos/how-to-deploy-test-cases',
           'how-tos/how-to-create-webhook-for-cicd',
           'how-tos/how-to-generate-execution-report',
           'how-tos/how-to-deploy-and-execute-manual-test-cases',
           'how-tos/how-to-add-runtime-parameters',
           'how-tos/how-to-setup-test-scheduler',
-          'how-tos/how-to-create-a-test-case',
-          'how-tos/how-to-create-a-folder-and-feature',
+          'how-tos/how-to-create-test-cases',
+          'how-tos/how-to-create-folders-and-features',
           'how-tos/how-to-export-and-import-test-cases',
           'how-tos/how-to-move-test-cases-to-folder-and-feature',
+          'how-tos/how-to-cancel-a-deploy-run',
+          'how-tos/how-to-delete-a-deploy-log',
           {
             "Set": [
               'how-tos/how-to-create-a-test-set',
-              'how-tos/how-to-deploy-a-test-set',
+              'how-tos/how-to-deploy-test-sets',
               'how-tos/how-to-rearrange-test-cases-in-a-set',
             ],
             "Version": [
@@ -61,9 +63,12 @@ module.exports = {
           'how-tos/how-to-activate-a-user',
           'how-tos/how-to-deactivate-a-user',
         ],
+        "Admin": [
+          'how-tos/how-to-download-actions-from-control-server',
+        ],
       },
     ],
-    'Zeuz Node': [
+    'ZeuZ Node': [
       'zeuz-node',
       'zeuz-node-setup',
       'zeuz-node-usage',
@@ -86,7 +91,7 @@ module.exports = {
       },
       'zeuz-node-changelogs',
     ],
-    'Zeuz Server': [
+    'ZeuZ Server': [
       'zeuz-server',
       'zeuz-api-examples',
       'zeuz-server-changelogs',

@@ -1,10 +1,10 @@
 ---
 id: zeuz-server
-title: Zeuz Server
+title: ZeuZ Server
 sidebar_label: Introduction
 ---
 
-Zeuz Server is the web application - used to create test cases and
+ZeuZ Server is the web application - used to create test cases and
 manage them. Its also a complete Project Management suite, ideal for
 managing the lifecycle of a software project, otherwise known as
 Software Development Lifecycle (SDLC). Some of the features include -

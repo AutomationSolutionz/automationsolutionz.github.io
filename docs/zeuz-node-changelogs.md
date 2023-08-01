@@ -1,6 +1,6 @@
 ---
 id: zeuz-node-changelogs
-title: Zeuz Node Changelogs
+title: ZeuZ Node Changelogs
 sidebar_label: Changelogs
 ---
 
@@ -11,7 +11,7 @@ Release date: **16th July, 2020**
 - [NEW] Webdriver auto updater script (double click to run the script and it'll
   automatically download all the available drivers and place them in PATH properly)
 - [NEW] Python module auto installer (will install missing modules automatically)
-- [NEW] Zeuz CLI (Inside "Zeuz Node > Apps > zeuz-cli" folder)
+- [NEW] ZeuZ CLI (Inside "ZeuZ Node > Apps > zeuz-cli" folder)
   for CLI based deployment (useful in CI/CD)
 - [NEW] Limit log upload to 2k (except for Warning and Errors).
   If more than 2k logs, write to local log file. (paired with server-side changes,

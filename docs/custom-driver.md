@@ -3,7 +3,7 @@ id: custom-driver
 title: Custom Driver
 ---
 
-In Zeuz, to execute automation process, you can use Built_In_Driver where all
+In ZeuZ, to execute automation process, you can use Built_In_Driver where all
 our actions are declared, as well as you can build your own driver inside our
 framework and run your driver along with the Built_In_Driver. This documentation
 is about how you can define your own driver and make it work with the
@@ -39,7 +39,7 @@ A pop up will appear. Then click on the “View/Edit Step” button
 ![](/img/custom-driver/4.jpeg)
 
 A new window will be created. From that window you can see the default driver is
-our Buil_In_Driver. Now we will create our own driver by clicking the “CREATE
+our Built_In_Driver. Now we will create our own driver by clicking the “CREATE
 DRIVER” button.
 
 ![](/img/custom-driver/5.jpeg)

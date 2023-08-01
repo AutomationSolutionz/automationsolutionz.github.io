@@ -129,6 +129,17 @@ In software testing, a **Version** refers to a distinct iteration or release of 
 | *Verified Version*  | *Verified Version refers to the specific version or iteration of the software that has undergone testing and validation, confirming that it meets the specified requirements and quality standards.*  |
 | *Branch*   |  *Branch refers to a parallel version of the source code or a seperate development line that allows independent development and testing of new features or bug fixes without affecting the main codebase.*  |
 
+## Ticket ID
+
+The **Ticket ID** is a unique identifier assigned to a particular test case to track and manage its execution and results.
+
+## Test Case ID
+
+**Test Case ID** is a unique identifier assigned to a specific test case for easy reference, tracking, and documentation purposes.
+
+## Requirement ID
+
+**Requirement ID** refers to a unique identifier assigned to a specific requirement, linking test cases to corresponding software functionalities to ensure comprehensive test coverage.
 
 
 

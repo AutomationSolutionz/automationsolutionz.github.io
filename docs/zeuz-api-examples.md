@@ -1,9 +1,9 @@
 ---
 id: zeuz-api-examples
-title: Zeuz API Examples
+title: ZeuZ API Examples
 ---
 
-Zeuz API provides an external interface for clients to interact with
+ZeuZ API provides an external interface for clients to interact with
 the server and fetch various information. Complete API documentation
 can be found
 [here](https://documenter.getpostman.com/view/10815312/SzfAzSWj).
@@ -20,7 +20,7 @@ exists).
 1. ### Get access token [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#1a9da524-6944-4591-ae61-937b58aa3021)
 
     First, you need to get an access (Bearer) token through which the
-    Zeuz server will be able to identify that any request that you're
+    ZeuZ server will be able to identify that any request that you're
     making is actually *you* and not someone else. For this, you will
     need to provide the server an API Key, which can be found from your
     "Profile > Api Key" Key tab (click Generate if none is present).
@@ -71,10 +71,10 @@ exists).
     `status` can be either **started** or **not_started**.
 
 
-4. ### [OPT] Create on-demand Zeuz Node
+4. ### [OPT] Create on-demand ZeuZ Node
 
-    You can also create an On-demand Zeuz Node that runs in your Zeuz Server.
-    This enables you to run test cases without even having a Zeuz Node running already.
+    You can also create an On-demand ZeuZ Node that runs in your ZeuZ Server.
+    This enables you to run test cases without even having a ZeuZ Node running already.
 
     To acheive this, you first need to get the current user's `uid` and `username`.
     This can be fetched via the following [API call](https://documenter.getpostman.com/view/10815312/SzfAzSWj#8a04ed77-99c4-4ad0-9926-a87f80afdf32)
@@ -106,7 +106,7 @@ exists).
     `username` from this response from the first item of the list.
 
     Next, make the following request to deploy an on-demand node in
-    the Zeuz Server.
+    the ZeuZ Server.
 
     ```bash
     curl --location --request GET 'https://qa.zeuz.ai/Home/ManageMachine/on_demand_node?user_id=10&username=hello'
@@ -124,16 +124,16 @@ exists).
 
     You can now use this `node_id` value in the next step.
     
-5. ### Get Zeuz Node (machine) ID [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#3439a31e-c965-4fbc-83b7-b4727fef7a88)
+5. ### Get ZeuZ Node (machine) ID [[API Doc]](https://documenter.getpostman.com/view/10815312/SzfAzSWj#3439a31e-c965-4fbc-83b7-b4727fef7a88)
 
-   You need to get the Zeuz Node/machine ID to tell the server that
+   You need to get the ZeuZ Node/machine ID to tell the server that
    you want to deploy/run your test set in that particular
-   machine/zeuz node. If you have Zeuz Node installed locally,
+   machine/zeuz node. If you have ZeuZ Node installed locally,
    navigate to the folder where it is installed (usually "Desktop >
-   Zeuz_Node") and open the `node_id.conf` file. The `id` specified
+   ZeuZ_Node") and open the `node_id.conf` file. The `id` specified
    here will become a part of the name of the machine. For example, if
    my username is **foo** and the `id` specified in `node_id.conf`
-   file is set to **cicd**, the name of the Zeuz Node instance will
+   file is set to **cicd**, the name of the ZeuZ Node instance will
    become available as **foo_cicd**.
 
    ```json
@@ -205,10 +205,10 @@ exists).
     - `start_date` and `end_date` [str]: These can be set to any date (you
       can set it to your current date).
     - `branch_version [array(str)]`: Used to specify the version. Can be empty `[]`.
-    - `run_time_settings [array(str)]`: Used to control Zeuz Node behavior. Keep
+    - `run_time_settings [array(str)]`: Used to control ZeuZ Node behavior. Keep
       them as is if you don't want to modify default settings.
     - `loop [int]`: Indicates how many times to run the selected Test Set.
-    - `machine [int]`: Zeuz Node/machine ID (you need to specify the ID and
+    - `machine [int]`: ZeuZ Node/machine ID (you need to specify the ID and
       not the name).
     - `run_time_params [object(object(str))]`: Specify any run time
       parameter. These can be obtained from "Testing > Run Tests". In

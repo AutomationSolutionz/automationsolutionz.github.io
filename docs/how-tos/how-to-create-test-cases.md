@@ -1,6 +1,6 @@
 ---
-id: how-to-create-a-test-case
-title: How to create a Test Case
+id: how-to-create-test-cases
+title: How to create Test Cases
 ---
 
 ## Description
@@ -150,12 +150,12 @@ However, two more parameters are available, one is **GLOBAL** and the other one 
 
 1. From the **Menu bar**, go to the **Testing** then **Create/Edit** option.
 
-![](/img/how-tos/how-to-create-a-test-case/create-test-case.png)
+![](/img/how-tos/how-to-create-test-cases/create-test-case.png)
 
 2. Go to the **Create Test Case** page.
 3. **Enter the title** of the test case.
 
-![](/img/how-tos/how-to-create-a-test-case/create-page.png)
+![](/img/how-tos/how-to-create-test-cases/create-page.png)
 
 4. Fill up the information of **Details** tab like:
 * Status,
@@ -166,54 +166,54 @@ However, two more parameters are available, one is **GLOBAL** and the other one 
 * Labels.
 5. Multiple of **Labels** can also be selected.
 
-![](/img/how-tos/how-to-create-a-test-case/details-tab.png)
+![](/img/how-tos/how-to-create-test-cases/details-tab.png)
 
 6. Click on the **Submit New Test Case** button.
 
-![](/img/how-tos/how-to-create-a-test-case/submit-test-case.png)
+![](/img/how-tos/how-to-create-test-cases/submit-test-case.png)
 
 7. Go to the **View/Edit Test Case** page.
 8. Click on the **Steps** tab.
 
-![](/img/how-tos/how-to-create-a-test-case/steps-tab.png)
+![](/img/how-tos/how-to-create-test-cases/steps-tab.png)
 
 9. To rename the title, click on the right button of the **Test Case Title**.
 
-![](/img/how-tos/how-to-create-a-test-case/rename-button.png)
+![](/img/how-tos/how-to-create-test-cases/rename-button.png)
 
 10. To add a **Step** below, first click on the **Plus sign(+)** of a step then click the **Below** option.
 
-![](/img/how-tos/how-to-create-a-test-case/below-step.png)
+![](/img/how-tos/how-to-create-test-cases/below-step.png)
 
 11. To add a **Step** above, first click on the **Plus sign(+)** of a step then click the **Above** option.
 
-![](/img/how-tos/how-to-create-a-test-case/above-step.png)
+![](/img/how-tos/how-to-create-test-cases/above-step.png)
 
 12. To remove any step, click on the **Cross sign(X)** of that step.
 
-![](/img/how-tos/how-to-create-a-test-case/remove-step.png)
+![](/img/how-tos/how-to-create-test-cases/remove-step.png)
 
 
 13. To change **Verification Point(VP)**, click on the **Yes/No** button under the **VP** column.
 
-![](/img/how-tos/how-to-create-a-test-case/vp-point.png)
+![](/img/how-tos/how-to-create-test-cases/vp-point.png)
 
 14. Click on the required **Step**.
 
-![](/img/how-tos/how-to-create-a-test-case/view-action.png)
+![](/img/how-tos/how-to-create-test-cases/view-action.png)
 
 
 15. To add **Actions**, click on the **+ADD** button and then select the required **Actions**.
 16. Multiple number of **Actions** can be added.
 
-![](/img/how-tos/how-to-create-a-test-case/add-action.png)
+![](/img/how-tos/how-to-create-test-cases/add-action.png)
 
 17. Click to write the **Action** name.
 18. To convert the **Step** from **Global > Local** or **Local > Global**, click on the **GLOBAL** button.
 19. To rename the **Step**, click on the right button of the required **Step**.
 
-![](/img/how-tos/how-to-create-a-test-case/action-name.png)
+![](/img/how-tos/how-to-create-test-cases/action-name.png)
 
 20. Click on the **SAVE** button.
 
-![](/img/how-tos/how-to-create-a-test-case/save-action.png)
+![](/img/how-tos/how-to-create-test-cases/save-action.png)
