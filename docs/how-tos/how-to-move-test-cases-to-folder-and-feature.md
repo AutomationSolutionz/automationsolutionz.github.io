@@ -40,10 +40,25 @@ Additionally, it simplifies test case maintenance, facillitates collaboration, a
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/select-test-cases.png)
 
 3. Click on the **More** option.
+   > The function of the *More* option is to provide access to additional actions, settings, or features related to managing and manipulating the test case.
+
+   > The following *More* options are: 
+   * **Download CSV of description and expection** : The meaning of *Download CSV of description and expectation* is to export the test case details, including action descriptions, and expected outcomes, in CSV format for external analysis or documentation.
+   * **Move to folder** : The meaning of *Move to Folder* is to relocate or reorganize specific test cases into a designated folder for better management and organization. 
+   * **Move to feature**  : The meaning of *Move to Feature* is to reassign or categorize specific test cases under a different functional or feature-related group for improved organization.
+   * **Batch Update**  : The meaning of *Batch Update* is to simultaneously modify or apply changes to a group of selected test cases in a coordinated manner.
+   * **Steps**  : *Steps* refer to the detailed actions or instructions that define how a specific test scenario should be executed and validated.
+   * **Actions**  : *Actions* represent the individual tasks or operations performed to simulate user interactions and validate the functionality of the server.
+   * **Delete Test Cases**  : *Delete Test Cases* refer to remove specific test cases parmanently from the test case repository or management system.
+   * **Sample Test Cases**  : *Sample Test Cases* refer to a subset of predefined test cases used to demonstrate the testing process and provide examples of how to validate specific functionalities.
+   * **Export Selected Test Cases**  : *Export Selected Test Cases* means creating a downloadable file containing the details of the chosen test cases for sharing or backup purposes.
+   * **Import Test Cases**  : *Import Test Cases* involves incorporating external test case data into a test management system for execution and tracking.
+   * **Create Test Cases from JIRA** : *Create Test Cases from JIRA* refers to generating new test cases based on requirements or issues managed within the JIRA project management tool.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/more-option.png)
 
 4. To move **Test Cases** to **Folder**, click on the **Move to folder** button.
+   > Moving *Test Cases* to *Folders* is necessary to organize and categorize them for better management and easier navigation within the test case repository.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/move-folder.png)
 
@@ -60,10 +75,14 @@ Additionally, it simplifies test case maintenance, facillitates collaboration, a
 8. Mention the **Folder** name where **Test Cases** have been moved.
 
 9. Click on the **Search** button.
+   > Checking whether the *Test Cases* have been moved to the *Folders* is necessary to ensure that they are correctly organized and easily accessible for effective test management.
+
+   > Mentioning the name of *Folders* where test cases have been moved is necessary to provide clear documentation and facilitate quick retrieval of organized test cases.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/check-folder.png)
 
 10. To move **Test cases** to **Feature**, click on the **Move to Feature** button.
+    > Moving *Test Cases* to the *Feature* is necessary to align them with specific functionalities, aiding in structured test organization and management.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/move-feature.png)
 
@@ -76,10 +95,12 @@ Additionally, it simplifies test case maintenance, facillitates collaboration, a
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/select-feature-button.png)
 
 13. To check whether the **Test Cases** have been moved or not, click on the **Toggle Tree** button.
+    > The function of the *Toggle Tree* button is to expand or collapse the hierarchial structure for better organization and navigation.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/toggle-free.png)
 
 14. Click on the required **Feature** where the selected **Test Cases** have been moved.
+    > Checking the required *Feature* where test cases have been moved is necessary to ensure accurate categorization and organized management of test cases based on their relevant functionalities.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/check-feature.png)
 

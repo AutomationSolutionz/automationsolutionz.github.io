@@ -1,6 +1,6 @@
 ---
-id: how-to-create-a-test-set
-title: How to create a Test Set
+id: how-to-create-test-sets
+title: How to create Test Sets
 ---
 
 ## Description
@@ -29,7 +29,7 @@ Overall, the **Test Set** enhances efficiency, ensures comprehensive testing, an
 
 1. From the **Menu bar**, go to the **Testing** then **Set** option.
 
-![](/img/how-tos/how-to-create-a-test-set/set-option.png)
+![](/img/how-tos/how-to-create-test-sets/set-option.png)
 
 2. Go to the **Test Set** page.  
    > Here, the *Test Set* page contains a tab named **All**.  
@@ -37,23 +37,23 @@ Overall, the **Test Set** enhances efficiency, ensures comprehensive testing, an
 
    > The *All* tab shows the *Search Set* option and the *Sets* which will be searched on *Search Set* bar.
 
-![](/img/how-tos/how-to-create-a-test-set/test-set.png)
+![](/img/how-tos/how-to-create-test-sets/test-set.png)
 
 3. Click on the **+ NEW SET** button.  
    > The function of *+ NEW SET* button is to create a new test set, enabling the organization and grouping of test cases for a specific testing scenario or objective.
 
-![](/img/how-tos/how-to-create-a-test-set/new-set.png)
+![](/img/how-tos/how-to-create-test-sets/new-set.png)
 
 4. Click and **Enter Set Name**.  
    > *Entering a set name* is necessary to provide a clear and descriptive label for the test set, facilitating easy identification, organization, and reference of the associated test cases.
 5. Click on the **OK** button.
 
-![](/img/how-tos/how-to-create-a-test-set/set-name.png)
+![](/img/how-tos/how-to-create-test-sets/set-name.png)
 
 6. To add **Test Cases**, click on the required **Set**.  
    > Adding *Test Cases* to a specific *Test Set* is necessary to categorize and group related tests together, ensuring organized execution, tracking, and management of test coverage for specific scenarios or objectives.
 
-![](/img/how-tos/how-to-create-a-test-set/req-set.png)
+![](/img/how-tos/how-to-create-test-sets/req-set.png)
 
 7. Click on the **Add** tab of the page. 
 8. Select the required **Test Cases**.
@@ -80,8 +80,9 @@ Overall, the **Test Set** enhances efficiency, ensures comprehensive testing, an
 
     > The function of the *ADD SELECTED* button is to include or add the currently selected test cases to the test execution or test plan, allowing for efficient selection and inclusion of desired tests.
 
-![](/img/how-tos/how-to-create-a-test-set/add-tab.png)
+![](/img/how-tos/how-to-create-test-sets/add-tab.png)
 
 10. Click on the **View** tab to see whether the required **Test cases** are added or not.
+    > Checking whether the required *Test Cases* are added or not is necessary to ensure that the appropriate test coverage is achieved and no essential scenarios are overlooked.
 
-![](/img/how-tos/how-to-create-a-test-set/view-tab.png)
+![](/img/how-tos/how-to-create-test-sets/view-tab.png)

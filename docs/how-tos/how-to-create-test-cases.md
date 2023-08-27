@@ -154,6 +154,9 @@ However, two more parameters are available, one is **GLOBAL** and the other one 
 
 2. Go to the **Create Test Case** page.
 3. **Enter the title** of the test case.
+   > The purpose of the *Create Test Case* page is to define and document specific test scenarios, steps, and expected outcomes for systematic testing and validation.
+
+   > Entering the *Title* of the test case is necessary for clear identification and communication of the test's objective and scope.
 
 ![](/img/how-tos/how-to-create-test-cases/create-page.png)
 
@@ -165,19 +168,51 @@ However, two more parameters are available, one is **GLOBAL** and the other one 
 * Priority,
 * Labels.
 5. Multiple of **Labels** can also be selected.
+   > Filling up the information in the *Details* tab is necessary to provide comprehensive context, objectives, and requirements for the test case's execution and understanding.
+
+   > **Status**: *Status* refers to the current state or condition of a test case, indicating whether it has been executed, passed, failed, is in progress.  
+   > **Automatability**: *Automatability* refers to the extent to which a test case or process can be automated using testing tools or scripts.  
+   > **Folder**: *Folder* refers to a categorized and organized container that groups related test cases together for easier management and navigation.  
+   > **Feature**: *Feature* refers to a specific functionality, component, or aspect of the software that is being tested for its performance and correctness.  
+   > **Priority**: *Priority* refers to the relative importance or order in which test cases should be executed based on their significance in meeting testing goals and objectives.  
+   > **Labels**: *Labels* refers to descriptive tags or markers assigned to categorize and group test cases based on specific characteristics or attributes.
+
+   > Selecting multiple of *Labels* is necessary to efficiently organize and classify test cases into various relevant categories, facilitating better test management, filtering, and identification of specific scenarios.
 
 ![](/img/how-tos/how-to-create-test-cases/details-tab.png)
 
 6. Click on the **Submit New Test Case** button.
+   > The function of *Submit New Test Case* button is to save and record a newly created test case with its defined details and steps for future execution and reference.
 
 ![](/img/how-tos/how-to-create-test-cases/submit-test-case.png)
 
 7. Go to the **View/Edit Test Case** page.
 8. Click on the **Steps** tab.
+   > The purpose of the *View/Edit Test Case* page is to provide a platform to review, update, and manage the test case's information, steps, and attributes.
+
+   > The *Steps* tab contain the following fields in the column of the table:
+     * **Add(+)**
+     * **Steps Number(#)**
+     * **Step**
+     * **Description**
+     * **Expected**
+     * **VP(Verification Point)**
+     * **Duration**
+     * **Remove**.
+
+   > **Add(+)**: The function of *Add(+)* is to insert a new action or step to the test case's execution sequence.
+   > **Steps Number(#)**: *Steps Number(#)* indicates the order and sequence of actions or test steps within the test case.  
+   > **Step**: The function of *Step* is to provide a detailed description of the actions, inputs, and expected outcomes for executing the test case.  
+   > **Description**: *Description* provides additional information or context for understanding and executing each specific test step.  
+   > **Expected**: *Expected* defines the anticipated outcome or result when the corresponding test step is executed correctly.  
+   > **VP(Verification Point)**: The function of *VP (Verification Point)* is to specify checkpoints or criteria to validate and verify whether the actual outcome matches the expected result for a particular test step.  
+   > **Duration**: The function of *Duration* is to record the time taken to execute a specific test step, aiding in performance analysis and optimization.  
+   > **Remove**: The function of *Remove* is to delete or eliminate a specific test step from the test case.
 
 ![](/img/how-tos/how-to-create-test-cases/steps-tab.png)
 
 9. To rename the title, click on the right button of the **Test Case Title**.
+   > Renaming the *Test Case Title* is necessary to accurately reflect the test's purpose, making it easily identifiable and understandable for effective test management and communication.
 
 ![](/img/how-tos/how-to-create-test-cases/rename-button.png)
 
@@ -186,15 +221,18 @@ However, two more parameters are available, one is **GLOBAL** and the other one 
 ![](/img/how-tos/how-to-create-test-cases/below-step.png)
 
 11. To add a **Step** above, first click on the **Plus sign(+)** of a step then click the **Above** option.
+  > The purpose of adding *Steps (Above/Below)* in software testing is to modify the sequence of actions or instructions while preserving the logical flow and integrity of the test case.
 
 ![](/img/how-tos/how-to-create-test-cases/above-step.png)
 
 12. To remove any step, click on the **Cross sign(X)** of that step.
+   > Removing a *Step* is necessary to update or refine the test case's content, ensuring accuracy and relevance of test instructions.
 
 ![](/img/how-tos/how-to-create-test-cases/remove-step.png)
 
 
 13. To change **Verification Point(VP)**, click on the **Yes/No** button under the **VP** column.
+  > If the *Verification Point(VP)* is *On* then the required *Test Case* will show *Failed* or if the *Verification Point(VP)* is *Off* then the required *Test Case* will show *Blocked*.
 
 ![](/img/how-tos/how-to-create-test-cases/vp-point.png)
 
@@ -205,12 +243,18 @@ However, two more parameters are available, one is **GLOBAL** and the other one 
 
 15. To add **Actions**, click on the **+ADD** button and then select the required **Actions**.
 16. Multiple number of **Actions** can be added.
+  > The purpose of adding multiple *Actions* is to comprehensively cover different scenarios and validate diverse aspects of the software's functionality, ensuring thorough testing and accurate results.
 
 ![](/img/how-tos/how-to-create-test-cases/add-action.png)
 
 17. Click to write the **Action** name.
 18. To convert the **Step** from **Global > Local** or **Local > Global**, click on the **GLOBAL** button.
 19. To rename the **Step**, click on the right button of the required **Step**.
+   > Writing the name of *Actions* is necessary for clear and concise communication of the specific steps to be executed during testing, ensuring accurate execution and documentation.
+
+   > Converting *Steps* from *Global to Local* or *Local to Global* is necessary to adjust the scope and context of actions, allowing flexible reuse and maintenance of test case components across different scenarios or levels of testing.
+
+   > Renaming a *Step* is necessary to accurately reflect the action being performed, enhancing clarity and understanding during test execution and analysis.
 
 ![](/img/how-tos/how-to-create-test-cases/action-name.png)
 

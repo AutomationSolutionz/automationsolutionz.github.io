@@ -3,10 +3,10 @@ id: zeuz-server-sitemap
 title: Zeuz Server Sitemap
 ---
 
-![](/img/how-tos/zeuz-server-sitemap/zeuz-server-sitemap.png)
-
 ## Zeuz Features
 ## Testing:
+
+![](/img/how-tos/zeuz-server-sitemap/zeuz-server-sitemap-testing.png)
 
 ### Deployments:
 
@@ -307,6 +307,8 @@ The **Step Performance Set** page contains **All** tab where the table of **Sets
 * Delete.
 
 ## Project:
+
+![](/img/how-tos/zeuz-server-sitemap/zeuz-server-sitemap-project.png)
 
 ### View:
 
@@ -784,6 +786,8 @@ The table of **Active Users** tab contain the following informations in the colu
 * Edit.
 
 ## Admin:
+
+![](/img/how-tos/zeuz-server-sitemap/zeuz-server-sitemap-admin.png)
 
 ### Misc.:
 

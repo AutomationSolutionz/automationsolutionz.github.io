@@ -30,15 +30,19 @@ module.exports = {
           'how-tos/how-to-move-test-cases-to-folder-and-feature',
           'how-tos/how-to-cancel-a-deploy-run',
           'how-tos/how-to-delete-a-deploy-log',
+          'how-tos/how-to-add-actions',
           {
             "Set": [
-              'how-tos/how-to-create-a-test-set',
+              'how-tos/how-to-create-test-sets',
               'how-tos/how-to-deploy-test-sets',
               'how-tos/how-to-rearrange-test-cases-in-a-set',
             ],
             "Version": [
               'how-tos/how-to-create-a-branch',
-            ]
+            ],
+            "Batch Update": [
+              'how-tos/testing/batch-update/test',
+            ],
           }
         ],
         "Project": [
@@ -64,7 +68,7 @@ module.exports = {
           'how-tos/how-to-deactivate-a-user',
         ],
         "Admin": [
-          'how-tos/how-to-download-actions-from-control-server',
+          'how-tos/how-to-update-actions-from-control-server',
         ],
       },
     ],
