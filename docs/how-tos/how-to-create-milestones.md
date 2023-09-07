@@ -1,6 +1,6 @@
 ---
-id: how-to-create-a-milestone
-title: How to create a Milestone
+id: how-to-create-milestones
+title: How to create Milestones
 ---
 
 ## Description
@@ -31,9 +31,7 @@ They also serve as opportunities to evaluate the software's quality, address any
 
 **Milestones** facilitate effective communication and collaboration among team members and ensure that testing efforts allign with project goals. Ultimately, milestones provide structure and clarity to the testing process, ensuring a high-quality software product.
 
-### Important roles of Milestone in software testing
-
-**Milestones** have important roles in software testing. They track progress, help with test planning and scheduling, managing risks, act as decision points, foster communication, and ensures software quality.
+However, **Milestones** have important roles in software testing. They track progress, help with test planning and scheduling, managing risks, act as decision points, foster communication, and ensures software quality.
 
 **Milestones** provide markers to evaluate testing phases, set deadlines, and make informed decisions. They facilitate collaboration and transparency among stakeholders and enable the measurement of software quality at different stages. 
 
@@ -43,19 +41,20 @@ Overall, **Milestones** play a vital role in managing project timelimes, managin
 
 1. From the **Menu bar**, go to **Project** then **Milestone**.
 
-![](/img/how-tos/how-to-create-a-milestone/menu-bar.png)
+![](/img/how-tos/how-to-create-milestones/menu-bar.png)
 
 
 2. Go to the **Milestone** page.
 3. Click on the **+ New Milestone** button.
+   > The function of *+ New Milestone* button is to enable users to create and add a new milestone or significant point in the test execution timeline, aiding in test planning and progress tracking.
 
-![](/img/how-tos/how-to-create-a-milestone/new-milestone.png)
-
+![](/img/how-tos/how-to-create-milestones/new-milestone.png)
 
 4. Go to the **Create/Edit Milestone** page.
 5. Enter the title of **Milestone**.
+   > Entering the title of *Milestone* is necessary to provide a clear and descriptive label for identifying and tracking key points in the test execution process, aiding in effective test management and reporting.
 
-![](/img/how-tos/how-to-create-a-milestone/title-of-milestone.png)
+![](/img/how-tos/how-to-create-milestones/title-of-milestone.png)
 
 
 6. Fill up the information of **Details** tab like:
@@ -67,9 +66,11 @@ Overall, **Milestones** play a vital role in managing project timelimes, managin
 
 7. Click on the **Save** button.
 
-![](/img/how-tos/how-to-create-a-milestone/details-tab.png)
+![](/img/how-tos/how-to-create-milestones/details-tab.png)
 
 8. Modify the informations **(If it is needed)**.
+   > Modifying the information of a *Milestone* is necessary to reflect any changes in project goals, deadlines, or test execution plans, ensuring that milestones remain accurate and aligned with project progress.
+
 9. Click on the **Save** button.
 
-![](/img/how-tos/how-to-create-a-milestone/modify-information.png)
+![](/img/how-tos/how-to-create-milestones/modify-information.png)

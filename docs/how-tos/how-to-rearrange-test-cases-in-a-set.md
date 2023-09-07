@@ -46,11 +46,13 @@ Overall, rearranging test cases enhances the effectiveness and efficiency of sof
 
 2. Go to the **Test Set** page.
 3. Click on the **Edit Order** button.
+   > The function of the *Edit Order* button is to allow users to customize and modify the sequence or arrangement of test cases within the test set according to their preferred order.
 
 ![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/edit-order.png)
 
 4. Go to the **Test Set Reorder** page.
 5. Drag and drop the required **Test Case** in a required position.
+   > Dragging and dropping the required *Test Cases* in a specific position is necessary to precisely organize and control the execution order of test cases within a test set, ensuring a customized and targeted testing approach.
 
 ![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/set-reorder.png)
 

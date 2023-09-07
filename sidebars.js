@@ -31,6 +31,7 @@ module.exports = {
           'how-tos/how-to-cancel-a-deploy-run',
           'how-tos/how-to-delete-a-deploy-log',
           'how-tos/how-to-add-actions',
+          'how-tos/how-to-copy-and-paste-actions',
           {
             "Set": [
               'how-tos/how-to-create-test-sets',
@@ -46,7 +47,7 @@ module.exports = {
           }
         ],
         "Project": [
-          'how-tos/how-to-create-a-milestone',
+          'how-tos/how-to-create-milestones',
           'how-tos/how-to-create-a-team',
           'how-tos/how-to-create-a-project',
           'how-tos/how-to-link-project-to-a-team',
