@@ -141,6 +141,33 @@ The **Ticket ID** is a unique identifier assigned to a particular test case to t
 
 **Requirement ID** refers to a unique identifier assigned to a specific requirement, linking test cases to corresponding software functionalities to ensure comprehensive test coverage.
 
+## Complexity
+
+**Complexity** in test cases refers to the degree of intricacy and difficulty involved in executing a particular test scenario, often associated with the effort required for testing.
+
+Here, One(1) indicating the most **Simplest** test cases.  
+And, Ten(10) indicating the most **Complex** test cases.
+
+## Scheduler
+
+In software testing, a **Scheduler** is a tool or component that manages and automates the execution of test cases and test suites at specified times or intervals.
+
+## Webhook for CI/CD
+
+In the context of CI/CD in software testing, a **Webhook** is an automated notification mechanism that allows one software application to send real-time data to another application when specific events or actions occur, enabling seamless integration and automation of the testing and deployment process.
+
+## Run/CI Presets
+
+In software testing, **Run/CI Presets** refer to predefined configurations or settings that steamline the process of running tests or continuous integration tasks with specific parameters, making it easier to manage and execute testing routines.
+
+## Work Schedule
+
+A **Work Schedule** typically refers to a planned timeline or calendar that outlines when specific testing tasks, activities, or milestones should be completed during a testing project.
+
+## Test Plan
+
+A **Test Plan** in ZeuZ is a collection of presets that can be deployed quickly at a time.
+
 
 
 
