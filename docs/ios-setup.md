@@ -3,7 +3,7 @@ id: ios-setup
 title: How to setup iOS for Automation
 ---
 
-# __Installing Prerequisites for iOS Testing__
+__Installing Prerequisites for iOS Testing__
 
 - Homebrew
 - Nodejs

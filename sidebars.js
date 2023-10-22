@@ -11,6 +11,7 @@ module.exports = {
     ],
     'Setup': ['ios-setup'],
     'Concepts': ['concepts'],
+    'Android setup': ['android-setup'],
     
     'Guides': [
       // 'how-tos/how-to-create-a-test-case',
@@ -67,8 +68,7 @@ module.exports = {
         ],
         "User Management": [
           'how-tos/how-to-create-users',
-          'how-tos/how-to-activate-users',
-          'how-tos/how-to-deactivate-users',
+          'how-tos/how-to-activate-and-deactivate-users',
         ],
         "Admin": [
           'how-tos/how-to-update-actions-from-control-server',
