@@ -63,3 +63,10 @@ we've used `execute python code` action . After that we can get the updated list
 
 The variable may be set or dictionary type as well. User can easily call the python built-in methods for set or dictionary to perform expected actions.
 
+**Clipboard Copy Paste**
+
+`%|clipboard_paste()|%`  
+`%|clipboard_set("Value that I want to copy")|%`
+ 
+**%|clipboard_paste()|%**: This part of the code represents a function or command to paste data from the clipboard. When executed, it would paste the content that is currently stored in the clipboard.  
+**%|clipboard_set("Value that I want to copy")|%**: This part sets a specific text to the clipboard. When executed, it would replace the current clipboard content with the specified text.

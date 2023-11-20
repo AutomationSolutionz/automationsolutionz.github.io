@@ -58,8 +58,9 @@ Overall, a **Scheduler** in the context of test case presets enhances testing ef
 
 :::
 
-6. After filling up the required informations of the **Schedule Details** tab, it will show the required **Details**.
-
+6. After filling up the required informations of the **Schedule Details** tab, it will show the required **Details**.  
+   > Displaying the filled *Schedule Details* provides a confirmation and allow users to review the scheduled parameters before finalizing the setup.
+   
 ![](/img/how-tos/how-to-create-schedule/schedule-details.png)
 
 7. Click on the **SAVE SCHEDULE** button.

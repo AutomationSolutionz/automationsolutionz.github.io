@@ -8,6 +8,7 @@ module.exports = {
       'guide/3-actions',
       'guide/4-debugging',
       'guide/5-runtime-params',
+      'guide/sql-concept',
     ],
     'Setup': ['ios-setup'],
     'Concepts': ['concepts'],
@@ -37,6 +38,7 @@ module.exports = {
           'how-tos/how-to-add-actions',
           'how-tos/how-to-copy-and-paste-actions',
           'how-tos/how-to-create-schedule',
+          'how-tos/how-to-create-test-plans',
           {
             "Set": [
               'how-tos/how-to-create-test-sets',
