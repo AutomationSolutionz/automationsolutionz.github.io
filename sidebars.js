@@ -13,11 +13,12 @@ module.exports = {
     'Setup': ['ios-setup'],
     'Concepts': ['concepts'],
     'Android setup': ['android-setup'],
-    
+
     'Guides': [
       // 'how-tos/how-to-create-a-test-case',
       // 'how-tos/how-to-login-to-node',
       'how-tos/guides',
+      'how-tos/best-practices',
       'how-tos/zeuz-server-sitemap',
       'how-tos/field-definitions',
       {
