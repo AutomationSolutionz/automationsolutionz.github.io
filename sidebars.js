@@ -17,12 +17,11 @@ module.exports = {
     ],
     'Android setup': ['android-setup'],
     'Software Lifecycle Model' : ['software-lifecycle-model'],
-    
-    
     'Guides': [
       // 'how-tos/how-to-create-a-test-case',
       // 'how-tos/how-to-login-to-node',
       'how-tos/guides',
+      'how-tos/best-practices',
       'how-tos/zeuz-server-sitemap',
       'how-tos/field-definitions',
       {
