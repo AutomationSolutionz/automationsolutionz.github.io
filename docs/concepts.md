@@ -15,6 +15,18 @@ A **Bug** is a software defect or error that causes unexpected or incorrect beha
 
 A **Defect** refers to any flaw or issue in a software application that deviates from its intended behavior or specifications.
 
+### Error
+
+An **Error** denotes a coding mistake causing unintended outcomes. It encompasses issues like syntax errors, logic flaws, or design discrepancies, deviating from expected results. Detecting and rectifying these errors is vital for ensuring software reliability. ZeuZ emphasizes the importance of identifying and addressing errors to maintain robust software quality.
+
+### Fault
+
+A **Fault** is a flaw or or imperfection in the code that can trigger errors during software execution. These defects are static anomalies introduced during development, lying dormant until the software is in use. Detecting and fixing faults is essential to prevent errors and uphold the overall quality and reliability of the software. ZeuZ underscores the importance of identifying and rectifying faults for the creation of robust software products.
+
+### Failure
+
+A **Failure** occurs when the software's behavior deviates from the expected results during execution, highlighting discrepancies between actual and intended outcomes. Failures represent tangible manifestations of uncaught errors. Analyzing and addressing these failures is crucial for uncovering and rectifying underlying issues, ultimately improving the software's reliability and performance. ZeuZ underscores the importance of comprehensive testing to minimize failures and ensure the high quality of software products.
+
 ## Concepts related to Quality Assurance:
 
 ### Capability Maturity Model (CMM)
@@ -28,6 +40,52 @@ A **Defect** refers to any flaw or issue in a software application that deviates
 ### Component
 
 **Component** typically refers to a modular and independent part of a software application or system. Components are tested individually to ensure they perform their specific functions correctly before being integrated into the larger software system for further testing.
+
+### Application Programming Interface (API)
+
+**Application Programming Interface (API)** is a set of rules and protocols that allows different software applications to communicate and interact with each other. It defines the methods and data formats that applications can use to request and exchange information, enabling the integration of diverse software systems and services.  
+APIs are fundamental in modern software development, facilitating the development of software components, web services, and the interaction between applications, platforms, and devices.
+
+### Automated Software Quality (ASQ)
+
+**Automated Software Quality (ASQ)** refers to the use of automated tools, processes, and techniques to assess and ensure the quality of software throughout its development lifecycle. This includes automating various testing activities such as functional testing, regression testiong, performance testing, and more.
+
+### Independent Test Group (ITG)
+
+An **Independent Test Group (ITG)** is a dedicated team or unit within a software development or testing organization that is responsible for conducting testing activities autonomously and seperately from the development team. Their primary focus is to assess the quality of the software product objectively, identify defects, and ensure that the software meets its specified requirements and quality standards.  
+Independent Test Groups (ITG) are often used to maintain an impartial perspective and provide unbiased feedback on the software's readiness for release. They may perform various types of testing, including functional, regression, performance, and security testing, among others.
+
+### Debugging
+
+**Debugging** is the process of identifying, isolating, and fixing errors or defects in software code to ensure that a program functions correctly and as intended.  
+Debugging techniques may include analyzing code, setting breakpoints, inspecting variables, and using debugging tools to pinpoint and rectify problems in the code.
+
+### Emulator
+
+An **Emulator** is a software or hardware-based tool that replicates the functionality of one computing environment ( such as hardware platform or operating system ) on another.  
+Emulators are commonly used in software development and testing to simulate the behavior of specific hardware or software environments.
+
+### Code Coverage
+
+**Code Coverage** measures how much of the code is executed by test cases, helping assess testing comprehensiveness.
+
+### Inspection
+
+**Inspection** is a systematic review process where a team of experts, including testers, developers, or domain specialists, thoroughly examines software and its documentation. The aim is to uncover defects, errors, or improvements needed in the software.  
+**Inspections** help detect issues early, ensure quality, improve documentation, enhance communication among team members, and prevent problems down the line. This structured and formal process is vital for maintaining software quality, particularly in critical applications, and plays a crucial role in the software development and testing lifecycle.
+
+### Code Inspection
+
+**Code Inspection**, also know as *code review*, is a systematic examination of source code by software developers to find and fix defects, improve code quality, and ensure adherence to coding standards and design guidelines. It is a manual and collaborative process that helps identify issues early in the development cycle, leading to higher software reliability and maintainability.
+
+### Metric
+
+A **Metric** is a measurable quantity or indicator that provides insight into the quality, efficiency, or effectiveness of the testing process. These metrics help assess various aspects of testing, such as, test coverage, defect density, test execution time, and more, to make data-driven decisions and improvements in the testing process.
+
+### Release Candidate
+
+A **Release Candidate** (often abbreviated as "RC") is a version of a software product that is in the final stages of testing and is close to being released to the public as the official, stable version.  
+**Release Candidates** are considered feature-complete and go through rigorous testing to identify and fix any critical issues, bugs, or showstopper problems. If no significant issues are discovered during this testing phase, the release candidate become the official release.
 
 ## Black Box Testing Definition and Techniques
 
@@ -138,10 +196,15 @@ Different types of *White-Box Testing* techniques are given below:
   **Expected: "Other cases"**
 :::
 
+  In this example, **evaluate_conditions** function has multiple conditions based on the values of **x** and **y**. The test cases cover various scenarios, such as *both positive*, *both negative*, *X positive*, *Y negative*, *X negative*, *Y positive* and *other cases*. This simple example demonstrates the concept of multiple condition testing by systematically testing different combinations to ensure comprehensive coverage of the code logic.
 
-  
+* ### Path Testing
 
-  
+  **Path Testing** is a white-box testing technique that systematically evaluates various paths or routes through a program's source code. It involves viewing the program as a control flow graph and designing test cases to cover different paths through this graph, including both feasible and infeasible paths. The objectives include identifying and testing each feasible path, ensuring coverage of loops and conditional statements under different conditions, and detecting potential logic errors in the program's control flow. Path testing can be complex, especially in programs with loops and conditional statements, and often employs tools like control flow graphs and cyclomatic complexity to guide the testing process.
+
+* ### Loop Testing
+
+  **Loop Testing** is a white-box testing technique specifically designed to assess the behavior of loops within a program. This method focuses on ensuring the correctness of loop initialization, maintenance, and termination under various conditions. Key aspects include testing within the loop body, examining behavior at loop boundaries, assessing scenarios with zero and one iteration, and detecting potential errors associated with loop control variables. Loop testing is vital for identifying and preventing issues related to loops, such as infinite loops or premature exits, and ensuring the robustness of the program's looping constructs.
 
 ## Types of Testing:
 
@@ -165,6 +228,11 @@ Different types of *White-Box Testing* techniques are given below:
 
 **Acceptance Testing** is a type of testing where a system or application is evaluated for its compliance with specified business requirements and whether it meets the criteria for acceptance by stakeholders, typically the end-users or the client. The goal is to ensure that the software functions as intended and is ready for deployment and actual use.
 
+### Alpha Testing
+
+**Alpha Testing** is a form of *Acceptance Testing* conducted by the internal development team or a select group of testers before the software's release to external users. This testing occurs in a controlled environment, often the development or testing environment, and aims to identify and resolve issues before a wider user audience is exposed to the software. The testing team, typically consisting of internal employees, focuses on uncovering bugs, assessing overall functionality, and ensuring the software meets specified requirements.  
+**Alpha Testing** covers the entire software system, and feedback from this phase is valuable for refining and improving the software's stability before it advances to beta testing and reaches external users.
+
 ### Accessibility Testing
 
 **Accessibility Testing** is the process of evaluating a software application or system to ensure that it is accessible and usable by individuals with disabilities, including those with visual, auditory, motor, or cognitive impairments, in accordance with accessibility standards and guidelines.
@@ -176,15 +244,6 @@ Different types of *White-Box Testing* techniques are given below:
 ### Agile Testing
 
 **Agile Testing** is a software testing approach that aligns with the principles and practices of Agile software development. It involves testing and quality assurance activities performed in parallel with the development process, emphasizing collaboration, flexibility, and continuous feedback.
-
-### Application Programming Interface (API)
-
-**Application Programming Interface (API)** is a set of rules and protocols that allows different software applications to communicate and interact with each other. It defines the methods and data formats that applications can use to request and exchange information, enabling the integration of diverse software systems and services.  
-APIs are fundamental in modern software development, facilitating the development of software components, web services, and the interaction between applications, platforms, and devices.
-
-### Automated Software Quality (ASQ)
-
-**Automated Software Quality (ASQ)** refers to the use of automated tools, processes, and techniques to assess and ensure the quality of software throughout its development lifecycle. This includes automating various testing activities such as functional testing, regression testiong, performance testing, and more.
 
 ### Automated Testing
 
@@ -198,31 +257,13 @@ APIs are fundamental in modern software development, facilitating the developmen
 
 **Breadth Testing**, also known as *breadth-first testing*, is a software testing approach that focuses on examining a wide range of features or functionalities in a shallow and comprehensive manner. In breadth testing, the primary objective is to ensure that the basic functionalities of the software or application are working correctly across different areas rather than diving deeply into specific features.
 
-### Code Coverage
-
-**Code Coverage** measures how much of the code is executed by test cases, helping assess testing comprehensiveness.
-
-### Code Inspection
-
-**Code Inspection**, also know as *code review*, is a systematic examination of source code by software developers to find and fix defects, improve code quality, and ensure adherence to coding standards and design guidelines. It is a manual and collaborative process that helps identify issues early in the development cycle, leading to higher software reliability and maintainability.
-
 ### Data Driven Testing
 
 **Data-Driven Testing** is a software testing methodology where test scenarios and test cases are executed using different sets of data to validate the behavior and functionality of a system under various input conditions.
 
-### Debugging
-
-**Debugging** is the process of identifying, isolating, and fixing errors or defects in software code to ensure that a program functions correctly and as intended.  
-Debugging techniques may include analyzing code, setting breakpoints, inspecting variables, and using debugging tools to pinpoint and rectify problems in the code.
-
 ### Dependency Testing
 
 **Dependency Testing** is a type of testing that focuses on identifying and evaluating the dependencies and interactions between different components or modules of a software application. This testing helps uncover issues related to data flow, communication, and synchronization between components, ultimately ensuring the overall reliability and stability of the software.
-
-### Emulator
-
-An **Emulator** is a software or hardware-based tool that replicates the functionality of one computing environment ( such as hardware platform or operating system ) on another.  
-Emulators are commonly used in software development and testing to simulate the behavior of specific hardware or software environments.
 
 ### End-to-End Testing
 
@@ -247,16 +288,6 @@ Exhaustive testing is rarely used in practice, and testers typically employ thei
 **Higher Order Testing** typically refers to a level of software testing that goes beyond the traditional unit, integration, and system testing. It involves testing the interactions and compatibility between different systems, components, or services within a larger software ecosystem.  
 Higher order testing may encompass various types of testing, including system integration testing, end-to-end testing, performance testing, and user acceptance testing, to ensure that the entire software system or ecosystem functions as expected.
 
-### Independent Test Group (ITG)
-
-An **Independent Test Group (ITG)** is a dedicated team or unit within a software development or testing organization that is responsible for conducting testing activities autonomously and seperately from the development team. Their primary focus is to assess the quality of the software product objectively, identify defects, and ensure that the software meets its specified requirements and quality standards.  
-Independent Test Groups (ITG) are often used to maintain an impartial perspective and provide unbiased feedback on the software's readiness for release. They may perform various types of testing, including functional, regression, performance, and security testing, among others.
-
-### Inspection
-
-**Inspection** is a systematic review process where a team of experts, including testers, developers, or domain specialists, thoroughly examines software and its documentation. The aim is to uncover defects, errors, or improvements needed in the software.  
-**Inspections** help detect issues early, ensure quality, improve documentation, enhance communication among team members, and prevent problems down the line. This structured and formal process is vital for maintaining software quality, particularly in critical applications, and plays a crucial role in the software development and testing lifecycle.
-
 ### Integration Testing
 
 **Integration Testing** is a phase where individual components or units of a software application are combined and tested as a group. The primary goal of integration testing is to ensure that these integrated components work together correctly, communicate effectively, and produce the expected results when combined. This testing phase helps identify any interface or interaction issues between different parts of the software and verifies that data flows smoothly between them. It ensures that the integrated system functions as a whole and meets the specified requirements.
@@ -272,10 +303,6 @@ Independent Test Groups (ITG) are often used to maintain an impartial perspectiv
 ### Loop Testing
 
 **Loop testing**, also called *iterative testing*, involves repeatedly executing the same tests to evaluate how software performs during repetitive operations. This technique assesses how well the software handles continuous tasks and ensures it operates efficiently overtime. By conducting loop testing, testers can uncover issues related to resource consumption, memory management, and other potential problems arising from continuous execution.
-
-### Metric
-
-A **Metric** is a measurable quantity or indicator that provides insight into the quality, efficiency, or effectiveness of the testing process. These metrics help assess various aspects of testing, such as, test coverage, defect density, test execution time, and more, to make data-driven decisions and improvements in the testing process.
 
 ### Monkey Testing
 
@@ -305,11 +332,6 @@ Ultimately, performance testing ensures that software can meet performance expec
 ### Regression Testing
 
 **Regression Testing** is a type of software testing that ensures new code changes or updates to an application do not negatively impact the existing functionality. It involves retesting the software to identify any new bugs or unintended side effects that may have been introduced while making changes or additions to the code. The goal is to verify that the application's previous functionality remains intact after modifications.
-
-### Release Candidate
-
-A **Release Candidate** (often abbreviated as "RC") is a version of a software product that is in the final stages of testing and is close to being released to the public as the official, stable version.  
-**Release Candidates** are considered feature-complete and go through rigorous testing to identify and fix any critical issues, bugs, or showstopper problems. If no significant issues are discovered during this testing phase, the release candidate become the official release.
 
 ### Sanity Testing
 

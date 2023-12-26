@@ -8,11 +8,16 @@ module.exports = {
       'guide/3-actions',
       'guide/4-debugging',
       'guide/5-runtime-params',
-      'guide/sql-concept',
     ],
     'Setup': ['ios-setup'],
-    'Concepts': ['concepts'],
+    'Concepts': [
+      'concepts',
+      'sql-concept',
+      'zeuz-features',
+    ],
     'Android setup': ['android-setup'],
+    'Software Lifecycle Model' : ['software-lifecycle-model'],
+    
     
     'Guides': [
       // 'how-tos/how-to-create-a-test-case',
