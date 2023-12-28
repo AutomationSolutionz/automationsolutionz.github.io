@@ -1,6 +1,6 @@
 ---
 id: ios-setup
-title: How to setup iOS for Automation
+title: Setup iOS for automation
 ---
 
 __Installing Prerequisites for iOS Testing__

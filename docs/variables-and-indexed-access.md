@@ -1,6 +1,6 @@
 ---
 id: variables-and-indexed-access
-title: Variables and Indexed Access
+title: Variables and indexed access
 ---
 
 With ZeuZ Node, you can store complex variables of any common type - integers,

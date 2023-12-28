@@ -1,6 +1,6 @@
 ---
 id: android-setup
-title: ZeuZ Android Setup
+title: Setup android for automation
 ---
 
 ## Step 1:
