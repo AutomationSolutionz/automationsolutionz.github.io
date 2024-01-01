@@ -1,6 +1,6 @@
 ---
 id: actions-performance
-title: Performance Actions
+title: Performance actions
 ---
 
 :::tip

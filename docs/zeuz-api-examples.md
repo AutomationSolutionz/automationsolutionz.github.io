@@ -1,6 +1,6 @@
 ---
 id: zeuz-api-examples
-title: ZeuZ API Examples
+title: ZeuZ API examples
 ---
 
 ZeuZ API provides an external interface for clients to interact with

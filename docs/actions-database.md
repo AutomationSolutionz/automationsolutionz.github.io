@@ -1,6 +1,6 @@
 ---
 id: actions-database
-title: Database Actions
+title: Database actions
 ---
 
 import Link from '@docusaurus/Link';

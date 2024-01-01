@@ -55,15 +55,12 @@ By leveraging webhooks, **CI/CD** pipelines can be designed to respond to change
 ![](/img/how-tos/how-to-create-webhook-for-cicd/preset-name.png)
 
 6. Click to **Search Set** of the **Preset Deployment** tab.
-7. Multiple of **Sets** can be added.
-8. Click on the **Search** button.
+7. Click on the **Search** button.
    > In the *Preset Deployment* tab, the *Search Set* allows users to filter and display specific preconfigured settings, making it easier to locate and apply the desired presets to relevant test scenarios.
-
-   > Adding *Multiple Sets* is necessary to accommodate various combinations of preconfigured settings, allowing testers to quickly apply different configurations to specific test scenarios and improve testing efficiency.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/search-set.png)
 
-9. Fill up the **Information** of the **Preset Deployment** tab like:
+8. Fill up the **Information** of the **Preset Deployment** tab like:
  * Assigned testers, 
  * Send report to, 
  * Milestone, 
@@ -73,8 +70,8 @@ By leveraging webhooks, **CI/CD** pipelines can be designed to respond to change
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/preset-information.png)
 
-10. Multiple of **Assigned testers** and **Send report to** can be selected.
-11. To remove any **Assigned testers** or **Send report to**, click on the **Cross sign (X)** button.
+9. Multiple of **Assigned testers** and **Send report to** can be selected.
+10. To remove any **Assigned testers** or **Send report to**, click on the **Cross sign (X)** button.
     > *Assigned Testers* refers to the individuals or team members who are granted access to and can utilize specific preconfigured settings for executing tests or simulations.
 
     > *Send report to* indicates the designated recipents or stakeholders who will receive the test results and findings generated using the preconfigured settings after testing is completed.
@@ -85,6 +82,6 @@ By leveraging webhooks, **CI/CD** pipelines can be designed to respond to change
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/remove-report.png)
 
-12. Click on the **Save** button.
+11. Click on the **Save** button.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/save-preset.png)
