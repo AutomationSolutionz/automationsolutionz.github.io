@@ -9,6 +9,9 @@ module.exports = {
       // 'guide/4-debugging',
       // 'guide/5-runtime-params',
     ],
+    'AI Test Recorder': [
+      'ai-recorder/ai-recorder',
+    ],
     'Guides': [
       // 'how-tos/how-to-create-a-test-case',
       // 'how-tos/how-to-login-to-node',
@@ -92,6 +95,14 @@ module.exports = {
           'actions-common',
           'actions-web',
           'actions-mobile',
+          {
+            'GUI controls': [
+              'actions/gui-controls/action-gui-controls-ocr-get-text-using-image',
+              'actions/gui-controls/action-gui-controls-ocr-get-text-using-text',
+              'actions/gui-controls/action-gui-controls-ocr-get-text-using-coords',
+            ],
+          },
+          // 'actions-desktop',
           'actions-rest-api',
           'actions-performance',
           'actions-database',

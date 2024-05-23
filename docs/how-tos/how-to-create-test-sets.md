@@ -39,14 +39,25 @@ Overall, the **Test Set** enhances efficiency, ensures comprehensive testing, an
 
 ![](/img/how-tos/how-to-create-test-sets/test-set.png)
 
-3. Click on the **+ NEW SET** button.  
-   > The function of *+ NEW SET* button is to create a new test set, enabling the organization and grouping of test cases for a specific testing scenario or objective.
+3. Click on the **Set Filter Settings** button.  
+   > The *Set Filter Settings* button of a test set allows users to customize and apply specific criteria to filter and view particular test cases within the test set based on defined parameters.  
+   Fill up the following informations:
+   * Build From
+      - Milestone
+      - Version
+   * Compare With
+   * Github Repository
+
+![](/img/how-tos/how-to-create-test-sets/settings-button.png)
+
+4. Click on the **+ NEW SET**.  
+   > The *+ NEW SET* button allows users to create a new test set, enabling the organization and management of a collection of related test cases.
 
 ![](/img/how-tos/how-to-create-test-sets/new-set.png)
 
-4. Click and **Enter Set Name**.  
-   > *Entering a set name* is necessary to provide a clear and descriptive label for the test set, facilitating easy identification, organization, and reference of the associated test cases.
-5. Click on the **OK** button.
+5. Enter the **Set Name** and **Set Description**.
+
+6. Click on the **OK** button.
 
 ![](/img/how-tos/how-to-create-test-sets/set-name.png)
 

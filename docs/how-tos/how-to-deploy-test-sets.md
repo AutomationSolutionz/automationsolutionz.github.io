@@ -37,7 +37,7 @@ A *Test Set* page is a dedicated page that organizes and manages a collection of
 3. Click on the **Deploy** button of the required **Test Case**.
    > The function of *Deploy* button in a test set is to initiate the execution of all the test cases within the set, ensuring comprehensive testing coverage and result generation.
 
-![](/img/how-tos/how-to-deploy-test-sets/deploy-set.png)
+![](/img/how-tos/how-to-deploy-test-sets/set-deploy.png)
 
 4. Go to the **Run Tests/Deploy** page.  
    > The "Run Tests/Deploy" page in refers to a dedicated interface or platform where test cases are executed or deployed for the purpose of evaluating software functionality and performance.  
@@ -48,13 +48,12 @@ A *Test Set* page is a dedicated page that organizes and manages a collection of
 
    > The informations of *Deployment* tab needs to be filled up.
     
-
-![](/img/how-tos/how-to-deploy-test-sets/run-test-pg.png)
+![](/img/how-tos/how-to-deploy-test-sets/run-tests-pg.png)
 
 5. Click on the **RUN** button.
    > The function of the *RUN* button is to start the execution of all test cases within the set, allowing for a streamlined and automated testing process.
 
-![](/img/how-tos/how-to-deploy-test-sets/run-set.png)
+![](/img/how-tos/how-to-deploy-test-sets/set-run.png)
 
 6. Select the **Machine**.
 7. Click on the **Deploy** button.

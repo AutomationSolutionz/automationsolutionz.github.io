@@ -31,77 +31,94 @@ Overall, a **Test Schedular** enhances the testing process by optimizing resourc
 
 ![](/img/how-tos/how-to-setup-test-scheduler/run-deploy.png)
 
-3. Click on the **More** option.
+3. Fill up the following informations that are available on **Run Tests/Deploy** page and **Deployment** tab.
+
+   > Following informations are:
+     * **Select Preset**
+     * **Search test cases**
+     * **Assign testers**
+     * **Send report to**
+     * **Milestone**
+     * **Run Objective**
+     * **Version**
+     * **Platform**.
+
+![](/img/how-tos/how-to-setup-test-scheduler/test-deploy.png)    
+
+4. To run *Test cases* or *Test set*, click on the **RUN** button.
+
+![](/img/how-tos/how-to-setup-test-scheduler/run-set.png)
+
+5. Click on the **More** option.
    > The *More* option typically refers to additional or extended functionalities, options, or settings that are not immediately visible but can be accessed to access advanced features or information.
 
    > Following More options are:
      * **Run Parameter**
      * **External Services**
-     * **Schedule**
      * **Objectives**.
 
 ![](/img/how-tos/how-to-setup-test-scheduler/run-more.png)
 
-4. Click on the **Schedule** option.
-   > The function of the *Schedule* option is to plan and allocate time effectively for executing testing activities within the project timeline.
+6. To create **Run Parameter**, click on the **RUN PARAMETER** option.
+   > *Run Parameters* are configuration settings that customize and control the conditions under which tests are executed, enabling flexibility, reusability, and environment specification in software testing.
 
-![](/img/how-tos/how-to-setup-test-scheduler/schedule-option.png)
+![](/img/how-tos/how-to-setup-test-scheduler/run-parameter.png)
 
-5. Go to the **Schedule Run** page.
-   > The *Schedule Run* page refers to a user interface where testers can set specific time and date for the automated or manual execution of test cases and test suites.
+7. Go to the **Run Time Parameters** page.
+   > *Run Time Parameters* in test cases refer to values or settings that can be defined or modified during test execution, enabling dynamic test behavior based on varying conditions or environments.
 
-   > *Schedule Run* page has two type of tabs:
-     * **Scheduled Runs**
-     * **Environments**.
+![](/img/how-tos/how-to-setup-test-scheduler/runtime-parameter.png)
 
-![](/img/how-tos/how-to-setup-test-scheduler/schedule-run.png)
+8. Click on the **Create Run Time Parameter** button.
+   > *Run Time Parameter* allows testers to modify test inputs or configuration settings dynamically during test execution, adapting the tests to various conditions without altering the test code.
 
-6. Click on the **Create Schedule Run** button.
-   > The function of *Create Schedule Run* button is to initiate the process of setting up a scheduled test run, allowing testers to specify the execution time and parameters for automated or manual tests.
+![](/img/how-tos/how-to-setup-test-scheduler/parameter-run.png)
 
-![](/img/how-tos/how-to-setup-test-scheduler/create-schedule.png)
+![](/img/how-tos/how-to-setup-test-scheduler/parameter-name.png)
 
-7. Enter the **Schedule Run Title** of the **Schedule Runs** tab.
-8. Click and select one **Set** (**Only one set can be selected**).
-9. Select the **Version**.
-   > Entering the title of *Schedule Run* is necessary for organizing and tracking planned test runs efficiently.
+9. To add a new external service, click on the **EXTERNAL SERVICES** option.
+   > External services are functionalities or resources utilized by a software application that are provided by entities external to the application itself, such as APIs, databases etc.
 
-   > In the *Test Scheduler* of software testing, only one *Set* can be selected to ensure a clear and focused execution plan for better test management and tracking.
+![](/img/how-tos/how-to-setup-test-scheduler/external-service.png)
 
-   > Selecting the *Version* allows for targeted testing against specific software versions, ensuring version-specific validation and tracking of test results.
+10. Go to the **Add a new external service** page and fill up the following informations and click on the **Save** button.
+    > * **Name**
+    > * **Notification Channel**
+    > * **Authentication type**
+    > * **Authentication data**.
 
-![](/img/how-tos/how-to-setup-test-scheduler/schedule-set.png)
+![](/img/how-tos/how-to-setup-test-scheduler/new-external.png)
 
+11. To delete any *External Service*, click on the **DELETE** button.
 
-10. Select the **Platform** (**Browser**, **Mobile**).
+![](/img/how-tos/how-to-setup-test-scheduler/delete-external.png)
 
-![](/img/how-tos/how-to-setup-test-scheduler/schedule-platform.png)
+12. To create an **Objective**, click on the **OBJECTIVE** option.
 
-11. Fill up the informations of **Schedule Runs** tab like:
-    * Assigned testers,
-    * Send Emails,
-    * Run Objective,
-    * Milestone,
-    * Partial/exact node name,
-    * Run Frequency.
+![](/img/how-tos/how-to-setup-test-scheduler/objective-option.png)
 
-12. Multiple of **Assigned Testers** can be selected.
-13. Multiple of **Testers** can be selected to whom **Emails** will be sent.
-    > Selecting multiple of *Assigned Testers* ensures effective distribution of testing responsibilities, optimizing test coverage, and facilitating collaborative testing efforts.
+13. Go to the **Run Objectives** page.
 
-    > Selection of multiple *Testers* to whom *Emails* will be sent ensures that all relevant team members are informed of the test schedule, updates, and results, promoting effective communication and collaboration.
+![](/img/how-tos/how-to-setup-test-scheduler/run-objectives.png)
 
-![](/img/how-tos/how-to-setup-test-scheduler/schedule-info.png)
+14. To create a new objective, click on the **CREATE NEW OBJECTIVE** button.
 
-14. If the time is set in **Minutes** or in **Hours** then the test set will run after every specified minutes or hours.
+![](/img/how-tos/how-to-setup-test-scheduler/new-objective.png)
 
-![](/img/how-tos/how-to-setup-test-scheduler/minute-frquency.png)
+![](/img/how-tos/how-to-setup-test-scheduler/objective-name.png)
 
-15. If the **Day** (Sun, Mon, Tue, Wed, Thur, Fri, Sat) is set and the time is specified for that day then the test set will run at the the time which will be specified for that day.
+15. To search *Run objectives*, click on the **Search Run Objectives** first, then click on the **SEARCH** option.
 
-![](/img/how-tos/how-to-setup-test-scheduler/day-frequency.png)
+![](/img/how-tos/how-to-setup-test-scheduler/search-objective.png)
 
-16. Click on the **Save Schedule** button.
-    > The *Save Schedule* button is used to save the configured test schedule with all the selected settings and options for future reference and execution.
+16. To select all the objectives, click on the **SELECT ALL** button.
 
-![](/img/how-tos/how-to-setup-test-scheduler/save-schedule.png)
+![](/img/how-tos/how-to-setup-test-scheduler/select-all.png)
+
+17. To delete any objective, first select an objective and then click on the **DELETE** button.
+
+![](/img/how-tos/how-to-setup-test-scheduler/delete-objective.png)
+
+18. To edit any objective, click on the **Edit** button.
+
+![](/img/how-tos/how-to-setup-test-scheduler/edit-objective.png)
