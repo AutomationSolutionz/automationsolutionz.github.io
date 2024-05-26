@@ -9,13 +9,13 @@ This action allows you to extract text based on its position in relation to the 
 
 **Scenario 1:**
 
-![](/img/actions/gui-controls/ocr-get-text-using-image/get_text_image1.JPG)
+![](/img/actions/gui-controls/ocr-get-text-using-image/get_text_image1.jpg)
 
 Suppose you want to extract the Remote Port number shown in the above image, that is 4723. In that case, you have to take a cropped image of only the “Remote Port” part, attach it to the test case and provide the name of the image in the image row (the first row) of the action. As 4723 is on the right side of the right side of Remote Port, the value for the direction row will be right. Finally, you should also provide a variable name in the last row that will hold the extracted text. The text “4723” will be successfully stored in that variable.
 
 **Scenario 2:**
 
-![](/img/actions/gui-controls/ocr-get-text-using-image/get_text_image2.JPG)
+![](/img/actions/gui-controls/ocr-get-text-using-image/get_text_image2.jpg)
 
 Suppose you want to extract the word “SauceLabs” using the image of BrowserStack. Then you have to take a cropped image of the BrowserStack part, attach it to the test case and provide the name of the image in the image row (the first row) of the action. As “SauceLabs” is above the BrowserStack, here the direction will be top. Now the text “SauceLabs” will be stored in the variable you provided in the final row.
 
@@ -41,7 +41,7 @@ But if we set the text gap to 300 then the word “Current Advance” gets align
 
 Suppose you want to extract the word above “SauceLabs”.
 
-![](/img/actions/gui-controls/ocr-get-text-using-image/gap_option_vertical_use.JPG)
+![](/img/actions/gui-controls/ocr-get-text-using-image/gap_option_vertical_use.jpg)
 
 In this case, you are hoping to extract the word “Select Cloud Provide” as it is right above “SauceLabs”. But if you run the action without specifying the text gap option you will see you extracted the word “Remote Port”.
 
