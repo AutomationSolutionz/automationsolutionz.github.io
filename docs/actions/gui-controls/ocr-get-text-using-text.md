@@ -15,7 +15,7 @@ Suppose you want to extract the Remote Port number shown in the above image, tha
 
 **Scenario 2:**
 
-![](/img/actions/gui-controls/ocr-get-text-using-text/get_text_image2.JPG)
+![](/img/actions/gui-controls/ocr-get-text-using-text/get_text_image2.jpg)
 
 Suppose you want to extract the word “SauceLabs” using the text “BrowserStack”. Then you have to provide the text “BrowserStack” in the text row (the first row) of the action. As “SauceLabs” is above the BrowserStack, here the direction will be top. Now the text “SauceLabs” will be stored in the variable you provided in the final row.
 
