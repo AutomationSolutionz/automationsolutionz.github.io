@@ -3,11 +3,6 @@ module.exports = {
     'Get started': [
       'welcome',
       'offline-access',
-      // 'guide/1-introduction',
-      // 'guide/2-first-test-case',
-      // 'guide/3-actions',
-      // 'guide/4-debugging',
-      // 'guide/5-runtime-params',
     ],
     'AI Test Recorder': [
       'ai-recorder/ai-recorder',
@@ -19,6 +14,7 @@ module.exports = {
       'how-tos/best-practices',
       'how-tos/zeuz-server-sitemap',
       'how-tos/field-definitions',
+      'how-tos/easy-ocr-installation',
       {
         "Testing": [
           'how-tos/how-to-debug-test-cases',
@@ -38,6 +34,7 @@ module.exports = {
           'how-tos/how-to-copy-and-paste-actions',
           'how-tos/how-to-create-schedule',
           'how-tos/how-to-create-test-plans',
+          'how-tos/how-to-use-history-page',
           {
             "Set": [
               'how-tos/how-to-create-test-sets',
@@ -66,6 +63,7 @@ module.exports = {
           'how-tos/how-to-create-and-manage-labels',
           'how-tos/how-to-setup-work-schedule',
           'how-tos/how-to-create-templates',
+          'how-tos/how-to-use-version-page',
         ],
         "User Management": [
           'how-tos/how-to-create-users',
