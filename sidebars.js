@@ -12,6 +12,10 @@ module.exports = {
     "AI Test Recorder": [
       "ai-recorder/ai-recorder",
     ],
+    "zAI": [
+      "zAI/zAI-explain-test-case",
+      "zAI/zAI-suggest-step-description-expected",
+    ],
     "Guides": [
       // "how-tos/how-to-create-a-test-case",
       // "how-tos/how-to-login-to-node",
