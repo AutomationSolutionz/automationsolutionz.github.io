@@ -72,6 +72,7 @@ module.exports = {
           "how-tos/how-to-setup-work-schedule",
           "how-tos/how-to-create-templates",
           "how-tos/how-to-use-version-page",
+          "how-tos/how-to-create-a-worklog",
         ],
         "User Management": [
           "how-tos/how-to-create-users",
