@@ -49,9 +49,8 @@ module.exports = {
               "how-tos/how-to-deploy-test-sets",
               "how-tos/how-to-rearrange-test-cases-in-a-set",
             ],
-            "Version": [
-              "how-tos/how-to-create-a-branch",
-            ],
+
+        
             "Batch Update": [
               "how-tos/testing/batch-update/test",
             ],
