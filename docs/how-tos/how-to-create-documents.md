@@ -103,3 +103,55 @@ And at the top right side of the page three buttons are available:
    3. Click on the **SAVE** button.
 
 ![](/img/how-tos/how-to-create-documents/save-details.png)
+
+## Attachment Tab
+
+   The **Attachment** tab allows users to upload and manage related documents directly within the platform for seamless project and test management.
+
+   The **Attachment** tab is essential for document management as it helps users store relevant files, such as test cases, project specifications, or results, within the platform itself. This feature ensures that all necessary documentation is easily accessible to team members, promoting better collaboration, version control, and traceability during project or test management workflows.
+
+### Steps
+
+1. Go to the **Attachment** tab.
+
+![](/img/how-tos/how-to-create-documents/doc-attachment.png)
+
+2. Fill up the information of **Attachment** tab like:
+
+   > * **Attachment Description/Comment**: Writting an attachment description or comment is necessary to provide context and clarity for the attached document. It helps to understand the purpose, relevance, or specific details of the file without needing to open it.
+
+   > * **Attach File (Choose File)**: The **Attach File** function allows users to upload and link relevant documents to tasks or test cases.
+
+![](/img/how-tos/how-to-create-documents/doc-choose.png)
+
+3. Click on the **ADD ATTACHMENT** button to add the choosen file.
+
+![](/img/how-tos/how-to-create-documents/add-attachment.png)
+
+## How to create New Root Folder
+
+### Description
+
+The **New Root Folder** is a primary folder created to organize and store documents or files at the top level of a directory. It serves as the main folder under which other subfolders and files can be created and structured. This helps in categorizing documents, improving file organization, and enabling easier access to relevant files within the platform. It ensures that documents are systematically stored and retrieved efficiently.
+
+### Steps
+
+1. Go to the **Create/Edit Doc** page of an existing document.
+
+![](/img/how-tos/how-to-create-documents/sample-doc.png)
+
+2. Click on the **Create new folder (+)** button.
+
+![](/img/how-tos/how-to-create-documents/root-doc.png)
+
+3. Next go to the **Documents** page.
+
+4. Click on the **+ New Root Folder** button.
+
+![](/img/how-tos/how-to-create-documents/root-folder.png)
+
+5. Give name of the **New Root Folder**.
+
+6. Click on the **OK** button and the folder will be created.
+
+![](/img/how-tos/how-to-create-documents/name-folder.png)
