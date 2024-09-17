@@ -50,3 +50,11 @@ The **Template** Feature streamlines the onboarding process by providing a struc
 5. Click on the **CREATE** button.
 
 ![](/img/how-tos/how-to-create-templates/template-name.png)
+
+6. If it is required to delete a **Template**, then click on the **Delete** button available on the right side of a specific **Template**.
+
+![](/img/how-tos/how-to-create-templates/delete-template.png)
+
+7. Next click on the **OK** button and the required **Template** will be deleted.
+
+![](/img/how-tos/how-to-create-templates/template-ok.png)
