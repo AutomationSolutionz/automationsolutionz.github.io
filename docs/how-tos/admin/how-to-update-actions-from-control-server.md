@@ -3,8 +3,6 @@ id: how-to-update-actions-from-control-server
 title: How to update actions from control server
 ---
 
-## **How to update Actions**
-
 ## Description
 
 ### What is the purpose of downloading actions from control server?
@@ -12,6 +10,8 @@ title: How to update actions from control server
 The purpose of downloading **Actions** in software testing is to provide a centralized repository of predefined **Actions** or test steps. This allows automation tools and testing frameworks on the server to access the latest and most up-to-date **Actions**, ensuring consistency and accuracy in test execution across various projects and teams.
 
 By fetching **Actions** from **Control Server**, testers can streamline their automation efforts, maintain version control, and easily distribute changes or updates to all connected automation instances, promoting efficient and synchronized testing processes.
+
+## **How to update Actions**
 
 ## Steps
 
