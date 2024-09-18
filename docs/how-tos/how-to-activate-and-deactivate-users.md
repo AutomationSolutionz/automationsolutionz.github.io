@@ -5,6 +5,23 @@ title: How to Activate and Deactivate Users
 
 ## How to Activate Users
 
+## When do the Users get activated?
+
+### When an admin activate the user:
+
+An admin activates a user when the user's account is ready for access to the platform, typically after verifying that the registration details are correct and the user meets any required criteria. Activation may occur once the admin has reviewed the account, assigned appropriate roles or permissions, and ensured that the user is authorized to access the system or perform specific tasks within platforms like **ZeuZ**. This process helps maintain security and control over user access.
+
+### Effects of Activation:
+
+**Activation** of a user account has the following effects:
+- **Access to the Platform**: The user gains full access to the system or platform features.
+- **Role Assignment**: The user can assume roles and permissions assigned by the admin, enabling them to perform tasks or access specific modules.
+- **Collaboration**: The user can now collaborate with other team members, participate in projects, and contribute to tasks or tests.
+- **Notification and Alerts**: The user may start receiving relevant notifications, updates, or alerts based on their activities and roles.
+- **Tracking and Reporting**: The user's actions and contributions can be tracked within the system, allowing for reporting and accountability.
+
+**Activation** ensures that users can fully engage with the system while adhering to defined roles and security protocols.
+
 ### Steps
 
 1. From the **Menu bar**, go to the **Admin** then **List** option.
