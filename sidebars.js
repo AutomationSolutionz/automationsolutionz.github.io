@@ -79,6 +79,7 @@ module.exports = {
         ],
         "Admin": [
           "how-tos/admin/how-to-update-actions-from-control-server",
+          "how-tos/admin/how-to-use-accounts-log",
           {
             "SSO": [
               "how-tos/admin/sso/sso-microsoft-entra-id",
