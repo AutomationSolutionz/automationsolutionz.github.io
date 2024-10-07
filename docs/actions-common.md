@@ -228,4 +228,123 @@ This action involves generating a comprehensive list of all sub-folders and file
 This action involves unzipping or extracting the contents of a `.zip` file to a specified destination directory. It begins by identifying the source `.zip` file through its complete filepath and designating the destination directory where the extracted contents will be placed. Once both paths are provided, the system executes the unzip action, reading the compressed contents and preserving the original directory structure as they are extracted.
 
 ### 66. **Folder - Zip**
-Zipping a folder involves compressing its contents into a single archive file, usually with a `.zip` extension, which reduces the overall file size. This process starts with selecting the folder, followed by initiating the zipping action often through a right-click in a file explorer and specifying a destination for the compressed file. The benefits of zipping include saving storage space, simplifying file sharing, and maintaining the original file structure. 
+Zipping a folder involves compressing its contents into a single archive file, usually with a `.zip` extension, which reduces the overall file size. This process starts with selecting the folder, followed by initiating the zipping action often through a right-click in a file explorer and specifying a destination for the compressed file. The benefits of zipping include saving storage space, simplifying file sharing, and maintaining the original file structure.
+
+### 67. **Get All Server Variables**
+To retrieve a global variable saved on the server within a test management tool, one must first identify the variable's name set by another test case under the same run ID. Next, establish a connection to the server and use the appropriate method, such as an API call or a specific library function, to access the variable. After making the request, handle the response by parsing the data and checking for errors. Once obtained, the value can be utilized in the current test case for assertions or other operations.
+
+### 68. **Get Server Variable**
+Running multiple test cases simultaneously is efficiently managed through linked test cases, which connect to a master test case. When the master test case is executed with the "Run linked test cases" option selected, all linked tests run concurrently. To facilitate data sharing, server variables are accessible to all linked tests and the master test case after initialization. These variables can be retrieved using the "get server variable" action; however, if not initialized, they will cause the current test case to fail. Additionally, there is an option to wait for a server variable to be initialized, enhancing the robustness and interconnectivity of the testing process.
+
+### 69. **Get Server Variable and Wait**
+The action to retrieve server variables allows users to obtain multiple server variables simultaneously, streamlining the process of accessing shared data within linked test cases. By specifying a list of variable names in a single request, testers can reduce overhead and enhance efficiency. Upon execution, the server processes the request and returns the specified variables in a structured format, making them easy to access. If any requested variables are not initialized, the action provides feedback on their availability, which is crucial for ensuring test case reliability.
+
+### 70. **Get current desktop path**
+The action to retrieve the current desktop folder path dynamically fetches the specific file path for the user executing the tests and saves it in a shared variable called "Desktop". This allows easy access for other test cases or actions needing to reference the desktop location. By eliminating hard-coded paths, which can vary across user accounts, this action enhances workflow efficiency and simplifies file management in test automation, making interactions with desktop files more straightforward.
+
+### 71. **Get current username of OS**
+The action to retrieve the operating system's username dynamically fetches the name of the user currently logged into the system where the test is running. This username can be stored in a variable for use in various test scenarios, such as logging, validation, or user-specific workflows. The action is compatible across different operating systems, making tests environment-aware and eliminating the need for manual input.
+
+### 72. **Get global variable**
+The action to retrieve or create a global list variable allows access to a global value shared across test cases, regardless of the run session. If the specified global list variable exists on the server, it is retrieved; if not, the action returns an empty list, enabling dynamic initialization. Once set, the global list variable remains stored on the server until removed, making it accessible for all test cases at any time. This ensures persistence, consistency, and reusability across test executions, streamlining the management of shared data for various test scenarios.
+
+### 73. **Get path of current documents**
+The action retrieves the current user's "Documents" folder path and saves it in the shared variable "Documents". This allows test cases to dynamically access the folder location without needing hardcoded paths. Once stored, the path can be reused across multiple test cases during the session for tasks like reading or writing files. This action works across different operating systems and simplifies file management in test automation by providing easy access to the "Documents" folder.
+
+### 74. **Get the path of attached file**
+This action retrieves the file path of a file attached to a test step and saves it in a shared variable, making it accessible for use by other test cases or steps within the same session. By automatically capturing and storing the file path, this action streamlines file management, allowing test cases to easily reference or manipulate the file without manual input. It enhances automation by ensuring consistent access to the attached file throughout the test execution.
+
+### 75. **INI file - Add a line (using disk location)**
+This action allows users to modify an `.ini` configuration file by specifying its exact disk location. The file is updated by appending or modifying a line with the desired settings. It ensures that changes are made and saved correctly, providing direct file access without needing uploads. This simplifies configuration updates during testing, enhancing flexibility and efficiency in managing settings stored in `.ini` files.
+
+### 76. **INI file - Add a line (using file attachment)**
+This action enables users to add a line to an `.ini` file, which is a configuration file used to store settings. Users have two options for providing the `.ini` file: they can specify its disk location or attach the file directly. When choosing to attach file, the action processes the provided `.ini` file, allowing for the insertion of new configuration details. This flexibility facilitates easier updates and modifications to configuration settings, making it particularly useful in various automation and testing scenarios.
+
+### 77. **INI file - Bypass action Add a line**
+This action enhances error handling within a test case by executing a specified bypass action whenever a failure occurs. Defined at the beginning of the test case, the bypass action is triggered if the original action fails, such as, when unable to add a line to an `.ini` file. If the bypass action succeeds, it allows for a retry of the original action. This mechanism streamlines error recovery, minimizes disruptions from temporary failures, and improves the overall efficiency of the testing process.
+
+### 78. **INI file - Change line value (using disk location)**
+This action allows users to add a line to an `.ini` file by specifying its disk location, providing the exact file path where the file is stored on the system. By directly modifying the specified `.ini` file, the action appends or updates a line with the necessary configuration details. This approach streamlines the management of configuration settings, enabling efficient updates without requiring file uploads or attachments, and enhances the flexibility of configuration management.
+
+### 79. **INI file - Change line value (using file attachment)**
+This action allows users to add a line to an `.ini` file by providing the file as an attachment rather than specifying a disk location. By uploading the `.ini` file directly, users can easily insert new configuration details. This approach simplifies the process of updating configuration settings, making it convenient for those without access to the file path or who prefer direct uploads. Overall, this action enhances flexibility in managing `.ini` files and facilitates easier modifications.
+
+### 80. **INI file - Delete a line (using disk location)**
+This action enables users to delete a line from an `.ini` file by specifying its disk location, requiring the exact file path where the file stored on the system. By using this action, users can identify and remove the specified line within the `.ini` file, streamlining the management of configuration settings. This functionality is particularly useful for eliminating outdated or unneccessary configurations, thereby enhancing the overall efficiency of the configuration management process.
+
+### 81. **INI file - Delete a line (using file attachment)**
+This action allows users to delete a specific line from an **INI** file, a simple text-based format used for application configuration settings. Users can attach the **INI** file for precise modifications, ensuring the correct file is accessed. It is essential to specify the exact line to avoid losing important information. Creating a backup before making changes is recommended to maintain the integrity of the configuration and to validate that the application continues to function properly after the deletion.
+
+### 82. **INI file - Read name and value**
+This action enables users to read key-value pairs from an **INI** file, a format commonly used for configuration settings. The extracted names and values are stored in a shared variable named `dic_name`, allowing for easy access and manipulation. This feature is useful for applications that require dynamic access to configuration settings without manual parsing. Users should ensure the **INI** file is well-formed and accessible, and confirm that the variable name does not conflict with existing ones to avoid errors.
+
+### 83. **Image compare**
+The action of comparing two images, A and B, assesses their similarity by generating a score between 0.0 (0% similarity) and 1.0 (100% similarity). A score of 0.75 indicates the images are at least 75% similar. Users can provide either the full path to the images or reference them as attachments using a specific format, such as `%|a.png|%`, allowing ZeuZ to automatically retrieve and compare the images. This automated process is valuable in quality assurance, ensuring efficient and objective evaluation of visual elements within software applications.
+
+### 84. **Log error**
+The action of adding error notifications to a log through sequential actions is essential for effective error handling in software testing. This process involves checking for errors after each test step, and if an error is detected, logging a notification that includes key details such as the timestamp, error type, and contextual information. By automating this logging, errors are consistently tracked, enabling quick identification and resolution of issues, ultimately enhancing the quality and reliability of the software.
+
+### 85. **Log warning**
+The action of adding warnings to a log using sequential actions is crucial for monitoring software quality during testing. This process involves executing test steps and checking for conditions that may indicate potential issues, leading to the logging of warnings. Each warning includes essential details such as the timestamp, warning type, and relevant contextual information. By automating this logging, warnings are systematically recorded without manual intervention, enabling teams to address them promptly.
+
+### 86. **Parse and Modify date time**
+The action of parsing and modifying date and time from a string allows users to extract and manipulate specific components such as years, months, days, hours, minutes, and seconds. Users can add or subtract time by specifying optional parameters, such as `hours | optional parameter | +2` to add 2 hours   
+or `hours | optional parameter | -2` to subtract 2 hours. It is essential to define the current format of the provided date-time string, as well as an optional target format for conversion. 
+A common format might be `%Y-%m-%d`, which users can customize with different seperators or spacing.
+
+### 87. **Read Text File**
+The action allows users to extract text from various file formats, such as `.txt`, `.pdf`, and `.json`, and store it in a specified variable within the ZeuZ environment. Users provide the file path, which can be a relative or absolute path, and use the `read text file` common action to save the content as a string in a variable. If the content needs to be saved as JSON, an optional parameter called `read as json` must be included, allowing the user to specify that the content should be treated as a JSON object. This functionality enhances data handling in automation workflows, making it easier to manipulate and utilize text data.
+
+### 88. **Read from YAML file**
+This action reads data from a YAML file and saves it in a variable as a list-dict format. Users can specify the file path directly, for example, `c:\Users\ASUS\Downloads\devices.yaml`, or upload the file as an attachment, referencing it with `%| |%` symbols, like `%|devices.yaml|%`. Additionally, users can use the tlide (`~`) to reference the home directory for universal compatibility, such as `~/Desktop/demo.yaml`. The YAML data is then stored in the variable for easy manipulation in automation workflows.
+
+### 89. **Read from a CSV file**
+This action reads data from a CSV file and saves it in a variable as a list of dictionaries. Users can provide the CSV file path directly (e.g., `c\Users\ASUS\Downloads\devices.csv`), upload it as an attachment using `%| |%`, or reference the home directory with `~` (e.g., `~/Desktop/demo.csv`). The **delimeter** specifies how values are seperated (e.g., comma, semicolon, tab). The data is structured as a "list of dictionaries", where the first row serves as the key and subsequent rows as values for easy manipulation in automation workflows.
+
+### 90. **Remove / Delete global variable**
+This action removes a global variable that is stored on the server. Global variables are shared across different workflows and environments within the system, and deleting them ensures they are no longer accessible in any automation processes. By executing this action, users can clean up unnecessary or outdated global variables.
+
+### 91. **Replace String**
+This action allows users to replace or remove specific characters or substrings within a main string. The user provides the **source** string, identifies the **find** substring to be removed, and specifies a **replace with** substring. If left empty, the found substring will be removed. For example, given the string `%|paragraph|% = "John is 5 years old. John started going to school"`, replacing "John" with "Mike" results in `%|new_paragraph|% = "Mike is 5 years old. Mike started going to school"`. This action is useful for modifying strings dynamically in automation workflows.
+
+### 92. **Run Macro in Excel**
+This action runs a macro in an Excel file based on the provided file path and macro name. Users specify the **Excel file path** where the macro is stored and the **macro name** to be executed. Once triggered, the macro performs the predefined tasks within the Excel file, automating processes such as repetitive tasks or complex calculations.
+
+### 93. **Run or Execute command**
+This action enables users to execute any arbitrary commands or programs on their system. The result of the command is returned in a structured format, containing the **return code** (indicating success or failure) and the output (the result of the executed command). Users can also run multiple commands in sequence and specify how the commands are seperated. This action is useful for automating system-level tasks or executing scripts directly within an automation workflow.
+
+### 94. **Save time**
+This action captures the current time and stores it in a shared variable named **time**. This allows users to reference and use the saved time later for comparisons or other time-based operations within workflows. It is helpful for tracking when specific action occur, enabling accurate time comparisons or validations in future steps of an automation process.
+
+### 95. **Search and save text**
+This action performs a search on a given text to find matches based on a specified pattern and saves the results in a variable. If multiple matches are found, they can be accessed using indexing, like `%|save[x]|%`. For instance, searching for "hello" in the text "hello there, how are you?" will save "hello" in the variable. Users can also use regular expressions, like `"\d+[-]?\d+"`, to extract numbers from a text. For example, searching `"Hello 67890 none 9030-49"` will return `'67890'` and `'9030-49'`, both saved as strings. Further actions can convert these results into other formats like integers.
+
+### 96. **Set Server Variable**
+The "Set Server Variable" action initializes a variable that can be shared across a test case and its linked test cases during execution, enabling seamless data sharing. Once set, the server variable remains active until all linked test cases are completed, allowing dynamic coordination between them. However, if the variable is set at a specific step, it will only become accessible to other linked test cases after after that step is fully executed This ensures the variable is available on after its initialization is complete.
+
+### 97. **Set global variable**
+Setting a global variable allows users to create a variable stored on the **ZeuZ** server, making it accessible to multiple test cases running under the same Run ID. This action facilitates data sharing among tests, enabling them to fetch and utilize the global variable during execution. It is particularly useful for maintaining consistency in common data, such as configuration settings or results from previous tests, thereby enhancing the efficiency and coordination of automated testing workflows.
+
+### 98. **Set sleep globally after or before any action**
+The **Sleep Setting** action allows users to define wait times before or after specific interactions in a test case, accommodating slow website performance. This action ensures that test steps have sufficient time to execute by introducing consistent delays. For example, a user can set a 2.5-second delay after every web action by adding a row with `web | post sleep | 2.5`, or introduce a 1.5-second delay both before and after all windows actions by using `windows | pre post sleep | 1.5`. Overall, this action helps facilitate smoother test execution by managing the timing of interactions.
+
+### 99. **Skip Test Cases**
+The **Skip Test Cases** action allows users to bypass the execution of specific test cases within the same run, marking their status as "skipped". This action is useful when certain tests are not relevant to the current execution context, such as when prerequisites are unmet. By selectively skipping test cases, users can focus on more relevant tests while maintaining a clear record of those not executed. 
+
+### 100. **Split string**
+The **Split String** action allows users to divide a given string into multiple components based on a specified seperator or expression. This action stores the results in a variable as a list, enabling users to parse data or handle formatted input effectively. After splitting the string, individual items can be accessed using a specific syntax, such as `%|variableName[0]|%` to retrieve the first item.
+
+### 101. **Start Timer**
+The **Timer Action** manages the timing of test case execution using specified values. A value of '5' indicates that the timer will start after a delay of 5 seconds, meaning the action will trigger once this period has elapsed. Conversely, a negative value, such as '-5', signifies that the timer started 5 seconds ago, accounting for the elapsed time. This action is useful for synchronizing events in testing scenarios, allowing for precise delays and tracking the duration since a specific action was initiated.
+
+### 102. **Take Screenshot**
+The **Take Screenshot** action allows users to capture an image of the current application or webpage during test execution. This action helps document the state of the application at specific points, which is useful for debugging, validating test results, or tracking test progress. The captured screenshot is stored as part of the test results and can be reviewed for analysis or reporting.
+
+### 103. **Testcase Exit**
+The **Testcase Exit** action allows users to immediately stop a test case and set its status to "passed", "failed", or "skipped" based on the user's choice. This action is useful when execution needs to stop prematurely due to errors or when certain conditions are met, ensuring control over the final outcome even if all test steps are not completed. It provides flexibility in managing unexpected situations and determining test results.
+
+### 104. **Validate Schema**
+It validates a given JSON/Python data object against the expected JSON schema. If compare fails, it will exit the steps with Fail. However, in some cases, we may have a dynamic JSON output from a REST, DB or other types of action. This action can be used to validate the structure/schema of the output of our call. We can either do a partial match or exact match.
+
+### 105. **Validate order**
+This action verifies whether a given list of numbers or strings is in the correct order. Users provide a simple list, and the action checks if the elements are arranged sequentially, either in ascending or descending order. If the list is not sorted as expected, the test will fail. This action is useful for validating the order of data within test cases.
