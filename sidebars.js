@@ -109,7 +109,7 @@ module.exports = {
           "actions-web",
           "actions-mobile",
           {
-            "web":[
+            "Web":[
               "actions/web/go-to-link",
             ],
             "GUI controls": [

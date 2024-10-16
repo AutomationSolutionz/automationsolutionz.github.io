@@ -100,9 +100,9 @@ Find Chrome profile path here,
 Find the Profile Path:
 
 Chrome profiles are typically stored in:
-- Windows: C:\Users\Username\AppData\Local\Google\Chrome\User Data\<ProfileName>
-- macOS: /Users/Username/Library/Application Support/Google/Chrome/
-- Linux: /home/Username/.config/google-chrome/
+- Windows: `C:\Users\Username\AppData\Local\Google\Chrome\User Data\<ProfileName>`
+- macOS: `/Users/Username/Library/Application Support/Google/Chrome/`
+- Linux: `/home/Username/.config/google-chrome/`
 
 **2. How to add chrome extension (crx/unpacked_folder/encoded_extension)?**
 
