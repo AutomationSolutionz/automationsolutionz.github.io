@@ -23,6 +23,8 @@ This action is used to **write text** to a specific element, such as an input fi
 ### 3. **Go to Webpage**
 This action is used to **launch a specified web browser** and navigate to a given **URL** by taking the provided URL, setting the necessary browser capabilities, and loading the webpage. The browser's capabilities, such as version or platform, are configured before navigating. Additionally, a **wait time** is included for searching elements on the webpage, with a default timeout of 10 seconds, which applies throughout the entire test case to ensure the automation can handle elements that may take time to appear.
 
+[🔗 USAGE GUIDE](/docs/actions/web/go-to-link) 
+
 ### 4. **If an Item is Found or Not**
 This action allows for conditional execution of tasks based on whether an element is found on a webpage or application, similar to an "if-else" statement in programming. By providing an identifier (e.g., **resource-id**, **class**, or **text**), the tool checks for the element's presence and returns a **boolean value** (true/false). If the element is found (**true**), specified actions will run, and if not (**false**), different actions can be executed. You can set conditions for both outcomes or just one. Additionally, an optional **wait parameter** can be used to delay execution until the element appears.
 

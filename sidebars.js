@@ -106,10 +106,9 @@ module.exports = {
       {
         Actions: [
           "actions-common",
-          "actions-web",
-          "actions-mobile",
           {
             "Web":[
+              "actions-web",
               "actions/web/go-to-link",
             ],
             "GUI controls": [
@@ -118,6 +117,7 @@ module.exports = {
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-coords",
             ],
           },
+          "actions-mobile",
           // "actions-desktop",
           "actions-rest-api",
           "actions-performance",
