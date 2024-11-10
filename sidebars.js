@@ -109,6 +109,9 @@ module.exports = {
           "actions-web",
           "actions-mobile",
           {
+            "Web":[
+              "actions/web/go-to-link",
+            ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-text",
