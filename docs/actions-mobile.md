@@ -133,3 +133,80 @@ This action retrieves the version number of the device's operating system (OS) a
 
 ### 35. **Get package version**
 This action retrieves the package version number of the installed application on the device and stores it. The package number version is useful for validating whether the correct version of the app is installed, ensuring compatibility, and verifying that updates or specific versions are being tested.
+
+### 36. **Get phone name**
+This action retrieves the phone name of the device, which is typically the name assigned to it by the user or manufacturer, and stores it in a specified variable. This information can be useful for identifying the device during testing, logging, or tracking the test results across diffrent devices to ensure that tests are accurately associated with the correct device.
+
+### 37. **Go to webpage**
+This action is used to instruct the browser on the device to navigate to a specified URL. It should be used after the browser has been launched. By providing the desired URL, this action directs the browser to open the webpage, enabling the test to interact with or verify the content on that page.
+
+### 38. **Handle Alert**
+This action is used to handle on-screen alerts that provide information, ask for permission, or issue warnings. Alerts are blocking, meaning they prevent interaction with the underlying webpage until addressed. This action allows the user to accept or decline the alert, depending on its type, ensuring the test can proceed by handling these interruptions.
+
+### 39. **Hide Keyboard**
+This action hides the on-screen keyboard on iOS and Android devices, useful when the keyboard blocks access to screen elements. Activating this action closes the keyboard, enabling uninterrupted interaction with previously hidden elements and facilitating smoother test execution.
+
+### 40. **ID**
+To standardize test cases across iOS and Android in the framework, this action enables minimal pre-processing of data before calling the "Get Element" function. This approach allows a single test to adapt to platform-specific requirements without needing separate cases.
+
+For iOS we adjust the data by matching commonly used attributes, such as "Name" on iOS instead of "Text" on Android, and "Accessibility ID" on iOS instead of "Resource-ID" on Android. For Android's "Resource-ID", the package name must be appended, and this can be dynamically retrieved from the device. This setup simplifies cross-platform testing, ensuring smoother execution by making minor adjustments based on the device platform. 
+
+### 41. **Install Android apk**
+To install an Android app from an APK file, first enable installation from unknown sources in **Settings** under **Security** or **Apps & Notifications**. Locate the APK file, usually in the **Downloads** folder or another specified location, and tap to start installation. Review and accept any required permissions, then tap **Install**. Once completed, the app will appear in the app drawer, ready for use. Note that APKs from unverified sources may pose security risks.
+
+### 42. **Keypress**
+Sending a physical or virtual key press event simulates pressing a key on a device, either by physically pressing it or programmatically through code. This action is common in software testing and automation, as it allows for simulating user interactions, such as pressing "Enter" or navigating to the home screen, without manual input. It's particularly useful for testing an application's response to various commands and ensuring the user interface reacts as expected.
+
+### 43. **Launch Safari on iOS**
+To inspect a web app on iOS device using Safari, first open Safari on the device and connect it to a Mac. Enable **Web Inspector** on the iOS device in **Settings > Safari > Advanced**. Then, on the Mac, open Safari, go to the **Develop** menu, and find the connected iOS device. Select the relevant browser tab to open Safari's Web Inspector, allowing you to inspect and debug the web app directly on the iOS device. This method is necessary because Appium Inspector doesn't support Safari inspection on iOS.
+
+### 44. **Launch by app activity**
+To launch an application and obtain an Appium driver instance on Android (v4.4+) or iOS, the Appium driver initializes control of the app, enabling automated interactions. When locating elements, providing the package name (or bundle ID on iOS) helps Appium's Sequential Actions feature identify elements accurately, even if only part of the name is provided. This approach allows Appium to find and interact with elements more precisely, simulating user actions effectively and supporting automation across both Android and iOS.
+
+### 45. **Launch by application name**
+This action allows launching an app on a mobile device when the package name is unavailable, by using the app's visible name (e.g., "Calculator") from the home screen. The action attempts to match the provided name with the app's package name and launches it if a match is found. However, this method can fail if the app's package name doesn't contain the name provided (e.g., "Calculator" doesn't match "com.xyz.abc"). While useful in some cases, it is less reliable than directly using the package name for launching the app.
+
+### 46. **Launch without resetting**
+This action allows starting an application on a mobile device without resetting it to its default state. When launching the app, it preserves previously saved data, such as customized settings, preferences, or user progress. This ensures that the user's personalized configurations remain intact and the app behaves as it did during the last use, rather than returning to its default settings.
+
+### 47. **Long Press an Element**
+This action simulates pressing and holding an element on the screen for a specified duration. It is commonly used in testing scenarios to replicate user interactions like long taps, which are often required for actions such as opening context menus, activating drag-and-drop features, or triggering additional options in an app. The action can be configured to hold the press for a set time before releasing, allowing for precise testing of how the app responds to long press gestures.
+
+### 48. **Maximize an Application**
+This action is used to open any application on a mobile device without creating an Appium driver instance. Unlike the "launch" action, this action simply starts the app without establishing control, meaning that automated commands cannot be sent to the app until "launch" is called to create the Appium instance. This makes it useful for quickly switching between applications, such as when testing interactions across different apps. The **PACKAGE_NAME** parameter can be specified as either the full Android package name or a part of it, which the action will use to locate and open the desired app.
+
+### 49. **Minimize an Application**
+This action minimizes the currently active application by simulating a press of the Home button, returning the user to the device's home screen. It effectively pushes the app to the background without closing it, allowing it to run in the background. This action is useful in test scenarios where an application needs to be minimized temporarily to verify background processing, notifications, or interactions with other apps before returning to the original app.
+
+### 50. **Move to middle of the element**
+This action centers the view on a specified element by moving the screen focus to its middle point. It ensures that the element is fully visible and positioned centrally within the display area, which can be helpful for interacting with elements that may be partially out of view. This action is particularly useful for making elements accessible during testing, especially when verifying functionality or layout alignment that requires a clear view of the entire element.
+
+### 51. **Optional Action**
+This feature allows any action to be made "optional" by simply adding the word "optional" before the action name (e.g., converting "appium action" to "appium optional action"). When an action is marked as optional, it does not halt the test execution upon failure. Instead, if the action fails, it returns a **SKIP** status and proceeds to the next action in the sequence. This is particularly useful for situations where certain events or conditions may or may not occur, allowing the test to continue smoothly without interruptions. It helps in handling unpredictable scenarios while maintaining the test flow.
+
+### 52. **Package Installed**
+This action saves the package name of a specified app into a shared variable, allowing other parts of the test script to access it. When the user provides an app name (e.g., "chrome"), the action retrieves the app's package name and stores it in a shared variable with a specified label (e.g., "chrome_package_name"). This feature is helpful for reusing app package names across different test steps, especially when switching between apps or verifying app-specific actions. By using shared variables, the test script can dynamically reference the app's package name whenever needed.
+
+### 53. **Pan**
+The pan action moves the mobile screen in a specified direction (left, right, up, or down) by simulating a swipe gesture. The direction of the pan is set using the **Direction** parameter, while the **Scale** and **Count** parameters determine the extent and frequency of the movement. The **Scale** parameter controls how far the screen pans with each swipe, and **Count** specifies the number of times the pan action repeats. This action is useful for navigating across screens or scrolling through content in a controlled manner during mobile testing.
+
+### 54. **PickerWheel**
+This action enables the selection of an item from a **PickerWheel** object on a mobile device. A **PickerWheel** is a user interface element commonly found in iOS, used for selecting options from a rotating wheel, such as dates, times, or other selectable lists. By using this action, the test can automate the process of choosing an option from the PickerWheel, allowing it to interact with dropdown-like elements in iOS applications. This is useful for testing scenarios that involve selecting specific values from predefined lists.
+
+### 55. **Reads a device's IMEI or MEID**
+This action retrieves the device's unique identifier, either the **IMEI** (International Mobile Equipment Identity) or **MEID** (Mobile Equipment Identifier), depending on which is the primary identifier for that device. The identifier is then stored in a specified variable, allowing other parts of the test script to access and use it as needed. This action is helpful for tracking or verifying specific devices during testing, particularly in scenarios where device identification is necessary, such as device-specific configuration or validation tasks.
+
+### 56. **Reboot device**
+This action reboots a connected and authorized device. If a special **SERIAL_NO** is provided, only the device with that serial number will be rebooted. Alternatively, if an asterisk (*) is used, all connected devices will be rebooted simultaneously. Since this action operates independently of Appium, it can be executed at any point during testing, making it useful for resetting device states or troubleshooting issues without relying on Appium's setup or connection.
+
+### 57. **Reset application**
+This action clears the cache of the application currently launched by Appium. Clearing the cache removes any temporary data stored by the app, which can help ensure a fresh start in subsequent test steps or prevent potential issues caused by cached data. It's important to perform this action before calling the **close** action, as clearing the cache after closing the app would not be effective.
+
+### 58. **Save Attribute Value**
+This action is used to extract and store the value of a specific attribute from a web element, which can then be used for comparison or validation later in the test. After locating the element using a stable selector, the desired attribute (e.g., `value`, `href`, `src`) is extracted and saved. It's important not to use the same attribute for both locating the element and saving its value to avoid errors, as dynamic values could interfere. This action is useful for tracking changes in attributes or validating dynamic content during test execution.
+
+### 59. **Save Variable If Element Exists**
+This action checks if a specified web element exists. If the element is found, a specified value is saved into a variable. If the element cannot be located, the value "false" is stored in the variable. This action helps manage conditional logic by allowing subsequent steps to adapt based on the element's presence or absence.
+
+### 60. **Save attribute values by scrolling**
+This action is used to collect multiple elements from a scrollable parent element, ensuring that all relevant elements are captured as the page scrolls. The parent element should be scrollable, allowing the action to scroll through it and save values accordingly. It is important to ensure that the scrolling is performed accurately, with no elements skipped during the scrolling process. This is typically achieved by adjusting the scroll parameters, which control the scrolling behavior (such as the scroll speed or distance between scrolls) to ensure all elements within the parent are properly captured.
