@@ -210,3 +210,35 @@ This action checks if a specified web element exists. If the element is found, a
 
 ### 60. **Save attribute values by scrolling**
 This action is used to collect multiple elements from a scrollable parent element, ensuring that all relevant elements are captured as the page scrolls. The parent element should be scrollable, allowing the action to scroll through it and save values accordingly. It is important to ensure that the scrolling is performed accurately, with no elements skipped during the scrolling process. This is typically achieved by adjusting the scroll parameters, which control the scrolling behavior (such as the scroll speed or distance between scrolls) to ensure all elements within the parent are properly captured.
+
+### 61. **Save text by unique parameter**
+This action retrieves and stores the text value of a web element identified by a **unique property**, such as an `id` or a uniquely defined XPath. The text is assigned to a variable (e.g., `storage_variable`), allowing it to be reused later in the test. Using a **unique parameter** ensures the element is precisely identified, avoiding ambiguity. For example, if an element with `id="welcome-message"` contains the text "Welcome, User!", the action will locate the element, retrieve the text, and store it in the specified variable. The stored value can then be accessed using the syntax `%|save text|%`. It is crucial that the element's property is unique, as non-unique properties may cause the action to fail. This action is particularly useful for dynamic content and test validation scenarios.
+
+### 62. **Swipe by uiautomator**
+This action is designed to locate an element that is not immediately visible on the screen due to its position within a scrollable view. If the element is located further down in a vertical list or within a horizontal scroll view, ZeuZ will perform scrolling actions, moving page by page, until the element is found. This ensures that even elements outside the initial viewport can be located and interacted with during the test. It is particularly useful for interfaces with large datasets or layouts requiring scrolling to reveal hidden content.
+
+### 63. **Switch device when using multiple devices**
+In ZeuZ, **Device Serial Number** identifies devices connected to a machine, enabling seamless switching during automation. When multiple devices are attached, their serial numbers are listed under the **Device List** for your Machine ID. To switch between devices, input the desired serial number in the test case action. This ensures automation commands target the specified device, supporting parallel testing and efficient execution across different hardware.
+
+### 64. **Take Screenshot**
+In ZeuZ, the **Take Screenshot** action captures the active screen on a device and saves it to a directory, with the default path stored in the **ss_path** variable (accessible as `%|ss_path|%`). Users can specify a custom variable name for the path or a `filename` for the screenshot (e.g., `image1.jpg`), enabling the full path to be constructed as `"%|ss_path|%/image1.jpg"`. If no filename is provided, a default name using the format `%Y-%m-%dT%H-%M-%S-%f` is assigned (e.g., `2024-11-18T15-30-45-123456`). This action is ideal for capturing screens and referencing images during test automation.
+
+### 65. **Tap an Element with offset**
+This action in ZeuZ allows users to interact with a specific element on a device by defining its properties. This action is particularly useful for scenarios where multiple element parameters are required to identify a unique element.
+
+For example, in a search scenario, the user inputs a search item into a designated field (identified by its properties). Once the results are displayed, the action locates the desired item based on its properties and taps it to open or view the item. This action ensures precise interaction with elements, even in dynamic or multi-element environments, making it effective for automation tasks like navigation or selection.
+
+### 66. **Text or Name**
+In ZeuZ, platform-specific element identification allows using a single test case for both iOS and Android, even when pages and buttons are identical. This is achieved by dynamically processing data before calling the **Get Element** function. For iOS, properties like **Name** or **Accessibility ID** are used, while for Android, **Text** or **Resource ID** is preferred. Android's **Resource ID** also requires appending the package name, which can be retrieved dynamically from the device. This approach eliminates redundancy and simplifies cross-platform automation.
+
+### 67. **Validate full text selected by unique parameter**
+The **Validate Full Text** action in ZeuZ compares a given text string with the full text of a specified element and validates it only if the texts match exactly. It relies on **unique properties** of the element, using a **unique parameter** for precise identification. If the element's properties are not unique, the validation cannot be performed reliably, making this action essential for accurate text verification in automated testing.
+
+### 68. **Validate partial text selected by unique parameter**
+The **Validate Partial Text** action in ZeuZ verifies if a specifed text string is contained within the full text of a given element. Validation succeeds with a partial match but requires the **element properties** to be unique, identified using a **unique parameter**. If the properties are not unique, the action cannot be reliably validate the text, ensuring precise and effective partial text verification in automated tests.
+
+### 69. **Wakes a device, and puts it to the last viewed screen**
+The **Wake Device** action in ZeuZ activates a device from its idle or sleep state, restoring it to its previous active state. This ensures the device is ready for subsequent test steps without requiring manual intervention, maintaining the continuity of automation workflows.
+
+### 70. **Get location (co-ordinates)**
+The **Get location (co-ordinates)** action in ZeuZ retrieves the current geographical location of a device in the form of latitude and longitude coordinates. This action is particularly useful for tests requiring location-based validation or context, such as verifying location permissions, GPS functionality, or geo-fencing scenarios. The retrieved coordinates can be stored in variables for further processing or comparison within the test workflow.
