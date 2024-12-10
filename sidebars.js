@@ -116,6 +116,7 @@ module.exports = {
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-text",
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-coords",
+              "actions/gui-controls/actions-gui",
             ],
           },
           "actions-mobile",
