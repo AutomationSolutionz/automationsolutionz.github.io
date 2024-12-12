@@ -16,6 +16,9 @@ module.exports = {
       "zAI/zAI-explain-test-case",
       "zAI/zAI-suggest-step-description-expected",
     ],
+    "Android": [
+      "android/android-setup",
+    ],
     "Guides": [
       // "how-tos/how-to-create-a-test-case",
       // "how-tos/how-to-login-to-node",
@@ -124,6 +127,7 @@ module.exports = {
           "actions-rest-api",
           "actions-performance",
           "actions-database",
+          "actions-mac",
         ]
       },
       "zeuz-node-changelogs",
