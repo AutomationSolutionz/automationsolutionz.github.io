@@ -126,6 +126,7 @@ module.exports = {
           "actions-database",
           "actions-mac",
           "actions-windows",
+          "actions-security",
         ]
       },
       "zeuz-node-changelogs",
