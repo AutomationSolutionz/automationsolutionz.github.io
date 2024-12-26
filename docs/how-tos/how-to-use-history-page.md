@@ -35,20 +35,60 @@ The **Donut Charts** on the History Page visually represent the status of test c
 
 - **Hover**: Hovering over the total chart below the navbar shows a version comparison popup.
 
-![](/img/how-tos/how-to-use-history-page/hover-donut-chart.png)
+### 2. Run Queue
 
-### 2. Cards
+It displays the number of test cases that are in-queued, in-progress and also the permitted nodes, represented by a circular icon. In this case, the total permitted nodes are 5.
+
+![](/img/how-tos/how-to-use-history-page/run-queue.png)
+
+#### Color Representation
+
+- **Purple**: It displays the test cases that in-progress.
+- **Gray**: It displays the test cases that are in the queue.
+
+### 3. Version Comparison
+
+1. From the menu bar, go to **Testing** menu and click on the **Set** menu.
+
+![](/img/how-tos/how-to-use-history-page/version-testing.png)
+
+2. Click on the **Settings** button.
+
+![](/img/how-tos/how-to-use-history-page/set-settings.png)
+
+3. Go to **Set Filter Settings** and fill up the following information:
+
+- Build From (Where we can select either **Milestone** or **Version**).
+- Compare With.
+- Github Repository.
+- Lastly, click on the **Save Filter** button.
+
+![](/img/how-tos/how-to-use-history-page/set-filter.png)
+
+After creating a **Version Comparison**, the selected **Milestone** or **Version** will display test case results of a set under the chosen milestone or version. However, to view the test case results of a set from a different **Milestone** or **Version**, the desired milestone or version must be selected again from the **Set** page.
+
+![](/img/how-tos/how-to-use-history-page/version-result.png)
+
+:::note
+
+   For a new user, if the history page displays a blank **Version Comparison**, the user must create either a milestone or a version before proceeding with the version comparison. Then the version comparison will show on the **History** page.
+
+:::
+
+### 4. Cards
 
 The **Cards** on the History Page provide detailed information about test cases, categorized by their status.
 
 ![](/img/how-tos/how-to-use-history-page/chart.png)
 
-#### Color Representation:
+#### Card Color Representation:
 
 - **Yellow**: Contains failed or blocked test cases.
 - **Green**: Successfully deployed.
 - **Blue**: Test case skipped.
-- **Hot Pink**: Deployment failed or cancelled.  
+- **Hot Pink**: Deployment failed or cancelled.
+- **Grey**: Shows the submitted test cases.
+- **Navy Blue**: A navy blue border appears when a deployed test set has blocked or failed test cases.  
 
 
 #### Interaction:
@@ -57,7 +97,7 @@ The **Cards** on the History Page provide detailed information about test cases,
 
 ![](/img/how-tos/how-to-use-history-page/click-card.png)
 
-### 3. Expanded Card
+### 5. Expanded Card
 
 When a card is expanded, additional details and actions become available.
 
@@ -80,12 +120,24 @@ When a card is expanded, additional details and actions become available.
 - **Click on Test Case ID**: Clicking on a test case ID in the **TC**'s section will show its run history popup.
 - **Click on Test Case Title**: Clicking on a test case title in the **TC**'s section will show its execution log.
 
-### 4. Others
+### 6. Others
 
-- Hovering over the circles beside the search icon will show the **Run Queue** information popup.
+- Clicking the purple button displays the following buttons:
+  - Go delete log and run history page.
+  - Close view.
+  - Select how many cards you want to see.
+  - Select how you want to see the page (Card/Table).
 
- ![](/img/how-tos/how-to-use-history-page/donut-chart.png)
+![](/img/how-tos/how-to-use-history-page/purple-button.png)
 
-- Clicking on the specific test case of the test set shows **Mileston**, **Run ID** and **Version** of that test case.
+![](/img/how-tos/how-to-use-history-page/purple-info.png)
+
+#### We can also switch the page from **Card** view to **Table** view.
+
+![](/img/how-tos/how-to-use-history-page/table-view.png)
+
+- Clicking on the specific test case of the test set shows **Milestones**, **Run ID** and **Version** of that test case.
 
  ![](/img/how-tos/how-to-use-history-page/version-chart.png)
+
+
