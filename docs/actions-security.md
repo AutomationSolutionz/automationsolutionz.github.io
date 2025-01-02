@@ -16,3 +16,37 @@ Security actions are measures taken to protect systems, networks, applications, 
 
 ### 3. **Wapiti**
 **Wapiti** is a web application vulnerability scanner used to assess the security of web applications. This action scans a target web application for vulnerabilities by analyzing pages, forms, and inputs without altering the application's state. It identifies potential issues such as SQL manipulation, cross-site scripting (XSS), file inclusion, and other common vulnerabilities. Wapiti does not rely on a signature database but instead uses various techniques to detect weaknesses, making it suitable for dynamic security assessments.
+
+### 4. **Arachni**
+**Arachni** is an advanced open-source tool designed for web application security scanning. It is widely used to detect, analyze, and address vulnerabilities in web applications, ensuring these systems remain secure, robust, and compliant with industry standards. Below is an explanation of its purpose and how it benefits organizations:
+
+#### Purpose of Arachni Security Scanning
+1. **Vulnerability Detection**
+   Arachni automates the discovery of common vulnerabilities, such as:
+- **SQL Injection**: Exploits database query flaws.
+- **Cross-Site Scripting (XSS)**: Injects malicious scripts into user-facing content.
+- **File Inclusion**: Gains unauthorized file access through application flaws.
+- **Remote Code Execution**: Executes malicious code on a server remotely. This automation helps teams identify and address issues early in the development lifecycle, reducing security risks.
+
+2. **Security Assurance**
+By regularly scanning applications, Arachni ensures that:
+- Web applications follow best security practices.
+- Systems are resilient against attacks that could jeopardize user data, application performance, or operational integrity.
+
+3. **Compliance and Standards**
+Security scanning with Arachni assists in meeting compliance requirements such as:
+- **GDPR (General Data Protection Regulation)**: Protecting user privacy.
+- **PCI-DSS (Payment Card Industry Data Security Standard)**: Ensuring secure payment transactions.
+- **ISO/IEC 27001**: Establishing information security standards. These tools help organizations maintain regulatory compliance by proactively securing applications.
+
+4. **Cost and Risk Reduction**
+- Identifying vulnerabilities during development is less expensive and less risky than fixing them post-deployment.
+- Proactively resolving issues prevents financial losses, reputational damage, or penalties from data breaches or system downtime.
+
+5. **Comprehensive Analysis**
+- **Arachni** provides detailed, actionable reports on vulnerabilities.
+- Reports include the impact and solutions for each issue, allowing developers and security teams to:
+   - Prioritize the most critical vulnerabilities.
+   - Implement targeted fixes to enhance security.
+
+In summary, Arachni is a valuable tool for organizations aiming to secure their web applications. By automating vulnerability detection and offering in-depth analysis, it reduces costs, ensures compliance, and strengthens application defenses against potential cyber threats.
