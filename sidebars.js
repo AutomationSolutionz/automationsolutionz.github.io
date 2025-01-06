@@ -118,6 +118,10 @@ module.exports = {
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-coords",
               "actions/gui-controls/actions-gui",
             ],
+            "AI actions": [
+              "actions/ai-actions/ai-actions",
+              "actions/ai-actions/openai-action",
+            ],
           },
           "actions-mobile",
           // "actions-desktop",
