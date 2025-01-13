@@ -121,6 +121,7 @@ module.exports = {
             "AI actions": [
               "actions/ai-actions/ai-actions",
               "actions/ai-actions/openai-action",
+              "actions/ai-actions/example-of-openai-action",
             ],
           },
           "actions-mobile",
