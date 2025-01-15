@@ -17,22 +17,34 @@ These actions are used to automate web browsers and interaction with web pages/a
 ### 1. **Click an Element**
 This action is used to **click an element** by identifying it through properties like ID or class, with the option for partial matches using a symbol (e.g., `id` for flexible identification). Additionally, an optional parameter, `use js`, can be set to `true` to execute the click using JavaScript, which is essential for environments like **iOS Safari** where native clicks may not work. This action ensures reliable element interaction in automated testing across different browsers and devices. Tags include: click, element properties, tap, and mouse click.
 
+[Video - Click an Element](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
+
 ### 2. **Enter text**
 This action is used to **write text** to a specific element, such as an input field on a webpage or application. The user must provide an **identifier** for the input field, which can include attributes like **ID**, **class**, **type**, **title**, or **value**. The automation tool then searches the page for the provided identifier and writes the specified text into the input field.
 
+[Video - Enter text](https://drive.google.com/file/d/13B51CW2dlDcEgSqbwFpX1jSU7PtmEKhi/view?usp=drive_link)
+
 ### 3. **Go to Webpage**
 This action is used to **launch a specified web browser** and navigate to a given **URL** by taking the provided URL, setting the necessary browser capabilities, and loading the webpage. The browser's capabilities, such as version or platform, are configured before navigating. Additionally, a **wait time** is included for searching elements on the webpage, with a default timeout of 10 seconds, which applies throughout the entire test case to ensure the automation can handle elements that may take time to appear.
+
+[Video - Go to Webpage](https://drive.google.com/file/d/1tEjX-3RhEE0zPm7J-IAeZGek-oqXSZMO/view?usp=sharing)
 
 [🔗 USAGE GUIDE](/docs/actions/web/go-to-link) 
 
 ### 4. **If an Item is Found or Not**
 This action allows for conditional execution of tasks based on whether an element is found on a webpage or application, similar to an "if-else" statement in programming. By providing an identifier (e.g., **resource-id**, **class**, or **text**), the tool checks for the element's presence and returns a **boolean value** (true/false). If the element is found (**true**), specified actions will run, and if not (**false**), different actions can be executed. You can set conditions for both outcomes or just one. Additionally, an optional **wait parameter** can be used to delay execution until the element appears.
 
+[Video - If an Item is Found or Not](https://drive.google.com/file/d/11tI9FGCe_qsfHVDSm6_PfoUpM3g_D3_l/view?usp=sharing)
+
 ### 5. **Validate Partial Text**
 This action is used to **verify** whether a text field or text view contains the **expected data**, allowing for partial matches. It works by collecting text from an element using its **ID** or other attributes and comparing it with the provided string. If the collected text partially matches the expected text, the action passes. The element identifier doesn't need to be unique; if there are multiple elements with the same identifier, an **index** can be used to specify which one to check. A partial match is considered a successful validation.
 
+[Video - Validate Partial Text](https://drive.google.com/file/d/14mDqYocygKDFlAtOPDLmSaI14Eoxx8HJ/view?usp=sharing)
+
 ### 6. **Wait for an element to appear**
 This action waits for a specified **element** to appear on a webpage within a given time limit. If the element appears within the set time, the action **passes** and the test proceeds. If it doesn't appear, the action **fails**. This is particularly useful for handling pages that need time to load, ensuring the test continues only when the desired element is visible within the specified duration.
+
+[Video - Wait for an element to appear](https://drive.google.com/file/d/1Zc4uiTTYoS1RZifveyJOX7bY3IgaRQuZ/view?usp=sharing)
 
 ### 7. **Wait for an element to disappear**
 This action waits for a specified **element to disappear** within a given time frame. If the element disappears within the set time, the action **passes**, and if it remains visible beyond that time, the action **fails**. This is useful in situations where a page needs time to load, ensuring that tests proceed only when the element has been removed within the specified duration.
@@ -47,20 +59,32 @@ This action allows clicking on an **attachment element** to either **download th
 This action is used to **save the value of an attribute** from a specified element on a webpage or application. It is typically used to extract a particular attribute's value, such as **ID**, **class**, or **text**, for future comparisons or validations. To use this application, **element parameters** are needed to identify and locate the element. Once located, the desired attribute is specified, and its value is saved for later use.
 It is important to note that the attribute being saved should **not** be the same attribute used to locate the element, as this can lead to incorrect or unexpected results.
 
+[Video - Save Attribute Value](https://drive.google.com/file/d/1KkkhWgeuq2_2OAGslS7nM8lkVD5foZBc/view?usp=sharing)
+
 ### 11. **Save attribute values in list**
 This action is used to **collect data** from a table or webpage and store it as a **list**. It can capture multiple items and organize them into **lists of lists** for scenarios involving multiple rows or sets of data. By scanning the specified elements, the action retrieves the data and structures it accordingly, making it easy to manage and access for further automation or analysis.
+
+[Video - Save attribute values in list](https://drive.google.com/file/d/15pyMCDVK-bPyTLl2s_szhbD3lcn-M0O2/view?usp=sharing)
 
 ### 12. **Scroll to an Element**
 This action is used to **scroll to a specific element** by controlling the scroll bar, ensuring it is visible. It can use methods like **JS**, **WebDriver**, or **Action Chain**, with **JS** as the default. The **align to top** option positions the element at the top or bottom of the screen, with the default set to **yes** (align to top). Additionally, you can set an **extra scroll** as a percentage of the screen height or width to ensure full visibility, or disable it by setting the value to **0**. This is useful for handling large or dynamically loaded pages.
 
-### 13. **Scroll to top**
-This action is used to **scroll to the top** of a webpage. It executes a simple **JavaScript snippet**: `window.scroll(0, 0)`, which moves the page's scroll position to the top left corner (coordinates 0, 0). This action is useful for resetting the scroll position to the top of the page.
+[Video - Scroll to an Element](https://drive.google.com/file/d/1DycCu3OXP6UEEeNkiofsuSCi-dBaRmjt/view?usp=sharing)
+
+### 13. **Scroll element to top**
+This action is used when scrolling to an element fails, particularly in scenarios involving iFrames or complex structures where the standard "Scroll to Element" action doesn't work. By utilizing Selenium’s `element location_once_scrolled_into_view`feature, it ensures the element is scrolled into view. It supports advanced functionalities like iFrame switching, handling multiple element parameters, and managing parent-child structures. The **Scroll element to top** command ensures the element is fully visible at the top of the viewport for seamless interaction.
+
+[Video - Scroll element to top](https://drive.google.com/file/d/1DycCu3OXP6UEEeNkiofsuSCi-dBaRmjt/view?usp=sharing)
 
 ### 14. **Select by Visible Text**
 This action uses Selenium WebDriver's **Select** class to **select or deselect options** in a dropdown by matching the **visible text**. It interacts with the HTML `<select>` tag and searches for options based on the displayed text, rather than using the option's index or value. The action selects or deselects the option that matches the provided text, making it useful for handling dropdown menus where the visible text is the key selection criteria.
 
+[Video - Select by Visible Text](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
+
 ### 15. **Validate Exact Text**
-This action is used to **validate the full text** of a specified element by comparing the provided text with the element's entire content. The validation passes only if the text matches **exactly**; partial matches are not accepted. 
+This action is used to **validate the full text** of a specified element by comparing the provided text with the element's entire content. The validation passes only if the text matches **exactly**; partial matches are not accepted.
+
+[Video - Validate Exact Text](https://drive.google.com/file/d/14mDqYocygKDFlAtOPDLmSaI14Eoxx8HJ/view?usp=sharing)
 
 ### 16. **Keystroke Keys by Element Properties**
 This action simulates **keystrokes** like **ENTER** or **TAB** on a specific element using Selenium. First, the element is located using properties such as **ID**, **class**, or **type**, and then the designated keystroke is performed. The **element parameter** identifies the element, while the **keystroke keys** specify the action (e.g., ENTER, TAB). This is useful for automating tasks like form submissions or navigating between fields.
@@ -80,11 +104,17 @@ The **Select Visible Text With Siblings** action selects a dropdown option by ma
 ### 21. **Switch browser window/tab**
 This action allows switching between browser tabs using either the **tab title** or **tab index**. For the tab title, the full name can be provided, or partial matching can be done by adding an asterisk (*) before the title. If the title is unavailable, the **tab index** can be used, where the first tab is indexed as 0. To switch to the most recently opened tab, -1 can be used as the index. This action helps in efficiently navigating between different tabs in a browser.
 
+[Video - Switch browser window/tab](https://drive.google.com/file/d/15TQlSsjvRrYEL0UUlczrkTAb-p8Ld81I/view?usp=sharing)
+
 ### 22. **Upload a file**
 This action automates file uploads in cases where the upload window is outside of Selenium's control. It uses **Microsoft System API** and **PyAutoGUI** to handle the file upload access. This allows automating interactions with operating system-level file upload windows, which Selenium cannot directly manage, by simulating mouse and keyboard actions to select and upload files. This is useful for automating file uploads in complex web applications where Selenium alone is insufficient.
 
+[Video - File upload](https://drive.google.com/file/d/1s1ueblNnpp7Wv-gukMxBybEv0RLKzsVZ/view?usp=sharing)
+
 ### 23. **Handle Alert**
 This action is used to **accept** or **decline alert boxes** that display notifications, ask for permissions, or give warnings. Alerts differ from regular windows because ther are **blocking**, meaning no other actions can be performed on the webpage until the alert is addressed. The action waits for the alert to appear for up to **5 seconds** by default, but the wait time can be customized with an optional parameter.
+
+[Video - Handle Alert](https://drive.google.com/file/d/1tqmBuziA81IW6GZjHccOAmQ5G6TxMucn/view?usp=drive_link)
 
 ### 24. **Keystroke chars**
 This action allows typing specific keyboard characters into an input field or textarea using its **identifier** (such as id, class, type, title, or value). After providing the identifier and the desired characters, the action simulates typing those characters directly into the field, replicating keyboard input. This is useful for automating text input in web forms or fields.
@@ -101,8 +131,12 @@ This action simulates the browser's "refresh" button. It reloads the current pag
 ### 28. **Select Element by Index**
 This action uses the **Select** class in Selenium WebDriver to select an option in a dropdown by its index. The action selects an option from a dropdown by specifying the **index** number instead of the option's visible text. The index is an integer value, starting from **0**, which represents the position of the option in the dropdown list. This method is similar to selecting by visible text but relies on the index to choose the desired option. The **Select** class provides methods to help with selecting or deselecting options in HTML dropdowns.
 
+[Video - Select Element by Index](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
+
 ### 29. **Select Element by Value**
 This action uses the **Select** class in Selenium WebDriver to select an option in a dropdown based on the "value" attribute of the option tag. Similar to selecting an option by visible text or index, this method selects the option by its **value** attribute. The action accepts the **value** as a string and selects the dropdown option whose **value** attribute matches the specified parameter. The **Select** class handles this by interacting with the HTML **SELECT** tag and using the value to choose the correct option.
+
+[Video - Select Element by Value](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
 
 ### 30. **Start Timer**
 This action sets a timer to control when a test case will start. The value in the **value field** determines the timing in seconds.  
@@ -126,6 +160,8 @@ This action allows for closing one or multiple browser tabs. To close a single t
 ### 36. **Context click (Right Mouse Click)**
 This action performs a context click (right-click) on an element using its properties. For example, if an element has attributes such as id, class, type, or title, these can be used to locate the element. Once the element is identified, the action will trigger a right-click on it, opening the context menu or performing the default action associated with a right-click.
 
+[Video - Context click (Right Mouse Click)](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
+
 ### 37. **Deselect All**
 This action is used to clear all selected entries in a dropdown list, but it only works when the `SELECT` element allows multiple selections. If the `SELECT` element does not support multiple selections, meaning it lacks the `multiple="multiple"` the action will throw a `NotImplementedError`. This ensures that the action is only applicable for dropdowns designed to handle multiple selections at once.
 
@@ -141,8 +177,12 @@ This action allows selecting or deselecting an option in a dropdown based on its
 ### 41. **Double click an Element**
 This action enables a double-click on a web element using its specific properties, such as ID, class, type, or title. It locates the element based on these attributes and performs a double-click action on it.
 
+[Video - Double click an Element](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
+
 ### 42. **Drag and Drop**
 This action facilitates dragging a source element and dropping it onto a destination element. By identifying both the source and destination elements using their properties (such as ID, class, or other attributes), it performs a drag-and-drop operation between the two elements, automatings tasks that require such interactions on a webpage.
+
+[Video - Drag and Drop](https://drive.google.com/file/d/11YfBRtlP3xBOVH4a9s_68Pz7eGurWopr/view?usp=sharing)
 
 ### 43. **Enter text by delay (Typewriter action)**
 This action allows text to be entered with a delay between each letter. It first locates the input field using the specified element parameter (such as ID, class, or other attributes). The user can define the delay between typing each letter, with the default delay set to 0.03 seconds. This is useful for simulating human-like behavior in automation tasks.
@@ -150,8 +190,12 @@ This action allows text to be entered with a delay between each letter. It first
 ### 44. **Execute JavaScript**
 This action allows the execution of custom JavaScript code within the browser. It can be used to perform operations that are not natively supported by the automation tool, such as manipulating elements, triggering browser events, or retrieving specific data from the page.
 
+[Video - Execute JavaScript](https://drive.google.com/file/d/1mlSqC8PNUm7wQ38LbMKloUIxcRta8tz0/view?usp=sharing)
+
 ### 45. **Extract table data**
 This action extracts data from an HTML table element, which contains tags like `<table>`, `<tbody>`, `<tr>`, and `<td>`. The data is captured in a structured format as a list of lists, where each inner list represents a row of the table. This helps in organizing and processing table data programmatically.
+
+[Video - Extract table data](https://drive.google.com/file/d/1M-dq1Uh1x3GA-sTYND671rhf5-uriCxC/view?usp=sharing)
 
 ### 46. **Get Current URL**
 This action captures and saves the current URL displayed in the browser's address bar. By inspecting the address bar, it retrieves the full URL of the webpage the browser is currently viewing. This can be useful for logging, navigating back to the same page later, or verifying the correctness of the navigation flow in automated tests.
@@ -161,6 +205,8 @@ This action retrieves the location of a specified element on a webpage and saves
 
 ### 48. **Hover over an element**
 This action is used to hover the mouse cursor over a specified element on a webpage. It allows interaction with elements that reveal additional content or options when hovered over. The target element is located using its element parameters, such as ID, class, or type. Once identified, the action moves the mouse cursor over the element without clicking, enabling any hover-related effects or actions, such as displaying hidden menus or tooltips.
+
+[Video - Hover over an element](https://drive.google.com/file/d/17XdmVtLoluEhlRtLpmb2MZ7kG9-nTM8i/view?usp=sharing)
 
 ### 49. **Keystroke Keys by Unique Parameter**
 This action is used to press specific keystrokes based on user requirements. It works by identifying an element using "unique element properties". These properties must always be unique because this action uses a "unique parameter" instead of a general "element parameter". If the element's properties are not unique, the keystroke action cannot be executed correctly. Once the element is identified, the specified keystrokes are performed on it as required by the user.
@@ -180,6 +226,8 @@ This action is used to launch a specified web browser with an empty URL. When ex
 ### 54. **Open a New Tab**
 This action opens a new tab within the same browser session, allowing users to load a new webpage or link without disrupting the current tabs. It helps maintain the same browser session, ensuring continuity while working with multiple tabs.
 
+[Video - Open a New Tab](https://drive.google.com/file/d/15TQlSsjvRrYEL0UUlczrkTAb-p8Ld81I/view?usp=sharing)
+
 ### 55. **Save and Get Element**
 This action allows users to store an element in a variable while writing text to it, making it easier to reference and reuse letter. For instance, when text such as "Dhaka" is entered into an element identified by "id=searchInput", the element can be saved as a variable like "element_1". This stored element can then be used later to input another text, such as "London", without requiring to locate the element again. This improves efficiency in repetitive interactions with the same element.
 
@@ -192,8 +240,12 @@ This action is used to gather multiple web elements from a table or webpage and 
 ### 58. **Switch Browser**
 This action allows switching between multiple browser instances by using their unique `driver_id`. When multiple browsers are open during automated testing, each has its own `driver_id`. This action lets users switch control between browsers, enabling interaction with the desired browser without closing the others. It is useful for managing multiple browser sessions in the same test.
 
+[Video - Switch Browser](https://drive.google.com/file/d/1Md-0KlL2DOl3ppn_RNGYnY3byI5YK9W1/view?usp=sharing)
+
 ### 59. **Switch iframe**
 This action is used to switch between iframes on a webpage. An iframe is an HTML element that allows embedding one webpage within another. For example, a third-party chatbox embedded into a website is often implemented using an iframe. To perform automation tasks within an iframe, it is necessary to switch the WebDriver's context to that iframe. This action allows switching to the desired iframe, enabling interaction with the elements inside it during automated testing.
+
+[Video - Switch iframe](https://drive.google.com/file/d/1tGo-hKNrBjzrq1FrvsZgNVtlCZOk0Dg5/view?usp=sharing)
 
 ### 60. **Take Screenshot**
 This action captures a screenshot of the current webpage and stores the screenshot file's name in the variable "zeuz_screenshot". The screenshot file can later be referenced using the variable `%|zeuz_screenshot|%` in subsequent actions, allowing easy access to the file name for further use in the test case. This action is useful for taking visual evidence of the state of a web page during automated tests.
@@ -236,6 +288,18 @@ This action is designed to compare the current URL of a webpage with an expected
 
 ### 73. **Scroll through element**
 This action enables scrolling through a specific element on a webpage that contains multiple scrollbars. It begins by identifying and focusing on the desired scrollbar, after which it executes a downward scroll. This functionality is particularly useful for navigating content within complex web layouts, ensuring that users can efficiently access all relevant information across different scrollable areas.
+
+[Video - Scroll through element](https://drive.google.com/file/d/1DycCu3OXP6UEEeNkiofsuSCi-dBaRmjt/view?usp=sharing)
+
+### 74. **Scroll up**
+This action scrolls a webpage one step upward using Selenium to bring an element into view. The `scroll` function is executed as a **Selenium action**, with `up` specifying the scroll direction. For instance, if an element is out of view above the visible area, this action moves the page upward to reveal it. In Selenium, this can be achieved using the `ActionChains` class to simulate the "Arrow Up" key or adjust the page's scroll position.
+
+[Video - Scroll up](https://drive.google.com/file/d/1DycCu3OXP6UEEeNkiofsuSCi-dBaRmjt/view?usp=sharing)
+
+### 75. **Scroll down**
+This action scrolls a webpage one step downward using Selenium to bring an element into view. The `scroll` function executes **Selenium action**, with `down` specifying the direction. For instance, if an element is below the visible area of the page, this action moves the page downward to reveal it. Using Selenium's `ActionChains`, the "Arrow Down" key or similar methods can simulate the scrolling action, making it ideal for navigating long pages or accessing hidden elements efficiently.
+
+[Video - Scroll down](https://drive.google.com/file/d/1DycCu3OXP6UEEeNkiofsuSCi-dBaRmjt/view?usp=sharing)
 
 
 

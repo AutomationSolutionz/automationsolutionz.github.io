@@ -32,6 +32,8 @@ All REST actions save the incoming response data into a variable named
 ### 1. **HTTP GET request**
 This action in ZeuZ is used to retrieve and store the response from a GET request. This action requires the **URL** of the endpoint and any necessary **headers** (e.g., authentication tokens or content type). It is particularly useful for scenarios where the full response from the server needs to be captured for validation, further processing, or comparison within the test workflow. By saving the response, testers can ensure the correct data is returned from the API and use it effectively in subsequent test steps.
 
+[Video - HTTP GET request](https://drive.google.com/file/d/1-grbcOhHegxTDbhF_CGEecxV3O9bSXwz/view?usp=sharing)
+
 ### 2. **HTTP POST request**
 This action in ZeuZ sends a POST request to a server and captures the full response. To perform this action, users need to provide the **URL**, **headers**, and **body** of the request. The **body** can contain single or multiple parameters, while the **headers** may include items like authentication tokens or content types. This action is useful for verifying server responses to POST requests, capturing data for validation, or using the response in subsequent test steps. It ensures the server processes the provided data correctly and returns the expected results.
 
@@ -41,8 +43,12 @@ The **HTTP DELETE request** action in ZeuZ is used to send a DELETE request to a
 ### 4. **HTTP HEAD request**
 The **HTTP HEAD request** action in ZeuZ sends a HEAD request to a server using the provided **URL** and optional **headers**. Unlike GET requests, a HEAD request retrieves only the headers of the response, without the body content. This is useful for checking metadata, such as content type, status codes, or caching information, without downloading the full content. It is commonly used to validate resource availability or verify server configurations efficiently.
 
+[Video - HTTP HEAD request](https://drive.google.com/file/d/1Tm6o9hyqWcWskEANBOe5oER4Aua8yS0I/view?usp=drive_link)
+
 ### 5. **HTTP POST request with Plain Text body**
 This action in ZeuZ is used to send a POST request to a server with the request body provided in plain text format. To use this action, users must input the **URL**, **headers**, and the **body** in plain text, formatted as `{'key1':'value1','key2':'value2'}`. This action sends the request and saves the server's full response for validation or further processing. Headers can include single or multiple entries, such as authentication tokens or content types, to meet the server's requirements. This action is particularly useful for testing APIs that accept plain text payloads.
+
+[Video - HTTP POST request](https://drive.google.com/file/d/18VduKLEFmZWe31wkW-RPQOuagu7CLWMw/view?usp=sharing)
 
 ### 6. **HTTP PUT request**
 The **HTTP PUT request** action in ZeuZ sends a PUT request to a server to update or replace a resource at the specified **URL**. Users must provide the **URL**, **headers** (key-value pairs for authentication or content type), and the **body** (key-value pairs containing the data to be updated). The server's response is saved into a specified variable for validation or further use in the test workflow. This action is crucial for testing API endpoints that handle resource updates, ensuring they process the input data correctly and return the expected response.

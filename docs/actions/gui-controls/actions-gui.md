@@ -35,8 +35,12 @@ This action allows users to locate specified text on the screen using OCR and pe
 ### 9. **Drag an element to a specific coordinates**
 The drag action involves moving an element from a defined position on a source image (e.g., center, top-left, or custom point) to a target location specified by X, Y coordinates. It simulates user interaction by clicking and holding at the source position, dragging the element, and releasing it at the destination. This action is commonly used in test automation to verify drag-and-drop functionalities in web or graphical interfaces, ensuring the UI responds correctly to user inputs. Tools like Selenium or ZeuZ support such interactions for robust testing.
 
+[Video - Drag an element to a specific coordinates](https://drive.google.com/file/d/11YfBRtlP3xBOVH4a9s_68Pz7eGurWopr/view?usp=sharing)
+
 ### 10. **Drag element by images**
 The drag action allows moving an element from a defined position on a **source image** to a specific position on a **destination image**, simulating a user interaction. The starting point on the source image can be set, such as the **center**, **top-left**, or any custom coordinate within the image.
+
+[Video - Drag element by images](https://drive.google.com/file/d/11YfBRtlP3xBOVH4a9s_68Pz7eGurWopr/view?usp=sharing)
 
 The process involves clicking and holding the element at the specified position on the source image, dragging it across the interface, and releasing it at the target location on the destination image. This action is typically used to validate drag-and-drop functionalities where an element must move from one visual context to another, ensuring accurate UI responses.
 
@@ -134,3 +138,5 @@ This functionality is particularly useful in automation testing to confirm that 
 This action is used to launch a specified program or application on the system. The user needs to provide the path to the program's executable file, ensuring the correct application is targeted. Optionally, additional parameters or arguments can be included if the program supports command-line inputs.
 
 This action is particularly useful in automation scenarios where specific applications need to be opened as part of the testing or workflow process. Tools like ZeuZ facilitate this by enabling seamless integration and execution of programs during test sessions.
+
+[Video - Launch program by given program name](https://drive.google.com/file/d/1saADpTTKdwkEac49KtY93KHqkqowkeGm/view?usp=sharing)

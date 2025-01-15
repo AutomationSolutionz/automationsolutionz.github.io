@@ -3,6 +3,10 @@ id: how-to-create-test-cases
 title: How to create Test Cases
 ---
 
+## Video Guideline
+
+[Video - How to create test cases](https://drive.google.com/file/d/1ptrwRcZNrwxnrBaIsgwNC7OI5vt19Zmb/view?usp=sharing)
+
 ## Description
 
 ### What is a Test Case?

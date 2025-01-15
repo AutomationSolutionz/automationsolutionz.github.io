@@ -36,6 +36,8 @@ This action allows for conditional execution of different actions based on wheth
 ### 4. **Launch Android App**
 This action is used to launch an Android app by specifying its package name. The package name is essential to identify the app and can be found using a package viewer app like "Package Name Viewer" or "APK Package Viewer" from the Google Play Store. Once the package name is obtained, it is entered into the "Value" field to start the app. It is crucial to use the "Teardown App" action at the end of each test run to ensure that all Appium drivers are properly cleaned up, preventing issues during subsequent test executions.
 
+[Video - Launch Android App](https://drive.google.com/file/d/1vOupy4FeUCPOu6Z7lQTViYthV0y8gS68/view?usp=sharing)
+
 ### 5. **Launch iOS app**
 This action is used to launch an iOS app by providing its bundle identifier. The bundle identifier is a unique string used to identify an app on iOS devices, similar to a package name on Android. Once the bundle identifier is specified in the appropriate field, the app will be launched on the iOS device. To ensure proper cleanup after the test run, it is recommended to use the "Teardown App" action, which ensures that all necessary resources, like Appium drivers, are closed and cleaned up.
 

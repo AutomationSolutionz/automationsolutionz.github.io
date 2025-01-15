@@ -3,6 +3,9 @@ id: ai-actions
 title: Description of AI actions
 ---
 
+## Video link of AI action
+[Video - AI Inspector](https://drive.google.com/file/d/1sKrHiiW9ZeL2bNFF9B-D8jjdp0v50wus/view?usp=drive_link)
+
 ## Description
 
 ### What are AI actions, and how do they work in practical applications?
@@ -54,3 +57,4 @@ While AI actions offer significant benefits, they come with several challenges a
 8. **Regulatory and Legal Issues**: As AI technology evolves, so do legal frameworks. Ensuring compliance with changing regulations and addressing potential legal implications, such as liability for AI-driven decisions, can be challenging.
 
 These limitations highlight the need for careful planning, regulation, and ongoing monitoring when adopting AI technologies.
+

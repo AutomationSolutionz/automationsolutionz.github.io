@@ -19,23 +19,35 @@ Common actions, as their name implies, are actions that are common throughout ev
 ### 1. **Compare Data**
 This action allows the comparison of two data sets, which can be an integer, float, string, list, tuple, dictionary, or a `%|variable|%`, including nested lists.
 
+[Video - Compare data](https://drive.google.com/file/d/11XRaWFEVHltofgvhoccesHrrCDTQxgGH/view?usp=drive_link)
+
 ### 2. **For Loop**
 This action will iterate through a list/str/dict and with the items inside that list it will execute the actions mentioned at the right-hand side of the interface.
+
+[Video - For Loop](https://drive.google.com/file/d/1UX-TPtpGcnigtElemrijrgACh3Jwo4ll/view?usp=sharing)
 
 ### 3. **If Else**
 In some cases, it may be necessary to execute certain actions if a specific condition is met; otherwise they will be skipped. Variables saved from previous actions can be directly used in these conditions.
 
+[Video - If Else](https://drive.google.com/file/d/1Nc4Fy38mZLh7xeQtm34_GwFYUNyDtvJh/view?usp=drive_link)
+
 ### 4. **Random Data Generator**
 This function returns a random string of 10 characters by default, or can generate random data types, such as an item from a list or an integer from a specified range, based on the parameters provided.
 
+[Video - Random Data Generator](https://drive.google.com/file/d/13hic5KQT8yq3dGbiJpgRkz4BmgQtlc1b/view?usp=sharing)
+
 ### 5. **Save into Variable**
 This action allows users to perform various operations, such as appending or updating lists or dictionaries, generating random data, executing loops, and more, using custom **Python** expressions or commands, with the option to save results into a variable for further use.
+
+[Video - Save into Variable](https://drive.google.com/file/d/1xyT_kKslC32GBgA1yY1YEnBveS81ydNK/view?usp=sharing)
 
 ### 6. **Sleep**
 The **Sleep** action pauses the process for a specified duration, allowing time for events like page loading or data retrieval before proceeding with the next operation, especially useful in cases of network delays or slow data loading.
 
 ### 7. **While Loop**
 The loop action repeats until any specified **Exit Loop** condition is met, with options to either continue with subsequent steps or fail the test case, based on whether an action passes, fails, or if the left operand matches the right operand according to defined comparison operators.
+
+[Video - While Loop](https://drive.google.com/file/d/1rYB-mbiTAXP53I6MlgbuYSEmOWMjdy59/view?usp=sharing)
 
 ### 8. **Delete Mail**
 This action allows the deletion of an email by specifying the host, username, password, and sorting criteria such as seen/unseen status, flagged/non-flagged status, or a date range, with the required date format being YYYY-M-D.
@@ -57,6 +69,8 @@ This action allows users to read or delete emails by providing specific paramete
 
 ### 14. **Read from Excel**
 This action reads data from a specified Excel file and stores it in a variable, allowing users to define specific cells, ranges, output structures (list of lists or dictionary), and optional parameters for data expansion either as a table, column, or row starting from a single specified cell.
+
+[Video - Read from Excel](https://drive.google.com/file/d/1wvDMcEI8lAFeIs6ihw-ga9IaOhb4Q3RF/view?usp=sharing)
 
 ### 15. **Run Actions**
 This action allows users to run previously defined actions within a step without duplicating them. It can execute actions in loops, either repeating until a condition is met or for a specific number of iterations. The loop structure can be customized by specifying conditions like pass/fail, iteration count, or counter limits. Additional settings enable users to exit loops when conditions are met, such as after a specified number of failures.
@@ -295,11 +309,15 @@ A common format might be `%Y-%m-%d`, which users can customize with different se
 ### 87. **Read Text File**
 The action allows users to extract text from various file formats, such as `.txt`, `.pdf`, and `.json`, and store it in a specified variable within the ZeuZ environment. Users provide the file path, which can be a relative or absolute path, and use the `read text file` common action to save the content as a string in a variable. If the content needs to be saved as JSON, an optional parameter called `read as json` must be included, allowing the user to specify that the content should be treated as a JSON object. This functionality enhances data handling in automation workflows, making it easier to manipulate and utilize text data.
 
+[Video - Read Text File](https://drive.google.com/file/d/1wvDMcEI8lAFeIs6ihw-ga9IaOhb4Q3RF/view?usp=sharing)
+
 ### 88. **Read from YAML file**
 This action reads data from a YAML file and saves it in a variable as a list-dict format. Users can specify the file path directly, for example, `c:\Users\ASUS\Downloads\devices.yaml`, or upload the file as an attachment, referencing it with `%| |%` symbols, like `%|devices.yaml|%`. Additionally, users can use the tlide (`~`) to reference the home directory for universal compatibility, such as `~/Desktop/demo.yaml`. The YAML data is then stored in the variable for easy manipulation in automation workflows.
 
 ### 89. **Read from a CSV file**
 This action reads data from a CSV file and saves it in a variable as a list of dictionaries. Users can provide the CSV file path directly (e.g., `c\Users\ASUS\Downloads\devices.csv`), upload it as an attachment using `%| |%`, or reference the home directory with `~` (e.g., `~/Desktop/demo.csv`). The **delimeter** specifies how values are seperated (e.g., comma, semicolon, tab). The data is structured as a "list of dictionaries", where the first row serves as the key and subsequent rows as values for easy manipulation in automation workflows.
+
+[Video - Read from a CSV file](https://drive.google.com/file/d/1wvDMcEI8lAFeIs6ihw-ga9IaOhb4Q3RF/view?usp=sharing)
 
 ### 90. **Remove / Delete global variable**
 This action removes a global variable that is stored on the server. Global variables are shared across different workflows and environments within the system, and deleting them ensures they are no longer accessible in any automation processes. By executing this action, users can clean up unnecessary or outdated global variables.
