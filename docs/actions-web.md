@@ -116,6 +116,8 @@ This action is used to **accept** or **decline alert boxes** that display notifi
 
 [Video - Handle Alert](https://drive.google.com/file/d/1tqmBuziA81IW6GZjHccOAmQ5G6TxMucn/view?usp=drive_link)
 
+[🔗 USAGE GUIDE](/docs/actions/web/handle-alert)
+
 ### 24. **Keystroke chars**
 This action allows typing specific keyboard characters into an input field or textarea using its **identifier** (such as id, class, type, title, or value). After providing the identifier and the desired characters, the action simulates typing those characters directly into the field, replicating keyboard input. This is useful for automating text input in web forms or fields.
 

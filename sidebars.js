@@ -112,7 +112,8 @@ module.exports = {
               "actions/web/go-to-link",
               "actions/web/save-and-read-mail-action",
               "actions/web/handle-alert",
-              "actions/web/keystroke-chars"
+              "actions/web/keystroke-chars",
+              "actions/web/navigate-back"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
