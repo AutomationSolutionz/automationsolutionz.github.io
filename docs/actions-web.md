@@ -121,8 +121,12 @@ This action is used to **accept** or **decline alert boxes** that display notifi
 ### 24. **Keystroke chars**
 This action allows typing specific keyboard characters into an input field or textarea using its **identifier** (such as id, class, type, title, or value). After providing the identifier and the desired characters, the action simulates typing those characters directly into the field, replicating keyboard input. This is useful for automating text input in web forms or fields.
 
+[🔗 USAGE GUIDE](/docs/actions/web/keystroke-chars)
+
 ### 25. **Navigate - Back**
 This action simulates the browser's "back" button. It navigates to the previous page in the browser's history, effectively replicating the action pressing the "back" button to return to the last visited page.
+
+[🔗 USAGE GUIDE](/docs/actions/web/navigate-back)
 
 ### 26. **Navigate - Forward**
 This action simulates the browser's "forward" button. It navigates to the next page in the browser's history, replicating the action of pressing the "forward" button to move to the page visited after the current one.
