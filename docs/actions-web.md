@@ -131,6 +131,8 @@ This action simulates the browser's "back" button. It navigates to the previous 
 ### 26. **Navigate - Forward**
 This action simulates the browser's "forward" button. It navigates to the next page in the browser's history, replicating the action of pressing the "forward" button to move to the page visited after the current one.
 
+[🔗 USAGE GUIDE](/docs/actions/web/navigate-forward)
+
 ### 27. **Navigate - Refresh**
 This action simulates the browser's "refresh" button. It reloads the current page, effectively performing the same function as pressing the "refresh" button in the browser, which is useful for updating or reloading page content.
 

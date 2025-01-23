@@ -114,7 +114,8 @@ module.exports = {
               "actions/web/handle-alert",
               "actions/web/keystroke-chars",
               "actions/web/navigate-back",
-              "actions/web/navigate-forward"
+              "actions/web/navigate-forward",
+              "actions/web/navigate-refresh"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
