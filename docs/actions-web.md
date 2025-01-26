@@ -136,6 +136,8 @@ This action simulates the browser's "forward" button. It navigates to the next p
 ### 27. **Navigate - Refresh**
 This action simulates the browser's "refresh" button. It reloads the current page, effectively performing the same function as pressing the "refresh" button in the browser, which is useful for updating or reloading page content.
 
+[🔗 USAGE GUIDE](/docs/actions/web/navigate-refresh)
+
 ### 28. **Select Element by Index**
 This action uses the **Select** class in Selenium WebDriver to select an option in a dropdown by its index. The action selects an option from a dropdown by specifying the **index** number instead of the option's visible text. The index is an integer value, starting from **0**, which represents the position of the option in the dropdown list. This method is similar to selecting by visible text but relies on the index to choose the desired option. The **Select** class provides methods to help with selecting or deselecting options in HTML dropdowns.
 
