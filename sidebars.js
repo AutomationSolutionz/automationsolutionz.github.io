@@ -116,7 +116,8 @@ module.exports = {
               "actions/web/navigate-back",
               "actions/web/navigate-forward",
               "actions/web/navigate-refresh",
-              "actions/web/select-element-by-index"
+              "actions/web/select-element-by-index",
+              "actions/web/select-element-by-value"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",

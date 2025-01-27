@@ -143,6 +143,8 @@ This action uses the **Select** class in Selenium WebDriver to select an option 
 
 [Video - Select Element by Index](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/select-element-by-index)
+
 ### 29. **Select Element by Value**
 This action uses the **Select** class in Selenium WebDriver to select an option in a dropdown based on the "value" attribute of the option tag. Similar to selecting an option by visible text or index, this method selects the option by its **value** attribute. The action accepts the **value** as a string and selects the dropdown option whose **value** attribute matches the specified parameter. The **Select** class handles this by interacting with the HTML **SELECT** tag and using the value to choose the correct option.
 
