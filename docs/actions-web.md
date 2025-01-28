@@ -150,6 +150,8 @@ This action uses the **Select** class in Selenium WebDriver to select an option 
 
 [Video - Select Element by Value](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/select-element-by-value)
+
 ### 30. **Start Timer**
 This action sets a timer to control when a test case will start. The value in the **value field** determines the timing in seconds.  
 A negative value (e.g., `-5`) triggers the action 5 seconds earlier, while a positive value (e.g., `5`) delays execution by 5 seconds. This allows precise control over test case timing in relation to other actions or events.
