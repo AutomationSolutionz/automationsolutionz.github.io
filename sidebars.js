@@ -118,7 +118,8 @@ module.exports = {
               "actions/web/navigate-refresh",
               "actions/web/select-element-by-index",
               "actions/web/select-element-by-value",
-              "actions/web/switch-browser-window-tab"
+              "actions/web/switch-browser-window-tab",
+              "actions/web/upload-a-file"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",

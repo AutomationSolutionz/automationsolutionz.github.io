@@ -106,6 +106,8 @@ This action allows switching between browser tabs using either the **tab title**
 
 [Video - Switch browser window/tab](https://drive.google.com/file/d/15TQlSsjvRrYEL0UUlczrkTAb-p8Ld81I/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/switch-browser-window-tab)
+
 ### 22. **Upload a file**
 This action automates file uploads in cases where the upload window is outside of Selenium's control. It uses **Microsoft System API** and **PyAutoGUI** to handle the file upload access. This allows automating interactions with operating system-level file upload windows, which Selenium cannot directly manage, by simulating mouse and keyboard actions to select and upload files. This is useful for automating file uploads in complex web applications where Selenium alone is insufficient.
 
