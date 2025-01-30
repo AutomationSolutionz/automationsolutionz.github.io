@@ -113,6 +113,8 @@ This action automates file uploads in cases where the upload window is outside o
 
 [Video - File upload](https://drive.google.com/file/d/1s1ueblNnpp7Wv-gukMxBybEv0RLKzsVZ/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/upload-a-file)
+
 ### 23. **Handle Alert**
 This action is used to **accept** or **decline alert boxes** that display notifications, ask for permissions, or give warnings. Alerts differ from regular windows because ther are **blocking**, meaning no other actions can be performed on the webpage until the alert is addressed. The action waits for the alert to appear for up to **5 seconds** by default, but the wait time can be customized with an optional parameter.
 

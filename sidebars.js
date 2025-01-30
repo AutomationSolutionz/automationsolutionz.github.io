@@ -119,7 +119,8 @@ module.exports = {
               "actions/web/select-element-by-index",
               "actions/web/select-element-by-value",
               "actions/web/switch-browser-window-tab",
-              "actions/web/upload-a-file"
+              "actions/web/upload-a-file",
+              "actions/web/deselect-element-by-index"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
