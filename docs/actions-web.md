@@ -186,6 +186,8 @@ This action is used to clear all selected entries in a dropdown list, but it onl
 ### 38. **Deselect Element by Index**
 This action uses the `Select` class in Selenium WebDriver to deselect an option in a dropdown list by its index. The `Select` class is designed to work with HTML `<SELECT>` elements and provides methods for selecting and deselecting options. In this case, the action targets an option at a specific index, passed as an integer. The index starts at 0, meaning the first option has an index of 0. The method deselects the option at the given index, provided the dropdown supports multiple selections.
 
+[🔗 USAGE GUIDE](/docs/actions/web/deselect-element-by-index)
+
 ### 39. **Deselect Element by Value**
 This action uses the `Select` class in Selenium WebDriver to deselect an option in a dropdown based on the "value" attribute. The `Select` class interacts with HTML `<SELECT>` elements, and in this case, it deselects the option whose "value" matches the provided parameter. This only works if the dropdown supports multiple selections, and the option is identified by the exact "value" string.
 
