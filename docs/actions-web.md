@@ -160,6 +160,8 @@ This action uses the **Select** class in Selenium WebDriver to select an option 
 This action sets a timer to control when a test case will start. The value in the **value field** determines the timing in seconds.  
 A negative value (e.g., `-5`) triggers the action 5 seconds earlier, while a positive value (e.g., `5`) delays execution by 5 seconds. This allows precise control over test case timing in relation to other actions or events.
 
+[🔗 USAGE GUIDE](/docs/actions/web/start-timer)
+
 ### 31. **Click and Hold an Element**
 This action is used to click and hold on an element by identifying it through properties like id, class, type, or title. Once the element is located using these attributes, the action performs a click-and-hold operation, useful for tasks such as moving or extended selection actions.
 

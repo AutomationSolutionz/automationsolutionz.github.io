@@ -121,7 +121,8 @@ module.exports = {
               "actions/web/switch-browser-window-tab",
               "actions/web/upload-a-file",
               "actions/web/deselect-element-by-index",
-              "actions/web/start-timer"
+              "actions/web/start-timer",
+              "actions/web/click-and-hold-an-element"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
