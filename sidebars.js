@@ -122,7 +122,8 @@ module.exports = {
               "actions/web/upload-a-file",
               "actions/web/deselect-element-by-index",
               "actions/web/start-timer",
-              "actions/web/click-and-hold-an-element"
+              "actions/web/click-and-hold-an-element",
+              "actions/web/select-visible-text-with-siblings"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",

@@ -165,6 +165,8 @@ A negative value (e.g., `-5`) triggers the action 5 seconds earlier, while a pos
 ### 31. **Click and Hold an Element**
 This action is used to click and hold on an element by identifying it through properties like id, class, type, or title. Once the element is located using these attributes, the action performs a click-and-hold operation, useful for tasks such as moving or extended selection actions.
 
+[🔗 USAGE GUIDE](/docs/actions/web/click-and-hold-an-element)
+
 ### 32. **Change Attribute Value**
 This action is used to modify the value of any HTML attribute, except the class attribute. To change an attribute's value, first, provide the identifier (such as id, type, title, or value) to locate the element. Then, the attribute value to be modified and the new value to replace it with should be specified. The action will search the page using the provided idetifier, locate the element, and update the specified attribute with the new value.
 
