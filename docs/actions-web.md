@@ -101,6 +101,8 @@ This action scrolls **750 pixels** in a specified direction by default, but you 
 ### 20. **Select Visible Text With Siblings**
 The **Select Visible Text With Siblings** action selects a dropdown option by matching its **visible text** and using a **sibling element** as a reference. It locates the sibling under the same parent as the dropdown option, making it easier to identify and select the correct option when direct identification is challenging.
 
+[🔗 USAGE GUIDE](/docs/actions/web/select-visible-text-with-siblings)
+
 ### 21. **Switch browser window/tab**
 This action allows switching between browser tabs using either the **tab title** or **tab index**. For the tab title, the full name can be provided, or partial matching can be done by adding an asterisk (*) before the title. If the title is unavailable, the **tab index** can be used, where the first tab is indexed as 0. To switch to the most recently opened tab, -1 can be used as the index. This action helps in efficiently navigating between different tabs in a browser.
 

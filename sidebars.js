@@ -123,7 +123,8 @@ module.exports = {
               "actions/web/deselect-element-by-index",
               "actions/web/start-timer",
               "actions/web/click-and-hold-an-element",
-              "actions/web/select-visible-text-with-siblings"
+              "actions/web/select-visible-text-with-siblings",
+              "actions/web/check-or-uncheck-all-elements"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
