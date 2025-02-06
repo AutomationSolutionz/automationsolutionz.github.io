@@ -180,6 +180,8 @@ This action is designed to check all checkboxes under a specified parent element
 ### 34. **Check or uncheck multiple elements**
 This action requires users to specify a parent element, such as a form, that contains multiple checkboxes. If users want to check some boxes and uncheck others, they need to locate the form using the "element parameter" and identify the checkboxes individually by their unique attributes using the "target parameter". Once the form is located, the action will check or uncheck each checkbox based on the provided attributes, ensuring the correct boxes are selected or deselected.
 
+[🔗 USAGE GUIDE](/docs/actions/web/check-or-uncheck-multiple-elements)
+
 ### 35. **Close tab**
 This action allows for closing one or multiple browser tabs. To close a single tab, users can provide either the tab title or tab index. For closing multiple tabs, users can add additional rows with either the titles or indices of the tabs they wish to close. The specified tabs will then be closed based on the provided details.
 

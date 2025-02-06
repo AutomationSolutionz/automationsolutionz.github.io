@@ -125,7 +125,8 @@ module.exports = {
               "actions/web/click-and-hold-an-element",
               "actions/web/select-visible-text-with-siblings",
               "actions/web/check-or-uncheck-all-elements",
-              "actions/web/check-or-uncheck-multiple-elements"
+              "actions/web/check-or-uncheck-multiple-elements",
+              "actions/web/close-tab"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
