@@ -175,6 +175,8 @@ This action is used to modify the value of any HTML attribute, except the class 
 ### 33. **Check or uncheck all elements**
 This action is designed to check all checkboxes under a specified parent element. Users need to provide the parent element, such as a form, using the "element parameter". The checkboxes themselves are located using the "target parameter", which identifies them based on common attributes like name, class, or type. Once the form is identified, the action will check all the checkboxes that match the given attributes under that form.
 
+[🔗 USAGE GUIDE](/docs/actions/web/check-or-uncheck-all-elements)
+
 ### 34. **Check or uncheck multiple elements**
 This action requires users to specify a parent element, such as a form, that contains multiple checkboxes. If users want to check some boxes and uncheck others, they need to locate the form using the "element parameter" and identify the checkboxes individually by their unique attributes using the "target parameter". Once the form is located, the action will check or uncheck each checkbox based on the provided attributes, ensuring the correct boxes are selected or deselected.
 
