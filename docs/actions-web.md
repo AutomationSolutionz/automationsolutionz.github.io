@@ -185,6 +185,8 @@ This action requires users to specify a parent element, such as a form, that con
 ### 35. **Close tab**
 This action allows for closing one or multiple browser tabs. To close a single tab, users can provide either the tab title or tab index. For closing multiple tabs, users can add additional rows with either the titles or indices of the tabs they wish to close. The specified tabs will then be closed based on the provided details.
 
+[🔗 USAGE GUIDE](/docs/actions/web/close-tab)
+
 ### 36. **Context click (Right Mouse Click)**
 This action performs a context click (right-click) on an element using its properties. For example, if an element has attributes such as id, class, type, or title, these can be used to locate the element. Once the element is identified, the action will trigger a right-click on it, opening the context menu or performing the default action associated with a right-click.
 
