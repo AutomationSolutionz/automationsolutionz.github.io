@@ -192,6 +192,8 @@ This action performs a context click (right-click) on an element using its prope
 
 [Video - Context click (Right Mouse Click)](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/context-click-right-mouse-click)
+
 ### 37. **Deselect All**
 This action is used to clear all selected entries in a dropdown list, but it only works when the `SELECT` element allows multiple selections. If the `SELECT` element does not support multiple selections, meaning it lacks the `multiple="multiple"` the action will throw a `NotImplementedError`. This ensures that the action is only applicable for dropdowns designed to handle multiple selections at once.
 

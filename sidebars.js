@@ -127,7 +127,8 @@ module.exports = {
               "actions/web/check-or-uncheck-all-elements",
               "actions/web/check-or-uncheck-multiple-elements",
               "actions/web/close-tab",
-              "actions/web/context-click-right-mouse-click"
+              "actions/web/context-click-right-mouse-click",
+              "actions/web/deselect-all"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
