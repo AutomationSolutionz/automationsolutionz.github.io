@@ -129,7 +129,8 @@ module.exports = {
               "actions/web/close-tab",
               "actions/web/context-click-right-mouse-click",
               "actions/web/deselect-all",
-              "actions/web/change-attribute-value"
+              "actions/web/change-attribute-value",
+              "actions/web/scroll-to-an-element"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
