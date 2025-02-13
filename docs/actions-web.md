@@ -172,6 +172,8 @@ This action is used to click and hold on an element by identifying it through pr
 ### 32. **Change Attribute Value**
 This action is used to modify the value of any HTML attribute, except the class attribute. To change an attribute's value, first, provide the identifier (such as id, type, title, or value) to locate the element. Then, the attribute value to be modified and the new value to replace it with should be specified. The action will search the page using the provided idetifier, locate the element, and update the specified attribute with the new value.
 
+[🔗 USAGE GUIDE](/docs/actions/web/change-attribute-value)
+
 ### 33. **Check or uncheck all elements**
 This action is designed to check all checkboxes under a specified parent element. Users need to provide the parent element, such as a form, using the "element parameter". The checkboxes themselves are located using the "target parameter", which identifies them based on common attributes like name, class, or type. Once the form is identified, the action will check all the checkboxes that match the given attributes under that form.
 
@@ -196,6 +198,8 @@ This action performs a context click (right-click) on an element using its prope
 
 ### 37. **Deselect All**
 This action is used to clear all selected entries in a dropdown list, but it only works when the `SELECT` element allows multiple selections. If the `SELECT` element does not support multiple selections, meaning it lacks the `multiple="multiple"` the action will throw a `NotImplementedError`. This ensures that the action is only applicable for dropdowns designed to handle multiple selections at once.
+
+[🔗 USAGE GUIDE](/docs/actions/web/deselect-all)
 
 ### 38. **Deselect Element by Index**
 This action uses the `Select` class in Selenium WebDriver to deselect an option in a dropdown list by its index. The `Select` class is designed to work with HTML `<SELECT>` elements and provides methods for selecting and deselecting options. In this case, the action targets an option at a specific index, passed as an integer. The index starts at 0, meaning the first option has an index of 0. The method deselects the option at the given index, provided the dropdown supports multiple selections.
