@@ -285,6 +285,8 @@ This action is used to switch between iframes on a webpage. An iframe is an HTML
 
 [Video - Switch iframe](https://drive.google.com/file/d/1tGo-hKNrBjzrq1FrvsZgNVtlCZOk0Dg5/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/switch-iframe)
+
 ### 60. **Take Screenshot**
 This action captures a screenshot of the current webpage and stores the screenshot file's name in the variable "zeuz_screenshot". The screenshot file can later be referenced using the variable `%|zeuz_screenshot|%` in subsequent actions, allowing easy access to the file name for further use in the test case. This action is useful for taking visual evidence of the state of a web page during automated tests.
 
