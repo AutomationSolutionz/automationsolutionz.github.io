@@ -131,7 +131,8 @@ module.exports = {
               "actions/web/deselect-all",
               "actions/web/change-attribute-value",
               "actions/web/scroll-to-an-element",
-              "actions/web/switch-iframe"
+              "actions/web/switch-iframe",
+              "actions/web/teardown-web-browser"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",

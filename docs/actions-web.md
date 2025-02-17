@@ -290,8 +290,10 @@ This action is used to switch between iframes on a webpage. An iframe is an HTML
 ### 60. **Take Screenshot**
 This action captures a screenshot of the current webpage and stores the screenshot file's name in the variable "zeuz_screenshot". The screenshot file can later be referenced using the variable `%|zeuz_screenshot|%` in subsequent actions, allowing easy access to the file name for further use in the test case. This action is useful for taking visual evidence of the state of a web page during automated tests.
 
-### 61. **Takedown Web Browser**
+### 61. **Teardown Web Browser**
 This action is designed to close the browser and clean up the environment to ensure the next test case runs without issues. It terminates the running browser, destroys the Selenium driver, stops the Selenium server, and clears all Shared variables. This action is essential at the end of a test case to prevent errors in subsequent runs caused by residual data or open sessions. Failing to perform this cleanup can lead to conflicts in the next execution.
+
+[🔗 USAGE GUIDE](/docs/actions/web/teardown-web-browser)
 
 ### 62. **Validate Table Row Size**
 The "Validate Table Row Size" action is used to verify the number of rows in a specified table. It checks if the actual number of rows matches the expected value provided. The table is located using its element properties, and once found, this action counts the rows and compares them to the given row size for validation purposes.
