@@ -290,6 +290,8 @@ This action is used to switch between iframes on a webpage. An iframe is an HTML
 ### 60. **Take Screenshot**
 This action captures a screenshot of the current webpage and stores the screenshot file's name in the variable "zeuz_screenshot". The screenshot file can later be referenced using the variable `%|zeuz_screenshot|%` in subsequent actions, allowing easy access to the file name for further use in the test case. This action is useful for taking visual evidence of the state of a web page during automated tests.
 
+[🔗 USAGE GUIDE](/docs/actions/web/take-screenshot)
+
 ### 61. **Teardown Web Browser**
 This action is designed to close the browser and clean up the environment to ensure the next test case runs without issues. It terminates the running browser, destroys the Selenium driver, stops the Selenium server, and clears all Shared variables. This action is essential at the end of a test case to prevent errors in subsequent runs caused by residual data or open sessions. Failing to perform this cleanup can lead to conflicts in the next execution.
 

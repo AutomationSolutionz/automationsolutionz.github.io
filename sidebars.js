@@ -132,7 +132,8 @@ module.exports = {
               "actions/web/change-attribute-value",
               "actions/web/scroll-to-an-element",
               "actions/web/switch-iframe",
-              "actions/web/teardown-web-browser"
+              "actions/web/teardown-web-browser",
+              "actions/web/take-screenshot"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
