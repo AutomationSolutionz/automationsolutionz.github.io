@@ -105,7 +105,6 @@ module.exports = {
       "custom-driver",
       {
         Actions: [
-          "actions-common",
           {
             "Web":[
               "actions-web",
@@ -134,6 +133,10 @@ module.exports = {
               "actions/web/switch-iframe",
               "actions/web/teardown-web-browser",
               "actions/web/take-screenshot"
+            ],
+            "Common": [
+              "actions-common",
+              "actions/common/proxy-server"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
