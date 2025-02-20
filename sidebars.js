@@ -136,7 +136,8 @@ module.exports = {
             ],
             "Common": [
               "actions-common",
-              "actions/common/proxy-server"
+              "actions/common/proxy-server",
+              "actions/common/wait-for-timer"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
