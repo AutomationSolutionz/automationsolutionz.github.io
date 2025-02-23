@@ -9,10 +9,10 @@ module.exports = {
   projectName: 'automationsolutionz.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'ZeuZ',
+      title: '',
       logo: {
         alt: 'Site Logo',
-        src: 'img/zeuz-logo.jpeg',
+        src: 'img/zeuz-logo.svg',
       },
       items: [
         {
@@ -118,7 +118,7 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/img/zeuz-logo.jpeg',
+            href: '/img/zeuz-logo.svg',
           },
           {
             tagName: 'link',
@@ -154,7 +154,7 @@ module.exports = {
           {
             tagName: 'meta',
             name: 'msapplication-TileImage',
-            content: '/img/zeuz-logo.jpeg',
+            content: '/img/zeuz-logo.svg',
           },
           {
             tagName: 'meta',
