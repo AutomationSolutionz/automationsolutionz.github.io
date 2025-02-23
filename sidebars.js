@@ -132,7 +132,9 @@ module.exports = {
               "actions/web/scroll-to-an-element",
               "actions/web/switch-iframe",
               "actions/web/teardown-web-browser",
-              "actions/web/take-screenshot"
+              "actions/web/take-screenshot",
+              "actions/web/click-an-element",
+              "actions/web/click-and-download-attachments"
             ],
             "Common": [
               "actions-common",
