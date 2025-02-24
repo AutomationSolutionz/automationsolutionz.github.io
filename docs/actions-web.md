@@ -26,6 +26,8 @@ This action is used to **write text** to a specific element, such as an input fi
 
 [Video - Enter text](https://drive.google.com/file/d/13B51CW2dlDcEgSqbwFpX1jSU7PtmEKhi/view?usp=drive_link)
 
+[🔗 USAGE GUIDE](/docs/actions/web/enter-text)
+
 ### 3. **Go to Webpage**
 This action is used to **launch a specified web browser** and navigate to a given **URL** by taking the provided URL, setting the necessary browser capabilities, and loading the webpage. The browser's capabilities, such as version or platform, are configured before navigating. Additionally, a **wait time** is included for searching elements on the webpage, with a default timeout of 10 seconds, which applies throughout the entire test case to ensure the automation can handle elements that may take time to appear.
 

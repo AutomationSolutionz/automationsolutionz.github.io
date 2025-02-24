@@ -135,7 +135,8 @@ module.exports = {
               "actions/web/take-screenshot",
               "actions/web/click-an-element",
               "actions/web/click-and-download-attachments",
-              "actions/web/go-to-webpage"
+              "actions/web/go-to-webpage",
+              "actions/web/enter-text"
             ],
             "Common": [
               "actions-common",
