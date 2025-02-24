@@ -134,7 +134,8 @@ module.exports = {
               "actions/web/teardown-web-browser",
               "actions/web/take-screenshot",
               "actions/web/click-an-element",
-              "actions/web/click-and-download-attachments"
+              "actions/web/click-and-download-attachments",
+              "actions/web/go-to-webpage"
             ],
             "Common": [
               "actions-common",

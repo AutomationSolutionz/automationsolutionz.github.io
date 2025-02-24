@@ -19,6 +19,8 @@ This action is used to **click an element** by identifying it through properties
 
 [Video - Click an Element](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/click-an-element)
+
 ### 2. **Enter text**
 This action is used to **write text** to a specific element, such as an input field on a webpage or application. The user must provide an **identifier** for the input field, which can include attributes like **ID**, **class**, **type**, **title**, or **value**. The automation tool then searches the page for the provided identifier and writes the specified text into the input field.
 
@@ -29,7 +31,7 @@ This action is used to **launch a specified web browser** and navigate to a give
 
 [Video - Go to Webpage](https://drive.google.com/file/d/1tEjX-3RhEE0zPm7J-IAeZGek-oqXSZMO/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/go-to-link) 
+[🔗 USAGE GUIDE](/docs/actions/web/go-to-webpage) 
 
 ### 4. **If an Item is Found or Not**
 This action allows for conditional execution of tasks based on whether an element is found on a webpage or application, similar to an "if-else" statement in programming. By providing an identifier (e.g., **resource-id**, **class**, or **text**), the tool checks for the element's presence and returns a **boolean value** (true/false). If the element is found (**true**), specified actions will run, and if not (**false**), different actions can be executed. You can set conditions for both outcomes or just one. Additionally, an optional **wait parameter** can be used to delay execution until the element appears.
@@ -54,6 +56,8 @@ This action is used to **check or uncheck** a specified checkbox element. If the
 
 ### 9. **Click and Download Attachments**
 This action allows clicking on an **attachment element** to either **download the file** to a specified directory or **attach files** to a report. It identifies the attachment, initiates the download, and stores the file in a predefined directory. Additionally, it can automate the process of attaching files directly to reports, making it useful for efficient file management in automated workflows or reporting.
+
+[🔗 USAGE GUIDE](/docs/actions/web/click-and-download-attachments)
 
 ### 10. **Save Attribute Value**
 This action is used to **save the value of an attribute** from a specified element on a webpage or application. It is typically used to extract a particular attribute's value, such as **ID**, **class**, or **text**, for future comparisons or validations. To use this application, **element parameters** are needed to identify and locate the element. Once located, the desired attribute is specified, and its value is saved for later use.
