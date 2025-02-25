@@ -40,6 +40,8 @@ This action allows for conditional execution of tasks based on whether an elemen
 
 [Video - If an Item is Found or Not](https://drive.google.com/file/d/11tI9FGCe_qsfHVDSm6_PfoUpM3g_D3_l/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/if-an-item-is-found-or-not)
+
 ### 5. **Validate Partial Text**
 This action is used to **verify** whether a text field or text view contains the **expected data**, allowing for partial matches. It works by collecting text from an element using its **ID** or other attributes and comparing it with the provided string. If the collected text partially matches the expected text, the action passes. The element identifier doesn't need to be unique; if there are multiple elements with the same identifier, an **index** can be used to specify which one to check. A partial match is considered a successful validation.
 
