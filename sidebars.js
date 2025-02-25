@@ -137,7 +137,8 @@ module.exports = {
               "actions/web/click-and-download-attachments",
               "actions/web/go-to-webpage",
               "actions/web/enter-text",
-              "actions/web/if-an-item-is-found-or-not"
+              "actions/web/if-an-item-is-found-or-not",
+              "actions/web/save-attribute-values-in-list"
             ],
             "Common": [
               "actions-common",
