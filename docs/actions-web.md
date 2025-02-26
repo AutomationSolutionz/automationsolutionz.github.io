@@ -74,6 +74,8 @@ This action is used to **collect data** from a table or webpage and store it as 
 
 [Video - Save attribute values in list](https://drive.google.com/file/d/15pyMCDVK-bPyTLl2s_szhbD3lcn-M0O2/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/save-attribute-values-in-list)
+
 ### 12. **Scroll to an Element**
 This action is used to **scroll to a specific element** by controlling the scroll bar, ensuring it is visible. It can use methods like **JS**, **WebDriver**, or **Action Chain**, with **JS** as the default. The **align to top** option positions the element at the top or bottom of the screen, with the default set to **yes** (align to top). Additionally, you can set an **extra scroll** as a percentage of the screen height or width to ensure full visibility, or disable it by setting the value to **0**. This is useful for handling large or dynamically loaded pages.
 
