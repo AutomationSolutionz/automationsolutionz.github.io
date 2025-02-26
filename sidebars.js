@@ -139,7 +139,8 @@ module.exports = {
               "actions/web/enter-text",
               "actions/web/if-an-item-is-found-or-not",
               "actions/web/save-attribute-values-in-list",
-              "actions/web/save-attribute-value"
+              "actions/web/save-attribute-value",
+              "actions/web/select-by-visible-text"
             ],
             "Common": [
               "actions-common",

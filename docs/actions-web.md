@@ -69,6 +69,8 @@ It is important to note that the attribute being saved should **not** be the sam
 
 [Video - Save Attribute Value](https://drive.google.com/file/d/1KkkhWgeuq2_2OAGslS7nM8lkVD5foZBc/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/save-attribute-value)
+
 ### 11. **Save attribute values in list**
 This action is used to **collect data** from a table or webpage and store it as a **list**. It can capture multiple items and organize them into **lists of lists** for scenarios involving multiple rows or sets of data. By scanning the specified elements, the action retrieves the data and structures it accordingly, making it easy to manage and access for further automation or analysis.
 
@@ -90,6 +92,8 @@ This action is used when scrolling to an element fails, particularly in scenario
 This action uses Selenium WebDriver's **Select** class to **select or deselect options** in a dropdown by matching the **visible text**. It interacts with the HTML `<select>` tag and searches for options based on the displayed text, rather than using the option's index or value. The action selects or deselects the option that matches the provided text, making it useful for handling dropdown menus where the visible text is the key selection criteria.
 
 [Video - Select by Visible Text](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
+
+[🔗 USAGE GUIDE](/docs/actions/web/select-by-visible-text)
 
 ### 15. **Validate Exact Text**
 This action is used to **validate the full text** of a specified element by comparing the provided text with the element's entire content. The validation passes only if the text matches **exactly**; partial matches are not accepted.
