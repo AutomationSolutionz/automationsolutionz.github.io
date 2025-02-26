@@ -34,3 +34,10 @@ Imagine a user is on the login page of a website. After entering their username 
 
 #### Expected Result:
 - The message displays the exact text **"Login Successful"**.
+- The action passes if the text matches exactly.
+
+#### Common Errors and Fixes:
+- **Error**: The text does not match because of extra spaces or capitalization differences.
+  - **Fix**: Ensure that the expected text matches the actual text exactly, including spaces and case sensitivity.
+- **Error**: The success message is not found.
+  - **Fix**: Check whether the element's ID or other attributes are correctly specified.
