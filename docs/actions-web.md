@@ -47,6 +47,9 @@ This action is used to **verify** whether a text field or text view contains the
 
 [Video - Validate Partial Text](https://drive.google.com/file/d/14mDqYocygKDFlAtOPDLmSaI14Eoxx8HJ/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/validate-partial-text)
+
+
 ### 6. **Wait for an element to appear**
 This action waits for a specified **element** to appear on a webpage within a given time limit. If the element appears within the set time, the action **passes** and the test proceeds. If it doesn't appear, the action **fails**. This is particularly useful for handling pages that need time to load, ensuring the test continues only when the desired element is visible within the specified duration.
 
@@ -99,6 +102,8 @@ This action uses Selenium WebDriver's **Select** class to **select or deselect o
 This action is used to **validate the full text** of a specified element by comparing the provided text with the element's entire content. The validation passes only if the text matches **exactly**; partial matches are not accepted.
 
 [Video - Validate Exact Text](https://drive.google.com/file/d/14mDqYocygKDFlAtOPDLmSaI14Eoxx8HJ/view?usp=sharing)
+
+[🔗 USAGE GUIDE](/docs/actions/web/validate-exact-text)
 
 ### 16. **Keystroke Keys by Element Properties**
 This action simulates **keystrokes** like **ENTER** or **TAB** on a specific element using Selenium. First, the element is located using properties such as **ID**, **class**, or **type**, and then the designated keystroke is performed. The **element parameter** identifies the element, while the **keystroke keys** specify the action (e.g., ENTER, TAB). This is useful for automating tasks like form submissions or navigating between fields.
