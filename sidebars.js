@@ -141,7 +141,8 @@ module.exports = {
               "actions/web/save-attribute-values-in-list",
               "actions/web/save-attribute-value",
               "actions/web/select-by-visible-text",
-              "actions/web/validate-exact-text"
+              "actions/web/validate-exact-text",
+              "actions/web/validate-partial-text"
             ],
             "Common": [
               "actions-common",
