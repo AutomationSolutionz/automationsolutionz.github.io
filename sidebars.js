@@ -143,7 +143,9 @@ module.exports = {
               "actions/web/select-by-visible-text",
               "actions/web/validate-exact-text",
               "actions/web/validate-partial-text",
-              "actions/web/wait-for-an-element-to-appear"
+              "actions/web/wait-for-an-element-to-appear",
+              "actions/web/wait-for-an-element-to-disappear",
+              "actions/web/check-or-uncheck-single-element"
             ],
             "Common": [
               "actions-common",

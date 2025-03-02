@@ -55,11 +55,15 @@ This action waits for a specified **element** to appear on a webpage within a gi
 
 [Video - Wait for an element to appear](https://drive.google.com/file/d/1Zc4uiTTYoS1RZifveyJOX7bY3IgaRQuZ/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/wait-for-an element-to-appear)
+
 ### 7. **Wait for an element to disappear**
 This action waits for a specified **element to disappear** within a given time frame. If the element disappears within the set time, the action **passes**, and if it remains visible beyond that time, the action **fails**. This is useful in situations where a page needs time to load, ensuring that tests proceed only when the element has been removed within the specified duration.
 
 ### 8. **Check or uncheck single element**
 This action is used to **check or uncheck** a specified checkbox element. If the checkbox is already in the desired state (checked or unchecked), the action will **skip** making any changes. For example, if the task is to check a checkbox that is already checked, it will remain checked, and no action will be taken. This ensures the checkbox only changes its state when necessary, avoiding redundant actions.
+
+[🔗 USAGE GUIDE](/docs/actions/web/check-or-uncheck-single-element)
 
 ### 9. **Click and Download Attachments**
 This action allows clicking on an **attachment element** to either **download the file** to a specified directory or **attach files** to a report. It identifies the attachment, initiates the download, and stores the file in a predefined directory. Additionally, it can automate the process of attaching files directly to reports, making it useful for efficient file management in automated workflows or reporting.
