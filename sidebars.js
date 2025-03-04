@@ -50,7 +50,7 @@ module.exports = {
               "how-tos/how-to-rearrange-test-cases-in-a-set",
             ],
 
-        
+
             "Batch Update": [
               "how-tos/testing/batch-update/test",
             ],
@@ -106,7 +106,7 @@ module.exports = {
       {
         Actions: [
           {
-            "Web":[
+            "Web": [
               "actions-web",
               "actions/web/go-to-link",
               "actions/web/save-and-read-mail-action",
@@ -146,7 +146,9 @@ module.exports = {
               "actions/web/wait-for-an-element-to-appear",
               "actions/web/wait-for-an-element-to-disappear",
               "actions/web/check-or-uncheck-single-element",
-              "actions/web/double-click-an-element"
+              "actions/web/double-click-an-element",
+              "actions/web/extract-table-data"
+
             ],
             "Common": [
               "actions-common",

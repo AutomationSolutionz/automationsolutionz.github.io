@@ -55,7 +55,7 @@ This action waits for a specified **element** to appear on a webpage within a gi
 
 [Video - Wait for an element to appear](https://drive.google.com/file/d/1Zc4uiTTYoS1RZifveyJOX7bY3IgaRQuZ/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/wait-for-an element-to-appear)
+[🔗 USAGE GUIDE](/docs/actions/web/wait-for-an-element-to-appear)
 
 ### 7. **Wait for an element to disappear**
 This action waits for a specified **element to disappear** within a given time frame. If the element disappears within the set time, the action **passes**, and if it remains visible beyond that time, the action **fails**. This is useful in situations where a page needs time to load, ensuring that tests proceed only when the element has been removed within the specified duration.
@@ -239,6 +239,8 @@ This action allows selecting or deselecting an option in a dropdown based on its
 This action enables a double-click on a web element using its specific properties, such as ID, class, type, or title. It locates the element based on these attributes and performs a double-click action on it.
 
 [Video - Double click an Element](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
+
+[🔗 USAGE GUIDE](/docs/actions/web/double-click-an-element)
 
 ### 42. **Drag and Drop**
 This action facilitates dragging a source element and dropping it onto a destination element. By identifying both the source and destination elements using their properties (such as ID, class, or other attributes), it performs a drag-and-drop operation between the two elements, automatings tasks that require such interactions on a webpage.
