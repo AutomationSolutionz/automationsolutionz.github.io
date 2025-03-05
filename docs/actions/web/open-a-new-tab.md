@@ -66,13 +66,13 @@ Ensure the browser successfully opens a new tab upon executing the action.
 
 #### Common Problems and Their Fixes
 1. **Problem**: The new tab fails to open.  
-   **Possible Cause**: Browser settings may block pop-ups or prevent new tabs from opening.
-   **How to Fix**: 
+   **Possible Cause**: Browser settings may block pop-ups or prevent new tabs from opening.  
+   **How to Fix**:   
    - Check and enable pop-ups or new tabs in the browser settings.
    - Try using a different browser to see if the issue persists.
 
 2. **Problem**: The new tab opens but does not remain in focus.  
-   **Possible Cause**: Some browsers may open a new tab in the background.
+   **Possible Cause**: Some browsers may open a new tab in the background.  
    **How to Fix**: After opening a new tab, use the "Switch to Tab" action to bring it into focus.
 
 ### General Error Handling Tips
