@@ -14,7 +14,7 @@ This action allows users to close one or multiple browser tabs. It provides flex
 
 #### Title:
 Close a single browser tab by its index  
-Test case link: [TEST-8012 Close Tab by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8012/#parentHorizontalTab2)
+Test case link: [TEST-8012 Close Tab by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8012/)
 
 #### Scenario Overview:
 A user has multiple tabs open in a browser and needs to close a specific tab identified by its index. This scenario demonstrates how to use the "Close Tab" action to perform this operation.
@@ -43,7 +43,7 @@ A user has multiple tabs open in a browser and needs to close a specific tab ide
 
 #### Title:
 Close multiple browser tabs by their titles  
-Test case link: [TEST-8012 Close Multiple Tabs by Titles](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8012/#parentHorizontalTab2)
+Test case link: [TEST-8012 Close Multiple Tabs by Titles](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8012/)
 
 #### Scenario Overview:
 A user needs to close multiple tabs based on their titles. This scenario demonstrates how to use the "Close Tab" action to close tabs by specifying their titles.

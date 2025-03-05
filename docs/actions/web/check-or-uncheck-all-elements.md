@@ -14,7 +14,7 @@ This action automates the process of checking or unchecking all checkboxes under
 
 #### Title:
 Check all the checkboxes in a form  
-Test case link: [TEST-8008 Check All Checkboxes](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8008/#parentHorizontalTab2)
+Test case link: [TEST-8008 Check All Checkboxes](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8008/)
 
 #### Scenario Overview:
 A user needs to select all checkboxes in a form before submission. This scenario demonstrates using the "Check or Uncheck All Elements" action to check all checkboxes within a specified form element.
@@ -44,7 +44,7 @@ A user needs to select all checkboxes in a form before submission. This scenario
 
 #### Title:
 Uncheck all the checkboxes in a form  
-Test case link: [TEST-8008 Uncheck All Checkboxes](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8008/#parentHorizontalTab2)
+Test case link: [TEST-8008 Uncheck All Checkboxes](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8008/)
 
 #### Scenario Overview:
 A user needs to deselect all checkboxes in a form. This scenario demonstrates using the "Check or Uncheck All Elements" action to uncheck all checkboxes within a specified form element.

@@ -14,7 +14,7 @@ The "Click an Element" action allows interaction with elements on a webpage, suc
 
 #### Title:
 Click an Element Using a Full ID Match  
-Test case link: [TEST-11414 Click an element using ID match](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11414/#parentHorizontalTab2 )
+Test case link: [TEST-11414 Click an element using ID match](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11414/ )
 
 #### Scenario Overview:
 Imagine a user is on the login page of a website. After entering their username and password, the user wants to log in by clicking the "Sign in" button. This scenario demonstrates how to use the "Click an Element" action to interact with the button identified by its full ID property.
@@ -49,7 +49,7 @@ Imagine a user is on the login page of a website. After entering their username 
 
 #### Title:
 Click an Element Using Text Match  
-Test case link: [TEST-11372 Click an element using text match](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11372/#parentHorizontalTab2)
+Test case link: [TEST-11372 Click an element using text match](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11372/)
 
 #### Scenario Overview:
 Imagine a webpage featuring several buttons labeled with different texts, such as "Sign in", "Cancel", or "Submit". To proceed to the next step in a checkout process, a user needs to click the "Sign in" button. This scenario demonstrates how to use the "Click an Element" action to identify and click the target button using its visible text.

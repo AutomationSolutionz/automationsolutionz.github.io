@@ -14,7 +14,7 @@ This action automates file uploads using Selenium. It handles cases where the fi
 
 #### Title:
 Upload a file using the standard upload button  
-Test case link: [TEST-7987 Upload a File](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7987/#parentHorizontalTab2)
+Test case link: [TEST-7987 Upload a File](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7987/)
 
 #### Scenario Overview:
 Imagine a user needs to upload a document to a web application using a visible upload button. This scenario demonstrates how to use the "Upload File" action to select and upload a file.
@@ -44,7 +44,7 @@ Imagine a user needs to upload a document to a web application using a visible u
 
 #### Title:
 Upload a file through the operating system's file dialog  
-Test case link: [TEST-7987 Upload a File](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7987/#parentHorizontalTab2)
+Test case link: [TEST-7987 Upload a File](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7987/)
 
 #### Scenario Overview:
 Some web applications use custom upload dialogs that Selenium cannot directly interact with. This scenario demonstrates automating such dialogs using tools like PyAutoGUI.

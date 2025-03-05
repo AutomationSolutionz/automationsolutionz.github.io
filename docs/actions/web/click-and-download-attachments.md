@@ -14,7 +14,7 @@ The "Click and Download Attachments" action enables users to interact with attac
 
 #### Title:
 Download an Attachment from a Webpage  
-Test case link: [TEST-11420 Click and download attachment](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11420/#parentHorizontalTab2)
+Test case link: [TEST-11420 Click and download attachment](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11420/)
 
 #### Scenario Overview:
 A user needs to download a document from a webpage, such as a PDF invoice or a report. This scenario verifies that the attachment is correctly located and successfully downloaded to the predefined directory.

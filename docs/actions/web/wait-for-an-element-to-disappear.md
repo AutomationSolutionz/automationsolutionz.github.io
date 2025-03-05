@@ -14,4 +14,4 @@ The "Wait for an Element to Disappear" action ensures that a specific element is
 
 #### Title:
 Wait for a Pop-Up Notification to Disappear  
-Test case link: [TEST-11372 Wait for an element to disappear](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11372/#parentHorizontalTab2)
+Test case link: [TEST-11372 Wait for an element to disappear](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11372/)

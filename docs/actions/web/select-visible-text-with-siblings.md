@@ -14,7 +14,7 @@ This action selects a dropdown option by matching its visible text while using a
 
 #### Title:
 Select a dropdown option by its visible text  
-Test case link: [TEST-8023 Select Dropdown Option by Visible Text](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8023/#parentHorizontalTab2)
+Test case link: [TEST-8023 Select Dropdown Option by Visible Text](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8023/)
 
 #### Scenario Overview:
 A user needs to select an option from a dropdown using its visible text. This scenario demonstrates how to identify the dropdown option and perform the selection based on the visible text.
@@ -42,7 +42,7 @@ A user needs to select an option from a dropdown using its visible text. This sc
 
 #### Title:
 Select a dropdown option using a sibling element  
-Test case link: [TEST-8023 Select Dropdown Option Using Sibling](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8023/#parentHorizontalTab2)
+Test case link: [TEST-8023 Select Dropdown Option Using Sibling](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8023/)
 
 #### Scenario Overview:
 In complex web applications, directly identifying dropdowns may not be feasible. This scenario uses a sibling element under the same parent to locate and select the correct dropdown option.

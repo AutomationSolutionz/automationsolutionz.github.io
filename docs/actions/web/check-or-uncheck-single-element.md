@@ -14,7 +14,7 @@ The "Check or Uncheck Single Element" action is used to interact with a checkbox
 
 #### Title:
 Check the Checkbox if it is not already checked  
-Test case link: [TEST-11441 Checkbox action](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11441/#parentHorizontalTab2)
+Test case link: [TEST-11441 Checkbox action](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11441/)
 
 #### Scenario Overview:
 Imagine a user is filling out a form to subscribe to a newsletter. The form includes a checkbox labeled **"I agree to the terms and conditions"**. This scenario demonstrates how to use the "Check or Uncheck Single Element" action to ensure the checkbox is checked is checked if it is not already selected.

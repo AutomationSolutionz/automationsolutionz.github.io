@@ -14,7 +14,7 @@ This action is designed to selectively check or uncheck multiple checkboxes unde
 
 #### Title:
 Check and uncheck specific checkboxes within a form  
-Test case link: [TEST-8009 Check and Uncheck Specific Checkboxes](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8009/#parentHorizontalTab2)
+Test case link: [TEST-8009 Check and Uncheck Specific Checkboxes](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8009/)
 
 #### Scenario Overview:
 A user needs to select some checkboxes while deselecting others in a form. This scenario demonstrates how to use the "Check or Uncheck Multiple Elements" action to perform this operation based on the unique attributes of the checkboxes.
@@ -44,7 +44,7 @@ A user needs to select some checkboxes while deselecting others in a form. This 
 
 #### Title:
 Check specific checkboxes while skipping those that are already checked  
-Test case link: [TEST-8009 Check Only Unchecked Boxes](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8009/#parentHorizontalTab2)
+Test case link: [TEST-8009 Check Only Unchecked Boxes](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8009/)
 
 #### Scenario Overview:
 A user wants to ensure specific checkboxes are checked, while leaving those that are already checked in their current state. This scenario demonstrates how the action behaves when some checkboxes are already in the desired state.

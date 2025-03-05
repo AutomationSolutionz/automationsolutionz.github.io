@@ -147,7 +147,9 @@ module.exports = {
               "actions/web/wait-for-an-element-to-disappear",
               "actions/web/check-or-uncheck-single-element",
               "actions/web/double-click-an-element",
-              "actions/web/extract-table-data"
+              "actions/web/extract-table-data",
+              "actions/web/hover-over-an-element",
+              "actions/web/open-a-new-tab"
 
             ],
             "Common": [

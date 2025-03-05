@@ -14,7 +14,7 @@ This action uses the `Select` class in Selenium WebDriver to deselect an option 
 
 #### Title:
 Deselect a specific option in a multi-select dropdown by its index  
-Test case link: [TEST-8021 Deselect Element by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8021/#parentHorizontalTab2)
+Test case link: [TEST-8021 Deselect Element by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8021/)
 
 #### Scenario Overview:
 A user needs to deselect a specific option in a dropdown based on its index. This scenario demonstrates how to use the "Deselect Element by Index" action to remove the selection from the desired option.
@@ -43,7 +43,7 @@ A user needs to deselect a specific option in a dropdown based on its index. Thi
 
 #### Title:
 Attempt to deselect an option in a single-select dropdown  
-Test case link: [TEST-8021 Deselect Single-Select Dropdown](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8021/#parentHorizontalTab2)
+Test case link: [TEST-8021 Deselect Single-Select Dropdown](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8021/)
 
 #### Scenario Overview:
 A user attempts to deselect an option in a dropdown that does not support multiple selections. This scenario demonstrates the behavior when the dropdown does not support multiple selections.

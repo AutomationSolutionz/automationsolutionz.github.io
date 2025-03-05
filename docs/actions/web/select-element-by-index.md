@@ -14,7 +14,7 @@ This action utilizes the Select class in Selenium WebDriver to choose an option 
 
 #### Title:
 Select an option from a dropdown using its index  
-Test case link: [TEST-8003 Select Element by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8003/#parentHorizontalTab2)
+Test case link: [TEST-8003 Select Element by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8003/)
 
 #### Scenario Overview:
 A user needs to select an option from a dropdown where the visible text is dynamic or unknown. This scenario demonstrates using the "Select Element by Index" action to choose an option based on its index.
@@ -43,7 +43,7 @@ A user needs to select an option from a dropdown where the visible text is dynam
 
 #### Title:
 Attempt to select an invalid index  
-Test case link: [TEST-8003 Select Element by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8003/#parentHorizontalTab2)
+Test case link: [TEST-8003 Select Element by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8003/)
 
 #### Scenario Overview:
 A user provides an invalid index (e.g., an index greater than the total number of options) to select in a dropdown. This scenario demonstrates how the action behaves in such situations.

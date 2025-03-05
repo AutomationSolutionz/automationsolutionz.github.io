@@ -14,7 +14,7 @@ This action is used to double-click on a web element by identifying it using spe
 
 #### Title:
 Perform a double-click on the button  
-Test case link: [TEST-7998 Perform a double-click on the button](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7998/#parentHorizontalTab2)
+Test case link: [TEST-7998 Perform a double-click on the button](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7998/)
 
 #### Scenario Overview:
 A user needs to perform a double-click on a button or element on a webpage. This scenario demonstrates how to use the double-click action with specific element properties.
@@ -46,7 +46,7 @@ A user needs to perform a double-click on a button or element on a webpage. This
 
 #### Title:
 Perform a double-click on the link  
-Test case link: [TEST-8061 Perform a double-click on the link](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8061/#parentHorizontalTab2)
+Test case link: [TEST-8061 Perform a double-click on the link](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8061/)
 
 #### Scenario Overview:
 A user wants to double-click a link with a specific `attribute` property. This scenario demonstrates how to use the double-click action based on the `attribute`.

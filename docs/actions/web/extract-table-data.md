@@ -14,7 +14,7 @@ This action extracts data from an HTML table element, which includes tags such a
 
 #### Title:
 Extract all data from the table  
-Test case link: [TEST-7993 Extract all data from the table](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7993/#parentHorizontalTab2)
+Test case link: [TEST-7993 Extract all data from the table](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7993/)
 
 #### Scenario Overview:
 A user needs to extract all data from a table on a webpage. This scenario demonstrates how to capture the entire table's content in a structured format as a list of lists, where each inner list represents a row of the table.

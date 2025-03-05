@@ -14,7 +14,7 @@ The "Save Attribute Values in List" action is designed to extract data from a ta
 
 #### Title:
 Extract Product Names and Prices from an E-commerce table  
-Test case link: [TEST-8545 Save attribute value in list](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-8545/#parentHorizontalTab2)
+Test case link: [TEST-8545 Save attribute value in list](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-8545/)
 
 #### Scenario Overview:
 An e-commerce webpage displays a list of products with their names and prices in a tabular format. The user needs to extract this information and store it in a structured list format for later validation or processing.

@@ -14,7 +14,7 @@ The "Wait for an Element to Appear" action ensures that a specific element becom
 
 #### Title:
 Wait for a Button to Appear  
-Test case link: [TEST-11418 Wait for an element to appear](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11418/#parentHorizontalTab2)
+Test case link: [TEST-11418 Wait for an element to appear](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11418/)
 
 #### Scenario Overview:
 Imagine a user navigates to a website where a button takes a few seconds to appear. The button is only visible after a short delay. This scenario demonstrates how to use the "Wait for an Element to Appear" action to ensure the button is visible before proceeding with the test.

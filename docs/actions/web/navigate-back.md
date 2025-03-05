@@ -14,7 +14,7 @@ This action simulates the browser's **back** button, enabling navigation to the 
 
 #### Title:
 Navigate back to the previous page  
-Test case link: [TEST-8000 Navigate Back](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8000/#parentHorizontalTab2)
+Test case link: [TEST-8000 Navigate Back](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8000/)
 
 #### Scenario Overview:
 A user navigates through multiple pages on a website and needs to return to the previous page. This scenario demonstrates how to use the 'Navigate - Back' action to perform this operation.
@@ -42,7 +42,7 @@ A user navigates through multiple pages on a website and needs to return to the 
 
 #### Title:
 Attempt to navigate back on the first page  
-Test case link: [TEST-8000 Navigate Back](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8000/#parentHorizontalTab2)
+Test case link: [TEST-8000 Navigate Back](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8000/)
 
 #### Scenario Overview:
 A user is on the first page of a browser session and attempts to perform the 'Navigate - Back' action. This scenario demonstrates how the action behaves when no previous page exists in the browser's history.

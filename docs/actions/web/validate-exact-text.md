@@ -14,7 +14,7 @@ The "Validate Exact Text" action ensures that the full text of a specified eleme
 
 #### Title:
 Validate the Successful Text  
-Test case link: [TEST-11414 Validate exact text](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11414/#parentHorizontalTab2)
+Test case link: [TEST-11414 Validate exact text](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11414/)
 
 #### Scenario Overview:
 Imagine a user is on the login page of a website. After entering their username and password, the user clicks the "Sign In" button. Upon clicking the "Sign In" button, a validation message appears. This scenario demonstrates how to use the "Validate Exact Text" action to ensure the success message matches the expected text exactly.

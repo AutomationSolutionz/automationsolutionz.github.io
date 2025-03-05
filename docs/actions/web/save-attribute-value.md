@@ -14,7 +14,7 @@ This action requires "element parameters" to locate the target element and speci
 
 #### Title:
 Save the "Price" Value of a Product for Future Validation  
-Test case link: [TEST-8545 Save attribute value](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-8545/#parentHorizontalTab2)
+Test case link: [TEST-8545 Save attribute value](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-8545/)
 
 #### Scenario Overview:
 On an e-commerce website, product prices are displayed dynamically. To validate the price of a specific product later in the test flow, the user needs to extract and store its value. This scenario demonstrates how to use the "Save Attribute Value" action to capture and store the price.
@@ -34,3 +34,13 @@ On an e-commerce website, product prices are displayed dynamically. To validate 
 | index            | element parameter    | 0               |
 | class            | save parameter       | value           |
 | save attribute   | selenium action      | save attribute  |
+
+#### Expected Result:
+- The price value of the product has been successfully retrieved.
+- The stored value can be used for subsequent validations, such as verifying price consistency across pages.
+
+#### Common Errors and Fixes:
+- **Error**: The price element cannot be located.
+  - **Fix**: Ensure that the locator strategy is accurate and uniquely identifies the price element.
+- **Error**: The extracted price value is either empty or incorrect.
+  - **Fix**: Verify that the selected attribute contains the correct price and is not loaded dynamically after the initial page render. Use wait mechanisms if necessary.

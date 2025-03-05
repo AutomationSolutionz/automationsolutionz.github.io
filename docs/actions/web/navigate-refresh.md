@@ -14,7 +14,7 @@ This action simulates the browser's **refresh** button, allowing the current pag
 
 #### Title:
 Refresh the current page  
-Test case link: [TEST-8002 Refresh the Page](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8002/#parentHorizontalTab2)
+Test case link: [TEST-8002 Refresh the Page](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8002/)
 
 #### Scenario Overview:
 A user is interacting with a webpage that displays dynamic content and needs to reload the page to update its content. This scenario demonstrates using the 'Navigate - Refresh' action to perform this operation.
@@ -42,7 +42,7 @@ A user is interacting with a webpage that displays dynamic content and needs to 
 
 #### Title:
 Refresh a page that has unsaved changes  
-Test case link: [TEST-8002 Refresh the Page](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8002/#parentHorizontalTab2)
+Test case link: [TEST-8002 Refresh the Page](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8002/)
 
 #### Scenario Overview:
 A user has unsaved changes on a webpage and attempts to reload the page. This scenario demonstrates the behavior when the 'Navigate - Refresh' action is performed in such cases.

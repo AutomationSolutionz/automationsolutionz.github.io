@@ -14,7 +14,7 @@ This action is used to perform a click-and-hold operation on a specified web ele
 
 #### Title:
 Click and hold a button  
-Test case link: [TEST-8022 Click and Hold](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8022/#parentHorizontalTab2)
+Test case link: [TEST-8022 Click and Hold](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8022/)
 
 #### Scenario Overview:
 A user wants to perform a click-and-hold operation on a button to trigger a specific action. This scenario demonstrates how to use the "Click and Hold an Element" action on an element identified by its `id` attribute.
@@ -43,7 +43,7 @@ A user wants to perform a click-and-hold operation on a button to trigger a spec
 
 #### Title:
 Click and hold an element to perform a drag operation  
-Test case link: [TEST-8022 Click and Hold](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8022/#parentHorizontalTab2)
+Test case link: [TEST-8022 Click and Hold](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8022/)
 
 #### Scenario Overview:
 A user needs to drag an element from one position to another using a "click-and-hold" action. This scenario demonstrates how to perform a click-and-hold operation followed by a drag-and-drop action.

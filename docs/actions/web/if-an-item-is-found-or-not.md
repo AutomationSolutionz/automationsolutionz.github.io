@@ -14,7 +14,7 @@ The "If an Item is Found or Not" action is used to evaluate conditions before pe
 
 #### Title:
 Click an Element Only If It Exists  
-Test case link: [TEST-11442 If the element is found or not](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11442/#parentHorizontalTab2)
+Test case link: [TEST-11442 If the element is found or not](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11442/)
 
 #### Scenario Overview:
 A user navigates to a webpage where an element may or may not be present. The action checks for the element's presence before attempting to click it, ensuring smooth execution.

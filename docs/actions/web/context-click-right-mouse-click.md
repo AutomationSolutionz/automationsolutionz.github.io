@@ -14,7 +14,7 @@ This action performs a context click (right click) on a specified web element us
 
 #### Title:
 Perform a right-click on the button  
-Test case link: [TEST-8013 Perform Right-Click on the Button](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8013/#parentHorizontalTab2)
+Test case link: [TEST-8013 Perform Right-Click on the Button](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8013/)
 
 #### Scenario Overview:
 A user needs to open a context menu by right-clicking on a button. This scenario demonstrates how to use the "Right Click" action to perform a right-click on an element identified by its `id` attribute.
@@ -43,7 +43,7 @@ A user needs to open a context menu by right-clicking on a button. This scenario
 
 #### Title:
 Perform a right-click action on the specified table row  
-Test case link: [TEST-8013 Perform Right Click on Table Row](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8013/#parentHorizontalTab2)
+Test case link: [TEST-8013 Perform Right Click on Table Row](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8013/)
 
 #### Scenario Overview:
 A user needs to right-click on a table row to reveal additional options, such as "Edit" or "Delete". This scenario demonstrates how to use the "Right Click" action to trigger the context menu on a specific table row.

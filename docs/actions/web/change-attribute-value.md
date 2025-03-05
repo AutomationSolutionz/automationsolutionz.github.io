@@ -14,7 +14,7 @@ This action modifies the value of any HTML attribute (except for the `class` att
 
 #### Title:
 Change the value of an input field's `placeholder` atrribute  
-Test case link: [TEST-8007 Change Attribute Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8007/#parentHorizontalTab2)
+Test case link: [TEST-8007 Change Attribute Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8007/)
 
 #### Scenario Overview:
 A user needs to modify the placeholder text of an input field. This scenario demonstrates how to use the "Change Attribute Value" action to update the `placeholder` attribute of the input field.
@@ -44,7 +44,7 @@ A user needs to modify the placeholder text of an input field. This scenario dem
 
 #### Title:
 Change the value of a button's `title` attribute  
-Test case link: [TEST-8007 Change Attribute Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8007/#parentHorizontalTab2)
+Test case link: [TEST-8007 Change Attribute Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8007/)
 
 #### Scenario Overview:
 A user needs to update the tooltip text of a button by modifying its `title` attribute. This scenario demonstrates how to use the "Change Attribute Value" action to update the button's tooltip.

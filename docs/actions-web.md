@@ -260,6 +260,8 @@ This action extracts data from an HTML table element, which contains tags like `
 
 [Video - Extract table data](https://drive.google.com/file/d/1M-dq1Uh1x3GA-sTYND671rhf5-uriCxC/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/extract-table-data)
+
 ### 46. **Get Current URL**
 This action captures and saves the current URL displayed in the browser's address bar. By inspecting the address bar, it retrieves the full URL of the webpage the browser is currently viewing. This can be useful for logging, navigating back to the same page later, or verifying the correctness of the navigation flow in automated tests.
 

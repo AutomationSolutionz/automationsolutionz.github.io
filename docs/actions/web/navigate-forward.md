@@ -14,7 +14,7 @@ This action simulates the browser's **forward** button, enabling navigation to t
 
 #### Title:
 Navigate forward to the next page  
-Test case link: [TEST-8001 Navigate Forward](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8001/#parentHorizontalTab2)
+Test case link: [TEST-8001 Navigate Forward](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8001/)
 
 #### Scenario Overview:
 A user navigates back to a previous page and wants to return to the next page in the browser history. This scenario demonstrates how to use the 'Navigate - Forward' action to perform this operation.
@@ -42,7 +42,7 @@ A user navigates back to a previous page and wants to return to the next page in
 
 #### Title:
 Attempt to navigate forward when there is no forward history  
-Test case link: [TEST-8001 Navigate Forward](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8001/#parentHorizontalTab2)
+Test case link: [TEST-8001 Navigate Forward](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8001/)
 
 #### Scenario Overview:
 A user is on the last page of a browser session and attempts to perform the 'Navigate - Forward' action. This scenario demonstrates how the action behaves when there is no next page in the browser's history.

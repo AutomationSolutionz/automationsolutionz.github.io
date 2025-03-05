@@ -14,7 +14,7 @@ The "Enter Text" action allows users to type text into a specific field on a web
 
 #### Title:
 Write Text to a Username Field Using its `ID`  
-Test case link: [TEST-11415 Write text to an input field using ID](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11415/#parentHorizontalTab2)
+Test case link: [TEST-11415 Write text to an input field using ID](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11415/)
 
 #### Scenario Overview:
 Imagine a user is on the login page of a website and needs to enter their username into the "Username" input field to proceed. This scenario demonstrates how to use the "Enter Text" action to populate the username field by identifying it using its `ID` property (e.g., `username-input`).
@@ -48,7 +48,7 @@ Imagine a user is on the login page of a website and needs to enter their userna
 
 #### Title:
 Write Text to a Search Bar Using its `placeholder`  
-Test case link: [TEST-11419 Write text to an input field using placeholder](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11419/#parentHorizontalTab2)
+Test case link: [TEST-11419 Write text to an input field using placeholder](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11419/)
 
 #### Scenario Overview:
 Imagine a user is on the login page of a website and needs to enter their username into the "Username" input field to proceed. This scenario demonstrates how to use the "Enter Text" action to populate the username field by identifying it using its `placeholder` property.
@@ -65,3 +65,13 @@ Imagine a user is on the login page of a website and needs to enter their userna
 |-----------------|---------------------|------------------|
 | *placeholder    | element parameter   | User Name        |
 | text            | selenium action     | %\|user_name\|%  |
+
+#### Expected Result:
+- The search query is successfully entered into the search bar.
+- The placeholder text is replaced with the entered text.
+
+#### Common Errors and Fixes:
+- **Error**: The input field with the `placeholder` is not found.
+  - **Fix**: Verify that the `placeholder` text matches exactly as it appears on the webpage.
+- **Error**: The text is not entered into the field.
+  - **Fix**: Ensure that the input field is enabled and ready for user input.

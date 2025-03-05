@@ -14,7 +14,7 @@ The "Go to Webpage" action enables users to open a specified browser and navigat
 
 #### Title:
 Navigate to a Homepage Using a URL  
-Test case link: [TEST-11416 Navigate to a homepage using a URL](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11416/#parentHorizontalTab2)
+Test case link: [TEST-11416 Navigate to a homepage using a URL](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11416/)
 
 #### Scenario Overview:
 Imagine a user who wants to visit the homepage of an e-commerce website to start shopping. This scenario demonstrates how to use the "Go to Webpage" action to launch a browser, navigate to a specific URL, and load the website's homepage.

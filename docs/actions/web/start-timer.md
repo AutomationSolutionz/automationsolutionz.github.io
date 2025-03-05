@@ -14,7 +14,7 @@ This action sets a timer to control when a test case will start. The value in th
 
 #### Title:
 Delay the execution of a test case by 5 seconds  
-Test case link: [TEST-8014 Start Timer](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8014/#parentHorizontalTab2)
+Test case link: [TEST-8014 Start Timer](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8014/)
 
 #### Scenario Overview:
 A user needs to delay the execution of a test case to ensure that other prerequisite actions are completed. This scenario demonstrates how to use the "Start Timer" action with a positive value to introduce a delay before execution.
@@ -42,7 +42,7 @@ A user needs to delay the execution of a test case to ensure that other prerequi
 
 #### Title:
 Trigger the test case 5 seconds earlier  
-Test case link: [TEST-8014 Start Timer](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8014/#parentHorizontalTab2)
+Test case link: [TEST-8014 Start Timer](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8014/)
 
 #### Scenario Overview:
 A user wants to ensure a test case starts 5 seconds before its regular schedule to synchronize with other events. This scenario demonstrates how to use the "Start Timer" action with a negative value.

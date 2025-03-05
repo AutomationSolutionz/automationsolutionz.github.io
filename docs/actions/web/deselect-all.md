@@ -14,7 +14,7 @@ This action is used to clear all selected entries in a dropdown list. It works o
 
 #### Title:
 Clear all selected entries in a multi-select dropdown  
-Test case link: [TEST-8020 Deselect All in Multi-Select Dropdown](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8020/#parentHorizontalTab2)
+Test case link: [TEST-8020 Deselect All in Multi-Select Dropdown](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8020/)
 
 #### Scenario Overview:
 A user wants to clear all selected entries in a dropdown that supports multiple selections. This scenario demonstrates how to use the "Deselect All" action to clear all selected options.
@@ -43,7 +43,7 @@ A user wants to clear all selected entries in a dropdown that supports multiple 
 
 #### Title:
 Attempt to clear selections in a single-select dropdown  
-Test case link: [TEST-8020 Deselect All in Single-Select Dropdown](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8020/#parentHorizontalTab2)
+Test case link: [TEST-8020 Deselect All in Single-Select Dropdown](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8020/)
 
 #### Scenario Overview:
 A user attempts to clear all selected entries in a single-select dropdown. This scenario demonstrates the behavior when the dropdown does not support multiple selections.

@@ -14,7 +14,7 @@ This action enables switching between browser tabs or windows using either their
 
 #### Title:
 Switch to a browser tab using its title  
-Test case link: [TEST-7986 Switch to a Browser Tab Using its Title](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7986/#parentHorizontalTab2)
+Test case link: [TEST-7986 Switch to a Browser Tab Using its Title](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7986/)
 
 #### Scenario Overview:
 Imagine a user navigating multiple tabs who needs to switch to a specific tab by its title. This scenario demonstrates how to use the action to identify and switch to the desired tab using its full or partial title.
@@ -44,7 +44,7 @@ Imagine a user navigating multiple tabs who needs to switch to a specific tab by
 
 #### Title:
 Switch to a browser tab using its index value  
-Test case link: [TEST-7986 Switch to a Browser Tab using its Index Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7986/#parentHorizontalTab2)
+Test case link: [TEST-7986 Switch to a Browser Tab using its Index Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7986/)
 
 #### Scenario Overview:
 A user cannot identify tabs by their titles but knows the tab order. This scenario demonstrates how to switch to a tab based on its index.

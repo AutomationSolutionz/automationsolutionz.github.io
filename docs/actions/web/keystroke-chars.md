@@ -14,7 +14,7 @@ This action simulates typing specific characters or keystrokes into an input fie
 
 #### Title:
 Type characters into an input field using its identifier (ID)  
-Test case link: [TEST-7994 Type Characters Using ID](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7994/#parentHorizontalTab2)
+Test case link: [TEST-7994 Type Characters Using ID](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7994/)
 
 #### Scenario Overview:
 A user needs to type a string into an input field identified by its `id` attribute. This scenario demonstrates the use of the 'Keystroke Chars' action to simulate text input.
@@ -42,7 +42,7 @@ A user needs to type a string into an input field identified by its `id` attribu
 
 #### Title:
 Type characters into a textarea using a class name  
-Test case link: [TEST-7994 Type Characters Using Class](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7994/#parentHorizontalTab2)
+Test case link: [TEST-7994 Type Characters Using Class](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7994/)
 
 #### Scenario Overview:
 A user needs to type multiple lines of text into a textarea identified by its `class` attribute. This scenario demonstrates how to use the 'Keystroke Chars' action for multiline text input.

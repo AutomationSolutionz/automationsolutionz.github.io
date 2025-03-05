@@ -14,7 +14,7 @@ The "Select by Visible Text" action allows you to select or deselect an option f
 
 #### Title:
 Select an Option from a Dropdown Using Visible Text  
-Test case link: [TEST-11443 Dropdown selection](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11443/#parentHorizontalTab2)
+Test case link: [TEST-11443 Dropdown selection](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11443/)
 
 #### Scenario Overview:
 Imagine a user is filling out a form to book a flight and needs to select their country from a dropdown menu. This scenario demonstrates how to use the "Select by Visible Text" action to select the country based on the visible text displayed in the dropdown.

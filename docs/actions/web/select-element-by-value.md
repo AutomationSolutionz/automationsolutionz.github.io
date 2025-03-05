@@ -14,7 +14,7 @@ This action utilizes the `Select` class in Selenium WebDriver to choose an optio
 
 #### Title:
 Select an option from a dropdown using its value attribute  
-Test case link: [TEST-8004 Select Element by Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8004/#parentHorizontalTab2)
+Test case link: [TEST-8004 Select Element by Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8004/)
 
 #### Scenario Overview:
 A user may need to select an option in a dropdown by its `value` attribute instead of its visible text or index. This scenario demonstrates how to use the "Select Element by Value" action to accomplish this task.
@@ -43,7 +43,7 @@ A user may need to select an option in a dropdown by its `value` attribute inste
 
 #### Title:
 Attempt to select an option with an invalid value  
-Test case link: [TEST-8004 Select Element by Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8004/#parentHorizontalTab2)
+Test case link: [TEST-8004 Select Element by Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8004/)
 
 #### Scenario Overview:
 A user provides an invalid value to select in a dropdown. This scenario demonstrates how the action behaves in such cases.

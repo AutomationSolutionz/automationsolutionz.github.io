@@ -14,7 +14,7 @@ The "Validate Partial Text" action verifies whether a text field or text view co
 
 #### Title:
 Validate Partial Text in a Confirmation Message  
-Test case link: [TEST-11417 Validate partial text](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11417/#parentHorizontalTab2)
+Test case link: [TEST-11417 Validate partial text](https://qa.automationsolutionz.com/Home/ManageTestCases/Edit/TEST-11417/)
 
 #### Scenario Overview:
 Imagine a user has successfully logged into a website and sees a confirmation message, "Login Successful". This scenario demonstrates how to use the "Validate Partial Text" action to verify that the confirmation message contains the partial text "Successful".
