@@ -293,6 +293,8 @@ This action opens a new tab within the same browser session, allowing users to l
 
 [Video - Open a New Tab](https://drive.google.com/file/d/15TQlSsjvRrYEL0UUlczrkTAb-p8Ld81I/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/web/open-a-new-tab)
+
 ### 55. **Save and Get Element**
 This action allows users to store an element in a variable while writing text to it, making it easier to reference and reuse letter. For instance, when text such as "Dhaka" is entered into an element identified by "id=searchInput", the element can be saved as a variable like "element_1". This stored element can then be used later to input another text, such as "London", without requiring to locate the element again. This improves efficiency in repetitive interactions with the same element.
 

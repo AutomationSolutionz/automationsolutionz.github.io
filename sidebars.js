@@ -149,7 +149,11 @@ module.exports = {
               "actions/web/double-click-an-element",
               "actions/web/extract-table-data",
               "actions/web/hover-over-an-element",
-              "actions/web/open-a-new-tab"
+              "actions/web/open-a-new-tab",
+              "actions/web/save-and-get-element",
+              "actions/web/save-text",
+              "actions/web/save-web-elements-in-list",
+              "actions/web/switch-browser"
 
             ],
             "Common": [
