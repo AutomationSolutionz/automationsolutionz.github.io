@@ -161,6 +161,10 @@ module.exports = {
               "actions/common/proxy-server",
               "actions/common/wait-for-timer"
             ],
+            "Mac": [
+              "actions-mac",
+              "actions/mac/click-an-element"
+            ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-text",
@@ -178,7 +182,6 @@ module.exports = {
           "actions-rest-api",
           "actions-performance",
           "actions-database",
-          "actions-mac",
           "actions-windows",
           "actions-security",
         ]
