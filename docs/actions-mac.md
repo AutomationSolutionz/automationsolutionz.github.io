@@ -13,7 +13,9 @@ title: Mac actions
 This action clears any existing text in an input field and enters new text. It is particularly useful when updating fields where previously entered text needs to be replaced. The field is identified using attributes such as **title**, **label**, **value**, or **identifier**. It ensures accurate text input by replacing previous entries, making it ideal for tasks like form filling or data updates. Tools like ZeuZ support this action to streamline automation and testing workflows effectively.
 
 ### 2. **Click an Element**
-This action clicks on a specified item on the screen by identifying it using attributes such as **title**, **label**, **value**, or **identifier**. Once the item is located, the action simulates a click, allowing interaction with clickable elements like buttons or links. It is commonly used in automation to trigger actions or validate UI behavior, streamlining testing and workflows. 
+This action clicks on a specified item on the screen by identifying it using attributes such as **title**, **label**, **value**, or **identifier**. Once the item is located, the action simulates a click, allowing interaction with clickable elements like buttons or links. It is commonly used in automation to trigger actions or validate UI behavior, streamlining testing and workflows.
+
+[🔗 USAGE GUIDE](/docs/actions/mac/click-an-element)
 
 ### 3. **Double Click**
 This action performs a double-click on a specified element by identifying it through its properties, such as **title**, **label**, **value**, or **identifier**. The user provides the details of the target element, and once located, the action simulates a double-click.
@@ -22,6 +24,8 @@ This is useful for automation tasks requiring actions like opening files, expand
 
 ### 4. **Enter Text**
 This action locates a text field in an application using attributes such as **title**, **label**, **value**, or **identifier** and enters the specified text. It does not delete any existing text in the field; the new text is appended or inserted based on the field's behavior.
+
+[🔗 USAGE GUIDE](/docs/actions/mac/enter-text)
 
 For scenarios where the field needs to be cleared before entering text, the "Clear and Enter Text" action should be used. This action is ideal for tasks where adding new information without modifying existing content is required. Tools like ZeuZ support this action for precise and efficient text input during automation workflows.
 

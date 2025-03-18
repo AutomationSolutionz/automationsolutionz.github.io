@@ -163,7 +163,8 @@ module.exports = {
             ],
             "Mac": [
               "actions-mac",
-              "actions/mac/click-an-element"
+              "actions/mac/click-an-element",
+              "actions/mac/enter-text"
             ],
             "GUI controls": [
               "actions/gui-controls/action-gui-controls-ocr-get-text-using-image",

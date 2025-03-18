@@ -4,7 +4,7 @@ title: Click an Element
 ---
 
 ## Purpose
-This action is used to simulate a click event on a specified element on the screen. The element can be located using its attributes such as `id`, `name`, `XPath`, or `CSS selector`. This action is essential for interacting with buttons, links, and other clickable elements in applications.
+This action is used to simulate a click event on a specified element on the screen. The element can be located using its attributes such as `title`, `label`, `value`, or `identifier`. This action is essential for interacting with buttons, links, and other clickable elements in applications.
 
 ---
 
