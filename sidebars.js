@@ -161,6 +161,10 @@ module.exports = {
               "actions/common/proxy-server",
               "actions/common/wait-for-timer"
             ],
+            "API": [
+              "actions-rest-api",
+              "actions/api/delete-api-request-action"
+            ],
             "Mac": [
               "actions-mac",
               "actions/mac/click-an-element",
@@ -180,7 +184,6 @@ module.exports = {
           },
           "actions-mobile",
           // "actions-desktop",
-          "actions-rest-api",
           "actions-performance",
           "actions-database",
           "actions-windows",
