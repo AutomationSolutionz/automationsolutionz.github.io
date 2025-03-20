@@ -12,27 +12,30 @@ This action simulates typing specific characters or keystrokes into an input fie
 
 ### Scenario 1
 
-#### Title:
+#### Title
 Type characters into an input field using its identifier (ID)  
-Test case link: [TEST-7994 Type Characters Using ID](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7994/)
 
-#### Scenario Overview:
-A user needs to type a string into an input field identified by its `id` attribute. This scenario demonstrates the use of the 'Keystroke Chars' action to simulate text input.
+Sample test case: [TEST-7994 Type Characters Using ID](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7994/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user needs to type a string into an input field identified by its `id` attribute. This scenario demonstrates the use of the "Keystroke Chars" action to simulate text input.
+
+#### Steps to Follow
 1. Navigate to a webpage that contains an input field (e.g., a search bar).
 2. Provide the `id` of the input field and the desired characters to be typed.
-3. Execute the 'Keystroke Chars' action.
+3. Execute the "Keystroke Chars" action.
 
-#### Actions:
-- **Input parameters**:
-  - Element properties: `id = searchInput`
-  - Selenium action: `keystroke chars = enter`
+#### Actions
 
-#### Expected Result:
-- The input field contains the text 'Selenium'.
+| Parameter       | Type               | Value        |
+|-----------------|--------------------|--------------|
+| id              | element parameter  | searchBox    |
+| keystroke chars | selenium action    | programming  |
 
-#### Common Errors and Fixes:
+#### Expected Result
+- The input field contains the text "programming".
+
+#### Common Errors and Fixes
 - **Error**: The input field is not located.
   - **Fix**: Verify that the `id` provided matches the element on the webpage.
 
@@ -40,27 +43,30 @@ A user needs to type a string into an input field identified by its `id` attribu
 
 ### Scenario 2
 
-#### Title:
+#### Title
 Type characters into a textarea using a class name  
-Test case link: [TEST-7994 Type Characters Using Class](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7994/)
 
-#### Scenario Overview:
-A user needs to type multiple lines of text into a textarea identified by its `class` attribute. This scenario demonstrates how to use the 'Keystroke Chars' action for multiline text input.
+Sample test case: [TEST-8119 Type Characters Using Class](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8119/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user needs to type multiple lines of text into a textarea identified by its `class` attribute. This scenario demonstrates how to use the "Keystroke Chars" action for multiline text input.
+
+#### Steps to Follow
 1. Navigate to a webpage that contains a textarea field.
-2. Provide the `class` of the textarea and the characters to be typed.
-3. Execute the 'Keystroke Chars' action.
+2. Provide the `class` of the textarea and the desired characters to be typed.
+3. Execute the "Keystroke Chars" action.
 
-#### Actions:
-- **Input parameters**:
-  - Element properties: `class = input-area`
-  - Selenium action: `keystroke chars = The quick brown fox`
+#### Actions
 
-#### Expected Result:
-- The text area contains the text 'The quick brown fox'.
+| Parameter       | Type               | Value                |
+|-----------------|--------------------|----------------------|
+| class           | element parameter  | mr-sm-2 form-control |
+| keystroke chars | selenium action    | Sadiqul Alam         |
 
-#### Common Errors and Fixes:
+#### Expected Result
+- The textarea contains the text "Sadiqul Alam".
+
+#### Common Errors and Fixes
 - **Error**: The text is not entered into the textarea.
   - **Fix**: Ensure that the correct `class` name is provided and that the textarea is neither hidden nor disabled.
 
@@ -70,35 +76,37 @@ A user needs to type multiple lines of text into a textarea identified by its `c
 
 ### Test Case for Scenario 1
 
-#### Objective:
+#### Objective
 Ensure that typing characters into an input field using its `ID` works correctly.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a webpage containing an input field.
 2. Use the action with inputs:
-   - Element parameter: `id = searchInput`.
-   - Selenium action: `keystroke chars = enter`.
-3. Verify that the input field contains the text 'Selenium'.
+   - **Input parameters**:
+     - Element parameter: `id = searchBox`
+     - Selenium action: `keystroke chars = programming`.
+3. Verify that the input field contains the text "programming".
 
-#### Expected Outcome:
-- The input field is populated with the text 'Selenium'.
+#### Expected Outcome
+- The input field is populated with the text "programming".
 
 ---
 
 ### Test Case for Scenario 2
 
-#### Objective:
+#### Objective
 Ensure that typing multiline text into a textarea using its class name works correctly.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a webpage containing a textarea.
 2. Use the action with inputs:
-   - Element parameter: `class = input-area`.
-   - Selenium action: `keystroke chars = The quick brown fox`.
-3. Verify that the textarea contains the text 'The quick brown fox'.
+   - **Input parameters**:
+     - Element parameter: `class = mr-sm-2 form control`
+     - Selenium action: `keystroke chars = Sadiqul Alam`.
+3. Verify that the textarea contains the text "Sadiqul Alam".
 
-#### Expected Outcome:
-- The textarea is populated with the text 'The quick brown fox'.
+#### Expected Outcome
+- The textarea is populated with the text "Sadiqul Alam".
 
 ---
 
