@@ -4,7 +4,7 @@ title: Navigate - Back
 ---
 
 ## Purpose
-This action simulates the browser's **back** button, enabling navigation to the previous page in the browser history. It functions the same as pressing the browser's **back** button to return to the last visited page.
+This action simulates the browser's **back** button, enabling navigation to the previous page in the browser's history. It functions the same as pressing the browser's **back** button to return to the last visited page.
 
 ---
 
@@ -12,27 +12,29 @@ This action simulates the browser's **back** button, enabling navigation to the 
 
 ### Scenario 1
 
-#### Title:
+#### Title
 Navigate back to the previous page  
-Test case link: [TEST-8000 Navigate Back](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8000/)
 
-#### Scenario Overview:
-A user navigates through multiple pages on a website and needs to return to the previous page. This scenario demonstrates how to use the 'Navigate - Back' action to perform this operation.
+Sample test case: [TEST-8000 Navigate Back](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8000/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user navigates through multiple pages on a website and needs to return to the previous page. This scenario demonstrates how to use the "Navigate - Back" action to perform this operation.
+
+#### Steps to Follow
 1. Open a webpage and navigate to a second page by clicking a link or button.
-2. Use the 'Navigate - Back' action to simulate pressing the browser's back button.
+2. Use the "Navigate - Back" action to simulate pressing the browser's back button.
 3. Verify that the browser successfully navigates to the previous page.
 
-#### Actions:
-- **Input parameters**:
-  - Field: `navigate`
-  - Selenium action: `back`
+#### Actions
 
-#### Expected Result:
-- The browser navigates to the most recently visited page.
+| Parameter    | Type            | Value     |
+|--------------|-----------------|-----------|
+| navigate     | selenium action | back      |
 
-#### Common Errors and Fixes:
+#### Expected Result
+- The browser navigates to the last visited page.
+
+#### Common Errors and Fixes
 - **Error**: The browser fails to navigate back.
   - **Fix**: Ensure that the browser has a valid history to navigate back to.
 
@@ -40,27 +42,29 @@ A user navigates through multiple pages on a website and needs to return to the 
 
 ### Scenario 2
 
-#### Title:
+#### Title
 Attempt to navigate back on the first page  
-Test case link: [TEST-8000 Navigate Back](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8000/)
 
-#### Scenario Overview:
-A user is on the first page of a browser session and attempts to perform the 'Navigate - Back' action. This scenario demonstrates how the action behaves when no previous page exists in the browser's history.
+Sample test case: [TEST-8120 Navigate Back](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8120/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user is on the first page of a browser session and attempts to perform the "Navigate - Back" action. This scenario demonstrates how the action behaves when no previous page exists in the browser's history.
+
+#### Steps to Follow
 1. Open a browser and navigate to the homepage of a website.
-2. Use the 'Navigate - Back' action.
+2. Use the "Navigate - Back" action.
 3. Verify that the browser remains on the same page and does not throw an error.
 
-#### Actions:
-- **Input parameters**:
-  - Field: `navigate`
-  - Selenium action: `back`
+#### Actions
 
-#### Expected Result:
+| Parameter   | Type            | Value     |
+|-------------|-----------------|-----------|
+| navigate    | selenium action | back      |
+
+#### Expected Result
 - The browser remains on the current page, and no errors are thrown.
 
-#### Common Errors and Fixes:
+#### Common Errors and Fixes
 - **Error**: The action fails and does not navigate back.
   - **Fix**: Ensure that the browser is not in incognito mode, which disables history tracking.
 
@@ -70,35 +74,37 @@ A user is on the first page of a browser session and attempts to perform the 'Na
 
 ### Test Case for Scenario 1
 
-#### Objective:
+#### Objective
 Ensure that navigating back to the previous page functions correctly.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and navigate to **Page A**.
 2. Click a link to navigate to **Page B**.
 3. Use the action with inputs:
-   - Field: `navigate`
-   - Selenium action: `back`
+   - **Input parameters**:
+     - Field: `navigate`
+     - Selenium action: `back`.
 4. Verify that the browser navigates back to **Page A**.
 
-#### Expected Outcome:
-- The browser successfully returns to **Page A**.
+#### Expected Outcome
+- The browser successfully navigates back to **Page A**.
 
 ---
 
 ### Test Case for Scenario 2
 
-#### Objective:
+#### Objective
 Ensure that attempting to navigate back on the first page does not cause errors.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and go to **Page A**.
 2. Use the action with inputs:
-   - Field: `navigate`
-   - Selenium action: `back`
+   - **Input parameters**:
+     - Field: `navigate`
+     - Selenium action: `back`.
 3. Verify that the browser remains on **Page A**.
 
-#### Expected Outcome:
+#### Expected Outcome
 - The browser remains on the current page without errors.
 
 ---
