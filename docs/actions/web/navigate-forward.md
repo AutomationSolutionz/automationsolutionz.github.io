@@ -12,27 +12,29 @@ This action simulates the browser's **forward** button, enabling navigation to t
 
 ### Scenario 1
 
-#### Title:
-Navigate forward to the next page  
-Test case link: [TEST-8001 Navigate Forward](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8001/)
+#### Title
+Navigate forward to the next page 
 
-#### Scenario Overview:
-A user navigates back to a previous page and wants to return to the next page in the browser history. This scenario demonstrates how to use the 'Navigate - Forward' action to perform this operation.
+Sample test case: [TEST-8001 Navigate Forward](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8001/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user navigates back to a previous page and wants to return to the next page in the browser history. This scenario demonstrates how to use the "Navigate - Forward" action to perform this operation.
+
+#### Steps to Follow
 1. Open a webpage and navigate to a second page by clicking a link or button.
 2. Use the **Navigate - Back** action to go to the previous page.
 3. Use the **Navigate - Forward** action to return to the second page.
 
-#### Actions:
-- **Input parameters**:
-  - Field: `navigate`
-  - Selenium action: `forward`
+#### Actions
 
-#### Expected Result:
+| Parameter    | Type             | Value      |
+|--------------|------------------|------------|
+| navigate     | selenium action  | forward    |
+
+#### Expected Result
 - The browser navigates to the next page in its history.
 
-#### Common Errors and Fixes:
+#### Common Errors and Fixes
 - **Error**: The browser fails to navigate forward.
   - **Fix**: Ensure that the browser has a valid history to navigate forward to.
 
@@ -40,27 +42,29 @@ A user navigates back to a previous page and wants to return to the next page in
 
 ### Scenario 2
 
-#### Title:
+#### Title
 Attempt to navigate forward when there is no forward history  
-Test case link: [TEST-8001 Navigate Forward](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8001/)
 
-#### Scenario Overview:
-A user is on the last page of a browser session and attempts to perform the 'Navigate - Forward' action. This scenario demonstrates how the action behaves when there is no next page in the browser's history.
+Sample test case: [TEST-8121 Navigate Forward](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8121/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user is on the last page of a browser session and attempts to perform the "Navigate - Forward" action. This scenario demonstrates how the action behaves when there is no next page in the browser's history.
+
+#### Steps to Follow
 1. Open a browser and navigate to a webpage.
-2. Attempt to perform the 'Navigate - Forward' action.
+2. Attempt to perform the "Navigate - Forward" action.
 3. Verify that the browser remains on the same page and does not throw an error.
 
-#### Actions:
-- **Input parameters**:
-  - Field: `navigate`
-  - Selenium action: `forward`
+#### Actions
 
-#### Expected Result:
+| Parameter     | Type            | Value     |
+|---------------|-----------------|-----------|
+| navigate      | selenium action | forward   |
+
+#### Expected Result
 - The browser remains on the current page, and no errors are thrown.
 
-#### Common Errors and Fixes:
+#### Common Errors and Fixes
 - **Error**: The action fails to navigate forward.
   - **Fix**: Ensure that the browser history includes a forward page.
 
@@ -70,36 +74,38 @@ A user is on the last page of a browser session and attempts to perform the 'Nav
 
 ### Test Case for Scenario 1
 
-#### Objective:
+#### Objective
 Ensure that navigating forward to the next page functions correctly.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and go to **Page A**.
 2. Click a link to go to **Page B**.
-3. Use the 'Navigate - Back' action to return to **Page A**.
+3. Use the "Navigate - Back" action to return to **Page A**.
 4. Use the action with inputs:
-   - Field: `navigate`
-   - Selenium action: `forward`
+   - **Input parameters**:
+     - Field: `navigate`
+     - Selenium action: `forward`.
 5. Verify that the browser returns to **Page B**.
 
-#### Expected Outcome:
+#### Expected Outcome
 - The browser successfully navigates forward to **Page B**.
 
 ---
 
 ### Test Case for Scenario 2
 
-#### Objective:
+#### Objective
 Ensure that attempting to navigate forward without a forward history does not cause errors.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and go to **Page A**.
 2. Use the action with inputs:
-   - Field: `navigate`
-   - Selenium action: `forward`
+   - **Input parameters**:
+     - Field: `navigate`
+     - Selenium action: `forward`.
 3. Verify that the browser remains on **Page A**.
 
-#### Expected Outcome:
+#### Expected Outcome
 - The browser remains on the current page without errors.
 
 ---
@@ -113,9 +119,9 @@ Ensure that attempting to navigate forward without a forward history does not ca
 ### Error Handling for Navigate - Forward
 
 #### Common Problems and Their Fixes
-1. **Problem**: The browser fails to navigate.  
+1. **Problem**: The browser fails to navigate forward.  
    **Possible Cause**: No forward page exists in the browser's history.  
-   **How to Fix**: Ensure that the browser session has navigated from at least one additional page.
+   **How to Fix**: Ensure that the browser session has navigated back from at least one additional page.
 
 2. **Problem**: The action fails because of incorrect input.  
    **Possible Cause**: The value specified for the action is invalid.  
