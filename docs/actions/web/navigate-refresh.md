@@ -12,56 +12,60 @@ This action simulates the browser's **refresh** button, allowing the current pag
 
 ### Scenario 1
 
-#### Title:
+#### Title
 Refresh the current page  
-Test case link: [TEST-8002 Refresh the Page](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8002/)
 
-#### Scenario Overview:
-A user is interacting with a webpage that displays dynamic content and needs to reload the page to update its content. This scenario demonstrates using the 'Navigate - Refresh' action to perform this operation.
+Sample test case: [TEST-8002 Refresh the Page](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8002/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user is interacting with a webpage that displays dynamic content and needs to reload the page to update its content. This scenario demonstrates using the "Navigate - Refresh" action to perform this operation.
+
+#### Steps to Follow
 1. Open a webpage with either dynamic or static content.
-2. Use the 'Navigate - Refresh' action to reload the current page.
+2. Use the "Navigate - Refresh" action to reload the current page.
 3. Verify that the page reloads successfully.
 
-#### Actions:
-- **Input parameters**:
-  - Field: `navigate`
-  - Selenium action: `refresh`
+#### Actions
 
-#### Expected Result:
+| Parameter    | Type             | Value     |
+|--------------|------------------|-----------|
+| navigate     | selenium action  | refresh   |
+
+#### Expected Result
 - The browser reloads the current page, and the content is updated.
 
-#### Common Errors and Fixes:
+#### Common Errors and Fixes
 - **Error**: The page fails to reload.
-  - **Fix**: Ensure the browser is not in a state that prevents reloading, such as due to an unresponsive script or blocked network request.
+  - **Fix**: Ensure the browser is not in a state that prevents reloading, such as an unresponsive script or blocked network request.
 
 ---
 
 ### Scenario 2
 
-#### Title:
+#### Title
 Refresh a page that has unsaved changes  
-Test case link: [TEST-8002 Refresh the Page](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8002/)
 
-#### Scenario Overview:
-A user has unsaved changes on a webpage and attempts to reload the page. This scenario demonstrates the behavior when the 'Navigate - Refresh' action is performed in such cases.
+Sample test case: [TEST-8122 Refresh the Page](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8122/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user has unsaved changes on a webpage and attempts to reload the page. This scenario demonstrates the behavior when the "Navigate - Refresh" action is performed in such cases.
+
+#### Steps to Follow
 1. Open a webpage containing a form or editable fields.
 2. Make changes to the form without saving them.
-3. Use the 'Navigate - Refresh' action to reload the page.
+3. Use the "Navigate - Refresh" action to reload the page.
 4. Verify that the browser prompts for unsaved changes (if applicable).
 
-#### Actions:
-- **Input parameters**:
-  - Field: `navigate`
-  - Selenium action: `refresh`
+#### Actions
 
-#### Expected Result:
+| Parameter   | Type             | Value    |
+|-------------|------------------|----------|
+| navigate    | selenium action  | refresh  |
+
+#### Expected Result
 - The browser reloads the page and may prompt about unsaved changes, depending on the webpage's implementation.
 
-#### Common Errors and Fixes:
+#### Common Errors and Fixes
 - **Error**: Unsaved changes are lost without any warning.
   - **Fix**: Confirm the webpage's behavior before performing the refresh action to prevent loss of data.
 
@@ -71,35 +75,37 @@ A user has unsaved changes on a webpage and attempts to reload the page. This sc
 
 ### Test case for Scenario 1
 
-#### Objective:
+#### Objective
 Ensure that reloading the current page works correctly.
 
-#### Steps to perform:
+#### Steps to perform
 1. Open a browser and visit a webpage.
 2. Use the action with inputs:
-   - Field: `navigate`
-   - Selenium action: `refresh`
+   - **Input parameters**:
+     - Field: `navigate`
+     - Selenium action: `refresh`.
 3. Verify that the page reloads successfully.
 
-#### Expected Outcome:
+#### Expected Outcome
 - The browser reloads the current page.
 
 ---
 
 ### Test Case for Scenario 2
 
-#### Objective:
+#### Objective
 Ensure that reloading a page with unsaved changes prompts a warning, if applicable.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and navigate to a webpage containing a form.
 2. Enter data into the form without saving it.
 3. Use the action with inputs:
-   - Field: `navigate`
-   - Selenium action: `refresh`
+   - **Input parameters**:
+     - Field: `navigate`
+     - Selenium action: `refresh`.
 4. Verify that the browser reloads the page and prompts for unsaved changes, if applicable.
 
-#### Expected Outcome:
+#### Expected Outcome
 - The page reloads, and a prompt for unsaved changes appears if supported.
 
 ---
