@@ -12,28 +12,31 @@ This action utilizes the `Select` class in Selenium WebDriver to choose an optio
 
 ### Scenario 1
 
-#### Title:
+#### Title
 Select an option from a dropdown using its value attribute  
-Test case link: [TEST-8004 Select Element by Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8004/)
 
-#### Scenario Overview:
+Sample test case: [TEST-8004 Select Element by Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8004/)
+
+#### Scenario Overview
 A user may need to select an option in a dropdown by its `value` attribute instead of its visible text or index. This scenario demonstrates how to use the "Select Element by Value" action to accomplish this task.
 
-#### Steps to Follow:
+#### Steps to Follow
 1. Open a webpage that contains a dropdown menu.
 2. Identify the dropdown element using attributes such as `id` or `class`.
 3. Use the "Select Element by Value" action with the `value` attribute of the desired option.
 4. Verify that the desired option has been selected.
 
-#### Actions:
-- **Input parameters**:
-  - Element parameter: Provide the element's attribute (e.g., `id = countriesSingle`).
-  - Selenium action: `select by value = china`.
+#### Actions
 
-#### Expected Result:
-- The dropdown selects the option with the value attribute set to "china".
+| Parameter        | Type               | Value       |
+|------------------|--------------------|-------------|
+| id               | element parameter  | country     |
+| select by value  | selenium action    | Bangladesh  |
 
-#### Common Errors and Fixes:
+#### Expected Result
+- The dropdown selects the option with the value attribute set to "Bangladesh".
+
+#### Common Errors and Fixes
 - **Error**: The dropdown element is not found.
   - **Fix**: Ensure that the correct attributes (e.g., `id`, `class`) are provided and that the dropdown is visible.
 
@@ -41,27 +44,30 @@ A user may need to select an option in a dropdown by its `value` attribute inste
 
 ### Scenario 2
 
-#### Title:
-Attempt to select an option with an invalid value  
-Test case link: [TEST-8004 Select Element by Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8004/)
+#### Title
+Attempt to select an invalid value  
 
-#### Scenario Overview:
+Sample test case: [TEST-8124 Select Element by Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8124/)
+
+#### Scenario Overview
 A user provides an invalid value to select in a dropdown. This scenario demonstrates how the action behaves in such cases.
 
-#### Steps to Follow:
+#### Steps to Follow
 1. Open a webpage containing a dropdown menu.
 2. Use the "Select Element by Value" action with a value that does not exist in the dropdown options.
 3. Verify that an appropriate error is logged or raised when the action is performed.
 
-#### Actions:
-- **Input parameters**:
-  - Element parameter: Provide the element's attribute (e.g., `id = countriesSingle`).
-  - Selenium action: `select by value = invalid_value`.
+#### Actions
 
-#### Expected Result:
+| Parameter        | Type               | Value     |
+|------------------|--------------------|-----------|
+| id               | element parameter  | country   |
+| select by value  | selenium action    | China     |
+
+#### Expected Result
 - An error is logged, indicating that the provided value is invalid.
 
-#### Common Errors and Fixes:
+#### Common Errors and Fixes
 - **Error**: The value is not found among the dropdown options.
   - **Fix**: Verify that the provided value exists as an attribute in the dropdown's options.
 
@@ -71,33 +77,35 @@ A user provides an invalid value to select in a dropdown. This scenario demonstr
 
 ### Test Case for Scenario 1
 
-#### Objective:
+#### Objective
 Ensure that selecting an option by its value in a dropdown functions correctly.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and navigate to a webpage that contains a dropdown.
 2. Use the action with inputs:
-   - Element parameter: `id = countriesSingle`.
-   - Selenium action: `select by value = china`.
-3. Verify that the dropdown selects the option with the value `"china"`.
+   - **Input parameters**:
+     - Element parameter: `id = country`
+     - Selenium action: `select by value = Bangladesh`.
+3. Verify that the dropdown selects the option with the value `"Bangladesh"`.
 
-#### Expected Outcome:
+#### Expected Outcome
 - The dropdown selects the option corresponding to the provided value.
 
 ---
 ### Test Case for Scenario 2
 
-#### Objective:
+#### Objective
 Ensure that an appropriate error is logged when an invalid value is provided.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and navigate to a webpage that contains a dropdown.
 2. Use the action with inputs:
-   - Element parameter: `id = countriesSingle`.
-   - Selenium action: `select by value = invalid_value`.
-3. Verify that an error is logged and that the action does not select any option.
+   - **Input parameters**:
+     - Element parameter: `id = country`.
+     - Selenium action: `select by value = China`.
+3. Verify that an error is logged and that the action does not select any appropriate option.
 
-#### Expected Outcome:
+#### Expected Outcome
 - The action logs an error indicating that the provided value is invalid.
 
 ---
