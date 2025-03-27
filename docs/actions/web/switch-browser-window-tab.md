@@ -12,61 +12,64 @@ This action enables switching between browser tabs or windows using either their
 
 ### Scenario 1
 
-#### Title:
+#### Title
 Switch to a browser tab using its title  
-Test case link: [TEST-7986 Switch to a Browser Tab Using its Title](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7986/)
 
-#### Scenario Overview:
+Sample test case: [TEST-8125 Switch to a Browser Tab Using its Title](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8125/)
+
+#### Scenario Overview
 Imagine a user navigating multiple tabs who needs to switch to a specific tab by its title. This scenario demonstrates how to use the action to identify and switch to the desired tab using its full or partial title.
 
-#### Steps to Follow:
-1. Open multiple tabs in the browser, such as a search engine, an email client, and a social media site.
-2. Use the "Switch Browser Window or Tab" action with the tab title as input, such as `"Facebook"`.
-3. Verify that the browser switches to the tab titled `"Facebook"`.
+#### Steps to Follow
+1. Open multiple tabs in the browser.
+2. Use the "Switch Browser Window or Tab" action with the tab title as input, such as `"DEMOQA"`.
+3. Verify that the browser switches to the tab titled `"DEMOQA"`.
 
-#### Actions:
-- **Input**:
-  - Use the window title or `*window title` as the parameter.
-  - Example: `(window title, element parameter, Facebook)`.
-  - Example: `(*window title, element parameter, Facebook)`.
+#### Actions
 
-#### Expected Result:
+| Parameter          | Type               | Value              |
+|--------------------|--------------------|--------------------|
+| window title       | element parameter  | DEMOQA             |
+| switch window/tab  | selenium action    | switch window/tab  |
+
+#### Expected Result
 - The browser switches to the tab that matches the provided title.
 - For partial matches, the browser switches to tabs that contain the provided string.
 
-#### Common Errors and Fixes:
+#### Common Errors and Fixes
 - **Error**: The tab does not switch to the desired window or tab.
-  - **Fix**: Ensure that the tab title matches the input correctly. For partial matches, add `*` before the title.
+  - **Fix**: Ensure that the tab title matches the input correctly. For partial matches, prepend `*` to the title.
 
 ---
 
 ### Scenario 2
 
-#### Title:
+#### Title
 Switch to a browser tab using its index value  
-Test case link: [TEST-7986 Switch to a Browser Tab using its Index Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7986/)
 
-#### Scenario Overview:
+Sample test case: [TEST-7986 Switch to a Browser Tab using its Index Value](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7986/)
+
+#### Scenario Overview
 A user cannot identify tabs by their titles but knows the tab order. This scenario demonstrates how to switch to a tab based on its index.
 
-#### Steps to Follow:
+#### Steps to Follow
 1. Open multiple tabs in the browser.
-2. Use the "Switch Browser Window or Tab" action with the tab index as input, such as `2`.
-3. Verify that the browser switches to the tab at index `2`.
+2. Use the "Switch Browser Window or Tab" action with the tab index as input, such as `0`.
+3. Verify that the browser switches to the tab at index `0`.
 
-#### Actions:
-- **Input**:
-  - Use the window index as the parameter.
-  - Example: `(window index, element parameter, 0)` (Switches to the first tab).
-  - Example: `(window index, element parameter, -1)` (Switches to the most recently opened tab).
+#### Actions
 
-#### Expected Result:
+| Parameter          | Type               | Value              |
+|--------------------|--------------------|--------------------|
+| window index       | element parameter  | 0                  |
+| switch window/tab  | selenium action    | switch window/tab  |
+
+#### Expected Result
 - The browser switches to the tab at the specified index.
-- For index `-1`, the browser switches to the most recently opened tab.
 
-#### Common Errors and Fixes:
+#### Common Errors and Fixes
 - **Error**: Invalid index provided.
-  - **Fix**: Ensure that the index is within the range of open tabs. Use `-1` to switch to the last opened tab.
+  - **Fix**: Ensure that the index is within the range of open tabs. Use `-1` for the last opened tab.
 
 ---
 
@@ -74,35 +77,37 @@ A user cannot identify tabs by their titles but knows the tab order. This scenar
 
 ### Test Case for Scenario 1
 
-#### Objective:
+#### Objective
 Ensure that switching to a tab by its title functions correctly.
 
-#### Steps to Perform:
-1. Open three tabs in the browser titled `"Google"`, `"YouTube"` and `"Facebook"`.
-2. Use the action with the input: `window title` as `"Facebook"`.
-3. Verify that the browser switches to the tab titled `"Facebook"`.
+#### Steps to Perform
+1. Open the tabs in the browser titled `"DEMOQA"`, and `"demoqa.com/sample"`.
+2. Use the action with the input:
+   - **Input parameters**:
+     - Element parameter: `window title = DEMOQA`
+     - Selenium action: `switch window/tab`.
+3. Verify that the browser switches to the tab titled `"DEMOQA"`.
 
-#### Expected Outcome:
-- The browser switches to the tab titled `"Facebook"`.
-- If partial matching (`*window title`) is used, the browser switches to the tab containing the matching string.
+#### Expected Outcome
+- The browser switches to the tab titled `"DEMOQA"`.
 
 ---
 
 ### Test Case for Scenario 2
 
-#### Objective:
+#### Objective
 Ensure that switching to a tab by its index functions correctly.
 
-#### Steps to Perform:
-1. Open three tabs in the browser:
-   - The first tab contains a search engine.
-   - The second tab contains an email client.
-   - The third tab contains a social media page.
-2. Use the action with the input `window index` set to `2`.
-3. Verify that the browser switches to the third tab (index starting at `0`).
+#### Steps to Perform
+1. Open multiple tabs in the browser.
+2. Use the action with the input:
+   - **Input parameters**:
+     - Element parameter: `window index = 0`
+     - Selenium action: `switch window/tab`.
+3. Verify that the browser switches to the first tab (index starting at `0`).
 
-#### Expected Outcome:
-- The browser successfully switches to the tab corresponding to the specified index (e.g., `2`).
+#### Expected Outcome
+- The browser successfully switches to the tab corresponding to the specified index (e.g., `0`).
 
 ---
 
