@@ -34,6 +34,8 @@ This action in ZeuZ is used to retrieve and store the response from a GET reques
 
 [Video - HTTP GET request](https://drive.google.com/file/d/1-grbcOhHegxTDbhF_CGEecxV3O9bSXwz/view?usp=sharing)
 
+[🔗 USAGE GUIDE](/docs/actions/api/get-method)
+
 ### 2. **HTTP POST request**
 This action in ZeuZ sends a POST request to a server and captures the full response. To perform this action, users need to provide the **URL**, **headers**, and **body** of the request. The **body** can contain single or multiple parameters, while the **headers** may include items like authentication tokens or content types. This action is useful for verifying server responses to POST requests, capturing data for validation, or using the response in subsequent test steps. It ensures the server processes the provided data correctly and returns the expected results.
 

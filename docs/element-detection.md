@@ -113,3 +113,32 @@ actions are used at the top of a step. This action is bypassed at first and the 
 any point only then the bypass actions are executed and then the actions in which errors occured are executed again.
 
 ![](/img/zeuz-node/Element_locator/pic12.jpg)
+
+---
+
+### How shadow root works in ZeuZ
+
+In shadow-root you need to mention two elements:
+1. The element that contains the shadow-root.
+2. The element inside shadow-root that you need to interact with.
+
+#### Here is the dataset
+
+| Parameter    | Type                  | Value        |
+|--------------|-----------------------|--------------|
+| tag          | sr element parameter  | div          |
+| id           | sr element parameter  | host-element |
+| tag          | parent parameter      | div          |
+| id           | element parameter     | shadow-text  |
+| wait         | selenium action       | 10           |
+
+To mention shadow-root element put `sr` before element or parent parameter. The element locating mechanism works on css selectors which have some limitations.
+- Only parent parameter and element parameter will work. Sibling, child, following, preceding will not work.
+- Text will not work.
+- Xpath will not work.
+
+We will implement later
+- Partial search.
+- Nested shadow-root handling.
+
+---
