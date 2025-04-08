@@ -124,5 +124,7 @@ A tester attempts to delete a resource. This scenario verifies that the API corr
 - Log both request and response data to assist with troubleshooting.
 - Validate the request URL and method before sending the DELETE request.
 
+---
+
 
 

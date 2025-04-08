@@ -163,7 +163,8 @@ module.exports = {
             ],
             "API": [
               "actions-rest-api",
-              "actions/api/delete-request"
+              "actions/api/delete-request",
+              "actions/api/get-method"
             ],
             "Mac": [
               "actions-mac",
