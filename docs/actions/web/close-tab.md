@@ -12,28 +12,31 @@ This action allows users to close one or multiple browser tabs. It provides flex
 
 ### Scenario 1
 
-#### Title:
+#### Title
 Close a single browser tab by its index  
-Test case link: [TEST-8012 Close Tab by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8012/)
 
-#### Scenario Overview:
+Sample test case: [TEST-8012 Close Tab by Index](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8012/)
+
+#### Scenario Overview
 A user has multiple tabs open in a browser and needs to close a specific tab identified by its index. This scenario demonstrates how to use the "Close Tab" action to perform this operation.
 
-#### Steps to Follow:
+#### Steps to Follow
 1. Open multiple tabs in the browser.
 2. Identify the index of the tab that needs to be closed.
 3. Use the "Close Tab" action with the specified tab index.
 4. Verify that the specified tab has been closed.
 
-#### Actions:
-- **Input parameters**:
-  - **Tabs**: `[1]` represents the index of the tab to be closed.
-  - **Selenium action**: `close tab`.
+#### Actions
 
-#### Expected Result:
-- The browser tab at index 1 is successfully closed.
+| Parameter    | Type                | Value     |
+|--------------|---------------------|-----------|
+| tabs         | optional parameter  | [0]       |
+| close tab    | selenium action     | close tab |
 
-#### Common Errors and Fixes:
+#### Expected Result
+- The browser tab at index 0 is successfully closed.
+
+#### Common Errors and Fixes
 - **Error**: The tab at the specified index is not closed.
   - **Fix**: Ensure that the index provided matches the browser's tab order.
 
@@ -41,28 +44,31 @@ A user has multiple tabs open in a browser and needs to close a specific tab ide
 
 ### Scenario 2
 
-#### Title:
-Close multiple browser tabs by their titles  
-Test case link: [TEST-8012 Close Multiple Tabs by Titles](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8012/)
+#### Title
+Close multiple browser tabs based on their titles  
 
-#### Scenario Overview:
+Sample test case: [TEST-8148 Close Tabs based on their Titles](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8148/)
+
+#### Scenario Overview
 A user needs to close multiple tabs based on their titles. This scenario demonstrates how to use the "Close Tab" action to close tabs by specifying their titles.
 
-#### Steps to Follow:
+#### Steps to Follow
 1. Open multiple tabs in the browser.
 2. Identify the titles of the tabs that need to be closed.
 3. Use the "Close Tab" action with the specified tab titles.
 4. Verify that the specified tabs have been closed.
 
-#### Actions:
-- **Input parameters**:
-  - **Tabs**: `['ZeuZ', 'Google]` (the titles of the tabs to be closed).
-  - **Selenium action**: `close tab`.
+#### Actions
 
-#### Expected Result:
-- The browser tabs with the titles "ZeuZ" and "Google" are successfully closed.
+| Parameter     | Type                | Value      |
+|---------------|---------------------|------------|
+| tabs          | optional parameter  | ['DEMOQA'] |
+| close tab     | selenium action     | close tab  |
 
-#### Common Errors and Fixes:
+#### Expected Result
+- The browser tab with the title "DEMOQA" is closed.
+
+#### Common Errors and Fixes
 - **Error**: The tabs with the specified titles are not closed.
   - **Fix**: Ensure that the titles provided match the tabs exactly.
 
@@ -72,34 +78,36 @@ A user needs to close multiple tabs based on their titles. This scenario demonst
 
 ### Test Case for Scenario 1
 
-#### Objective:
+#### Objective
 Ensure that a specific browser tab is closed by its index.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and create three new tabs.
 2. Use the action with inputs:
-   - **Tabs**: `[1]`.
-   - **Selenium action**: `close tab`.
-3. Verify that the second tab has been closed.
+   - **Input parameters**:
+     - **Tabs**: `[0]` (Provide the index of the tab to be closed).
+     - **Selenium action**: `close tab`.
+3. Verify that the first tab has been closed.
 
-#### Expected Outcome:
-- The tab at index 1 is successfully closed, and the browser automatically switches to another open tab.
+#### Expected Outcome
+- The tab at index 0 is successfully closed, and the browser automatically switches to another open tab.
 
 ---
 
 ### Test Case for Scenario 2
 
-#### Objective:
+#### Objective
 Ensure that multiple tabs are closed by their titles.
 
-#### Steps to Perform:
-1. Open a browser and create three tabs with the titles "ZeuZ", "Google" and "Apollo".
+#### Steps to Perform
+1. Open a browser and create tabs with specific titles.
 2. Use the action with inputs:
-   - **Tabs**: `['ZeuZ', 'Google']`.
-   - **Selenium action**: `close tab`.
-3. Verify that the tabs with the titles "ZeuZ" and "Google" have been closed.
+   - **Input parameters**:
+     - **Tabs**: `['DEMOQA']` (Provide the titles of the tabs to be closed).
+     - **Selenium action**: `close tab`.
+3. Verify that the tab with the title "DEMOQA" is closed.
 
-#### Expected Outcome:
+#### Expected Outcome
 - The tabs with the specified titles are successfully closed, and the browser remains open with the other tabs.
 
 ---
@@ -125,3 +133,5 @@ Ensure that multiple tabs are closed by their titles.
 3. **Problem**: The action fails with an error.  
    **Possible Cause**: The tabs are already closed, or the browser session has ended.  
    **How to Fix**: Verify the browser state and reopen the tabs if necessary.
+
+---
