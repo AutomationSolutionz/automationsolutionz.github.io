@@ -43,6 +43,7 @@ module.exports = {
           "how-tos/how-to-create-schedule",
           "how-tos/how-to-create-test-plans",
           "how-tos/how-to-use-history-page",
+          "how-tos/testing/fail-analysis",
           {
             "Set": [
               "how-tos/how-to-create-test-sets",
@@ -164,7 +165,9 @@ module.exports = {
             "API": [
               "actions-rest-api",
               "actions/api/delete-request",
-              "actions/api/get-method"
+              "actions/api/get-method",
+              "actions/api/post-request",
+              "actions/api/put-request"
             ],
             "Mac": [
               "actions-mac",
