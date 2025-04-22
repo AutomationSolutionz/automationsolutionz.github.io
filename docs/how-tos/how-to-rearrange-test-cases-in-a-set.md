@@ -1,6 +1,6 @@
 ---
 id: how-to-rearrange-test-cases-in-a-set
-title: How to rearrange test cases in a Set
+title: Rearrangement of test cases in a Test Set
 ---
 
 ## Description
@@ -40,7 +40,7 @@ Overall, rearranging test cases enhances the effectiveness and efficiency of sof
 
 ## Steps
 
-1. From the **Menu bar**, go to the **Testing** then **Set** option.
+1. From the **Menu bar**, go to **Testing** and then select the **Set** option.
 
 ![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/set-test.png)
 
@@ -48,8 +48,6 @@ Overall, rearranging test cases enhances the effectiveness and efficiency of sof
 3. Click on the specific **Test Set** to rearrange its test cases.
 
 ![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/test-set.png)
-
-![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/test-set01.png)
 
 4. Click on the **Edit Test Case Order** button.
    > The *Edit Test Case Order* button allows users to rearrange the sequence of test cases within a test set.
@@ -66,3 +64,5 @@ Overall, rearranging test cases enhances the effectiveness and efficiency of sof
 7. Click on the **SAVE** button.
 
 ![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/save-reorder.png)
+
+---
