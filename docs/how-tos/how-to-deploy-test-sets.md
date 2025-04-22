@@ -1,6 +1,6 @@
 ---
 id: how-to-deploy-test-sets
-title: How to deploy Test Sets
+title: Deploy Test Sets
 ---
 
 ## Description
@@ -22,19 +22,13 @@ Automated testing tools execute examinations of the software, report outcomes an
 
 ## Steps
 
-1. From the **Menu bar**, go to the **Testing** then **Set** option.
+1. From the **Menu bar**, navigate to **Testing** and then select the **Set** option.
 
 ![](/img/how-tos/how-to-deploy-test-sets/set-option.png)
 
 2. Go to the **Test Set** page.  
-   > Here, the *Test Set* page contains a tab named **All**.  
-A *Test Set* page is a dedicated page that organizes and manages a collection of related test cases, providing an overview and allowing for efficient execution and tracking of multiple tests.  
 
-   > The All tab shows the Search Set option and the Sets which will be searched on Search Set bar.
-
-![](/img/how-tos/how-to-deploy-test-sets/test-set.png)
-
-3. Click on the **Deploy** button of the required **Test Case**.
+3. Click on the **Deploy** button of the required **Test Set**.
    > The function of *Deploy* button in a test set is to initiate the execution of all the test cases within the set, ensuring comprehensive testing coverage and result generation.
 
 ![](/img/how-tos/how-to-deploy-test-sets/set-deploy.png)
@@ -42,21 +36,40 @@ A *Test Set* page is a dedicated page that organizes and manages a collection of
 4. Go to the **Run Tests/Deploy** page.  
    > The "Run Tests/Deploy" page in refers to a dedicated interface or platform where test cases are executed or deployed for the purpose of evaluating software functionality and performance.  
 
-   > The *Run Tests/Deploy* page conatain two tabs:
-    * **Deployment**
-    * **Environment**.  
+The following information under the **Basic** option needs to be filled in.
+- **Node**
+- **Testers**
+- **Emails**
+- **Version**
+- **Milestone**
+- **Objective**
+- **Browser**
+- **Mobile**
+- **External service**
 
-   > The informations of *Deployment* tab needs to be filled up.
+However, a **Preset** can be selected if required.
     
 ![](/img/how-tos/how-to-deploy-test-sets/run-tests-pg.png)
 
-5. Click on the **RUN** button.
-   > The function of the *RUN* button is to start the execution of all test cases within the set, allowing for a streamlined and automated testing process.
+Additionally, the following information under the **Advanced** option can be filled in if required.
+- **Resolution**
+- **Expected schedule**
+- **Step duration timeout**
+- **Screenshot**
+- **Rerun on fail**
+- **Upload log**
+- **Email preference**
+- **Loop**.
+
+![](/img/how-tos/how-to-deploy-test-sets/advanced-run.png)
+
+5. Click on the **Run** button.
+   > The function of the *Run* button is to start the execution of all test cases within the set, allowing for a streamlined and automated testing process.
 
 ![](/img/how-tos/how-to-deploy-test-sets/set-run.png)
 
-6. Select the **Machine**.
-7. Click on the **Deploy** button.
-   > Selecting a machine to *Deploy* a test set is necessary to ensure the test set is executed in the desired environment, acurately reflecting the conditions in which the software will be used.
+6. After clicking the **Run** button, the **Execution Details** page will open.
 
-![](/img/how-tos/how-to-deploy-test-sets/manual-deploy.png)
+![](/img/how-tos/how-to-deploy-test-sets/execution-details.png)
+
+---
