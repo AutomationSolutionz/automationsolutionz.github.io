@@ -1,6 +1,6 @@
 ---
 id: how-to-use-history-page
-title: How to use the History page
+title: Use of the History page
 ---
 
 ## Description
@@ -15,7 +15,12 @@ The **History Page** help testers and stakeholders stay updated on the status of
 
 ## Steps
 
-### 1. Donut Charts ###
+### 1. From the **Menu bar**, go to **Testing** and then select the **History** option.
+
+![](/img/how-tos/how-to-use-history-page/testing-history.png)
+
+### 2. Donut Charts
+Go to the **History** page, where **Donut Charts** and the **Searched by** option are displayed.
 
 The **Donut Charts** on the History Page visually represent the status of test cases using different colors to indicate various outcomes such as, **Pass**, **Fail**, **Block**, **Skip**, **Submit** and **In Progress**.
 
@@ -33,11 +38,11 @@ The **Donut Charts** on the History Page visually represent the status of test c
 
 #### Interaction:
 
-- **Hover**: Hovering over the total chart below the navbar shows a version comparison popup.
+- **Hover**: Hovering over the total chart below the navbar shows a version/milestone comparison popup.
 
 ### 2. Run Queue
 
-It displays the number of test cases that are in-queued, in-progress and also the permitted nodes, represented by a circular icon. In this case, the total permitted nodes are 5.
+It displays the number of test cases that are in-queued, in-progress and also the permitted nodes, represented by a circular icon. In this case, the total **Permitted nodes** is 5, **In progress** is 1 and **Queued** is 15.
 
 ![](/img/how-tos/how-to-use-history-page/run-queue.png)
 
@@ -46,48 +51,27 @@ It displays the number of test cases that are in-queued, in-progress and also th
 - **Purple**: It displays the test cases that in-progress.
 - **Gray**: It displays the test cases that are in the queue.
 
-### 3. Version Comparison
+By clicking the **Open search bar** button, the test case history can be searched, as well as filtered by "Start date" and "End date".
 
-1. From the menu bar, go to **Testing** menu and click on the **Set** menu.
+![](/img/how-tos/how-to-use-history-page/search-history.png)
 
-![](/img/how-tos/how-to-use-history-page/version-testing.png)
+If there is no need to search the test case history using the search bar, click the **Close Search Bar** button.
 
-2. Click on the **Settings** button.
+![](/img/how-tos/how-to-use-history-page/close-search.png)
 
-![](/img/how-tos/how-to-use-history-page/set-settings.png)
+### 3. Cards
 
-3. Go to **Set Filter Settings** and fill up the following information:
-
-- Build From (Where we can select either **Milestone** or **Version**).
-- Compare With.
-- Github Repository.
-- Lastly, click on the **Save Filter** button.
-
-![](/img/how-tos/how-to-use-history-page/set-filter.png)
-
-After creating a **Version Comparison**, the selected **Milestone** or **Version** will display test case results of a set under the chosen milestone or version. However, to view the test case results of a set from a different **Milestone** or **Version**, the desired milestone or version must be selected again from the **Set** page.
-
-![](/img/how-tos/how-to-use-history-page/version-result.png)
-
-:::note
-
-   For a new user, if the history page displays a blank **Version Comparison**, the user must create either a milestone or a version before proceeding with the version comparison. Then the version comparison will show on the **History** page.
-
-:::
-
-### 4. Cards
-
-The **Cards** on the History Page provide detailed information about test cases, categorized by their status.
+The **Cards** on the History Page provide detailed information about test cases, categorized by their latest **run ID**.
 
 ![](/img/how-tos/how-to-use-history-page/chart.png)
 
 #### Card Color Representation:
 
-- **Yellow**: Contains failed or blocked test cases.
-- **Green**: Successfully deployed.
-- **Blue**: Test case skipped.
+- **Yellow**: Contains blocked test cases.
+- **Green**: Successfully deployed or passed test cases.
+- **Blue**: Skipped test cases.
 - **Hot Pink**: Deployment failed or cancelled.
-- **Grey**: Shows the submitted test cases.
+- **Grey**: Submitted test cases.
 - **Navy Blue**: A navy blue border appears when a deployed test set has blocked or failed test cases.  
 
 
@@ -97,15 +81,39 @@ The **Cards** on the History Page provide detailed information about test cases,
 
 ![](/img/how-tos/how-to-use-history-page/click-card.png)
 
-### 5. Expanded Card
+### 4. Expanded Card
 
-When a card is expanded, additional details and actions become available.
+When a card is expanded, the following additional details and actions are displayed.
+- **Test Case Name**
+- **Number of test cases (Passed, Failed, Blocked, Skipped, Submitted) through Donut Chart**
+- **Machine**
+- **Milestone**
+- **Version**
+- **Tester**
+- **Run ID**
+- **Duration**
+- **Deployment time**
+- **Details**
+- **Runtime Parameters**
+- **Information Index**
+- **Test Cases**
+
+However, there is additional information under the "Details" option, such as:
+- **Mobile**
+- **Start date**
+- **IP**
 
 ![](/img/how-tos/how-to-use-history-page/click-chart.png)
 
+At the bottom of the card, there are two additional options:
+- **Browser (Google Chrome, Microsoft Edge Chromium etc.)**
+- **Automation/Manual**
+
+![](/img/how-tos/how-to-use-history-page/two-options.png)
+
 #### Interaction:
 
-- **Scroll**: The **Runtime Parameters** and **TC**'s section is scrollable.
+- **Scroll**: The **Test Case (TC)** section is scrollable.
 - **Click**: Clicking on the charts will show the corresponding test cases in the **TC**'s section.
 
 
@@ -114,17 +122,26 @@ When a card is expanded, additional details and actions become available.
 - **Passed Test Case ID**: Green
 - **Blocked Test Case ID**: Yellow
 - **Failed Test Case ID**: Hot Pink
+- **Skipped Test Case ID**: Blue
+- **Submitted Test Case ID**: Grey
 
 #### Additional Actions:
 
-- **Click on Test Case ID**: Clicking on a test case ID in the **TC**'s section will show its run history popup.
+- **Click on Test Case ID**: Clicking on the specific test case ID in the **TC**'s section will show the following information:
+  - **Version**
+  - **Milestone**
+  - **Run ID**
+
+![](/img/how-tos/how-to-use-history-page/card-version.png)
+
 - **Click on Test Case Title**: Clicking on a test case title in the **TC**'s section will show its execution log.
 
 ### 6. Others
 
 - Clicking the purple button displays the following buttons:
-  - Go delete log and run history page.
+  - Go to delete log and run history page.
   - Close view.
+  - Donut charts
   - Select how many cards you want to see.
   - Select how you want to see the page (Card/Table).
 
@@ -136,8 +153,6 @@ When a card is expanded, additional details and actions become available.
 
 ![](/img/how-tos/how-to-use-history-page/table-view.png)
 
-- Clicking on the specific test case of the test set shows **Milestones**, **Run ID** and **Version** of that test case.
-
- ![](/img/how-tos/how-to-use-history-page/version-chart.png)
+---
 
 
