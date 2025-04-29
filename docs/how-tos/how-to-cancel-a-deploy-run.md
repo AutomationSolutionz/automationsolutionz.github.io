@@ -1,6 +1,6 @@
 ---
 id: how-to-cancel-a-deploy-run
-title: How to cancel a deploy run
+title: Cancel a deploy run
 ---
 
 ## Description
@@ -17,30 +17,36 @@ Ultimately, cancelling the **Deploy Run** of test cases allows organizations to 
 
 ## Steps
 
-1. From the **Menu Bar**, go to the **Testing** then **History** option.
+1. From the **Menu Bar**, go to the **Testing** menu, then select the **History** option.
 
 ![](/img/how-tos/how-to-cancel-a-deploy-run/history-button.png)
 
 2. Go to the **Results** page.
 
-3. Click on the **Run ID** of the required test case.  
+![](/img/how-tos/how-to-cancel-a-deploy-run/history-result.png)
+
+3. To cancel the deployment run of a specific test case, click on the **Run ID** of that test case within the desired test set. However, to cancel the deployment run of an entire test set, click on the **title** of the corresponding test set card. 
     > *Run ID* refers to a unique identifier assigned to a specific test run, allowing for easy tracking and reference of the executed tests and their associated results.
+
+    > A *test set card* refers to a visual representation or container that displays key information about a specific test set.  
+
+- **Title of a test set card**
+
+![](/img/how-tos/how-to-cancel-a-deploy-run/set-title.png)
+
+- **Run ID of a test case within the desired test set**
 
 ![](/img/how-tos/how-to-cancel-a-deploy-run/results-history.png)
 
 4. Go to the **Execution Details** page.
-5. Click on the **CANCEL RUN** button.  
-    > *Execution Details* page provide comprehensive information about the test execution, including test case status, logs, and other relevant details for analysis and troubleshooting.  
+    > *Execution Details* page provide comprehensive information about the test execution, including test case status, logs, and other relevant details for analysis and troubleshooting.
 
+![](/img/how-tos/how-to-cancel-a-deploy-run/execution-history.png)
+
+5. Click on the **CANCEL RUN** button.  
     > The function of *CANCEL RUN* button is to halt the ongoing test execution process, stopping further execution of test cases, and preserving the current state for analysis or debugging purposes.
 
 ![](/img/how-tos/how-to-cancel-a-deploy-run/cancel-run.png)
-
-6. Go to the **Results** page again and check the **Status** of the required test case whether it has been canceled or not.
-   > The *Status* refers to the outcome or result of executing the test, indicating whether it passed, failed, or has any other relevant status such as blocked, cancelled, or in-progress.  
-   > Checking the *Status* of the test case is necessary to determine whether the test case has passed, failed, cancelled, or encountered any issues, providing insights into the quality and stability of the software being tested.
-
-![](/img/how-tos/how-to-cancel-a-deploy-run/cancel-status.png)
 
 
 
