@@ -12,105 +12,60 @@ This action performs a context click (right click) on a specified web element us
 
 ### Scenario 1
 
-#### Title:
-Perform a right-click on the button  
-Test case link: [TEST-8013 Perform Right-Click on the Button](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8013/)
+#### Title
+Perform a right-click on the button
 
-#### Scenario Overview:
-A user needs to open a context menu by right-clicking on a button. This scenario demonstrates how to use the "Right Click" action to perform a right-click on an element identified by its `id` attribute.
+Sample test case: [TEST-8013 Perform Right-Click on the Button](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8013/)
 
-#### Steps to Follow:
+#### Scenario Overview
+A user needs to open a context menu by right-clicking on a button. This scenario demonstrates the use of the "right-click" action to trigger a specific response or behavior, such as displaying a message box.
+
+#### Steps to Follow
 1. Open a webpage that contains a button.
-2. Identify the button using its `id` attribute.
-3. Use the "Right Click" action with the `id` of the button.
-4. Verify that the context menu is displayed after performing the right-click.
+2. Identify the button using its attribute.
+3. Perform the "right click" action on the text of the button.
+4. Verify that the right-click action has been successfully performed on the button.
 
-#### Actions:
-- **Input parameters**:
-  - **Element parameter**: Provide the element's attribute (e.g., `id = settings-button`).
-  - **Selenium action**: `context click`.
+#### Actions
 
-#### Expected Result:
-- The right-click action successfully triggers the context menu for the specified button.
+| Parameter    | Type               | Value          |
+|--------------|--------------------|----------------|
+| text         | element parameter  | Right Click Me |
+| right click  | selenium action    | right click    |
 
-#### Common Errors and Fixes:
-- **Error**: The context menu fails to appear after the right-click.
-  - **Fix**: Ensure that the correct attribute (e.g., `id`) is provided and that the button is interactable.
+#### Expected Result
+- The right-click action successfully clicks the button and displays a text message.
 
----
+#### Common Errors and Fixes
+- **Error**: The message is not displayed.
+  - **Fix**: Ensure that the correct attribute (e.g., `id` or `text`) is provided and that the button is interactable.
 
-### Scenario 2
-
-#### Title:
-Perform a right-click action on the specified table row  
-Test case link: [TEST-8013 Perform Right Click on Table Row](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8013/)
-
-#### Scenario Overview:
-A user needs to right-click on a table row to reveal additional options, such as "Edit" or "Delete". This scenario demonstrates how to use the "Right Click" action to trigger the context menu on a specific table row.
-
-#### Steps to Follow:
-1. Open a webpage that contains a table with multiple rows.
-2. Identify the table row using attributes like `id` or `class`.
-3. Perform the "Right Click" action on the specified table row.
-4. Ensure that the context menu is displayed with the correct options.
-
-#### Actions:
-- **Input parameters**:
-  - **Element parameter**: Provide the element's attribute (e.g., `id = row-3`).
-  - **Selenium action**: `context click`.
-
-#### Expected Result:
-- The context menu is successfully displayed for the table row with ID `row-3`.
-
-#### Common Errors and Fixes:
-- **Error**: The right-click fails to trigger the context menu.
-  - **Fix**: Verify that the row is interactable and supports the right-click functionality.
-- **Error**: The wrong row is right-clicked.
-  - **Fix**: Confirm that the correct row `ID` or `class` is provided.
-- **Error**: The context menu is displayed, but the expected options are not present.
-  - **Fix**: Verify that the menu options are properly loaded before performing the action.
-- **Error**: The right-click action is ignored or triggers an unintended function.
-  - **Fix**: Check if **JavaScript** event listeners are preventing the right-click behavior, and disable conflicting scripts if necessary.
-
----
+- **Error**: The "right-click" action does not trigger the message.
+  - **Fix**: Ensure the row is interactable and that right-click functionality is supported.
 
 ## Test Cases
 
 ### Test Case for Scenario 1
 
-#### Objective:
-Ensure that the right-click action is performed on a button identified by its `id` attribute.
+#### Objective
+Ensure that the "right-click" action is performed on the button identified by its text attribute.
 
-#### Steps to Perform:
+#### Steps to Perform
 1. Open a browser and navigate to a webpage containing a button.
-2. Use the action with the following inputs:
-   - **Element parameter**: `id = settings-button`.
-   - **Selenium action**: `context click`.
-3. Ensure that the context menu is displayed after the right-click action.
+2. Use the action with following inputs:
+   - **Input parameters**:
+     - **Element parameter**: Provide the element's attribute (e.g., `text = Right Click Me`).
+     - **Selenium action**: `right click`
+3. Verify that the message appears.
 
-#### Expected Outcome:
-- The context menu is displayed for the button.
-
----
-
-### Test Case for Scenario 2
-#### Objective:lementfy that the right-click action correctly opens the context menu for the specified table row.
-
-#### Steps to Perform:
-1. Open a browser and go to a webpage that includes a table.
-2. Use the action with the following inputs:
-   - **Element parameter**: `id = row-3`.
-   - **Selenium action**: `context click`.
-3. Verify that the context menu for the table row with ID `row-3` appears.
-
-#### Expected Outcome:
-- The context menu is displayed for the selected row, displaying options such as "Edit" or "Delete".
+#### Expected Outcome
+- The message is displayed when the button is clicked.
 
 ---
 
 ## Additional Tips for this Action
-- Use a **unique parent or sibling element** to narrow down the search scope when identifying duplicate elements.
-- Enable the **allow hidden** option to allow interaction with **hidden elements**.
+- Use a unique **parent or sibling** element to narrow the search scope when identifying duplicate elements.
+- Enable the **Allow Hidden** option to interact with hidden elements.
 - Test the action across multiple browsers to ensure compatibility.
 
 ---
@@ -120,14 +75,16 @@ Ensure that the right-click action is performed on a button identified by its `i
 #### Common Problems and Their Fixes
 1. **Problem**: The element is not found.  
    **Possible Cause**: The attribute is incorrect, or the element is outside the viewport.  
-   **How to Fix**:  
-   - Ensure that the attribute matches the element.
-   - Scroll the page to bring the element into the viewport.
+   **How to Fix**: 
+   - Ensure the attribute matches the element.
+   - Scroll to bring the element into view.
 
-2. **Problem**: The right-click action fails.  
-   **Possible Cause**: The element is not interactable or is blocked by another element.  
-   **How to Fix**: Use the **allow hidden** or **use js** option to enable forced interaction with the element.
+2. **Problem**: The "right-click" action fails.  
+   **Possible Cause**: The element is not interactable or is being blocked by another element.  
+   **How to Fix**: Use the **allow hidden** or **use JS** option to force interaction.
 
-3. **Problem**: The context menu does not appear.  
-   **Possible Cause**: The element does not have the right-click action properly configured.  
-   **How to Fix**: Verify that the element supports context menu interactions.
+3. **Problem**: The message does not appear.  
+   **Possible Cause**: The "right-click" action is not associated with the element.  
+   **How to Fix**: Verify that the element supports message interactions.
+
+---
