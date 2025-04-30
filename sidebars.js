@@ -44,6 +44,7 @@ module.exports = {
           "how-tos/how-to-create-test-plans",
           "how-tos/how-to-use-history-page",
           "how-tos/testing/fail-analysis",
+          "how-tos/testing/create-global-attachments",
           {
             "Set": [
               "how-tos/how-to-create-test-sets",
