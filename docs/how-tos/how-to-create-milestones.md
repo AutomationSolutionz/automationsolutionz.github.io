@@ -39,38 +39,48 @@ Overall, **Milestones** play a vital role in managing project timelimes, managin
 
 ## Steps
 
-1. From the **Menu bar**, go to **Project** then **Milestone**.
+1. From the **Menu bar**, navigate to **Project** and then select **Milestone**.
 
 ![](/img/how-tos/how-to-create-milestones/menu-bar.png)
 
+2. Navigate to the **Milestone** page.
 
-2. Go to the **Milestone** page.
-3. Click on the **+ New Milestone** button.
-   > The function of *+ New Milestone* button is to enable users to create and add a new milestone or significant point in the test execution timeline, aiding in test planning and progress tracking.
+![](/img/how-tos/how-to-create-milestones/page-milestone.png)
+
+3. To go to the old milestone page, click on the **Navigate to old milestone page** option.
+
+![](/img/how-tos/how-to-create-milestones/old-milestone.png)
+
+4. Click the **"+"** button to create a new milestone.
+   > The function of *+* button is to enable users to create and add a new milestone or significant point in the test execution timeline, aiding in test planning and progress tracking.
 
 ![](/img/how-tos/how-to-create-milestones/new-milestone.png)
 
-4. Go to the **Create/Edit Milestone** page.
-5. Enter the title of **Milestone**.
-   > Entering the title of *Milestone* is necessary to provide a clear and descriptive label for identifying and tracking key points in the test execution process, aiding in effective test management and reporting.
+5. Enter the required information for the milestone, such as:
+  - **Name**, 
+  - **Description**, 
+  - **Start Date**, 
+  - **End Date**.
 
-![](/img/how-tos/how-to-create-milestones/title-of-milestone.png)
+6. Click the **ADD** button to save the milestone details.
 
+![](/img/how-tos/how-to-create-milestones/milestone-info.png)
 
-6. Fill up the information of **Details** tab like:
-  * Status, 
-  * Description, 
-  * Start Date, 
-  * End Date.
+7. After creating a new milestone, the system will redirect to the **Create/Edit Milestone** page.
 
-
-7. Click on the **Save** button.
-
-![](/img/how-tos/how-to-create-milestones/details-tab.png)
-
-8. Modify the informations **(If it is needed)**.
+8. Modify the required information in the **Details** tab of the milestone, including the title if necessary.
    > Modifying the information of a *Milestone* is necessary to reflect any changes in project goals, deadlines, or test execution plans, ensuring that milestones remain accurate and aligned with project progress.
 
-9. Click on the **Save** button.
+   - **Rename Milestone title**,
+   - **Status**,
+   - **Description**,
+   - **Start Date**,
+   - **Due Date**.
 
-![](/img/how-tos/how-to-create-milestones/modify-information.png)
+![](/img/how-tos/how-to-create-milestones/edit-milestone.png)
+
+9. Click the **Save** button.
+
+![](/img/how-tos/how-to-create-milestones/modify-milestone.png)
+
+---
