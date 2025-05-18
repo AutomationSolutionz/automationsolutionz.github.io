@@ -72,7 +72,9 @@ and simply use **Unique parameter** instead of **Element parameter**
 interectable. But if you have any exceptional scenario and want to interect with hidden elements you can say 
 **[allow hidden, optional option, yes]** for that action. Suppose, there is a web element as bellow
 
-    <div class="cover" style="display: none;">Find me out. I am not visible</div>
+```html
+<div class="cover" style="display: none;">Find me out. I am not visible</div>
+```
 
 we want to capture the text value of the element "Find me out. I am not visible". We can do that by this way,
 
