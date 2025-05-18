@@ -1,6 +1,5 @@
 ---
-id: element-detection
-title: Element detection (Web + Mobile)
+title: Element detection - Web and Mobile
 sidebar_label: Element detection
 ---
 
