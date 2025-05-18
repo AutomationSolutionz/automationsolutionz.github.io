@@ -4,6 +4,8 @@
  * for content-centric websites.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 /* Light mode primary color palette based on #7f28ff */
 :root {
   --ifm-color-primary: #7f28ff;
@@ -15,6 +17,8 @@
   --ifm-color-primary-lightest: #d0a2ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
 }
 
 /* Dark mode palette – keeping it vibrant but readable */

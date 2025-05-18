@@ -70,7 +70,7 @@ const config: Config = {
         navbar: {
             title: "",
             logo: {
-                alt: "My Site Logo",
+                alt: "ZeuZ logo",
                 src: "img/logo.svg",
             },
             items: [
@@ -95,15 +95,11 @@ const config: Config = {
                     title: "Docs",
                     items: [
                         {
+                            label: "Setup a trial account",
+                            to: "/docs/intro",
+                        },
+                        {
                             label: "Setup ZeuZ Node",
-                            to: "/docs/intro",
-                        },
-                        {
-                            label: "Tutorial",
-                            to: "/docs/intro",
-                        },
-                        {
-                            label: "Tutorial",
                             to: "/docs/intro",
                         },
                     ],
@@ -143,6 +139,10 @@ const config: Config = {
                         {
                             label: "Download ZeuZ Node",
                             href: "https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases/",
+                        },
+                        {
+                            label: "ZeuZ demo / playground",
+                            href: "https://demo.zeuz.ai/",
                         },
                     ],
                 },
