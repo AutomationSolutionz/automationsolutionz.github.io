@@ -19,35 +19,35 @@ This action is used to **click an element** by identifying it through properties
 
 [Video - Click an Element](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/click-an-element)
+[🔗 USAGE GUIDE](actions/web/click-an-element)
 
 ### 2. **Enter text**
 This action is used to **write text** to a specific element, such as an input field on a webpage or application. The user must provide an **identifier** for the input field, which can include attributes like **ID**, **class**, **type**, **title**, or **value**. The automation tool then searches the page for the provided identifier and writes the specified text into the input field.
 
 [Video - Enter text](https://drive.google.com/file/d/13B51CW2dlDcEgSqbwFpX1jSU7PtmEKhi/view?usp=drive_link)
 
-[🔗 USAGE GUIDE](/docs/actions/web/enter-text)
+[🔗 USAGE GUIDE](actions/web/enter-text)
 
 ### 3. **Go to Webpage**
 This action is used to **launch a specified web browser** and navigate to a given **URL** by taking the provided URL, setting the necessary browser capabilities, and loading the webpage. The browser's capabilities, such as version or platform, are configured before navigating. Additionally, a **wait time** is included for searching elements on the webpage, with a default timeout of 10 seconds, which applies throughout the entire test case to ensure the automation can handle elements that may take time to appear.
 
 [Video - Go to Webpage](https://drive.google.com/file/d/1tEjX-3RhEE0zPm7J-IAeZGek-oqXSZMO/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/go-to-webpage) 
+[🔗 USAGE GUIDE](actions/web/go-to-webpage) 
 
 ### 4. **If an Item is Found or Not**
 This action allows for conditional execution of tasks based on whether an element is found on a webpage or application, similar to an "if-else" statement in programming. By providing an identifier (e.g., **resource-id**, **class**, or **text**), the tool checks for the element's presence and returns a **boolean value** (true/false). If the element is found (**true**), specified actions will run, and if not (**false**), different actions can be executed. You can set conditions for both outcomes or just one. Additionally, an optional **wait parameter** can be used to delay execution until the element appears.
 
 [Video - If an Item is Found or Not](https://drive.google.com/file/d/11tI9FGCe_qsfHVDSm6_PfoUpM3g_D3_l/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/if-an-item-is-found-or-not)
+[🔗 USAGE GUIDE](actions/web/if-an-item-is-found-or-not)
 
 ### 5. **Validate Partial Text**
 This action is used to **verify** whether a text field or text view contains the **expected data**, allowing for partial matches. It works by collecting text from an element using its **ID** or other attributes and comparing it with the provided string. If the collected text partially matches the expected text, the action passes. The element identifier doesn't need to be unique; if there are multiple elements with the same identifier, an **index** can be used to specify which one to check. A partial match is considered a successful validation.
 
 [Video - Validate Partial Text](https://drive.google.com/file/d/14mDqYocygKDFlAtOPDLmSaI14Eoxx8HJ/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/validate-partial-text)
+[🔗 USAGE GUIDE](actions/web/validate-partial-text)
 
 
 ### 6. **Wait for an element to appear**
@@ -55,7 +55,7 @@ This action waits for a specified **element** to appear on a webpage within a gi
 
 [Video - Wait for an element to appear](https://drive.google.com/file/d/1Zc4uiTTYoS1RZifveyJOX7bY3IgaRQuZ/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/wait-for-an-element-to-appear)
+[🔗 USAGE GUIDE](actions/web/wait-for-an-element-to-appear)
 
 ### 7. **Wait for an element to disappear**
 This action waits for a specified **element to disappear** within a given time frame. If the element disappears within the set time, the action **passes**, and if it remains visible beyond that time, the action **fails**. This is useful in situations where a page needs time to load, ensuring that tests proceed only when the element has been removed within the specified duration.
@@ -63,12 +63,12 @@ This action waits for a specified **element to disappear** within a given time f
 ### 8. **Check or uncheck single element**
 This action is used to **check or uncheck** a specified checkbox element. If the checkbox is already in the desired state (checked or unchecked), the action will **skip** making any changes. For example, if the task is to check a checkbox that is already checked, it will remain checked, and no action will be taken. This ensures the checkbox only changes its state when necessary, avoiding redundant actions.
 
-[🔗 USAGE GUIDE](/docs/actions/web/check-or-uncheck-single-element)
+[🔗 USAGE GUIDE](actions/web/check-or-uncheck-single-element)
 
 ### 9. **Click and Download Attachments**
 This action allows clicking on an **attachment element** to either **download the file** to a specified directory or **attach files** to a report. It identifies the attachment, initiates the download, and stores the file in a predefined directory. Additionally, it can automate the process of attaching files directly to reports, making it useful for efficient file management in automated workflows or reporting.
 
-[🔗 USAGE GUIDE](/docs/actions/web/click-and-download-attachments)
+[🔗 USAGE GUIDE](actions/web/click-and-download-attachments)
 
 ### 10. **Save Attribute Value**
 This action is used to **save the value of an attribute** from a specified element on a webpage or application. It is typically used to extract a particular attribute's value, such as **ID**, **class**, or **text**, for future comparisons or validations. To use this application, **element parameters** are needed to identify and locate the element. Once located, the desired attribute is specified, and its value is saved for later use.
@@ -76,14 +76,14 @@ It is important to note that the attribute being saved should **not** be the sam
 
 [Video - Save Attribute Value](https://drive.google.com/file/d/1KkkhWgeuq2_2OAGslS7nM8lkVD5foZBc/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/save-attribute-value)
+[🔗 USAGE GUIDE](actions/web/save-attribute-value)
 
 ### 11. **Save attribute values in list**
 This action is used to **collect data** from a table or webpage and store it as a **list**. It can capture multiple items and organize them into **lists of lists** for scenarios involving multiple rows or sets of data. By scanning the specified elements, the action retrieves the data and structures it accordingly, making it easy to manage and access for further automation or analysis.
 
 [Video - Save attribute values in list](https://drive.google.com/file/d/15pyMCDVK-bPyTLl2s_szhbD3lcn-M0O2/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/save-attribute-values-in-list)
+[🔗 USAGE GUIDE](actions/web/save-attribute-values-in-list)
 
 ### 12. **Scroll to an Element**
 This action is used to **scroll to a specific element** by controlling the scroll bar, ensuring it is visible. It can use methods like **JS**, **WebDriver**, or **Action Chain**, with **JS** as the default. The **align to top** option positions the element at the top or bottom of the screen, with the default set to **yes** (align to top). Additionally, you can set an **extra scroll** as a percentage of the screen height or width to ensure full visibility, or disable it by setting the value to **0**. This is useful for handling large or dynamically loaded pages.
@@ -100,14 +100,14 @@ This action uses Selenium WebDriver's **Select** class to **select or deselect o
 
 [Video - Select by Visible Text](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/select-by-visible-text)
+[🔗 USAGE GUIDE](actions/web/select-by-visible-text)
 
 ### 15. **Validate Exact Text**
 This action is used to **validate the full text** of a specified element by comparing the provided text with the element's entire content. The validation passes only if the text matches **exactly**; partial matches are not accepted.
 
 [Video - Validate Exact Text](https://drive.google.com/file/d/14mDqYocygKDFlAtOPDLmSaI14Eoxx8HJ/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/validate-exact-text)
+[🔗 USAGE GUIDE](actions/web/validate-exact-text)
 
 ### 16. **Keystroke Keys by Element Properties**
 This action simulates **keystrokes** like **ENTER** or **TAB** on a specific element using Selenium. First, the element is located using properties such as **ID**, **class**, or **type**, and then the designated keystroke is performed. The **element parameter** identifies the element, while the **keystroke keys** specify the action (e.g., ENTER, TAB). This is useful for automating tasks like form submissions or navigating between fields.
@@ -124,110 +124,110 @@ This action scrolls **750 pixels** in a specified direction by default, but you 
 ### 20. **Select Visible Text With Siblings**
 The **Select Visible Text With Siblings** action selects a dropdown option by matching its **visible text** and using a **sibling element** as a reference. It locates the sibling under the same parent as the dropdown option, making it easier to identify and select the correct option when direct identification is challenging.
 
-[🔗 USAGE GUIDE](/docs/actions/web/select-visible-text-with-siblings)
+[🔗 USAGE GUIDE](actions/web/select-visible-text-with-siblings)
 
 ### 21. **Switch browser window/tab**
 This action allows switching between browser tabs using either the **tab title** or **tab index**. For the tab title, the full name can be provided, or partial matching can be done by adding an asterisk (*) before the title. If the title is unavailable, the **tab index** can be used, where the first tab is indexed as 0. To switch to the most recently opened tab, -1 can be used as the index. This action helps in efficiently navigating between different tabs in a browser.
 
 [Video - Switch browser window/tab](https://drive.google.com/file/d/15TQlSsjvRrYEL0UUlczrkTAb-p8Ld81I/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/switch-browser-window-tab)
+[🔗 USAGE GUIDE](actions/web/switch-browser-window-tab)
 
 ### 22. **Upload a file**
 This action automates file uploads in cases where the upload window is outside of Selenium's control. It uses **Microsoft System API** and **PyAutoGUI** to handle the file upload access. This allows automating interactions with operating system-level file upload windows, which Selenium cannot directly manage, by simulating mouse and keyboard actions to select and upload files. This is useful for automating file uploads in complex web applications where Selenium alone is insufficient.
 
 [Video - File upload](https://drive.google.com/file/d/1s1ueblNnpp7Wv-gukMxBybEv0RLKzsVZ/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/upload-a-file)
+[🔗 USAGE GUIDE](actions/web/upload-a-file)
 
 ### 23. **Handle Alert**
 This action is used to **accept** or **decline alert boxes** that display notifications, ask for permissions, or give warnings. Alerts differ from regular windows because ther are **blocking**, meaning no other actions can be performed on the webpage until the alert is addressed. The action waits for the alert to appear for up to **5 seconds** by default, but the wait time can be customized with an optional parameter.
 
 [Video - Handle Alert](https://drive.google.com/file/d/1tqmBuziA81IW6GZjHccOAmQ5G6TxMucn/view?usp=drive_link)
 
-[🔗 USAGE GUIDE](/docs/actions/web/handle-alert)
+[🔗 USAGE GUIDE](actions/web/handle-alert)
 
 ### 24. **Keystroke chars**
 This action allows typing specific keyboard characters into an input field or textarea using its **identifier** (such as id, class, type, title, or value). After providing the identifier and the desired characters, the action simulates typing those characters directly into the field, replicating keyboard input. This is useful for automating text input in web forms or fields.
 
-[🔗 USAGE GUIDE](/docs/actions/web/keystroke-chars)
+[🔗 USAGE GUIDE](actions/web/keystroke-chars)
 
 ### 25. **Navigate - Back**
 This action simulates the browser's "back" button. It navigates to the previous page in the browser's history, effectively replicating the action pressing the "back" button to return to the last visited page.
 
-[🔗 USAGE GUIDE](/docs/actions/web/navigate-back)
+[🔗 USAGE GUIDE](actions/web/navigate-back)
 
 ### 26. **Navigate - Forward**
 This action simulates the browser's "forward" button. It navigates to the next page in the browser's history, replicating the action of pressing the "forward" button to move to the page visited after the current one.
 
-[🔗 USAGE GUIDE](/docs/actions/web/navigate-forward)
+[🔗 USAGE GUIDE](actions/web/navigate-forward)
 
 ### 27. **Navigate - Refresh**
 This action simulates the browser's "refresh" button. It reloads the current page, effectively performing the same function as pressing the "refresh" button in the browser, which is useful for updating or reloading page content.
 
-[🔗 USAGE GUIDE](/docs/actions/web/navigate-refresh)
+[🔗 USAGE GUIDE](actions/web/navigate-refresh)
 
 ### 28. **Select Element by Index**
 This action uses the **Select** class in Selenium WebDriver to select an option in a dropdown by its index. The action selects an option from a dropdown by specifying the **index** number instead of the option's visible text. The index is an integer value, starting from **0**, which represents the position of the option in the dropdown list. This method is similar to selecting by visible text but relies on the index to choose the desired option. The **Select** class provides methods to help with selecting or deselecting options in HTML dropdowns.
 
 [Video - Select Element by Index](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/select-element-by-index)
+[🔗 USAGE GUIDE](actions/web/select-element-by-index)
 
 ### 29. **Select Element by Value**
 This action uses the **Select** class in Selenium WebDriver to select an option in a dropdown based on the "value" attribute of the option tag. Similar to selecting an option by visible text or index, this method selects the option by its **value** attribute. The action accepts the **value** as a string and selects the dropdown option whose **value** attribute matches the specified parameter. The **Select** class handles this by interacting with the HTML **SELECT** tag and using the value to choose the correct option.
 
 [Video - Select Element by Value](https://drive.google.com/file/d/10_FbToktvIRHLiS9pb930j3KJnTrZZ_E/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/select-element-by-value)
+[🔗 USAGE GUIDE](actions/web/select-element-by-value)
 
 ### 30. **Start Timer**
 This action sets a timer to control when a test case will start. The value in the **value field** determines the timing in seconds.  
 A negative value (e.g., `-5`) triggers the action 5 seconds earlier, while a positive value (e.g., `5`) delays execution by 5 seconds. This allows precise control over test case timing in relation to other actions or events.
 
-[🔗 USAGE GUIDE](/docs/actions/web/start-timer)
+[🔗 USAGE GUIDE](actions/web/start-timer)
 
 ### 31. **Click and Hold an Element**
 This action is used to click and hold on an element by identifying it through properties like id, class, type, or title. Once the element is located using these attributes, the action performs a click-and-hold operation, useful for tasks such as moving or extended selection actions.
 
-[🔗 USAGE GUIDE](/docs/actions/web/click-and-hold-an-element)
+[🔗 USAGE GUIDE](actions/web/click-and-hold-an-element)
 
 ### 32. **Change Attribute Value**
 This action is used to modify the value of any HTML attribute, except the class attribute. To change an attribute's value, first, provide the identifier (such as id, type, title, or value) to locate the element. Then, the attribute value to be modified and the new value to replace it with should be specified. The action will search the page using the provided idetifier, locate the element, and update the specified attribute with the new value.
 
-[🔗 USAGE GUIDE](/docs/actions/web/change-attribute-value)
+[🔗 USAGE GUIDE](actions/web/change-attribute-value)
 
 ### 33. **Check or uncheck all elements**
 This action is designed to check all checkboxes under a specified parent element. Users need to provide the parent element, such as a form, using the "element parameter". The checkboxes themselves are located using the "target parameter", which identifies them based on common attributes like name, class, or type. Once the form is identified, the action will check all the checkboxes that match the given attributes under that form.
 
-[🔗 USAGE GUIDE](/docs/actions/web/check-or-uncheck-all-elements)
+[🔗 USAGE GUIDE](actions/web/check-or-uncheck-all-elements)
 
 ### 34. **Check or uncheck multiple elements**
 This action requires users to specify a parent element, such as a form, that contains multiple checkboxes. If users want to check some boxes and uncheck others, they need to locate the form using the "element parameter" and identify the checkboxes individually by their unique attributes using the "target parameter". Once the form is located, the action will check or uncheck each checkbox based on the provided attributes, ensuring the correct boxes are selected or deselected.
 
-[🔗 USAGE GUIDE](/docs/actions/web/check-or-uncheck-multiple-elements)
+[🔗 USAGE GUIDE](actions/web/check-or-uncheck-multiple-elements)
 
 ### 35. **Close tab**
 This action allows for closing one or multiple browser tabs. To close a single tab, users can provide either the tab title or tab index. For closing multiple tabs, users can add additional rows with either the titles or indices of the tabs they wish to close. The specified tabs will then be closed based on the provided details.
 
-[🔗 USAGE GUIDE](/docs/actions/web/close-tab)
+[🔗 USAGE GUIDE](actions/web/close-tab)
 
 ### 36. **Context click (Right Mouse Click)**
 This action performs a context click (right-click) on an element using its properties. For example, if an element has attributes such as id, class, type, or title, these can be used to locate the element. Once the element is identified, the action will trigger a right-click on it, opening the context menu or performing the default action associated with a right-click.
 
 [Video - Context click (Right Mouse Click)](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/context-click-right-mouse-click)
+[🔗 USAGE GUIDE](actions/web/context-click-right-mouse-click)
 
 ### 37. **Deselect All**
 This action is used to clear all selected entries in a dropdown list, but it only works when the `SELECT` element allows multiple selections. If the `SELECT` element does not support multiple selections, meaning it lacks the `multiple="multiple"` the action will throw a `NotImplementedError`. This ensures that the action is only applicable for dropdowns designed to handle multiple selections at once.
 
-[🔗 USAGE GUIDE](/docs/actions/web/deselect-all)
+[🔗 USAGE GUIDE](actions/web/deselect-all)
 
 ### 38. **Deselect Element by Index**
 This action uses the `Select` class in Selenium WebDriver to deselect an option in a dropdown list by its index. The `Select` class is designed to work with HTML `<SELECT>` elements and provides methods for selecting and deselecting options. In this case, the action targets an option at a specific index, passed as an integer. The index starts at 0, meaning the first option has an index of 0. The method deselects the option at the given index, provided the dropdown supports multiple selections.
 
-[🔗 USAGE GUIDE](/docs/actions/web/deselect-element-by-index)
+[🔗 USAGE GUIDE](actions/web/deselect-element-by-index)
 
 ### 39. **Deselect Element by Value**
 This action uses the `Select` class in Selenium WebDriver to deselect an option in a dropdown based on the "value" attribute. The `Select` class interacts with HTML `<SELECT>` elements, and in this case, it deselects the option whose "value" matches the provided parameter. This only works if the dropdown supports multiple selections, and the option is identified by the exact "value" string.
@@ -240,7 +240,7 @@ This action enables a double-click on a web element using its specific propertie
 
 [Video - Double click an Element](https://drive.google.com/file/d/1JKklbQNFMSejvg5BPj4mEgcXlr4nLrVm/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/double-click-an-element)
+[🔗 USAGE GUIDE](actions/web/double-click-an-element)
 
 ### 42. **Drag and Drop**
 This action facilitates dragging a source element and dropping it onto a destination element. By identifying both the source and destination elements using their properties (such as ID, class, or other attributes), it performs a drag-and-drop operation between the two elements, automatings tasks that require such interactions on a webpage.
@@ -260,7 +260,7 @@ This action extracts data from an HTML table element, which contains tags like `
 
 [Video - Extract table data](https://drive.google.com/file/d/1M-dq1Uh1x3GA-sTYND671rhf5-uriCxC/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/extract-table-data)
+[🔗 USAGE GUIDE](actions/web/extract-table-data)
 
 ### 46. **Get Current URL**
 This action captures and saves the current URL displayed in the browser's address bar. By inspecting the address bar, it retrieves the full URL of the webpage the browser is currently viewing. This can be useful for logging, navigating back to the same page later, or verifying the correctness of the navigation flow in automated tests.
@@ -293,7 +293,7 @@ This action opens a new tab within the same browser session, allowing users to l
 
 [Video - Open a New Tab](https://drive.google.com/file/d/15TQlSsjvRrYEL0UUlczrkTAb-p8Ld81I/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/open-a-new-tab)
+[🔗 USAGE GUIDE](actions/web/open-a-new-tab)
 
 ### 55. **Save and Get Element**
 This action allows users to store an element in a variable while writing text to it, making it easier to reference and reuse letter. For instance, when text such as "Dhaka" is entered into an element identified by "id=searchInput", the element can be saved as a variable like "element_1". This stored element can then be used later to input another text, such as "London", without requiring to locate the element again. This improves efficiency in repetitive interactions with the same element.
@@ -314,17 +314,17 @@ This action is used to switch between iframes on a webpage. An iframe is an HTML
 
 [Video - Switch iframe](https://drive.google.com/file/d/1tGo-hKNrBjzrq1FrvsZgNVtlCZOk0Dg5/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/web/switch-iframe)
+[🔗 USAGE GUIDE](actions/web/switch-iframe)
 
 ### 60. **Take Screenshot**
 This action captures a screenshot of the current webpage and stores the screenshot file's name in the variable "zeuz_screenshot". The screenshot file can later be referenced using the variable `%|zeuz_screenshot|%` in subsequent actions, allowing easy access to the file name for further use in the test case. This action is useful for taking visual evidence of the state of a web page during automated tests.
 
-[🔗 USAGE GUIDE](/docs/actions/web/take-screenshot)
+[🔗 USAGE GUIDE](actions/web/take-screenshot)
 
 ### 61. **Teardown Web Browser**
 This action is designed to close the browser and clean up the environment to ensure the next test case runs without issues. It terminates the running browser, destroys the Selenium driver, stops the Selenium server, and clears all Shared variables. This action is essential at the end of a test case to prevent errors in subsequent runs caused by residual data or open sessions. Failing to perform this cleanup can lead to conflicts in the next execution.
 
-[🔗 USAGE GUIDE](/docs/actions/web/teardown-web-browser)
+[🔗 USAGE GUIDE](actions/web/teardown-web-browser)
 
 ### 62. **Validate Table Row Size**
 The "Validate Table Row Size" action is used to verify the number of rows in a specified table. It checks if the actual number of rows matches the expected value provided. The table is located using its element properties, and once found, this action counts the rows and compares them to the given row size for validation purposes.

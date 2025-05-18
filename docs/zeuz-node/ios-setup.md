@@ -207,7 +207,7 @@ Now, you have to add your desired capabilities and save them.
 
 To learn more about desired capabilities, visit the following link.
 
-https://appium.io/docs/en/2.1/guides/caps/
+https://appium.ioen/2.1/guides/caps/
 
 Just as shown in the image above, enter a key-value pair and click the `+` icon to add a new field for another key-value pair.  
 One thing to remember is that you can obtain the values of **deviceName** and **platformVersion** from the top of the launched simulator.  

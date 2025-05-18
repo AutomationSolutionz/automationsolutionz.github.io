@@ -20,7 +20,7 @@ hybrid action that can run on both Android and iOS.
 
 ### Browser Automation
 
-<Link to="/docs/actions-web#ios-safari">Safari iOS</Link> automation is acheived through Selenium.
+<Link to="actions-web#ios-safari">Safari iOS</Link> automation is acheived through Selenium.
 
 ## Examples of Mobile actions
 

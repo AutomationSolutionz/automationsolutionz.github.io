@@ -79,15 +79,15 @@ Since the Worklog can be created for **Tasks**, **Bugs**, **Documents**, **Test 
 
 Here are the links of how we can create **Tasks**, **Bugs**, **Documents**, **Test Cases** and use **Run History** page.
 
-**Tasks**: https://automationsolutionz.github.io/docs/how-tos/how-to-create-tasks
+**Tasks**: https://automationsolutionz.github.iohow-tos/how-to-create-tasks
 
-**Bugs**: https://automationsolutionz.github.io/docs/how-tos/how-to-create-bugs
+**Bugs**: https://automationsolutionz.github.iohow-tos/how-to-create-bugs
 
-**Documents**: https://automationsolutionz.github.io/docs/how-tos/how-to-create-documents
+**Documents**: https://automationsolutionz.github.iohow-tos/how-to-create-documents
 
-**Test Cases**: https://automationsolutionz.github.io/docs/how-tos/how-to-create-test-cases
+**Test Cases**: https://automationsolutionz.github.iohow-tos/how-to-create-test-cases
 
-**Run History**: https://automationsolutionz.github.io/docs/how-tos/how-to-use-history-page
+**Run History**: https://automationsolutionz.github.iohow-tos/how-to-use-history-page
 
 :::
 

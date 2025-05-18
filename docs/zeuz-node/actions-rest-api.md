@@ -34,12 +34,12 @@ This action in ZeuZ is used to retrieve and store the response from a GET reques
 
 [Video - HTTP GET request](https://drive.google.com/file/d/1-grbcOhHegxTDbhF_CGEecxV3O9bSXwz/view?usp=sharing)
 
-[🔗 USAGE GUIDE](/docs/actions/api/get-method)
+[🔗 USAGE GUIDE](actions/api/get-method)
 
 ### 2. **HTTP POST request**
 This action in ZeuZ sends a POST request to a server and captures the full response. To perform this action, users need to provide the **URL**, **headers**, and **body** of the request. The **body** can contain single or multiple parameters, while the **headers** may include items like authentication tokens or content types. This action is useful for verifying server responses to POST requests, capturing data for validation, or using the response in subsequent test steps. It ensures the server processes the provided data correctly and returns the expected results.
 
-[🔗 USAGE GUIDE](/docs/actions/api/post-request)
+[🔗 USAGE GUIDE](actions/api/post-request)
 
 ### 3. **HTTP DELETE request**
 The **HTTP DELETE request** action in ZeuZ is used to send a DELETE request to a server, typically to remove a specified resource. This action requires **URL** of the resource and can include optional **headers** if additional information (e.g., authentication) is needed. The server processes the request and responds, indicating whether the resource was successfully deleted. This action is essential for testing APIs that support resource deletion, ensuring proper functionality and compliance with expected behavior.

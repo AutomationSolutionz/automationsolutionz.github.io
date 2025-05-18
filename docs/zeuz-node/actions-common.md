@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 :::
 
-Common actions, as their name implies, are actions that are common throughout every platform. You can use these actions in any context - <Link to="/docs/actions-web">Web</Link>, <Link to="/docs/actions-mobile">Mobile</Link>, <Link to="/docs/actions-rest-api">REST/API</Link>, etc.
+Common actions, as their name implies, are actions that are common throughout every platform. You can use these actions in any context - <Link to="actions-web">Web</Link>, <Link to="actions-mobile">Mobile</Link>, <Link to="actions-rest-api">REST/API</Link>, etc.
 
 ## Examples of Common Actions
 
