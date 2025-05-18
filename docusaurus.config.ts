@@ -9,6 +9,9 @@ const config: Config = {
     tagline: "Documentation and learning resources for the ZeuZ platform",
     favicon: "img/favicon.ico",
 
+    deploymentBranch: "master",
+    trailingSlash: true,
+
     // Set the production url of your site here
     url: "https://automationsolutionz.github.io",
     // Set the /<baseUrl>/ pathname under which your site is served
