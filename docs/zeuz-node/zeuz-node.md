@@ -2,6 +2,7 @@
 id: zeuz-node
 title: ZeuZ Node
 sidebar_label: Introduction
+sidebar_position: 1
 ---
 
 ZeuZ Node is an open source automated software testing platform. It can be used
