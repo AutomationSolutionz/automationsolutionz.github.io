@@ -1,6 +1,6 @@
 ---
-id: guides
 title: Guides
+sidebar_position: 1
 ---
 
 This is a collection of guides on various of features of

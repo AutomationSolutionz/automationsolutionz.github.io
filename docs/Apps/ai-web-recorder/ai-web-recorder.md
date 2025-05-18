@@ -1,6 +1,6 @@
 ---
-id: ai-recorder
-title: AI Test Recorder
+id: ai-web-recorder
+title: AI Web Recorder
 ---
 
 ## Description

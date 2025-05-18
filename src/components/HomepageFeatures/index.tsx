@@ -19,71 +19,37 @@ const FeatureList: FeatureItem[] = [
         title: "Changelog",
         href: "/blog/tags/changelog",
         image: <LuLogs />,
-        description: (
-            <>
-                Docusaurus was designed from the ground up to be easily
-                installed and used to get your website up and running quickly.
-            </>
-        ),
+        description: <></>,
     },
     {
         title: "ZeuZ Node",
-        href: "/blog/tags/changelog",
+        href: "/docs/zeuz-node",
         image: <GrNodes />,
-        description: (
-            <>
-                Docusaurus was designed from the ground up to be easily
-                installed and used to get your website up and running quickly.
-            </>
-        ),
+        description: <></>,
     },
     {
         title: "ZeuZ Server",
-        href: "/blog/tags/changelog",
+        href: "/docs/zeuz-server",
         image: <FaCloud />,
-        description: (
-            <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the
-                chores. Go ahead and move your docs into the <code>docs</code>{" "}
-                directory.
-            </>
-        ),
+        description: <></>,
     },
     {
         title: "AI Mobile Inspector",
-        href: "/blog/tags/changelog",
+        href: "/docs/Apps/ai-mobile-inspector",
         image: <ImMobile />,
-        description: (
-            <>
-                Extend or customize your website layout by reusing React.
-                Docusaurus can be extended while reusing the same header and
-                footer.
-            </>
-        ),
+        description: <></>,
     },
     {
         title: "AI Windows Inspector",
-        href: "/blog/tags/changelog",
+        href: "/docs/Apps/ai-windows-inspector",
         image: <FaWindows />,
-        description: (
-            <>
-                Extend or customize your website layout by reusing React.
-                Docusaurus can be extended while reusing the same header and
-                footer.
-            </>
-        ),
+        description: <></>,
     },
     {
         title: "AI Web Recorder",
-        href: "/blog/tags/changelog",
+        href: "/docs/Apps/ai-web-recorder/",
         image: <FaRecordVinyl />,
-        description: (
-            <>
-                Extend or customize your website layout by reusing React.
-                Docusaurus can be extended while reusing the same header and
-                footer.
-            </>
-        ),
+        description: <></>,
     },
 ];
 
@@ -110,11 +76,13 @@ function Feature({ title, image, description, href }: FeatureItem) {
                     color: "inherit",
                     border: `1.5px solid ${borderColor}`,
                 }}
-                onMouseEnter={e => {
-                    (e.currentTarget as HTMLElement).style.boxShadow = hoverBoxShadow;
+                onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.boxShadow =
+                        hoverBoxShadow;
                 }}
-                onMouseLeave={e => {
-                    (e.currentTarget as HTMLElement).style.boxShadow = defaultBoxShadow;
+                onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.boxShadow =
+                        defaultBoxShadow;
                 }}
             >
                 <div className="text--center" style={{ paddingTop: "24px" }}>
@@ -131,7 +99,10 @@ function Feature({ title, image, description, href }: FeatureItem) {
                         }}
                     /> */}
                 </div>
-                <div className="text--center padding-horiz--md" style={{ paddingBottom: "24px" }}>
+                <div
+                    className="text--center padding-horiz--md"
+                    style={{ paddingBottom: "24px" }}
+                >
                     <Heading as="h3">{title}</Heading>
                     <p>{description}</p>
                 </div>
