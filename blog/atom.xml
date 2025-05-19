@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://automationsolutionz.github.io/blog/</id>
+    <title>ZeuZ Resources Blog</title>
+    <updated>2025-05-18T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://automationsolutionz.github.io/blog/"/>
+    <subtitle>ZeuZ Resources Blog</subtitle>
+    <icon>https://automationsolutionz.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ZeuZ Platform 20250518]]></title>
+        <id>https://automationsolutionz.github.io/blog/zeuz-platform-20250518/</id>
+        <link href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/"/>
+        <updated>2025-05-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[---]]></summary>
+        <content type="html"><![CDATA[<hr>
+<p><em>Release date: May 18, 2025</em></p>
+<hr>
+<p>Welcome to the May 2025 release of the ZeuZ platform. There are many updates in
+this version that we hope you'll like, some of the key highlights include:</p>
+<p><strong>Features</strong></p>
+<ul>
+<li>Seamless ZeuZ Node connect</li>
+<li>AI-Powered Mobile inspector</li>
+<li>Variable viewer in Debug page</li>
+<li>AI-Powered Release report summary</li>
+<li>Pre-requisite test case</li>
+<li>Rerun an existing RunID</li>
+<li>Fail analysis report</li>
+</ul>
+<p><strong>Bug fixes</strong></p>
+<ul>
+<li>Testing &gt; Reports &gt; Release Report &gt; Fix report generation issue when GitHub
+integration is missing.</li>
+<li>Testing &gt; Testcase &gt; Create Testcase &gt; Step &gt; Fixed step section slider
+visibility issue Caused by Table Insertions in Description or Expected Fields</li>
+<li>Global attachments scope fix.</li>
+<li>Testing &gt; Reports &gt; Execution &gt; Build to Build comparison bug fixed.</li>
+</ul>
+<p><strong>Other enhancements</strong></p>
+<ul>
+<li>
+<p>Testing &gt; Reports &gt; Fail Analysis &gt; Improve assignee user search functionality.</p>
+</li>
+<li>
+<p>Testing &gt; History &gt; Optimized page load time/performance.</p>
+</li>
+<li>
+<p>Project &gt; Create/Edit &gt; Task, Bug &amp; Requirement pages &gt; Feature shows up in wrong
+team/project.</p>
+</li>
+<li>
+<p>Testing &gt; Deployments &gt; History &amp; Set page &gt; Minor UI enhancements.</p>
+</li>
+<li>
+<p>Restricted Datastore access by team/project.</p>
+</li>
+<li>
+<p>Improved GitHub issue linking process</p>
+</li>
+<li>
+<p>Testing &gt; Deployments &gt; History &gt; Run Queue feature and UI updated, also
+fixed/updated some minor problems.</p>
+</li>
+<li>
+<p>Storybook Integration for UI Components</p>
+</li>
+<li>
+<p>Testing &gt; Deployments &gt; Set/History &gt; Enhanced Donut Charts Feature and Total Value Fix</p>
+</li>
+<li>
+<p>Automatic Default Filter for Fail Analysis Report</p>
+</li>
+<li>
+<p>Testing &gt; Reports &gt; Fail Analysis &gt; Border Color Redesign for Clarity</p>
+</li>
+<li>
+<p>Testing &gt; Test case edit pages, Run History Border Color Now Reflects Test Case Status</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="seamless-zeuz-node-connect">Seamless ZeuZ Node connect<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#seamless-zeuz-node-connect" class="hash-link" aria-label="Direct link to Seamless ZeuZ Node connect" title="Direct link to Seamless ZeuZ Node connect">​</a></h2>
+<p>Connect your ZeuZ Node without worrying about launching a terminal and copy
+pasting the node command.</p>
+<p><a href="https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases/tag/v20.0.0" target="_blank" rel="noopener noreferrer">View the accompanying ZeuZ Node release</a>.</p>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250518/Connect ZeuZ Node.mp4" type="video/mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-powered-mobile-inspector">AI-Powered Mobile inspector<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#ai-powered-mobile-inspector" class="hash-link" aria-label="Direct link to AI-Powered Mobile inspector" title="Direct link to AI-Powered Mobile inspector">​</a></h2>
+<p>Inspect Android (tm) applications right inside ZeuZ Server without having to
+install additional tools such as Appium Inspector or Android uiautomatorviewer.</p>
+<p>Installing these tools and configuring them was a real challenge and often times
+a nightmare involving hours of fiddling around with setups. Now, all you need to
+do is connect your mobile device or launch an emulator in your computer, run
+ZeuZ Node and connect it to the ZeuZ server. ZeuZ server will take care of the
+rest. This also brought one additional benefit that was otherwise impossible to solve previously:</p>
+<blockquote>
+<p>You do not have to restart the adb server every time after you've inspected
+them through Appium/uiautomatorviewer.</p>
+</blockquote>
+<p><strong>Features</strong></p>
+<ol>
+<li><strong>Screenshot and Element Tree Detection</strong>: Improved accuracy in detecting and displaying UI elements.</li>
+<li><strong>Attribute List Panel</strong>: A dedicated right-side panel for inspecting element attributes.</li>
+<li><strong>Search Functionality</strong>: Use <strong>Ctrl+F</strong> to search by CSS, XPath, or value.</li>
+<li><strong>Dual DOM Support</strong>: ADB and Appium now both provide DOM access, eliminating inspection barriers when the Appium server is active.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Mobile insepctor" src="https://automationsolutionz.github.io/assets/images/mobile-inspector-065c1c1ff76caa1e18e1986aeb5a4cdf.png" width="2913" height="1510" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="variable-viewer-in-debug-page">Variable viewer in Debug page<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#variable-viewer-in-debug-page" class="hash-link" aria-label="Direct link to Variable viewer in Debug page" title="Direct link to Variable viewer in Debug page">​</a></h2>
+<p>When debugging a test case, users often need to inspect current Zeuz node variables to build further actions. This feature introduces a hierarchical tree view of variables in the Debug page, providing a clean and intuitive interface to navigate complex data structures. Variables are displayed in three distinct formats:</p>
+<ol>
+<li><strong>JSON Object Variables</strong>: Standard JSON-compatible variables with reasonably sized values.</li>
+<li><strong>JSON Schema Variables</strong>: Large JSON variables that are truncated for readability and presented as schemas.</li>
+<li><strong>Non-JSON Variables</strong>: Non-JSON objects (e.g., Python modules, WebDriver instances, WebDriver elements) with up to 200 properties displayed.</li>
+<li><strong>Oversized Values</strong>: Variables with excessively large values—even after schema conversion—are omitted for performance.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Debug variable viewer" src="https://automationsolutionz.github.io/assets/images/debug-variables-3eacadb7717eec81a2229184e28f18bd.png" width="1133" height="1328" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-powered-release-report-summary">AI-Powered Release report summary<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#ai-powered-release-report-summary" class="hash-link" aria-label="Direct link to AI-Powered Release report summary" title="Direct link to AI-Powered Release report summary">​</a></h2>
+<p>An intelligent report summary component has been added to analyze release data and present key insights through a modern UI. This feature enables stakeholders to quickly assess release impact, quality, and notable changes without sifting through lengthy detailed reports.</p>
+<p><img decoding="async" loading="lazy" alt="AI-Powered release report summary" src="https://automationsolutionz.github.io/assets/images/ai-powered-release-report-summary-fd94494a1ceeb229baaf76f26c1e578d.png" width="2770" height="1414" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pre-requisite-test-case">Pre-requisite test case<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#pre-requisite-test-case" class="hash-link" aria-label="Direct link to Pre-requisite test case" title="Direct link to Pre-requisite test case">​</a></h2>
+<p>The pre-requisite test case feature will allow one test case to mark another
+test case as it's pre-requisite. When the test case is deployed, the
+pre-requisite test case will get executed first before itself.</p>
+<p>When multiple test cases have a common pre-requisite test case and they are
+deployed, the pre-requisite test case will be executed only once throughout that
+entire RunID (run session).</p>
+<p>Pre-requisite chain must not form a cyclic dependency. They will be prevented
+during link time and deployment time.</p>
+<p><strong>Background / Context</strong></p>
+<ul>
+<li>
+<p>In many test environments, testers typically need to perform pre-test setup
+such as data preparation, environment setup with docker or other tools, etc. To
+achieve this with ZeuZ, users had to rely on set re-ordering feature to ensure
+that the pre-setup tests are executed at the beginning.</p>
+</li>
+<li>
+<p>There are also cases where a single test set may contain multiple groups of
+test cases which have their own pre-requisites.</p>
+</li>
+<li>
+<p>A test case which has a pre-requisite can be present in multiple sets.</p>
+</li>
+</ul>
+<p>All of the above makes it challenging for a tester to debug or run test cases
+that contain pre-requisite steps.</p>
+<p><strong>Pre-requisite search in test case details tab:</strong><br>
+<img decoding="async" loading="lazy" alt="pre-requisite search in test case details tab" src="https://automationsolutionz.github.io/assets/images/pre-requisite-search-in-tc-detail-20009d298f6756d3c0075d18de5f9c33.png" width="3134" height="1814" class="img_ev3q"></p>
+<hr>
+<p><strong>Pre-requisite, once selected:</strong><br>
+<img decoding="async" loading="lazy" alt="Pre-requisite, once selected" src="https://automationsolutionz.github.io/assets/images/pre-requisite-once-selected-1373e59acb3c7b100b0847ddb22a575f.png" width="1290" height="422" class="img_ev3q"></p>
+<hr>
+<p><strong>Rerun and pre-requisite selection from Testing &gt; Run tests page:</strong><br>
+<img decoding="async" loading="lazy" alt="Rerun and pre-requisite selection from Testing &amp;gt; Run tests page" src="https://automationsolutionz.github.io/assets/images/rerun-and-pre-requisite-in-run-test-5ce76b742216b85552db5fda0a76731e.png" width="1288" height="1528" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="rerun-an-existing-runid">Rerun an existing RunID<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#rerun-an-existing-runid" class="hash-link" aria-label="Direct link to Rerun an existing RunID" title="Direct link to Rerun an existing RunID">​</a></h2>
+<p>Lets users re-run an existing runid or a selected number of test cases in a
+runid.</p>
+<p><strong>Background</strong></p>
+<p>During day to day operations, users often find themselves trying to rerun test
+cases in an already completed/in-progress runid for various reasons, including
+but not limited to:</p>
+<ol>
+<li>A test case failed due to a temporary issue. It's not possible or
+economically feasible to rerun a whole test set of 1k+ test cases again just
+to make the RunID status green.</li>
+<li>Node was killed before it could send reports to the server because a test
+case was processing data that could not fit into the RAM. Thus, leaving the
+test case as submitted in the RunID.</li>
+</ol>
+<p><strong>Search runids for rerun (Testing &gt; Run tests &gt; Advanced settings)</strong><br>
+<img decoding="async" loading="lazy" alt="Search runids for rerun" src="https://automationsolutionz.github.io/assets/images/search-runids-for-rerun-9237517aef1ffa2ee9d8a629ed9a0993.png" width="1278" height="846" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fail-analysis-report">Fail analysis report<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#fail-analysis-report" class="hash-link" aria-label="Direct link to Fail analysis report" title="Direct link to Fail analysis report">​</a></h2>
+<p>When one or more test cases fail across multiple test cases, it becomes very
+hard for testers and managers alike, to find the root or common cause of
+failures. Its also hard to <em>not create</em> duplicate bug reports for the same
+failure reason because multiple people may be working through the failed test
+cases at the same time. This creates a lot of confusion and frustration among
+the QAs, Devs and Managers while being a source of time waster.</p>
+<p>ZeuZ Fail analysis report solves this issue by analyzing all your failed test
+steps for common cause of failures and group them together. Ideally, if one test
+case is fixed, all other test cases in the same group should be fixed
+automatically as long as the steps are global.</p>]]></content>
+        <author>
+            <name>Mohammed Sazid Al Rashid</name>
+            <uri>https://github.com/sazid</uri>
+        </author>
+        <category label="Changelog" term="Changelog"/>
+    </entry>
+</feed>
