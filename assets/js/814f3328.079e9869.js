@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzeuz_docs=self.webpackChunkzeuz_docs||[]).push([[7472],{55513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"ZeuZ Platform 20250518","permalink":"/blog/zeuz-platform-20250518","unlisted":false,"date":"2025-05-18T00:00:00.000Z"}]}')}}]);
