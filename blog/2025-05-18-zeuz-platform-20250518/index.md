@@ -181,3 +181,47 @@ ZeuZ Fail analysis report solves this issue by analyzing all your failed test
 steps for common cause of failures and group them together. Ideally, if one test
 case is fixed, all other test cases in the same group should be fixed
 automatically as long as the steps are global.
+
+### How It Works
+
+- Testers or managers can access the report by going to the **Report** section
+in the Navbar Testing > Reports > Fail Analysis.
+
+On the Fail Analysis section you need to create a filter for your report. 
+
+![Fail analysis report: configure filter](fail-analysis-report-filter.gif)
+
+- Here when you click on Filter you will find Milestone, Verson, or Github to
+  filter this report
+- In this example, we use Milestone 2.9 with compare 2.8.
+- After that, it will show you Fail test case report 
+
+![Description of card view](fail-analysis-card-view-description.png)
+
+**Description of the card view:**
+
+1. Testcase Title
+2. Fail test case step
+3. Fail reason
+4. Assignee set
+5. Assignee feature
+6. Assignee milestone
+7. Assingee version
+8. Comment option anyone can comment and replay here. 
+9. Assignee priority
+10. Assignee Label
+11. Assingee Folder
+
+![Fail analysis: card list view](fail-analysis-card-list.png)
+You can also get reports separated by fail test cases by fail type.  
+
+![Fail analysis: group by different category](fail-analysis-group-by.png)
+
+- On top, you can also see fail and pass statuses on top 
+- Also you can group by report 
+    1. Group by Fail test case
+    2. Group by Set
+    3. Group by Assignee
+- Also there is two tabs Fail is the current tab and Github. If you click on
+  GitHub you will find link test case with GitHub issue filter.  
+
