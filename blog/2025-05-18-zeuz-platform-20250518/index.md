@@ -13,7 +13,7 @@ tags: ['changelog']
 
 Welcome to the May 2025 release of the ZeuZ platform! 🚀 We're thrilled to introduce several powerful updates that will enhance your testing experience. Key highlights include:
 
-## Features
+**Features**
 
 - ✨ Seamless ZeuZ Node connection
 - 🔍 AI-Powered Mobile inspector
@@ -25,14 +25,14 @@ Welcome to the May 2025 release of the ZeuZ platform! 🚀 We're thrilled to int
 
 <!-- truncate -->
 
-## Bug Fixes
+**Bug Fixes**
 
 - Fixed report generation issues when GitHub integration is missing in Testing > Reports > Release Report
 - Resolved step section slider visibility problems in Testing > Testcase > Create Testcase caused by table insertions in Description or Expected fields
 - Corrected global attachments scope
 - Fixed Build-to-Build comparison bugs in Testing > Reports > Execution
 
-## Enhancements
+**Enhancements**
 
 - Improved assignee user search functionality in Testing > Reports > Fail Analysis
 - Optimized page load time and performance in Testing > History
