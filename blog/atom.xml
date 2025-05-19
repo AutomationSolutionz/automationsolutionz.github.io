@@ -16,7 +16,7 @@
         <content type="html"><![CDATA[<p><em>Release date: May 18, 2025</em></p>
 <hr>
 <p>Welcome to the May 2025 release of the ZeuZ platform! 🚀 We're thrilled to introduce several powerful updates that will enhance your testing experience. Key highlights include:</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<p><strong>Features</strong></p>
 <ul>
 <li>✨ Seamless ZeuZ Node connection</li>
 <li>🔍 AI-Powered Mobile inspector</li>
@@ -26,14 +26,14 @@
 <li>🔁 Rerun existing RunID capability</li>
 <li>📈 Fail analysis reporting</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<p><strong>Bug Fixes</strong></p>
 <ul>
 <li>Fixed report generation issues when GitHub integration is missing in Testing &gt; Reports &gt; Release Report</li>
 <li>Resolved step section slider visibility problems in Testing &gt; Testcase &gt; Create Testcase caused by table insertions in Description or Expected fields</li>
 <li>Corrected global attachments scope</li>
 <li>Fixed Build-to-Build comparison bugs in Testing &gt; Reports &gt; Execution</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="enhancements">Enhancements<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#enhancements" class="hash-link" aria-label="Direct link to Enhancements" title="Direct link to Enhancements">​</a></h2>
+<p><strong>Enhancements</strong></p>
 <ul>
 <li>Improved assignee user search functionality in Testing &gt; Reports &gt; Fail Analysis</li>
 <li>Optimized page load time and performance in Testing &gt; History</li>
