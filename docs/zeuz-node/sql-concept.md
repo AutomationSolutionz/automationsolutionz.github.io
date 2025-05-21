@@ -1,6 +1,6 @@
 ---
 id: sql-concept
-title: SQL concepts
+title: SQL Concepts
 ---
 
 ## Database

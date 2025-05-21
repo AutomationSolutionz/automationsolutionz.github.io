@@ -1,6 +1,6 @@
 ---
 id: offline-access
-title: Offline access
+title: Offline Access
 ---
 
 Zeuz Docs is a *Progressive Web App* or *PWA* for short. Which means, you can

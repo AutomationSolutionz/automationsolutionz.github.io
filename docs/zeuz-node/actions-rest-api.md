@@ -1,6 +1,6 @@
 ---
 id: actions-rest-api
-title: REST/API actions
+title: REST/API Actions
 ---
 
 :::tip

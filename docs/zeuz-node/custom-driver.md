@@ -1,6 +1,6 @@
 ---
 id: custom-driver
-title: Custom driver
+title: Custom Driver
 ---
 
 In ZeuZ, to execute automation process, you can use Built_In_Driver where all

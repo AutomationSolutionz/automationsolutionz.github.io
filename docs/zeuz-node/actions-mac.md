@@ -1,6 +1,6 @@
 ---
 id: actions-mac
-title: Mac actions
+title: Mac Actions
 ---
 
 ## Description

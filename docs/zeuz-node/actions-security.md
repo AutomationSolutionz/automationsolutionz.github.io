@@ -1,6 +1,6 @@
 ---
 id: actions-security
-title: Security actions
+title: Security Actions
 ---
 
 ## Description

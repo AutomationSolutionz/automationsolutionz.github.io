@@ -1,6 +1,6 @@
 ---
 id: actions-common
-title: Common actions
+title: Common Actions
 ---
 
 import Link from '@docusaurus/Link';

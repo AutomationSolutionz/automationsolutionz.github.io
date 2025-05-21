@@ -1,6 +1,7 @@
 ---
 id: ip-url-whitelist
-title: Whitelist URLs/IPs for node
+title: Whitelist URLs/IPs for Node
+sidebar_position: 4
 ---
 
 

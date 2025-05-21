@@ -1,6 +1,6 @@
 ---
 id: actions-mobile
-title: Mobile actions
+title: Mobile Actions
 ---
 
 import Link from '@docusaurus/Link';

@@ -1,6 +1,7 @@
 ---
 id: how-to-add-actions
 title: How to add Actions
+label: Testing
 ---
 
 ## Description

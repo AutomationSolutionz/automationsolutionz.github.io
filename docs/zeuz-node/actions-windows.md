@@ -1,6 +1,6 @@
 ---
 id: actions-windows
-title: Windows actions
+title: Windows Actions
 ---
 
 ## Description

@@ -1,6 +1,6 @@
 ---
 title: Element detection - Web and Mobile
-sidebar_label: Element detection
+sidebar_label: Element Detection
 ---
 
 For selenium-appium actions, we have several supports for locating an element. Such as you can provide 

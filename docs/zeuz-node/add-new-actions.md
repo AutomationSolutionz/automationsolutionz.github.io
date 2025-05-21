@@ -1,6 +1,6 @@
 ---
 id: add-new-actions
-title: Add new actions
+title: Add New Actions
 ---
 
 If any of the hundreds of different actions currently available still does not
