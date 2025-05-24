@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Upload a File | ZeuZ Resources</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://automationsolutionz.github.io/img/zeuz-social-card.png"><meta data-rh="true" name="twitter:image" content="https://automationsolutionz.github.io/img/zeuz-social-card.png"><meta data-rh="true" property="og:url" content="https://automationsolutionz.github.io/docs/zeuz-node/actions/Web/upload-a-file/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Upload a File | ZeuZ Resources"><meta data-rh="true" name="description" content="Purpose"><meta data-rh="true" property="og:description" content="Purpose"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://automationsolutionz.github.io/docs/zeuz-node/actions/Web/upload-a-file/"><link data-rh="true" rel="alternate" href="https://automationsolutionz.github.io/docs/zeuz-node/actions/Web/upload-a-file/" hreflang="en"><link data-rh="true" rel="alternate" href="https://automationsolutionz.github.io/docs/zeuz-node/actions/Web/upload-a-file/" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="ZeuZ Resources RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="ZeuZ Resources Atom Feed"><link rel="stylesheet" href="/assets/css/styles.07b15509.css">
-<script src="/assets/js/runtime~main.f21fef37.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5f81395a.js" defer="defer"></script>
 <script src="/assets/js/main.a41a35cf.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -14,113 +14,58 @@
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="scenarios">Scenarios<a href="#scenarios" class="hash-link" aria-label="Direct link to Scenarios" title="Direct link to Scenarios">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-1">Scenario 1<a href="#scenario-1" class="hash-link" aria-label="Direct link to Scenario 1" title="Direct link to Scenario 1">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="title">Title:<a href="#title" class="hash-link" aria-label="Direct link to Title:" title="Direct link to Title:">​</a></h4>
-<p>Upload a file using the standard upload button<br>
-<!-- -->Test case link: <a href="https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7987/" target="_blank" rel="noopener noreferrer">TEST-7987 Upload a File</a></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-overview">Scenario Overview:<a href="#scenario-overview" class="hash-link" aria-label="Direct link to Scenario Overview:" title="Direct link to Scenario Overview:">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="title">Title<a href="#title" class="hash-link" aria-label="Direct link to Title" title="Direct link to Title">​</a></h4>
+<p>Upload a file using the standard upload button</p>
+<p>Sample test case: <a href="https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7987/" target="_blank" rel="noopener noreferrer">TEST-7987 Upload a file using the standard upload button</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-overview">Scenario Overview<a href="#scenario-overview" class="hash-link" aria-label="Direct link to Scenario Overview" title="Direct link to Scenario Overview">​</a></h4>
 <p>Imagine a user needs to upload a document to a web application using a visible upload button. This scenario demonstrates how to use the &quot;Upload File&quot; action to select and upload a file.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="steps-to-follow">Steps to Follow:<a href="#steps-to-follow" class="hash-link" aria-label="Direct link to Steps to Follow:" title="Direct link to Steps to Follow:">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="steps-to-follow">Steps to Follow<a href="#steps-to-follow" class="hash-link" aria-label="Direct link to Steps to Follow" title="Direct link to Steps to Follow">​</a></h4>
 <ol>
 <li>Navigate to a webpage that contains an upload button.</li>
-<li>Use the &quot;Upload a File&quot; action to identify the upload button using an element parameter (e.g., <code>ID</code> or <code>class</code>).</li>
+<li>Use the &quot;Upload a File&quot; action to identify the upload button using an element parameter (e.g., <code>tag</code>).</li>
 <li>Provide the absolute file path as input.</li>
 <li>Verify that the file has been successfully uploaded.</li>
 </ol>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="actions">Actions:<a href="#actions" class="hash-link" aria-label="Direct link to Actions:" title="Direct link to Actions:">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="actions">Actions<a href="#actions" class="hash-link" aria-label="Direct link to Actions" title="Direct link to Actions">​</a></h4>
+<table><thead><tr><th>Parameter</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>clear</td><td>optional option</td><td>false</td></tr><tr><td>tag</td><td>element parameter</td><td>input</td></tr><tr><td>type</td><td>element parameter</td><td>file</td></tr><tr><td>text</td><td>selenium action</td><td>C:\Users\Msi\Downloads\contact_us_test_cases.csv</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-result">Expected Result<a href="#expected-result" class="hash-link" aria-label="Direct link to Expected Result" title="Direct link to Expected Result">​</a></h4>
 <ul>
-<li><strong>Input</strong>:<!-- -->
-<ul>
-<li>Specify the element parameters (e.g., <code>ID: fileUpload</code>) and the file path.</li>
-<li>Example: <code>(id, element parameter, fileUpload)</code>.</li>
-<li>Example: <code>(upload file, selenium action, %|log.rtf|%)</code>.</li>
+<li>The file has been successfully uploaded and is visible in the application&#x27;s user interface (UI).</li>
 </ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-result">Expected Result:<a href="#expected-result" class="hash-link" aria-label="Direct link to Expected Result:" title="Direct link to Expected Result:">​</a></h4>
-<ul>
-<li>The file uploads successfully and is visible in the application&#x27;s user interface (UI).</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="common-errors-and-fixes">Common Errors and Fixes:<a href="#common-errors-and-fixes" class="hash-link" aria-label="Direct link to Common Errors and Fixes:" title="Direct link to Common Errors and Fixes:">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="common-errors-and-fixes">Common Errors and Fixes<a href="#common-errors-and-fixes" class="hash-link" aria-label="Direct link to Common Errors and Fixes" title="Direct link to Common Errors and Fixes">​</a></h4>
 <ul>
 <li><strong>Error</strong>: The file path is invalid.<!-- -->
 <ul>
-<li><strong>Fix</strong>: Provide the full absolute file path, not a relative one (e.g., <code>C:\Users\Documents\demo.csv</code>).</li>
+<li><strong>Fix</strong>: Provide the full absolute file path, not a relative one (e.g., <code>C:\Users\Msi\Downloads\contact_us_test_cases.csv</code>).</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-2">Scenario 2<a href="#scenario-2" class="hash-link" aria-label="Direct link to Scenario 2" title="Direct link to Scenario 2">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="title-1">Title:<a href="#title-1" class="hash-link" aria-label="Direct link to Title:" title="Direct link to Title:">​</a></h4>
-<p>Upload a file through the operating system&#x27;s file dialog<br>
-<!-- -->Test case link: <a href="https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-7987/" target="_blank" rel="noopener noreferrer">TEST-7987 Upload a File</a></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-overview-1">Scenario Overview:<a href="#scenario-overview-1" class="hash-link" aria-label="Direct link to Scenario Overview:" title="Direct link to Scenario Overview:">​</a></h4>
-<p>Some web applications use custom upload dialogs that Selenium cannot directly interact with. This scenario demonstrates automating such dialogs using tools like PyAutoGUI.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="steps-to-follow-1">Steps to Follow:<a href="#steps-to-follow-1" class="hash-link" aria-label="Direct link to Steps to Follow:" title="Direct link to Steps to Follow:">​</a></h4>
-<ol>
-<li>Navigate to the webpage with an upload button that opens an OS-level file dialog.</li>
-<li>Use the &quot;Upload a File&quot; action in combination with PyAutoGUI to interact with the OS-level file dialog.</li>
-<li>Provide the absolute file path for the file to be uploaded.</li>
-<li>Confirm that the file is successfully uploaded.</li>
-</ol>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="actions-1">Actions:<a href="#actions-1" class="hash-link" aria-label="Direct link to Actions:" title="Direct link to Actions:">​</a></h4>
-<ul>
-<li><strong>Input</strong>:<!-- -->
-<ul>
-<li>Provide the absolute file path along with optional parameters such as <code>allow_hidden</code> and <code>use_js</code>.</li>
-<li>Example: <code>(filepath, path, C:\Users\John\Documents\file.csv)</code>.</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-result-1">Expected Result:<a href="#expected-result-1" class="hash-link" aria-label="Direct link to Expected Result:" title="Direct link to Expected Result:">​</a></h4>
-<ul>
-<li>The file upload is completed through simulated interaction with the file dialog.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="common-errors-and-fixes-1">Common Errors and Fixes:<a href="#common-errors-and-fixes-1" class="hash-link" aria-label="Direct link to Common Errors and Fixes:" title="Direct link to Common Errors and Fixes:">​</a></h4>
-<ul>
-<li><strong>Error</strong>: Hidden elements prevent interaction.<!-- -->
-<ul>
-<li><strong>Fix</strong>: Use <code>allow_hidden</code> as an optional parameter and set it to <code>yes</code>.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="test-cases">Test Cases<a href="#test-cases" class="hash-link" aria-label="Direct link to Test Cases" title="Direct link to Test Cases">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="test-case">Test Case<a href="#test-case" class="hash-link" aria-label="Direct link to Test Case" title="Direct link to Test Case">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-case-for-scenario-1">Test Case for Scenario 1<a href="#test-case-for-scenario-1" class="hash-link" aria-label="Direct link to Test Case for Scenario 1" title="Direct link to Test Case for Scenario 1">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="objective">Objective:<a href="#objective" class="hash-link" aria-label="Direct link to Objective:" title="Direct link to Objective:">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="objective">Objective<a href="#objective" class="hash-link" aria-label="Direct link to Objective" title="Direct link to Objective">​</a></h4>
 <p>Ensure that file upload via a standard upload button works correctly.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="steps-to-perform">Steps to Perform:<a href="#steps-to-perform" class="hash-link" aria-label="Direct link to Steps to Perform:" title="Direct link to Steps to Perform:">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="steps-to-perform">Steps to Perform<a href="#steps-to-perform" class="hash-link" aria-label="Direct link to Steps to Perform" title="Direct link to Steps to Perform">​</a></h4>
 <ol>
 <li>Open a web application that includes an upload form.</li>
 <li>Use the action with inputs:<!-- -->
 <ul>
-<li><code>ID: fileUpload</code>.</li>
-<li>File path: <code>C:\Users\Documents\example.csv</code>.</li>
+<li><strong>Inputs</strong>:</li>
+<li><strong>Element parameters</strong> (e.g., <code>tag: input</code>) and file path.</li>
+<li><strong>Example</strong>: <code>(tag, element parameter, input)</code></li>
+<li><strong>Example</strong>: <code>(text, selenium action, %|log.rtf|%)</code></li>
 </ul>
 </li>
 <li>Verify that the file appears in the application after upload.</li>
 </ol>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-outcome">Expected Outcome:<a href="#expected-outcome" class="hash-link" aria-label="Direct link to Expected Outcome:" title="Direct link to Expected Outcome:">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-outcome">Expected Outcome<a href="#expected-outcome" class="hash-link" aria-label="Direct link to Expected Outcome" title="Direct link to Expected Outcome">​</a></h4>
 <ul>
 <li>The file is successfully uploaded, and a confirmation message is displayed in the application.</li>
 </ul>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-case-for-scenario-2">Test Case for Scenario 2<a href="#test-case-for-scenario-2" class="hash-link" aria-label="Direct link to Test Case for Scenario 2" title="Direct link to Test Case for Scenario 2">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="objective-1">Objective:<a href="#objective-1" class="hash-link" aria-label="Direct link to Objective:" title="Direct link to Objective:">​</a></h4>
-<p>Ensure that file upload via an OS-level file dialog works correctly.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="steps-to-perform-1">Steps to Perform:<a href="#steps-to-perform-1" class="hash-link" aria-label="Direct link to Steps to Perform:" title="Direct link to Steps to Perform:">​</a></h4>
-<ol>
-<li>Click the upload button to open the file upload dialog.</li>
-<li>Use the action to provide the file path: <code>~\Documents\file.csv</code>.</li>
-<li>Verify that the file upload completes successfully.</li>
-</ol>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-outcome-1">Expected Outcome:<a href="#expected-outcome-1" class="hash-link" aria-label="Direct link to Expected Outcome:" title="Direct link to Expected Outcome:">​</a></h4>
-<ul>
-<li>The file is uploaded, and the application reflects the upload status.</li>
-</ul>
-<hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-tips-for-this-action">Additional Tips for this Action<a href="#additional-tips-for-this-action" class="hash-link" aria-label="Direct link to Additional Tips for this Action" title="Direct link to Additional Tips for this Action">​</a></h2>
 <ul>
-<li>Use full file paths (e.g., <code>C:\Users\John\Documents\file.csv</code>) for reliable uploads.</li>
+<li>Use full file paths (e.g., <code>C:\Users\Msi\Downloads\contact_us_test_cases.csv</code>) for reliable uploads.</li>
 <li>Enable interaction with hidden elements by setting <code>allow_hidden</code> to <code>yes</code> for complex web pages.</li>
 <li>Try simpler methods, such as the &quot;Enter Text&quot; action, before using PyAutoGUI.</li>
 </ul>
@@ -143,6 +88,7 @@
 <strong>Possible Cause</strong>: Incorrect file path or missing PyAutoGUI configuration.<br>
 <strong>How to Fix</strong>: Ensure that PyAutoGUI is correctly configured and the file path is valid.</p>
 </li>
-</ol></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/zeuz-node/actions/Web/teardown-web-browser/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Teardown Web Browser</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/zeuz-node/actions/Web/validate-exact-text/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Validate Exact Text</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#purpose" class="table-of-contents__link toc-highlight">Purpose</a></li><li><a href="#scenarios" class="table-of-contents__link toc-highlight">Scenarios</a><ul><li><a href="#scenario-1" class="table-of-contents__link toc-highlight">Scenario 1</a></li><li><a href="#scenario-2" class="table-of-contents__link toc-highlight">Scenario 2</a></li></ul></li><li><a href="#test-cases" class="table-of-contents__link toc-highlight">Test Cases</a><ul><li><a href="#test-case-for-scenario-1" class="table-of-contents__link toc-highlight">Test Case for Scenario 1</a></li><li><a href="#test-case-for-scenario-2" class="table-of-contents__link toc-highlight">Test Case for Scenario 2</a></li></ul></li><li><a href="#additional-tips-for-this-action" class="table-of-contents__link toc-highlight">Additional Tips for this Action</a><ul><li><a href="#error-handling-for-upload-a-file" class="table-of-contents__link toc-highlight">Error handling for Upload a File</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro/">Setup a trial account</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/intro/">Setup ZeuZ Node</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/7DpMYcPWCc" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/company/automation-solutionz" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.facebook.com/automationsolutionz/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Facebook<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.youtube.com/@zeuzai" target="_blank" rel="noopener noreferrer" class="footer__link-item">YouTube<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog/">Blog</a></li><li class="footer__item"><a href="https://github.com/AutomationSolutionz/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Download ZeuZ Node<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://demo.zeuz.ai/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ZeuZ demo / playground<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Automation Solutionz.</div></div></div></footer></div>
+</ol>
+<hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/zeuz-node/actions/Web/teardown-web-browser/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Teardown Web Browser</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/zeuz-node/actions/Web/validate-exact-text/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Validate Exact Text</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#purpose" class="table-of-contents__link toc-highlight">Purpose</a></li><li><a href="#scenarios" class="table-of-contents__link toc-highlight">Scenarios</a><ul><li><a href="#scenario-1" class="table-of-contents__link toc-highlight">Scenario 1</a></li></ul></li><li><a href="#test-case" class="table-of-contents__link toc-highlight">Test Case</a><ul><li><a href="#test-case-for-scenario-1" class="table-of-contents__link toc-highlight">Test Case for Scenario 1</a></li></ul></li><li><a href="#additional-tips-for-this-action" class="table-of-contents__link toc-highlight">Additional Tips for this Action</a><ul><li><a href="#error-handling-for-upload-a-file" class="table-of-contents__link toc-highlight">Error handling for Upload a File</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro/">Setup a trial account</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/intro/">Setup ZeuZ Node</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/7DpMYcPWCc" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/company/automation-solutionz" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.facebook.com/automationsolutionz/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Facebook<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.youtube.com/@zeuzai" target="_blank" rel="noopener noreferrer" class="footer__link-item">YouTube<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog/">Blog</a></li><li class="footer__item"><a href="https://github.com/AutomationSolutionz/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Download ZeuZ Node<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://demo.zeuz.ai/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ZeuZ demo / playground<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Automation Solutionz.</div></div></div></footer></div>
 </body>
 </html>
