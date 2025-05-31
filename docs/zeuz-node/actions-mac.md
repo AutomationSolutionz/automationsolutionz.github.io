@@ -25,7 +25,7 @@ This is useful for automation tasks requiring actions like opening files, expand
 ### 4. **Enter Text**
 This action locates a text field in an application using attributes such as **title**, **label**, **value**, or **identifier** and enters the specified text. It does not delete any existing text in the field; the new text is appended or inserted based on the field's behavior.
 
-[🔗 USAGE GUIDE](actions/mac/enter-text)
+[🔗 USAGE GUIDE](/docs/zeuz-node/actions/Mac/enter-text)
 
 For scenarios where the field needs to be cleared before entering text, the "Clear and Enter Text" action should be used. This action is ideal for tasks where adding new information without modifying existing content is required. Tools like ZeuZ support this action for precise and efficient text input during automation workflows.
 
@@ -37,6 +37,8 @@ An optional **wait** parameter can be set to specify the time to wait for the el
 ### 6. **Launch Application**
 This action launches a specific application on macOS using its **bundle ID**, a unique identifier within Apple's ecosystem. For example, to open the Calculator app, the bundle ID **"com.apple.calculator"** must be specified. The bundle ID of an application can be found using a Terminal command, such as  
 `osascript -e 'id of app "App Name"'`, or by accessing the app's **info.plist** file. To locate this file, navigate to the **Applications** folder in Finder, right-click on the app, and select  **Show Package Contents**. Then open the **Contents** folder, locate the **info.plist** file, and view it in Xcode or TextEdit to find the **CFBundleIdentifier** key. This action is crucial for automation tasks requiring precise application control, and tools like ZeuZ make it efficient to define and execute these actions.
+
+[🔗 USAGE GUIDE](/docs/zeuz-node/actions/Mac/launch-application)
 
 ### 7. **Right Click**
 This action performs a right-click on a specified element by identifying it using its properties, such as **title**, **label**, **value** or **identifier**. The user provides the details of the target element, and once it is located, the action simulates a right-click.
