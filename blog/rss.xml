@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>ZeuZ Resources Blog</title>
-        <link>https://docs.zeuz.ai/blog/</link>
+        <link>https://automationsolutionz.github.io/blog/</link>
         <description>ZeuZ Resources Blog</description>
         <lastBuildDate>Sun, 18 May 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[ZeuZ Platform 20250518]]></title>
-            <link>https://docs.zeuz.ai/blog/zeuz-platform-20250518/</link>
-            <guid>https://docs.zeuz.ai/blog/zeuz-platform-20250518/</guid>
+            <link>https://automationsolutionz.github.io/blog/zeuz-platform-20250518/</link>
+            <guid>https://automationsolutionz.github.io/blog/zeuz-platform-20250518/</guid>
             <pubDate>Sun, 18 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Release date: May 18, 2025]]></description>
             <content:encoded><![CDATA[<p><em>Release date: May 18, 2025</em></p>
@@ -49,11 +49,11 @@
 <li>Redesigned border color for clarity in Testing &gt; Reports &gt; Fail Analysis</li>
 <li>Updated Run History border color to reflect test case status in Testing &gt; Test case edit pages</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="seamless-zeuz-node-connection">Seamless ZeuZ Node Connection<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250518/#seamless-zeuz-node-connection" class="hash-link" aria-label="Direct link to Seamless ZeuZ Node Connection" title="Direct link to Seamless ZeuZ Node Connection">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="seamless-zeuz-node-connection">Seamless ZeuZ Node Connection<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#seamless-zeuz-node-connection" class="hash-link" aria-label="Direct link to Seamless ZeuZ Node Connection" title="Direct link to Seamless ZeuZ Node Connection">​</a></h2>
 <p>Connect your ZeuZ Node effortlessly without the hassle of launching a terminal or copying and pasting commands. The process is now completely streamlined!</p>
 <p><a href="https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases/tag/v20.0.0" target="_blank" rel="noopener noreferrer">View the accompanying ZeuZ Node release</a></p>
 <video controls="" loop=""><source src="/blog/zeuz-platform-20250518/Connect ZeuZ Node.mp4" type="video/mp4"></video>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-powered-mobile-inspector">AI-Powered Mobile Inspector<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250518/#ai-powered-mobile-inspector" class="hash-link" aria-label="Direct link to AI-Powered Mobile Inspector" title="Direct link to AI-Powered Mobile Inspector">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-powered-mobile-inspector">AI-Powered Mobile Inspector<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#ai-powered-mobile-inspector" class="hash-link" aria-label="Direct link to AI-Powered Mobile Inspector" title="Direct link to AI-Powered Mobile Inspector">​</a></h2>
 <p>Inspect Android™ applications directly within ZeuZ Server without installing additional tools like Appium Inspector or Android uiautomatorviewer.</p>
 <p>Say goodbye to hours of setup frustration! Simply connect your mobile device or launch an emulator, run ZeuZ Node, and connect to ZeuZ Server. Everything else is handled automatically. This also solves a persistent challenge:</p>
 <blockquote>
@@ -66,8 +66,8 @@
 <li><strong>Powerful Search Functionality:</strong> Use <strong>Ctrl+F</strong> to search by CSS, XPath, or value</li>
 <li><strong>Dual DOM Support:</strong> Both ADB and Appium now provide DOM access, eliminating inspection barriers when the Appium server is active</li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="Mobile inspector" src="https://docs.zeuz.ai/assets/images/mobile-inspector-065c1c1ff76caa1e18e1986aeb5a4cdf.png" width="2913" height="1510" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="variable-viewer-in-debug-page">Variable Viewer in Debug Page<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250518/#variable-viewer-in-debug-page" class="hash-link" aria-label="Direct link to Variable Viewer in Debug Page" title="Direct link to Variable Viewer in Debug Page">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Mobile inspector" src="https://automationsolutionz.github.io/assets/images/mobile-inspector-065c1c1ff76caa1e18e1986aeb5a4cdf.png" width="2913" height="1510" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="variable-viewer-in-debug-page">Variable Viewer in Debug Page<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#variable-viewer-in-debug-page" class="hash-link" aria-label="Direct link to Variable Viewer in Debug Page" title="Direct link to Variable Viewer in Debug Page">​</a></h2>
 <p>When debugging test cases, users often need to inspect current ZeuZ node variables to build further actions. Our new hierarchical tree view of variables provides a clean, intuitive interface for navigating complex data structures. Variables are displayed in three distinct formats:</p>
 <ol>
 <li><strong>JSON Object Variables:</strong> Standard JSON-compatible variables with reasonably sized values</li>
@@ -75,11 +75,11 @@
 <li><strong>Non-JSON Variables:</strong> Non-JSON objects (e.g., Python modules, WebDriver instances, WebDriver elements) with up to 200 properties displayed</li>
 <li><strong>Oversized Values:</strong> Variables with excessively large values are omitted for performance optimization</li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="Debug variable viewer" src="https://docs.zeuz.ai/assets/images/debug-variables-3eacadb7717eec81a2229184e28f18bd.png" width="1133" height="1328" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-powered-release-report-summary">AI-Powered Release Report Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250518/#ai-powered-release-report-summary" class="hash-link" aria-label="Direct link to AI-Powered Release Report Summary" title="Direct link to AI-Powered Release Report Summary">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Debug variable viewer" src="https://automationsolutionz.github.io/assets/images/debug-variables-3eacadb7717eec81a2229184e28f18bd.png" width="1133" height="1328" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-powered-release-report-summary">AI-Powered Release Report Summary<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#ai-powered-release-report-summary" class="hash-link" aria-label="Direct link to AI-Powered Release Report Summary" title="Direct link to AI-Powered Release Report Summary">​</a></h2>
 <p>Our intelligent report summary component analyzes release data and presents key insights through a modern UI. This feature enables stakeholders to quickly assess release impact, quality, and notable changes without wading through lengthy detailed reports.</p>
-<p><img decoding="async" loading="lazy" alt="AI-Powered release report summary" src="https://docs.zeuz.ai/assets/images/ai-powered-release-report-summary-fd94494a1ceeb229baaf76f26c1e578d.png" width="2770" height="1414" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pre-requisite-test-case">Pre-requisite Test Case<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250518/#pre-requisite-test-case" class="hash-link" aria-label="Direct link to Pre-requisite Test Case" title="Direct link to Pre-requisite Test Case">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="AI-Powered release report summary" src="https://automationsolutionz.github.io/assets/images/ai-powered-release-report-summary-fd94494a1ceeb229baaf76f26c1e578d.png" width="2770" height="1414" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pre-requisite-test-case">Pre-requisite Test Case<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#pre-requisite-test-case" class="hash-link" aria-label="Direct link to Pre-requisite Test Case" title="Direct link to Pre-requisite Test Case">​</a></h2>
 <p>This powerful new feature allows one test case to specify another as its pre-requisite. When a test case is deployed, its pre-requisite test case executes first.</p>
 <p>When multiple test cases share a common pre-requisite and are deployed together, the pre-requisite executes only once throughout the entire RunID (run session), improving efficiency.</p>
 <p>The system intelligently prevents cyclic dependencies during both link time and deployment time.</p>
@@ -91,31 +91,31 @@
 </ul>
 <p>These factors previously made it challenging to debug or run test cases with pre-requisite steps. Our solution streamlines this process completely.</p>
 <p><strong>Pre-requisite search in test case details tab:</strong><br>
-<img decoding="async" loading="lazy" alt="pre-requisite search in test case details tab" src="https://docs.zeuz.ai/assets/images/pre-requisite-search-in-tc-detail-20009d298f6756d3c0075d18de5f9c33.png" width="3134" height="1814" class="img_ev3q"></p>
+<img decoding="async" loading="lazy" alt="pre-requisite search in test case details tab" src="https://automationsolutionz.github.io/assets/images/pre-requisite-search-in-tc-detail-20009d298f6756d3c0075d18de5f9c33.png" width="3134" height="1814" class="img_ev3q"></p>
 <p><strong>Pre-requisite, once selected:</strong><br>
-<img decoding="async" loading="lazy" alt="Pre-requisite, once selected" src="https://docs.zeuz.ai/assets/images/pre-requisite-once-selected-1373e59acb3c7b100b0847ddb22a575f.png" width="1290" height="422" class="img_ev3q"></p>
+<img decoding="async" loading="lazy" alt="Pre-requisite, once selected" src="https://automationsolutionz.github.io/assets/images/pre-requisite-once-selected-1373e59acb3c7b100b0847ddb22a575f.png" width="1290" height="422" class="img_ev3q"></p>
 <p><strong>Rerun and pre-requisite selection from Testing &gt; Run tests page:</strong><br>
-<img decoding="async" loading="lazy" alt="Rerun and pre-requisite selection from Testing &amp;gt; Run tests page" src="https://docs.zeuz.ai/assets/images/rerun-and-pre-requisite-in-run-test-5ce76b742216b85552db5fda0a76731e.png" width="1288" height="1528" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="rerun-an-existing-runid">Rerun an Existing RunID<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250518/#rerun-an-existing-runid" class="hash-link" aria-label="Direct link to Rerun an Existing RunID" title="Direct link to Rerun an Existing RunID">​</a></h2>
+<img decoding="async" loading="lazy" alt="Rerun and pre-requisite selection from Testing &amp;gt; Run tests page" src="https://automationsolutionz.github.io/assets/images/rerun-and-pre-requisite-in-run-test-5ce76b742216b85552db5fda0a76731e.png" width="1288" height="1528" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="rerun-an-existing-runid">Rerun an Existing RunID<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#rerun-an-existing-runid" class="hash-link" aria-label="Direct link to Rerun an Existing RunID" title="Direct link to Rerun an Existing RunID">​</a></h2>
 <p>Users can now re-run an existing RunID or selected test cases within a RunID, addressing common operational challenges:</p>
 <ol>
 <li>When a test case fails due to a temporary issue, there's no need to rerun an entire test set of 1,000+ cases just to achieve a green RunID status.</li>
 <li>If a node terminates prematurely before sending reports to the server (e.g., due to memory constraints), leaving test cases marked as "submitted" in the RunID, you can now easily rerun just those affected cases.</li>
 </ol>
 <p><strong>Search RunIDs for rerun (Testing &gt; Run tests &gt; Advanced settings):</strong><br>
-<img decoding="async" loading="lazy" alt="Search runids for rerun" src="https://docs.zeuz.ai/assets/images/search-runids-for-rerun-9237517aef1ffa2ee9d8a629ed9a0993.png" width="1278" height="846" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fail-analysis-report">Fail Analysis Report<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250518/#fail-analysis-report" class="hash-link" aria-label="Direct link to Fail Analysis Report" title="Direct link to Fail Analysis Report">​</a></h2>
+<img decoding="async" loading="lazy" alt="Search runids for rerun" src="https://automationsolutionz.github.io/assets/images/search-runids-for-rerun-9237517aef1ffa2ee9d8a629ed9a0993.png" width="1278" height="846" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fail-analysis-report">Fail Analysis Report<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#fail-analysis-report" class="hash-link" aria-label="Direct link to Fail Analysis Report" title="Direct link to Fail Analysis Report">​</a></h2>
 <p>When multiple test cases fail, identifying root causes and avoiding duplicate bug reports can be challenging. Our Fail Analysis Report solves this by analyzing failed test steps for common failure patterns and grouping them intelligently.</p>
 <p>When one test case in a group is fixed, all related test cases should automatically resolve as long as the steps are global, dramatically improving efficiency.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How It Works<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250518/#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How It Works<a href="https://automationsolutionz.github.io/blog/zeuz-platform-20250518/#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h3>
 <p>Access the report through <strong>Testing &gt; Reports &gt; Fail Analysis</strong> and create a filter for your analysis.</p>
-<p><img decoding="async" loading="lazy" alt="Fail analysis report: configure filter" src="https://docs.zeuz.ai/assets/images/fail-analysis-report-filter-fd26c0cbbbe9adf034adef2b6c4d82b6.gif" width="1502" height="720" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Fail analysis report: configure filter" src="https://automationsolutionz.github.io/assets/images/fail-analysis-report-filter-fd26c0cbbbe9adf034adef2b6c4d82b6.gif" width="1502" height="720" class="img_ev3q"></p>
 <ul>
 <li>Click on Filter to select Milestone, Version, or GitHub parameters</li>
 <li>In this example, we compare Milestone 2.9 with 2.8</li>
 <li>The system generates a comprehensive Fail Test Case Report</li>
 </ul>
-<p><img decoding="async" loading="lazy" alt="Description of card view" src="https://docs.zeuz.ai/assets/images/fail-analysis-card-view-description-7eeb038455c7a85cb6f693e7dc1e3142.png" width="1172" height="589" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Description of card view" src="https://automationsolutionz.github.io/assets/images/fail-analysis-card-view-description-7eeb038455c7a85cb6f693e7dc1e3142.png" width="1172" height="589" class="img_ev3q"></p>
 <p><strong>Card View Elements:</strong></p>
 <ol>
 <li>Test case title</li>
@@ -130,9 +130,9 @@
 <li>Assignee label</li>
 <li>Assignee folder</li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="Fail analysis: card list view" src="https://docs.zeuz.ai/assets/images/fail-analysis-card-list-1fc3266b8dca0093efa7913a3ddcce73.png" width="1743" height="829" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Fail analysis: card list view" src="https://automationsolutionz.github.io/assets/images/fail-analysis-card-list-1fc3266b8dca0093efa7913a3ddcce73.png" width="1743" height="829" class="img_ev3q"></p>
 <p>You can also view reports categorized by failure type.</p>
-<p><img decoding="async" loading="lazy" alt="Fail analysis: group by different category" src="https://docs.zeuz.ai/assets/images/fail-analysis-group-by-9b7e6c03f8ad946346628cdc6c1d77ba.png" width="1061" height="81" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Fail analysis: group by different category" src="https://automationsolutionz.github.io/assets/images/fail-analysis-group-by-9b7e6c03f8ad946346628cdc6c1d77ba.png" width="1061" height="81" class="img_ev3q"></p>
 <ul>
 <li>Track pass/fail statuses at the top of the report</li>
 <li>Group reports by:<!-- -->
