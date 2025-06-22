@@ -1,6 +1,6 @@
 ---
 id: how-to-create-tasks
-title: How to create Tasks
+title: Create a Task
 ---
 
 ## Description
@@ -19,18 +19,18 @@ Through these **Tasks**, testers identify issues, validate the software against 
 
 ## Steps
 
-1. From the **Menu bar**, go to the **Project** then **Task** option.
+1. From the **Menu bar**, go to the **Project** and then select the **Task** option.
 
 ![](/img/how-tos/how-to-create-tasks/task-option.png)
 
-2. Go to the **Create/Edit Task** page.
+2. Navigate to the **Create/Edit Task** page.
 3. Click to **Enter the title** of the task.
    > Entering the *Title* of the task is necessary to provide a clear and descriptive label for the specific task being performed, aiding in task management and traceability.
 
 ![](/img/how-tos/how-to-create-tasks/enter-task.png)
 
-4. Fill up the information of **Details** tab.
-   > Filling up the information of *Details* tab is necessary to provide comprehensive context and instructions for executing the *Task* accurately.
+4. Fill in the information on the **Details** tab.
+   > Filling in the information under the *Details* tab is essential to provide comprehensive context and clear instructions for accurate *Task* execution.
 
     > * **Milestone**: *Milestones* are necessary to define critical points or goals within the task's execution timeline, helping in planning, tracking, and achieving project objectives.  
     > * **Assigned User**: Assigning a user in a *Task* is necessary to specify who is responsible for carrying out the *Task*, ensuring accountability and clear *Task* ownership.  
@@ -47,10 +47,30 @@ Through these **Tasks**, testers identify issues, validate the software against 
 
 ![](/img/how-tos/how-to-create-tasks/task-details.png)
 
-5. Multiple of **Labels** can also be added.
-   > Adding multiple of *Labels* to a *Task* are necessary for versatile categorization, allowing *Tasks* to be associated with various keywords or criteria, facilitating flexible organization and search functionality.
-6. Click on the **Save** button.
+5. It is also possible to add multiple **Labels**.
+   > Adding multiple *Labels* to a *Task* is necessary for versatile categorization, allowing *Tasks* to be associated with various keywords or criteria, thereby facilitating flexible organization and search functionality.
+6. Click the **Save** button.
 
 ![](/img/how-tos/how-to-create-tasks/save-task.png)
+
+7. After saving the task, an option labeled **ADD SPENT/NEEDED TIME** option will appear.
+   > The *ADD SPENT/NEEDED TIME* function helps track actual time spent and estimated time required, improving task planning, monitoring, and reporting.
+
+![](/img/how-tos/how-to-create-tasks/add-spent.png)
+
+8. Fill in the required fields under the **New Record** tab:
+   - **Log type**
+     - Development
+     - Documentation
+     - Meeting
+     - Research
+     - Testing
+   - **New time spent (in min)**
+   - **Additional time required (in min)**
+   - **Note (if required)**.
+
+9. Click the **Save changes** button.
+
+![](/img/how-tos/how-to-create-tasks/new-record.png)
 
 
