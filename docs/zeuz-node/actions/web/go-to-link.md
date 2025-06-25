@@ -31,6 +31,7 @@ options.add_argument("--ignore-ssl-errors")
 options.add_experimental_option("mobileEmulation", {"deviceName": "Pixel 2 XL"})
 options.add_extension("/path/to/crx_file")
 options.add_encoded_extension("extension_in_base64_string")
+options.add_argument("--disable-features=DisableLoadExtensionCommandLineSwitch") # to add any extensions to the chrome browser
 
 # Firefox has set_preference option
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
@@ -73,6 +74,11 @@ options.add_encoded_extension(val)  # Chromium: chrome, edge
 `add_extension | chromium option | ['extension_in_base64_string']`
 
 **Note:** At mid column you can mention, `shared capability` (applied to all browser) `chromium option` (chrome+edge), `chrome option`, `edge option`, `firefox option`, `safari option`. If you need any option that is not mentioned above, pls contact us.
+
+⚠️ **Warning Hint**: To add third party extensions in chrome 137+, you have to add argument:  
+```python
+options.add_argument("--disable-features=DisableLoadExtensionCommandLineSwitch")
+```
 
 ### Example:
 This Example shows how to add different arguments for different browsers

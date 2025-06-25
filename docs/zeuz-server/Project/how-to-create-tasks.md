@@ -74,3 +74,4 @@ Through these **Tasks**, testers identify issues, validate the software against 
 ![](/img/how-tos/how-to-create-tasks/new-record.png)
 
 
+
