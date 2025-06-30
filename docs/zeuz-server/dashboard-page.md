@@ -1,7 +1,7 @@
 ---
 id: dashboard-page
 title: Dashboard Page
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 import Highlight from '@site/src/components/Highlight';

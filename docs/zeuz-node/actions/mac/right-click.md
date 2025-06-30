@@ -7,64 +7,66 @@ This action is used to perform a right-click on an element by using its properti
 
 ---
 
-## Scenarios
-
-### Scenario 1 
+## Scenario
 
 #### Title
-Perform a right-click on a date in the Calendar application
+Right-click on the Search field
 
-Sample test case: [TEST-8043 Perform a right-click on a date in the Calendar application](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8043/)
+Sample test case: [TEST-8043 Right-click on the Search field](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8043/)
 
 #### Scenario Overview
-A user needs to open a context menu by right-clicking on a date. This scenario demonstrates how to use the Right Click action to perform a right-click on an element identified by its `title`, `label`, `value` or `identifier`.
+A user opens the macOS Calendar application and right-clicks on the "Search" field. This action should open a context menu. The goal is to verify that the context menu appears and includes the option called "Spelling and Grammar".
 
 #### Steps to Follow
-1. Open the Calendar application that contains a date.
-2. Identify the button using element properties such as `title`, `label`, `value` or `identifier`.
-3. Use the "Right Click" action with the identified property.
-4. Verify that the context menu appears.
+1. Open the Calendar application on a Mac.
+2. Locate the "Search" field using its element attributes such as `title`, `label`, `identifier`, or `value`.
+3. Perform a right-click on the "Search" field.
+4. Confirm that the context menu appears.
+5. Use the "Validate Full Text" action to verify whether "Spelling and Grammar" option is present.
 
-#### Actions
+#### Action
 
 |  Parameter    |  Type               |  Value           |
 |---------------|---------------------|------------------|
-|  title        |  element parameter  |  Tuesday, May 27 |
+|  label        |  element parameter  |  Search          |
 |  right click  |  appium action      |  right click     |
 
 #### Expected Result
-- The "Right Click" action triggers the context menu for the specified date.
+- Successfully right-clicked on the "Search" field.
+- The context menu opens upon right-clicking the "Search" field.
 
 #### Common Errors and Fixes
 - **Error**: The context menu does not appear.
-  - **Fix**: Ensure that the correct attribute (e.g., `title` or `label`) is provided and that the date is interactable.
+  - **Fix**: Ensure that the "Search" field is visible on the screen and can be interacted with.
+- **Error**: The menu item "Spelling and Grammar" is not present.
+  - **Fix**: Confirm that a **partial or full match** validator was used with the correct element scope.
 
 ---
 
-## Test Cases
+## Test Case
 
-### Test Case for Scenario 1
+### Test Case for the given Scenario 
 
 #### Objective
-Ensure that the "Right Click" action is performed on a date identified by its `title` attribute.
+Ensure that right-clicking on the "Search" field opens a context menu.
 
 #### Steps to Perform
-1. Open the Calendar application and navigate to a date.
+1. Open the Calendar application.
 2. Use the action with the following inputs:
    - **Input parameters**:
-     - **Element parameter**: Provide the element's attribute (e.g., `title = Tuesday, May 27`).
+     - **Element parameter**: `label = Search`
      - **Appium action**: `right click`.
-3. Verify that the context menu appears.
+3. Verify that the context menu appears as expected.
 
 #### Expected Outcome
-- The context menu is successfully displayed for the selected date.
+- The context menu appears when the user performs a right-click.
 
 ---
 
 ## Additional Tips for this Action
-- Use a unique parent or sibling element to narrow down the search scope when identifying duplicate elements.
-- Enable the allow hidden option to interact with hidden elements.
-- Test the action in multiple browsers to ensure compatibility.
+- Use a unique parent or sibling element to enhance accuracy.
+- Enable the allow hidden option if elements are dynamically displayed.
+- Add a wait step if the context menu takes a moment to render.
 
 ---
 
@@ -73,16 +75,14 @@ Ensure that the "Right Click" action is performed on a date identified by its `t
 #### Common Problems and Their Fixes
 1. **Problem**: The element is not found.  
    **Possible Cause**: The attribute is incorrect, or the element is outside the viewport.  
-   **How to Fix**:
-   - Ensure the attribute matches the element.
-   - Scroll to bring the element into view.
+   **How to Fix**: Double-check the attribute (e.g., `title = Search`) and ensure the element is visible.
 
 2. **Problem**: The "Right Click" action fails.  
    **Possible Cause**: The element is not interactable or is blocked by another element.  
-   **How to Fix**: Use the allow hidden or use JS option to force interaction.
+   **How to Fix**: Use the `use js` option if the element is overlapped or blocked by other elements.
 
-3. **Problem**: The context menu does not appear.  
-   **Possible Cause**: The "Right Click" action is not properly associated with the element.  
-   **How to Fix**: Verify that the element supports context menu interactions.
+3. **Problem**: The context menu does not contain the expected item.  
+   **Possible Cause**: The context menu item is dynamically loaded and has not yet rendered when the menu is checked.  
+   **How to Fix**: Use "Validate Full Text" action to verify that menu entries exactly match the expected labels.
 
 ---
