@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Copy Image into Browser | ZeuZ Resources</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.zeuz.ai/img/zeuz-social-card.png"><meta data-rh="true" name="twitter:image" content="https://docs.zeuz.ai/img/zeuz-social-card.png"><meta data-rh="true" property="og:url" content="https://docs.zeuz.ai/docs/zeuz-node/actions/Web/copy-image-into-browser/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Copy Image into Browser | ZeuZ Resources"><meta data-rh="true" name="description" content="This action copies an image from an attachment file path or a variable into the browser&#x27;s clipboard for pasting using Ctrl+V (Windows/Linux) or Cmd+V (macOS) via keystroke simulation. Only PNG and SVG formats are supported in Chromium-based browsers."><meta data-rh="true" property="og:description" content="This action copies an image from an attachment file path or a variable into the browser&#x27;s clipboard for pasting using Ctrl+V (Windows/Linux) or Cmd+V (macOS) via keystroke simulation. Only PNG and SVG formats are supported in Chromium-based browsers."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.zeuz.ai/docs/zeuz-node/actions/Web/copy-image-into-browser/"><link data-rh="true" rel="alternate" href="https://docs.zeuz.ai/docs/zeuz-node/actions/Web/copy-image-into-browser/" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.zeuz.ai/docs/zeuz-node/actions/Web/copy-image-into-browser/" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="ZeuZ Resources RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="ZeuZ Resources Atom Feed"><link rel="stylesheet" href="/assets/css/styles.07b15509.css">
-<script src="/assets/js/runtime~main.dcd29147.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c3e462fd.js" defer="defer"></script>
 <script src="/assets/js/main.16bbb9eb.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -52,6 +52,108 @@
 </li>
 <li>Logs detailed error messages for troubleshooting.</li>
 </ul>
-<hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/zeuz-node/actions/Web/context-click-right-mouse-click/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Context Click (Right Mouse Click)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/zeuz-node/actions/Web/deselect-all/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Deselect All</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#purpose" class="table-of-contents__link toc-highlight">Purpose</a><ul><li><a href="#table-input-parameters-for-copy-image-into-browser-action" class="table-of-contents__link toc-highlight">Table: Input Parameters for Copy Image into Browser Action</a></li><li><a href="#action-behavior" class="table-of-contents__link toc-highlight">Action Behavior</a></li><li><a href="#examples" class="table-of-contents__link toc-highlight">Examples</a></li><li><a href="#system-and-file-requirements" class="table-of-contents__link toc-highlight">System and File Requirements</a></li><li><a href="#error-handling" class="table-of-contents__link toc-highlight">Error Handling</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro/">Setup a trial account</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/intro/">Setup ZeuZ Node</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/7DpMYcPWCc" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/company/automation-solutionz" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.facebook.com/automationsolutionz/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Facebook<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.youtube.com/@zeuzai" target="_blank" rel="noopener noreferrer" class="footer__link-item">YouTube<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog/">Blog</a></li><li class="footer__item"><a href="https://github.com/AutomationSolutionz/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Download ZeuZ Node<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://demo.zeuz.ai/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ZeuZ demo / playground<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Automation Solutionz.</div></div></div></footer></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="test-case-scenario-of-copy-image-into-web-action">Test Case Scenario of &quot;Copy Image into Web&quot; Action<a href="#test-case-scenario-of-copy-image-into-web-action" class="hash-link" aria-label="Direct link to Test Case Scenario of &quot;Copy Image into Web&quot; Action" title="Direct link to Test Case Scenario of &quot;Copy Image into Web&quot; Action">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="title">Title<a href="#title" class="hash-link" aria-label="Direct link to Title" title="Direct link to Title">​</a></h3>
+<p>Copy and Paste Image into Web</p>
+<p>Sample test case: <a href="https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8225/" target="_blank" rel="noopener noreferrer">TEST-8225 Copy and Paste Image into Web</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-overview">Scenario Overview<a href="#scenario-overview" class="hash-link" aria-label="Direct link to Scenario Overview" title="Direct link to Scenario Overview">​</a></h3>
+<p>This test case is designed to verify the functionality of copying and pasting an image into a web application. The test involves navigating to a specific website, copying an image from an attachment, and pasting it into the web application. The test is executed on different operating systems (Windows, Linux, and Mac) to ensure compatibility and functionality across platforms.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="steps-to-follow">Steps to Follow<a href="#steps-to-follow" class="hash-link" aria-label="Direct link to Steps to Follow" title="Direct link to Steps to Follow">​</a></h3>
+<ol>
+<li>Go to the website.</li>
+<li>Copy the image from the attachment.</li>
+<li>Paste the copied image on Windows and Linux systems.</li>
+<li>Paste the copied image on Mac.</li>
+<li>Validate that the paste action was successful.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="actions">Actions<a href="#actions" class="hash-link" aria-label="Direct link to Actions" title="Direct link to Actions">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="copy-the-image-from-the-attachment">Copy the image from the attachment<a href="#copy-the-image-from-the-attachment" class="hash-link" aria-label="Direct link to Copy the image from the attachment" title="Direct link to Copy the image from the attachment">​</a></h4>
+<p><strong>1. Copy the saved variable from the attachment</strong></p>
+<table><thead><tr><th>Parameter</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>image variable</td><td>input parameter</td><td><code>%| png_img |%</code></td></tr><tr><td>copy image into browser</td><td>selenium action</td><td>copy image into browser</td></tr></tbody></table>
+<p><strong>2. Copy the file name of the direct attachment image</strong></p>
+<table><thead><tr><th>Parameter</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>image variable</td><td>input parameter</td><td><code>%| zeuz-logo.png |%</code></td></tr><tr><td>copy image into browser</td><td>selenium action</td><td>copy image into browser</td></tr></tbody></table>
+<p><strong>3. Paste the copied image on Windows and Linux systems</strong></p>
+<table><thead><tr><th>Parameter</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>keystroke keys</td><td>selenium action</td><td>Ctrl+V</td></tr></tbody></table>
+<p><strong>4. Paste the copied image on Mac</strong></p>
+<table><thead><tr><th>Parameter</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>keystroke keys</td><td>selenium action</td><td>Cmd+V</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="expected-result">Expected Result<a href="#expected-result" class="hash-link" aria-label="Direct link to Expected Result" title="Direct link to Expected Result">​</a></h3>
+<ul>
+<li>The image should be successfully copied or pasted into the target web element, with visible confirmation such as display or upload preview.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-errors-and-fixes">Common Errors and Fixes<a href="#common-errors-and-fixes" class="hash-link" aria-label="Direct link to Common Errors and Fixes" title="Direct link to Common Errors and Fixes">​</a></h3>
+<ul>
+<li><strong>Error</strong>: The image was not copied to the clipboard.<!-- -->
+<ul>
+<li><strong>Fix</strong>: Ensure the image is <strong>png</strong> or <strong>svg</strong> and your image is present to the attachment.</li>
+</ul>
+</li>
+<li><strong>Error</strong>: The paste action does not work.<!-- -->
+<ul>
+<li><strong>Fix</strong>: Make sure the target field supports image pasting and is focused before the action.</li>
+</ul>
+</li>
+<li><strong>Error</strong>: There is no visual confirmation after the paste action.<!-- -->
+<ul>
+<li><strong>Fix</strong>: Add a short <strong>Wait</strong> or use <strong>Validate</strong> to confirm the image appears after the paste.</li>
+</ul>
+</li>
+<li><strong>Error</strong>: The incorrect image was pasted.<!-- -->
+<ul>
+<li><strong>Fix</strong>: Re-copy the correct image just before pasting to ensure accuracy.</li>
+</ul>
+</li>
+<li><strong>Error</strong>: Action fails on macOS or Linux.<!-- -->
+<ul>
+<li><strong>Fix</strong>: Use platform-specific shortcuts or automation steps compatible with the operating system.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-tips-for-this-action">Additional Tips for this Action<a href="#additional-tips-for-this-action" class="hash-link" aria-label="Direct link to Additional Tips for this Action" title="Direct link to Additional Tips for this Action">​</a></h2>
+<ul>
+<li>Confirm that the browser or operating system allows clipboard operations for both copy and paste actions.</li>
+<li>Add a step to focus or click on the target input field before performing the paste action to ensure the image is inserted correctly.</li>
+<li>Insert a short <strong>Wait</strong> step after the paste action to allow the web page to render or upload the pasted image.</li>
+<li>Use a <strong>Validate Image</strong> or <strong>Validate Element</strong> action to confirm that the image appears as expected after pasting.</li>
+<li>If automation is run on macOS, Windows, or Linux, use OS-specific commands or key combinations for clipboard operations.</li>
+<li>Always copy the image immediately before pasting to avoid outdated clipboard data.</li>
+<li>Verify that the target web element supports image pasting or accepts image file drops.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="error-handling-for-copy-or-paste-image-into-web-action">Error Handling for Copy or Paste Image into Web Action<a href="#error-handling-for-copy-or-paste-image-into-web-action" class="hash-link" aria-label="Direct link to Error Handling for Copy or Paste Image into Web Action" title="Direct link to Error Handling for Copy or Paste Image into Web Action">​</a></h2>
+<ul>
+<li><strong>Verify Clipboard Access</strong>
+<ul>
+<li>Ensure that clipboard permissions are enabled in the browser and OS, or copy/paste may silently fail.</li>
+</ul>
+</li>
+<li><strong>Add Fallback Validations</strong>
+<ul>
+<li>Add a validation step after paste to confirm success; log and fail the test if it does not pass.</li>
+</ul>
+</li>
+<li><strong>Use Try-catch or Conditional steps</strong>
+<ul>
+<li>Surround the paste action with conditional logic or a retry mechanism to reattempt or proceed with a fallback if it fails.</li>
+</ul>
+</li>
+<li><strong>Log Failure Details</strong>
+<ul>
+<li>If copy or paste fails, log the clipboard state, target element, and timestamp for debugging.</li>
+</ul>
+</li>
+<li><strong>Ensure Element Readiness</strong>
+<ul>
+<li>Add a wait or focus step before pasting to ensure that the target element is ready.</li>
+</ul>
+</li>
+<li><strong>Handle OS and Browser differences</strong>
+<ul>
+<li>Use OS-specific handling, and if unsupported, skip or log the issue gracefully.</li>
+</ul>
+</li>
+</ul>
+<hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/zeuz-node/actions/Web/context-click-right-mouse-click/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Context Click (Right Mouse Click)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/zeuz-node/actions/Web/deselect-all/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Deselect All</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#purpose" class="table-of-contents__link toc-highlight">Purpose</a><ul><li><a href="#table-input-parameters-for-copy-image-into-browser-action" class="table-of-contents__link toc-highlight">Table: Input Parameters for Copy Image into Browser Action</a></li><li><a href="#action-behavior" class="table-of-contents__link toc-highlight">Action Behavior</a></li><li><a href="#examples" class="table-of-contents__link toc-highlight">Examples</a></li><li><a href="#system-and-file-requirements" class="table-of-contents__link toc-highlight">System and File Requirements</a></li><li><a href="#error-handling" class="table-of-contents__link toc-highlight">Error Handling</a></li></ul></li><li><a href="#test-case-scenario-of-copy-image-into-web-action" class="table-of-contents__link toc-highlight">Test Case Scenario of &quot;Copy Image into Web&quot; Action</a><ul><li><a href="#title" class="table-of-contents__link toc-highlight">Title</a></li><li><a href="#scenario-overview" class="table-of-contents__link toc-highlight">Scenario Overview</a></li><li><a href="#steps-to-follow" class="table-of-contents__link toc-highlight">Steps to Follow</a></li><li><a href="#actions" class="table-of-contents__link toc-highlight">Actions</a></li><li><a href="#expected-result" class="table-of-contents__link toc-highlight">Expected Result</a></li><li><a href="#common-errors-and-fixes" class="table-of-contents__link toc-highlight">Common Errors and Fixes</a></li></ul></li><li><a href="#additional-tips-for-this-action" class="table-of-contents__link toc-highlight">Additional Tips for this Action</a></li><li><a href="#error-handling-for-copy-or-paste-image-into-web-action" class="table-of-contents__link toc-highlight">Error Handling for Copy or Paste Image into Web Action</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro/">Setup a trial account</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/intro/">Setup ZeuZ Node</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/7DpMYcPWCc" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/company/automation-solutionz" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.facebook.com/automationsolutionz/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Facebook<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.youtube.com/@zeuzai" target="_blank" rel="noopener noreferrer" class="footer__link-item">YouTube<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog/">Blog</a></li><li class="footer__item"><a href="https://github.com/AutomationSolutionz/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Download ZeuZ Node<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://demo.zeuz.ai/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ZeuZ demo / playground<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Automation Solutionz.</div></div></div></footer></div>
 </body>
 </html>
