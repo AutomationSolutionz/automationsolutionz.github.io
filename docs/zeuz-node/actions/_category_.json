@@ -1,5 +1,6 @@
 {
-    "label": "Actions",
+    "label": "📦 Actions",
+    "position": 3,
     "link": {
         "type": "generated-index",
         "description": "Index of all ZeuZ Node actions."
