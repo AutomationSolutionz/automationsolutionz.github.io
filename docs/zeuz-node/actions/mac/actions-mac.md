@@ -1,6 +1,6 @@
 ---
 id: actions-mac
-title: Mac Actions
+title: Introduction of Mac Actions
 ---
 
 ## Description

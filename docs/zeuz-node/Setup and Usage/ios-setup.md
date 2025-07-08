@@ -1,6 +1,6 @@
 ---
 id: ios-setup
-title: Setup iOS for Automation
+title: iOS
 sidebar_position: 3
 ---
 

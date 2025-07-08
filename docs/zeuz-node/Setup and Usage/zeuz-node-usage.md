@@ -1,7 +1,8 @@
 ---
 id: zeuz-node-usage
 title: ZeuZ Node usage
-sidebar_label: Usage
+sidebar_label: Install and connect
+sidebar_position: 1
 ---
 
 ZeuZ Node can be launched via the CLI from any terminal/cmd prompt.

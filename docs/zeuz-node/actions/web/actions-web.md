@@ -1,6 +1,6 @@
 ---
 id: actions-web
-title: Web Actions
+title: Introduction of Web Actions
 ---
 
 :::tip

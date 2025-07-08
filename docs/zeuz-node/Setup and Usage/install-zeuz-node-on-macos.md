@@ -1,6 +1,6 @@
 ---
-title: Install ZeuZ Node on macOS
-sidebar_position: 6
+title: macOS
+sidebar_position: 2
 ---
 
 This method provides step-by-step instructions for installing the **ZeuZ Node** on a macOS system by downloading the official **macOS application release** directly from the **ZeuZ GitHub repository**.
