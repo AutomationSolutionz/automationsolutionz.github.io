@@ -160,3 +160,91 @@ Page DOM (main document)
    - Explicitly specify indices (e.g., use `sr 2` instead of just `sr`).
 
 ---
+
+## Test Case Scenario of "Access Nested Shadow Root Elements"
+
+### Title
+Access Nested Shadow Root Elements
+
+Sample test case: [TEST-8216 Access Nested Shadow Root Elements](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8216)
+
+### Scenario Overview
+This test case is designed to verify the ability to interact with elements within nested shadow DOMs on a specific webpage. The test involves navigating through different levels of shadow DOMs to find and interact with specific elements, ensuring that the expected connection status messages are displayed correctly.
+
+### Steps to Follow
+1. Navigate to the website using the Selenium **go to link** action.
+2. Access the nested shadow DOM to locate the element with tag `team-container` and title `UI/UX Designer`.
+3. Click the button with class `connect-btn` inside that element.
+4. Validate the text **You are now connected with Alice Benjin** in the element with ID `connectionStatus`.
+5. Locate the nested element using parent ID `parentDiv` and child ID `teamRoot` with the name `Bob Smith`.
+6. Click the `connect-btn` inside that structure.
+7. Validate the text **You are now connected with Bob Smith** in `connectionStatus`.
+
+### Actions
+
+#### 1. Enter Nested Levels and Click
+
+|  Parameter      |  Type                    |  Value             |
+|-----------------|--------------------------|--------------------|
+|  tag            |  sr 1 element parameter  |  team-container    |
+|  title          |  sr 2 element parameter  |  UI/UX Designer    |
+|  class          |  element parameter       |  connect-btn       |
+|  click          |  selenium action         |  click             |
+
+#### 2. Enter Nested Levels by Parent and Click
+
+|  Parameter      |  Type                    |  Value             |
+|-----------------|--------------------------|--------------------|
+|  id             |  sr parent parameter     |  parentDiv         |
+|  id             |  sr element parameter    |  teamRoot          |
+|  name           |  sr 2 element parameter  |  Bob Smith         |
+|  class          |  element parameter       |  connect-btn       |
+|  click          |  selenium action         |  click             |
+
+### Expected Result
+- The automation correctly accesses and interacts with elements within nested shadow roots, and the intended outcome, such as confirmation message, is successfully displayed.
+
+### Common Errors and Fixes
+- **Error**: Unable to access the shadow root.
+  - **Fix**: Confirm that the shadow root is open. Closed shadow roots are not accessible via standard DOM traversal.
+- **Error**: The locator or selector is incorrect.
+  - **Fix**: Double-check the tag names, attributes (e.g., `id`, `title`, `name`), and the hierarchy used to locate the target element.
+- **Error**: Timing issue: the element is not yet rendered.
+  - **Fix**: Add appropriate **wait** or **delay** steps to ensure the shadow DOM and its content are fully loaded before access.
+- **Error**: Action not performed (e.g., click fails).
+  - **Fix**: Ensure that the element is interactable (visible, enabled, in view) and that focus or scroll steps are used if needed.
+
+---
+
+## Additional Tips for "Access Nested Shadow Root Elements"
+- Traverse each shadow layer step-by-step using `shadowRoot.querySelector(...)`.
+- Ensure the shadow root is open, as closed roots cannot be accessed.
+- Use stable selectors such as, `id`, `title`, or `name` for accuracy.
+- Add wait or delay steps to ensure the shadow DOM content is fully rendered.
+- Validate the presence of elements at each shadow level before proceeding.
+- Log each step during shadow root access for easier debugging.
+
+---
+
+## Error Handling for "Access Nested Shadow Root Elements"
+ 1. **Error**: Cannot read properties of null (reading `shadowRoot`).  
+    **Possible Cause**: The host element does not exist and is not yet rendered when the script attempts to access it.  
+    **How to Fix**: Use an **explicit wait** to ensure the host element is present in the DOM before accessing its `shadowRoot`.
+
+ 2. **Error**: The shadowRoot is null.  
+    **Possible Cause**: The element does not have an open shadow root or the script is trying to access it from an unsupported context.  
+    **How to Fix**: Ensure that the host element has an open shadow root by verifying its presence and checking that it uses `mode: 'open'` in the web component definition.
+
+ 3. **Error**: Cannot find the element inside the shadow root.  
+    **Possible Cause**: An incorrect or incomplete locator is used to identify the element within the shadow root.  
+    **How to Fix**: Access each level of the nested shadow root sequentially before locating the target element.
+
+ 4. **Error**: The element is not interactable.  
+    **Possible Cause**: The element is not visible or enabled on the page when the interaction is attempted.  
+    **How to Fix**: Wait until the element is visible and enabled before performing any action on it.
+
+ 5. **Error**: Security Error: Access to the Shadow DOM is restricted.  
+    **Possible Cause**: Tried to access a closed shadow DOM that is purposely hidden.  
+    **How to Fix**: Request the developer to change the shadow DOM's mode to open instead of closed to allow access.
+
+---
