@@ -4,10 +4,118 @@
         <title>ZeuZ Resources Blog</title>
         <link>https://docs.zeuz.ai/blog/</link>
         <description>ZeuZ Resources Blog</description>
-        <lastBuildDate>Sun, 18 May 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Jul 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ZeuZ Platform 20250712]]></title>
+            <link>https://docs.zeuz.ai/blog/zeuz-platform-20250712/</link>
+            <guid>https://docs.zeuz.ai/blog/zeuz-platform-20250712/</guid>
+            <pubDate>Sat, 12 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Release date: July 12, 2025]]></description>
+            <content:encoded><![CDATA[<p><em>Release date: July 12, 2025</em></p>
+<hr>
+<p>Welcome to the July 2025 release of the ZeuZ platform! 🚀 This release brings significant improvements to browser testing, AI capabilities, test case management, scheduling, and dashboard features.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-features">🚀 Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250712/#-features" class="hash-link" aria-label="Direct link to 🚀 Features" title="Direct link to 🚀 Features">​</a></h2>
+<ul>
+<li>Test case export/import can now handle test case and step attachments</li>
+<li>Scheduler page redesigned</li>
+<li>Release report: GitHub issue type filter added</li>
+<li>Release report: Added date range filtering for GitHub pull requests</li>
+<li>Pre-requisite test case assignment in test case search and test set pages</li>
+<li>ZeuZ Node installation and connection help video in dashboard</li>
+<li>Enhanced ZAI Chatbot with Q&amp;A, history, and improved capabilities</li>
+<li>Minor UI and feature updates/fixes</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-bug-fixes">🐛 Bug Fixes<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250712/#-bug-fixes" class="hash-link" aria-label="Direct link to 🐛 Bug Fixes" title="Direct link to 🐛 Bug Fixes">​</a></h2>
+<ul>
+<li>Fixed test case import for expected and description fields</li>
+<li>Resolved scheduler-related bugs (multiple fixes)</li>
+<li>Fixed runtest version issue</li>
+<li>Resolved "/" character issue in names</li>
+<li>Fixed watch.mjs file issue</li>
+<li>Implemented datastore team/project separation</li>
+<li>Resolved set import dropdown filter bug</li>
+<li>Fixed set export to JSON bug</li>
+<li>Fixed Slack webhook notification implementation</li>
+<li>Enabled iframe embeds for embedding ZeuZ into dashboads for reporting</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="chrome-for-testing">Chrome for Testing<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250712/#chrome-for-testing" class="hash-link" aria-label="Direct link to Chrome for Testing" title="Direct link to Chrome for Testing">​</a></h2>
+<p>Test your web applications across any specific version of Chrome, including pre-release builds (Dev, Beta, Canary). ZeuZ now provides complete browser version control with automated version management.</p>
+<p><strong>Key Benefits:</strong></p>
+<ul>
+<li>Validate cross-version compatibility</li>
+<li>Pinpoint bugs in specific Chrome builds</li>
+<li>Test against upcoming Chrome features</li>
+<li>Fully automated version-targeted testing</li>
+</ul>
+<p><strong>Usage:</strong> Add a chrome<!-- -->:version<!-- --> parameter to your "Go to link" action:</p>
+<table><thead><tr><th>Field</th><th>Sub Field</th><th>Value</th></tr></thead><tbody><tr><td>chrome<!-- -->:version</td><td>optional parameter</td><td><strong>%|my_version|%</strong> or <strong>125.0.6382.0</strong></td></tr></tbody></table>
+<p><strong>Smart Version Management:</strong></p>
+<ul>
+<li>Auto-cleanup unused versions after 90 days</li>
+<li>Latest version auto-updates every 7 days</li>
+<li>Automatic download and installation of Chrome and ChromeDriver</li>
+</ul>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250712/463816684-44b90f6f-bf8b-45d3-a89c-0216e2aafbb4.mp4" type="video/mp4"></video>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="enhanced-zai-chatbot">Enhanced ZAI Chatbot<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250712/#enhanced-zai-chatbot" class="hash-link" aria-label="Direct link to Enhanced ZAI Chatbot" title="Direct link to Enhanced ZAI Chatbot">​</a></h2>
+<p>ZAI, your AI-powered testing assistant, now features improved memory and knowledge capabilities for more personalized and accurate responses.</p>
+<p><strong>New Features:</strong></p>
+<ul>
+<li><strong>Smarter Memory:</strong> Saves chat history for personalized, coherent responses</li>
+<li><strong>Knowledge-Powered Answers:</strong> Real-time answers from product documentation and knowledge base</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="ZAI Chatbot demo" src="https://docs.zeuz.ai/assets/images/463820915-c1f8d7ca-a7fc-43de-bfd9-e18f3f29b753-d4bbe413e214f3ad5bc880ab5418adf5.png" width="1046" height="1418" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="zip-import-for-test-cases">ZIP Import for Test Cases<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250712/#zip-import-for-test-cases" class="hash-link" aria-label="Direct link to ZIP Import for Test Cases" title="Direct link to ZIP Import for Test Cases">​</a></h2>
+<p>Comprehensive ZIP import functionality now supports test cases with all related attachments, improving data integrity and providing a complete import/export experience.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Import test cases from ZIP files with structured folder support</li>
+<li>Embedded metadata (index.json) handling</li>
+<li>Test case and step-level attachment processing</li>
+<li>Automatic ID mapping and database integration</li>
+<li>Full backward compatibility with JSON imports</li>
+</ul>
+<p><strong>Supported File Structure:</strong></p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">TestCases_backup_export.zip</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── index.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── test_cases/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    └── {tc_id}/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        ├── tc.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        ├── attachments/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        │   ├── file1.pdf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        │   └── file2.csv</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        └── steps_attachments/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            └── step_{step_id}/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ├── step_file1.csv</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                └── step_file2.txt</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="enhanced-scheduler-management">Enhanced Scheduler Management<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250712/#enhanced-scheduler-management" class="hash-link" aria-label="Direct link to Enhanced Scheduler Management" title="Direct link to Enhanced Scheduler Management">​</a></h2>
+<p>Streamlined scheduler experience with in-context interactions and bulk operations, eliminating page reloads for better workflow efficiency.</p>
+<p><strong>New Capabilities:</strong></p>
+<ul>
+<li><strong>Inline Creation &amp; Editing:</strong> Modal-based scheduler management from the Schedule List page</li>
+<li><strong>Step-by-Step Creation:</strong> Guided modal for efficient scheduler setup</li>
+<li><strong>Editable Details:</strong> View and update scheduler information without page navigation</li>
+<li><strong>Bulk Operations:</strong> Select multiple schedulers for activate/deactivate actions</li>
+<li><strong>Run History Access:</strong> Popup view of recent run history with full history navigation</li>
+</ul>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250712/464002801-d5f18d77-886e-49aa-b9d0-0e03ecf8ed7d.mp4" type="video/mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="zeuz-dashboard">ZeuZ Dashboard<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250712/#zeuz-dashboard" class="hash-link" aria-label="Direct link to ZeuZ Dashboard" title="Direct link to ZeuZ Dashboard">​</a></h2>
+<p>Central hub providing comprehensive overview of your automation ecosystem with execution engines, test metrics, and storage insights.</p>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250712/464026255-32f99fe1-df37-413a-a869-925113da4c55.mov" type="video/mp4"></video>
+<p><strong>Dashboard Components:</strong></p>
+<p><strong>ZeuZ Node Management:</strong></p>
+<ul>
+<li>One-click ZeuZ Node download</li>
+<li>Platform-specific connection guides (Windows, Mac, Linux)</li>
+<li>Quick access to Node, Server, Changelog, and Documentation</li>
+</ul>
+<p><strong>Build Health Monitoring:</strong></p>
+<ul>
+<li>View health by milestones or versions</li>
+<li>Pass/Fail metrics with visual percentages</li>
+<li>Hover for detailed counts and percentages</li>
+</ul>
+<p><strong>Automatability Overview:</strong></p>
+<ul>
+<li>Donut chart visualization of test case categories</li>
+<li>Color-coded automation status tracking</li>
+</ul>]]></content:encoded>
+            <category>Changelog</category>
+        </item>
         <item>
             <title><![CDATA[ZeuZ Platform 20250518]]></title>
             <link>https://docs.zeuz.ai/blog/zeuz-platform-20250518/</link>
