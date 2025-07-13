@@ -5,9 +5,41 @@ authors: ['antu', 'sazid']
 tags: ['changelog']
 ---
 
+# July 2025 (20250712)
+
 *Release date: July 12, 2025*
 
+---
+
 Welcome to the July 2025 release of the ZeuZ platform! 🚀 This release brings significant improvements to browser testing, AI capabilities, test case management, scheduling, and dashboard features.
+
+## 🚀 Features
+
+- Test case export/import can now handle test case and step attachments
+- Scheduler page redesigned
+- Release report: GitHub issue type filter added
+- Release report: Added date range filtering for GitHub pull requests
+- Pre-requisite test case assignment in test case search and test set pages
+- ZeuZ Node installation and connection help video in dashboard
+- Enhanced ZAI Chatbot with Q&A, history, and improved capabilities
+- Minor UI and feature updates/fixes
+
+<!-- truncate -->
+
+## 🐛 Bug Fixes
+
+- Fixed test case import for expected and description fields
+- Resolved scheduler-related bugs (multiple fixes)
+- Fixed runtest version issue
+- Resolved "/" character issue in names
+- Fixed watch.mjs file issue
+- Implemented datastore team/project separation
+- Resolved set import dropdown filter bug
+- Fixed set export to JSON bug
+- Fixed Slack webhook notification implementation
+- Enabled iframe embeds for embedding ZeuZ into dashboads for reporting
+
+---
 
 ## Chrome for Testing
 
