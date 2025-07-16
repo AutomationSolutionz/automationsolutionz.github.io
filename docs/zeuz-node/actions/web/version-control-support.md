@@ -55,3 +55,45 @@ For advanced test automation with browser-specific validation, the Chrome for Te
 > Support is not available for Chrome versions below **115.0.5763.0**.
 
 :::
+
+---
+
+## Test Case Example Scenario of "Version Control Support" Action
+
+### Title
+Version Control Support
+
+Sample test case: [TEST-8232 Version Control Support](https://zeuz.zeuz.ai/Home/ManageTestCases/Edit/TEST-8232/)
+
+### Scenario Overview
+This test case is structured to help you understand how ZeuZ supports the version control system. In this specific test case you will learn how we can specify any version of Chrome and run our tests on that particular version.
+
+### Steps to Follow
+1. Navigate to the specified URL, before that you should specify the chrome version with an extra row.
+2. Enter the stored username and password into their respective fields on the login page.
+3. Click on the **Sign In** button: The button identified by the ID `signin_id` is clicked to submit the login form.
+4. Click on the **Close** button in the modal: The `Close` button within the modal dialogue, identified by its visible text **Close**, is clicked to dismiss the modal.
+
+### Actions
+
+|  Parameter                    |  Type                |  Value          |
+|-------------------------------|----------------------|-----------------|
+|  wait time to appear element  |  optional parameter  |  10             |
+|  chrome:version               |  optional parameter  |  138.0.7204.92  |
+|  go to link                   |  selenium action     |  https://demo.zeuz.ai/web/level/one/scenerios/login2  |
+
+> Here, the Chrome version is hardcoded, and ZeuZ will try to find this version in your computer, if not available then it will download and install with a corresponding driver as well. We recommend using either a variable or runtime parameter, just shown above.
+
+### Expected Result
+- The expected result is that the login functionality works correctly on the specified version of Chrome.
+
+### Common Errors and Fixes
+- **Error**: Specified Chrome version is not supported.
+  - **Fix**: Ensure that the Chrome version you specified is not less than **115.0.5763.0**.
+
+---
+
+## Additional Tips for "Version Control Support" Action
+- For a test case, use runtime parameters to specify Chrome versions, allowing easy switching between versions without modifying the test case and enabling testing across multiple versions.
+
+---
