@@ -9,3 +9,16 @@ sazid:
     linkedin: sazidz
     github: sazid
     newsletter: https://sazid.github.io
+
+antu:
+  name: Tanvir Hossain Antu
+  title: Product Engineer
+  url: https://github.com/Antu7
+  image_url: https://github.com/Antu7.png
+  page: true
+  socials:
+    x: antu_tanvir
+    linkedin: antu7
+    github: antu7
+    newsletter: https://antu7.github.io
+
