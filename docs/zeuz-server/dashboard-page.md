@@ -8,7 +8,7 @@ import Highlight from '@site/src/components/Highlight';
 
 The Dashboard page is the main overview screen of a software platform that displays key information, metrics, and summaries in a single place. It gives users a quick understanding of the current status of their projects, tests, or system health.
 
-![](/img/dashboard-page/dashboard-page.jpg)
+![](/img/dashboard-page/Dashboard.png)
 
 ---
 
@@ -30,6 +30,34 @@ The Dashboard page is the main overview screen of a software platform that displ
 
 ![](/img/dashboard-page/dashboard-node.png)
 
+
+---
+
+## License and Node Information
+The node section has been added to display the license information. It also shows the list of currently connected nodes. This section will become scrollable if there are more than four connected nodes.
+
+Here is a summary of the details:
+
+### General Information
+-  **Nodes: 1000**  
+   Indicates that the environment is licensed to support upto ***1000 execution nodes**.
+- **Users: 1000**  
+  Allows upto **1000 users** to access the system.
+- **Type: Production**  
+  Specifies that this instance is intended for **production use**, not for testing or development purposes.
+- **Validity: January 1, 2026**  
+  The license remains **valid until January 1, 2026**.
+
+### Connected Nodes
+- The system currently shows **two connected nodes**, meaning two machines are actively communicating with the ZeuZ platform.
+
+The connected nodes are:
+
+1. **nayeem_windows**: (remote windows node for test execution).
+2. **shakib.a_remote_linux**: (remote linux node for test execution).
+
+![](/img/dashboard-page/license-node.png)
+
 ---
 
 ### Build Health
@@ -45,17 +73,17 @@ Build Health displays two key metrics, such as:
 **1. Pass**: Indicates the percentage of tests or checks that passed successfully.  
 **2. Fail**: Indicates the percentage of tests or checks that failed.
 
-However, when hovering over the **Pass** or **Fail** indicators, the system displays the corresponding percentage and count of test cases, providing a quick overview of build health.
+However, in the **Build Health** section, without requiring any hover action, it will now show percentage values beside the metrics, for example, test results: **94.3% Passed (33)** and **5.7% Failed (2)**. These insights will be visible directly, without the need to hover. Additionally, the selected **Milestone** or **Version** will be displayed below the build health summary. 
 
 :::note
-If the "Build Health" section shows **Pass** and **Fail** metrics with **NaN%**, then it indicates that the system lacks the necessary data to compute these percentages. This could be due to missing test results, a malfunctioning testing framework, or incomplete build processes. It also indicates that no test cases have been executed or recorded. To resolve this, ensure that tests are running and that the results are being captured and processed correctly.
+In the **Build Health** section, if no data is available, it will display as zero.
 :::
 
 ### Example
 
-|  Build Health with Pass and Fail metrics  |
-|-------------------------------------------|
-| ![](/img/dashboard-page/build-count.png)  |
+|  Build Health with Pass and Fail metrics  |  Build Health with No Data                |
+|-------------------------------------------|-------------------------------------------|
+| ![](/img/dashboard-page/build-count.png)  |  ![](/img/dashboard-page/build-zero.png)  |
 
 ---
 
@@ -73,7 +101,14 @@ Automatability refers to how easily and effectively a test can be automated usin
 |  Performance       |  <Highlight color="rgb(127, 40, 255)">Purple</Highlight>    |
 |  Undefined         |  <Highlight color="rgb(158, 158, 158)">Gray</Highlight>      |
 
-Under our server, test cases are categorized based on their level of automatability. This shows how many test cases are automated, easy to automate, hard to automate, not automatable, performance-related, or undefined. When hovering over each segment of a chart, it shows how many test cases belong to that category, along with their percentage. For example, there are **3,294 automated test cases (95.06%)** and **133 test cases that are easy to automate (3.84%)**. Similar data is displayed for the remaining categories as well.
+Under our server, test cases are categorized based on their level of automatability. In the **Automatability** section, users can now view the total number of test cases and see what percentage of them are "Automated", "Easily Automatable", or "Hard to Automate", etc., without the need to hover.
+For example, there are:
+- **4886 automated test cases (84.5%)**, 
+- **866 test cases that are easily automatable (15.0%)**, 
+- **14 test cases that are hard to automate (0.2%)**, 
+- **6 test cases that are not automatable (0.1%)**, 
+- **7 test cases that are under performance (0.1%)**,  
+- **2 undefined test cases (0.0%)**.
 
 ![](/img/dashboard-page/easily-automatable.png)
 
@@ -82,36 +117,38 @@ Under our server, test cases are categorized based on their level of automatabil
 ### Build Comparison
 Build Comparison refers to the process of comparing the test results of two or more software builds to identify changes in quality, functionality, or performance overtime.
 
-This chart displays a comparison of the last five builds. It shows how many test cases were submitted and passed in previous versions or milestones, and how many have passed in recent builds, etc. The purpose is to provide a clear comparison.
+This chart displays a comparison of the last five builds. It shows how many test cases were not run or passed in previous versions or milestones, and how many have passed in recent builds, etc. The purpose is to provide a clear comparison.
 
-### Example
+In the **Build Comparison** section, the blocks have now been merged as follows:
+- The **Fail** block now combines both "Fail" and "Block" status.
+- The **Not Run** block now combines both "Skip" and "Submit" status.
 
-Users can observe that in an earlier build, **1616 test cases passed**
-while **61 test cases failed**. And in the most recent build, **1806 test cases passed** and
-**61 test cases failed**.
-
-|  Previous Build                          |  Recent Build                         |
-|------------------------------------------|---------------------------------------|
-| ![](/img/dashboard-page/previous-build.png)  | ![](/img/dashboard-page/recent-build.png)  |
-
-This helps determine whether the quality is improving or degrading overtime.  
+However, this helps determine whether the quality is improving or degrading overtime.  
 At the top, there are toggle options for **Milestone** and **Version**. When **Milestone** is selected, the build comparison is shown based on milestones. When **Version** is selected, the build comparison is shown based on version.
 
 ![](/img/dashboard-page/build-comparison.png)
 
+Here, the **June** milestone is the current build, while the others are previous builds.
+
 ---
 
 ### PBC (Priority Based Comparison)
-Priority Based Comparison refers to the process of comparing test results based on the priority levels assigned to test cases.
+Priority Based Comparison refers to the process of comparing test results based on the priority levels assigned to test cases. It allows users to analyze test results based on different priority levels, such as **P1**, **P2**, **P3** and **P4**.
 
-Priority Based Comparison (PBC) allows users to analyze test results based on different priority levels, such as **P1**, **P2**, **P3** and **P4**. When you hover over the chart, you can see the name of the current build or milestone being analyzed.
+In case of **PBC (Priority Based Comparison)**, when the **Current**, **Previous**, **Milestone** or **Version** is selected, the selected **Current / Previous Milestone** or **Current / Previous Version** will be displayed below the PBC section. Additionally, as before, the **Fail** status includes both failed and blocked test cases, and the **Not Run** status includes both "Skipped" and "Submitted" test cases.
 
 ### Example
-In the current build, if there are **286 test cases that passed** and **7 test cases that failed**, this comparison becomes especially important because **P1** test cases are considered critical. By organizing results by priority, users can quickly identify issues in high-priority areas.
+The following image displays a tooltip or data breakdown for a test priority category labeled **P1**. It shows the execution status of test cases under this priority:
+- **Pass: 30**  
+  A total of thirty test cases have passed.
+- **Fail: 2**  
+  Two test cases have failed.
+- **Not Run: 3**  
+  Three test cases have not been executed.
 
 ![](/img/dashboard-page/pbc-data.png)
 
-The chart also shows how many test cases are **passing**, **failing**, **blocked**, **skipped**, or **submitted** within each priority level. Additionally, hovering over the **Current** label reveals the name of the most recent build, and this comparison can be used across milestones or versions to track how test cases are performing based on their assigned priorities.
+The chart also displays the number of test cases that are passing, failing, and not running within each priority level. Additionally, hovering over the **Current** label reveals the name of the most recent build, and this comparison can be used across milestones or versions to track how test cases are performing based on their assigned priorities.
 
 ![](/img/dashboard-page/pbc-chart.png)
 

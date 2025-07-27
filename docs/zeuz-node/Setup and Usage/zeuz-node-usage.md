@@ -16,3 +16,8 @@ ZeuZ Node can be launched via the CLI from any terminal/cmd prompt.
 - Login with API key and server: `uv run node_cli.py -s https://zeuz-server.com
   -k API-KEY-ABC-XYZ-QWERTY`
 - Local Run/Re-run previous deployment offline: `uv run node_cli.py -r`
+
+### GitHub Link Repository
+https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases
+
+---

@@ -19,9 +19,7 @@ This method provides step-by-step instructions for installing the **ZeuZ Node** 
 1. Log in to the **ZeuZ Dashboard**.
 2. Locate the **ZeuZ Node** section.
 
-![](/img/zeuz-node/install-macos/H.png)
-
-3. Click on **More platforms and architectures**.
+![](/img/zeuz-node/install-macos/Dashboard.png)
 
 → This will redirect the user to the official GitHub **ZeuZ_Python_Node** [Releases](https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases) page.
 
