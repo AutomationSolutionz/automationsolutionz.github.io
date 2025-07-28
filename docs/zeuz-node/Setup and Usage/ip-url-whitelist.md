@@ -25,22 +25,71 @@ sidebar_position: 4
 
 ### Server
 
-* **Docker hub**:
+* 🔄 **Docker Hub**:  
+  Based on the Docker Desktop allowlist and multiple community sources, whitelist:
 
-    1. auth.docker.io  
-    2. cdn.auth0.com  
-    3. login.docker.com  
-    4. hub.docker.com  
-    5. registry-1.docker.io  
-    6. production.cloudflare.docker.com
+  |  Domain                         |  Purpose                                                  |
+  |---------------------------------|-----------------------------------------------------------|
+  | `auth.docker.io`                |  Handles token-based authentication for secure access.    |
+  | `registry-1.docker.io`          |  Main Docker image registry where images are pulled from. |
+  | `index.docker.io`               |  Acts as a metadata index for repositories and tags.      |
+  | `hub.docker.com`                |  Docker Hub's web interface; occasionally accessed during API-based pull. |
+  | `production.cloudflare.docker.com` |  CDN used by Docker for delivering content efficiently. |
+  | `docker-image-prod.*.cloudflarestorage.com` |  Backend storage for Docker images served via CDN. |
+  | `login.docker.com`  |  Auth redirect used when Docker login is initiated from the CLI.  |
+  | `cdn.auth0.com`     |  Provides assets (e.g., login scripts, styles) during the login/auth flow.  |
+    
 
-* **GitHub container registry**:
+* 🏷️ **GitHub Container Registry**:  
+   According to GitHub Community guidance, include these domains:
 
-    1. ghcr.io (the primary domain for the registry)  
-    2. raw.githubusercontent.com (used for downloading container layers)
-    3. api.github.com (used for authentication and API calls)
-    4. dl.github.com (used for downloading other package assets)
-    5. gist.githubusercontent.com (used for potential gist-related content)
-    6. docker.pkg.github.com
+   |  Domain                    |  Purpose                                                                  |
+   |----------------------------|---------------------------------------------------------------------------|
+   |  `ghcr.io`                 |  Main GitHub Conatiner Registry for storing and pulling container images. |
+   |  `pkg-containers.githubusercontent.com`  | Blob storage service where image layers are downloaded from. |
+   |  `containers.pkg.github.com`       |  Legacy container registry domain ( used prior to `ghcr.io` ).    |
+   |  `docker.pkg.github.com`      |  GitHub Packages registry for Docker images (older registry).          |
+   |  `docker-proxy.pkg.github.com` |  Internal proxy used to route Docker pulls for GitHub-hosted containers. |
+   |  `*.github.com`    |  Required for API authentication, repository access, and metadata queries.  |
+   |  `*.githubusercontent.com`  |  Serve release assets and large files used in package management.  |
+   |  `*.githubassets.com`       |  Static content such as icons and styles used in GitHub's UI/API calls.  |
+   |  `*.ghcr.io`                |  Subdomains used for distributing image layers or chunks (e.g., via CDN) |
+   |  `*.pkg.github.com`         |  Older GitHub Package Registry endpoints.  |
+   |  `*.blob.core.windows.net`  |  Azure Blob Storage backend where GitHub stores large package files (including container layers).  |
+
+### Final Whitelist Summary
+#### Docker Hub:
+```
+- auth.docker.io
+- registry-1.docker.io
+- index.docker.io
+- hub.docker.com
+- production.cloudflare.docker.com
+- docker-images-prod.*.cloudflarestorage.com
+- cdn.auth0.com
+- login.docker.com
+```
+
+#### GitHub Container Registry:
+```
+- ghcr.io
+- *.github.com
+- *.githubusercontent.com
+- *.githubassets.com
+- *.pkg.github.com
+- *.ghcr.io
+- docker.pkg.github.com
+- docker-proxy.pkg.github.com
+- containers.pkg.github.com
+- pkg-containers.githubusercontent.com
+- *.blob.core.windows.net
+```
+
+### ⚙️ Tips
+- **DNS wildcards** (`*.github.com`) simplify management.
+- **Azure blob endpoints**: monitor GitHub's meta API for `.blob.core.windows.net` subdomains if you are using GitHub Packages for Layers.
+- **CDN domains** (`cloudflarestorage.com`, `production.cloudflare.docker.com`) may vary based on location - wildcards like `docker-images-prod.*.cloudflarestorage.com` are safer.
+
+---
 
 
