@@ -164,12 +164,12 @@ Test Case Create Velocity refers to the rate at which test cases are being creat
 ### Scheduler Health
 Scheduler Health refers to the current status of the schedulers in an automation system.
 
-On the left side of the Scheduler Health section, the name of each scheduler is displayed. It shows whether the test cases scheduled in the last 10 runs were executed successfully or not.
+In the **Scheduler Health** section, the name of each scheduler will be displayed on the left side. Under each scheduler, the number of test runs and the number of tests not run will be shown.
 
 If a scheduler shows a **hot pink** sign, it means that the test did not run.  
 If a scheduler shows a **green** sign, it means the test was successfully executed.
 
-![](/img/dashboard-page/scheduler-health.png)
+![](/img/dashboard-page/sche-health.png)
 
 ---
 
@@ -181,11 +181,15 @@ Orphaned Test Cases are test cases that are no longer linked to any active or va
 ---
 
 ### Storage
-Storage mainly shows how much server space is used and how much is still available. For example, **40.59 GB (84%)** is used, and **7.79 GB (16%)** of space is available.
+The Storage section has been upgraded. It now displays a visual design on the right side, along with detailed information showing how much space each item is using. For example:
+- **Free Space (6.65 GB)**
+- **Logs & Reports (0.76 GB)**
+- **Test Cases (0.07 GB)**
+- **Files & Downloads (0.4 GB)**
+- **Backups (0.16 GB)**
+- **OS & Others (40.3399 GB)**.
 
-|  Used Storage                              |  Available Storage                              |
-|--------------------------------------------|-------------------------------------------------|
-| ![](/img/dashboard-page/data-storage.png)  | ![](/img/dashboard-page/available-storage.png)  |
+![](/img/dashboard-page/storage-space.png)
 
 ---
 
