@@ -90,6 +90,11 @@ sidebar_position: 4
 - **Azure blob endpoints**: monitor GitHub's meta API for `.blob.core.windows.net` subdomains if you are using GitHub Packages for Layers.
 - **CDN domains** (`cloudflarestorage.com`, `production.cloudflare.docker.com`) may vary based on location - wildcards like `docker-images-prod.*.cloudflarestorage.com` are safer.
 
+### Reference Link
+https://chatgpt.com/s/t_687e0172477081918485f8b4b2186844
+https://github.com/orgs/community/discussions/118629?utm_source=chatgpt.com#discussioncomment-9092567
+https://docs.docker.com/desktop/setup/allow-list/
+
 ---
 
 
