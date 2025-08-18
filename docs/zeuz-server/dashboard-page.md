@@ -193,4 +193,27 @@ The Storage section has been upgraded. It now displays a visual design on the ri
 
 ---
 
+### GitHub Stats and GitHub Activity
+1. The **Dashboard** will display **GitHub Stats** and **GitHub Activity** for the selected repositories.
+
+![](/img/dashboard-page/github-activity.png)
+
+2. By default, the first selected repository is displayed.
+3. Multiple repositories can be displayed depending on the selection during integration.
+4. A **Start Date** and **End Date** can be applied to filter the displayed data.
+5. The displayed information includes the count of **Closed Bugs**, **Tasks**, and **Requirements** within the selected date range, followed by the count **Created Bugs**, **Tasks**, and **Requirements** for the same date range.
+6. The number of **Open**, **Merged**, and **Closed** pull requests will be displayed under the Pull Request section.
+
+![](/img/dashboard-page/default-repository.png)
+
+7. On the other hand, the table can be filtered by **Pull Requests** or **Issues** within the selected date range:
+- Issues can be **Open** or **Closed**.
+- Pull Requests can be **Open**, **Merged**, or **Closed**.
+
+8. Users can click on any **Pull Request** or **Issue** to navigate to it in **GitHub**. Pagination is available to view additional data if more entries are available.
+
+![](/img/dashboard-page/github-merge.png)
+
+---
+
 
