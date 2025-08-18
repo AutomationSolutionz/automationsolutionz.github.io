@@ -12,33 +12,27 @@
         <id>https://docs.zeuz.ai/blog/zeuz-platform-20250818/</id>
         <link href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/"/>
         <updated>2025-08-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Release date: August 12, 2025]]></summary>
-        <content type="html"><![CDATA[<p><em>Release date: August 12, 2025</em></p>
+        <summary type="html"><![CDATA[Release date: August 18, 2025]]></summary>
+        <content type="html"><![CDATA[<p><em>Release date: August 18, 2025</em></p>
 <hr>
-<p>Welcome to the August 2025 release of the ZeuZ platform! 🚀 This release brings significant improvements to browser testing, AI capabilities, test case management, scheduling, and dashboard features.</p>
+<p>Welcome to the August 2025 release of the ZeuZ platform!</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-features">🚀 Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-features" class="hash-link" aria-label="Direct link to 🚀 Features" title="Direct link to 🚀 Features">​</a></h2>
 <ul>
-<li>Test case export/import can now handle test case and step attachments</li>
-<li>Scheduler page redesigned</li>
-<li>Release report: GitHub issue type filter added</li>
-<li>Release report: Added date range filtering for GitHub pull requests</li>
-<li>Pre-requisite test case assignment in test case search and test set pages</li>
-<li>ZeuZ Node installation and connection help video in dashboard</li>
-<li>Enhanced ZAI Chatbot with Q&amp;A, history, and improved capabilities</li>
-<li>Minor UI and feature updates/fixes</li>
+<li><strong>Dashboard Updates</strong>: Compressed document URLs, Node &amp; License Status section, Build Health enhancements, and GitHub integration with date-range filtering.</li>
+<li><strong>Run Test Updates</strong>: Improved Version Name Validation, Advanced Tab refinements, and Responsive Sidebar Layouts. Implemented sending external service reports only on fails.</li>
+<li><strong>zAI Page Assistance</strong>: Server-wide zAI enabled for contextual assistance, quick Q&amp;A, and page-specific guidance.</li>
+<li><strong>Close Tab</strong>: Dual-driver support (Selenium + Playwright) for closing tabs by title, index, or active tab.</li>
+<li><strong>Accessibility Test</strong>: Scan webpages for accessibility issues using axe-core, generating JSON and HTML reports.</li>
+<li><strong>Chrome Extension Download</strong>: Install Chrome extensions of latest version and add with the automation browser during automation runs via extension-id list.</li>
+<li><strong>Data Store Updates</strong>: Batch processing for multiple file uploads with single interaction is implemented.</li>
+<li><strong>Unified “Links” Tab</strong>: Consolidated tabs for Requirements, Tasks, Bugs, and Test Cases in <code>Links</code> tab across multiple pages.</li>
+<li><strong>Set, History, and Fail Analysis Page Update</strong>: Improved visual representation of pass, fail, block, etc., in donut charts with smooth pop-up details.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-bug-fixes">🐛 Bug Fixes<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-bug-fixes" class="hash-link" aria-label="Direct link to 🐛 Bug Fixes" title="Direct link to 🐛 Bug Fixes">​</a></h2>
 <ul>
-<li>Fixed test case import for expected and description fields</li>
-<li>Resolved scheduler-related bugs (multiple fixes)</li>
-<li>Fixed runtest version issue</li>
-<li>Resolved "/" character issue in names</li>
-<li>Fixed watch.mjs file issue</li>
-<li>Implemented datastore team/project separation</li>
-<li>Resolved set import dropdown filter bug</li>
-<li>Fixed set export to JSON bug</li>
-<li>Fixed Slack webhook notification implementation</li>
-<li>Enabled iframe embeds for embedding ZeuZ into dashboads for reporting</li>
+<li>Resolved scheduler-related bugs and runtime parameters clipboard merging of variables and tag-values issue.</li>
+<li>Fixed <code>Take Screenshot</code> action failure and <code>maximize_window</code> in headless mode.</li>
+<li>Addressed Slack webhook notification and set import/export bugs.</li>
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-dashboard-updates">🚀 Dashboard Updates<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-dashboard-updates" class="hash-link" aria-label="Direct link to 🚀 Dashboard Updates" title="Direct link to 🚀 Dashboard Updates">​</a></h2>
