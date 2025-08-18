@@ -22,3 +22,13 @@ antu:
     github: antu7
     newsletter: https://antu7.github.io
 
+muhib:
+  name: Muntasib Muhib Chowdhury
+  title: Product Engineer
+  url: https://github.com/Muntasib-creator
+  image_url: https://github.com/Muntasib-creator.png
+  page: true
+  socials:
+    x: MuntasibC
+    linkedin: muhib-c
+    github: Muntasib-creator
