@@ -7,37 +7,31 @@ tags: ['changelog']
 
 # August 2025 (20250818)
 
-*Release date: August 12, 2025*
+*Release date: August 18, 2025*
 
 ---
 
-Welcome to the August 2025 release of the ZeuZ platform! 🚀 This release brings significant improvements to browser testing, AI capabilities, test case management, scheduling, and dashboard features.
+Welcome to the August 2025 release of the ZeuZ platform!
 
 ## 🚀 Features
 
-- Test case export/import can now handle test case and step attachments
-- Scheduler page redesigned
-- Release report: GitHub issue type filter added
-- Release report: Added date range filtering for GitHub pull requests
-- Pre-requisite test case assignment in test case search and test set pages
-- ZeuZ Node installation and connection help video in dashboard
-- Enhanced ZAI Chatbot with Q&A, history, and improved capabilities
-- Minor UI and feature updates/fixes
+- **Dashboard Updates**: Compressed document URLs, Node & License Status section, Build Health enhancements, and GitHub integration with date-range filtering.
+- **Run Test Updates**: Improved Version Name Validation, Advanced Tab refinements, and Responsive Sidebar Layouts. Implemented sending external service reports only on fails.
+- **zAI Page Assistance**: Server-wide zAI enabled for contextual assistance, quick Q&A, and page-specific guidance.
+- **Close Tab**: Dual-driver support (Selenium + Playwright) for closing tabs by title, index, or active tab.  
+- **Accessibility Test**: Scan webpages for accessibility issues using axe-core, generating JSON and HTML reports.  
+- **Chrome Extension Download**: Install Chrome extensions of latest version and add with the automation browser during automation runs via extension-id list.  
+- **Data Store Updates**: Batch processing for multiple file uploads with single interaction is implemented.
+- **Unified “Links” Tab**: Consolidated tabs for Requirements, Tasks, Bugs, and Test Cases in `Links` tab across multiple pages.  
+- **Set, History, and Fail Analysis Page Update**: Improved visual representation of pass, fail, block, etc., in donut charts with smooth pop-up details.  
 
 <!-- truncate -->
 
 ## 🐛 Bug Fixes
 
-- Fixed test case import for expected and description fields
-- Resolved scheduler-related bugs (multiple fixes)
-- Fixed runtest version issue
-- Resolved "/" character issue in names
-- Fixed watch.mjs file issue
-- Implemented datastore team/project separation
-- Resolved set import dropdown filter bug
-- Fixed set export to JSON bug
-- Fixed Slack webhook notification implementation
-- Enabled iframe embeds for embedding ZeuZ into dashboads for reporting
+- Resolved scheduler-related bugs and runtime parameters clipboard merging of variables and tag-values issue.  
+- Fixed `Take Screenshot` action failure and `maximize_window` in headless mode.  
+- Addressed Slack webhook notification and set import/export bugs.  
 
 ---
 
