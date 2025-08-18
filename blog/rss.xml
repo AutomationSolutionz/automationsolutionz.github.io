@@ -4,10 +4,253 @@
         <title>ZeuZ Resources Blog</title>
         <link>https://docs.zeuz.ai/blog/</link>
         <description>ZeuZ Resources Blog</description>
-        <lastBuildDate>Sat, 12 Jul 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Aug 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ZeuZ Platform 20250818]]></title>
+            <link>https://docs.zeuz.ai/blog/zeuz-platform-20250818/</link>
+            <guid>https://docs.zeuz.ai/blog/zeuz-platform-20250818/</guid>
+            <pubDate>Mon, 18 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Release date: August 12, 2025]]></description>
+            <content:encoded><![CDATA[<p><em>Release date: August 12, 2025</em></p>
+<hr>
+<p>Welcome to the August 2025 release of the ZeuZ platform! 🚀 This release brings significant improvements to browser testing, AI capabilities, test case management, scheduling, and dashboard features.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-features">🚀 Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-features" class="hash-link" aria-label="Direct link to 🚀 Features" title="Direct link to 🚀 Features">​</a></h2>
+<ul>
+<li>Test case export/import can now handle test case and step attachments</li>
+<li>Scheduler page redesigned</li>
+<li>Release report: GitHub issue type filter added</li>
+<li>Release report: Added date range filtering for GitHub pull requests</li>
+<li>Pre-requisite test case assignment in test case search and test set pages</li>
+<li>ZeuZ Node installation and connection help video in dashboard</li>
+<li>Enhanced ZAI Chatbot with Q&amp;A, history, and improved capabilities</li>
+<li>Minor UI and feature updates/fixes</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-bug-fixes">🐛 Bug Fixes<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-bug-fixes" class="hash-link" aria-label="Direct link to 🐛 Bug Fixes" title="Direct link to 🐛 Bug Fixes">​</a></h2>
+<ul>
+<li>Fixed test case import for expected and description fields</li>
+<li>Resolved scheduler-related bugs (multiple fixes)</li>
+<li>Fixed runtest version issue</li>
+<li>Resolved "/" character issue in names</li>
+<li>Fixed watch.mjs file issue</li>
+<li>Implemented datastore team/project separation</li>
+<li>Resolved set import dropdown filter bug</li>
+<li>Fixed set export to JSON bug</li>
+<li>Fixed Slack webhook notification implementation</li>
+<li>Enabled iframe embeds for embedding ZeuZ into dashboads for reporting</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-dashboard-updates">🚀 Dashboard Updates<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-dashboard-updates" class="hash-link" aria-label="Direct link to 🚀 Dashboard Updates" title="Direct link to 🚀 Dashboard Updates">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p>This update focuses on improving clarity, visual representation, and usability in the Dashboard. Key enhancements include cleaner document displays, consolidated build health data, and more informative legends, along with new sections for node and license status.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-update-highlights">✨ Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-update-highlights" class="hash-link" aria-label="Direct link to ✨ Update Highlights" title="Direct link to ✨ Update Highlights">​</a></h3>
+<ul>
+<li><strong>Compressed Document URLs</strong> – Cleaner, shortened display for easier reading</li>
+<li><strong>Node &amp; License Status Section</strong> – Real-time display of node availability and license usage</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Node &amp;amp; License status" src="https://docs.zeuz.ai/assets/images/node-license-dashboard-3dfd1edcd777056d8cb13bc1234a33ea.png" width="1010" height="222" class="img_ev3q"></p>
+<ul>
+<li><strong>Build Health &amp; Priority Comparisons</strong> – Selected version/milestone segments now shown at the bottom right of graphs</li>
+<li><strong>Enhanced Build Health Legends</strong> – Legends now display both count and percentage</li>
+<li><strong>Merged Build Health Categories</strong> – Fail + Block = Fail, Submit + Skip = Not Run</li>
+<li><strong>Scheduler Health Legend</strong> – Added legend for better clarity in scheduler health graphs</li>
+<li><strong>Storage Graph Legend with Counts</strong> – Status counts are displayed in the storage graph legend</li>
+<li><strong>Dashboard GitHub integration</strong> – Quick stats: total tasks, bugs, requirements created/closed and PR open/closed/merged. PR &amp; issue table. All data are filtered by date-range</li>
+</ul>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250818/dashboard-github-integration.mp4" type="video/mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-run-test-updates">🧪 Run Test Updates<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-run-test-updates" class="hash-link" aria-label="Direct link to 🧪 Run Test Updates" title="Direct link to 🧪 Run Test Updates">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary-1">Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#summary-1" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p>This update improves validation, refines component readability, and enhances layout adaptability for different sidebar sizes. Additionally, the option to notify external services only on failures has been restored in the advanced settings.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-update-highlights-1">✨ Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-update-highlights-1" class="hash-link" aria-label="Direct link to ✨ Update Highlights" title="Direct link to ✨ Update Highlights">​</a></h3>
+<ul>
+<li><strong>Improved Version Name Validation</strong> – More accurate checks to ensure valid version naming</li>
+<li><strong>Advanced Tab Refinements</strong> – Enhanced readability, cleaner layout, and restored "Notify External Services Only on Fail" option</li>
+<li><strong>Responsive Sidebar Layouts</strong> – Optimized appearance for both large and small sidebar configurations</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Run test &amp;gt; Advanced settings - reorganized UI" src="https://docs.zeuz.ai/assets/images/run-test-reorganized-ui-16686e1d04671597aee57265d4b54d67.png" width="864" height="758" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-zai-page-assistance">✨ zAI Page Assistance<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-zai-page-assistance" class="hash-link" aria-label="Direct link to ✨ zAI Page Assistance" title="Direct link to ✨ zAI Page Assistance">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-highlights">Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#update-highlights" class="hash-link" aria-label="Direct link to Update Highlights" title="Direct link to Update Highlights">​</a></h3>
+<ul>
+<li>zAI is now enabled server-wide as a contextual assistant for pages and workflows.</li>
+<li>Quick Q&amp;A, page lookup, page-specific guidance.</li>
+</ul>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250818/zai-page-assist.mp4" type="video/mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-android-support-details">📱 Android Support Details<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-android-support-details" class="hash-link" aria-label="Direct link to 📱 Android Support Details" title="Direct link to 📱 Android Support Details">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary-2">Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#summary-2" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p>Added comprehensive Android support for AI test case generation. Users can now select between web and Android platforms to generate automated test actions, significantly expanding ZAI's capabilities beyond web-only testing.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-suported-actions">✨ Suported Actions<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-suported-actions" class="hash-link" aria-label="Direct link to ✨ Suported Actions" title="Direct link to ✨ Suported Actions">​</a></h3>
+<ul>
+<li><strong>Launch App</strong> – Open Android applications using package name identifiers</li>
+<li><strong>Enter Text</strong> – Intelligent text input with AI-powered element location</li>
+<li><strong>Click Element</strong> – Interact with any UI element within Android applications</li>
+<li><strong>Key Press</strong> – Hardware key interactions including Enter, Volume, Mute, and Back keys</li>
+<li><strong>Swipe to Element</strong> – Automatic scrolling to reach off-screen elements (partially implemented)</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="zAI Chatbot - Android integration" src="https://docs.zeuz.ai/assets/images/zai-chatbot-android-integration-bb28cae2ef68a8af92f273edde881d81.png" width="419" height="550" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="close-tab-selenium--playwright">Close Tab (Selenium + Playwright)<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#close-tab-selenium--playwright" class="hash-link" aria-label="Direct link to Close Tab (Selenium + Playwright)" title="Direct link to Close Tab (Selenium + Playwright)">​</a></h2>
+<p>Close tabs reliably by title, by index, or the current active tab. Uses Playwright over CDP when requested, with automatic Selenium fallback for robustness.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-benefits">Key Benefits<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#key-benefits" class="hash-link" aria-label="Direct link to Key Benefits" title="Direct link to Key Benefits">​</a></h3>
+<ul>
+<li><strong>Dual-driver support:</strong> Playwright via CDP or pure Selenium</li>
+<li><strong>Accurate tab selection:</strong> Visual left-to-right order for index; filters non-page targets</li>
+<li><strong>Dynamic DevTools port:</strong> Uses the live remote debugging port provided by the user.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-1">Example 1<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#example-1" class="hash-link" aria-label="Direct link to Example 1" title="Direct link to Example 1">​</a></h3>
+<table><thead><tr><th>Field</th><th>Sub Field</th><th>Value</th></tr></thead><tbody><tr><td>playwright</td><td>optional parameter</td><td>True</td></tr><tr><td>close tab</td><td>selenium action</td><td>close tab</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-2">Example 2<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#example-2" class="hash-link" aria-label="Direct link to Example 2" title="Direct link to Example 2">​</a></h3>
+<table><thead><tr><th>Field</th><th>Sub Field</th><th>Value</th></tr></thead><tbody><tr><td>tab title</td><td>input parameter</td><td>['Zeuz', 'Google']</td></tr><tr><td>playwright</td><td>optional parameter</td><td>True</td></tr><tr><td>close tab</td><td>selenium action</td><td>close tab</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-3">Example 3<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#example-3" class="hash-link" aria-label="Direct link to Example 3" title="Direct link to Example 3">​</a></h3>
+<table><thead><tr><th>Field</th><th>Sub Field</th><th>Value</th></tr></thead><tbody><tr><td>tab index</td><td>input parameter</td><td>[0, 1, -1]</td></tr><tr><td>playwright</td><td>optional parameter</td><td>True</td></tr><tr><td>close tab</td><td>selenium action</td><td>close tab</td></tr></tbody></table>
+<p>If neither <strong>tab title</strong> nor <strong>tab index</strong> is provided, the current active tab is closed.</p>
+<p>When <code>playwright=true</code>, ZeuZ connects to the Selenium-launched Chrome via the dynamically detected CDP port and executes the close operation.</p>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250818/selenium-playwright-dual-driver-first-action.mp4" type="video/mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="accessibility-test">Accessibility Test<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#accessibility-test" class="hash-link" aria-label="Direct link to Accessibility Test" title="Direct link to Accessibility Test">​</a></h2>
+<p>Scans currently rendered webpage in the webdriver for accessibility issues using <strong>axe-core</strong> via Selenium. Generates three reports: raw JSON, summarized JSON, and an HTML report with visual details.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-benefits-1">Key Benefits<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#key-benefits-1" class="hash-link" aria-label="Direct link to Key Benefits" title="Direct link to Key Benefits">​</a></h3>
+<ul>
+<li><strong>Comprehensive checks:</strong>  Powered by axe-core; validates against WCAG rules for accessibility.</li>
+<li><strong>Debug accessibility issues:</strong> Empowers developers to efficiently detect and address accessibility issues, facilitating the creation of more accessible website.</li>
+<li><strong>Actionable output:</strong> Summary JSON plus a human-friendly HTML report</li>
+<li><strong>CI-friendly:</strong> Clear return values and structured logs for automation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="usage">Usage<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#usage" class="hash-link" aria-label="Direct link to Usage" title="Direct link to Usage">​</a></h3>
+<table><thead><tr><th>Field</th><th>Sub Field</th><th>Value</th></tr></thead><tbody><tr><td>accessibility test</td><td>common action</td><td>accessibility test</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="behavior">Behavior<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#behavior" class="hash-link" aria-label="Direct link to Behavior" title="Direct link to Behavior">​</a></h3>
+<ul>
+<li>Uses existing Selenium session (<code>selenium_driver</code>) from shared variables</li>
+<li>Waits briefly for page assets to load, injects axe, and runs analysis</li>
+<li>Saves reports under <strong>Accessibility Test Report/</strong> with sanitized URL and timestamp</li>
+<li>Logs summary counts: violations, passes, inapplicable, incomplete</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reports-generated">Reports Generated<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#reports-generated" class="hash-link" aria-label="Direct link to Reports Generated" title="Direct link to Reports Generated">​</a></h3>
+<ul>
+<li><strong>Raw results (JSON):</strong> <code>accessibility_result_{url}_{timestamp}.json</code></li>
+<li><strong>Summary (JSON):</strong> <code>accessibility_summary_{url}_{timestamp}.json</code></li>
+<li><strong>Visual report (HTML):</strong> <code>accessibility_report_{url}_{timestamp}.html</code></li>
+<li><strong>Location:</strong> <code>Accessibility Test Report/</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="requirements">Requirements<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#requirements" class="hash-link" aria-label="Direct link to Requirements" title="Direct link to Requirements">​</a></h2>
+<ul>
+<li>An active Selenium driver session must be available in shared variables</li>
+</ul>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250818/web-accessibility-testing.mp4" type="video/mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="chrome-extension-download">Chrome Extension Download<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#chrome-extension-download" class="hash-link" aria-label="Direct link to Chrome Extension Download" title="Direct link to Chrome Extension Download">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary-3">Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#summary-3" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p>Bulk install Chrome extensions during automation runs via an extension-id list. The IDs can be picked from the Chrome Web Store.</p>
+<p><img decoding="async" loading="lazy" alt="Web automation - add multiple extensions via extension ID from Chrome Web Store" src="https://docs.zeuz.ai/assets/images/add-extension-with-id-af0a7021822c245e93068a1dc4719844.png" width="1601" height="310" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case--highlights">Use Case &amp; Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#use-case--highlights" class="hash-link" aria-label="Direct link to Use Case &amp; Highlights" title="Direct link to Use Case &amp; Highlights">​</a></h3>
+<ul>
+<li>Provide extension-id list in <code>Go To Link</code> action. the platform will download and attach those extensions to the Automation Test browser automatically.</li>
+<li>Speed up test setup for projects that rely on extensions (ad-blockers, proxies, custom dev extensions).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-data-store-updates">⚡ Data Store Updates<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-data-store-updates" class="hash-link" aria-label="Direct link to ⚡ Data Store Updates" title="Direct link to ⚡ Data Store Updates">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary-4">Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#summary-4" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p>Enhanced the Data Store functionality to support multiple file uploads simultaneously, with the ability to merge multiple files into a single table. The entire user interface has been modernized by jQuery, providing a more responsive and intuitive user experience.</p>
+<p><img decoding="async" loading="lazy" alt="Datastore - upload multiple CSVs" src="https://docs.zeuz.ai/assets/images/datastore-upload-multiple-csvs-c762624b509bc4239e97604c8f4f6917.png" width="957" height="399" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-update-highlights-2">✨ Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-update-highlights-2" class="hash-link" aria-label="Direct link to ✨ Update Highlights" title="Direct link to ✨ Update Highlights">​</a></h3>
+<ul>
+<li><strong>Batch Processing</strong>: Upload multiple files in one operation.</li>
+<li><strong>File Merging</strong>: Combine multiple data sources into unified tables.</li>
+<li><strong>Enhanced Preview</strong>: A comprehensive summary is displayed before the final upload.</li>
+<li><strong>Streamlined Workflow</strong>: The upload process is simplified with fewer steps and improved user guidance.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="some-more-features">Some More Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#some-more-features" class="hash-link" aria-label="Direct link to Some More Features" title="Direct link to Some More Features">​</a></h2>
+<ul>
+<li><strong>New Variable <code>zeuz_tc_logs</code></strong> – Dedicated storage for test case errors and logging information</li>
+<li><strong>Notifications (Discord &amp; Slack)</strong> – Templates simplified for readability. Important failed test cases displayed at the top. Links to testcases are included for quick triage.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="New Discord/Slack notification style" src="https://docs.zeuz.ai/assets/images/new-discord-slack-notification-style-56065d5f0c179b6059bca09c7d789ac9.png" width="463" height="601" class="img_ev3q"></p>
+<ul>
+<li><strong>VM detection</strong> – Automatic fallback to headless mode when a VM is detected and headless wasn’t selected, reduces accidental GUI failures.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-bug-fix-updates">🐛 Bug Fix Updates<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-bug-fix-updates" class="hash-link" aria-label="Direct link to 🐛 Bug Fix Updates" title="Direct link to 🐛 Bug Fix Updates">​</a></h2>
+<ul>
+<li><strong>Continue Point Value Import</strong> – Resolved issue with continue point values not importing correctly</li>
+<li><strong>Runtime Parameters Clipboard</strong> – Fixed problem with pasting runtime parameters from clipboard</li>
+<li><strong>AI Multiple-Action Validation</strong> – Fixed multiple-action return values from AI not being properly checked</li>
+<li><strong>Take Screenshot Action</strong> – Fixed failure when <code>Take Screenshot</code> was the final action in a test step.</li>
+<li><strong>Headless Window Size</strong> – Fixed <code>maximize_window</code> in headless mode when the window size was unset (prevents headless runs from failing).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="unified-links-tab-implementation-across-pages">Unified “Links” Tab Implementation Across Pages<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#unified-links-tab-implementation-across-pages" class="hash-link" aria-label="Direct link to Unified “Links” Tab Implementation Across Pages" title="Direct link to Unified “Links” Tab Implementation Across Pages">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
+<p>A major UI/UX restructuring was implemented across multiple pages to streamline navigation and improve usability. Multiple separate tabs for different linked item types have been merged into a single <strong>“Links”</strong> tab. This reduces clutter, improves workflow efficiency, and keeps all related items in one place.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes-implemented">Changes Implemented<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#changes-implemented" class="hash-link" aria-label="Direct link to Changes Implemented" title="Direct link to Changes Implemented">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-test-case-edit-page">1. <strong>Test Case Edit Page</strong><a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#1-test-case-edit-page" class="hash-link" aria-label="Direct link to 1-test-case-edit-page" title="Direct link to 1-test-case-edit-page">​</a></h4>
+<ul>
+<li><strong>Merged Tabs:</strong>
+<ul>
+<li>Requirement</li>
+<li>Tasks</li>
+<li>Bugs
+→ <strong>Now all accessible from the new “Links” tab</strong></li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Link items - test case edit" src="https://docs.zeuz.ai/assets/images/link-items-tc-1561d796d649500486e7e9371d4b7072.png" width="1911" height="827" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-requirement-page">2. <strong>Requirement Page</strong><a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#2-requirement-page" class="hash-link" aria-label="Direct link to 2-requirement-page" title="Direct link to 2-requirement-page">​</a></h4>
+<ul>
+<li><strong>Merged Tabs:</strong>
+<ul>
+<li>Test Case</li>
+<li>Tasks</li>
+<li>Bugs<br>
+<!-- -->→ <strong>Now all accessible from the new “Links” tab</strong></li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Link items - requirement" src="https://docs.zeuz.ai/assets/images/link-items-req-028d4c7b63b74994df88061d23a6eba9.png" width="1892" height="848" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-bug-page">3. <strong>Bug Page</strong><a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#3-bug-page" class="hash-link" aria-label="Direct link to 3-bug-page" title="Direct link to 3-bug-page">​</a></h4>
+<ul>
+<li><strong>Merged Tabs:</strong>
+<ul>
+<li>Test Case</li>
+<li>Tasks</li>
+<li>Requirements<br>
+<!-- -->→ <strong>Now all accessible from the new “Links” tab</strong></li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Link items - bug" src="https://docs.zeuz.ai/assets/images/link-items-bug-7ff7a530794b6a1be5638e6a07c01081.png" width="1908" height="886" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-task-page">4. <strong>Task Page</strong><a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#4-task-page" class="hash-link" aria-label="Direct link to 4-task-page" title="Direct link to 4-task-page">​</a></h4>
+<ul>
+<li><strong>Merged Tabs:</strong>
+<ul>
+<li>Test Case</li>
+<li>Requirements</li>
+<li>Bugs<br>
+<!-- -->→ <strong>Now all accessible from the new “Links” tab</strong></li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Link items - task" src="https://docs.zeuz.ai/assets/images/link-items-task-27b3b49b5d6e8f0b8926ba29b380c217.png" width="1919" height="868" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unified-links-tab-features">Unified “Links” Tab Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#unified-links-tab-features" class="hash-link" aria-label="Direct link to Unified “Links” Tab Features" title="Direct link to Unified “Links” Tab Features">​</a></h3>
+<ul>
+<li>Single consolidated table for Requirements, Tasks, Bugs, and Test Cases.</li>
+<li>Type icons for easy identification.</li>
+<li>Unified search, filter, and sorting across all linked items.</li>
+<li>Create, link, and manage items directly from one tab.</li>
+<li>Bulk selection and relationship management.</li>
+<li>Fully responsive and mobile-friendly design.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benefits">Benefits<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#benefits" class="hash-link" aria-label="Direct link to Benefits" title="Direct link to Benefits">​</a></h3>
+<ul>
+<li><strong>Reduced complexity</strong> – fewer tabs to navigate.</li>
+<li><strong>Improved workflow</strong> – manage all related items from one location.</li>
+<li><strong>Better organization</strong> – logical grouping of related functionality.</li>
+<li><strong>Preserved existing features</strong> – all functionality from previous tabs is available in the unified view.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-set-history-and-fail-analysis-page-update">🚀 Set, History, and Fail Analysis Page Update<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#-set-history-and-fail-analysis-page-update" class="hash-link" aria-label="Direct link to 🚀 Set, History, and Fail Analysis Page Update" title="Direct link to 🚀 Set, History, and Fail Analysis Page Update">​</a></h2>
+<p>This update improves the visual representation of <strong>pass</strong>, <strong>fail</strong>, <strong>block</strong>, <strong>in progress</strong>, <strong>skip</strong>, and <strong>submit</strong> data in the donut charts and summary donut chart on the <strong>Set</strong>, <strong>History</strong>, and <strong>Fail Analysis</strong> pages. Now, all relevant data is displayed in a single, smooth pop-up chart for better clarity and user experience.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-highlights-1">Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250818/#update-highlights-1" class="hash-link" aria-label="Direct link to Update Highlights" title="Direct link to Update Highlights">​</a></h3>
+<ul>
+<li><strong>Relevant Data in One Chart</strong> – View all related information in one consolidated pop-up chart.</li>
+<li><strong>Smooth Pop-up</strong> – The pop-up appears instantly when you hover anywhere inside the donut charts.</li>
+</ul>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250818/run-history-improved-chart-popup.mp4" type="video/mp4"></video>]]></content:encoded>
+            <category>Changelog</category>
+        </item>
         <item>
             <title><![CDATA[ZeuZ Platform 20250712]]></title>
             <link>https://docs.zeuz.ai/blog/zeuz-platform-20250712/</link>
