@@ -60,6 +60,8 @@ This action waits for a specified **element** to appear on a webpage within a gi
 ### 7. **Wait for an element to disappear**
 This action waits for a specified **element to disappear** within a given time frame. If the element disappears within the set time, the action **passes**, and if it remains visible beyond that time, the action **fails**. This is useful in situations where a page needs time to load, ensuring that tests proceed only when the element has been removed within the specified duration.
 
+[🔗 USAGE GUIDE](actions/web/wait-for-an-element-to-disappear)
+
 ### 8. **Check or uncheck single element**
 This action is used to **check or uncheck** a specified checkbox element. If the checkbox is already in the desired state (checked or unchecked), the action will **skip** making any changes. For example, if the task is to check a checkbox that is already checked, it will remain checked, and no action will be taken. This ensures the checkbox only changes its state when necessary, avoiding redundant actions.
 

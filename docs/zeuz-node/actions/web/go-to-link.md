@@ -7,7 +7,7 @@ title: Go to link
 ## Capabilities vs Options:
 ### 1. Capabilities: 
 Capabilities are a broad configuration for the WebDriver itself, not just the browser. They define properties of the WebDriver session, which can include browser options, platform details, and browser versions. They are used to communicate overall settings for the WebDriver session, not just for Chrome but across various browsers (e.g., Firefox, Safari).
-
+ 
 **Node Example:**
 ```python
 from selenium.webdriver.chrome.options import Options as ChromeOptions
@@ -19,7 +19,42 @@ for key, value in browser_options["capabilities"].items():
 **Dataset example:** Add a row, where right is a dictionary
 
 `capabilities | shared capability | {"goog:loggingPrefs": {"performance": "ALL"}}`
-### 2. Options: 
+
+### 2. Using Chrome Extensions in Web Automation
+ZeuZ now supports adding **Chrome extensions automatically** using only their **extension IDs**.
+This eliminates the need to manually download `.crx` files.
+
+#### How to Use
+1. Provide the list of extension IDs as a **Chromium option** when launching the browser.
+2. The extensions will be **downloaded and installed automatically** in the automation-launched browser.
+
+#### Example
+```bash
+# Use a specific version of Chrome for Testing and install extensions
+wait time to appear element: 10        # optional parameter
+chrome:version: 131.0.6754.0           # optional parameter
+
+add extension:                         # must be provided at browser startup
+  chromium option: 
+    ['lniofgaicnjjdfinpnhkmlpmnhacnkca', 'oppflpnigmhkldmdmnbnopidlhahañji']
+
+go to link:
+  selenium action: https://demo.zeuz.ai/web/level/one/scenerios/login2
+
+```
+
+![](/img/actions/go-to-link/install-extension.png)
+
+:::note
+-  The **Extension IDs** can be found in the Chrome Web Store URL.  
+   **Example**: For the URL,  
+   `https://chrome.google.com/webstore/detail/extension-name/<EXTENSION_ID>`,  
+   the `<EXTENSION_ID>` is what you need to use.
+-  This must be set **at browser startup**; extensions cannot be added mid-session.
+
+:::
+
+### 3. Options: 
 Arguments are command-line flags passed directly to the Chrome binary to modify the browser’s behavior, such as running it in headless mode, disabling extensions, or setting window size. They affect how Chrome behaves during the session and are specific to Chrome (not other browsers).
 
 **Node Example:**
