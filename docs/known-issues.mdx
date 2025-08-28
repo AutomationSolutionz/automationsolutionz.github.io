@@ -1,0 +1,67 @@
+---
+id: known-issues
+title: Known Issues
+---
+
+import IssueItem from '@site/src/components/IssueItem';
+
+<IssueItem fixedIn="20250903" title="Testing > Run Test > Objective keeps loading infinitely">
+
+    When the user starts typing an objective, it continues to load infinitely
+    and never terminates in some cases. This causes the Run Test page to become
+    unusable without the use of Presets.
+
+</IssueItem>
+
+<IssueItem fixedIn="20250903" title="Testing > Run Test > Advanced > Send notification on fail only sends notification regardless of whether all test cases pass or not">
+
+    When users enable the "Send notification on fail only" option from the Run Test
+    page and deploy test cases, they get notified over the messaging platforms
+    (Discord, Slack, Teams, etc) even if all test cases are passing.
+
+</IssueItem>
+
+<IssueItem fixedIn="20250903" title="Testing > Test Case > Edit > Discussion, Follow and Link tabs got swapped"></IssueItem>
+
+<IssueItem eta="Sep, 2025" title="Node > Auto kill existing node processes on startup is not working">
+
+    Launching ZeuZ Node used to kill existing node processes that were run
+    from the same directory. This is currently not working as expected.
+
+</IssueItem>
+
+<IssueItem eta="Oct, 2025" title="Admin > Users > Manage groups is undergoing overhaul">
+
+    This feature is being re-implemented with fine grained access control to allow
+    admins and users to control which group of users can see and interact with what
+    in ZeuZ. Stay tuned for an update in one of the changelogs soon.
+
+</IssueItem>
+
+<IssueItem title="Testing > Run Test > Advanced > Rerun on fail is not working">
+
+    This feature has not been implemented properly and as such this will not
+    work as expected even if chosen. However, this feature has been supplanted
+    with the introduction of "Rerun test cases in an existing RunID" which is
+    available from the same Advanced panel or from individual RunIDs. The new
+    feature enables users to rerun selected test cases again and upload the reports
+    to the same RunID without creating a new one.
+
+</IssueItem>
+
+<IssueItem title="Testing > Batch update > None of the batch updates are safe to use at the moment">
+
+    We recommend not using the Batch Update feature at the moment without consulting
+    with us. If you have a need for it's use - please get in touch with us.
+
+</IssueItem>
+
+<IssueItem title="Admin > Database Backup is unavailable">
+
+    The database backup system through the UI has been disabled and not working at the
+    moment. We recommend taking backups of ZeuZ through the `backup.sh` file provided
+    to you, directly from the server VM terminal. This approach takes backup of everything
+    including the database, attachments, data store backups, logs and screen captures and
+    everything else.
+
+</IssueItem>
