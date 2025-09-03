@@ -75,6 +75,7 @@ const config: Config = {
             logo: {
                 alt: "ZeuZ logo",
                 src: "img/logo.svg",
+                className: "zeuz_logo",
             },
             items: [
                 {

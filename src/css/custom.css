@@ -34,5 +34,27 @@
 }
 
 video {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px !important;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
   width: 100%;
+}
+
+img {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px !important;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+}
+
+.zeuz_logo {
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s;
+  padding: 0 4px 0 4px;
+  filter: grayscale(100%);
+}
+
+.zeuz_logo:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+  filter: grayscale(0%);
 }
