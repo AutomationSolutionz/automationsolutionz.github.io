@@ -187,7 +187,7 @@ Below the **Top Failing Steps** section, the basic details of a test run submiss
    - **Submitted By**: This is the user who started this specific execution. They are the ones who requested the test run to begin (e.g., "Mahmudul Alam 31/Aug/25 04:05 AM").
    - **Last executed by**: This field indicates who performed the execution if it was a manual test. In this case, "Mahmudul Alam last ran this task on September 3, 2025, at 2:29 AM."
 
-![](/img/how-tos/run-id-details-page/execute-history.png)
+![](/img/how-tos/run-id-details-page/execute-history-page.png)
 
 5. **Comment**: Here, there is an option to add comments if desired. Whenever any changes are made, a **Save Comment** button will appear. If no changes are made, the button will not be visible. Once changes are made, the comment can be saved accordingly.
 
@@ -215,7 +215,7 @@ By clicking on a specific test case, we can view its details. Also, if we click 
 - The arrow available at the right side of that specific test case indicates that the item is clickable and expandable for more test case details.
 - "Nayeem/Web" represents tags or labels attached to that particular test case.
 - "Nayeem" is likely the name of a test suite, module, or folder where this test case is located.
-- "00:02:52" it shows the execution time of that specific test case.
+- "00:02:51" it shows the execution time of that specific test case.
 
 ![](/img/how-tos/run-id-details-page/select-information.png)
 
