@@ -32,3 +32,12 @@ muhib:
     x: MuntasibC
     linkedin: muhib-c
     github: Muntasib-creator
+
+shakib_ahmed:
+  name: MD Shakib Ahmed
+  title: Product Engineer
+  url: https://github.com/mdshakib007
+  image_url: https://github.com/mdshakib007.png
+  page: true
+  socials:
+    github: mdshakib007
