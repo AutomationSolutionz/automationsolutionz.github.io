@@ -4,10 +4,200 @@
         <title>ZeuZ Resources Blog</title>
         <link>https://docs.zeuz.ai/blog/</link>
         <description>ZeuZ Resources Blog</description>
-        <lastBuildDate>Mon, 18 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Sep 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ZeuZ Platform 20250909]]></title>
+            <link>https://docs.zeuz.ai/blog/zeuz-platform-20250909/</link>
+            <guid>https://docs.zeuz.ai/blog/zeuz-platform-20250909/</guid>
+            <pubDate>Tue, 09 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to the September 2025 release of the ZeuZ platform!]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the September 2025 release of the ZeuZ platform!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features">🚀 New Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#-new-features" class="hash-link" aria-label="Direct link to 🚀 New Features" title="Direct link to 🚀 New Features">​</a></h2>
+<ul>
+<li><strong>Send notifications manually:</strong> Manually send external webhook notifications from the RunID page.</li>
+<li><strong>Release Report Default Query Creation System:</strong> Guided 5-step wizard to auto-generate queries for ZeuZ, Pull Requests, and GitHub Issues, streamlining workflow setup.</li>
+<li><strong>Release Report Share:</strong> Complete rewrite with modular structure, improved performance, and modern UI — including Security Monitoring, Enhanced Testing Analytics, and Jira Integration.</li>
+<li><strong>Cleanup Scheduler:</strong> Automated system to manage storage space and maintain database performance by periodically removing old test run data and log files.</li>
+<li><strong>Notification System Redesigned:</strong> A new UI notification system with clear stats, color-coded categories, quick navigation, and faster ways to find and act on updates.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-bug-fixes">🐛 Bug Fixes<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#-bug-fixes" class="hash-link" aria-label="Direct link to 🐛 Bug Fixes" title="Direct link to 🐛 Bug Fixes">​</a></h2>
+<ul>
+<li><strong>Global Attachment page:</strong> <code>memory leak</code>, <code>delete attachment</code> &amp; <code>download attachment</code> bugs fixed.</li>
+<li><strong>Web Automation:</strong> Text paste with <code>(Ctrl+V)</code> bug fixed.</li>
+<li><strong>Deploy page:</strong> <code>Notify External Services Only on Fail</code> flag bug fixed.</li>
+<li><strong>Redirect on Login:</strong> After login, redirect to the page you were trying to access.</li>
+<li><strong>Select Objective:</strong> Deploy page's <em>Select Objective</em> infinite loading bug fixed.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-improvements">🛠️ Improvements<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#%EF%B8%8F-improvements" class="hash-link" aria-label="Direct link to 🛠️ Improvements" title="Direct link to 🛠️ Improvements">​</a></h2>
+<ul>
+<li><strong>Slack &amp; Discord notification:</strong> Improved the UI for Discord &amp; Slack notifications. Extra notification sent when some test cases fail.</li>
+<li><strong>Global Attachment page:</strong> More intuitive file uploads. Easily filter by attachment type. Multiple download &amp; delete. Variable length pagination.</li>
+<li><strong>Test Case edit page:</strong> Save previous <code>Explain Testcase</code> &amp; <code>Suggest Step Description</code> response if the test case is not modified again.</li>
+<li><strong>ProfilePicture Component:</strong> Now supports both username and uid, with smart fallbacks and tooltips for better usability. We added this to make profile handling more flexible and reliable across different workflows while keeping the UI consistent.</li>
+<li><strong>Release Report Share Performance Optimizations:</strong> Smart merging algorithms, deduplication, caching, background updates, conditional rendering, optimistic UI.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="release-report-v2">Release Report V2<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#release-report-v2" class="hash-link" aria-label="Direct link to Release Report V2" title="Direct link to Release Report V2">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary"><strong>Summary</strong><a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#summary" class="hash-link" aria-label="Direct link to summary" title="Direct link to summary">​</a></h3>
+<p>We built the new Release Report Share to replace the old version that was hard to maintain, slow to improve, and had a complex UI/UX. The new version is modular, faster, and easier to use, with a modern design and better integrations like GitHub and Jira for smarter, real-time release tracking.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-step-wizard-process"><strong>5-Step Wizard Process</strong><a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#5-step-wizard-process" class="hash-link" aria-label="Direct link to 5-step-wizard-process" title="Direct link to 5-step-wizard-process">​</a></h3>
+<ol>
+<li><strong>ZeuZ Version</strong> → Version selection</li>
+<li><strong>Platform Selection</strong> → GitHub (active), GitLab/Jira (coming)</li>
+<li><strong>Repository</strong> → GitHub repo selection</li>
+<li><strong>Date Range</strong> → PR date filtering</li>
+<li><strong>GitHub Config</strong> → Milestones, labels selection</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="auto-generated-query-types"><strong>Auto-Generated Query Types</strong><a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#auto-generated-query-types" class="hash-link" aria-label="Direct link to auto-generated-query-types" title="Direct link to auto-generated-query-types">​</a></h3>
+<ul>
+<li><strong>ZeuZ Query</strong>: Version-based testing data</li>
+<li><strong>Pull Request Query</strong>: Date-range filtered PRs</li>
+<li><strong>Default GitHub Query</strong>: Milestone + label based</li>
+<li><strong>Issue Query</strong>: Milestone-based issues</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="release-report-share-summary"><strong>Release Report Share Summary</strong><a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#release-report-share-summary" class="hash-link" aria-label="Direct link to release-report-share-summary" title="Direct link to release-report-share-summary">​</a></h3>
+<table><thead><tr><th>Component</th><th>Purpose</th><th>Key Features</th></tr></thead><tbody><tr><td><strong>Testing summary</strong></td><td>Test statistics display</td><td>Dynamic cards, percentages, automated vs manual</td></tr><tr><td><strong>Release overview</strong></td><td>Release information</td><td>Title, description, dates, manager profile</td></tr><tr><td><strong>Testing section</strong></td><td>Testing overview</td><td>Charts, distributions, failed test lists</td></tr><tr><td><strong>GitHub section</strong></td><td>GitHub overview</td><td>PRs, issues, security, activity tracking</td></tr><tr><td><strong>Jira section</strong></td><td>Jira overview</td><td>Issue tracking, status analysis</td></tr></tbody></table>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250909/release-report-guided-query.mp4" type="video/mp4"></video>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="notification-system-redesign">Notification System Redesign<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#notification-system-redesign" class="hash-link" aria-label="Direct link to Notification System Redesign" title="Direct link to Notification System Redesign">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-summary">📝 Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#-summary" class="hash-link" aria-label="Direct link to 📝 Summary" title="Direct link to 📝 Summary">​</a></h3>
+<p>A redesigned notification system with a modern interface, smart filters, interactive features, and improved usability.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-update-highlights">✨ Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#-update-highlights" class="hash-link" aria-label="Direct link to ✨ Update Highlights" title="Direct link to ✨ Update Highlights">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="smart-notification-bell">Smart Notification Bell<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#smart-notification-bell" class="hash-link" aria-label="Direct link to Smart Notification Bell" title="Direct link to Smart Notification Bell">​</a></h4>
+<ul>
+<li>Unread counter with red badge (<code>99+</code> for large numbers).</li>
+<li>The bell gives users an instant sense of how many pending items need attention. The <code>99+</code> cap avoids overwhelming the user while still signaling urgency.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Smart notification bell" src="data:image/png;base64,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" width="474" height="40" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-filtering--search">Advanced Filtering &amp; Search<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#advanced-filtering--search" class="hash-link" aria-label="Direct link to Advanced Filtering &amp; Search" title="Direct link to Advanced Filtering &amp; Search">​</a></h4>
+<ul>
+<li>Search notifications by title, message.</li>
+<li>Category filters: <strong>REQ, TASK, BUG, TC, TEST, Batch</strong>.</li>
+<li>Tabs for <strong>All</strong> and <strong>Unread</strong>, with counters.</li>
+<li>Filters and tabs mirror daily workflows, so users can quickly jump to the right set of notifications. Having <strong>All</strong> and <strong>Unread</strong> in one place ensures nothing slips through while still keeping the focus on new items.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Notification slider" src="https://docs.zeuz.ai/assets/images/notification-slider-eb53e5e56a0368d95bcf4a58c420f3b7.png" width="1910" height="880" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Notification filter" src="https://docs.zeuz.ai/assets/images/notification-filter-8e3a04d0deb57d76c5858c26ffc3e427.png" width="682" height="861" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="interactive-features">Interactive Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#interactive-features" class="hash-link" aria-label="Direct link to Interactive Features" title="Direct link to Interactive Features">​</a></h4>
+<ul>
+<li>Click to navigate directly to the related page.</li>
+<li>Auto-mark as read when clicked.</li>
+<li>Highlighting for unread notifications.</li>
+<li>Friendly timestamps (“2 hours ago”, “yesterday”).</li>
+<li>Each interaction reduces friction: clicking a notification takes you straight to context, marking as read happens automatically, and highlights make new items stand out. Relative timestamps provide instant understanding of recency, while animations and empty states make the system feel responsive and clear.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="visual-stats-and-layout">Visual Stats and Layout<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#visual-stats-and-layout" class="hash-link" aria-label="Direct link to Visual Stats and Layout" title="Direct link to Visual Stats and Layout">​</a></h4>
+<ul>
+<li>Cleaner layout with higher readability.</li>
+<li>Top-level stats (unread counts, categories) provide at-a-glance awareness.</li>
+<li>Color-coded categories improve instant recognition.</li>
+<li>The layout is designed to surface the most important information first. Stats at the top summarize workload immediately, while color-coded categories help users recognize item types without reading in detail. The clean hierarchy makes the panel easy to scan, even on smaller devices.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Notification slider" src="https://docs.zeuz.ai/assets/images/notification-layout-2f3fec0ec332cb7ba9f15a55cc1b124c.png" width="694" height="891" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="switch-browser-windowtab-includes-playwright-capability">Switch browser window/tab (Includes Playwright capability)<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#switch-browser-windowtab-includes-playwright-capability" class="hash-link" aria-label="Direct link to Switch browser window/tab (Includes Playwright capability)" title="Direct link to Switch browser window/tab (Includes Playwright capability)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-summary-1">📝 Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#-summary-1" class="hash-link" aria-label="Direct link to 📝 Summary" title="Direct link to 📝 Summary">​</a></h3>
+<p>The "Switch browser window/tab" action now supports Playwright. Users can perform this action using Playwright through a remote-debugging port. Previously, this action only supported Selenium. Now, users can perform this action with both Selenium and Playwright according to their preference.</p>
+<p>This update is a part of our broader plan to enable both Selenium and Playwright to perform ZeuZ actions. The goal is to let users choose according to their preference instead of enforcing one.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-update-highlights-1">✨ Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#-update-highlights-1" class="hash-link" aria-label="Direct link to ✨ Update Highlights" title="Direct link to ✨ Update Highlights">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="why-have-both-options">Why have both options?<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#why-have-both-options" class="hash-link" aria-label="Direct link to Why have both options?" title="Direct link to Why have both options?">​</a></h4>
+<p>Playwright is comparatively newer and better in some areas than Selenium. What happens when the user wants to migrate from Selenium to Playwright? Do they need to rewrite the test cases that are already using Selenium? Having both Selenium and Playwright makes the migration smooth and easy. With this update, which is a part of our broader plan to enable both options to perform ZeuZ actions, users can easily shift to use Playwright while ensuring they do not necessarily need to change their legacy test cases and setup to make them compatible with Playwright.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="easy-switch">Easy switch<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#easy-switch" class="hash-link" aria-label="Direct link to Easy switch" title="Direct link to Easy switch">​</a></h4>
+<ul>
+<li>Users can easily switch between Selenium and Playwright to perform the mentioned action. If the "playwright" row parameter is true, then the action will use Playwright to switch between tabs; otherwise, Selenium will perform the action.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Playwright integration" src="https://docs.zeuz.ai/assets/images/playwright-integration-0ef9ad87f33943a348656de4fb8b5bf7.png" width="1920" height="865" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="remote-debugging-port">Remote debugging port<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#remote-debugging-port" class="hash-link" aria-label="Direct link to Remote debugging port" title="Direct link to Remote debugging port">​</a></h4>
+<ul>
+<li>To enable Playwright capabilities, users need to provide a remote debugging port. Users only need to provide the remote debugging port for the first webpage only. After that, users can switch to any webpage (i.e., tab) on the webdriver using Playwright. Make sure the port is not blocked. Refer to the screenshot below for providing the remote debugging port. For Selenium, providing a remote debugging port is not required.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Enable Playwright integration" src="https://docs.zeuz.ai/assets/images/enable-playwright-integration-c64198a4741742570075b422f8fa73f4.png" width="1920" height="864" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="switch-tab-by-title">Switch tab by title<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#switch-tab-by-title" class="hash-link" aria-label="Direct link to Switch tab by title" title="Direct link to Switch tab by title">​</a></h4>
+<ul>
+<li>Users can switch the tabs by title using Playwright. Selenium still supports switching tabs both by title and index.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Switch tab by title" src="https://docs.zeuz.ai/assets/images/switch-tab-by-title-73fc5a3bf51e51059650ac6ddda13c46.png" width="1920" height="859" class="img_ev3q"></p>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250909/switch-tab-demo.mp4" type="video/mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="runid-page-redesign">RunId page redesign<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#runid-page-redesign" class="hash-link" aria-label="Direct link to RunId page redesign" title="Direct link to RunId page redesign">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary-1">Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#summary-1" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<video controls="" loop=""><source src="/blog/zeuz-platform-20250909/runid-page-redesign.mp4" type="video/mp4"></video>
+<p>The previous RunId page was originally built with jQuery. While it worked, it had several limitations: users had to perform multiple clicks for simple actions, the design felt outdated, and the overall experience wasn’t optimized for quick decision-making.</p>
+<p>As part of our commitment to improving usability and speed, we rebuilt the RunId page in React.js. The redesign is not only more modern and faster, but it also focuses on reducing friction, surfacing the most important information at a glance, and creating a smoother workflow for both testers and reviewers.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-highlights">Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#update-highlights" class="hash-link" aria-label="Direct link to Update Highlights" title="Direct link to Update Highlights">​</a></h3>
+<ul>
+<li>Unified RunID and Execute page</li>
+<li>Better and Modern Log view</li>
+<li>Faster loading speed</li>
+<li>Statistics about test cases</li>
+<li>Cleaner design with more information at a glance</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="statistics-about-test-cases">Statistics about test cases<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#statistics-about-test-cases" class="hash-link" aria-label="Direct link to Statistics about test cases" title="Direct link to Statistics about test cases">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="RunID stats" src="https://docs.zeuz.ai/assets/images/runid-stats-0258f30d224285783d01b7903bedd3df.png" width="1263" height="365" class="img_ev3q"></p>
+<p><strong>Why:</strong> Users often need to see the overall health of a run before diving into details.</p>
+<p><strong>Benefit:</strong> Statistics are now displayed at the top, giving immediate insight into test results. This helps teams prioritize where to focus first.</p>
+<p><strong>Testcase Status Breakdown:</strong> See how many test cases were Passed, Failed, Blocked, Skipped, or Submitted at a glance. This gives an instant overview of overall run stability.</p>
+<p><strong>Priority Breakdown:</strong> Results are grouped by Priority 1, 2, 3, and 4 test cases. Each priority level shows how many were Passed, Failed, Blocked, or Skipped.
+→ This helps teams identify whether critical (P1/P2) tests are passing, so urgent issues can be addressed first.</p>
+<p><strong>Feature Breakdown:</strong> Test cases are broken down by feature, showing Passed, Failed, Blocked, Skipped, and Submitted counts.
+Features are sorted by the total number of Failed + Blocked test cases, and only the top 10 are shown.
+→ This highlights the riskiest areas in the product so teams know where to focus fixes.</p>
+<p><strong>Top Failing Steps:</strong> A list of the most common failing steps across all test cases. Clicking a failing step instantly applies filters to show where and why it’s failing.
+→ This helps identify recurring issues and speeds up root cause analysis.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="better-and-modern-log-view">Better and Modern Log view<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#better-and-modern-log-view" class="hash-link" aria-label="Direct link to Better and Modern Log view" title="Direct link to Better and Modern Log view">​</a></h3>
+<p><strong>Why:</strong> The old logs were hard to grasp and analyze, looked old, and slowed down debugging.
+<strong>Benefit:</strong> The new log viewer is more interactive:</p>
+<ul>
+<li>Filter by test step</li>
+<li>Filter by test status (Error, Warning, Passed)</li>
+<li>See more details about test steps by clicking Show Test steps</li>
+<li>We can give more space to logs by dragging between steps and logs</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cleaner-design">Cleaner design<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#cleaner-design" class="hash-link" aria-label="Direct link to Cleaner design" title="Direct link to Cleaner design">​</a></h3>
+<p><strong>Why:</strong> The previous layout was cluttered and required extra clicks to update information.</p>
+<p><strong>Benefit:</strong></p>
+<ul>
+<li>The RunId details card now shows all relevant information (version, objective, milestone, comments) in one place, reducing context switching.</li>
+<li>Test case details cards are collapsible, keeping the interface clean while still allowing quick access.</li>
+<li>Hover actions surface Logs, Bugs, and Execution buttons without overwhelming the view.</li>
+<li>Inline step status changes and commenting make updates faster and smoother.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unified-runid-and-execute-page">Unified RunID and Execute page<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#unified-runid-and-execute-page" class="hash-link" aria-label="Direct link to Unified RunID and Execute page" title="Direct link to Unified RunID and Execute page">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="RunID execute manual" src="https://docs.zeuz.ai/assets/images/runid-execute-manual-e2c32757c6a352f44be3d17fe1340748.png" width="1259" height="313" class="img_ev3q"></p>
+<p><strong>Why:</strong> Previously, users had to navigate to a separate page to manage manual test cases, which broke workflow and added friction.</p>
+<p><strong>Benefit:</strong> Now everything is unified on one page. You can expand a test case card to see steps, update statuses inline, and add/update comments directly—without leaving the page.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="feature-cleanup-scheduler">Feature Cleanup Scheduler<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#feature-cleanup-scheduler" class="hash-link" aria-label="Direct link to Feature Cleanup Scheduler" title="Direct link to Feature Cleanup Scheduler">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary-2">Summary<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#summary-2" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p>The Cleanup Scheduler is an automated system that helps manage storage space and maintain database performance by periodically removing old test run data and log files. Users can configure flexible schedules and filtering criteria to control what gets cleaned up and when.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-update-highlights-2">✨ Update Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#-update-highlights-2" class="hash-link" aria-label="Direct link to ✨ Update Highlights" title="Direct link to ✨ Update Highlights">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="scheduling-system">Scheduling System<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#scheduling-system" class="hash-link" aria-label="Direct link to Scheduling System" title="Direct link to Scheduling System">​</a></h4>
+<p>Create cleanup jobs with multiple timing options:</p>
+<ul>
+<li><strong>Weekly:</strong> specific days and times</li>
+<li><strong>Monthly:</strong> specific dates and times</li>
+<li><strong>Calendar-based:</strong> fixed dates</li>
+<li><strong>Interval-based:</strong> every N minutes or hours</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Cleanup scheduler" src="https://docs.zeuz.ai/assets/images/cleanup-scheduler-8c12513ec3d15ca71a4ad389c82a60e8.png" width="1914" height="893" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="filtering-criteria">Filtering Criteria<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#filtering-criteria" class="hash-link" aria-label="Direct link to Filtering Criteria" title="Direct link to Filtering Criteria">​</a></h4>
+<p>Target runs for cleanup based on:</p>
+<ul>
+<li><strong>Age:</strong> runs older than a defined number of days</li>
+<li><strong>Milestone:</strong> runs linked to specific test Milestones</li>
+<li><strong>Version:</strong> runs associated with particular branch Versions</li>
+<li><strong>Objective:</strong> runs associated with a particular Objective</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Cleanup scheduler filters" src="https://docs.zeuz.ai/assets/images/cleanup-scheduler-filters-975b1a517242491b051115d31871fdf7.png" width="1911" height="888" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cleanup-types">Cleanup Types<a href="https://docs.zeuz.ai/blog/zeuz-platform-20250909/#cleanup-types" class="hash-link" aria-label="Direct link to Cleanup Types" title="Direct link to Cleanup Types">​</a></h4>
+<ul>
+<li><strong>Delete Log:</strong> removes only log folders</li>
+<li><strong>Delete Run and Log:</strong> removes both database records and log files</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Cleanup scheduler config" src="https://docs.zeuz.ai/assets/images/cleanup-scheduler-config-a06ef5cf43dac9ff2be6af0e72429e26.png" width="1899" height="878" class="img_ev3q"></p>]]></content:encoded>
+            <category>Changelog</category>
+        </item>
         <item>
             <title><![CDATA[ZeuZ Platform 20250818]]></title>
             <link>https://docs.zeuz.ai/blog/zeuz-platform-20250818/</link>
