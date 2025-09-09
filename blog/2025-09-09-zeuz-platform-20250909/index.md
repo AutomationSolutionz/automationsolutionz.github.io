@@ -14,6 +14,8 @@ Welcome to the September 2025 release of the ZeuZ platform!
 - **Cleanup Scheduler:** Automated system to manage storage space and maintain database performance by periodically removing old test run data and log files.
 - **Notification System Redesigned:** A new UI notification system with clear stats, color-coded categories, quick navigation, and faster ways to find and act on updates.
 
+<!-- truncate -->
+
 ## 🐛 Bug Fixes
 - **Global Attachment page:** `memory leak`, `delete attachment` & `download attachment` bugs fixed.
 - **Web Automation:** Text paste with `(Ctrl+V)` bug fixed.
@@ -27,8 +29,6 @@ Welcome to the September 2025 release of the ZeuZ platform!
 - **Test Case edit page:** Save previous `Explain Testcase` & `Suggest Step Description` response if the test case is not modified again.
 - **ProfilePicture Component:** Now supports both username and uid, with smart fallbacks and tooltips for better usability. We added this to make profile handling more flexible and reliable across different workflows while keeping the UI consistent.
 - **Release Report Share Performance Optimizations:** Smart merging algorithms, deduplication, caching, background updates, conditional rendering, optimistic UI.
-
----
 
 ## Release Report V2
 ### **Summary**
