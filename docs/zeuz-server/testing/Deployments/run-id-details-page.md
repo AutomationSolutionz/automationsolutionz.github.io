@@ -3,7 +3,18 @@ id: run-id-details-page
 title: Run ID Details
 ---
 
-The **Run ID** page in ZeuZ displays detailed information about a specific test execution, including its unique Run ID, test case results, execution logs, timing details, and configuration used.
+The **Run ID** page provides a comprehensive view of a specific test execution in ZeuZ. It displays key outcomes, detailed logs, execution breakdowns, and configuration metadata-all in one place to help QA teams quickly assess and manage test runs.
+
+## Key Features
+
+- **Centralized Visibility**: Presents test results, logs, timelines, and configuration data on a single page for quick access.
+- **Clear Status Insights**: Shows a breakdown of test outcomes (**Passed**, **Failed**, **Blocked**, **Skipped**, **Submitted**), helping teams gauge overall quality and progress.
+- **Prioritized Reporting**: Offers visual breakdowns by priority and feature, enhancing on critical areas or modules under test.
+- **Actionable Controls**: Includes buttons for rerunning tests, sending email reports, canceling runs, and switching UI versions, providing immediate control.
+- **Rich Contextual Data**: Surfaces metadata like user, project name, execution environment, objective, milestone, timings, and history for full traceability.
+- **Interactive Filtering and Logs**: Enables searching, filtering, and selecting test cases, and diving into executable steps with logs and screenshots.
+
+---
 
 ## Steps to navigate to the Run ID details page
 
@@ -221,7 +232,7 @@ By clicking on a specific test case, we can view its details. Also, if we click 
 
 #### 6. Other options related to the specific test case
 
-1. **Log**: From here, clicking the Logs button will display the logs for that test case. It has three options: "Show Steps", which displays the steps of the specific test case; a test step selector, which by default shows the first step but allows selecting another step if needed; and a filter option, which lets us filter by **All**, **Error**, **Warning**, or **Passed**. However, in the logs, clicking on "Show Steps" displays the list of steps. Clicking on the Step List displays the list of actions, and if an action contains a screenshot, it will also be shown. Here, the logs can be downloaded by clicking the Download button.
+1. **Logs and Step Details**: The **Logs** section displays detailed execution records for a specific test case. It has been improved with a modern, interactive view to make debugging faster and easier. From here, clicking the **Logs** button will display the logs for that test case. It has three options: "Show Steps", which displays the steps of the specific test case; a "Test Step Selector", which by default shows the first step but allows selecting another step if needed; and a "Filter" option, which lets us filter by **All**, **Error**, **Warning**, or **Passed**. However, in the **Logs**, clicking on "Show Steps" displays the list of steps. Clicking on the "Step List" displays the list of actions, and if an action contains a screenshot, it will also be shown. Users can drag the divider between the "Steps" and "Logs" panels to give more space to the logs for deeper analysis.
 
 ![](/img/how-tos/run-id-details-page/log-test.png)
 
