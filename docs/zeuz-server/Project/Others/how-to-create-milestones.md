@@ -1,6 +1,6 @@
 ---
 id: how-to-create-milestones
-title: How to create Milestones
+title: Creating Milestones
 ---
 
 ### What is a Milestone in software testing?

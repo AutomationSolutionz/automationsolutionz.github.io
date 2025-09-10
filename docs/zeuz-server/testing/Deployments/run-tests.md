@@ -1,6 +1,6 @@
 ---
 id: run-tests
-title: Run Tests Page
+title: Run Tests
 ---
 
 ## Description

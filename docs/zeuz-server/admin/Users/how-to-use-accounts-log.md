@@ -1,6 +1,6 @@
 ---
 id: how-to-use-accounts-log
-title: How to use Accounts Log
+title: Using Accounts Log
 ---
 
 The **Account Logs** provides a detailed tracking mechanism for user login activities. Each row in the log records important information such as:

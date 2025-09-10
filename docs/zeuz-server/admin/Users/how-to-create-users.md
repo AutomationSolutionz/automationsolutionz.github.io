@@ -1,6 +1,6 @@
 ---
 id: how-to-create-users
-title: How to create Users
+title: Creating Users
 ---
 
 ## Steps

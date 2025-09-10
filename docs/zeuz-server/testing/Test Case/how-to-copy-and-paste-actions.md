@@ -1,6 +1,6 @@
 ---
 id: how-to-copy-and-paste-actions
-title: How to copy and paste Actions
+title: Copying and Pasting Actions
 ---
 
 ## Steps

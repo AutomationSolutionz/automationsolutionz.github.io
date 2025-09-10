@@ -1,6 +1,6 @@
 ---
 id: how-to-create-test-sets
-title: Test Set Page
+title: Test Set
 ---
 
 ## Description

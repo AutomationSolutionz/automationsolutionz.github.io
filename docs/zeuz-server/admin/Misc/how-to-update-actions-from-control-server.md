@@ -1,6 +1,6 @@
 ---
 id: how-to-update-actions-from-control-server
-title: How to update actions from control server
+title: Updating Actions from Control Server
 ---
 
 ### What is the purpose of downloading actions from control server?

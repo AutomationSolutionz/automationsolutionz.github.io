@@ -1,6 +1,6 @@
 ---
 id: fail-analysis
-title: Analyze the Failed test cases
+title: Fail Analysis
 ---
 
 ## Overview

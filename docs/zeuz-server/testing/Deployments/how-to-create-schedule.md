@@ -1,6 +1,6 @@
 ---
 id: how-to-create-schedule
-title: Scheduler Page
+title: Scheduler
 ---
 
 ## Description

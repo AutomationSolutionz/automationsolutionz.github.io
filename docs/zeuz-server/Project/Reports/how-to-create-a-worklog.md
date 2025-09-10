@@ -1,6 +1,6 @@
 ---
 id: how-to-create-a-worklog
-title: How to create a Worklog
+title: Creating a Worklog
 ---
 
 ### What is the meaning of Worklog?

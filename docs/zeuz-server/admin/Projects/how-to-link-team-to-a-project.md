@@ -1,6 +1,6 @@
 ---
 id: how-to-link-team-to-a-project
-title: How to link Team to a Project
+title: Linking Team to a Project
 ---
 
 ### Necessity of linking a Team to a Project in software testing

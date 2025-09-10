@@ -1,6 +1,6 @@
 ---
 id: how-to-use-version-page
-title: How to use the Version Page
+title: Using the Version
 ---
 
 In software testing, a **Version** refers to a specific iteration or release of

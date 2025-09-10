@@ -1,6 +1,6 @@
 ---
 id: how-to-export-and-import-test-cases
-title: How to export and import Test Cases
+title: Exporting and Importing Test Cases
 ---
 
 ### What is export and import of test cases?  

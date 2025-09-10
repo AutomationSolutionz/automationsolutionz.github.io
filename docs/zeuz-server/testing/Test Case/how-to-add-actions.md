@@ -1,6 +1,6 @@
 ---
 id: how-to-add-actions
-title: How to add Actions
+title: Adding Actions
 label: Testing
 ---
 

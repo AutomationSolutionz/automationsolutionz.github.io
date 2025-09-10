@@ -1,6 +1,6 @@
 ---
 id: how-to-create-bugs
-title: How to create Bugs
+title: Creating Bugs
 ---
 
 ### What is a bug in software testing? 

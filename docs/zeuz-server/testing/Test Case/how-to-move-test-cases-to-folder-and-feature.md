@@ -1,6 +1,6 @@
 ---
 id: how-to-move-test-cases-to-folder-and-feature
-title: How to move Test Cases to Folder and Feature
+title: Moving Test Cases to Folder and Feature
 ---
 
 ### Why is it necessary to move Test Cases to Folder?  

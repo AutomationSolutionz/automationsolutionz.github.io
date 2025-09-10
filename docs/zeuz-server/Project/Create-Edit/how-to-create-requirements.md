@@ -1,6 +1,6 @@
 ---
 id: how-to-create-requirements
-title: How to create Requirements
+title: Creating Requirements
 ---
 
 ### What is Requirement in software testing?

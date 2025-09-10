@@ -1,6 +1,6 @@
 ---
 id: how-to-generate-execution-report
-title: How to generate Execution report
+title: Generate Execution Report
 ---
 
 ### What is an Execution Report in software testing?

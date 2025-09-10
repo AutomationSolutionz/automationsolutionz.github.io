@@ -1,6 +1,6 @@
 ---
 id: how-to-create-and-manage-labels
-title: How to create and manage Labels
+title: Creating and Managing Labels
 ---
 
 ### What is a Label in test cases?

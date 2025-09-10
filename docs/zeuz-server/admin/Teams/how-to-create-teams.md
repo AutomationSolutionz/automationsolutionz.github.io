@@ -1,6 +1,6 @@
 ---
 id: how-to-create-teams
-title: How to create Teams
+title: Creating Teams
 ---
 
 ### What is the meaning of Team in software testing?

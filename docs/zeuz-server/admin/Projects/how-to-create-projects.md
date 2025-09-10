@@ -1,6 +1,6 @@
 ---
 id: how-to-create-projects
-title: How to create Projects
+title: Creating Projects
 ---
 
 ### What is Project Management?

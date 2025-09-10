@@ -1,6 +1,6 @@
 ---
 id: how-to-create-folders-and-features
-title: How to create Folders and Features
+title: Create Folders and Features
 ---
 
 ### What is a folder?

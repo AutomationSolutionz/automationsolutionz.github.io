@@ -1,6 +1,6 @@
 ---
 id: run-id-details-page
-title: Run ID Details Page
+title: Run ID Details
 ---
 
 The **Run ID** page in ZeuZ displays detailed information about a specific test execution, including its unique Run ID, test case results, execution logs, timing details, and configuration used.

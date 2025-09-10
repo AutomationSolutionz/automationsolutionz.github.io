@@ -1,6 +1,6 @@
 ---
 id: how-to-create-webhook-for-cicd
-title: How to create Webhook for CI/CD
+title: Create Webhook for CI/CD
 ---
 
 ## Description  

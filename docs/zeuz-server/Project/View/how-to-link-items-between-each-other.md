@@ -1,6 +1,6 @@
 ---
 id: how-to-link-items-between-each-other
-title: How to link items between each other
+title: Linking Items Between Each Other
 ---
 
 In **ZeuZ**, the ability to link various items such as **Bugs**, **Tasks**, **Test Cases** and **Requirements** to each other is of paramount importance. This feature enhances project management and traceability, ensuring that all components are interconnected, and their relationships are well-documented. It enables efficient collaboration among team members, aids in prioritization, simplifies issue tracking, and ensures that software software development and testing processes are well-coordinated and transparent.  

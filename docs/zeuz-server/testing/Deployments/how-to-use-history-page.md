@@ -1,6 +1,6 @@
 ---
 id: how-to-use-history-page
-title: Use of the History page
+title: History
 ---
 
 ## Description

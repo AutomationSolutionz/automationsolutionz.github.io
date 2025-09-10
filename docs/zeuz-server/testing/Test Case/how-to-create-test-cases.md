@@ -1,6 +1,6 @@
 ---
 id: how-to-create-test-cases
-title: How to create Test Cases
+title: Creating Test Cases
 ---
 
 ## Video Guideline

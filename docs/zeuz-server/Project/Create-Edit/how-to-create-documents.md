@@ -1,6 +1,6 @@
 ---
 id: how-to-create-documents
-title: How to create Documents
+title: Creating Documents
 ---
 
 ### What does Document mean in software testing? 

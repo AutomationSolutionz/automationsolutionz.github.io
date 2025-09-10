@@ -1,6 +1,6 @@
 ---
 id: how-to-activate-and-deactivate-users
-title: How to Activate and Deactivate Users
+title: Activate and Deactivate Users
 ---
 
 ## When do the Users get activated?

@@ -1,6 +1,6 @@
 ---
 id: how-to-setup-email-notification
-title: How to setup Email notification
+title: Setting Up Email Notification
 ---
 
 ### What does Email notification means in software testing?

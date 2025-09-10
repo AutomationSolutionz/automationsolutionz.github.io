@@ -1,6 +1,6 @@
 ---
 id: how-to-setup-work-schedule
-title: How to setup Work Schedule
+title: Setting Up Work Schedule
 ---
 
 ### What is the meaning of Work Schedule in software testing?

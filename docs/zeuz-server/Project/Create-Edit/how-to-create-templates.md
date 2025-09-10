@@ -1,6 +1,6 @@
 ---
 id: how-to-create-templates
-title: How to create Templates
+title: Creating Templates
 ---
 
 The **Template** Feature is a powerful tool within our platform that enables users to create and manage customized roadmaps of training for newcomers. These roadmaps, referred to as **Templates**, consist of series of tasks, each with detailed instructions, designed to guide new team members through various onboarding activities, such as exploring ZeuZ or creating test cases. Templates help ensure a standerdized and efficient onboarding process.
