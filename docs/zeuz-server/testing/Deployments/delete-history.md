@@ -3,7 +3,6 @@ id: delete-history
 title: Delete History
 ---
 
-## Description
 The **Run History Management Page** in **ZeuZ** allows users to view and manage records of executed test runs, check details such as status and execution time, filter or search for specific runs, and track overall test performance.
 
 ## Steps
