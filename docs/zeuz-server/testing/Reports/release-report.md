@@ -114,6 +114,11 @@ This chart highlights the proportion of automated versus manual tests, showing t
 
 ![](/img/how-tos/release-report/testing-overview.png)
 
+#### Detailed Failed Test Cases List
+Here, only the failed test cases are shown. By clicking on **See All**, it will display all the failed test cases along with their total count.
+
+![](/img/how-tos/release-report/failed-cases.png)
+
 #### GitHub Overview
 The **GitHub Overview** provides a snapshot of a repository’s recent activity and changes. It typically includes two main sections:
 
@@ -126,7 +131,6 @@ The **GitHub Overview** provides a snapshot of a repository’s recent activity 
  - **Green bars**: Indicate the number of commits made on each date.
  - **Orange line with dots**: Represents the number of pull requests created on each date.  
  - **Observation on 25 Feb 25**: The tooltip shows that there were 19 commits and 0 pull requests on that day.
- - **Code Changes**: Displays the changes in the codebase, such as added, modified, or deleted lines of code, often visualized with graphs or charts.
 
 ![](/img/how-tos/release-report/development-activity.png)
 
@@ -161,18 +165,13 @@ The **Contributor Activity** section shows how many pull requests each user has 
 
 ![](/img/how-tos/release-report/contributor-activity.png)
 
-#### Detailed Failed Test Cases List
-Here, only the failed test cases are shown. By clicking on **See All**, it will display all the failed test cases along with their total count.
-
-![](/img/how-tos/release-report/failed-cases.png)
-
 #### Detailed Pull Request List
 A **Detailed pull request** provides comprehensive information about the pull requests that have been created. It shows who created the pull request, its ID, title, and the dates when it was opened, closed, or merged. It also displays how many lines of code were added or removed. If there are labels or milestones associated with the pull request, those will be shown as well. By clicking on **See All**, users can view the complete list of pull requests.
 
 ![](/img/how-tos/release-report/pull-request.png)
 
 #### Detailed Issue List 
-Our GitHub will display the list of issues here, if any exist. Here, if there are more than five issues, a **See All** button will appear. It will also display when the issue was opened, when it was closed, and its priority level.
+This section display the list of GitHub issues, if any exist. Here, if there are more than five issues, a **See All** button will appear. It will also display when the issue was opened, when it was closed, and its priority level.
 
 ![](/img/how-tos/release-report/issue-list.png)
 
@@ -187,18 +186,20 @@ Security vulnerabilities are shown in the Security section of our GitHub, and th
   - **LOW**: Approximately 16 vulnerabilities.
 
 #### Vulnerability Summary
-Here, in the following image, the **Vulnerability Summary** report is showing that a security scan found **3 critical flaws**,**26 high-severity issues**, **41 moderate risks**, and **16 low-level weaknesses**, indicating the system requires immediate attention to address the most severe threats first.
+Here, in the following image, the **Vulnerability Summary** report is showing that a security scan found **3 critical flaws**, **26 high-severity issues**, **41 moderate risks**, and **16 low-level weaknesses**, indicating the system requires immediate attention to address the most severe threats first.
 
 However, all vulnerabilities are combined to generate a security score. For example, the current security score is **C**, which indicates a **critical risk profile**. It also shows the date of the **last scan (Sep 10, 2025)** and the total number of issues. At present, there are **45** issues, many of which are high-level.
 
 ![](/img/how-tos/release-report/security-vulnerabilities.png)
 
 #### Detailed Vulnerability Alert List
-Here, a list of all security items is provided. If we create it using the default query, this list will be displayed.
+Here is a detailed list of all security vulnerability alerts.
 
 ![](/img/how-tos/release-report/vulnerability-list.png)
 
 6. If we want to edit the information of any report, we need to click on that specific report and update the required details if needed.
+
+![](/img/how-tos/release-report/update-query.png)
 
 :::note
 If the version does not contain any information, it will not display the testing summary, testing overview, detailed failed test cases, detailed pull request list, or detailed issue list.
