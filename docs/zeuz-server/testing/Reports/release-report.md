@@ -3,7 +3,7 @@ id: release-report
 title: Release Report
 ---
 
-A **Release Report** is a document that summarizes the features, fixes, test results, and overall quality of a specific software release.
+A **Release Report** is a centralized dashboard that gives teams a clear picture of the health and progress of a software release. It brings together test results, issues, pull requests, vulnerabilities, and project updates into one place so that developers, QA, and managers can quickly understand the release status, identify risks, and make informed decisions.
 
 ## Steps
 
@@ -197,7 +197,8 @@ Here is a detailed list of all security vulnerability alerts.
 
 ![](/img/how-tos/release-report/vulnerability-list.png)
 
-6. If we want to edit the information of any report, we need to click on that specific report and update the required details if needed.
+#### Update Query
+ If we want to edit the information of any report, we need to click on that specific report and update the required details if needed.
 
 ![](/img/how-tos/release-report/update-query.png)
 
