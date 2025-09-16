@@ -1,31 +1,65 @@
 ---
-id: how-to-create-test-sets
+id: test-set
 title: Test Set
 ---
 
-## Description
+import MetaCard from '@site/src/components/MetaCard';
 
-### What is a Test Set?
+A Test Set is a collection of logically grouped test cases. Test sets can be executed and they provide easy and quick reporting capabilities. Think test sets for nightly runs with Scheduler, test sets for core features of your application, etc.
 
-A **Test Set** is a collection of test cases that are grouped together for execution purposes. Test sets are used to organize and execute tests in a logical.
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Easy"
+  lastUpdated="16 Sep, 2025"
+  tags={["testing", "deployments", "set"]}
+  relatedTopics={["automation", "reporting", "dashboard"]}
+/>
 
-### How Test Set works in automated test cases?
 
-In automated testing, **Test Sets** are used to organize and execute tests in a logical order. **Test Sets** are created by grouping together related tests into a single unit. This allows testers to execute multiple tests at once and ensures that tests are executed in the correct order. Test sets can be created manually or automatically using automation tools.
+### Why it matters / Use Cases:
 
-### What is the importance of Test set?
+*   **Reducing manual effort** in running repeated tests by grouping and automating related test cases for bulk execution.
+*   **Ensuring consistent and timely test runs** (e.g., nightly, hourly, or on specific dates) by scheduling predefined sets of regression or smoke tests.
+*   **Integrating test execution into CI/CD pipelines** to automatically trigger relevant test sets (like sanity or feature-specific tests) with every code commit, ensuring immediate feedback without manual intervention.
+*   **Achieving comprehensive test coverage** by logically grouping tests by feature, priority, or risk to ensure all critical areas are validated together.
+*   **Facilitating clear reporting and progress tracking** by providing a structured unit for measuring test results, pass/fail rates, and overall testing status for a specific release or sprint.
 
-**Test Sets** are important in software testing because they help to organize test cases and make it easier to manage them. **Test Sets** can be used to group test cases by feature, priority or any other criteria that is relevant to your testing process. This can help to ensure that all test cases are executed and that any issues are detected as soon as possible. Test sets can also be used to track the progress of testing and to identify areas that require additional testing.
+## Prerequisites
 
-### Roles of a Test Set
+...
 
-A **Test Set** serves important roles in software testing. It organizes related test cases, making them easier to manage and execute. It ensures that all relevant test cases are executed together, providing a structured approach to testing. 
+## Quick-Start
 
-The **Test Set** helps achieve test coverage goals and facilities regression testing by including relevant test cases. It aids in test planning, documentation, and reporting, providing valuable insights into test execution progress and results.
+...
 
-Overall, the **Test Set** enhances efficiency, ensures comprehensive testing, and supports effective test management and reporting.
+## Features
 
-## Steps
+...
+
+## Add or remove test cases
+
+...
+
+## Deploy test sets
+
+...
+
+## FAQs / Troubleshooting
+
+...
+
+## Changelog
+
+- Adopted a new card view [[20250518](/blog/zeuz-platform-20250518/)]
+
+## Related Features
+
+- [Run test cases](#)
+- [Run history](#)
+- [CI/CD Presets](#)
+- [Scheduler](#)
+
+## OLD
 
 1. From the **Menu bar**, go to **Testing**, then select the **Set** option.
 
