@@ -73,7 +73,7 @@ When the test set card is expanded, it displays the test cases belonging to that
 1. **Sort by Set order**
 2. **Sort by Status**.
 
-![](/img/how-tos/how-to-create-test-sets/set-description.png)
+![](/img/how-tos/how-to-create-test-sets/set-des.png)
 
 If the test cases are sorted by "Status", the order will be as follows: failed test cases will appear first, followed by blocked test cases, then passed test cases, and finally, any test cases that have not been run will be displayed at the end.
 However, if a user hovers over any test case, it will display the "version", "milestone" and "run ID".
@@ -141,7 +141,9 @@ See [related topics](#related-topics) to learn more about running your tests.
 
 ## Related Topics
 
-- [Run test cases](#)
-- [Run history](#)
-- [CI/CD Presets](#)
-- [Scheduler](#)
+- [Run test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-tests/)
+- [Run history](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-use-history-page/)
+- [CI/CD Presets](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-create-webhook-for-cicd/)
+- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-create-schedule/)
+
+---
