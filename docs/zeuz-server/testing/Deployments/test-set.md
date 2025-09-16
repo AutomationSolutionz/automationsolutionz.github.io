@@ -35,6 +35,7 @@ A Test Set is a collection of logically grouped test cases. Test sets can be exe
 
 ## Features
 1. Navigate to the **Test Set** page, where you will find options such as "Filter by" and a "New Set" button. However, test sets can be filtered in two ways: 
+
    1. **Most TC**    
    2. **Set Name**.
 
@@ -49,6 +50,7 @@ A Test Set is a collection of logically grouped test cases. Test sets can be exe
    2. Shows the total number of test cases in the set, as well as the number of test cases that have been passed, failed, blocked, and submitted.
    3. The execution time of the test set.
    4. The preset of the test set is defined. However, if we click on the preset that has been connected to the test set then it will show the following run configuration information, such as:
+
       - **Node**
       - **Testers**
       - **Emails**
@@ -57,7 +59,7 @@ A Test Set is a collection of logically grouped test cases. Test sets can be exe
       - **Objective**
       - **Browser**
       - **Mobile**
-      - **External service**.
+      - **External service**
 
     The benefit here is that if the preset of a set is selected, it will display the test cases associated with that set.  
    5. It also displays the plan, if there is one.  

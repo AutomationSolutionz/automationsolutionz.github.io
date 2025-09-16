@@ -33,17 +33,32 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
-video {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 12px !important;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
-  width: 100%;
+img {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 480px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+img:hover {
+  transform: translateY(-4px) scale(2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+video {
+  border: 1px solid #e2e8f0;
   border-radius: 12px !important;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 480px;
+}
+
+video:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
 }
 
 .zeuz_logo {
@@ -55,6 +70,7 @@ img {
 }
 
 .zeuz_logo:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   filter: grayscale(0%);
+  transform: translateY(-2px);
 }
