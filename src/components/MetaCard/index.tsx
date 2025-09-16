@@ -34,7 +34,9 @@ const MetaCard = ({
                 )}
                 {relatedTopics.length > 0 && (
                     <li>
-                        <span className="meta-label">🔗 Related Topics:</span> {relatedTopics.join(", ")}
+                        <span className="meta-label">🔗 Related Topics:</span>
+                        {" "}
+                        <a href="#related-topics">{relatedTopics.join(", ")}</a>
                     </li>
                 )}
             </ul>
