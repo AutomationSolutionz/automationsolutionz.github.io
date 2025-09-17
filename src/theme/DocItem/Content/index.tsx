@@ -84,9 +84,8 @@ function DocPageButtons() {
             subLabel: "Ask ChatGPT about this page",
             icon: "/img/icons/openai.svg",
             onClick: () => {
-                const prefix = 'https://raw.githubusercontent.com/AutomationSolutionz/automationsolutionz.github.io/refs/heads/site/';
-                const suffix = '.md';
-                const docURL = buildPathString(prefix, suffix);
+                const prefix = 'https://docs.zeuz.ai';
+                const docURL = buildPathString(prefix);
                 const prompt = `Read ${docURL} and answer questions about the content`
                 const url = `https://chatgpt.com/?prompt=${prompt}`;
                 window.open(url, "_blank");
@@ -97,9 +96,8 @@ function DocPageButtons() {
             subLabel: "Ask Claude about this page",
             icon: "/img/icons/claude.svg",
             onClick: () => {
-                const prefix = 'https://raw.githubusercontent.com/AutomationSolutionz/automationsolutionz.github.io/refs/heads/site/';
-                const suffix = '.md';
-                const docURL = buildPathString(prefix, suffix);
+                const prefix = 'https://docs.zeuz.ai';
+                const docURL = buildPathString(prefix);
                 const prompt = `Read ${docURL} and answer questions about the content`
                 const url = `https://claude.ai/new?q=${prompt}`;
                 window.open(url, "_blank");
