@@ -206,7 +206,9 @@ The Storage section has been upgraded. It now displays a visual design on the ri
 
 ![](/img/dashboard-page/github-image.png)
 
-## FAQs
+## FAQs / Troubleshooting
+
+### FAQs
 
 <details>
 <summary>What information can I view on the dashboard?</summary> 
@@ -235,6 +237,13 @@ Yes, filters are available to narrow down information by project, team, or speci
 Yes, the dashboard reflects live updates from ongoing test executions.
 
 </details>
+
+### Troubleshooting
+
+- Dashboard is not loading properly → Clear browser cache or try logging out and back in.
+- Widgets are missing → Check user permissions or reconfigure dashboard settings.
+- Graphs or metrics showing incorrect data → Confirm that filters (date, project, team) are applied correctly.
+- Integration data (GitHub/Jira) not appearing → Ensure proper integration setup and authentication.
 
 ## Changelog
 
