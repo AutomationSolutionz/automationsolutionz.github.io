@@ -1,18 +1,41 @@
 ---
 id: dashboard-page
-title: Dashboard Page
+title: Dashboard
 sidebar_position: 1
 ---
 
 import Highlight from '@site/src/components/Highlight';
 
-The Dashboard page is the main overview screen of a software platform that displays key information, metrics, and summaries in a single place. It gives users a quick understanding of the current status of their projects, tests, or system health.
+import MetaCard from '@site/src/components/MetaCard';
 
-![](/img/dashboard-page/Dashboard.png)
+The ZeuZ dashboard is the main overview screen that gives you a quick look at your projects, tests, and overall system health.
+It provides key metrics, summaries, and information to help you understand what's happening at a glance.
 
----
+<MetaCard
+  availableFrom="20250712"
+  difficulty="🟢 Easy"
+  lastUpdated="17 Sep, 2025"
+  tags={["overview", "monitoring", "system metrics", "progress tracking", "test analytics", "performance insights", "visual summary"]}
+  relatedTopics={["ZeuZ features", "ZeuZ node", "zAI - Explain test case", "AI web recorder", "Data collector", "AI mobile inspector"]}
+/>
 
-## Explanation of the Dashboard Page
+![](/img/dashboard-page/full-dashboard.png)
+
+### Why it matters / Use Cases:
+
+  -   You immediately see _if your automation infrastructure is alive_: how many nodes are connected, license validity. If a node drops you don’t have to wait for manual reports. 
+	-   You catch quality shifts fast - “Build Health” and “Build Comparison” show at a glance whether a recent build broke things or got better. 
+	-   Prioritization becomes clear: failures in high priority (P1, P2) tests are highlighted, so you can focus on the biggest risks first.  
+	-   You see how much of your tests are automatable vs hard vs not automatable. That helps you plan: where to invest automation efforts. 
+	-   You can track momentum: how many test cases are being created daily - good for spotting slowdowns in coverage expansion. 
+	-   Scheduler status tells you if scheduled runs are failing so you don’t have “blind spots” in your test suite.  
+	-   Storage & orphaned test cases sections help maintain hygiene: clean up drift in test catalog & avoid wasted space or legacy cruft. 
+	-   GitHub integration gives traceability: link PR activity & issues with test results, good for debugging why things broke.
+
+## Prerequisites
+- The dashboard doesn’t require any setup. However, to get the most out of it, we recommend maintaining milestones and integrating GitHub.
+
+## Features
 
 ### ZeuZ Node Area
 **1. ZeuZ Node Description Box**
@@ -28,12 +51,9 @@ The Dashboard page is the main overview screen of a software platform that displ
      - **Changelog**: Shows version updates and improvements.
      - **Docs**: Opens the full documentation for user guidance.
 
-![](/img/dashboard-page/dashboard-node.png)
+![](/img/dashboard-page/node-links.png)
 
-
----
-
-## License and Node Information
+### License and Node Information
 The node section has been added to display the license information. It also shows the list of currently connected nodes. This section will become scrollable if there are more than four connected nodes.
 
 Here is a summary of the details:
@@ -58,8 +78,6 @@ The connected nodes are:
 
 ![](/img/dashboard-page/license-node.png)
 
----
-
 ### Build Health
 Build Health refers to the overall quality and stability of a software build, as determined by the results of automated or manual test cases executed during the build process. It is basically a chart showing the pass and fail status of the current build.
 
@@ -75,17 +93,11 @@ Build Health displays two key metrics, such as:
 
 However, in the **Build Health** section, without requiring any hover action, it will now show percentage values beside the metrics, for example, test results: **94.3% Passed (33)** and **5.7% Failed (2)**. These insights will be visible directly, without the need to hover. Additionally, the selected **Milestone** or **Version** will be displayed below the build health summary. 
 
+![](/img/dashboard-page/build-health.png)
+
 :::note
 In the **Build Health** section, if no data is available, it will display as zero.
 :::
-
-### Example
-
-|  Build Health with Pass and Fail metrics  |  Build Health with No Data                |
-|-------------------------------------------|-------------------------------------------|
-| ![](/img/dashboard-page/build-count.png)  |  ![](/img/dashboard-page/build-zero.png)  |
-
----
 
 ### Automatability
 Automatability refers to how easily and effectively a test can be automated using automation tools or frameworks. In this context, the chart shown is a **Donut chart**, which is commonly used to represent proportions or distributions. The chart is divided into segments, each representing a different category of automatability.
@@ -103,16 +115,14 @@ Automatability refers to how easily and effectively a test can be automated usin
 
 Under our server, test cases are categorized based on their level of automatability. In the **Automatability** section, users can now view the total number of test cases and see what percentage of them are "Automated", "Easily Automatable", or "Hard to Automate", etc., without the need to hover.
 For example, there are:
-- **4886 automated test cases (84.5%)**, 
-- **866 test cases that are easily automatable (15.0%)**, 
-- **14 test cases that are hard to automate (0.2%)**, 
-- **6 test cases that are not automatable (0.1%)**, 
-- **7 test cases that are under performance (0.1%)**,  
-- **2 undefined test cases (0.0%)**.
+- **4937 automated test cases (85%)**, 
+- **866 test cases that are easily automatable (15%)**, 
+- **14 test cases that are hard to automate (0%)**, 
+- **6 test cases that are not automatable (0%)**, 
+- **7 test cases that are under performance (0%)**,  
+- **2 undefined test cases (0%)**.
 
-![](/img/dashboard-page/easily-automatable.png)
-
----
+![](/img/dashboard-page/automatability.png)
 
 ### Build Comparison
 Build Comparison refers to the process of comparing the test results of two or more software builds to identify changes in quality, functionality, or performance overtime.
@@ -130,14 +140,11 @@ At the top, there are toggle options for **Milestone** and **Version**. When **M
 
 Here, the **June** milestone is the current build, while the others are previous builds.
 
----
-
 ### PBC (Priority Based Comparison)
 Priority Based Comparison refers to the process of comparing test results based on the priority levels assigned to test cases. It allows users to analyze test results based on different priority levels, such as **P1**, **P2**, **P3** and **P4**.
 
 In case of **PBC (Priority Based Comparison)**, when the **Current**, **Previous**, **Milestone** or **Version** is selected, the selected **Current / Previous Milestone** or **Current / Previous Version** will be displayed below the PBC section. Additionally, as before, the **Fail** status includes both failed and blocked test cases, and the **Not Run** status includes both "Skipped" and "Submitted" test cases.
 
-### Example
 The following image displays a tooltip or data breakdown for a test priority category labeled **P1**. It shows the execution status of test cases under this priority:
 - **Pass: 30**  
   A total of thirty test cases have passed.
@@ -150,16 +157,10 @@ The following image displays a tooltip or data breakdown for a test priority cat
 
 The chart also displays the number of test cases that are passing, failing, and not running within each priority level. Additionally, hovering over the **Current** label reveals the name of the most recent build, and this comparison can be used across milestones or versions to track how test cases are performing based on their assigned priorities.
 
-![](/img/dashboard-page/pbc-chart.png)
-
----
-
 ### Test Case Create Velocity
 Test Case Create Velocity refers to the rate at which test cases are being created over a defined period of time. It mainly shows the number of test cases created each day over the past 30 days. It helps to understand the number of test cases on specific dates, providing a date-wise breakdown of test case creation activity.
 
 ![](/img/dashboard-page/test-velocity.png)
-
----
 
 ### Scheduler Health
 Scheduler Health refers to the current status of the schedulers in an automation system.
@@ -171,40 +172,31 @@ If a scheduler shows a **green** sign, it means the test was successfully execut
 
 ![](/img/dashboard-page/sche-health.png)
 
----
-
 ### Orphaned Test Cases
 Orphaned Test Cases are test cases that are no longer linked to any active or valid test set. They exist in the system but are not part of any current testing activity or structure.
 
 ![](/img/dashboard-page/orphaned-test-cases.png)
 
----
-
 ### Storage
 The Storage section has been upgraded. It now displays a visual design on the right side, along with detailed information showing how much space each item is using. For example:
-- **Free Space (6.65 GB)**
-- **Logs & Reports (0.76 GB)**
-- **Test Cases (0.07 GB)**
-- **Files & Downloads (0.4 GB)**
-- **Backups (0.16 GB)**
-- **OS & Others (40.3399 GB)**.
+- **Free Space (8 GB)**
+- **Logs & Reports (2 GB)**
+- **Test Cases (1 GB)**
+- **Files & Downloads (1 GB)**
+- **Backups (1 GB)**
+- **OS & Others (39 GB)**.
 
-![](/img/dashboard-page/storage-space.png)
-
----
+![](/img/dashboard-page/storage.png)
 
 ### GitHub Stats and GitHub Activity
 1. The **Dashboard** will display **GitHub Stats** and **GitHub Activity** for the selected repositories.
-
-![](/img/dashboard-page/github-activity.png)
-
 2. By default, the first selected repository is displayed.
 3. Multiple repositories can be displayed depending on the selection during integration.
 4. A **Start Date** and **End Date** can be applied to filter the displayed data.
 5. The displayed information includes the count of **Closed Bugs**, **Tasks**, and **Requirements** within the selected date range, followed by the count **Created Bugs**, **Tasks**, and **Requirements** for the same date range.
 6. The number of **Open**, **Merged**, and **Closed** pull requests will be displayed under the Pull Request section.
 
-![](/img/dashboard-page/default-repository.png)
+![](/img/dashboard-page/github-stats.png)
 
 7. On the other hand, the table can be filtered by **Pull Requests** or **Issues** within the selected date range:
 - Issues can be **Open** or **Closed**.
@@ -212,7 +204,50 @@ The Storage section has been upgraded. It now displays a visual design on the ri
 
 8. Users can click on any **Pull Request** or **Issue** to navigate to it in **GitHub**. Pagination is available to view additional data if more entries are available.
 
-![](/img/dashboard-page/github-merge.png)
+![](/img/dashboard-page/github-image.png)
+
+## FAQs
+
+<details>
+<summary>What information can I view on the dashboard?</summary> 
+
+The dashboard provides an overview of builds, test cases, scheduler health, storage usage, and linked integrations such as GitHub or Jira.
+
+</details>
+
+<details>
+<summary>How often does the dashboard data refresh?</summary> 
+
+The dashboard updates automatically at set intervals, but users can also refresh it manually.
+
+</details>
+
+<details>
+<summary>Can I filter dashboard data by project or date range?</summary> 
+
+Yes, filters are available to narrow down information by project, team, or specific date ranges.
+
+</details>
+
+<details>
+<summary>Does the dashboard show real-time execution results?</summary> 
+
+Yes, the dashboard reflects live updates from ongoing test executions.
+
+</details>
+
+## Changelog
+
+- [ZeuZ Platform 20250712 -> Dasboard Update](https://docs.zeuz.ai/blog/zeuz-platform-20250712/#zeuz-dashboard)
+
+## Related Topics
+
+- [ZeuZ features](https://docs.zeuz.ai/docs/zeuz-node/zeuz-features/)
+- [ZeuZ Node](https://docs.zeuz.ai/docs/zeuz-node/)
+- [zAI - Explain Test Case](https://docs.zeuz.ai/docs/zeuz-server/zAI/zAI-explain-test-case/)
+- [AI Web Recorder](https://docs.zeuz.ai/docs/Apps/ai-web-recorder/)
+- [Data Collector](https://docs.zeuz.ai/docs/zeuz-node/data-collector/)
+- [AI Mobile Inspector](https://docs.zeuz.ai/docs/Apps/ai-mobile-inspector/)
 
 ---
 
