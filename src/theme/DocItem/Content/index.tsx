@@ -86,7 +86,9 @@ function DocPageButtons() {
             onClick: () => {
                 const prefix = 'https://raw.githubusercontent.com/AutomationSolutionz/automationsolutionz.github.io/refs/heads/site/';
                 const suffix = '.md';
-                const url = buildPathString(prefix, suffix);
+                const docURL = buildPathString(prefix, suffix);
+                const prompt = `Read ${docURL} and answer questions about the content`
+                const url = `https://chatgpt.com/?prompt=${prompt}`;
                 window.open(url, "_blank");
             },
         },
@@ -97,7 +99,9 @@ function DocPageButtons() {
             onClick: () => {
                 const prefix = 'https://raw.githubusercontent.com/AutomationSolutionz/automationsolutionz.github.io/refs/heads/site/';
                 const suffix = '.md';
-                const url = buildPathString(prefix, suffix);
+                const docURL = buildPathString(prefix, suffix);
+                const prompt = `Read ${docURL} and answer questions about the content`
+                const url = `https://claude.ai/new?q=${prompt}`;
                 window.open(url, "_blank");
             },
         },
