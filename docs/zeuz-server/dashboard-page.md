@@ -19,6 +19,8 @@ It provides key metrics, summaries, and information to help you understand what'
   relatedTopics={["ZeuZ features", "ZeuZ node", "zAI - Explain test case", "AI web recorder", "Data collector", "AI mobile inspector"]}
 />
 
+<br />
+
 ![](/img/dashboard-page/full-dashboard.png)
 
 ### Why it matters / Use Cases:
