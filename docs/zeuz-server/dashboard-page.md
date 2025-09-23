@@ -18,6 +18,8 @@ It provides key metrics, summaries, and information to help you understand what'
   relatedTopics={["History", "Scheduler", "Test set", "GitHub integration"]}
 />
 
+<br />
+
 ![](/img/dashboard-page/full-dashboard.png)
 
 ### Why it matters / Use Cases:
