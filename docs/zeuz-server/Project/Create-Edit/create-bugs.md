@@ -1,5 +1,5 @@
 ---
-id: how-to-create-bugs
+id: create-bugs
 title: Creating Bugs
 ---
 

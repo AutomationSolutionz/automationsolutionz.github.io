@@ -1,5 +1,5 @@
 ---
-id: how-to-create-folders-and-features
+id: create-folders-and-features
 title: Create Folders and Features
 ---
 

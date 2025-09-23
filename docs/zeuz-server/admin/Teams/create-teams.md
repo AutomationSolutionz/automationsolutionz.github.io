@@ -1,5 +1,5 @@
 ---
-id: how-to-create-teams
+id: create-teams
 title: Creating Teams
 ---
 

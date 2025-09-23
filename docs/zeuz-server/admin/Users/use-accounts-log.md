@@ -1,5 +1,5 @@
 ---
-id: how-to-use-accounts-log
+id: use-accounts-log
 title: Using Accounts Log
 ---
 

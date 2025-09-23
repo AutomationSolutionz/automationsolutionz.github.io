@@ -1,5 +1,5 @@
 ---
-id: how-to-link-team-to-a-project
+id: link-team-to-a-project
 title: Linking Team to a Project
 ---
 

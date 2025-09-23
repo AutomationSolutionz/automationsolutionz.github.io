@@ -1,5 +1,5 @@
 ---
-id: how-to-export-and-import-test-cases
+id: export-and-import-test-cases
 title: Exporting and Importing Test Cases
 ---
 

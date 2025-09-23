@@ -1,5 +1,5 @@
 ---
-id: how-to-create-requirements
+id: create-requirements
 title: Creating Requirements
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: how-to-create-test-cases
+id: create-test-cases
 title: Creating Test Cases
 ---
 

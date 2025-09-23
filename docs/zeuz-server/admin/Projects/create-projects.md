@@ -1,5 +1,5 @@
 ---
-id: how-to-create-projects
+id: create-projects
 title: Creating Projects
 ---
 

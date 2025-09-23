@@ -1,5 +1,5 @@
 ---
-id: how-to-update-actions-from-control-server
+id: update-actions-from-control-server
 title: Updating Actions from Control Server
 ---
 

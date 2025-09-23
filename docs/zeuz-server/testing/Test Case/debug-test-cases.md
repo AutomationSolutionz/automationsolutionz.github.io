@@ -1,5 +1,5 @@
 ---
-id: how-to-debug-test-cases
+id: debug-test-cases
 title: Debug the Test Cases
 ---
 

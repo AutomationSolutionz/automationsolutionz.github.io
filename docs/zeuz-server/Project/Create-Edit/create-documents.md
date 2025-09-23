@@ -1,5 +1,5 @@
 ---
-id: how-to-create-documents
+id: create-documents
 title: Creating Documents
 ---
 

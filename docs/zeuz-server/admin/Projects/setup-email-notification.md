@@ -1,5 +1,5 @@
 ---
-id: how-to-setup-email-notification
+id: setup-email-notification
 title: Setting Up Email Notification
 ---
 

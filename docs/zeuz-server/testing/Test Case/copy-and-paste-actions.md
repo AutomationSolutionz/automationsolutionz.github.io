@@ -1,5 +1,5 @@
 ---
-id: how-to-copy-and-paste-actions
+id: copy-and-paste-actions
 title: Copying and Pasting Actions
 ---
 

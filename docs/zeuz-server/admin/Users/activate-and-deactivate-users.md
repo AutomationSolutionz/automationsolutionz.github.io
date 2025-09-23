@@ -1,5 +1,5 @@
 ---
-id: how-to-activate-and-deactivate-users
+id: activate-and-deactivate-users
 title: Activate and Deactivate Users
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: how-to-create-templates
+id: create-templates
 title: Creating Templates
 ---
 

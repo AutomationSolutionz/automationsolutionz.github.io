@@ -1,5 +1,5 @@
 ---
-id: how-to-create-users
+id: create-users
 title: Creating Users
 ---
 

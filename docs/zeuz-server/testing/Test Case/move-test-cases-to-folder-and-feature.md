@@ -1,5 +1,5 @@
 ---
-id: how-to-move-test-cases-to-folder-and-feature
+id: move-test-cases-to-folder-and-feature
 title: Moving Test Cases to Folder and Feature
 ---
 

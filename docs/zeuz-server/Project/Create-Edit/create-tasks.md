@@ -1,5 +1,5 @@
 ---
-id: how-to-create-tasks
+id: create-tasks
 title: Create a Task
 ---
 
