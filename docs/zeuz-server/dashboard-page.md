@@ -14,9 +14,8 @@ It provides key metrics, summaries, and information to help you understand what'
 <MetaCard
   availableFrom="20250712"
   difficulty="🟢 Easy"
-  lastUpdated="17 Sep, 2025"
-  tags={["overview", "monitoring", "system metrics", "progress tracking", "test analytics", "performance insights", "visual summary"]}
-  relatedTopics={["ZeuZ features", "ZeuZ node", "zAI - Explain test case", "AI web recorder", "Data collector", "AI mobile inspector"]}
+  lastUpdated="18 Sep, 2025"
+  relatedTopics={["History", "Scheduler", "Test set", "GitHub integration"]}
 />
 
 ![](/img/dashboard-page/full-dashboard.png)
@@ -247,16 +246,14 @@ Yes, the dashboard reflects live updates from ongoing test executions.
 
 ## Changelog
 
-- [ZeuZ Platform 20250712 -> Dasboard Update](https://docs.zeuz.ai/blog/zeuz-platform-20250712/#zeuz-dashboard)
+- New UI introduced [[20250712](/blog/zeuz-platform-20250712/)]
 
 ## Related Topics
 
-- [ZeuZ features](https://docs.zeuz.ai/docs/zeuz-node/zeuz-features/)
-- [ZeuZ Node](https://docs.zeuz.ai/docs/zeuz-node/)
-- [zAI - Explain Test Case](https://docs.zeuz.ai/docs/zeuz-server/zAI/zAI-explain-test-case/)
-- [AI Web Recorder](https://docs.zeuz.ai/docs/Apps/ai-web-recorder/)
-- [Data Collector](https://docs.zeuz.ai/docs/zeuz-node/data-collector/)
-- [AI Mobile Inspector](https://docs.zeuz.ai/docs/Apps/ai-mobile-inspector/)
+- [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
+- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-create-schedule/)
+- [Test set](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/test-set/)
+- [GitHub integration](https://docs.zeuz.ai/docs/zeuz-server/admin/Integration/github-integration/)
 
 ---
 

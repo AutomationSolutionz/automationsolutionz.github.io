@@ -1,5 +1,5 @@
 ---
-id: how-to-create-schedule
+id: scheduler
 title: Scheduler
 ---
 

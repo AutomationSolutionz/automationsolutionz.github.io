@@ -1,5 +1,5 @@
 ---
-id: how-to-deploy-and-execute-manual-test-cases
+id: deploy-and-execute-manual-test-cases
 title: Deploy and Execute manual test cases
 ---
 

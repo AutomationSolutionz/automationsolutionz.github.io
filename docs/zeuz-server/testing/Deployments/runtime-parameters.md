@@ -1,6 +1,6 @@
 ---
-id: how-to-add-runtime-parameters
-title: Add Runtime Parameters
+id: runtime-parameters
+title: Runtime Parameters
 ---
 
 ### What is Runtime parameters in software testing and why it is necessary to add?

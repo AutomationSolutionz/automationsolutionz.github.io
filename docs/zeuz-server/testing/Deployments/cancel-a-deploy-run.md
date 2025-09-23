@@ -1,5 +1,5 @@
 ---
-id: how-to-cancel-a-deploy-run
+id: cancel-a-deploy-run
 title: Cancel a deploy run
 ---
 

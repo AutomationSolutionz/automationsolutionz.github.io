@@ -1,5 +1,5 @@
 ---
-id: how-to-add-actions
+id: add-actions
 title: Adding Actions
 label: Testing
 ---

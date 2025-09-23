@@ -1,5 +1,5 @@
 ---
-id: how-to-setup-test-scheduler
+id: setup-test-scheduler
 title: Setting Up Test Scheduler
 ---
 

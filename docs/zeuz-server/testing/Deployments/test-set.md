@@ -10,8 +10,7 @@ A Test Set is a collection of logically grouped test cases. Test sets can be exe
 <MetaCard
   availableFrom="20250518"
   difficulty="🟢 Easy"
-  lastUpdated="16 Sep, 2025"
-  tags={["testing", "deployments", "set"]}
+  lastUpdated="18 Sep, 2025"
   relatedTopics={["Run test cases", "Run history", "CI/CD Presets", "Scheduler"]}
 />
 
@@ -39,7 +38,7 @@ A Test Set is a collection of logically grouped test cases. Test sets can be exe
    1. **Most TC**    
    2. **Set Name**.
 
-  Additionally, at the top center of the test set, selecting either a version or milestone displays the number of passed, failed/blocked, and skipped test cases, as well as the difference in test cases between the two selected milestones or versions.
+  At the top center of the test set, selecting a version or milestone shows the count of passed, failed/blocked, and skipped test cases, along with the difference between the two selections.
 
   ![](/img/how-tos/how-to-create-test-sets/test-set.png)
 
@@ -51,15 +50,11 @@ A Test Set is a collection of logically grouped test cases. Test sets can be exe
    3. The execution time of the test set.
    4. The preset of the test set is defined. However, if we click on the preset that has been connected to the test set then it will show the following run configuration information, such as:
 
-      - **Node**
-      - **Testers**
-      - **Emails**
-      - **Version**
-      - **Milestone**
-      - **Objective**
-      - **Browser**
-      - **Mobile**
-      - **External service**
+    |                    |  Properties    |                       |
+    |--------------------|----------------|-----------------------|
+    |  1. Node           |  2. Testers    |  3. Emails            |
+    |  4. Version        |  5. Milestone  |  6. Objective         |
+    |  7. Browser        |  8. Mobile     |  9. External service  |
 
     The benefit here is that if the preset of a set is selected, it will display the test cases associated with that set.  
    5. It also displays the plan, if there is one.  
@@ -75,8 +70,7 @@ When the test set card is expanded, it displays the test cases belonging to that
 
 ![](/img/how-tos/how-to-create-test-sets/set-des.png)
 
-If the test cases are sorted by "Status", the order will be as follows: failed test cases will appear first, followed by blocked test cases, then passed test cases, and finally, any test cases that have not been run will be displayed at the end.
-However, if a user hovers over any test case, it will display the "version", "milestone" and "run ID".
+When sorted by "Status", failed test cases appear first, followed by blocked, passed, and not-run cases. Hovering over any test case shows its version, milestone, and run ID.
 
 ![](/img/how-tos/how-to-create-test-sets/set-version.png)
 
@@ -87,17 +81,12 @@ However, if a user hovers over any test case, it will display the "version", "mi
 ![](/img/how-tos/how-to-create-test-sets/card-set.png)
 
 2. Go to the **Test Set (Add/Remove)** page and click on the **Add** tab.
-
 3. Click the "checkbox" to select test cases for adding to the test set.
-
 4. Next, click on the "Add Selected" button.
  
-    > The function of the *ADD SELECTED* button is to include or add the currently selected test cases to the test execution or test plan, allowing for efficient selection and inclusion of desired tests.
-
 ![](/img/how-tos/how-to-create-test-sets/add-tab.png)
 
 5. Click on the **View** tab to see whether the required **Test cases** are added or not.
-    > Checking whether the required *Test Cases* are added or not is necessary to ensure that the appropriate test coverage is achieved and no essential scenarios are overlooked.
 
 ![](/img/how-tos/how-to-create-test-sets/view-tab.png)
 

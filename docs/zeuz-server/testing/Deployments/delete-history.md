@@ -3,22 +3,40 @@ id: delete-history
 title: Delete History
 ---
 
-The **Run History Management Page** in **ZeuZ** allows users to view and manage records of executed test runs, check details such as status and execution time, filter or search for specific runs, and track overall test performance.
+import MetaCard from '@site/src/components/MetaCard';
 
-## Steps
+The **Delete History** option allows users to permanently remove selected test run records, helping maintain a clean history log and preventing storage of unnecessary or outdated executions.
 
-1. From the menu bar, go to the **Testing** option and select the **History** feature available under **Deployments**.
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Easy"
+  lastUpdated="21 Sep, 2025"
+  relatedTopics={["History", "Scheduler", "Run ID Details"]}
+/>
 
-![](/img/how-tos/delete-history/deploy-history.png)
+### Why it matters / Use Cases:
 
-2. Go to the **Run History** page.
-3. Click the **open view menu** button, then select **go to delete and run history page** option.
+* **Data Privacy**: Sensitive or outdated execution results can be removed to prevent unintended access.
 
-![](/img/how-tos/delete-history/delete-option.png)
+* **Storage Optimization**: Deleting unnecessary run histories helps free up system storage.
 
-![](/img/how-tos/delete-history/delete-button.png)
+* **Clarity and Organization**: Removing irrelevant or test runs done for trial purposes keeps the history log clean and easy to navigate.
 
-4. Three tabs are available at the top of the page. They are:  
+* **Error Cleanup**: Failed or duplicate test runs created by mistake can be deleted to avoid confusion.
+
+* **Compliance**: Teams can manage retention policies by deleting records that are no longer required.
+
+## Prerequisites
+- Access to the ZeuZ Server with permissions for **Testing → Deployments → History**.
+- At least one test run record available in the history log to perform deletion.
+
+## Quick-Start
+1. Go to the **Run History** page.
+2. Click the **open view menu** button.
+3. Select **go to delete and run history** page option.
+
+## Features
+Three tabs are available at the top of the page. They are:
 - **Delete by selection**: Allows the users to manually select specific runs and delete them.
 - **Delete by date**: Lets the user delete runs executed within a chosen date range.
 - **Delete by scheduler**: Deletes runs based on predefined schedules.
@@ -93,12 +111,52 @@ The table displayed in this tab contains the following columns:
 6. **Run Count**: The number of executions that match the schedule (e.g., *1*, *0* ).
 7. **Run History**: A record of what has been deleted under that schedule (e.g., *2 years ago*).
 
-**Related**: Scheduler
-
-https://docs.zeuz.ai/docs/zeuz-server/testing/how-to-create-schedule/
-
 ![](/img/how-tos/delete-history/search-scheduler.png)
 
 ![](/img/how-tos/delete-history/activate-scheduler.png)
+
+---
+
+## FAQs / Troubleshooting
+
+### FAQs
+
+<details>
+<summary>What is Delete History used for?</summary>
+
+Delete History allows users to review or restore records of deleted items such as test cases, plans, or runs.
+
+</details>
+
+<details>
+<summary>Can all users access Delete History?</summary>
+
+No, only users with the required role and permissions can access it.
+
+</details>
+
+<details>
+<summary>Does deleting from Delete History remove the record permanently?</summary>
+
+Yes, once deleted from Delete History, the data cannot be recovered.
+
+</details>
+
+### Troubleshooting
+
+- Deleted item not visible → Check user permissions, project/workspace selection, and whether retention period has expired.
+- Unable to restore item → Verify if restoration is supported for that item type and ensure no duplicate name/ID conflicts.
+- Delete History not loading properly → Adjust or clear filters, apply correct date range, refresh the page, or re-login.
+- Permanent deletion done by mistake → Data cannot be recovered; recreate the item manually.
+
+## Changelog
+
+- A new delete icon has been introduced [[20250518](/blog/zeuz-platform-20250518/)]
+
+## Related Topics
+
+- [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
+- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-create-schedule/)
+- [Run ID Details](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-id-details-page/)
 
 ---

@@ -1,5 +1,5 @@
 ---
-id: how-to-deploy-test-cases
+id: deploy-test-cases
 title: Deploy the Test Cases
 ---
 

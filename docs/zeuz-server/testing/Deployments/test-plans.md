@@ -1,6 +1,6 @@
 ---
-id: how-to-create-test-plans
-title: Create Test Plans
+id: test-plans
+title: Test Plans
 ---
 
 ## Description

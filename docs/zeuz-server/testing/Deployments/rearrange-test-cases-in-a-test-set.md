@@ -1,5 +1,5 @@
 ---
-id: how-to-rearrange-test-cases-in-a-set
+id: rearrange-test-cases-in-a-test-set
 title: Rearrangement of test cases in a Test Set
 ---
 

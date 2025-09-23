@@ -1,5 +1,5 @@
 ---
-id: how-to-generate-execution-report
+id: generate-execution-report
 title: Generate Execution Report
 ---
 
