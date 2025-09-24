@@ -145,9 +145,7 @@ Yes, once deleted from Delete History, the data cannot be recovered.
 ### Troubleshooting
 
 - Deleted item not visible → Check user permissions, project/workspace selection, and whether retention period has expired.
-- Unable to restore item → Verify if restoration is supported for that item type and ensure no duplicate name/ID conflicts.
 - Delete History not loading properly → Adjust or clear filters, apply correct date range, refresh the page, or re-login.
-- Permanent deletion done by mistake → Data cannot be recovered; recreate the item manually.
 
 ## Changelog
 
@@ -156,7 +154,7 @@ Yes, once deleted from Delete History, the data cannot be recovered.
 ## Related Topics
 
 - [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
-- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-create-schedule/)
+- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/scheduler/)
 - [Run ID Details](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-id-details-page/)
 
 ---

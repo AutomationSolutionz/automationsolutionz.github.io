@@ -253,7 +253,7 @@ Yes, the dashboard reflects live updates from ongoing test executions.
 ## Related Topics
 
 - [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
-- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-create-schedule/)
+- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/scheduler/)
 - [Test set](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/test-set/)
 - [GitHub integration](https://docs.zeuz.ai/docs/zeuz-server/admin/Integration/github-integration/)
 
