@@ -131,8 +131,8 @@ See [related topics](#related-topics) to learn more about running your tests.
 ## Related Topics
 
 - [Run test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-tests/)
-- [Run history](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-use-history-page/)
-- [CI/CD Presets](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-create-webhook-for-cicd/)
-- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/how-to-create-schedule/)
+- [Run history](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
+- [CI/CD Presets](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/ci-cd-run-preset-webhook/)
+- [Scheduler](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/scheduler/)
 
 ---
