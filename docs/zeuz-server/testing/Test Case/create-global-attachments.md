@@ -15,6 +15,8 @@ The **Attachment** feature allows users to upload and manage files that can be a
   relatedTopics={["Exporting and Importing Test Cases", "Creating Documents"]}
 />
 
+<br />
+
 ![](/img/how-tos/create-global-attachments/image-01.png)
 
 ## Attachment Types
