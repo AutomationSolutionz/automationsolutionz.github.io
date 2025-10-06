@@ -3,29 +3,49 @@ id: run-tests
 title: Run Tests
 ---
 
-## Description
+import MetaCard from '@site/src/components/MetaCard';
+
 In **ZeuZ**, running tests refers to executing automated or manual test cases on a selected machine, browser, or mobile device with defined testers, version, milestone, configurations, platforms, notifications, and runtime parameters to verify the application's expected behavior and record the results for analysis.
 
-## Steps
+<MetaCard
+  availableFrom="20250818"
+  difficulty="🟢 Easy"
+  lastUpdated="06 Oct, 2025"
+  relatedTopics={["History", "Deploy the test cases", "CICD Run preset / Webhook", "Runtime parameters"]}
+/>
 
-1. From the menu bar, go to the **Testing** option and select the **Run Tests** feature located under **Deployments**.
+### Why it matters / Use Cases:
 
-![](/img/how-tos/run-tests/run-testing.png)
+* **Test Execution** - Running the selected test case to verify its functionality.
+* **Manual and Automated Testing** - Selecting the execution machine to perform either manual or automated runs.
+* **Team Collaboration** - Assigning testers and notifying other team members via email or messaging platforms (e.g., Teams, Discord, Slack etc.) to track execution progress.
+* **Version and Milestone Tracking** - Associating the test run with a specific version and milestone for proper traceablity.
+* **Preset and Configuration Management** - Choosing a preset to ensure consistent test environments and parameters.
+* **Cross-Browser / Platform Testing** - Selecting browsers or platforms (e.g., Chrome, Firefox, Android, iOS) for multi-platform validation.
+* **Runtime Parameterization** - Using runtime parameters to dynamically pass data during test execution for flexibility.
 
-2. Go to the **Run Tests** page.
-3. To search for test cases, use the **Search** bar at the top left, and select the desired test cases. Alternatively, test cases can be searched using the **Filter by Date** option, and the selected test cases will be displayed on the page.
-4. It also shows the **Execution Time** of the test case, which indicates the elapsed time for the current test case, and the **Execution Status** of the test case (**Pass**, **Fail**, **Blocked**).
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Deployments → Run tests**.
+- One or more automated or manual test cases.
+- A valid execution environment with ZeuZ Node connected.
+- Email settings configured from **Admin → Project** to receive reports.
+- At least one version and milestone defined.
 
-![](/img/how-tos/run-tests/run-search.png)
+## Quick-Start
+1. Go to the **Run Tests** page.
+2. Search for test cases using the search bar.
+3. Run the selected test cases.
 
-5. At the top right side, a **Preset Filter** button is available with two options:  
+## Features
+
+1. At the top left side, a **Preset Filter** button is available with two options:  
 - **Update search filters**
 - **Update configs**.  
 Additionally, a **Select Preset** option, a **Create/Update Preset** button, and a **Run** button are available for the deployment of test cases.
 
 ![](/img/how-tos/run-tests/preset-filter.png)
 
-6. Two tabs are available:  
+2. Two tabs are available:  
 - **Basic Tab** (which falls under the **Execution setup** panel)
 - **Advanced Tab** (which is located in the **Advanced Execution** settings).
 
@@ -53,13 +73,6 @@ Additionally, a **Select Preset** option, a **Create/Update Preset** button, and
    **Example**: QA.
 10. **Runtime parameters (optional)**: It is a value given during execution that controls how the test runs.  
 
-:::note
-To learn how to create Runtime parameters, click on the link below:
-
-https://docs.zeuz.ai/docs/zeuz-server/testing/how-to-add-runtime-parameters/
-
-:::
-
 ![](/img/how-tos/run-tests/basic-tab.png)
 
 ### Explanation of Advanced Tab
@@ -85,5 +98,61 @@ https://docs.zeuz.ai/docs/zeuz-server/testing/how-to-add-runtime-parameters/
 - **Rerun an existing deployment**: Search field to select and rerun a previous deployment by Objective or Run ID.
 
 ![](/img/how-tos/run-tests/advanced-section.png)
+
+## FAQs / Troubleshooting
+### FAQs
+
+<details>
+<summary>Why can't I see certain test cases in the list?</summary>
+
+Your user account likely lacks permission to view the specific folders or features where those test cases are located.
+
+</details>
+
+<details>
+<summary>How do I find and filter specific test cases?</summary>
+
+Use the "Search Test Cases..." field at the top to search by Test case ID, title, or feature.
+
+</details>
+
+<details>
+<summary>What should I do before running a test?</summary>
+
+Ensure you have selected the correct node, testers, emails, groups, browser, mobile, version, milestone, and test preset from the respective dropdown menus.
+
+</details>
+
+<details>
+<summary>Why can't I execute the "Run" command?</summary>
+
+Verify that all required fields are populated: Node, Testers, Emails, Browser, Mobile, Version, Milestone, and Test Preset must be selected.
+
+</details>
+
+### Troubleshooting
+
+- **Test Case Not Executing** - Ensure that the selected test cases are active and properly linked to a valid plan or preset.
+- **No Test Environment Detected** - Verify that the machine, browser, or device is correctly configured and connected before running the test.
+- **Missing Permissions** - Check that the user has the necessary permissions.
+- **Incorrect Version or Milestone**: Confirm that the selected version and milestone match the current setup.
+- **Failed connection to ZeuZ Server** - Ensure that the ZeuZ server is reachable and there are no network issues.
+- **Test Results Not Updating** - Refresh the page or re-sync the results to confirm that execution data is reflected properly in ZeuZ.
+
+## Changelog
+
+- Advanced Tab refinements
+- Responsive Sidebar Layouts
+- Ensures test cases link to active plans/presets
+- Sending external service reports only on fails
+- Improved Version Name Validation    
+[[20250818](/blog/zeuz-platform-20250818/)]
+
+## Related Topics
+
+- [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
+- [Deploy the test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/deploy-test-cases/)
+- [CICD Run preset / Webhook](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/ci-cd-run-preset-webhook/)
+- [Runtime parameters](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/runtime-parameters/)
 
 ---
