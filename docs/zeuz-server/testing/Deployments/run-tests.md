@@ -11,7 +11,7 @@ In **ZeuZ**, running tests refers to executing automated or manual test cases on
   availableFrom="20250818"
   difficulty="🟢 Easy"
   lastUpdated="06 Oct, 2025"
-  relatedTopics={["History", "Deploy the test cases", "CICD Run preset / Webhook", "Runtime parameters"]}
+  relatedTopics={["History", "CICD Run preset / Webhook", "Runtime parameters"]}
 />
 
 ### Why it matters / Use Cases:
@@ -132,26 +132,24 @@ Verify that all required fields are populated: Node, Testers, Emails, Browser, M
 
 ### Troubleshooting
 
-- **Test Case Not Executing** - Ensure that the selected test cases are active and properly linked to a valid plan or preset.
-- **No Test Environment Detected** - Verify that the machine, browser, or device is correctly configured and connected before running the test.
+- **Test Case Not Executing** - Ensure that the selected test cases are active and properly linked to a valid plan or preset and check if you have the license restrictions.
+- **No Node Detected** - Verify that the machine, browser, or device is correctly configured and connected before running the test.
 - **Missing Permissions** - Check that the user has the necessary permissions.
 - **Incorrect Version or Milestone**: Confirm that the selected version and milestone match the current setup.
 - **Failed connection to ZeuZ Server** - Ensure that the ZeuZ server is reachable and there are no network issues.
-- **Test Results Not Updating** - Refresh the page or re-sync the results to confirm that execution data is reflected properly in ZeuZ.
+- **Test Results Not Updating** - Refresh the page to confirm that execution data is reflected properly in ZeuZ.
 
 ## Changelog
 
-- Advanced Tab refinements
-- Responsive Sidebar Layouts
-- Ensures test cases link to active plans/presets
-- Sending external service reports only on fails
-- Improved Version Name Validation    
-[[20250818](/blog/zeuz-platform-20250818/)]
+- Advanced Tab refinements [[20250818](/blog/zeuz-platform-20250818/)]
+- Responsive Sidebar Layouts [[20250818](/blog/zeuz-platform-20250818/)]
+- Ensures test cases link to active plans/presets [[20250818](/blog/zeuz-platform-20250818/)]
+- Sending external service reports only on fails [[20250818](/blog/zeuz-platform-20250818/)]
+- Improved Version Name Validation [[20250818](/blog/zeuz-platform-20250818/)]
 
 ## Related Topics
 
 - [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
-- [Deploy the test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/deploy-test-cases/)
 - [CICD Run preset / Webhook](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/ci-cd-run-preset-webhook/)
 - [Runtime parameters](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/runtime-parameters/)
 
