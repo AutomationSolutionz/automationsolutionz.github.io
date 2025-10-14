@@ -1,6 +1,6 @@
 ---
-slug: zeuz-platform-20250909
-title: ZeuZ Platform 20250909
+slug: zeuz-platform-20251015
+title: ZeuZ Platform 20251015
 authors: ['muhib', 'antu']
 tags: ['changelog']
 ---
