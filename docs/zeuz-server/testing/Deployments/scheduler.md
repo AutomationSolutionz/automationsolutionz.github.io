@@ -3,12 +3,15 @@ id: scheduler
 title: Scheduler
 ---
 
-## Description
+import MetaCard from '@site/src/components/MetaCard';
 
-### Importance of Scheduler in the context of test cases and presets
+**ZeuZ Scheduler** is a powerful automation tool that executes quality tests continuously and efficiently. It eliminates repetitive manual tasks, ensuring thorough software validation without hands-on effort, and enhances the efficiency of continuous integration and delivery pipelines.
 
-In the context of test cases and presets, a **Scheduler** plays a crucial role in streamlining and automating test execution. This automation ensures that test cases are executed at specific times or under particular conditions, reducing manual effort and the risk of human error. Additionally, scheduling enables testing teams to perform tests at optimal times. It also helps maintain a consistent and organized testing workflow, enhancing efficiency and allowing for the seamless integration of tests into the development pipeline.  
-Overall, a **Scheduler** in the context of test case and presets enhances testing efficiency, reliability, and integration within the software development lifecycle.
+## Key Benefits
+- **Automated Test Execution**: Schedule tests to run automatically at predefined times, reducing manual intervention.
+- **Flexible Scheduling Options**: Choose from various scheduling types, including weekly, hourly, calendar-based, and monthly schedules.
+- **Integration with CI/CD**: Enhance continuous integration workflows by ensuring tests are executed at optimal times.
+- **Comprehensive Reporting**: Receive detailed reports on test executions, including pass/fail statuses and execution times.
 
 ## Steps
 
