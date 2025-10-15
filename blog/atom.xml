@@ -2,11 +2,209 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.zeuz.ai/blog/</id>
     <title>ZeuZ Resources Blog</title>
-    <updated>2025-09-09T00:00:00.000Z</updated>
+    <updated>2025-10-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.zeuz.ai/blog/"/>
     <subtitle>ZeuZ Resources Blog</subtitle>
     <icon>https://docs.zeuz.ai/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ZeuZ Platform 20251015]]></title>
+        <id>https://docs.zeuz.ai/blog/zeuz-platform-20251015/</id>
+        <link href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/"/>
+        <updated>2025-10-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the October 2025 release of the ZeuZ platform!]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to the October 2025 release of the ZeuZ platform!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features">🚀 New Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#-new-features" class="hash-link" aria-label="Direct link to 🚀 New Features" title="Direct link to 🚀 New Features">​</a></h2>
+<p>This release introduces three major new features that significantly enhance security, access control, and data management in ZeuZ:</p>
+<ol>
+<li>Group Permission System – A powerful, flexible role-based access control mechanism with permission union logic for seamless user and group management.</li>
+<li>ZeuZ Secrets – A secure, client-side encrypted vault for managing sensitive credentials, ensuring zero exposure of secret data.</li>
+<li>Revamped Data Store – A completely redesigned ReactJS interface offering faster performance, unified data management, and stronger project-level data isolation.</li>
+</ol>
+<h1>1. Enhanced Group Permissions &amp; History Management</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>We're excited to announce three powerful new features that significantly enhance user access control and visibility management in the Zeuz platform. These features provide granular permission control, improved history page customization, and intelligent test case visibility filtering.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-sub-feature-1-group-permission-system">🎯 Sub-feature 1: Group Permission System<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#-sub-feature-1-group-permission-system" class="hash-link" aria-label="Direct link to 🎯 Sub-feature 1: Group Permission System" title="Direct link to 🎯 Sub-feature 1: Group Permission System">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="groups-nav" src="https://docs.zeuz.ai/assets/images/groups-nav-be471b73db9c8d2ed332b0c1f405ad0f.png" width="3412" height="1500" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="whats-new">What's New<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#whats-new" class="hash-link" aria-label="Direct link to What's New" title="Direct link to What's New">​</a></h3>
+<p>Introducing a comprehensive group-based permission system that allows administrators to create custom user groups with specific access rights across the entire platform.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-capabilities">Key Capabilities<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#key-capabilities" class="hash-link" aria-label="Direct link to Key Capabilities" title="Direct link to Key Capabilities">​</a></h3>
+<ul>
+<li><strong>Flexible Group Management</strong>: Create and manage user groups with custom permissions</li>
+<li><strong>Granular Access Control</strong>: Assign specific permissions for different platform modules</li>
+<li><strong>Role-Based Security</strong>: Control access to testing, project management, and administrative functions</li>
+<li><strong>Easy User Assignment</strong>: Add users to groups with automatic permission inheritance</li>
+<li><strong>🔄 Permission Union Logic</strong>: Users get <strong>combined permissions</strong> from ALL their groups - if ANY group has a permission, the user gets access</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="permission-union-example">Permission Union Example<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#permission-union-example" class="hash-link" aria-label="Direct link to Permission Union Example" title="Direct link to Permission Union Example">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">User belongs to: Group 1, Group 2, Group 3</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Group 1: ✅ Can view Set page</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Group 2: ❌ Cannot view Set page  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Group 3: ❌ Cannot view Set page</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Result: ✅ User CAN view Set page (because Group 1 has permission)</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benefits">Benefits<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#benefits" class="hash-link" aria-label="Direct link to Benefits" title="Direct link to Benefits">​</a></h3>
+<ul>
+<li><strong>Enhanced Security</strong>: Fine-grained control over who can access what</li>
+<li><strong>Simplified Management</strong>: Centralized permission management through groups</li>
+<li><strong>Flexible Access</strong>: Users can have different permissions through different group memberships</li>
+<li><strong>Scalable Architecture</strong>: Easy to add new permissions and groups as needed</li>
+<li><strong>Backward Compatibility</strong>: Existing users automatically get full access through default group</li>
+</ul>
+<hr>
+<p>This permission union logic is particularly powerful because:</p>
+<ol>
+<li><strong>Flexible Role Assignment</strong>: Users can be in multiple groups with different purposes</li>
+<li><strong>Cumulative Permissions</strong>: No need to duplicate permissions across groups</li>
+<li><strong>Easy Management</strong>: Add users to groups without worrying about permission conflicts</li>
+<li><strong>Granular Control</strong>: Fine-tune access by adding/removing users from specific groups</li>
+</ol>
+<p>For example:</p>
+<ul>
+<li><strong>Group A</strong>: Test Engineers (can view test cases, run tests)</li>
+<li><strong>Group B</strong>: Project Managers (can view reports, manage milestones)</li>
+<li><strong>Group C</strong>: Administrators (can manage users, system settings)</li>
+</ul>
+<p>A user in both Group A and Group B would have permissions from both groups, allowing them to view test cases AND reports, but not administrative functions unless they're also in Group C.</p>
+<p>This makes the permission system very flexible and user-friendly while maintaining security!</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-sub-feature-2-micro-level-permission-control-on-history-page">🔍 Sub-feature 2: Micro-Level Permission Control on History Page<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#-sub-feature-2-micro-level-permission-control-on-history-page" class="hash-link" aria-label="Direct link to 🔍 Sub-feature 2: Micro-Level Permission Control on History Page" title="Direct link to 🔍 Sub-feature 2: Micro-Level Permission Control on History Page">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="access-restricted" src="https://docs.zeuz.ai/assets/images/access-restricted-174cc0a4c707006cf6cd23dcf15b9979.png" width="768" height="498" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="whats-new-1">What's New<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#whats-new-1" class="hash-link" aria-label="Direct link to What's New" title="Direct link to What's New">​</a></h3>
+<p>Transform your history page experience with granular visibility controls that let you customize exactly what information users can see on deployment history cards.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customizable-history-elements">Customizable History Elements<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#customizable-history-elements" class="hash-link" aria-label="Direct link to Customizable History Elements" title="Direct link to Customizable History Elements">​</a></h3>
+<p>Users can now control visibility of these history page elements:</p>
+<ul>
+<li><strong>Run ID</strong> → View</li>
+<li><strong>Node ID</strong> → View</li>
+<li><strong>Milestone</strong> → View</li>
+<li><strong>Objective</strong> → View</li>
+<li><strong>Version</strong> → View</li>
+<li><strong>Tester</strong> → View</li>
+<li><strong>Deployment Time</strong> → View</li>
+<li><strong>Duration</strong> → View</li>
+<li><strong>Storage</strong> → View</li>
+<li><strong>Details</strong> → View</li>
+<li><strong>Runtime Parameters/Details</strong> → View</li>
+<li><strong>Test Case</strong> → View</li>
+<li><strong>Test Case Type</strong> → View</li>
+<li><strong>Browser</strong> → View</li>
+<li><strong>Testcase Log</strong> → View</li>
+<li><strong>Circle Graph</strong> → View</li>
+<li><strong>Status</strong> → View</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How It Works<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h3>
+<ul>
+<li><strong>Group-Based Control</strong>: Permissions are managed at the group level</li>
+<li><strong>Toggle Interface</strong>: Easy-to-use toggle switches for each element</li>
+<li><strong>Real-Time Updates</strong>: Changes apply immediately to user views</li>
+<li><strong>Permission Inheritance</strong>: Users inherit permissions from their assigned groups</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benefits-1">Benefits<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#benefits-1" class="hash-link" aria-label="Direct link to Benefits" title="Direct link to Benefits">​</a></h3>
+<ul>
+<li><strong>Cleaner Interface</strong>: Hide irrelevant information to reduce clutter</li>
+<li><strong>Role-Appropriate Views</strong>: Show only relevant data based on user roles</li>
+<li><strong>Improved Focus</strong>: Users see only what they need for their specific tasks</li>
+<li><strong>Enhanced Security</strong>: Sensitive information can be hidden from unauthorized users</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-sub-feature-3-deploy-page-testcase-visibility-control">🎯 Sub-feature 3: Deploy Page Testcase Visibility Control<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#-sub-feature-3-deploy-page-testcase-visibility-control" class="hash-link" aria-label="Direct link to 🎯 Sub-feature 3: Deploy Page Testcase Visibility Control" title="Direct link to 🎯 Sub-feature 3: Deploy Page Testcase Visibility Control">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="group-in-runtest" src="https://docs.zeuz.ai/assets/images/group-in-runtest-8a5b6cf6b2340d6dfe5f4e96334ac356.png" width="1526" height="1284" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="whats-new-2">What's New<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#whats-new-2" class="hash-link" aria-label="Direct link to What's New" title="Direct link to What's New">​</a></h3>
+<p>Intelligent test case visibility filtering that ensures users only see deployment history for test cases they're authorized to view, with special handling for automated deployments.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-functionality">Key Functionality<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#key-functionality" class="hash-link" aria-label="Direct link to Key Functionality" title="Direct link to Key Functionality">​</a></h3>
+<ul>
+<li><strong>Group-Based Visibility</strong>: Only users in assigned groups can see specific test case deployments</li>
+<li><strong>Scheduler Deployment Filtering</strong>: Automated scheduler deployments are hidden from general history view</li>
+<li><strong>Direct Access Preservation</strong>: Users can still access test cases via direct links even if not visible in history</li>
+<li><strong>Smart Filtering</strong>: System automatically filters history based on user group memberships</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works-1">How It Works<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#how-it-works-1" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h3>
+<ol>
+<li><strong>During Deployment</strong>: Selected groups are stored with each test run</li>
+<li><strong>History Filtering</strong>: Only test runs with matching user groups are displayed</li>
+<li><strong>Scheduler Handling</strong>: Automated deployments are filtered out unless user has explicit group access</li>
+<li><strong>Access Control</strong>: Direct test case access remains available via links</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benefits-2">Benefits<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#benefits-2" class="hash-link" aria-label="Direct link to Benefits" title="Direct link to Benefits">​</a></h3>
+<ul>
+<li><strong>Reduced Noise</strong>: Users don't see irrelevant automated deployments</li>
+<li><strong>Focused View</strong>: History page shows only relevant test cases</li>
+<li><strong>Improved Performance</strong>: Faster page loads with filtered data</li>
+<li><strong>Better Organization</strong>: Clear separation between manual and automated deployments</li>
+<li><strong>Maintained Access</strong>: Direct links still work for authorized users</li>
+</ul>
+<hr>
+<h1>2. A New Level of Security: Introducing ZeuZ Secrets</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview-1">Overview<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#overview-1" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>We are happy to announce <strong>ZeuZ Secrets</strong>, a powerful and totally secure system for handling all your sensitive data inside the ZeuZ platform. Now, you can forget about hardcoding API keys, passwords, and tokens in your test cases. With ZeuZ Secrets, you can store, manage, and use all your credentials securely in your test automation, and it's all backed by a powerful hybrid encryption model.</p>
+<p><strong>Your sensitive data will never even leave your browser.</strong> To understand the full details, please read our <a href="https://docs.zeuz.ai/docs/zeuz-server/testing/Data%20Store/zeuz-secrets/" target="_blank" rel="noopener noreferrer">docs</a>.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="feature-centralised-and-secure-secret-management">Feature: Centralised and Secure Secret Management<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#feature-centralised-and-secure-secret-management" class="hash-link" aria-label="Direct link to Feature: Centralised and Secure Secret Management" title="Direct link to Feature: Centralised and Secure Secret Management">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="zeuz-secret" src="https://docs.zeuz.ai/assets/images/zeuz-secret-2fc62c30791886a5ce64b04661697d64.png" width="1508" height="766" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="whats-new-3">What's New<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#whats-new-3" class="hash-link" aria-label="Direct link to What's New" title="Direct link to What's New">​</a></h3>
+<p>ZeuZ Secrets gives you a special, safe vault inside the platform for all your sensitive data. It is built with a security-first mindset, making sure your secrets are encrypted the moment you create them itself, right until they are used by a trusted test node.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-capabilities-1">Key Capabilities<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#key-capabilities-1" class="hash-link" aria-label="Direct link to Key Capabilities" title="Direct link to Key Capabilities">​</a></h3>
+<ul>
+<li><strong>Client-Side Encryption</strong>: Secrets are encrypted in your browser first, <em>before</em> they are sent to the server. The server will never see the actual, unencrypted value.</li>
+<li><strong>Hybrid Encryption</strong>: We are using a combination of <strong>RSA-2048</strong> for key security and <strong>AES-256</strong> for data encryption. This ensures full security when data is moving and when it is stored.</li>
+<li><strong>Node-Side Decryption</strong>: Only a ZeuZ Node that has the correct private key can decrypt and use a secret. No one else can.</li>
+<li><strong>Granular Access Control</strong>: You can decide exactly which users, which test cases, and even which action patterns are allowed to access each secret.</li>
+<li><strong>Automatic Log Masking</strong>: Secret values are automatically hidden in all test logs, so nothing gets exposed by mistake.</li>
+<li><strong>Centralised Management</strong>: You can manage all secrets from one single, secure screen, with proper audit trails.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-encryption-workflow">The Encryption Workflow<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#the-encryption-workflow" class="hash-link" aria-label="Direct link to The Encryption Workflow" title="Direct link to The Encryption Workflow">​</a></h3>
+<p>The security of ZeuZ Secrets works with a simple but very powerful end-to-end encryption process:</p>
+<ol>
+<li><strong>Key Generation</strong>: First, an RSA public/private key pair is generated on your ZeuZ Node.</li>
+<li><strong>Configuration</strong>: The <strong>public key</strong> is added to your Team in the ZeuZ admin panel. The <strong>private key</strong> stays safe on the Node itself.</li>
+<li><strong>Secret Creation</strong>: When you are creating a secret in the UI, it is immediately encrypted in your browser using your team's public key.</li>
+<li><strong>Secure Storage</strong>: The encrypted secret is then stored on the ZeuZ server. It cannot be decrypted by the server or any user without the proper private key.</li>
+<li><strong>Secure Usage</strong>: During a test run, the encrypted secret is sent to the Node. The Node uses its private key to decrypt the value at the exact moment it's needed for a test step.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benefits-3">Benefits<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#benefits-3" class="hash-link" aria-label="Direct link to Benefits" title="Direct link to Benefits">​</a></h3>
+<ul>
+<li><strong>No More Hardcoded Secrets</strong>: This will improve your security a lot by removing sensitive data from your test cases and code.</li>
+<li><strong>Simple Management</strong>: Having one single place for all secrets makes managing and changing them very easy.</li>
+<li><strong>Secure Collaboration</strong>: You can share secrets with your teams without anyone seeing the actual secret values.</li>
+<li><strong>Achieve Compliance</strong>: You can track every use of a secret with detailed audit trails, linking access to specific test runs and actions.</li>
+<li><strong>Smooth CI/CD Integration</strong>: You can securely inject secrets into your automated CI/CD pipelines without any manual work.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-your-first-secret-in-3-simple-steps">Getting Started: Your First Secret in 3 Simple Steps<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#getting-started-your-first-secret-in-3-simple-steps" class="hash-link" aria-label="Direct link to Getting Started: Your First Secret in 3 Simple Steps" title="Direct link to Getting Started: Your First Secret in 3 Simple Steps">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-generate--configure-keys">Step 1: Generate &amp; Configure Keys<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#step-1-generate--configure-keys" class="hash-link" aria-label="Direct link to Step 1: Generate &amp; Configure Keys" title="Direct link to Step 1: Generate &amp; Configure Keys">​</a></h3>
+<p>On your ZeuZ Node machine itself, you need to generate a new key pair.</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">uv run node_cli.py -gpk</span><br></span></code></pre></div></div>
+<p>Just copy the <strong>public key</strong> that is generated. Go to <code>Admin → Teams &amp; Projects → Team List</code>, edit your team, and paste the public key in the given field. The private key is now stored safely on your node.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-create-the-secret">Step 2: Create the Secret<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#step-2-create-the-secret" class="hash-link" aria-label="Direct link to Step 2: Create the Secret" title="Direct link to Step 2: Create the Secret">​</a></h3>
+<p>Go to <code>Testing → Data Store → ZeuZ Secrets</code> and click on <strong>Create Secret</strong>.</p>
+<ul>
+<li><strong>Secret Key</strong>: <code>demo_api_key</code> (This is the name you will use to refer to it).</li>
+<li><strong>Secret Value</strong>: <code>sk_live_1234567890abcdef</code> (This is your actual secret, which will be encrypted immediately).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-use-the-secret-in-a-test-case">Step 3: Use the Secret in a Test Case<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#step-3-use-the-secret-in-a-test-case" class="hash-link" aria-label="Direct link to Step 3: Use the Secret in a Test Case" title="Direct link to Step 3: Use the Secret in a Test Case">​</a></h3>
+<p>In any test step where you can give variable input, just use the special <code>secret</code> syntax to call your secret. ZeuZ will automatically handle everything, from fetching to decrypting it on the node during the test run.</p>
+<table><thead><tr><th>id</th><th>element parameter</th><th>Value</th></tr></thead><tbody><tr><td>text</td><td>selenium action</td><td>%|secret["demo_api_key"]|%</td></tr></tbody></table>
+<p>And that's it, simple only! Your test automation workflow is now fully secure.</p>
+<h1>3. The Data Store, Reimagined: Faster, Simpler &amp; More Secure</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview-2">Overview<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#overview-2" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>We've rebuilt the Data Store from the ground up with a new <strong>ReactJS</strong> front-end. The result is a faster, more secure experience in a single, unified interface. We've streamlined the entire workflow and, most importantly, locked down data security.</p>
+<p><img decoding="async" loading="lazy" alt="datastore" src="https://docs.zeuz.ai/assets/images/datastore-1a8589f9a2c925dc0d4ceff8f7e620ab.png" width="1232" height="766" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="one-page-for-everything">One Page for Everything<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#one-page-for-everything" class="hash-link" aria-label="Direct link to One Page for Everything" title="Direct link to One Page for Everything">​</a></h3>
+<p>No more jumping between pages to view your data and import new files. Now, you can manage tables, create folders, and import CSVs all from a single screen. The new workflow is much more intuitive and makes organizing your test data a breeze.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="major-security--bug-fixes">Major Security &amp; Bug Fixes<a href="https://docs.zeuz.ai/blog/zeuz-platform-20251015/#major-security--bug-fixes" class="hash-link" aria-label="Direct link to Major Security &amp; Bug Fixes" title="Direct link to Major Security &amp; Bug Fixes">​</a></h3>
+<ul>
+<li><strong>Critical Security Fix</strong>: We fixed a major security flaw that allowed data to be visible across different teams. Your data is now <strong>strictly isolated</strong> to your project, as it should be.</li>
+<li><strong>Date Filter Fixed</strong>: The date filter was broken, and now it works reliably.</li>
+</ul>]]></content>
+        <author>
+            <name>Muntasib Muhib Chowdhury</name>
+            <uri>https://github.com/Muntasib-creator</uri>
+        </author>
+        <author>
+            <name>Tanvir Hossain Antu</name>
+            <uri>https://github.com/Antu7</uri>
+        </author>
+        <category label="Changelog" term="Changelog"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ZeuZ Platform 20250909]]></title>
         <id>https://docs.zeuz.ai/blog/zeuz-platform-20250909/</id>
