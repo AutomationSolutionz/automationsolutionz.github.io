@@ -5,37 +5,48 @@ title: Scheduler
 
 import MetaCard from '@site/src/components/MetaCard';
 
-**ZeuZ Scheduler** is a powerful automation tool that executes quality tests continuously and efficiently. It eliminates repetitive manual tasks, ensuring thorough software validation without hands-on effort, and enhances the efficiency of continuous integration and delivery pipelines.
+The **Scheduler** in ZeuZ enables users to automate the execution of **Presets** or **Plans** at specified times or defined intervals. It removes the need for manual test triggering and integrates seamlessly into continuous testing workflows.
 
-## Key Benefits
-- **Automated Test Execution**: Schedule tests to run automatically at predefined times, reducing manual intervention.
-- **Flexible Scheduling Options**: Choose from various scheduling types, including weekly, hourly, calendar-based, and monthly schedules.
-- **Integration with CI/CD**: Enhance continuous integration workflows by ensuring tests are executed at optimal times.
-- **Comprehensive Reporting**: Receive detailed reports on test executions, including pass/fail statuses and execution times.
+<MetaCard
+  availableFrom="20250712"
+  difficulty="🟢 Medium"
+  lastUpdated="12 July, 2025"
+  relatedTopics={["Run tests", "Test plans", "History", "CICD Run preset / Webhook"]}
+/>
 
-## Steps
+### Why it matters / Use Cases:
 
-1. From the **Menu bar**, navigate to **Testing** and then select the **Scheduler** option.
+- Automate repetitive or time-based test executions.
+- Ensure reliable, consistent test runs (hourly, weekly, monthly, or custom intervals).
+- Integrate testing into CI/CD pipelines to trigger tests automatically.
+- Improve QA efficiency and reduce manual coordination.
+- Schedule version-based or milestone-based tests before releases.
 
-![](/img/how-tos/how-to-create-schedule/scheduler-option.png)
+### Example Use Cases:
 
-2. Navigate to the **Schedule List** page.
+- Nightly regression runs to validate system validity.
+- Pre-release validation to confirm build integrity.
+- Automated weekend load tests.
+- Data verification scripts running daily.
 
-![](/img/how-tos/how-to-create-schedule/schedule-list.png)
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Configure → Scheduler**.
+- An existing **Plan** or **Preset** must be created to associate with the scheduler.
+- Defined **Milestones** and **Versions** within the workflow.
+- A proper environment setup is required for tests to execute successfully.
 
----
+## Quick-Start
+1. Navigate to the **Schedule List** page.
+2. Clicking on the **Create Scheduler** button, a modal like pop-up will appear. Within this modal, a user can create a scheduler without leaving the current page.
 
-## Steps to create a Scheduler
-Clicking on the **Create Scheduler** button, a modal like pop-up will appear. Within this modal, a user can create a scheduler without leaving the current page.
-
-![](/img/how-tos/how-to-create-schedule/create-scheduler.png)
-
-1. In the first step (**Step 1**), users are required to fill in the following fields: 
-   - **Scheduler Name**  
-   - **Type**  
+## Features
+### Create a Scheduler
+1. In the first step (**Step 1**), users are required to fill in the following fields:  
+   - **Scheduler Name**
+   - **Type**
      - **Preset**
-     - **Plan**.
-   For example, we enter the "Scheduler Name" as **test 1.1**, select **Plan** as the "Type" and choose a **Plan**. Once these fields are completed, we click the **Next** button.
+     - **Plan**.  
+   For example, we enter the "Schedule Name" as **test 1.1**, select **Plan** as the "Type" and choose a **Plan**. Once these fields are completed, we click the **Next** button.
 
    ![](/img/how-tos/how-to-create-schedule/schedule-step1.png)
 
@@ -45,11 +56,11 @@ Clicking on the **Create Scheduler** button, a modal like pop-up will appear. Wi
 
 2. In the second step (**Step 2**), users must select a **Milestone** and a **Version**. Suppose, we select both a **Milestone** and a **Version**, and then click on the **Next** button to move on.
 
-![](/img/how-tos/how-to-create-schedule/schedule-step2.png)
+   ![](/img/how-tos/how-to-create-schedule/schedule-step2.png)
 
    Again, if these are not selected, the user will not be able to proceed to the next step.  
 
-![](/img/how-tos/how-to-create-schedule/schedule-milestone.png)
+   ![](/img/how-tos/how-to-create-schedule/schedule-milestone.png)
 
 3. In the third step (**Step 3**), users must configure the **Schedule Timing**. There are five types of scheduling options available:
    - **Weekly**:
@@ -101,9 +112,7 @@ Clicking on the **Create Scheduler** button, a modal like pop-up will appear. Wi
 
      ![](/img/how-tos/how-to-create-schedule/img-1.13.png)
 
----
-
-## Steps to Edit Scheduler
+### Edit Scheduler
 When editing a scheduler in ZeuZ, a scrollable panel appears on the right side of the edit page. This panel contains various fields such as, 
 - **Preset Name** 
 - **Assigned Testers** 
@@ -136,7 +145,7 @@ Other editable fields include:
 - **Select (Preset/Plan)**
 - **Select Milestone**
 - **Select Version**
-- **Schedule Type (Weekly, Every X hours, Every X minutes, Calendar schedule, Month schedule)**.
+- **Schedule Type (Weekly, Every X hours, Every X minutes, Calendar schedule, Month schedule)**.  
 Users can freely modify these fields. For example, if the current schedule type is set to **Month Schedule**, the user can change it to **Hour** or **Minute** based on their preference. Additionally, a different **Preset** or **Plan** and **Milestone** or **Version** can be selected. After making all necessary changes, clicking the **Update** button will save and apply the modifications.
 
 ![](/img/how-tos/how-to-create-schedule/update-schedule.png)
@@ -145,9 +154,7 @@ However, to delete a scheduler, a **Delete** button is available. When clicked, 
 
 ![](/img/how-tos/how-to-create-schedule/delete-schedule.png)
 
----
-   
-## Search Functionality by Scheduler, Preset and Plan Name
+### Search Functionality by Scheduler, Preset and Plan Name
 With the new update, users can now search schedulers by **Scheduler Name**, **Preset Name** or **Plan Name** directly from the search box. For example:
 - Search for schedulers by entering keywords (e.g., "test") in the search box.
 
@@ -165,11 +172,9 @@ With the new update, users can now search schedulers by **Scheduler Name**, **Pr
 
 ![](/img/how-tos/how-to-create-schedule/plan-search.png)
 
----
-
-## Bulk Status Control with "Select Scheduler" Feature
+### Bulk Status Control with "Select Scheduler" Feature
 In case of updated scheduler, a feature called **Select** has now been introduced to allow bulk activation or deactivation of multiple schedulers at once.
-### How it Works:
+#### How it Works:
 - Users can click the **Select** button and choose multiple from the table.
 
 ![](/img/how-tos/how-to-create-schedule/select-schedule.png)
@@ -180,16 +185,14 @@ After selections, two options become available:
 - **Activate**: Activates all selected schedulers.
 - **Deactivate**: Deactivates all selected schedulers.
 
-### Important Behavior:
+#### Important Behavior:
 - If an active scheduler is selected snd **Activate** button is clicked, its status remain unchanged.
 - If inactive schedulers are selected and **Activate** button is clicked, their statuses will be updated to active.
 - Similarly, selecting schedulers and clicking the **Deactivate** button will deactivate all selected schedulers.
 
 ![](/img/how-tos/how-to-create-schedule/activate-schedule.png)
 
----
-
-## Schedule Time UI Enhancement
+### Schedule Time UI Enhancement
 The design of the **Schedule Time** section has been updated for better usability and clarity. Users will now find it easier to configure and interpret schedule timings.
 1. **For Weekly**:
 
@@ -211,9 +214,7 @@ The design of the **Schedule Time** section has been updated for better usabilit
 
 ![](/img/how-tos/how-to-create-schedule/month-schedule.png)
 
----
-
-## Run History Page Updates
+### Run History Page Updates
 - A new unified column has been introduced by merging **LRT (Last Run Time)** and **Run History** into a single, consolidated view.
   - This column displays the most recent run for each scheduler.
 
@@ -223,9 +224,7 @@ The design of the **Schedule Time** section has been updated for better usabilit
 
   ![](/img/how-tos/how-to-create-schedule/no-run.png)
 
----
-
-## Detailed Run History via modal pop-up
+### Detailed Run History via modal pop-up
 Users can now view a condensed overview of the scheduler's run history via modal pop-up. This modal provides:
 - For **Presets**: The last five executions.
 
@@ -237,13 +236,62 @@ Users can now view a condensed overview of the scheduler's run history via modal
 
 **Example**: If a scheduler is associated with a **Plan** containing three **Presets**, the modal will display the last two run histories for each of those three **Presets**.
 
----
-
-## View Full Run History
+### View Full Run History
 If users wish to view the **Complete History**, a **View Full History** button is available within the modal. Clicking this button redirects the user to the full history page for that specific plan.
 
 ![](/img/how-tos/how-to-create-schedule/img-ed-2.13.png)
 
 ![](/img/how-tos/how-to-create-schedule/img-ed-2.14.png)
+
+## FAQs / Troubleshooting
+
+<details>
+<summary>What happens if the required fields (Name, Type, and Milestone) are not filled?</summary>
+
+The system prevents progression until all required fields are filled in.
+
+</details>
+
+<details>
+<summary>Can I schedule for multiple times or dates?</summary>
+
+Yes, for Weekly, Calendar, and Monthly schedules, multiple entries can be added.
+
+</details>
+
+<details>
+<summary>What happens when I deactivate a scheduler?</summary>
+
+It stops executing until it is manually reactivated.
+
+</details>
+
+<details>
+<summary>How can I verify the recent runs?</summary>
+
+Check the Unified History column to view the run history.
+
+</details>
+
+<details>
+<summary>Can I update multiple schedulers in bulk?</summary>
+
+Yes, use the Bulk Activate or Deactivate options.
+
+</details>
+
+## Changelog
+
+- **UI Enahancement**: Improved Schedule Time configuration flow [[20250712](/blog/zeuz-platform-20250712/)]
+- **Run History**: Unified column and modal pop-ups added [[20250712](/blog/zeuz-platform-20250712/)]
+- **Bulk Actions**: Activating or deactivating multiple schedulers are supported [[20250712](/blog/zeuz-platform-20250712/)]
+- **Search**: Dynamic search and filter by multiple fields [[20250712](/blog/zeuz-platform-20250712/)]
+
+## Related Topics
+
+- [Run tests](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-tests/)
+- [Test plans](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/test-plans/)
+- [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
+- [CICD Run preset / Webhook](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/ci-cd-run-preset-webhook/)
 
 ---
