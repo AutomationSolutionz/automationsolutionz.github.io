@@ -1,6 +1,6 @@
 ---
 id: zeuz-node-setup-on-macos
-title: ZeuZ Node Setup on macOS
+title: macOS
 ---
 
 In this document, the process of downloading and connecting the ZeuZ node on macOS is demonstrated.

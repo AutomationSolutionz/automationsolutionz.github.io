@@ -1,9 +1,15 @@
 ---
 id: zeuz-node-installation-and-connect-on-windows
-title: ZeuZ Node Setup on Windows
+title: Windows
 ---
 
 This document provides a step-by-step guide to connecting a ZeuZ node to the ZeuZ web application.
+
+## Video
+
+<video controls loop>
+  <source src="/video/windows/windows.mp4" type="video/mp4" />
+</video>
 
 ## Steps
 

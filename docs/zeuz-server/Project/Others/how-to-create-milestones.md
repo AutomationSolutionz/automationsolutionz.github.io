@@ -1,21 +1,12 @@
 ---
 id: how-to-create-milestones
-title: Creating Milestones
+title: Milestones
 ---
 
-### What is a Milestone in software testing?
+import MetaCard from '@site/src/components/MetaCard';
 
-In software testing, a **Milestone** is a significant event or stage that marks the completion of a specific phase or achievement of a goal. It helps track process, evaluate project status, and ensure testing aligns with the overall timeline.  
+The **Milestone** feature functions as a project tracking tool that organizes and monitors testing activities across different phases. It allows users to link test plans, executions, and results to specific stages of the project, ensuring progress is measured accurately. This feature helps teams evaluate readiness, maintain allignment with project goals, and verify that all testing tasks are completed before moving to the next stage or release.
 
-Example includes completing the test plan, designing test cases, setting up the test environment, starting test execution, completing all planned tests, resolving defects, conducting user acceptance testing, and obtaining final test sign-off. These milestones vary based on the software development life cycle and serve as checkpoints to ensure the software meets quality standards before deployment.  
-
-### What are the functions of Milestone in software testing?
-
-The functions of **Milestone** in software testing is to track progress, evaluate project status, and aid decision making. They serve as checkpoints to assess the completion of testing phases and align with the overall timeline.  
-
-**Milestone** help ensure software quality, facilitate communication and collaboration among team members and stakeholders, and keep testing efforts in line with project goals. They play a vital role in monitoring progress, assessing readiness for deployment and maintaining project timelines and standards.  
-
-### Why Milestone is necessary in case of software testing?
 
 **Milestones** are necessary in software testing for several reasons like:  
 
