@@ -108,3 +108,6 @@ The progress bars show the total, development, and testing progress for the sele
 
 - [Run tests](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-tests/)
 - [CICD Run preset / Webhook](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/ci-cd-run-preset-webhook/)
+- [Version](https://docs.zeuz.ai/docs/zeuz-server/Project/Others/how-to-use-version-page/)
+
+---
