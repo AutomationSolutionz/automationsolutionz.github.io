@@ -3,123 +3,141 @@ id: version
 title: Version
 ---
 
-In software testing, a **Version** refers to a specific iteration or release of
-a software product. Versions are used to track the evolution of the software
-over time, documenting changes, improvements, bug fixes, and new features. Each
-version typically has a unique identifier, such as a version number (e.g., 1.0,
-2.1.3), which helps distinguish it from other releases.
+import MetaCard from '@site/src/components/MetaCard';
 
-### Key Aspects of a Version in Software Testing:
+A **Version** refers to a specific release or iteration of a software application. It represents a defined state of the product at a particular point in time, usually after new features, fixes, or improvements have been implemented.
 
-1. **Version Number:**
-   - A numerical or alphanumeric label assigned to a particular release of the
-     software (e.g., 1.0, 2.0, 2.1.4).
-  
-2. **Release Notes:**
-   - A summary of the changes, including new features, enhancements, and bug
-     fixes introduced in that version.
+Each version helps teams track changes, compare performance or results across builds, and ensure that testing aligns with the correct software release. Versions are often linked with milestones to monitor progress and quality before deployment.
 
-3. **Known Issues:**
-   - Documentation of any known bugs or limitations that exist in that version.
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Easy"
+  lastUpdated="03 Nov, 2025"
+  relatedTopics={["Run tests", "CICD Run preset / Webhook", "Milestone", "Plan"]}
+/>
 
-4. **Test Cases:**
-   - The set of test cases that were executed to validate that version, ensuring
-     the software functions as expected.
+### Why it matters / Use Cases:
 
-### Importance of Versioning in Software Testing:
+- **Track Software Progress**: Helps teams monitor the evolution of the software across different releases.
+- **Compare Test Results**: Allows comparison of test outcomes between versions to identify regressions or improvements.
+- **Organize Test Execution**: Enables testers to execute and record tests against the correct software version.
+- **Ensure Release Accuracy**: Ensures that each test corresponds to the right build, avoiding confusion between old and new
+  functionalities.
+- **Support Continuous Improvement**: Facilitates clear documentation of changes, helping teams analyze product quality trends over time.
+- **Simplify Reporting**: Makes it easier to generate reports and summaries for a particular version or release cycle.
 
-- **Traceability:** Helps in tracking which changes or features were introduced
-  in specific versions, making it easier to identify when issues were
-  introduced.
-  
-- **Test Management:** Facilitates organized and systematic testing by ensuring
-  that each version is tested according to its unique set of changes.
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Project → Others → Version**.
+- The user must have the necessary permissions or role (e.g., Project Admin or Editor) to create, edit, or delete Versions.
+- A Milestone should be created beforehand if the Version needs to be linked to a specific project phase.
+- The team should have clarity on what the Version represents (e.g., release number, build ID, or iteration goal).
+- Test cases, runs, or tasks should be ready so they can be properly assigned to the Version for tracking progress.
 
-- **Deployment:** Ensures that teams are aware of which version is currently
-  deployed in production and what changes it includes.
+## Quick-Start
+1. **Search Versions**: Use the search bar to locate a specific version by name.
+2. **Filter Versions**: Use the dropdown menu on the right (showing *Show all*, *Production*, *Dev*) to filter and view versions based on
+   environment or category.
+3. **View Version Summary**: Each version card displays key information such as:
+   - When the version was last updated.
+   - Number of associated test runs, passed tests, blocked tests, and failed tests.
+4. **Choose a Version to work with**: Click on any version card to open its detailed view and manage items linked to that version.
 
-- **Regression Testing:** Assists in identifying which previous functionalities
-  need to be retested when new versions are released.
+## Features
+### Create a new Version
+- The **Add New Version** window appears when the user clicks the **plus (+)** icon to create a new version. 
+- Key fields and available options are displayed below:  
+  - **Version Name**: The user enters the name of the new version (in this case, *30 October 2025*).
+  - **Dev Version (Checkbox)**: When selected, the version will be marked as a development version.
+  - **Do not update the version globally (Checkbox)**: If selected, the new version will be applied only within the current context and will not modify the global version settings for the entire project.
+- After entering all required details, select **ADD** to create the new version.
 
-With ZeuZ, you can track all four key aspeects mentioned above easily with the
-Version system.
+![](/img/how-tos/how-to-use-version-page/new-version.png)
 
-### What does the Version Page of ZeuZ show?
-
-The **Version** page in **ZeuZ** serves as a crucial tool for users to track the progress and status of various aspects of a software product across different versions. This page provides a visual overview of each version, allowing users to monitor key elements such as:
-
-- **Tasks**: The page allows users to see the tasks associated with each version, helping them understand what work has been completed or is still in progress for that particular release.
-
-- **Bugs**: Users can track the bugs identified in each version. This helps in understanding the stability and quality of the software, as well as in prioritizing bug fixes for future releases.
-
-- **Run IDs**: Each version lists the specific Run IDs, which correspond to the individual test executions. This allows users to drill down into the details of each test run, including when it was executed and what the outcomes were.
-
-- **Version Details**: The cards provide a snapshot of when each version was created (e.g., "2 months ago") and can include other relevant metadata such as the branch or staging environment used.
-
-This **Version** page is particularly useful for project managers, QA engineers, and developers who need to stay informed about the status of different versions of the software, ensuring that all aspects of testing, task management, and bug tracking are organized and easily accessible. It enhances visibility into the development and testing process, facilitating better decision-making and more efficient project management.
-
-## Steps
-
-1. From the **Project** menu, go to the **Version** option.
-
-![](/img/how-tos/how-to-use-version-page/version-option.png)
-
-2. Go to the **Version** page.
-
-![](/img/how-tos/how-to-use-version-page/version-page.png)
-
-### Version Card Representation
-
-- Shows the **Version** name.
-- Also shows the time when the version is created.
-- **Circle**:
-  - **Blue** colored circle of version card: *Run ID*
-  - **Black** colored circle of version card: *Test cases*
-  - **Pink** colored circle of version card: *Tasks*
-  - **Red** colored circle of version card: *Bugs*.
-- After clicking on the **Version Card**, it shows the **Tasks**, **Bugs** and **Run IDs**.
-- Besides, it also shows **Select option**, **Dev Status** and the **Profile image** of the user who creates the **Version**.
-
-![](/img/how-tos/how-to-use-version-page/version-represent.png)
-
-3. Click on the **Select** button of the version card to select any version card.
-
-![](/img/how-tos/how-to-use-version-page/select-version.png)
-
-4. After selecting any specific version card, its background outline will be **Red** since it will show zero number of **Tasks**, **Bugs**, **Test cases** and **Run IDs**.
-
-![](/img/how-tos/how-to-use-version-page/red-outline.png)
-
-5. Click on the **Delete** button for deleting any version card which contains no **Tasks**, **Bugs**, **Test Cases** and **Run IDs**.
+### Delete a Version
+- A **Trash-Bin** icon appears on a specific version card. When a user clicks this icon, ZeuZ allows the user to permanently delete that
+version from the project.
+- This action removes the version and its associated data from the version list, helping keep the workspace clean and organized.
 
 ![](/img/how-tos/how-to-use-version-page/delete-version.png)
 
 :::note
+A version cannot be deleted if it has linked items.
 
-Only those version cards can be deleted which will contain zero number of **Test cases**, **Tasks**, **Bugs** and **Run IDs**.
+![](/img/how-tos/how-to-use-version-page/not-delete.png)
 
 :::
 
-6. Click on the **Add New Version** button to create a new version.
+### Version card details
+- **Version Name** (at the top): Identifies the version currently being viewed.
+- **Timestamp** (e.g., *3 months ago*): Indicates when the version was last updated or worked on.
+- **List of Linked Items**: It refers to all work items connected to a specific version, including **Run IDs**, **Test cases**, **Tasks** or **Bugs**.
+- **Circle description**:
+  - The **blue** colored circle on the version card the total count of **Run IDs** associated with that version.
+  - The **black** colored circle on the version card represents the total count of **Test cases** associated with that version.
+  - The **pink** colored circle on the version card represents the total count of **Tasks** associated with that version.
+  - The **red** colored circle on the version card represents the total count of **Bugs** associated with that version.
+- **Delete Icon** (trash symbol): Allows the user to delete the version, provided it has no linked items.
+- It also displays the **Profile image** of the user who created the version in the bottom-right corner.
 
-7. Next click on the **ADD** button to create.
+![](/img/how-tos/how-to-use-version-page/version-details.png)
 
-![](/img/how-tos/how-to-use-version-page/add-version.png)
+## FAQs / Troubleshooting
+### FAQs
 
-8. If **Dev Version** is selected then the version card will show the **Dev Status** symbol on the lower right side.
+<details>
+<summary>What is a version?</summary>
 
-![](/img/how-tos/how-to-use-version-page/dev-version.png)
+A version represents a specific release or milestone of a project, grouping associated work items like test cases, tasks, bugs, and runs for
+tracking progress.
 
-![](/img/how-tos/how-to-use-version-page/dev-status.png)
+</details>
 
-9. Click on the **Add Filter** button for adding a filter.
+<details>
+<summary>How do I create a version?</summary>
 
-![](/img/how-tos/how-to-use-version-page/filter-version.png)
+Navigate to the version module, click on the **Plus (+)** icon, fill in the required details in the **Add New Version** window, and then click **ADD**.
 
-10. When a **Filter** is applied, it will show items based on that filter.
+</details>
 
-![](/img/how-tos/how-to-use-version-page/filter-base.png)
+<details>
+<summary>Can a version be linked to multiple milestones?</summary>
 
-11. Click on the **Search** button to search for a specific version. However, versions can also be searched by date range by clicking on the **Filter Date Range** button.
+No. Each version can be associated with only one milestone to maintain clear progress tracking.
 
-![](/img/how-tos/how-to-use-version-page/version-range.png)
+</details>
+
+<details>
+<summary>How are linked items displayed in a version?</summary>
+
+All connected work items including test cases, tasks, bugs, and run IDs are displayed within the version for easy tracking.
+
+</details>
+
+<details>
+<summary>Who can access or edit a version?</summary>
+
+Users with **Version Create/Edit permissions** can modify it. Others may have view-only access depending on their role.
+
+</details>
+
+### Troubleshooting
+
+- **Linked items not visible**: Check assignments, permissions, and refresh the page.
+- **Changes in version not reflecting in reports**: Ensure edits are saved and the correct version filter is applied.
+- **Cannot create version**: Fill in the mandatory fields and verify that the required permissions are granted.
+- **Profile image of creator not visible**: Refresh the page or ensure that a profile image is uploaded.
+- **Duplicate versions appearing**: Check whether the version was created twice, and delete the redundant entry or rename it accordingly.
+
+## Changelog
+
+- New UI has been introduced [[20250518](/blog/zeuz-platform-20250518/)]
+- Adopted a new card view [[20250518](/blog/zeuz-platform-20250518/)]
+
+## Related Topics
+
+- [Run tests](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-tests/)
+- [CICD Run preset / Webhook](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/ci-cd-run-preset-webhook/)
+- [Milestones](https://docs.zeuz.ai/docs/zeuz-server/Project/Others/milestones/)
+- [Plan](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/test-plans/)
+
+---
