@@ -7,6 +7,11 @@ import MetaCard from '@site/src/components/MetaCard';
 
 The **Data Store** feature in ZeuZ Server provides a unified interface to search, import, create, and manage datasets used in automated testing. It allows QA and development teams to easily handle structured data without relying on local files. This makes testing more reliable, consistent, and collaborative across environments.
 
+:::note
+Your data never leaves your browser unencrypted.
+
+:::
+
 <MetaCard
   availableFrom="20250818"
   difficulty="🟢 Medium"
