@@ -3,150 +3,164 @@ id: deploy-and-execute-manual-test-cases
 title: Deploy and Execute manual test cases
 ---
 
-### What is a manual test case?
+import MetaCard from '@site/src/components/MetaCard';
 
-A manual test case is a test case that is executed manually by a tester without using any automated tools.  
-The purpose of manual testing is to identify the bugs, issues and defects in the software application.  
-Manual test cases are used to check the functionality of a system. Test cases can include checking the results of entering valid and invalid user IDs and password.  
-Another example of a manual test is creating a to-do list and checking that all fields are filled in correctly and the newly created listis displayed correctly.
+**Manual test cases** are predefined sets of test steps executed by a tester without using automation tools. Each test case includes a  specific objective, input data, expected outcome, and execution procedure.
 
-### What is deploying in manual test cases and why is it necessary?
+**Deploy and execute manual test cases** refers to the process of preparing and running manual tests to verify system functionality.
+- **Deploy**: This step ensures that the required environment, configurations, and resources are set up properly for the test cases to run.
+- **Execute**: Once deployed, testers can manually perform the test steps, record results, and update the test status.
 
-Deploying manual test cases means running test cases manually on the application without using any automation tools.  
-Manual testing is the process of manually testing software for defects. It requires a tester to play the role of an end user and use most of all features of the application to ensure correct behaviour.  
-Manual testing is necessary because it helps find defects that are not easily found through automation.  
+In ZeuZ, this process ensures that manual test cases are executed in a controlled and well-prepared environment, helping identify defects 
+and validate that the software meets its requirements. 
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Medium"
+  lastUpdated="17 Nov, 2025"
+  relatedTopics={["Create test cases", "History", "Run tests"]}
+/>
 
-### What is the importance of deploying manual test case?
+### Why it matters / Use Cases:
+- **Ensures environment readiness**: Deploying test cases prepares the correct setup, preventing configuration errors during execution.
+- **Validates real-world functionality**: Manual execution helps verify how the system behaves under real user actions and scenarios.
+- **Supports exploratory testing**: Testers can identify unexpected issues that automated scripts may overlook.
+- **Improves accuracy of test results**: Running tests in a properly deployed environment ensures consistent and reliable outcomes.
+- **Facilitates regression and usability testing**: Manual execution is effective for verifying visual elements, user experience, and 
+workflows after updates.
+- **Ensures controlled testing process**: Deploying and executing manually allows testers to monitor each step closely and record precise 
+observations.
 
-Deploying a manual test case is an important aspect of software testing. Here are some reasons why it is important:  
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Deployments → Run Tests**.
+- All manual test cases should be properly documented with clear steps, inputs, and expected outcomes.
+- Relevant data inputs must be prepared to ensure accurate testing.
+- Any linked components, integrations, or external services should be active and functioning.
+- The correct software version or build must be deployed for consistent and valid results.
 
-* **Verification of Functionality**: Manual test cases help verify that the software or system being tested is functioning as intended. By following predefine test steps, testers can validate whether the expected behaviour is consistent with the actual behaviour of the software. This ensures that the software meets the functional requirements and performs its intended tasks correctly.
+## Quick-Start
+1. **Search Test Cases**: Allows users to search and select the desired test cases for deployment.
+2. **Estimated Duration**: Displays the total estimated execution time for the selected test cases (e.g., *2min57s*).
+3. **Test Set Information**: Shows the name of the selected test set (e.g., *set - Demo Google maps*).
+4. **Preset Selection**: Provides an option to choose an existing preset configuration before running the test.
+5. **Run Button**: Starts the deployment and execution of the selected test cases.
+6. **Basic and Advanced Tabs**: Allow users to switch between simple and detailed configuration options before execution.
 
-* **Error Identification**: Manual test cases are designed to identify errors, bugs, or defects in the software. Testers execute various test scenarios, inputs, and interactions to uncover any issues that may exist. By thoroughly examining the software through manual testing, testers can detect the problems that automated tests might miss. This helps improve the overall quality and reliability of the software.  
-
-* **User Perspective**: Manual testing allows testers to simulate real-world interactions with the software. By putting themseleves in the shoes of the end users, testers can assess the user experience, usability, and inituitiveness of the software. This helps identify any design flaws, inconsistencies, or issues that may impact user satisfaction. Manual testing helps ensure that the software meets the expectations and needs of its intended users.  
-
-* **Ad hoc Testing**: Manual test cases enable testers to perform ad hoc testing, which involves exploring the software in an unplanned and unscripted manner. This allows testers to think creatively and investigate the software for potential issues that were not anticipated during the test case design phase. Ad hoc testing can help uncover unexpected bugs, usability problems, or edge cases that automated tests may not cover.  
-
-* **Early Testing**: Manual test cases can be developed and executed during the early stages of the software development lifecycle. They can help validate requirements, clarify ambiguities, and identify defects at an early stage. This enables the development team to address issues promptly, reducing the cost and effort of fixing them later in the development process.  
-
-* **Test Coverage Gaps**: While automated tests are different for repetitive and large-scale testing, they may not cover certain aspects of the software adequately. Manual test cases can be used to fill in the gaps and cover scenarios that are difficult to automate or require human judgement. This ensure a more comprehensive test coverage and reduces the risk of critical issues slipping through the automated tests.  
-
-In summary, deploying manual test cases is important for varifying functionality, identifying errors, evaluating the user perspective, conducting ad hoc testing, performing early testing, and achieving comprehensive test coverage. Manual testing complements automated testing approaches, helping to improve software quality and provide a better user experience.
-
-## Steps
-
-1. From the **Menu bar**, go to the **Testing** then **Run Tests** option.
-
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/run-tests.png)
-
-2. Go to the **Run Tests/Deploy** page.
-
-   Two tabs will appear:
-     * Deployment
-     * Environment.
-
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/run-deploy.png)
-
-3. Go to the **Deployment** tab.
+## Features
+### Basic tab details
+- It is the tab where key execution settings for a test run are configured.
+- The elements displayed include:  
+  - **Node**: The selected machine or environment where the manual test cases will be executed (e.g., *Manual_Machine_ayesha*).
+  - **Testers**: The assigned testers responsible for executing the manual test cases (e.g., *Ayesha - Tester*).
+  :::note
+  Multiple testers can also be assigned.
    
-   **Deployment** tab shows the **Search bar** where test cases need to be searched.  
-   **Test Cases** are searched through following fields:
-   * Label
-   * OnlyFeature
-   * Feature
-   * ModifiedBy
-   * Step
-   * Title
-   * Folder
-   * Set
-   * Test Case
-   * Related_req
-   * Status
-   * Priority
-   * Related_test
-   * Requirement
-   * Runid
-   * Related_ticket
-   * Linked_step
-   * OnlyFolder
-   * Bug
-   * Automatability
-   * CreatedBy.  
+  :::
+  - **Emails**: The email address that will receive updates for the manual test case execution (e.g., *ayesha@automationsolutionz.com*). 
+  :::note
+  Multiple email addresses can also be selected.
 
-4. Click and search **Test cases**.  
-   **Search Criteria** will show the selected **Test Case**.  
-   **Estimated Time** will appear below the **Search Criteria**.  
-   
-   > **Estimated Time**: *Estimated time* refers to the projected duration or duration range assigned for completing a testing task or set of tasks.  
-   Showing *Estimated Time* is necessary to manage project schedules, allocate resources effectively, and provide stakeholders with a timeline for completion and delivery.
+  :::
+  - **Groups**: The group used to categorize the manual test case execution (e.g., *Default Group*).
+  - **Version**: The selected version or build for the manual test case execution (e.g., *New Test Version*), with an option to add a new 
+    version.
+  - **Milestone**: The selected milestone for the manual test case execution (e.g., *Test Milestone*), with an option to add a new     milestone.
+  - **Objective**: The objective of a manual test case can be chosen from a predefined list or defined as a custom objective (e.g., *Performance test*).
+  - **Browser**: A set of browser icons is provided to select the browser for manual test case execution, with *Chrome* currently active.
+  - **Mobile**: Options are available to select *Android*, *iOS*, or *iOS Simulator* for manual test case execution on devices.
+  - **External Service**: Displays the selected external service or webhook configured for notifications or integrations (e.g., *zeuz-qa-webhook*).
+  :::note
+  Multiple external services can also be selected for execution.
 
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/search-test-case.png)
+  :::
 
-5. Fill up the information of the **Deployment** tab like:
-   * Assign testers,
-   * Send report to,
-   * Milestone,
-   * Run objective,
-   * Version,
-   * Platform (Browser, Mobile).  
-   > **Assign testers**: *Assign testers* refers to the process of allocating individuals or teams to evaluate and assess the functionality, quality, and performance of a software or product.   
-    Selecting and assigning testers are necessary to ensure the right expertise and skills are allocated to perform comprehensive and reliable testing, improving the quality of the software product.  
-    > **Send report to**: *Send report to* refers to the action of forwarding a documented summary of test results, findings, and recommendations to relevant stakeholders or designated recipients for review and action.  
-    Selecting the appropriate recipents for the test report is necessary to ensure that the relevant stakeholders receive the information they need to make informed decisions and take appropriate actions based on the test results.  
-    > **Milestone**: A *Milestone* represents a significant point or achievement in the testing process, marking the completion of a specific set of tasks or indicating progress towards project goals.  
-    The purpose of selecting *Milestones* is to track and measure progress, identify key achievements, and ensure that testing aligns with project goals and timelines.  
-    > **Run Objective**: The *Run Objective* refers to the specific goal or purpose of executing a test case or test suite, often aimed at uncovering defects, validating functionality, or assessing system performance.  
-    By selecting a *Run Objective* in software testing, it provides a clear focus and direction for testers, guiding their efforts towards specific testing goals and helping them prioritize their activities effectively.  
-    > **Version**: A *Version* refers to a specific release or iteration of a software product, typically identified by a unique number or identifier, which may contain bug fixes, feature enhancements, or other modifications.  
-    Selecting a *Version* is necessary to ensure that the test cases are executed on the specific software release or iteration being tested, maintaining consistency and accuracy in the testing process.
-    > **Platform**: A *Platform* refers to the combination of hardware, operating system, and software dependencies on which the softwrae application is deployed and tested.  
-    Selecting *Platform* is necessary to validate the software's compatibility, functionality, and performance across different hardware, operating system, and software configurations.
+- To remove any **Testers**, **Emails**, or **External Services**, click the **Cross(X)** icon.
 
-6. Multiple of **Assign testers** and **Send report to** can also be selected.    
-    > Multiple of *Assign testers* and *Send report to* options are selected to distribute testing responsibilities among a diverse team and ensure effective communication and collaboration among various stakeholders for comprehensive testing and informed decision-making.  
+  ![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/basic-manual.png)
 
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/deploy-info.png)
+### Advanced tab details
+- The **Advanced tab** in a test execution configuration provides options that allow the tester to adjust how the manual or automated execution will behave.
+- The elements are as follows:  
+  - **Step Duration Timeout**: An optional setting that allows a timeout to be applied for each test step.
+  - **Take Screenshot**: When enabled, a screenshot will be captured during the manual test case execution.
+  - **Notify External Services Only on Fail**: External services will be notified only if the manual test case execution fails.
+  - **Email Only on Fail**: Sends email notifications only when the manual test case execution fails.
+  - **Run Pre-Requisites**: Allows any defined pre-requisite steps to run before the manual test case execution.
+  - **Upload Logs Only on Fail**: Uploads execution logs only if the manual test case execution fails.
+  - **Resolution**: Two fields for defining a custom screen resolution (width x height). Both values are set to **0**, indicating no custom 
+  resolution is applied.
+  - **Expected schedule**: Allows selecting the planned start and end date for the manual test case execution. The date shown is **2025-11-16** for both the start and end. 
+  - **Loop**: Defines how many times the manual test case execution should repeat. This value is set to **1**, meaning a single run.
+  - **Rerun an existing deployment**: A search field that allows selecting a previous deployment by objective or run ID to rerun.
 
-7. To remove any **Assign testers** and **Send report to**, click on the **Cross sign(X)**.  
+  ![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/advanced-manual.png)
 
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/cross-sign.png)
+### Execute and deploy manual test cases
+- Click the **Run** button.
+- It will redirect to the **Execution Details** page.
+- Click the **Execute** button.
+- Write **Comments** for each step, if required.
+- Click to change the **Status**.
+- Click the **Submit** button.
+- Click **Results** and verify whether the test case has been deployed.
 
-8. Click on the **Run** button.  
-   > *Run* button initiates the execution of test cases or test suites, triggering the software to perform the specified actions and produce results for analysis and verification.
+![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/execution-manual.png)
+ 
+![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/test-execution.png)
 
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/run-button.png)
+![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/manual-results.png)
 
-9. Select the **Manual machine**.  
-   > A *Manual Machine* refers to a physical device or computer system that is operated and controlled manually by a human tester to perform testing activities and evaluate software functionality.  
-   The function of *Manual Machine* is to simulate user interactions, perform manual tests, and assess software behaviour, aiding in the identification of defects and validation of system functionality.
-10. Click on the **Deploy** button.  
-    > *Deploy* button initiate the process of deploying the tested software or application to a specific environment or production environment for wider use or release.
+## FAQs / Troubleshooting
+### FAQs
 
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/manual-deploy.png)
+<details>
+<summary>What does deploying a manual test case mean?</summary>
 
-11. Go to the **Results** page and click on the **Run ID** of the deployed test case.  
-    > The *Results* page shows the pass or fail status, along with details of executed steps, expected results, actual results, defects, and additional observations.  
-    > *Run ID* refers to a unique identifier or label assigned to a specific test run or test execution, enabling traceability and identification of a particular test instance.
+Deploying a manual test case means making the test case ready for execution in a specific version, build, or environment. It links the test case to the selected version or environment so it can be executed systematically.
 
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/run-id.png)
+</details>
 
-12. Go to the **Execution Details** page and click on the **Execute** button.  
-    > *Execution Details* page provides comprehensive information about the execution of a specific test case, including test steps, results, logs, screenshots, and any associated artifacts.  
-    > The function of *Execute* button is to initiate the execution of a specific test case or a selected set of test cases, allowing the tester to observe the results and validate the behaviour of the software.
+<details>
+<summary>Can I execute a test case without deploying it first?</summary>
 
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/execute-button.png)
+No, deployment is required to ensure the test case is available in the selected version and environment.
 
-13. Write the **Comments** for every steps (if it is required).
-14. Click to change the **Status**.
-15. Click on the **Submit** button.  
-    > The function of *Comments* is to provide additional information, insights, or clarifications related to the test case execution or any specific observations made during the testing process.  
-    > The function of *Status* is to indicate the outcome or progress of a test case, whether it is passed, failed, in progress, or requires attention.  
-    > The function of *Submit* button is to finalize and send the completed test case or test results for further analysis, review, or documentation.
+</details>
+
+<details>
+<summary>How do I select the environment for execution?</summary>
+
+You can select the environment for execution by choosing the desired node listed under the **Node** section. The selected node specifies the machine on which the test case will run.
+
+</details>
+
+<details>
+<summary>Can a test case be executed multiple times?</summary> 
+
+Yes, a test case can be executed multiple times. This is controlled by the **Loop** field, which specifies the number of repetitions for the test case.
+
+</details>
+
+<details>
+<summary>What happens if the test case fails during execution?</summary>
+
+The failure is logged, and you can add comments or attach evidence for further review.
+
+</details>
+
+### Troubleshooting
+- **Test case is not visible in the execution list**: Ensure that the test case is deployed to the correct version and environment, and verify permissions if applicable.
+- **Execution button is disabled**: Verify that the test case has been deployed and a valid environment is selected.
+- **Execution updates are not received**: Confirm that the correct notification settings or tester assignments are configured.
+- **Comments or results cannot be submitted**: Ensure that the user has proper permissions and the test case is correctly deployed.
     
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/submit-button.png)
+## Changelog
 
-16. Click on the **Results** and check whether the test case has been deployed or not.  
-    > The *Results* show whether the software functions correctly and meets the expected requirements , helping to identify any potential defects or issues.
+- New UI has been introduced [[20250518](/blog/zeuz-platform-20250518)] 
 
-![](/img/how-tos/how-to-deploy-and-execute-manual-test-cases/results-button.png)
+## Related Topics
+
+- [Create test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-test-cases/)
+- [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
+- [Run tests](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-tests/)
+
+---
