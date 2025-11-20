@@ -3,79 +3,178 @@ id: runtime-parameters
 title: Runtime Parameters
 ---
 
-### What is Runtime parameters in software testing and why it is necessary to add?
+import MetaCard from '@site/src/components/MetaCard';
 
-In software testing, **Runtime parameters** refer to the values or settings that can be passed to a test cases during its execution or runtime. These parameters are typically used to control the behaviour of the test cases or to customize its execution based on specific requirements.  
+**Runtime Parameters** refer to the values or settings provided at the moment a test case is executed. They allow the tester to supply specific inputs during execution without changing the test case itself, making the run more flexible and adaptable to different scenarios.
 
-They allow testers or users to influence the execution flow of the software and observe how it behaves under different conditions.  
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Medium"
+  lastUpdated="20 Nov, 2025"
+  relatedTopics={["Create test cases", "Run tests", "Debug the test cases"]}
+/>
 
-**Runtime parameters** are added in software testing to make the testing process more flexible and effective. It enhance testing process by allowing testers to control and customize the software's behaviour during testing.  
+### Why it matters / Use Cases:
+- **Test user**: Used to select the specific user account that will be applied during test execution.
+- **Specific server or environment URL**: Used to run the test against a specific server or environment URL.
+- **Client/Tenant selection**: Used to choose the client or tenant for which the test should run.
+- **Specific environment, version, or configuration**: Used to specify a particular deployment version or configuration.
 
-Overall, **Runtime parameters** play a crucial role in enhancing the testing process and ensuring comprehensive software testing.  
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Deployments → Run Tests**.
+- Test cases must exist and be designed to accept parameterized inputs.
+- All runtime parameters should be declared and linked to the relevant test cases.
+- Test cases and parameters should correspond to the software version or build under test.
 
-### Important roles of Runtime parameters
+## Quick-Start
+1. Use the **Search parameters** icon to quickly find specific parameters.
+2. Use the **New Runtime Parameter (+)** icon to add new runtime parameters.
+3. Use the **More (three dots)** icon for additional actions or settings related to runtime parameters. The available options are:  
+   - Copy to clipboard.
+   - Paste from clipboard.
+   - Multi Column.
 
-**Runtime parameters** play important roles in software testing. They enable the configurations of test environment, variation of test data, performance testing, and achieving better test coverage.
+## Features
+### Create a new runtime parameter
+- Click on the "New Runtime Parameter" button.
+- A window named **New Runtime Parameter** will appear.
+- The following information is as follows:  
+  - **Variable Name Field**:  
+    - This field is used to enter the name of the runtime parameter (e.g., *Runtime_Variable*).
+    - The red warning **Variable name cannot be empty** indicates that the name must be provided before saving.
+  - **Options Section**:  
+    - Each option represents a value that the runtime parameter can take during execution.
+    - The "Value" field is displayed and labeled as **Actual Value** (e.g., *First Option*).
+    - If a value needs to be deleted, the **Delete** icon is available on the right side of the "Value" field.
+    - The second field displays a red warning **Value cannot be duplicated**, indicating that each value must be unique.
+    :::note
+    Tag is optional. It is a unique identifier for parameter value (e.g., *tag1*).
 
-**Runtime parameters** also help adapt the software to different environments and aid in debugging and troubleshooting. By adjusting these parameters, testers can control inputs, conditions, and settings during test execution, ensuring comprehensive testing and identification of potential issues.
+    :::
+  - **Add Option Button**:  
+    - The "+ Add Option" button allows the user to add more values for the runtime parameter.
+  - **Action Buttons**:  
+    - **Cancel**: Closes the window without saving.
+    - **Save**: After clicking the "Save" button, the entered inputs are saved.
 
-Overall, **Runtime parameters** enhance the effectiveness and flexibility of software testing processes, enabling testers to validate software behaviour under various scenarios and conditions.
+    ![](/img/how-tos/how-to-add-runtime-parameters/new-runtime.png)
 
-## Steps
+    ![](/img/how-tos/how-to-add-runtime-parameters/parameter-information.png)
+   
+    ![](/img/how-tos/how-to-add-runtime-parameters/incomplete-information.png)
 
-1. From the menu bar, navigate to **Testing** and select the **Run Tests** option.
+### Copy to cilpboard
+- First, click on the "More" button.
+- Next, click on the **Copy to clipboard** option.
+- A window titled **Select Parameters to Copy** will appear.
+- The key components are given below:  
+  - At the top, there is a **Search bar** that allows filtering the list of parameters by name.
+  - On the right side, there are **Select All** and **Deselect All** buttons to quickly manage selections.
+  - The main section shows a **scrollable list of parameters**, each with a checkbox.
+  - In this example, **10 out of 19 parameters** are currently selected. 
+  - The selected parameters include items such as *BILL_ADDRESS_INDEX*, *Client*, *DemoServer*, *Runtime_Variable*, and others.
+  - At the bottom, there are two buttons:  
+    - **Cancel**: Closes the window without copying.
+    - **Copy Selected (10)**: Proceeds to copy the currently selected parameters.
 
-![](/img/how-tos/how-to-add-runtime-parameters/test-run.png)
+    ![](/img/how-tos/how-to-add-runtime-parameters/copy-clipboard.png)
 
-2. Go to the **Run Tests** page.
-   > The *Run Tests* page refers to a dedicated interface or platform where test cases are executed or deployed for the purpose of evaluating software functionality and performance.
+    ![](/img/how-tos/how-to-add-runtime-parameters/select-parameters.png)
 
-![](/img/how-tos/how-to-add-runtime-parameters/run-test-pg.png)
+### Paste from clipboard
+- If you want to copy from one team/project to another one, then click copy to clipboard and then in destination project/team clip paste from clipboard. If there are any conflicting tag and value then there will be a modal showing the conflict. You can change tag name to resolve conflict or you can keep same name to replace value with new value.
+- If a conflict exists, then after clicking the **Paste from clipboard** button, a table called "Merge Conflicts Detected" will appear.
+- The following information appears in the "Merge Conflicts Detected table" as shown below:  
+  - At the top, a warning indicates that the same tag already exists with different values.
+  - A message states that the incoming tag can be renamed to avoid overwriting existing information.
+  - A label shows **1 conflict found**, meaning one parameter has a conflicting tag.
+  - A table is displayed with the following columns:  
+    - **Parameter**: Shows the name of the conflicting parameter.
+    - **Existing Tag**: The tag already present in the system.
+    - **Existing Value**: The value currently saved for that tag.
+    - **New Value**: The value coming from the clipboard.
+    - **Rename Tag To**: A field where the user may enter a new tag name to resolve the conflict.
+  - In this example, the tag is being renamed to **fasfa_new** to avoid overwriting the existing data.
+  - At the bottom, two buttons appear:  
+    - **Cancel**: Closes the window without applying changes.
+    - **Apply Changes**: Saves the updated tag name and resolves the conflict.
+  - If there is no conflict, the runtime parameter will be saved successfully.
+  - If there is something in your clipboard that is not in JSON format, a notification message saying **Invalid JSON format** will appear.
 
-3. Click on the **New Runtime Parameter** option. 
-   > The *New Runtime Parameter* option allows users to define dynamic input values for test cases, enabling flexible and data-driven test execution.
+    ![](/img/how-tos/how-to-add-runtime-parameters/merge-conflicts.png)
 
-![](/img/how-tos/how-to-add-runtime-parameters/run-parameter.png)
+    ![](/img/how-tos/how-to-add-runtime-parameters/successful-parameter.png)
 
-4. Enter the following details:
-   - **Variable Name**
-   - **Tag**
-   - **Actual Value**.
+    ![](/img/how-tos/how-to-add-runtime-parameters/invalid-json.png)
 
-![](/img/how-tos/how-to-add-runtime-parameters/runtime-details.png)
+### Multi column
+- In the context of runtime parameters, the **Multi Column** feature allows a parameter to hold multiple values organized in separate columns. This is useful when a test requires structured input with more than one attribute per entry.
 
-5. If it is necessary to add new values, click the **Add new value** button.
+       ![](/img/how-tos/how-to-add-runtime-parameters/multi-column.png)
 
-![](/img/how-tos/how-to-add-runtime-parameters/add-new-value.png)
+### Edit / Delete parameter
+- If it is necessary to edit a parameter, click the **Edit parameter** icon located on the right side of each runtime parameter.
+- A window to edit a specific variable will appear.
+- The key components available are as follows:  
+  - **Variable Name**: Displays the name of the runtime parameter being edited (`DemoServer`).
+  - **Options Section**:  
+    - **Value Fields**: Each row allows entering a value for the parameter. The first value is set as `https://demo.zeuz.ai`. A second empty field is labeled "Actual Value" for additional input.
+    - **Tag Icon**: Optional; serves as a unique identifier for each parameter value.
+    - **Delete Icon**: Removes the corresponding value row.
+    - **Add Option Button**: Allows adding additional value entries for the parameter.
+  - **Action Buttons**:  
+    - **Cancel**: Closes the window without saving changes.
+    - **Save**: Saves the edited parameter and its values.
+    - **Delete**: Deletes the entire runtime parameter (`DemoServer`) from the system.
 
-6. Click the **Save changes** button to save the required details, which will then be displayed under the **Runtime parameters**.
+    ![](/img/how-tos/how-to-add-runtime-parameters/edit-parameter.png)
 
-![](/img/how-tos/how-to-add-runtime-parameters/save-runtime.png)
 
-![](/img/how-tos/how-to-add-runtime-parameters/deploy-details.png)
+## FAQs / Troubleshooting
 
-7. To edit a specific **Runtime parameter**, click the **Edit** button on the right side, make the necessary changes, and then click the **Save changes** button to save the updated details.
+<details>
+<summary>What are runtime parameters?</summary>
 
-![](/img/how-tos/how-to-add-runtime-parameters/edit-runtime.png)
+Runtime parameters are user-defined inputs that allow a test case to run with dynamic values without modifying the test steps.
 
-![](/img/how-tos/how-to-add-runtime-parameters/updated-runtime.png)
-  
-8. To delete a specific value or tag under a particular runtime parameter, click the **Delete** button on the right side.
+</details>
 
-![](/img/how-tos/how-to-add-runtime-parameters/delete-value.png)
+<details>
+<summary>Why are runtime parameters important?</summary>
 
-9. If it is necessary to delete a specific **Runtime parameter**, click on the **Delete** icon located at the top of that **Runtime parameter**. The selected **Runtime parameter** will then be deleted.
-     
-![](/img/how-tos/how-to-add-runtime-parameters/delete-runtime.png)
+They ensure flexibility by allowing the same test to execute across different environments, users, or data sets.
 
-10. If it is necessary to export or import any **Runtime parameter**, click the **Export Import Runtime Parameters** button.
+</details>
 
-![](/img/how-tos/how-to-add-runtime-parameters/export-runtime.png)
+<details>
+<summary>Why is a parameter not appearing during test execution?</summary>
 
-11. After clicking the **Export Import Runtime Parameters** button, the following two options will be available:
-- **Copy to clipboard**
-- **Paste from clipboard**.
+This usually occurs when the parameter has not been linked to the test, or a required value is missing.
 
-![](/img/how-tos/how-to-add-runtime-parameters/copy-runtime.png)
+</details>
+
+<details>
+<summary>Why does a merge conflict occur while copying parameters?</summary>
+
+Conflicts appear when a parameter with the same name already exists, and the system requires the user to choose which value to keep.
+
+</details>
+
+<details>
+<summary>Why is the test failing due to parameter values?</summary>
+
+Failures typically happen when incorrect or outdated values are entered, or when values are not aligned with the selected environment.
+
+</details>
+
+## Changelog
+
+- New UI has been introduced [[20250518](/blog/zeuz-platform-20250518/)]
+
+## Related Topics
+
+- [Create test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-test-cases/)
+- [Run tests](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-tests/)
+- [Debug the test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/debug-test-cases/)
 
 ---
