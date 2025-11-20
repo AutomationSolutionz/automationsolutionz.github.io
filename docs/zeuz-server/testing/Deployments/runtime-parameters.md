@@ -128,7 +128,8 @@ import MetaCard from '@site/src/components/MetaCard';
     - **Delete**: Deletes the entire runtime parameter (`DemoServer`) from the system.
 
     ![](/img/how-tos/how-to-add-runtime-parameters/edit-parameter.png)
-
+    
+    ![](/img/how-tos/how-to-add-runtime-parameters/updated-parameter.png)
 
 ## FAQs / Troubleshooting
 
