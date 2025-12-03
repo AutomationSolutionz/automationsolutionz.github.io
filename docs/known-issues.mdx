@@ -25,20 +25,33 @@ import IssueItem from '@site/src/components/IssueItem';
 
 <IssueItem fixedIn="20250903" title="Testing > Test Case > Edit > Discussion, Follow and Link tabs got swapped"></IssueItem>
 
+<IssueItem fixedIn="202511" title="Testing > Configure > Scheduler > Scheduled runs are not triggered at the configured time">
+
+    When a schedule is set to run at a configured time, the execution is not triggered. 
+    At the scheduled time, the system displays "No run found" and the run count remains at 0.
+
+</IssueItem>
+
+<IssueItem fixedIn="202511" title="Admin > Users > Manage groups is undergoing overhaul">
+    
+    This feature is being re-implemented with fine grained access control to allow
+    admins and users to control which group of users can see and interact with what
+    in ZeuZ.
+
+</IssueItem>
+
+<IssueItem fixedIn="202511" title="Testing > Deployments > History > RunID > Tour is Showing Repeatedly, Preference is not Being Saved">
+
+    No API call is made to save the preference that the tour has already been shown.
+
+</IssueItem>
+
 ## Not fixed
 
 <IssueItem eta="Sep, 2025" title="Node > Auto kill existing node processes on startup is not working">
 
     Launching ZeuZ Node used to kill existing node processes that were run
     from the same directory. This is currently not working as expected.
-
-</IssueItem>
-
-<IssueItem eta="Oct, 2025" title="Admin > Users > Manage groups is undergoing overhaul">
-
-    This feature is being re-implemented with fine grained access control to allow
-    admins and users to control which group of users can see and interact with what
-    in ZeuZ. Stay tuned for an update in one of the changelogs soon.
 
 </IssueItem>
 
@@ -82,5 +95,26 @@ import IssueItem from '@site/src/components/IssueItem';
     to you, directly from the server VM terminal. This approach takes backup of everything
     including the database, attachments, data store backups, logs and screen captures and
     everything else.
+
+</IssueItem>
+
+<IssueItem eta="Nov, 2025" title="Testing > Data Store > Data Store > The Column function is not working in the Data Store READ action">
+
+    When the system tries to read a specific column from the stored data, 
+    it does not return the expected result.
+
+</IssueItem>
+
+<IssueItem eta="Nov, 2025" title="Testing > Test Case > Create / Edit > When returning from the test action history, the Disable option becomes enabled again">
+
+     When navigating back from the test action history, 
+     the Disable option automatically switches back to an enabled state.
+
+</IssueItem>
+
+<IssueItem eta="Nov, 2025" title="Testing > Test Case > Attachments > Dragging and dropping an attachment from Step Attachment results in a file name error">
+
+     When a user drags and drops a file from the Step Attachment section, 
+     the system displays a file name error.
 
 </IssueItem>
