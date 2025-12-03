@@ -15,6 +15,9 @@ This release introduces three major new features that significantly enhance secu
 2. ZeuZ Secrets – A secure, client-side encrypted vault for managing sensitive credentials, ensuring zero exposure of secret data.
 3. Revamped Data Store – A completely redesigned ReactJS interface offering faster performance, unified data management, and stronger project-level data isolation.
 
+<!-- truncate -->
+
+
 # 1. Enhanced Group Permissions & History Management
 
 ## Overview

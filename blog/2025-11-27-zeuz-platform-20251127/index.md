@@ -19,6 +19,8 @@ This release introduces seven major new features that significantly enhance user
 6. Integrated Installer – A one-click installation system for managing essential development tools and prerequisites directly within the application.
 7. Groups – A comprehensive group-based permission system with centralized access control and flexible permission management.
 
+<!-- truncate -->
+
 
 ## 🐛 Bug Fixes
 
@@ -32,6 +34,12 @@ This release introduces seven major new features that significantly enhance user
 3. Ctrl+click in test search and datastore will open in a new tab. 
 4. New history page will contain Runtime param info.
 5. Test case read write segregation in access control
+
+## 🩹 Patches
+
+1. Editing data from Datastore UI bug is fixed (patch-1)
+2. Export Test Case issue is fixed (patch-2)
+3. Set all the step metadata while importing test case properly. (patch-3)
 
 
 # 1. New Test Case Create Page
