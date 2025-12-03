@@ -38,6 +38,12 @@
 <li>New history page will contain Runtime param info.</li>
 <li>Test case read write segregation in access control</li>
 </ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-patches">🩹 Patches<a href="https://docs.zeuz.ai/blog/zeuz-platform-202511/#-patches" class="hash-link" aria-label="Direct link to 🩹 Patches" title="Direct link to 🩹 Patches">​</a></h2>
+<ol>
+<li>Editing data from Datastore UI bug is fixed (patch-1)</li>
+<li>Export Test Case issue is fixed (patch-2)</li>
+<li>Set all the step metadata while importing test case properly. (patch-3)</li>
+</ol>
 <h1>1. New Test Case Create Page</h1>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="https://docs.zeuz.ai/blog/zeuz-platform-202511/#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
 <p>The Test Case Create Page has received a major update. The redesigned UI is more polished, user-friendly, and intuitive. You can now switch between two modes: the improved <strong>Simple Mode</strong> and the new <strong>zAI Mode</strong>.<br>
