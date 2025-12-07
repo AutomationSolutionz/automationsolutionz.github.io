@@ -3,66 +3,97 @@ id: rearrange-test-cases-in-a-test-set
 title: Rearrangement of test cases in a Test Set
 ---
 
-## Description
+import MetaCard from '@site/src/components/MetaCard';
 
-### What is the meaning of rearranging test cases in a test set?
+**Rearrangement of test cases in a test set** refers to the process of changing the order in which individual
+test cases are positioned within that set. This allows a tester to place high-priority or dependent tests
+earlier, improving clarity and execution flow. In general, rearranging ensures that the test set follows a
+logical sequence, making the overall testing process more efficient and easier to manage.
 
-Rearranging test cases in a test set refers to the process of reorganizing the order or sequence of test cases within a test suite or test plan. This involves adjusting the placement of test cases based on factors such as execution priority, dependencies, optimization, test coverage, test flow, and maintenance requirements.
+<MetaCard
+  availableFrom="20250712"
+  difficulty="🟢 Easy"
+  lastUpdated="04 Dec, 2025"
+  relatedTopics={["Test set"]}
+/>
 
-The purpose is to improve efficiency, effectiveness, and organization of the testing process and ensure that tests are executed in the most logical and impactful manner.
+### Why it matters / Use Cases:
+- **Prioritized Test Execution**: Ensures that high-priority or critical test cases are executed first for faster issue detection.
+- **Dependency Alignment**: Improves execution efficiency by placing dependent test cases in the correct sequence.
+- **Logical Organization**: Enhances clarity by organizing test cases in a logical and easy-to-follow order.
 
-### Why is it necessary to rearrange test cases in a test set?
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Deployments → Set**.
+- The test set must already be created and accessible to the tester.
+- Test case dependencies and priorities should be identified before rearranging.
 
-Rearranging test cases in a test set is necessary for several reasons:
+## Quick-Start
+1. Navigate to the **Test Set** page.
+2. Click the **Edit Test Case Order** button.
 
-* **Execution Priority**: Test cases may need to be rearranged to establish the order in which they should be executed, prioritizing critical or high-risk scenarios first for more efficient testing.
+## Features
+### Reorder test cases
+- Navigate to the **Set** page.
+- Click the specific **Test Set** to reorder its test cases.
 
-* **Dependencies**: Some test cases depend on the successful execution of prerequisite test cases or certain system conditions, requiring rearrangement to ensure dependencies are met.
+![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/specific-set.png)
 
-* **Optimization**: Rearranging test cases allows for optimizing test execution by grouping related or similar test cases together, reducing setup time and maximizing efficiency.
+### Edit Test Case Order
+- Click the "Edit Test Case Order" button on the **Test Set** page.
 
-* **Test Coverage**: By strategically organizing test cases, it becomes easier to track and ensure adequate coverage of various functionalities, features, or requirements during testing.
+![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/order-button.png)
 
-* **Test Flow**: Rearranging test cases can help establish a logical flow, guiding testers through the testing testing process in a more systematic and structured manner.
+### Drag and drop test cases
+- Navigate to the **Test Set Reorder** page.
+- Drag and drop the required test case to the desired position.
+- After placing the test cases in the desired positions, click the **SAVE** button.
 
-* **Maintenance**: As testing processess and new test cases are added or existing ones are modified, rearranging test cases helps maintain an organized and up-to-date test set.
+![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/drag-drop.png)
 
-Overall, rearranging test cases in a test set enhances test efficiency, effectiveness, and maintanability, leading to better coverage and reliable test results.
+## FAQs / Troubleshooting
+### FAQs
 
-### Importance of rearranging test cases in a test set
+<details>
+<summary>How can I reorder test cases in a Test Set?</summary>
 
-Rearranging test cases in a set is important for optimizing test execution, managing dependencies, isolating failures, prioritizing critical areas, improving test coverage, and maintaining the test suite.
+Click the **Edit Test Case Order** button and use drag-and-drop to place test cases in the desired sequence, then click **Save**.
 
-It improves efficiency by minimizing setup and teardown efforts, ensures proper sequencing of dependent test cases, and aids in troubleshooting by identifying patterns in failures. By prioritizing high-risk areas and intermixing test cases, testers can mitigate risks and achieve better coverage. Regularly reviewing and rearranging test cases helps keep the test suite up-to-date and relevant.
+</details>
 
-Overall, rearranging test cases enhances the effectiveness and efficiency of software testing processes.
+<details>
+<summary>Can I reorder test cases across different Test Sets?</summary>
 
+No, test case reordering is only allowed within the same Test Set.
 
-## Steps
+</details>
 
-1. From the **Menu bar**, go to **Testing** and then select the **Set** option.
+<details>
+<summary>Will reordering affect previous test executions?</summary>
 
-![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/set-test.png)
+No, changing the order only affects future executions in that Test Set.
 
-2. Go to the **Test Set** page.
-3. Click on the specific **Test Set** to rearrange its test cases.
+</details>
 
-![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/test-set.png)
+<details>
+<summary>Is there a way to save a default test case order for all Test Sets?</summary>
 
-4. Click on the **Edit Test Case Order** button.
-   > The *Edit Test Case Order* button allows users to rearrange the sequence of test cases within a test set.
+No, ordering is specific to each Test Set and must be managed individually.
 
-![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/edit-order.png)
+</details>
 
-5. Go to the **Test Set Reorder** page.
+### Troubleshooting
+- **Drag-and-drop not working**: Ensure that the browser supports the feature and that the page is fully loaded.
+- **Changes not saving**: Click **Save** and confirm you have edit permissions.
+- **Positions not updating**: Refresh the page or clear browser cache.
+- **Edit button inaccessible**: Check your role/permissions and Test Set status.
+- **Save errors**: Ensure that no test case is part of an ongoing execution, and contact support if the issue continues.
 
-6. Drag and drop the required **Test Case** in a required position.
-   > Dragging and dropping the required *Test Cases* in a specific position is necessary to precisely organize and control the execution order of test cases within a test set, ensuring a customized and targeted testing approach.
+## Changelog
 
-![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/set-reorder.png)
+- Adopted the new card view on the Test Set page [[20250712](/blog/zeuz-platform-20250712/)]
 
-7. Click on the **SAVE** button.
+## Related Topics
 
-![](/img/how-tos/how-to-rearrange-test-cases-in-a-set/save-reorder.png)
+- [Test Set](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/test-set/)
 
 ---
