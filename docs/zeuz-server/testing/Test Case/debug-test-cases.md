@@ -1,47 +1,125 @@
 ---
 id: debug-test-cases
-title: Debug the Test Cases
+title: Debug Test Cases
 ---
 
-### What is Debugging in automated test cases and Why is it necessary?
+import MetaCard from '@site/src/components/MetaCard';
 
-Debugging in automated test cases is the process of identifying, anlyzing, and removing errors from software applications using automated testing tools.
+**Debug Test Case** represents a dedicated action and steps for running a test case in debug mode. It allows the user to execute a test step by step in order to closely observe each action, input, and system response. This helps in identifying the exact point where a test fails or behaves incorrectly.
 
-Debugging is necessary because it helps detect and correct defects early in the development cycle, ensuring the system functions as expected.
+<MetaCard
+  availableFrom="20250712"
+  difficulty="🟢 Easy"
+  lastUpdated="14 Dec, 2025"
+  relatedTopics={["Create test case"]}
+/>
 
-Debugging is crucial for writing clean, efficient code, minimizing errors, and delivering high-quality software. Every successful application requires thorough debugging to achieve reliable and consistent performance.
+### Why it matters / Use Cases:
 
-## Steps
+- **Step-by-Step Execution**: It runs the test case step by step, or action by action, to closely observe its execution.
+- **Avoid Test Case Restarts by Keeping the Application Running**: Keep the application in a running state so that work can continue without having to restart the test case from the beginning after each modification.
+- **Improved Test Reliability**: Allows careful observation of test execution so that errors can be corrected 
+before regular runs.
+- **Efficient Troubleshooting**: Reduces the time spent investigating failures by running tests step by step.
 
-1. Navigate to the **View/Edit Test Case** page of the required test case and click the **Debug test cases** button.
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Test Case → Create / Edit**.
+- A test case must be properly defined before debugging.
+- The application under test should be running and accessible.
+- The necessary environment, test data, and configurations must be prepared.
+- Any debug settings, such as breakpoints or step-by-step execution options, must be configured before starting the debug.
 
-   > The *Debug test cases* button in test automation tools like ZeuZ allows users to execute a test case step-by-step, inspect the values of variables, monitor test behavior, and identify issues at specific stages of execution. It helps in quickly detecting and fixing errors without running the entire test flow.  
+## Quick-Start
+1. Open a test case.
+2. Hit "Debug Test Case" button.
+3. Select the steps or actions you would like to run/debug.
+4. Select node, browsers and runtime parameters.
+5. Hit "Debug" button.
 
-![](/img/how-tos/how-to-debug-test-cases/tc-debug-icon.png)
+## Features
+### Click the "Debug Test Case" button
+- Open a test case from the **Create Test Case** page.
+- After selecting the required test case, click the **EDIT** button.
+- Next, click the **Debug Test Case** button.
 
-2. Navigate to the **Debug Test Case** page.  
-3. Fill in the following information:
-   - **Select all steps**
-   - **Node**
-   - **Preset**
-   - **Browser (Google Chrome, Firefox, Microsoft Edge Chromium, Safari, Chrome Headless, Firefox Headless, Edge Chromium Headless, Android Chrome, iOS Safari)**
-   - **Mobile (Android, iOS, iOS Simulator)**
-   - **Run Time Parameters (if required)**
+![](/img/how-tos/how-to-debug-test-cases/demo-test.png)
 
-![](/img/how-tos/how-to-debug-test-cases/select-machine-icon.png)
+![](/img/how-tos/how-to-debug-test-cases/edit-button.png)
 
-4. There are two types of step selection:
-   - **Select all steps** of the test case.
-   - Select the **Required steps** that need to be debugged. 
+![](/img/how-tos/how-to-debug-test-cases/debug-test.png)
 
-5. Click to **Select All Steps** for the selection of all steps.
+### Debug test case page
+- Navigate to the **Debug Test Case** page.
+- Fill in the following information:  
+  - Select all steps
+  - Node
+  - Preset
+  - Browser (Google Chrome, Firefox, Microsoft Edge Chromium, Safari, Chrome Headless, Firefox Headless, Edge Chromium Headless, Android Chrome, iOS Safari)
+  - Mobile (Android, iOS, iOS Simulator)
+  - Run Time Parameters (if required)
+  - Variables (if required).
 
-![](/img/how-tos/how-to-debug-test-cases/select-all-steps.png)
+![](/img/how-tos/how-to-debug-test-cases/debug-steps.png)
 
-6. To debug the selected steps, click to select the required steps.
+### Selection type
+- Two types of selection are available:  
+  - **Select all steps**: It selects all steps of the test case for debugging.
+  - **Select specific steps**: It selects the specific steps of the test case that needs to be debugged.
+- Click **Select all steps** for the selection of all steps.
+- To debug specific steps, click to select the required ones.
 
-![](/img/how-tos/how-to-debug-test-cases/selected-steps.png)
+![](/img/how-tos/how-to-debug-test-cases/all-steps.png)
 
-7. Click on the **Debug** button.  
+![](/img/how-tos/how-to-debug-test-cases/specific-steps.png)
 
-![](/img/how-tos/how-to-debug-test-cases/debug-button.png)
+### Debug test cases
+- To debug test cases, click the **Debug** button available below.
+
+![](/img/how-tos/how-to-debug-test-cases/debug-test-case.png)
+
+## FAQs / Troubleshooting
+
+<details>
+<summary>Why can't I see all steps when debugging?</summary>
+
+Ensure that the test case is properly defined and all steps are added. Only defined steps appear for debugging.
+
+</details>
+
+<details>
+<summary>Why does the debug stop unexpectedly?</summary>
+
+Check that the required environment, data, and configurations are ready. Any missing dependency may interrupt execution.
+
+</details>
+
+<details>
+<summary>Can I debug only specific steps of a test case?</summary>
+
+Yes, select the specific steps before clicking the **Debug** button. This allows focused step-by-step observation.
+
+</details>
+
+<details>
+<summary>How do I maintain application state during debugging?</summary>
+
+Keep the application running to avoid restarting the test case after each modification.
+
+</details>
+
+<details>
+<summary>Can I observe variable values during debugging?</summary>
+
+Yes, use the step-by-step mode to inspect data and variable states at each step.
+
+</details>
+
+## Changelog
+
+- New UI has been introduced [[20250712](/blog/zeuz-platform-20250712/)]
+
+## Related Topics
+
+- [Create test case](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-test-cases/)
+
+---
