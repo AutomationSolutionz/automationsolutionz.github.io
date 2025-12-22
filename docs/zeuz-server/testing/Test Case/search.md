@@ -72,3 +72,93 @@ If the filter criteria is not defined, a notification message appears stating, "
 ![](/img/search/filter-preset.png)
 
 ![](/img/search/new-filter.png)
+
+### Manage prerequisites
+- At the top, there is a purple button labeled **MANAGE PREREQUISITES**, which opens the feature for handling prerequisite test cases.
+- First, select at least one test case.
+- After selecting the test cases, click on the **Manage Prerequisites** option.
+- Then, the **Manage Prerequisites** window opens, providing a field to search for test cases. Users can enter keywords to find specific test cases to link as prerequisites.
+- On the right is a red **Unlink Prerequisites** button, which allows users to remove previously linked prerequisite test cases.
+
+![](/img/search/select-prerequisites.png)
+
+![](/img/search/manage-prerequisites.png)
+
+### More option
+After clicking the **More** option, the following options become available:  
+- **Download csv of description and expectation**
+- **Move to folder**
+- **Move to feature**
+- **Batch Update**
+- **Steps**
+- **Actions**
+- **Actions New**
+- **Delete Test Cases**
+- **Sample Test Cases**
+- **Export Selected Test Cases**
+- **Import Testcases**
+- **Create Test Cases from JIRA**.
+
+![](/img/search/more-menu.png)
+
+### Create a folder
+- At the top of the test case search page, a plus icon with the tooltip **Create top level Folder** allows users to create a new top-level folder in the hierarchy.
+- The plus sign next to folders suggests that folders can be expanded to view subfolders if any exist.
+
+![](/img/search/folder-level.png)
+
+### Create a feature
+- At the top, a button labeled **Create top level Feature**, represented by a folder icon with a plus sign, allows users to create a new top-level feature.
+- The plus icon next to a feature is used to expand the folder when subfolders are present.
+
+![](/img/search/feature-level.png)
+
+## FAQs / Troubleshooting
+
+<details>
+<summary>How can I search for a specific test case?</summary>
+
+Enter keywords such as test case ID, title, folder name, feature, or priority in the search field at the top of the test case list. Matching results will be displayed instantly.
+
+</details>
+
+<details>
+<summary>What should I do if no results appear?</summary>
+
+Check that the keywords are correct, the test case exists, and that at least one test case is present in the list.
+
+</details>
+
+<details>
+<summary>Can I search using multiple criteria?</summary>
+
+Yes, you can search using multiple criteria. The search feature allows combining keywords such as test case ID, title, folder, feature, or priority.
+
+</details>
+
+<details>
+<summary>Can I search for test cases across all projects?</summary>
+
+No, the search feature only works within the selected project or test case repository. Switch projects if you need to search elsewhere.
+
+</details>
+
+<details>
+<summary>The search is slow or unresponsive. What should I do?</summary>
+
+Ensure that your project contains an indexed list of test cases, and use more specific keywords or apply filters to speed up the search.
+
+</details>
+
+## Changelog
+
+- New UI has been introduced [[20250712](/blog/zeuz-platform-20250712/)]
+
+## Related Topics
+
+- [Create test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-test-cases/)
+- [Export and import test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/export-and-import-test-cases/)
+- [Create folders and features](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-folders-and-features/)
+- [Move test cases to folder and feature](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/move-test-cases-to-folder-and-feature/)
+
+---
