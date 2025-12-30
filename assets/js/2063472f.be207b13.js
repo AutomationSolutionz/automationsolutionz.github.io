@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkzeuz_docs=globalThis.webpackChunkzeuz_docs||[]).push([[3215],{17646(e){e.exports=JSON.parse('{"tags":[{"label":"Changelog","permalink":"/blog/tags/changelog","description":"ZeuZ platform changelogs","count":7}]}')}}]);
