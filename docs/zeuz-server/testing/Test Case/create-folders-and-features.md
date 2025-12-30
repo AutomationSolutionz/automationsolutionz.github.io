@@ -3,65 +3,161 @@ id: create-folders-and-features
 title: Create Folders and Features
 ---
 
-### What is a folder?
+import MetaCard from '@site/src/components/MetaCard';
 
-Similar to folders in your operating system (windows, mac, linux), **Zeuz Folder** is an organizational field provided in ZeuZ so that you can organize their test cases. Users can also create nested folders. You would usually organize your test cases in a folder structure:
+The **Folders** panel is used for organizing test cases. It displays a list of top-level folders, each representing a logical grouping of related test cases. The **plus (+)** icon next to a folder indicates it can be expanded to view or add sub folders, supporting a hierarchial organization of test cases.  
+At the top of the panel, the **Create top level Folder** option is available. This option is used to add a new main folder, enabling users to define a new category for organizing test cases within the project.
 
+The **Feature** panel represents a top-level functionality or module of a project that groups related test cases, helping to organize and manage testing for specific areas of the application. The **plus (+)** icon next to a feature allows users to expand it to view or add sub features.  
+The **Create top level Feature** button lets users add a new main feature to organize test cases under a new functionality.
 
-Regression
-* Desktop
-* API
-* Mobile
-* Web
+<MetaCard
+  availableFrom="20250712"
+  difficulty="🟢 Easy"
+  lastUpdated="23 Dec, 2025"
+  relatedTopics={["Create test cases", "Move test cases to folder and feature", "Debug test cases"]}
+/>
 
+### Why it matters / Use Cases:
+- **Organize Test Cases**: Folders and features group related test cases for easier navigation and management.
+- **Hierarchial Structure**: Folders support subfolders, allowing clear and logical structuring of test cases.
+- **Focused Testing**: Features group test cases by specific functionality or module, ensuring targeted test coverage.
+- **Maintenance and Bulk Operations**: Folders simplify updates, moves, and exports of multiple test cases at once.
+- **Tracking and Reporting**: Features enable easier tracking of test results and reporting per functionality.
 
-### What is a feature?
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Test Case → Search**.
+- Plan a logical hierarchy for folders and define features representing specific functionalities.
+- Use clear and consistent names for folders and features to reflect their purpose.
+- Identify test cases that will be linked to features or organized within folders for better management.
 
-**Features** are similar to folders but they're provided as a separate entity so that you can organize your test cases according to different features/modules of the application under test. Examples include: Login module, Dashboard module, etc. Sub-features can also be created in a nested fashion.
+## Quick-Start
+1. To create a folder, click the **Create top level Folder** button available under the **Folders** option.
+2. Similarly, to create a feature, click the **Create top level feature** button available under the **Features** option.
 
-### Why "Folder" and "Feature" are necessary for test cases in software testing?
+## Features
+### Create top level folder
+- Click the **Create top level Folder** button to create a new folder.
+- Click to enter the **Name of the new folder** (e.g., *Test new folder*).
+- Click on the **OK** button.
 
-**Folders** and **Features** are necessary for test cases in software testing to provide organization, context, and better management.
+![](/img/how-tos/how-to-create-folders-and-features/top-levelfolder.png)
 
-**Folders** help categorize and structure test cases, making it easier to navigate, locate, and trace them based on specific criteria such as modules or test types.
+![](/img/how-tos/how-to-create-folders-and-features/new-folder.png)
 
-**Features** associate test cases with relevant functionalities, ensuring a clear understanding of what is being tested. They contribute to comprehensive test coverage, prioritization of critical areas, and efficient maintenance of test cases as the software evolves.
+### Create top level feature
+- Click the **Create top level Feature** button to create a new feature.
+- Click to enter the **Name of the new feature** (e.g., *Test new feature*).
+- Click on the **OK** button.
 
-Overall, **Folders** and **Features** enhance the organization, effectiveness, and maintainability of test cases in the testing process.
+![](/img/how-tos/how-to-create-folders-and-features/top-levelfeature.png)
 
-## Steps
+![](/img/how-tos/how-to-create-folders-and-features/new-feature.png)
 
-1. From the **Menu bar**, go to the **Testing** then **Search** option.
+### Create sub folder
+- Right-click the specific folder for which a sub folder needs to be created.
+- Then, click the **Create Folder** option.
+- Next, enter the name of the **Sub Folder** (e.g., *Test sub folder*).
+- Click on the **OK** button.
 
-![](/img/how-tos/how-to-create-folders-and-features/test-search.png)
+![](/img/how-tos/how-to-create-folders-and-features/sub-folder.png)
 
-2. Click on the **Toggle Tree** button.
-   > The *Toggle Tree* button allow users to expand or collapse the hierarchial test case folders and features for better organization and navigation.
+![](/img/how-tos/how-to-create-folders-and-features/sub-foldername.png)
 
-![](/img/how-tos/how-to-create-folders-and-features/toggle-free.png)
+### Create sub feature
+- Right-click the specific feature for which a sub feature needs to be created.
+- Then, click the **New Feature** option.
+- Next, enter the name of the **Sub Feature** (e.g., *Test sub feature*).
+- Click on the **OK** button.
 
-3. To create a **Folder**, click on the **Create top level Folder** button.
-   > Creating *Folder* for test cases is necessary for better organization, categorization, and efficient management of test cases, improving overall test suite maintenance.
+![](/img/how-tos/how-to-create-folders-and-features/sub-feature.png)
 
-   > The *Create top level Folder* button is used to create a new folder or feature at the top level of the test case hierarchy for better categorization and management.
+![](/img/how-tos/how-to-create-folders-and-features/sub-featurename.png)
 
-![](/img/how-tos/how-to-create-folders-and-features/top-folder.png)
+### Rename folder
+- Right-click the specific folder that needs to be renamed.
+- Then, click the **Rename Folder** option.
+- Next, enter the **New name of the folder** (e.g., *New folder name*).
+- Click on the **OK** button.
 
-4. Click and enter the **Name of the new folder**.
-5. Click on the **OK** button.
-   > Entering the *Name of the new folder* is necessary for clear identification and effective organization of test cases under the appropriate folder.
+![](/img/how-tos/how-to-create-folders-and-features/rename-folder.png)
 
-![](/img/how-tos/how-to-create-folders-and-features/name-folder.png)
+![](/img/how-tos/how-to-create-folders-and-features/new-namefolder.png)
 
-6. Similarly, to create a **Feature**, click on the **Create top level Feature** button.
-   > Creating *Feature* is necessary for grouping related test scenarios, providing better traceability, and enabling more focused testing efforts on specific functionalities or components.
+### Rename feature
+- Right-click the specific feature that needs to be renamed.
+- Then, click the **Rename** option.
+- Next, enter the **New Name** of the feature (e.g., *New feature name*).
+- Click on the **OK** button.
 
-   > The *Create top level Feature* button allow users to create a new feature or functionality at the highest level of the test case hierarchy, enabling better organization and focused testing efforts.
+![](/img/how-tos/how-to-create-folders-and-features/rename-feature.png)
 
-![](/img/how-tos/how-to-create-folders-and-features/top-feature.png)
+![](/img/how-tos/how-to-create-folders-and-features/new-namefeature.png)
 
-7. Click and enter the **Name of the Feature**.
-8. Click on the **OK** button.
-   > Entering the *Name of the Feature* is necessary for clear identification, proper categorization, and effective traceability of test scenarios related to that feature.
+### Delete folder
+- Right-click the specific folder that needs to be deleted.
+- Then, click the **Delete Folder** option.
+- Next, click the **OK** button to delete the specific folder.
+:::note
+If any test cases are linked to the specific folder, it cannot be deleted, and a notification message will appear stating, **“Document or test cases are linked with this folder"**.
 
-![](/img/how-tos/how-to-create-folders-and-features/name-feature.png)
+:::
+
+![](/img/how-tos/how-to-create-folders-and-features/delete-folder.png)
+
+![](/img/how-tos/how-to-create-folders-and-features/delete-ok-folder.png)
+
+### Delete feature
+- Right-click the specific feature that needs to be deleted.
+- Then, click the **Delete** option.
+- Next, click the **OK** button to delete the specific feature.
+:::note
+If a feature linked to a specific test case is removed, the **Feature** column for that test case will display **null**.
+
+:::
+
+![](/img/how-tos/how-to-create-folders-and-features/delete-feature.png)
+
+![](/img/how-tos/how-to-create-folders-and-features/delete-ok-feature.png)
+
+## FAQs / Troubleshooting
+
+<details>
+<summary>Can folders or features be created without a name?</summary>
+
+No. A valid and unique name must be provided to create a folder or feature successfully.
+
+</details>
+
+<details>
+<summary>Why can a folder not be deleted?</summary>
+
+A folder cannot be deleted if test cases or documents are linked to it. A notification message is displayed in such cases.
+
+</details>
+
+<details>
+<summary>What happens if a feature linked to test cases is removed?</summary>
+
+The Feature field for the associated test cases will display **null**.
+
+</details>
+
+<details>
+<summary>How to avoid confusion while creating folders and features?</summary>
+
+Use clear naming conventions and plan the folder and feature structure in advance.
+
+</details>
+
+## Changelog
+
+- New UI has been introduced [[20250712](/blog/zeuz-platform-20250712/)]
+
+## Related Topics
+
+- [Create test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-test-cases/)
+- [Move test cases to folder and feature](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/move-test-cases-to-folder-and-feature/)
+- [Debug test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/debug-test-cases/)
+
+---
