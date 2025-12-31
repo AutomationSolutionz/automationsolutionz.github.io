@@ -15,9 +15,9 @@ Webhook allows ZeuZ to be triggered automatically by an external system. For ins
 CICD Run presets and webhooks enable seamless integration between development and testing, accelerating the feedback cycle, reducing manual effort, and ensuring consistent test execution.
 
 <MetaCard
-  availableFrom="20250518"
+  availableFrom="202512"
   difficulty="🟢 Medium"
-  lastUpdated="09 Nov, 2025"
+  lastUpdated="31 Dec, 2025"
   relatedTopics={["Create test cases", "Run tests", "Runtime parameters"]}
 />
 
@@ -169,8 +169,9 @@ Yes, you can copy the **webhook URL** and **curl command** for a preset. These o
 
 ## Changelog
 
-- Adopted a new card view [[20250518](/blog/zeuz-platform-20250518/)]
-- New UI has been introduced [[20250518](/blog/zeuz-platform-20250518/)]
+- Modernized UI [[202512](/blog/zeuz-platform-202512/)]
+- Search bar [[202512](/blog/zeuz-platform-202512/)]
+- Improved responsiveness [[202512](/blog/zeuz-platform-202512/)]
 
 ## Related Topics
 
