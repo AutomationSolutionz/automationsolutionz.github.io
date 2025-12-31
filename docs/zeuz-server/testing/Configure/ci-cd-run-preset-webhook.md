@@ -45,7 +45,7 @@ actions.
 
 ## Features
 ### Create new preset
-- Click the **CREATE NEW PRESET+** button.
+- Click the **+ New** button.
 - It will redirect to the **Deploy** page.
 - The **Deploy** page displays the following information:  
   - **Test Case Search and Overview (Left Panel)**:  
@@ -79,57 +79,56 @@ actions.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/preset-information.png)
 
+### Search presets
+- The **Search Bar** is located at the top of the "Preset List" page.
+- Here, presets can be searched by their name or title.
+
+![](/img/how-tos/how-to-create-webhook-for-cicd/search-preset.png)
+
 ### Import preset
-- Click the **IMPORT** button on the "Preset" page.
-- After clicking the **IMPORT** button, the "Upload Preset JSON" window will open.
-- Click the **Choose File** button to select a file.
-- After selecting the file, its name will be displayed.
-- Click the **IMPORT PRESETS** button to import the preset.
+- Click the **Import** button on the "Preset List" page.
+- After clicking the **Import** button, the file will be uploaded directly.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/upload-preset.png)
 
 :::note
-If the preset fails to import, an error message will appear: "Error occurred during import".
+If the preset fails to import, an error message will appear.
 
 :::
 
-### Export preset
-- First, select a specific preset card from the "Preset" page.
-- Then click the **EXPORT** button.
+### Export all presets
+- By clicking the **Export All** button available on the "Preset List" page, all presets will be exported.
+- Selected presets can also be exported by selecting the checkboxes for the required presets.
 - The preset will be downloaded in JSON format and will appear in the Downloads folder.
 
 ![](/img/how-tos/how-to-create-webhook-for-cicd/export-preset.png)
 
+![](/img/how-tos/how-to-create-webhook-for-cicd/selected-presets.png)
+
 ![](/img/how-tos/how-to-create-webhook-for-cicd/preset-download.png)
-
-### Selecting all presets
-- The **SELECT ALL** button allows the user to choose every preset displayed on the "Preset" page at once. This function is helpful when performing actions such as exporting or deleting several presets at the same time. It simplifies the management of presets by reducing the need to select each item individually.
-
-![](/img/how-tos/how-to-create-webhook-for-cicd/all-presets.png)
 
 ### Preset card details
 - The preset card on the "Preset" page presents essential information and available actions related to that specific preset.
 - The explanation of the elements available in the preset card is given below:  
   - **Preset Title**: The top of the card shows the name of the preset, for example: *scheduler-check*.
-  - **Creation and Modification Details**: It shows the audit details of a preset card. This section provides basic information about the preset's creation and modification history. The explanation is provided below:  
-    - **Created By**: Shows the username of the person who originally created the preset (e.g., *muhib2*).
-    - **Created On**: Shows how long ago the preset was created (e.g., *23 ago*).
-    - **Created By**: Indicates the preset's creator again, typically displayed when the preset belongs to a specific set or workspace (e.g., *muhib2*).
-    - **Modified On**: Shows how long ago the preset was last updated or edited (e.g., *22 ago*).
-    - **Set**: Displays the name of the preset group or category to which this preset belongs.
-  - **Action Buttons**: Below the details, the following buttons are visible:  
+  - **Preset Info**: It displays the audit details of a preset card. This section provides basic information about the preset. The information is provided below:   
+    - **Test Set**: It indicates that this preset corresponds to the test set named *scheduler-check*.
+    - **Version**: The date, such as *2 January 2025*, represents the version of the selected item.
+    - **Milestone**: It indicates that the given preset is stored under the milestone named *Test ZeuZ*.
+    - **Objective**: It refers to the specific purpose or intended outcome that the preset is designed to achieve such as, *scheduler-check*.
+    - **Nodes**: It shows a saved test configuration where *muhib2_mac2* is assigned as the target node or environment for automated or scheduled testing.
+    - **Created**: It refers to the date and time when the preset was originally created or saved in the system such as, *Oct 21, 2025, 01:21 AM*.
+    - **Deploy**: It means activating a saved preset so its predefined configurations or settings are applied automatically.
     - **Copy webhook URL**: Copies the webhook link associated with the preset.
     - **Copy curl command**: Copies a ready-to-use curl command for triggering the preset externally.
-    - **Create copy**: Creates a copy of the preset.
     - **Delete**: Removes the preset.
-  - **Preset Info**: The lower part of the preset card contains specific information, including:  
-    - **Objective**
-    - **Version**
-    - **Milestone**
-    - **Run Time Settings**.
-- A checkbox is available at the top-right of the preset card to select the preset.
+    - **Test Cases**: It refers to a predefined set of testing instructions or scenarios linked to a particular preset.
+    - **Run Time Parameters**: It refers to configurable values that can be set or adjusted during the execution of a preset without modifying the preset itself.
+    - **Run Time Settings**: It determines how a preset is executed without changing its original setup.
 
-![](/img/how-tos/how-to-create-webhook-for-cicd/preset-details.png)
+![](/img/how-tos/how-to-create-webhook-for-cicd/preset-alldetails.png)
+
+![](/img/how-tos/how-to-create-webhook-for-cicd/preset-otherdetails.png)
 
 ## FAQs / Troubleshooting
 ### FAQs
