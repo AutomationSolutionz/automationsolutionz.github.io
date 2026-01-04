@@ -1,111 +1,136 @@
 ---
 id: move-test-cases-to-folder-and-feature
-title: Moving Test Cases to Folder and Feature
+title: Move Test Cases to Folder and Feature
 ---
 
-### Why is it necessary to move Test Cases to Folder?  
+import MetaCard from '@site/src/components/MetaCard';
 
-Moving test cases to folders are necessary for several reasons like:
+Moving test cases to a folder or feature means organizing existing test cases by placing them into an appropriate folder or linking them to a specific feature. This helps group related test cases based on 
+application functionality, making test management clearer, more structured, and easier to maintain within 
+the platform.
 
-* Firstly, it helps with organization and structure. By grouping test cases into folders, it provides a logical arrangement that makes it easier to locate and manage them.
+<MetaCard
+  availableFrom="20250712"
+  difficulty="🟢 Easy"
+  lastUpdated="01 Jan, 2026"
+  relatedTopics={["Create test cases", "Create folders and features"]}
+/>
 
-* Secondly, it aids in test case management. Test cases can be categorized, sorted, and filtered based on specific criteria, making them easier to track and maintain.
+### Why it matters / Use Cases:
+- **Improved Organization**: Test cases are grouped logically based on functionality or modules, making them  
+easier to locate and manage.
+- **Better Traceability**: Linking test cases to features helps ensure that all application functionalities 
+are properly tested and covered.
+- **Efficient Test Execution**: Testers can quickly select and run relevant test cases for a specific feature 
+or release.
+- **Simplified Maintenance**: Updates or changes can be applied to related test cases together, reducing errors and redundancy.
 
-* Thirdly, it facilitates test suite creation. Test cases within folders can be grouped together to create test suites, which are collections of related test cases. This simplifies test planning and execution.
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Test Case → Search**.
+- The test cases must already exist within the project repository.
+- The target folder or feature must be created.
 
-Additionally, moving test cases to folders supports test case reusability, collaboration and sharing among team members, version control and overall efficiency in managing the testing process.  
+## Quick-Start
+1. First, select the test cases to be moved to a folder or feature.
+2. To move test cases to a folder, first click the **More** option, then select the **Move to folder** button.
+3. Similarly, to move test cases to a feature, first click the **More** option, then select the **Move to feature** button.
 
-### Why is it necessary to move Test Cases to Feature?  
-
-Moving test cases into test case features are necessary for several reasons like:
-
-* Firstly, it improves test case organization by grouping them based on specific features or functionalities. This enhances efficiency in managing and locating test cases.
-
-* Secondly, it enhances test case traceability by aligning them with corresponding requirements or user stories. It ensures comprehensive testing and identifies any gaps in coverage.
-
-* Thirdly, it enables a targeted testing approach, allowing testers to focus on specific features during testing. This improves test coverage and issue identification. 
-
-Additionally, it simplifies test case maintenance, facillitates collaboration, and enhances test planning and execution. Overall, organizing test cases into features improve efficiency, traceability and effectiveness in testing.
-
-## Steps
-
-1. From the **Menu bar**, go to the **Testing** then **Search** option.
-
-![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/test-search.png)
-
-2. Click to select **Test Cases**.
+## Features
+### Move test cases to a folder
+- Click to select the test cases.
+- Next, click on the **More** option.
+- To move test cases to a folder, click the **Move to folder** button.
+- Then, **Select a folder** window will open. Click to choose a folder.
+- Click the **SELECT** button.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/select-test-cases.png)
 
-3. Click on the **More** option.
-   > The function of the *More* option is to provide access to additional actions, settings, or features related to managing and manipulating the test case.
-
-   > The following *More* options are: 
-   * **Download CSV of description and expection** : The meaning of *Download CSV of description and expectation* is to export the test case details, including action descriptions, and expected outcomes, in CSV format for external analysis or documentation.
-   * **Move to folder** : The meaning of *Move to Folder* is to relocate or reorganize specific test cases into a designated folder for better management and organization. 
-   * **Move to feature**  : The meaning of *Move to Feature* is to reassign or categorize specific test cases under a different functional or feature-related group for improved organization.
-   * **Batch Update**  : The meaning of *Batch Update* is to simultaneously modify or apply changes to a group of selected test cases in a coordinated manner.
-   * **Steps**  : *Steps* refer to the detailed actions or instructions that define how a specific test scenario should be executed and validated.
-   * **Actions**  : *Actions* represent the individual tasks or operations performed to simulate user interactions and validate the functionality of the server.
-   * **Delete Test Cases**  : *Delete Test Cases* refer to remove specific test cases parmanently from the test case repository or management system.
-   * **Sample Test Cases**  : *Sample Test Cases* refer to a subset of predefined test cases used to demonstrate the testing process and provide examples of how to validate specific functionalities.
-   * **Export Selected Test Cases**  : *Export Selected Test Cases* means creating a downloadable file containing the details of the chosen test cases for sharing or backup purposes.
-   * **Import Test Cases**  : *Import Test Cases* involves incorporating external test case data into a test management system for execution and tracking.
-   * **Create Test Cases from JIRA** : *Create Test Cases from JIRA* refers to generating new test cases based on requirements or issues managed within the JIRA project management tool.
-
-![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/more-option.png)
-
-4. To move **Test Cases** to **Folder**, click on the **Move to folder** button.
-   > Moving *Test Cases* to *Folders* is necessary to organize and categorize them for better management and easier navigation within the test case repository.
-
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/move-folder.png)
-
-5. Click to select a **Folder**.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/select-folder.png)
 
-6. Click on the **SELECT** button.
-
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/select-button.png)
 
-7. To check whether the **Test Cases** have been moved or not, click on the **Search Test Cases**.
+### Verify the selected test cases in the required folder
+- To verify whether the test cases have been moved successfully, click on required folder where the 
+selected test cases were moved..
+- The folder can also be specified through the search bar.
+- Click the **Search** button.
 
-8. Mention the **Folder** name where **Test Cases** have been moved.
-
-9. Click on the **Search** button.
-   > Checking whether the *Test Cases* have been moved to the *Folders* is necessary to ensure that they are correctly organized and easily accessible for effective test management.
-
-   > Mentioning the name of *Folders* where test cases have been moved is necessary to provide clear documentation and facilitate quick retrieval of organized test cases.
+![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/search-namefolder.png)
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/check-folder.png)
 
-10. To move **Test cases** to **Feature**, click on the **Move to Feature** button.
-    > Moving *Test Cases* to the *Feature* is necessary to align them with specific functionalities, aiding in structured test organization and management.
+### Move test cases to a feature
+- Click to select the test cases
+- Next, click on the **More** option.
+- To move test cases to a feature, click the **Move to feature** button.
+- Then, **Select a feature** window will open. Click to choose a feature.
+- Click the **SELECT** button.
+
+![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/select-test-cases.png)
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/move-feature.png)
 
-11. Click to select a **Feature**.
-
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/select-feature.png)
-
-12. Click on the **SELECT** button.
 
 ![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/select-feature-button.png)
 
-13. To check whether the **Test Cases** have been moved or not, click on the **Toggle Tree** button.
-    > The function of the *Toggle Tree* button is to expand or collapse the hierarchial structure for better organization and navigation.
+### Verify the selected test cases in the required feature
+- To verify whether the test cases have been moved successfully, click on the required feature where the 
+selected test cases were moved.
+- The feature can also be specified through the search bar.
+- Click the **Search** button.
 
-![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/toggle-free.png)
+![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/search-featurename.png)
 
-14. Click on the required **Feature** where the selected **Test Cases** have been moved.
-    > Checking the required *Feature* where test cases have been moved is necessary to ensure accurate categorization and organized management of test cases based on their relevant functionalities.
+![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/check-selectedfeature.png)
 
-![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/check-feature.png)
+## FAQs / Troubleshooting
 
-15. Click on the **Search** button.
+<details>
+<summary>Why are the test cases not visible after moving them?</summary>
 
-![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/search-feature.png)
+This usually occurs when a different folder or feature filter is applied. Cleaning or updating the search filters helps display the moved test cases.
 
-![](/img/how-tos/how-to-move-test-cases-to-folder-and-feature/feature-check.png)
+</details>
 
-16. In the same way required **Folder** can be checked where selected **Test Cases** will be moved.
+<details>
+<summary>Can test cases be moved to multiple folders or features at the same time?</summary>
+
+No. A test case can belong to only one folder or one feature at a time to maintain a clear and structured 
+organization.
+
+</details>
+
+<details>
+<summary>What happens if the wrong folder or feature is selected?</summary>
+
+The test cases will be moved to the selected location. They can be moved again to the correct folder or feature if needed.
+
+</details>
+
+<details>
+<summary>Why is the Move option disabled?</summary>
+
+This commonly happens when no test cases are selected. At least one test case must be selected to enable the move action.
+
+</details>
+
+<details>
+<summary>Do moved test cases lose their execution history or links?</summary>
+
+No. Moving test cases only changes their organizational location. Execution history, links, and related data remain unchanged.
+
+</details>
+
+## Changelog
+
+- New UI has been introduced [[20250712](/blog/zeuz-platform-20250712/)]
+
+## Related Topics
+
+- [Create test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-test-cases/)
+- [Create folders and features](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-folders-and-features/)
+
+---
