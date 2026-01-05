@@ -142,6 +142,7 @@ The Milestone page has been redesigned for a cleaner, more modern experience, wi
 8.  **New Test Case creation no longer removes duplicate steps:** When creating a test case via the New TC Create page, identical steps were being de-duplicated automatically. GQL now preserves the full list exactly as selected, even if multiple identical steps are added intentionally.
 9. **Discussion mention autocomplete behavior corrected:** Pressing Enter while an autosuggestion was highlighted used to send the message instead of completing the mention. Now, pressing Enter correctly autocompletes the suggestion without sending the message.
 10. **Removed 3-digit Test Case ID validation on Debug page:** The Debug page previously enforced a three-digit test case ID format. This validation has been removed to support broader ID formats.
+11. **External Webhook Notification**: Failed breakdown webhook notifications were not sent in some cases when more than 15 test cases existed. Fixed the issue.
 
 
 ## 🛠️ Improvements
