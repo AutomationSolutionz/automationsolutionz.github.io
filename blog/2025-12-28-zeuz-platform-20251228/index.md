@@ -143,7 +143,7 @@ The Milestone page has been redesigned for a cleaner, more modern experience, wi
 9. **Discussion mention autocomplete behavior corrected:** Pressing Enter while an autosuggestion was highlighted used to send the message instead of completing the mention. Now, pressing Enter correctly autocompletes the suggestion without sending the message.
 10. **Removed 3-digit Test Case ID validation on Debug page:** The Debug page previously enforced a three-digit test case ID format. This validation has been removed to support broader ID formats.
 11. **External Webhook Notification**: Failed breakdown webhook notifications were not sent in some cases when more than 15 test cases existed. Fixed the issue.
-
+12. **Import test case Bug**: Step imported with no actions issue is fixed.
 
 ## 🛠️ Improvements
 1. **System messages for Discussion participant changes:** Adding or removing participants from a discussion is now logged automatically as a system message. These entries are visible to everyone and cannot be edited or deleted, increasing transparency.
