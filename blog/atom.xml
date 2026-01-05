@@ -106,6 +106,8 @@
 <li><strong>New Test Case creation no longer removes duplicate steps:</strong> When creating a test case via the New TC Create page, identical steps were being de-duplicated automatically. GQL now preserves the full list exactly as selected, even if multiple identical steps are added intentionally.</li>
 <li><strong>Discussion mention autocomplete behavior corrected:</strong> Pressing Enter while an autosuggestion was highlighted used to send the message instead of completing the mention. Now, pressing Enter correctly autocompletes the suggestion without sending the message.</li>
 <li><strong>Removed 3-digit Test Case ID validation on Debug page:</strong> The Debug page previously enforced a three-digit test case ID format. This validation has been removed to support broader ID formats.</li>
+<li><strong>External Webhook Notification</strong>: Failed breakdown webhook notifications were not sent in some cases when more than 15 test cases existed. Fixed the issue.</li>
+<li><strong>Import test case Bug</strong>: Step imported with no actions issue is fixed.</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-improvements">🛠️ Improvements<a href="https://docs.zeuz.ai/blog/zeuz-platform-202512/#%EF%B8%8F-improvements" class="hash-link" aria-label="Direct link to 🛠️ Improvements" title="Direct link to 🛠️ Improvements">​</a></h2>
 <ol>
