@@ -5,6 +5,86 @@ title: Known Issues
 
 import IssueItem from '@site/src/components/IssueItem';
 
+## Not fixed
+
+<IssueItem eta="Feb, 2026" title="Testing > Deployments > Set">
+
+    A Test Set with no test cases cannot be renamed.
+
+</IssueItem>
+
+<IssueItem eta="Feb, 2026" title="Testing > Configure > Run/CI Presets">
+
+    After importing a preset, user id shows up in place of the name field.
+
+</IssueItem>
+
+<IssueItem eta="Feb, 2026" title="Testing > Configure > Run/CI Presets">
+
+    Cards do not show test cases when expanded.
+
+</IssueItem>
+
+<IssueItem eta="Feb, 2026" title="Testing > Deployments > History">
+
+    The in-progress and submitted count overlaps the menubar when scrolling.
+
+</IssueItem>
+
+<IssueItem eta="Feb, 2026" title="Testing > Deployments > History">
+
+    When importing a test case, the system is not restoring the "Run on fail" and "Step lock"
+    properties.
+
+</IssueItem>
+
+<IssueItem title="Experimental cleanup scheduler">
+
+    A new built-in scheduler has become available in the 20250909 release of the ZeuZ
+    platform. However, this is still experimental and we advise not to use this feature
+    in production environments. If you have QA environments set up, please test and
+    provide feedback.
+
+</IssueItem>
+
+<IssueItem title="Testing > Batch update > None of the batch updates are safe to use at the moment">
+
+    We recommend not using the Batch Update feature at the moment without consulting
+    with us. If you have a need for it's use - please get in touch with us.
+
+</IssueItem>
+
+<IssueItem title="Admin > Database Backup is unavailable">
+
+    The database backup system through the UI has been disabled and not working at the
+    moment. We recommend taking backups of ZeuZ through the `backup.sh` file provided
+    to you, directly from the server VM terminal. This approach takes backup of everything
+    including the database, attachments, data store backups, logs and screen captures and
+    everything else.
+
+</IssueItem>
+
+<IssueItem title="Testing > Test Case > Attachments > Dragging and dropping an attachment from Step Attachment results in a file name error">
+
+     When a user drags and drops a file from the Step Attachment section,
+     the system displays a file name error.
+
+</IssueItem>
+
+<IssueItem title= "Test Case delete is not working">
+
+    If a test case needs to be deleted, create a trash folder or feature and move the test case into it.
+    Or you can repurpose them into new test cases by modifying their details and steps.
+
+</IssueItem>
+
+<IssueItem title= "Testing > Test Case > Imports > Redundant global step creation for identical common steps during import">
+
+    The import process treats identical common test steps as different across multiple Sets and repeatedly creates new global step names instead of reusing the already imported step, even when the step code is exactly the same.
+
+</IssueItem>
+
+
 ## Fixed
 
 <IssueItem fixedIn="20250903" title="Testing > Run Test > Objective keeps loading infinitely">
@@ -27,13 +107,13 @@ import IssueItem from '@site/src/components/IssueItem';
 
 <IssueItem fixedIn="202511" title="Testing > Configure > Scheduler > Scheduled runs are not triggered at the configured time">
 
-    When a schedule is set to run at a configured time, the execution is not triggered. 
+    When a schedule is set to run at a configured time, the execution is not triggered.
     At the scheduled time, the system displays "No run found" and the run count remains at 0.
 
 </IssueItem>
 
 <IssueItem fixedIn="202511" title="Admin > Users > Manage groups is undergoing overhaul">
-    
+
     This feature is being re-implemented with fine grained access control to allow
     admins and users to control which group of users can see and interact with what
     in ZeuZ.
@@ -48,89 +128,36 @@ import IssueItem from '@site/src/components/IssueItem';
 
 <IssueItem fixedIn="202511" title="Testing > Run Test > Advanced > Rerun on fail is not working">
 
-     This feature has not been implemented properly and as such this will not work as expected even if chosen. 
-     However, this feature has been supplanted with the introduction of "Rerun test cases in an existing RunID" which is available from the same Advanced panel or from individual RunIDs. 
+     This feature has not been implemented properly and as such this will not work as expected even if chosen.
+     However, this feature has been supplanted with the introduction of "Rerun test cases in an existing RunID" which is available from the same Advanced panel or from individual RunIDs.
      The new feature enables users to rerun selected test cases again and upload the reports to the same RunID without creating a new one.
 
 </IssueItem>
 
-## Not fixed
-
-<IssueItem eta="Sep, 2025" title="Node > Auto kill existing node processes on startup is not working">
+<IssueItem fixedIn="202511" title="Node > Auto kill existing node processes on startup is not working">
 
     Launching ZeuZ Node used to kill existing node processes that were run
     from the same directory. This is currently not working as expected.
 
 </IssueItem>
 
-<IssueItem eta="Oct, 2025" title="Experimental cleanup scheduler">
+<IssueItem fixedIn="202511" title="Testing > Data Store > Data Store > The Column function is not working in the Data Store READ action">
 
-    A new built-in scheduler has become available in the 20250909 release of the ZeuZ
-    platform. However, this is still experimental and we advise not to use this feature
-    in production environments. If you have QA environments set up, please test and
-    provide feedback.
-
-</IssueItem>
-
-<IssueItem eta="Nov, 2025" title="zAI Page assistant is still under development">
-
-    Once the zAI Assistant is ready - we'll announce it in one of our changelogs.
-
-</IssueItem>
-
-<IssueItem title="Testing > Batch update > None of the batch updates are safe to use at the moment">
-
-    We recommend not using the Batch Update feature at the moment without consulting
-    with us. If you have a need for it's use - please get in touch with us.
-
-</IssueItem>
-
-<IssueItem title="Admin > Database Backup is unavailable">
-
-    The database backup system through the UI has been disabled and not working at the
-    moment. We recommend taking backups of ZeuZ through the `backup.sh` file provided
-    to you, directly from the server VM terminal. This approach takes backup of everything
-    including the database, attachments, data store backups, logs and screen captures and
-    everything else.
-
-</IssueItem>
-
-<IssueItem eta="Nov, 2025" title="Testing > Data Store > Data Store > The Column function is not working in the Data Store READ action">
-
-    When the system tries to read a specific column from the stored data, 
+    When the system tries to read a specific column from the stored data,
     it does not return the expected result.
 
 </IssueItem>
 
-<IssueItem eta="Nov, 2025" title="Testing > Test Case > Create / Edit > When returning from the test action history, the Disable option becomes enabled again">
+<IssueItem fixedIn="202512" title="Testing > Test Case > Create / Edit > When returning from the test action history, the Disable option becomes enabled again">
 
-     When navigating back from the test action history, 
+     When navigating back from the test action history,
      the Disable option automatically switches back to an enabled state.
 
 </IssueItem>
 
-<IssueItem eta="Nov, 2025" title="Testing > Test Case > Attachments > Dragging and dropping an attachment from Step Attachment results in a file name error">
 
-     When a user drags and drops a file from the Step Attachment section, 
-     the system displays a file name error.
-
-</IssueItem>
-
-<IssueItem title= "Test Case delete is not working">
-
-    If a test case needs to be deleted, create a trash folder or feature and move the test case into it.
-    Or you can repurpose them into new test cases by modifying their details and steps.
-
-</IssueItem>
-
-<IssueItem title= "Testing > Test Case > Attachments > Attachments are not linked to step name and display username in the source">
+<IssueItem fixedIn="202512" title= "Testing > Test Case > Attachments > Attachments are not linked to step name and display username in the source">
 
     If the uploaded test case contains attachments, the attachments are not linked to the actual step name and display the username instead of the step name in the Source.
-
-</IssueItem>
-
-<IssueItem title= "Testing > Test Case > Imports > Redundant global step creation for identical common steps during import">
-
-    The import process treats identical common test steps as different across multiple Sets and repeatedly creates new global step names instead of reusing the already imported step, even when the step code is exactly the same.
 
 </IssueItem>
