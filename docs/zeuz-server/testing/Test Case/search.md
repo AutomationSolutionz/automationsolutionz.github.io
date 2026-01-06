@@ -161,4 +161,9 @@ Ensure that your project contains an indexed list of test cases, and use more sp
 - [Create folders and features](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-folders-and-features/)
 - [Move test cases to folder and feature](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/move-test-cases-to-folder-and-feature/)
 
+## Folder Management
+
+- [Create folders and features](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-folders-and-features/)
+- [Move test cases to folder and feature](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/move-test-cases-to-folder-and-feature/)
+
 ---

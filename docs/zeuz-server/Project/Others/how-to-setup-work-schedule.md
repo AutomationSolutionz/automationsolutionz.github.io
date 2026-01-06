@@ -1,81 +1,106 @@
 ---
 id: how-to-setup-work-schedule
-title: Setting Up Work Schedule
+title: Time Shift
 ---
 
-### What is the meaning of Work Schedule in software testing?
+import MetaCard from '@site/src/components/MetaCard';
 
-In software testing, a **Work Schedule** is a structured plan that defines the timeline for various testing activities and tasks within a testing project. It specifies when and how different testing activities, such as test case creation, execution, and reporting, will be carried out.  
-**Work Schedules** help project teams like allocate resources, manage time effectively, and meet project deadlines. They are essential and coordinating the testing process to ensure its successful completion.
+The **Time Shift** provides a weekly view that allows users to select a project, team, and milestone, define the type of work, and record planned or actual working hours for each day within a selected date range. This helps teams systematically track, monitor, and manage work effort in an organized and structured manner.
 
-### Importance of Work Schedule in software testing
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Easy"
+  lastUpdated="06 Jan, 2025"
+  relatedTopics={["Worklog"]}
+/>
 
-A **Work Schedule** is indispensable in software testing due to its multifaceted role. It facilitates effective time management for testers, allowing them to prioritize tasks and meet deadlines efficiently. 
+### Why it matters / Use Cases:
+- **Accurate Work Tracking**: It enables teams to record planned and actual hours, ensuring visibility in daily and weekly work effort.
+- **Improved Project Planning**: By analyzing time allocations, project managers can more accurately estimate 
+project timelines and optimize resource distribution.
+- **Performance Monitoring**: It helps identify workload imbalances, such as overutilized or underutilized team members.
+- **Milestone Progress Validation**: Recorded hours can be evaluated against milestones to determine if project objectives are progressing as planned.
+- **Reporting and Analysis**: Time data can be utilized for analyzing effort, conducting audits, and generating management reports within the platform.
 
-Additionally, it aids in resource allocation and tracking progress, ensuring that testing phases adhere to predetermined timelines. This schedule acts as a vital communication tool, reducing misunderstandings within the team and enhancing collaboration. It also plays a pivotal role in risk management, allowing for proactive measures to mitigate potential delays or issues. Moreover, it contributes to quality assurance by providing adequate time for thorough testing, ultimately improving software quality.  
+## Prerequisites  
+- Access to ZeuZ Server with permissions for **Project → Others → Work Schedule**.
+- A project, the relevant team, and the milestone under which the work is being tracked must be selected from 
+their respective dropdowns to accurately associate and track the work entries.
+- The type of work must be specified (e.g., `Working`, `Vacation`, `Sick`, `Training`) for proper categorization.
+- Planned or worked hours for each day must be entered in the provided fields to reflect effort.
 
-Finally, adhering to a **Work Schedule** helps meet client expectations and maintain satisfaction by delivering projects on time.
+## Quick-Start
+1. First, click the **MORE** option available at the top-right corner of the "Work Schedules" page.
+2. Then, click the **TIME SHIFT** option.
 
-### What is the purpose of setting Work Schedule in software testing?
+## Features
+- Navigate to the **Time shift** page.
+- At the top, navigation buttons allow users to move between **PREVIOUS** and **NEXT** weeks, while the 
+selected date range and total logged hours are displayed.
+- On the left side, dropdown fields are provided to select the **Project**, **Team**, and **Milestone**, ensuring that the recorded work is linked to the correct context.
+- A **Work type** dropdown is also available, allowing users to categorize the time as `Working`, `Vacation`, `Sick`, or `Training`.
+- The main section presents a weekly grid from **Sunday** to **Saturday**, where users can enter planned or 
+actual hours for each day.
+- The highlighted column indicates the currently selected day.
+- Additional rows can be added using the **+ ADD** button.
+- All entered data can be saved using the **SAVE** button.
 
-A **Work Schedule** in software testing serves multiple essential purposes.  
-**Firstly**, it facilitates effective time management, ensuring that testing tasks align with project timelines.  
+![](/img/how-tos/how-to-setup-work-schedule/time-shift.png)
 
-**Secondly**, it aids in resource allocation, optimizing productivity by distributing resources efficiently.  
+![](/img/how-tos/how-to-setup-work-schedule/work-type.png)
 
-**Thirdly**, it enables progress tracking, helping teams identify delays and take corrective actions promptly.  
+![](/img/how-tos/how-to-setup-work-schedule/weekly-hours.png)
 
-**Additionally**, the schedule acts as a communication tool, reducing misunderstandings among team members. It also supports risk management by proactively addressing potential issues. Quality assurance benefits from the schedule by allocating ample time for thorough testing and defect resolution.  
+![](/img/how-tos/how-to-setup-work-schedule/highlighted-column.png)
 
-**Lastly**, meeting client expectations and delivering projects on time is crucial for client satisfaction and maintaining a positive reputation in industry.
-
-## Steps
-
-1. From the **Menu bar**, go to the **Project** then **Work Schedule** option.
-
-![](/img/how-tos/how-to-setup-work-schedule/work-schedule.png)
-
-2. Go to the **Work Schedules** page.
-3. Click on the **MORE** option.
-   > Clicking on the *MORE* option typically provides access to additional settings and functionalities, allowing users to customize and manage their schedules more comprehensively.
-4. Then click on the **TIME SHIFT** option.
-   > The *TIME SHIFT* function allows users to adjust or offset the scheduled time for tasks or activities, accomodating different time zones or specific scheduling needs.
-
-![](/img/how-tos/how-to-setup-work-schedule/more-time.png)
-
-5. Go to the **Time Shift** page.
-6. Select the **Project**, **Team** and **Milestone**.
-   > Selecting the *Project*, *Team* and *Milestone* ensures that tasks are properly allocated, tracked, and meet project-specific objectives and timelines.
-7. Select the **Work type**.
-   > Selecting the *Work type* helps categorize tasks and allocate resources efficiently based on the nature of the work, such as testing, development, or documentation. 
-8. Enter the **Working hours**.
-   > Entering *Working hours* is essential to accurately plan and track the time spent on different tasks, ensuring efficient project management and resource allocation.
-
-![](/img/how-tos/how-to-setup-work-schedule/work-project.png)
-
-9. Click on the **SAVE** button.
+![](/img/how-tos/how-to-setup-work-schedule/add-row.png)
 
 ![](/img/how-tos/how-to-setup-work-schedule/save-work.png)
 
-10. If it is needed to add another work schedule then click on the **ADD** button.
-    > Adding another *Work Schedule* may be necessary to accommodate different project phases, teams, or specific tasks that require unique time allocations and resource management.
+## FAQs / Troubleshooting
 
-    > The *ADD* button allows you to create new work schedule entries to specify working hours and allocate resources efficiently for various tasks in software testing.
+<details>
+<summary>Why am I unable to enter hours in the Time Shift grid?</summary>
 
-![](/img/how-tos/how-to-setup-work-schedule/add-button.png)
+This usually occurs when the Project, Team, or Milestone is not selected. All three must be chosen before hours can be entered.
 
-11. Again go back to the **Work Schedules** page.
-12. Select the **User**.
-    > Selecting the *User* is essential to aasign specific team members to work on designated tasks, ensuring proper resource allocation in software testing.
-13. Select the **Start Date** and **End Date**.
-    > Selecting *Start Date* and *End Date* defines the timeframe for which the schedule applies, aiding in effective planning and resource allocation.
+</details>
 
-![](/img/how-tos/how-to-setup-work-schedule/work-save.png)
+<details>
+<summary>Why is the total hours value showing as zero?</summary>
 
-14. Click on the **GET WORK SCHEDULE** button.
-    > The *GET WORK SCHEDULE* button retrieves and displays the scheduled work hours for a specified user within the selected date range, facilitating resource management and workload tracking.
+The total remains zero if no hours are entered or if the entered values are not saved. Users must click the **Save** button to update the total hours.
 
-![](/img/how-tos/how-to-setup-work-schedule/get-work.png)
+</details>
 
-![](/img/how-tos/how-to-setup-work-schedule/work-log.png)
+<details>
+<summary>Why are my previously entered hours not visible?</summary>
 
+This may happen if the user is viewing a different date range. Ensure the correct week is selected using the 
+**Previous** and **Next** navigation buttons.
+
+</details>
+
+<details>
+<summary>What should be done if the Save button does not store the entries?</summary>
+
+Users should verify that all required fields are filled correctly and that valid numeric values are entered for hours before saving.
+
+</details>
+
+<details>
+<summary>Why is the wrong work type recorded?</summary>
+
+The Work Type must be selected before entering hours to ensure correct categorization.
+
+</details>
+
+## Changelog
+
+- New UI has been introduced [[20250518](/blog/zeuz-platform-20250518/)]
+
+## Related Topics
+
+- [Worklog](https://docs.zeuz.ai/docs/zeuz-server/Project/Reports/how-to-create-a-worklog/)
+
+---
