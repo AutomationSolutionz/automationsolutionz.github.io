@@ -106,9 +106,7 @@ Pie charts are displayed only when worklog data exists. If no worklogs are avail
 
 :::note
 
-Since the Worklog can be created for **Tasks**, **Bugs**, **Documents**, **Test cases**, and **Run History**, it displays a graph on the **Worklog Summary** page.
-
-Here are the links of how we can create **Tasks**, **Bugs**, **Documents**, **Test Cases** and use **Run History** page.
+Since worklogs can be created for tasks, bugs, documents, test cases, and run history, the following links explain how to create tasks, bugs, documents, and test cases, and how to use the Run History page.
 
 **Tasks**: https://docs.zeuz.ai/docs/zeuz-server/Project/Ticket/create-tasks/
 
