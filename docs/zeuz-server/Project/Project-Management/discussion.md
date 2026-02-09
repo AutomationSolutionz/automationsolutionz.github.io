@@ -93,6 +93,6 @@ Only users with access to the ticket (assignees, followers, or authorized users)
 ## Related Topics
 
 - [Create a ticket](https://docs.zeuz.ai/docs/zeuz-server/Project/Project-Management/create-tickets/)
-- [Details]
+- [Details](https://docs.zeuz.ai/docs/zeuz-server/Project/Project-Management/details/)
 
 ---
