@@ -116,110 +116,6 @@ Additional settings, including `Assignee`, `Milestone`, `Version`, `Feature`, `S
 
 ![](/img/how-tos/how-to-create-bugs/create-old.png)
 
-8. Under the clock circle icon, the **Estimated time**, **Latest estimation**, **Time spent**, and **Estimated time left** are shown. The timings of other related items are also shown.
-
-![](/img/how-tos/how-to-create-bugs/task-estimation.png)
-
-9. The "Add Spent/Needed" Time window appears when the **Clock circle** icon is clicked. It is used to record the time spent on a work item and to estimate any additional time required. 
-
-   - The **Log type** dropdown allows the user to select the nature of the work, such as documentation. The **New time spent (in minutes)** field is used to log the actual time already spent, while the **Additional time required (in minutes)** field is used to estimate remaining effort. Quick time options are provided for faster entry.
-   - The **Note** field is used to add a brief explanation or comment about the logged time. The dialog also includes **New record**, **History**, and **Breakdown** tabs for managing and reviewing worklog entries. The **Save** button records the information, and **Cancel** closes the dialog without saving.
-
-  - Here is an example, the note can include details such as how many hours were spent on research if **Research** is selected on Log type, who added the entry, when it was added, and whether the work type was research or something else. If one hour was spent on research, adding this information in the note clearly indicates that one hour of research time was logged. However, in work management, both the research time and the total time spent are displayed separately for better tracking.
-  - Different icons are provided for different log types.
-  - The latest estimation, time spent, and estimated time left are displayed using different icons to clearly distinguish each value.
-
-  :::note
-  - A **Clock circle** refers to a circular visual indicator that represents time or progress in a clock-like format. It displays the following information:  
-    - **Tabs (New record, History, Breakdown)**:
-    The New record tab is selected, which is used to add a fresh time entry. The other tabs are meant for viewing past logs and detailed summaries.
-
-    - **Log type**:
-    This dropdown is used to specify the nature of the work performed. In this example, the log type is set to Testing, indicating that the recorded time is related to testing activities.
-
-    - **New time spent (in min)**:
-    This field captures the actual time already spent on the task. Quick selection options such as 15 minutes, 30 minutes, 1 hour, and more are provided for convenience.
-
-    - **Additional time required (in min)**:
-    This field is used to estimate extra time that will be needed to complete the remaining work. Similar quick selection options are available.
-
-    - **Note**:
-    This text area allows the user to add a brief explanation or context for the time entry. In this case, it mentions the reason for testing.
-
-    - **Action buttons**:
-    The Save button confirms and records the entry, while the Cancel button closes the dialog without saving.
-  - Different icons are provided for different log types.
-  - The latest estimation, time spent, and estimated time left are displayed using different icons to clearly distinguish each value.
-
-  :::
-
-![](/img/how-tos/how-to-create-bugs/add-needed.png)
-
-10. A discussion message is displayed at the bottom of the page.
-  :::note
-  Here, the sent message can be edited, replied to, shared, or deleted.
-
-  :::
-
-![](/img/how-tos/how-to-create-bugs/discussion-message.png)
-
-11. If any changes are made to a requirement, the system displays a system message indicating which user made the change and what was updated. This system message supports changes to the title, assignee, milestone, version, feature, status, priority, start and end dates, testing, and labels. However, system messages are not generated for changes to followers, links, descriptions, or attachments.
-
-![](/img/how-tos/how-to-create-bugs/system-message.png)
-
-12. The progress chart (**Testing**, **Development**, **Total**) is displayed in a circular format.
-
-![](/img/how-tos/how-to-create-bugs/circular-progress.png)
-
-13. Attachments can be uploaded by clicking the **Upload** button.
-
-![](/img/how-tos/how-to-create-bugs/attachment-upload.png)
-
-13. The ticket page displays when the item was originally created, when it was last modified, and the user who created the item. It also shows the **Switch to Old UI** button, the **Create** button during ticket creation, and the **Copy** button, which appears after the ticket is created.
-
-![](/img/how-tos/how-to-create-bugs/created-modified.png)
-
-![](/img/how-tos/how-to-create-bugs/create-ticket.png)
-
-![](/img/how-tos/how-to-create-bugs/copy-ticket.png)
-
-14. In the **Followers** section, two groups are displayed:  
-    - **You**: Indicates that the current user is following items such as details, tasks, bugs, test cases, attachments, and discussions, and will receive updates related to any changes or activities. An option to remove the follower is also available.
-    - **Others**: Allows additional users to be added as followers by clicking the **+ Others** button. An option to remove another follower is also available.
-
-  :::note
-  Followers can be removed from the list. If a user removes themselves from the followers section, the **+You** option is automatically displayed. By clicking **+You** option, the user is added again as a follower. By clicking **+Others**, additional users can be added as followers.
-
-  :::
-
-![](/img/how-tos/how-to-create-bugs/you-other.png)
-
-![](/img/how-tos/how-to-create-bugs/remove-follower.png)
-
-15. The **Linked Items** section allows users to associate external items or references with the current work item. Here's a detailed explanation:  
-  - **Search Bar**: There is a search bar labeled “Search linked item” which allows users to quickly find already linked items.  
-  - **Calendar Icon**: Likely used to link a date-specific item or schedule-related reference.
-  - **Plus (+) Icon**: Opens a menu for creating or linking new items, such as, **Task**, **Bug**, **Document**, **Requirement**, or **Test Case**.
-  - **Link New Icon**: Used to add a direct link or reference to an external item.
-    - **ZeuZ**: Allows linking another ZeuZ work item.
-    - **GitHub**: Allows linking a GitHub issue or repository.
-    - **Jira**: Allows linking a Jira ticket.
-
-![](/img/how-tos/how-to-create-bugs/linked-items.png)
-
-![](/img/how-tos/how-to-create-bugs/items-linked.png)
-
-:::note
-- If a user hovers over a linked test case or task, the related information is displayed. When the item is clicked, a slider panel opens.
-
-![](/img/how-tos/how-to-create-bugs/linked-details.png)
-
-![](/img/how-tos/how-to-create-bugs/task-slider.png)
-
-- If users make any updates, the changes are saved automatically.
-
-:::
-
 ## FAQs / Troubleshooting
 ### FAQs
 
@@ -231,41 +127,39 @@ The dropdown allows the user to select the type of ticket to be created, such as
 </details>
 
 <details>
-<summary>What do the progress circles represent?</summary>
+<summary>What information is required to create a ticket?</summary>
 
-The progress section displays **Testing, Development**, and **Total** progress as percentages. These values help users quickly understand the current completion state of the ticket.
-
-</details>
-
-<details>
-<summary>What does the time tracking section show?</summary>
-
-It displays the original estimate, latest estimate, time spent, and remaining estimated time. Different icons are used to distinguish each value for clarity.
+At a minimum, a ticket requires a title and ticket type. Additional fields such as description, priority, assignee, and milestone provide better clarity.
 
 </details>
 
 <details>
-<summary>What is the purpose of linked items?</summary>
+<summary>Why is selecting the correct ticket type important?</summary>
 
-Linked items are used to create relationships between related work items.
-
-They help maintain traceability, improve visibility, and allow users to understand how requirements, tasks, bugs, and test cases are connected.
+The ticket type defines the workflow and available fields. For example, bug tickets include defect-specific fields, while task tickets focus on general work.
 
 </details>
 
 <details>
-<summary>Who receives updates for this ticket?</summary>
+<summary>What is the purpose of a ticket description?</summary>
 
-All users listed under the **Followers** section receive updates when changes occur to the ticket.
+The description provides context, requirements, and expectations, helping team members understand the work to be done.
+
+</details>
+
+<details>
+<summary>Can attachments be added during ticket creation?</summary>
+
+Yes. ZeuZ allows file attachments to support requirements, screenshots, or other reference materials.
 
 </details>
 
 ### Troubleshooting
 - **Progress shows 100% but testing is not completed**: This can happen when development work is marked complete but testing has not yet been executed. The testing status should be updated accordingly.
 - **Time spent or estimate values look incorrect**: This usually occurs if time was logged incorrectly. Users should update time entries using the clock circle icon to ensure accurate tracking.
-- **Milestone remains set to Backlog**: If no milestone is selected during ticket creation, the system keeps the milestone as Backlog by default. The milestone can be updated manually later.
-- **Version shows as “No version”**: This indicates that no fixed or found version was assigned during creation. A version must be created and selected if version tracking is required.
-- **Switch to Old UI button does not respond**: This may occur due to temporary browser or cache issues. Refreshing the page or clearing the browser cache generally resolves the problem.
+- **Unable to create a ticket**: This usually occurs due to missing required fields or insufficient user permissions within ZeuZ.
+- **Ticket not visible after creation**: This may be caused by applied filters, project access restrictions, or incorrect project selection.
+- **Attachments fail to upload**: This may occur due to file size limits or unsupported file formats.
 
 ## Changelog
 
