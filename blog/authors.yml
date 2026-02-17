@@ -61,3 +61,13 @@ mahbd:
     github: mahbd
     linkedin: mah20t
     x: mahmudula2000
+
+nayeem:
+  name: Md. Nayeem
+  title: Software Engineer
+  url: https://github.com/renayeem
+  image_url: https://github.com/renayeem.png
+  page: true
+  socials:
+    github: renayeem
+    linkedin: renayeem
