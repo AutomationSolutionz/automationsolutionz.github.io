@@ -4,10 +4,242 @@
         <title>ZeuZ Resources Blog</title>
         <link>https://docs.zeuz.ai/blog/</link>
         <description>ZeuZ Resources Blog</description>
-        <lastBuildDate>Sun, 28 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ZeuZ Platform 202602]]></title>
+            <link>https://docs.zeuz.ai/blog/zeuz-platform-202602/</link>
+            <guid>https://docs.zeuz.ai/blog/zeuz-platform-202602/</guid>
+            <pubDate>Tue, 17 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to the February 2026 release of the ZeuZ platform! This update delivers a major usability upgrade with a brand-new onboarding flow, powerful inspection tools, performance boosts, redesigned analytics and management pages, plus important workflow enhancements and bug fixes.]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the February 2026 release of the ZeuZ platform! This update delivers a major usability upgrade with a brand-new onboarding flow, powerful inspection tools, performance boosts, redesigned analytics and management pages, plus important workflow enhancements and bug fixes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features">🚀 New Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#-new-features" class="hash-link" aria-label="Direct link to 🚀 New Features" title="Direct link to 🚀 New Features">​</a></h2>
+<ol>
+<li><strong>New Onboarding Experience:</strong> Guided, platform-aware setup (Web, Android, iOS) with auto node setup, auto test case creation, and first-run execution.</li>
+<li><strong>iOS Inspector (New):</strong> AI-powered UI inspection for iOS with automatic environment detection, one-click capture, and smart action suggestions.</li>
+<li><strong>Fail Analysis Page Redesign:</strong> Modern UI with multi-card selection, full step visibility, runtime parameters, saved preferences, and quick unassignment.</li>
+<li><strong>Logs Slider Enhancements:</strong> Adjustable screenshot size, step status editing, Run ID navigation, and screenshot filtering.</li>
+<li><strong>Automatability Report Redesign:</strong> New analytics dashboard with statistics cards, velocity and priority charts, email reports, PDF export, and advanced filtering.</li>
+<li><strong>New Prerequisites Management Page:</strong> Visual table and tree views for dependency tracking, intelligent search, and bulk prerequisite editing.</li>
+<li><strong>Test Case Import System (New):</strong> Introduced a ZIP-based import system that creates test cases via GraphQL, resolves step conflicts, processes actions in bulk, stores attachments, and tracks progress with metadata.</li>
+<li><strong>Project Management Enhancements:</strong> Now fully launched! Previously in beta, this update streamlines ticket creation with auto-populated details for a faster, one-click experience. Includes Version/Milestone creation and a versatile new link component.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-bug-fixes">🐛 Bug Fixes<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#-bug-fixes" class="hash-link" aria-label="Direct link to 🐛 Bug Fixes" title="Direct link to 🐛 Bug Fixes">​</a></h2>
+<ol>
+<li><strong>Action Stability Improvements:</strong> Fixed text entry, scrolling issues, and modernized the tap action using updated Appium APIs.</li>
+<li><strong>Data Store UI Fixes:</strong> Enforced 100-file upload limit and improved backend error handling in the UI.</li>
+<li><strong>ZeuZ Secret Fix:</strong> “Add your own public key” button is now fully functional.</li>
+<li><strong>Scheduler Fix:</strong> Fixed an issue where the scheduler failed to trigger hourly deployments.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-improvements">🛠️ Improvements<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#%EF%B8%8F-improvements" class="hash-link" aria-label="Direct link to 🛠️ Improvements" title="Direct link to 🛠️ Improvements">​</a></h2>
+<ol>
+<li><strong>Android Inspection Speedup:</strong> UI dump and screenshot generation optimized to complete consistently within <strong>2–3 seconds</strong>.</li>
+<li><strong>Integrated Installer Performance:</strong> Node update and install process is now asynchronous for smoother, faster operation.</li>
+<li><strong>Run History Load Optimization:</strong> Database-level pagination and filtering dramatically reduce load time.</li>
+<li><strong>Test Case Import Reliability &amp; Performance:</strong> Improved import speed and reliability with post-import verification and optimized database connections.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-new-onboarding-experience">1. New Onboarding Experience<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#1-new-onboarding-experience" class="hash-link" aria-label="Direct link to 1. New Onboarding Experience" title="Direct link to 1. New Onboarding Experience">​</a></h2>
+<p>We’re excited to introduce our redesigned onboarding flow, built to ensure every new user gets up and running quickly and correctly. The experience is clean, intuitive, and optimized for all supported platforms.</p>
+<p>Currently supported platforms:</p>
+<ul>
+<li>Web</li>
+<li>Android</li>
+<li>iOS</li>
+</ul>
+<p>Additional platforms will be added progressively.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="whats-included-in-the-new-onboarding-flow">What’s Included in the New Onboarding Flow<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#whats-included-in-the-new-onboarding-flow" class="hash-link" aria-label="Direct link to What’s Included in the New Onboarding Flow" title="Direct link to What’s Included in the New Onboarding Flow">​</a></h4>
+<p><strong>1. Select Platform</strong><br>
+<!-- -->Choose the platform you want to automate (Web, Android, or iOS). The onboarding steps will dynamically adapt based on your selection.</p>
+<p><img decoding="async" loading="lazy" alt="Select Platform" src="https://docs.zeuz.ai/assets/images/image-1-6a675a02d8a16a8731c20179526904eb.png" width="2730" height="1252" class="img_ev3q"></p>
+<p><strong>2. Set Up ZeuZ Node</strong><br>
+<!-- -->Follow a guided, step-by-step process to install and configure ZeuZ Node locally. Clear instructions ensure a smooth setup without manual guesswork.</p>
+<p><img decoding="async" loading="lazy" alt="Set Up ZeuZ Node" src="https://docs.zeuz.ai/assets/images/image-2-4fb57cce0435dcea915462e5602944a6.png" width="2708" height="1454" class="img_ev3q"></p>
+<p><strong>3. Run Your App</strong><br>
+<!-- -->The system automatically installs required platform dependencies while you upload your application or provide the necessary configuration details for automation.</p>
+<p><img decoding="async" loading="lazy" alt="Run Your App" src="https://docs.zeuz.ai/assets/images/image-3-e8bf981edcadbd3cf61256717a05d1ce.png" width="2804" height="1498" class="img_ev3q"></p>
+<p><strong>4. Create Test Case (Auto-Generated)</strong><br>
+<!-- -->Once your app is uploaded and dependencies are ready:</p>
+<ul>
+<li>A test case is automatically created for you.</li>
+<li>A default <strong>Launch Action</strong> is added.</li>
+<li>You can immediately start building your scenario.</li>
+<li>With <strong>zAI</strong>, adding actions becomes fast and intuitive.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Create Test Case" src="https://docs.zeuz.ai/assets/images/image-4-2053adfdd70e6a16341f8da12a562f57.png" width="2822" height="1514" class="img_ev3q"></p>
+<p><strong>5. Execute Test Case</strong><br>
+<!-- -->Run your newly created test case directly from the onboarding flow and validate your setup end-to-end.</p>
+<p><img decoding="async" loading="lazy" alt="Execute Test Case" src="https://docs.zeuz.ai/assets/images/image-5-90942d42c97d9c568f3f2985ac7290b5.png" width="2746" height="1000" class="img_ev3q"></p>
+<p><strong>6. Completion</strong><br>
+<!-- -->You’ll see a confirmation screen once everything runs successfully. From there, you can:</p>
+<ul>
+<li>Start building advanced automation scenarios</li>
+<li>Explore additional platforms</li>
+</ul>
+<p>This new onboarding flow removes friction, reduces setup errors, and ensures users reach a successful first execution as quickly as possible.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-ios-inspector-new">2. iOS Inspector (New)<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#2-ios-inspector-new" class="hash-link" aria-label="Direct link to 2. iOS Inspector (New)" title="Direct link to 2. iOS Inspector (New)">​</a></h2>
+<p>We’re introducing <strong>iOS Inspector</strong>, a new UI element inspection tool fully integrated with ZeuZ (zAI). It streamlines iOS UI analysis and test case creation by automatically connecting to your active environment and providing intelligent action suggestions.</p>
+<p>If you are on the iOS Inspector page while your iOS Simulator and ZeuZ Node are running, the system will automatically detect both and initialize the required inspector services. Simply click <strong>Capture</strong> to take the latest screenshot of the simulator screen. From there, you can interact directly with the captured UI.</p>
+<p>When you click on any point in the screenshot, zAI analyzes the selected location and generates multiple recommended action combinations that can be added directly to your test case; similar to the Android Inspector workflow, but optimized for iOS.</p>
+<video controls="" loop=""><source src="/blog/2026-02-17-zeuz-platform-20260217/video-1.mp4" type="video/mp4"></video>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-features">Key Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#key-features" class="hash-link" aria-label="Direct link to Key Features" title="Direct link to Key Features">​</a></h4>
+<ul>
+<li><strong>Automatic Environment Detection</strong><br>
+<!-- -->Detects active ZeuZ Node and iOS Simulator instances and starts inspector services automatically.</li>
+<li><strong>One-Click UI Capture</strong><br>
+<!-- -->Instantly capture the current simulator screen for inspection.</li>
+<li><strong>AI-Powered Element Analysis</strong><br>
+<!-- -->Clicking on any area of the screenshot triggers zAI analysis to identify UI elements.</li>
+<li><strong>Smart Action Suggestions</strong><br>
+<!-- -->Generates multiple action combinations based on the selected element, enabling faster and more accurate test case creation.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-fail-analysis-page-redesign">3. Fail Analysis Page Redesign<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#3-fail-analysis-page-redesign" class="hash-link" aria-label="Direct link to 3. Fail Analysis Page Redesign" title="Direct link to 3. Fail Analysis Page Redesign">​</a></h2>
+<p>Fail analysis page has been redesigned with a modern UI and significantly improved usability. Notable improvements include:</p>
+<p><img decoding="async" loading="lazy" alt="Fail Analysis Redesign" src="https://docs.zeuz.ai/assets/images/image-6-98d9fd090848f039fc5aeabefa1ed4b9.png" width="1750" height="734" class="img_ev3q"></p>
+<ul>
+<li>Updated and consistent icon set</li>
+<li>Select all cards in a group with a single click</li>
+<li>Multi-card selection using:<!-- -->
+<ul>
+<li><code>Ctrl + click</code> (start card)</li>
+<li><code>Alt + click</code> (end card)</li>
+</ul>
+</li>
+<li>All test steps are now visible when expanding a card</li>
+<li>Runtime parameters are shown on expand</li>
+<li>Run history is accessible from expanded card view</li>
+<li>Users can now unassign themselves from items</li>
+<li>User preferences (Fail/GitHub/Jira tab + group preference) are now saved</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-logs-slider-enhancements">4. Logs Slider Enhancements<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#4-logs-slider-enhancements" class="hash-link" aria-label="Direct link to 4. Logs Slider Enhancements" title="Direct link to 4. Logs Slider Enhancements">​</a></h2>
+<p>Logs slider has received multiple upgrades to cover missing core features. New features include:</p>
+<ul>
+<li>Adjustable screenshot size</li>
+<li>Direct navigation to Run ID page from the slider</li>
+<li>Ability to change step status directly from the slider</li>
+<li>Filter actions that do not have screenshots</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-automatability-report-redesign">5. Automatability Report Redesign<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#5-automatability-report-redesign" class="hash-link" aria-label="Direct link to 5. Automatability Report Redesign" title="Direct link to 5. Automatability Report Redesign">​</a></h2>
+<p>Automatability report page has been redesigned with modern UI and new features like statistics card, automation velocity, priority breakdown, email report and export report. The report page has been redesigned to provide a comprehensive analytics dashboard that provides insights into test automation metrics, helping teams track automation progress.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-statistical-overview-card">1. Statistical Overview Card<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#1-statistical-overview-card" class="hash-link" aria-label="Direct link to 1. Statistical Overview Card" title="Direct link to 1. Statistical Overview Card">​</a></h4>
+<ul>
+<li>Displays key automation statistics (Total Test Cases, Automated Tests, Automation Rate, Automation Potential)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-category-distribution-chart">2. Category Distribution Chart<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#2-category-distribution-chart" class="hash-link" aria-label="Direct link to 2. Category Distribution Chart" title="Direct link to 2. Category Distribution Chart">​</a></h4>
+<ul>
+<li>Interactive pie chart showing distribution across 6 categories (e.g. Automated, Easily Automated)</li>
+<li>Custom tooltips with detailed breakdown</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Automatability Report 1" src="https://docs.zeuz.ai/assets/images/image-7-20374c54f5eb444fad1381c397d764b2.png" width="1850" height="874" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-automation-velocity-chart">3. Automation Velocity Chart<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#3-automation-velocity-chart" class="hash-link" aria-label="Direct link to 3. Automation Velocity Chart" title="Direct link to 3. Automation Velocity Chart">​</a></h4>
+<p>Automation velocity measures the rate at which test cases are converted from manual to automated status, showing trends across 6 automation categories over a fixed timeline (12 month by default). It helps teams identify acceleration or deceleration in automation efforts and assess the effectiveness of automation initiatives.</p>
+<p><img decoding="async" loading="lazy" alt="Automatability Report 2" src="https://docs.zeuz.ai/assets/images/image-8-ea4d4386eb983b4a98987ce76d64a7c7.png" width="1850" height="472" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-priority-breakdown-chart">4. Priority Breakdown Chart<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#4-priority-breakdown-chart" class="hash-link" aria-label="Direct link to 4. Priority Breakdown Chart" title="Direct link to 4. Priority Breakdown Chart">​</a></h4>
+<ul>
+<li>Stacked bar chart for priorities P1, P2, P3, P4</li>
+<li>Shows total test cases per priority</li>
+<li>Interactive tooltips revealing automatability breakdown within each priority</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Automatability Report 3" src="https://docs.zeuz.ai/assets/images/image-9-56630c2b22f7b7bfbe6668d5b159f0db.png" width="1843" height="573" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="5-automation-breakdown">5. Automation Breakdown<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#5-automation-breakdown" class="hash-link" aria-label="Direct link to 5. Automation Breakdown" title="Direct link to 5. Automation Breakdown">​</a></h4>
+<p>Automation breakdown helps to easily visualize total number of testcases in each folder/feature including including a detailed breakdown by test case category.</p>
+<p><img decoding="async" loading="lazy" alt="Automatability Report 4" src="https://docs.zeuz.ai/assets/images/image-10-3663fc3284a4721539b562f74b5ed388.png" width="1850" height="925" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="6-email-report-distribution">6. Email Report Distribution<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#6-email-report-distribution" class="hash-link" aria-label="Direct link to 6. Email Report Distribution" title="Direct link to 6. Email Report Distribution">​</a></h4>
+<p>Users can directly email the automatability report. The email will include:</p>
+<ul>
+<li>The statistics cards</li>
+<li>Category distribution data</li>
+<li>Selected filters (e.g., folder, feature, milestone)</li>
+<li>Report URL for reference</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Automatability Report 5" src="https://docs.zeuz.ai/assets/images/image-11-015fd81d200cda0d473ffbc4dff8c47e.png" width="1850" height="925" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="7-pdf-export-functionality">7. PDF Export Functionality<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#7-pdf-export-functionality" class="hash-link" aria-label="Direct link to 7. PDF Export Functionality" title="Direct link to 7. PDF Export Functionality">​</a></h4>
+<p>User can export the automatability report as pdf. The report will include everything from the automatability report page.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="8-filter-data">8. Filter Data<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#8-filter-data" class="hash-link" aria-label="Direct link to 8. Filter Data" title="Direct link to 8. Filter Data">​</a></h4>
+<p>User can easily filter the automatability report data by folder, feature and milestone.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-new-prerequisites-management-page">6. New Prerequisites Management Page<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#6-new-prerequisites-management-page" class="hash-link" aria-label="Direct link to 6. New Prerequisites Management Page" title="Direct link to 6. New Prerequisites Management Page">​</a></h2>
+<p>We are introducing the <strong>Prerequisites</strong> page, a dedicated workspace to manage execution dependencies within your test sets. You can access this new page from the navigation bar under Testing &gt; Deployments &gt; Prerequisites.</p>
+<p><strong>Who is it for?</strong>
+This feature is designed for QA Engineers who manage complex automation workflows where the success of one test depends on the state or outcome of another.</p>
+<p><strong>Why is it useful?</strong>
+As test sets grow, tracking "which test runs after which" becomes difficult. This update eliminates the guesswork by providing a centralized, visual map of your test case hierarchy. It prevents execution failures caused by missing dependencies and allows for rapid, bulk updates to your test cases.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-highlights">Key Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#key-highlights" class="hash-link" aria-label="Direct link to Key Highlights" title="Direct link to Key Highlights">​</a></h4>
+<ul>
+<li>
+<p><strong>Dual-Perspective Visualization:</strong></p>
+<ul>
+<li><strong>Table View:</strong> A detailed, searchable list with expandable rows that reveal the full "Prerequisite Chain" (upstream) and "Dependent Test Cases" (downstream).</li>
+<li><strong>Tree View:</strong> A folder-like, indented structure that allows you to visualize your entire dependency hierarchy at a glance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Intelligent Search:</strong> Instantly locate specific test sets or individual test cases by Name or ID to see exactly where they sit in the execution flow.</p>
+</li>
+<li>
+<p><strong>Bulk Prerequisite Editing:</strong> Select multiple test cases across either view and use the new <strong>"Edit Prerequisite"</strong> tool to reassign their parent dependency in a single action.</p>
+</li>
+<li>
+<p><strong>Clear Dependency Status:</strong> Quickly identify independent tests vs. those with requirements via the dedicated "Prerequisite" column.</p>
+</li>
+</ul>
+<p><strong>Prerequisites Home:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Prerequisites Home" src="https://docs.zeuz.ai/assets/images/image-12-d6b8691404cd106fb6ce32a9e8450c5a.png" width="1588" height="970" class="img_ev3q"></p>
+<p><strong>Table View:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Table View" src="https://docs.zeuz.ai/assets/images/image-13-d298ad64fe932ec9550a2bc92dc17875.png" width="1589" height="1256" class="img_ev3q"></p>
+<p><strong>Expanded Row in Table View:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Expanded Row" src="https://docs.zeuz.ai/assets/images/image-14-2bb98d17700992b469c524afbd9e5b36.png" width="1436" height="1048" class="img_ev3q"></p>
+<p><strong>Tree View:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Tree View" src="https://docs.zeuz.ai/assets/images/image-15-24f3fe3d97a0e28aba93c1acef4c6de5.png" width="1436" height="1031" class="img_ev3q"></p>
+<p><strong>Bulk Update Prerequisites for Selected Test Cases:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Bulk Update" src="https://docs.zeuz.ai/assets/images/image-16-a1e79b698e50a7f5cb0e0511b1d1b4ea.png" width="1225" height="1043" class="img_ev3q"></p>
+<p><strong>View Prerequisite Chain for a Selected Test Case in the Tree View:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Prerequisite Chain" src="https://docs.zeuz.ai/assets/images/image-17-e724da85353c71d30dd8f3b6d44c8eb5.png" width="1436" height="991" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-test-case-import-system-new">7. Test Case Import System (New)<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#7-test-case-import-system-new" class="hash-link" aria-label="Direct link to 7. Test Case Import System (New)" title="Direct link to 7. Test Case Import System (New)">​</a></h2>
+<p>Introduced a ZIP-based import system that creates test cases via GraphQL, resolves step conflicts, processes actions in bulk, stores attachments, and tracks progress with metadata.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="workflow">Workflow<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#workflow" class="hash-link" aria-label="Direct link to Workflow" title="Direct link to Workflow">​</a></h4>
+<p><strong>1. Upload Your File:</strong></p>
+<p>The new landing page allows you to easily upload your ZIP file containing the test case data.</p>
+<p><img decoding="async" loading="lazy" alt="Upload File" src="https://docs.zeuz.ai/assets/images/image-18-fb72dc93307d6c8126e076f51a556ed4.png" width="1674" height="992" class="img_ev3q"></p>
+<p><strong>2. Conflict Resolution:</strong></p>
+<p>The system automatically checks for any step conflicts. If no conflicts are found, it's ready to import.</p>
+<p><img decoding="async" loading="lazy" alt="Ready to Import" src="https://docs.zeuz.ai/assets/images/image-19-c1237682eab6356dff47df8e25334e87.png" width="1674" height="992" class="img_ev3q"></p>
+<p><strong>3. Background Processing:</strong></p>
+<p>Once the import is started, you'll receive a confirmation. The test cases are then processed in the background.</p>
+<p><img decoding="async" loading="lazy" alt="Import Started" src="https://docs.zeuz.ai/assets/images/image-20-b65866cd24ded7fc54e1048e81d0557d.png" width="1674" height="992" class="img_ev3q"></p>
+<p><strong>4. Import History &amp; Status:</strong></p>
+<p>You can monitor the progress and status of all your imports in the dedicated history view, showing whether they are completed or failed.</p>
+<p><img decoding="async" loading="lazy" alt="Import History" src="https://docs.zeuz.ai/assets/images/image-21-c983265545c63c0220ef60ca84235239.png" width="1674" height="992" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-project-management-enhancements">8. Project Management Enhancements<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#8-project-management-enhancements" class="hash-link" aria-label="Direct link to 8. Project Management Enhancements" title="Direct link to 8. Project Management Enhancements">​</a></h2>
+<p>We have significantly enhanced our project management capabilities, moving beyond beta to a fully realized ticket management system. This update focuses on reducing manual entry and providing better integration between internal and external workflows.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-features-1">Key Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-202602/#key-features-1" class="hash-link" aria-label="Direct link to Key Features" title="Direct link to Key Features">​</a></h4>
+<p><strong>1. Streamlined Ticket Creation:</strong></p>
+<p>For new users or those creating a ticket in a new project, the system now provides a clean landing page with default selected values. This ensures that you can get started immediately without having to configure every field manually.</p>
+<p><img decoding="async" loading="lazy" alt="New Ticket Creation" src="https://docs.zeuz.ai/assets/images/image-22-5e8c1d3df1d7f8a4772f0a26870a7acf.png" width="1350" height="513" class="img_ev3q"></p>
+<p><strong>2. Modernized Edit Experience:</strong></p>
+<p>The updated edit page utilizes our latest UI patterns and features the new <strong>Link Component</strong>. This allowed for a more organized overview of ticket details and related entities.</p>
+<p><img decoding="async" loading="lazy" alt="Ticket Edit Overview" src="https://docs.zeuz.ai/assets/images/image-23-ab8c9f3f21546c1d87575bb5edc68487.png" width="1600" height="877" class="img_ev3q"></p>
+<p><strong>3. System Message Integration:</strong></p>
+<p>Keep track of title, folder, feature, version, milestone, etc. changes with automatic system messages. Any updates to the status are logged, providing a clear audit trail for the entire team.</p>
+<p><img decoding="async" loading="lazy" alt="System Messages" src="https://docs.zeuz.ai/assets/images/image-24-beb26d66f50b60cce1610d1c4796639e.png" width="1292" height="930" class="img_ev3q"></p>
+<p><strong>4. Advanced Linking (GitHub &amp; Jira):</strong></p>
+<p>Integration is key! You can now link external GitHub and Jira tickets alongside your internal ZeuZ tickets, centralizing all project-related information in one place.</p>
+<p><img decoding="async" loading="lazy" alt="External Link Support" src="https://docs.zeuz.ai/assets/images/image-25-c8bfcae9355c23916efa43d3361d6f78.png" width="1674" height="992" class="img_ev3q"></p>
+<p><strong>5. Intelligent Link Creation:</strong></p>
+<p>When creating a new link, the system intelligently auto-populates relevant data from the edit pages. While these details can be edited before finalizing, the automation significantly reduces the effort required to connect related items.</p>
+<p><img decoding="async" loading="lazy" alt="Create Link Workflow" src="https://docs.zeuz.ai/assets/images/image-26-f7ceed2c137749306b6d964b0c2c9a4e.png" width="1350" height="930" class="img_ev3q"></p>
+<p><strong>6. Hover Information Popover:</strong></p>
+<p>We've added an intelligent popover for linked items. Hovering over a linked ticket ID instantly displays key information, allowing you to quickly cross-reference details without leaving your current view.</p>
+<p><img decoding="async" loading="lazy" alt="Link Info Popover" src="https://docs.zeuz.ai/assets/images/image-27-9575f43f8c588559ec7ece8424665735.png" width="791" height="462" class="img_ev3q"></p>
+<p><strong>7. Explore More Features:</strong></p>
+<p>While we’ve highlighted the major upgrades, there are many more features and refinements throughout the project management suite waiting to be discovered. We invite you to dive in, experiment with the new tools, and discover how these enhancements can transform your automation workflow.</p>]]></content:encoded>
+            <category>Changelog</category>
+        </item>
         <item>
             <title><![CDATA[ZeuZ Platform 202512]]></title>
             <link>https://docs.zeuz.ai/blog/zeuz-platform-202512/</link>
