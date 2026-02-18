@@ -91,7 +91,7 @@ If you are on the iOS Inspector page while your iOS Simulator and ZeuZ Node are 
 When you click on any point in the screenshot, zAI analyzes the selected location and generates multiple recommended action combinations that can be added directly to your test case; similar to the Android Inspector workflow, but optimized for iOS.
 
 <video controls loop>
-  <source src="/blog/2026-02-17-zeuz-platform-20260217/video-1.mp4" type="video/mp4" />
+  <source src="/blog/zeuz-platform-202602/video-1.mp4" type="video/mp4" />
 </video>
 
 #### Key Features
