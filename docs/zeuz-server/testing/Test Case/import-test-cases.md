@@ -5,7 +5,7 @@ title: Import
 
 import MetaCard from '@site/src/components/MetaCard';
 
-The **Import** feature allows users to upload multiple test cases at once using a **.zip** file. The user selects the file using the **Choose File** option and starts the process by clicking the **Upload** button. The **View Import History** option helps track previous imports, making this feature efficient for managing a large number of test cases.
+In case of **Import** feature, both a single test case and multiple test cases can be imported. The **Import** feature simplifies the process of adding test cases into the system. It allows users to upload multiple test cases at once using a **.zip** file. The user selects the file using the **Choose File** option and starts the process by clicking the **Upload** button. The **View Import History** option helps track previous imports, making this feature efficient for managing a large number of test cases.
 
 <MetaCard
   availableFrom="202512"
