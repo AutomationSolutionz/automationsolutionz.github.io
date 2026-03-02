@@ -26,6 +26,7 @@ import MetaCard from '@site/src/components/MetaCard';
 - Test executions completed with failed cases available for review.
 - Detailed test logs or reports generated from executions.
 - Associated versions, or milestones linked to the test runs.
+- Need to configure Github/Jira Integration from admin panel if you want to see Github/Jira tab.
 
 ## Quick-Start
 1. Open the **Fail Analysis** page, and check the graph to compare failures across versions or milestones at the top.
