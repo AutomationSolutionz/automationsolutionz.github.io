@@ -8,9 +8,9 @@ import MetaCard from '@site/src/components/MetaCard';
 **Fail Analysis** is the process of examining failed tasks or test cases to find the root cause, classify issues, and take corrective actions to prevent future failures.
 
 <MetaCard
-  availableFrom="20250518"
+  availableFrom="202602"
   difficulty="🟢 Medium"
-  lastUpdated="18 Sep, 2025"
+  lastUpdated="02 Mar, 2025"
   relatedTopics={["Run test cases", "Run history", "Run ID Details"]}
 />
 
@@ -34,6 +34,79 @@ import MetaCard from '@site/src/components/MetaCard';
 4. Group the test cases in three ways: 1) Group by Fail, 2) Group by Set, 3) Group by Assignee.
 
 ## Features
+### Search bar
+- A search bar is available at the top of the page.
+- It allows users to search for specific test cases directly.
+
+![](/img/fail-analysis/search-fail.png)
+
+### Grouping
+- The top bar shows how the data on the page is currently grouped.
+- The current grouping is set to **Group by Assignee**.
+- Users can change the grouping to **Group by Set** or **Group by Fail**.
+- The selected grouping preference is saved automatically.
+- After refreshing the page, the grouping remains unchanged.
+
+![](/img/fail-analysis/assignee-group.png)
+
+### Tabs
+- The dropdown is currently expanded, displaying available options.
+- **Fail** tab is selected and highlighted, indicating the current choice.
+- Additional tabs, **GitHub** and **Jira**, are available for selection, allowing the user to link or report the failure to an external system.
+
+![](/img/fail-analysis/fail-tab.png)
+
+### Filter
+- First, click the **Filter** option.
+
+![](/img/fail-analysis/filter-issue.png)
+
+- After clicking the "Filters" button, a "Customize your Filters" window appears with multiple tabs, including **Milestone**, **Version**, **GitHub Issue**, and **Jira Issue**.
+
+![](/img/fail-analysis/filter-tab.png)
+
+- To select a Milestone, click the `Milestone` tab and fill in the required information and then click **Apply Filters**:  
+  - **Current Milestone**: It is the milestone whose data is currently shown and used to calculate all report metrics.
+  - **Compare Milestone**: It refers to another milestone selected for comparison against the current milestone.
+
+![](/img/fail-analysis/milestone-filter.png)
+
+- To select a Version, click the `Version` tab and fill in the required information and then click **Apply Filters**:  
+  - **Current Version**: It refers to the software version whose test case and automation data is currently displayed in the report. All metrics are calculated based on this selected version.
+  - **Compare Version**: It is an additional software version selected to compare its metrics with the current version.
+:::note
+If we want to select a version, we can choose the production version by default, or select the development version by clicking the "Show Dev" checkbox.
+
+:::
+
+
+![](/img/fail-analysis/version-filter.png)
+
+- To select a GitHub Issue, click the `GitHub Issue` tab and fill in the required information and then click **Apply Filters**:  
+  - **Repository**: It allows users to select the GitHub repository from which issues will be considered.
+  - **Issue Status**: It enables filtering issues by status, such as open, closed, or both.
+  - **Milestones**: It allows selection of specific GitHub milestones to narrow down issues.
+  - **Labels**: It supports filtering issues by one or more labels, which are displayed as removable tags.
+  - **Authors**: This field filters issues created by selected users.
+  - **Assignees**: This field filters issues assigned to specific users.
+
+![](/img/fail-analysis/github-info.png)
+
+- To select a Jira Issue, click the `Jira Issue` tab and fill in the required information and then click **Apply Filters**:  
+  - **Project**: It allows users to select a specific Jira project.
+  - **Issue Status**: It enables filtering by Jira status, such as the current workflow state of issues.
+  - **Issue Type**: It allows selection of specific Jira issue types.
+  - **Priority**: This field filters issues based on their assigned Jira priority.
+  - **Labels**: This field allows filtering issues using Jira labels.
+  
+![](/img/fail-analysis/jira-info.png)
+
+:::note
+At the top-right side of the page, to the right of the Filter button, there is another button that navigates to the History page when clicked.
+
+![](/img/fail-analysis/history-fail.png)
+
+:::
 
 ### Comparison graph across milestones or versions
 At the top of the page, a **Comparison graph** is displayed. When there is no data, the graph appears empty, but once data is available, it can compare results across two versions or milestones.  
@@ -42,25 +115,50 @@ The graph shows how many test cases failed in the previous release versus the cu
 ![](/img/fail-analysis/milestone-comparison.jpg)
 
 ### Card View in Fail Analysis
-In the **Card View**, failed test cases are displayed with clear details. For example, if nine test cases fail, each card shows the exact step of failure at the top left corner. These failures often share a common or root cause.  
-By opening a card, users can add comments, see the folder and feature it belongs to, and check the status message (e.g., *"Previously passed and Now failed"*), which highlights test cases that worked in the previous build but are failing in the current release.  
-For investigation, managers can **Control + Click** on tickets and use the plus (+) symbol to assign them to specific team members. After reloading, the assigned user's name and profile picture appears on the card below. This helps track ownership, ensures clarity on who is working on what, and prevents duplicate efforts on the same failures or test cases.
+- Users can search test cases by name, feature, and other available attributes.
+- When a search is applied, only the matching results are shown within the existing top-level groups.
+- Each group header displays the group name and the number of failed cards in that group.
+- A select icon is available on the right side of each group header, allowing users to select all cards within that group at once.
+- Users can also manually select cards within a group.
+- To select multiple specific cards, users can click the first card, then use **Ctrl + Click** to select individual additional cards.
+- To select a range of cards, users can click the first card and then use **Alt + Click** on another card to select all cards between them.
+- On the bottom-left of each card, a runtime icon indicates the test type, such as automated, manual, performance, or hybrid when multiple types are involved.
+- If a GitHub issue is linked, the GitHub icon appears darker to indicate an active link.
+- When a card is not expanded, it displays the first failure comment along with the set and feature information.
+- When the card is expanded, all test case steps are shown and color-coded by status: passed steps appear in green, failed steps in red, and skipped steps in gray.
+- Users can click on a comment to open the work slider, which displays details such as set, feature, and GitHub information.
+- Hovering over the GitHub link provides an option to unlink the issue, which can be done with a single click.
+- If no GitHub issue is linked, users can link one by clicking **Link Issue**, selecting a repository, searching for an issue, and confirming the link.
+- When a card is selected, a sidebar opens showing detailed information, including linked GitHub details.
+- The sidebar displays test case information followed by runtime parameters.
+- Execution history is also visible in the sidebar. If there are more than four history entries, the section becomes scrollable.
+- Users can navigate directly to the run details page by clicking the Run ID icon.
+- Below the run details, existing comments are displayed, and new comments can be added.
+- During linking or selection of a test case, a small assignment window appears.
+- Users can assign a user from this window, and the assigned user’s profile is shown in the UI.
+- The assigned user can be removed easily by clicking the **Unassign** button.
 
-![](/img/fail-analysis/card-analysis.jpg)
+![](/img/fail-analysis/link-issue.png)
 
-### Grouping Test Cases in Fail Analysis
-Fail Analysis allows users to **group test cases** for better visibility and management. Test cases can be grouped by **failure**, helping identify root causes, or by **test set**, showing all defined sets in the system.  
-Grouping by **assignee** highlights unassigned test cases and shows which tickets are assigned to specific team members. For example, in a 
-team of five, each member can have different assigned tickets. At a glance, managers can see who is working on what, and by expanding a
-ticket, they can view comments and updates made in the system. This makes tracking progress and collaboration more efficient.
+![](/img/fail-analysis/card-expand.png)
 
-![](/img/fail-analysis/cards-group.png)
+### Snapview
+- Users can first filter logs by log type. For example, selecting **Error** displays only error-related logs.
+- Pagination controls are available at the bottom, allowing users to navigate between pages, including moving to the first or last available page.
+- Display settings allow users to choose which fields are visible, such as showing or hiding time, date, or module columns.
+- These display preferences are saved in the database, so the same settings remain applied after refreshing the page.
+- On the left side, test steps are listed with options to **Expand All** or **Collapse All**.
+- Users can debug a test case by navigating back to the run view and expanding all steps.
+- If screenshots are available, they are displayed clearly and can be previewed in a larger view when needed.
+- Screenshot display size can be adjusted by selecting **Small**, **Medium**, or **Large** view options.
+- The width of the steps panel can be increased by dragging to focus more on the left side.
+- The module section can also be resized by dragging, and layout preferences are saved automatically.
+- At the top, users can navigate directly to the Run ID or the test case and view the test case title.
+- A search option allows filtering steps by step name.
+- Users can hide actions that do not have screenshots by enabling the **Hide actions without screenshots** option.
+- The status and execution time of test case steps can also be updated if needed.
 
-### GitHub Integration and Filtering in Fail Analysis
-Fail Analysis also supports **GitHub Integration**. Although it is not currently enabled for this project, once activated, GitHub issues will be visible within ZeuZ. Users can apply **filters** to customize the view, such as selecting whether to see **open issues**, **closed issues**, or **both**, and filtering by **milestones** or **labels** from GitHub.  
-Additionally, for **versions** and **milestones**, users can compare and contrast data directly within Fail Analysis and apply filters to focus on specific criteria. This integration helps streamline issue tracking and improves visibility across test results and development workflows.
-
-![](/img/fail-analysis/github-filter.png)
+![](/img/fail-analysis/snapview-page.png)
 
 ## FAQs / Troubleshooting
 
@@ -110,7 +208,7 @@ Yes, GitHub issues can be viewed and filtered by status, milestones, or labels o
 
 ## Changelog
 
-- New UI introduced [[20250518](/blog/zeuz-platform-20250518)]
+- Fail Analysis Page Redesign: Modern UI with multi-card selection, full step visibility, runtime parameters, saved preferences, and quick unassignment [[202602](/blog/zeuz-platform-202602)]
 
 ## Related Topics
 

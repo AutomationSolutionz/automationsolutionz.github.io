@@ -19,7 +19,6 @@ The purpose of this feature is to provide a high-level view of test case relatio
 ### Why it matters / Use Cases:
 - Displays Prerequisite Test Case Links.
 - Shows Test Case Dependencies for Execution Planning.
-- Highlights Independent Test Cases.
 - Centralized Prerequisite Management.
 
 ## Prerequisites
