@@ -1,90 +1,121 @@
 ---
 id: create-projects
-title: Creating Projects
+title: Create Project
 ---
 
-### What is Project Management?
+import MetaCard from '@site/src/components/MetaCard';
 
-**Project management** typically involves several phases that help organize and guide the project from initiation to closure.
+In the context of test cases and project management, a **Project** is a structured workspace created to manage all testing and delivery activities for a specific application, product, or release. It defines the scope of work and acts as a central place where test cases, requirements, features, milestones, executions, defects, and reports are organized. From a project management perspective, it helps teams plan tasks, track progress, assign responsibilities, and monitor quality, ensuring that testing and development activities remain aligned with project goals and timelines.
 
-**Project management** in software testing involves the planning, coordination, and control of testing acting activities within a software development project. It includes defining testing objectives, allocating resources, managing timelines and milestones, facilitating communication and collaboration, mitigating risks, ensuring quality standards, and engaging stakeholders. Effective project management in software testing is essential for the successful completion of testing activities and the overall success of the software project.
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Easy"
+  lastUpdated="03 Mar, 2026"
+  relatedTopics={["Create team", "Setting up email notification"]}
+/>
 
-While there are different approches and methodolies, a common framwork for project management phases is as follows:  
+### Why it matters / Use Cases:
+- **Project Identification**: The project name clearly identifies the application or product under testing, ensuring all test cases and results are grouped correctly.
+- **Ownership and Accountability**: Assigning a project owner defines responsibility for maintaining test cases, managing execution, and overseeing quality.
+- **Structured Test Management**: Creating a project establishes a structured space to organize test cases, features, test sets, and automation assets.
+- **Access Control and Coordination**: A defined project allows teams to collaborate efficiently under a single workspace with clear ownership.
+- **Accurate Reporting and Metrics**: All reports, dashboards, and automation metrics are generated based on the selected project, ensuring reliable insights.
+- **Scalability Across Products**: Multiple projects can be created to manage testing for different applications or releases without overlapping data.
 
-* **Initiation**:  
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Admin → Team & Projects → Create Project**.
 
-1. Establishing the goal
-2. Defining the objectives
-3. Listing possible risks and obstacles
+## Features
+### Create Project
+- Navigate to the **Create New Project** page.
+- After navigating to the Create New Project page, users are required to provide the following information:  
+  - **Project Name Field**: A text input field labeled ***Project Name*** is used to enter the name of the new project.
+  - **Project Owner Selection**: A searchable dropdown labeled ***Project Owner***, allowing selection of one or more responsible users who will own and manage the project.
+  - **Submit Button**: After providing the required information, click the ***SUBMIT*** button to store the entered details and create the project.
 
-* **Planning**:  
+![](/img/how-tos/how-to-create-projects/project-page.png)
 
-1. Identifying project activities
-2. Determining necessary resources
-3. Analyzing and constructing the project network
+![](/img/how-tos/how-to-create-projects/multiple-owners.png)
 
-* **Execution**: 
+:::note
+To remove a **Project Owner**, click the **Delete (X)** button next to the selected owner.
 
-1. Carrying out the project plan
-2. Recuiting and organizing a project team
-3. Distributing needed information
+![](/img/how-tos/how-to-create-projects/delete-sign.png)
 
-* **Monitoring and controlling**:  
+:::
 
-1. Controlling the scope change
-2. Controlling the costs
-3. Controlling the quality
-4. Establishing a progress reporting system
+### Edit the Project
+- After saving all the required project information, the **Edit Project** page will appear.
+- If it is necessary to edit the project, update the required information, such as the **Project Name** or **Project Owners**, and then click the ***EDIT*** button to save the changes.
 
-* **Closing**:  
+![](/img/how-tos/how-to-create-projects/edit-project.png)
 
-1. Obtaining the client appearance
-2. Closing out the contract
-3. Issueing the final report
-
-### What is the necessity of Project Management in software testing?
-
-**Project management** is essential in software testing as it enables effective planning, coordination, and resource management. It helps in identifying and managing risks, ensuring clear communication among stakeholders, and delivering projects within set time and budget constraints.  
-
-Additionally, **Project management** plays a crucial role in maintaining quality standards, implementing best practices, and continuously improving the testing process. In summary, it ensures efficient and reliable testing outcomes, contributing to the overall success of software projects.
-
-### What is a Project in software testing and why is it necessary?
-
-In software testing, a **Project** refers to a specific undertaking or effort focused on testing a software application or system. It involves a series of planned activities, tasks, and milestones aimed at varifying the functionality, reliability, and quality of the software under test.
-
-**Projects** help define the scope of testing, allocate resources effectively, plan and track progress, manage risks, and facilitate communication and reporting. By establishing clear objectives and milestones, testing projects ensure that testing activities are carried out efficiently and effectively, leading to reliable software outcomes.
-
-### Important roles of a Project in software testing
-
-In software testing, a **Project** assumes important roles to ensure effective testing. It involves project management, test strategy and planning, coordination and communication, resource management, test execution and monitoring, risk management, stakeholder management, and test closure and reporting.
-
-The **Project** oversees the testing process, aligns it with project objectives, manage resources, tracks progress, and communicates with stakeholders. They also identify and mitigate risks, ensures effective collaboration, and generate test reports.
-
-Overall, the **Project** plays a vital role in driving successful testing outcomes and delivering high-quality software.
-
-## Steps
-
-1. From the **Menu bar**, go to the **Admin** then **Create Project** option.
+### Verify Project Visibility in the Project List
+- Navigate to the **Projects** page by clicking the `Project List` option available in the menu bar.
+- After navigating to the **Projects** page, scroll to check whether the required project has been created.
 
 ![](/img/how-tos/how-to-create-projects/project-menu.png)
 
-2. Go to the **Create New Project** page.
-3. Enter the **Project Name**.
-   > Entering the *Project Name* is necessary to specify the context and association of the test case with a particular project, aiding in organization and project-specific testing.
-4. Click to select the **Project Owners**.
-   > Selecting *Project Owners* are necessary to assign responsibility and accountability for overseeing and managing the testing efforts within a specific project.
-5. Multiple of **Project Owners** can also be selected.
-   > Multiple of *Project Owners* are selected to distribute leadership roles and responsibilities, ensuring effective project management and collaboration among team members.
+![](/img/how-tos/how-to-create-projects/test-name.png)
 
-![](/img/how-tos/how-to-create-projects/create-project.png)
+:::note
+A new project can also be created from the Projects page in a similar way by clicking the ***CREATE NEW PROJECT+*** button.
 
-6. Click on the **Submit** button.
-   > The function of the *Submit* button is to confirm and save the selected project owners and their roles, updating the project configuration for management and oversight.
+:::
 
-![](/img/how-tos/how-to-create-projects/submit-project.png)
+## FAQs / Troubleshooting
+### FAQs
 
-7. To remove any **Project Owner**, click on the **Cross sign(X)** button.
-   > Removing a *Project Owner* may be necessary if their role or responsibilities change, ensuring that the project's leadership accurately reflects the current team structure and responsibilities.
+<details>
+<summary>Can a project have multiple owners?</summary>
 
-![](/img/how-tos/how-to-create-projects/cross-sign.png)
+Yes, you can assign more than one owner to a project by selecting multiple users in the Project Owner field.
+
+</details>
+
+<details>
+<summary>How do I know if my project was successfully created?</summary>
+
+After submission, the new project should appear in the Projects list table with its Project ID, Project Name, and Project Owner.
+
+</details>
+
+<details>
+<summary>Can I edit project details after creation?</summary>
+
+Yes, click the Edit icon under the Update column to modify project information, including the name and owners.
+
+</details>
+
+<details>
+<summary>How do I manage team members for a project?</summary>
+
+Use the Manage Team icon in the project list to assign or remove team members from the project.
+
+</details>
+
+<details>
+<summary>Are there any naming restrictions for projects?</summary>
+
+There are no naming restrictions for projects. However, the project name must be unique and may include supported special characters.
+
+</details>
+
+### Troubleshooting
+- **Project does not appear after creation**: Refresh the Projects page to load the latest entries and ensure that the required fields (Project Name and Owner) are completed.
+- **Unable to select a project owner**: Check that the user exists and is active, and ensure that the user has sufficient permissions to be assigned as a project owner.
+- **Team members not updating in project**: Use the Manage Team icon to update members, and refresh the page to confirm the changes.
+- **Project shows incorrect owner after creation**: Verify the owner selection before clicking Submit, and use the Edit option to correct the owner if required.
+
+## Changelog
+
+- Always available
+
+## Related Topics
+
+- [Create team](https://docs.zeuz.ai/docs/zeuz-server/admin/Teams/create-teams/)
+- [Setting up email notification](https://docs.zeuz.ai/docs/zeuz-server/admin/Projects/setup-email-notification/)
+
+---
+
 

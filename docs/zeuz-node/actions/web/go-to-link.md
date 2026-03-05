@@ -132,18 +132,57 @@ This Example shows how to add different arguments for different browsers
 ## Queries:
 **1. How to manage profile?**
 
-Ans: You need to find or generate a chrome profile folder. Then add the profile as a folder
-`add_argument | chromium option | ['--user-data-dir=path/to/profile/folder']`
+Ans: To manage a Chrome profile in ZeuZ:
 
-As of now, No support for Firefox/Safari browser profile
+1. Close all running Chrome instances. Profile switching will not work if Chrome is open.
+2. Find or Create a Chrome profile folder.
+3. Add the profile using the Chromium option inside `add_argument`.
 
-Find Chrome profile path here,
-Find the Profile Path:
+Use both arguments:
 
-Chrome profiles are typically stored in:
-- Windows: `C:\Users\Username\AppData\Local\Google\Chrome\User Data\<ProfileName>`
-- macOS: `/Users/Username/Library/Application Support/Google/Chrome/`
-- Linux: `/home/Username/.config/google-chrome/`
+`
+[
+  '--user-data-dir=PATH_TO_USER_DATA',
+  '--profile-directory=ProfileName'
+]
+`
+
+|         |              |  |
+|-------------|------------------|-------|
+| add_argument | chromium option | `['--user-data-dir=PATH', '--profile-directory=ProfileName']` |
+
+#### Example (Windows)
+
+`
+[
+  '--user-data-dir=C:\Users\Username\AppData\Local\Google\Chrome\User Data',
+  '--profile-directory=Default'
+]
+`
+
+#### Where to Find Chrome Profiles
+
+**Windows**:  
+`
+C:\Users\Username\AppData\Local\Google\Chrome\User Data\
+`
+
+**macOS**:  
+`
+/Users/Username/Library/Application Support/Google/Chrome/
+`
+
+**Linux**:  
+`
+/home/Username/.config/google-chrome/
+`
+Inside the `User Data` folder, you will see directories like `Default`, `Profile 1`, `Profile 2`, etc.  
+Use the folder name as the value for `--profile-directory`.
+
+:::note
+Firefox and Safari profile management are not supported.
+
+:::
 
 **2. How to add chrome extension (crx/unpacked_folder/encoded_extension)?**
 
