@@ -58,8 +58,14 @@ To remove a **Project Owner**, click the **Delete (X)** button next to the selec
 
 ![](/img/how-tos/how-to-create-projects/test-name.png)
 
+- If necessary, the team can also be updated, managed, and the email setup can be configured from the Projects page.
+
+![](/img/how-tos/how-to-create-projects/project-update.png)
+
 :::note
-A new project can also be created from the Projects page in a similar way by clicking the ***CREATE NEW PROJECT+*** button.
+- A new project can also be created from the Projects page in a similar way by clicking the ***CREATE NEW PROJECT+*** button.
+
+![](/img/how-tos/how-to-create-projects/edit-newproject.png)
 
 :::
 
