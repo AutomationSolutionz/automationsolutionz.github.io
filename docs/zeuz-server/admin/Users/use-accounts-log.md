@@ -1,62 +1,102 @@
 ---
 id: use-accounts-log
-title: Using Accounts Log
+title: Account Logs
 ---
 
-The **Account Logs** provides a detailed tracking mechanism for user login activities. Each row in the log records important information such as:
-1. **ID**: An unique identifier for each log entry.
-2. **Username**: The account name of the user who attempted to log in.
-3. **Time**: The exact timestamp of when the login attempt occured.
-4. **Result**: The outcome of the login attempt (e.g., "login_successful").
-5. **IP Address**: The IP address from which the login attempt was made.
-6. **Metadata**: Additional information about the user's device and browser, such as the operating system (e.g., Windows 11 or MacOS) and the browser version (e.g., Safari or Chrome).
+import MetaCard from '@site/src/components/MetaCard';
 
-This **Account Logs** page is a crucial feature for enterprise clients, offering the following benefits:
+**Account Logs** in the context of test cases and project management refer to the system-generated records 
+that track user activities, such as creating, editing, or updating projects, teams, and test cases within 
+**ZeuZ**.
 
-### 1. **Enhanced Security and Monitoring**:
-- **Login Tracking**: It tracks every login attempt, both successful and unsuccessful, providing a clear audit trail of who accessed or attempted to access the system and from where.
-- **IP Address Logging**: By recording the IP address, enterprises can identify potentially suspicious access attempts from unknown locations, thus enhancing security by flagging unauthorized users.
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Easy"
+  lastUpdated="12 Mar, 2026"
+  relatedTopics={["User Management"]}
+/>
 
-### 2. **Detailed User Metadata**:
-- The metadata provides detailed information on the user's environment, such as the browser and operating system used. This helps in identifying potential technical issues or security tasks (e.g., if an outdated or untrusted browser is used).
+### Why it matters / Use Cases:
+- **User Activity Tracking**: Helps monitor user login activities in the system.
+- **Security Monitoring**: Tracks IP address, device, and browser to detect unauthorized access.
+- **Troubleshooting Login Issues**: Allows administrators to check whether a login attempt was successful or 
+unsuccessful.
+- **Audit and Accountability**: Maintains a record of user access for auditing purposes.
+- **Access History Review**: Shows when and from where users accessed ZeuZ.
 
-### 3. **Failed Login Attempts and Account Lockout**:
-- To further enhance security, the system automatically locks an account if a user enters incorrect credentials more than five times. This prevents brute force attacks or unauthorized access.
-- Once locked, the account requires **admin intervention** to be reactivated, ensuring that only legimate users can regain access.
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Admin → Users → Account Logs**.
 
-### 4. **Audit Trail for Compliance**:
-- The log provides a detailed record of user login activities, which is essential for regulatory compliance, internal audits, or investigations. It allows admins to verify who accessed the system and when, ensuring accaountability.
-
-### 5. **Troubleshooting and User Support**:
-- In cases of login issues, the logs can help IT teams troubleshoot by reviewing the metadata and identifying whether the issue stems from a specific browser or device configuration.
-
-In conclusion, this **Account Logs** page is a vital tool for enterprise clients looking to ensure robust security, maintain compliance, and improve visibility into user login activities across their platform. It also acts as a safeguard by locking out users after multiple failed attempts, requiring admin intervention to prevent potential security breaches.
-
-## Steps
-
-1. From the **Menu Bar**, go to the **Admin** and then **Account Logs** option.
+## Features
+- Navigate to the **Accounts Log** page by clicking the `Account Logs` option available under the "Admin" section in the menu bar.
 
 ![](/img/how-tos/how-to-use-accounts-log/account-logs.png)
 
-2. Go to the **Account Logs** page.
-
 ![](/img/how-tos/how-to-use-accounts-log/log-page.png)
 
-3. The **Number of Logs** appears on the **Accounts Log** page.
-   > The **Number of Logs** refers to the total count of recorded events displayed on the log page. Each log entry represents an action, such as user login attempts or system changes. On an **Accounts Log** page, this count reflects account related activities like logins and logouts, helping users or admins monitor system usage and track behaviour for auditing purposes.
-
-![](/img/how-tos/how-to-use-accounts-log/log-number.png)
-
-4. If we want to search for any user, there is a search bar where we can search for a specific user by username.
+- After navigating to the **Accounts Log** page, the following information will be displayed:  
+  - **Search Functionality**: Allows users to search logs using the username, IP address, or result.
+  - **Clear Search Option**: Provides a **Clear** button to reset the search filter and view all logs again.
+  - **Username Tracking**: Displays the username of the person who accessed the system (e.g., *Tahmid Shafique*).
+  - **Time Recording**: Shows the exact date and time of each login activity (e.g., *03/11/2026, 02:43:36*).
+  - **Login Result Status**: Indicates whether the login attempt was successful or not (e.g., *login success*).
+  - **IP Address Identification**: Records the IP address from which the user accessed ZeuZ (e.g., *103.187.94.221*).
+  - **Device and Browser Information**: Displays the operating system and browser used during login (e.g., *Windows / Chrome 145.0.0.0*).
 
 ![](/img/how-tos/how-to-use-accounts-log/search-log.png)
 
-5. Here each row in the log records important information, such as:
-- **ID**
-- **Username**
-- **Time**
-- **Result**
-- **IP Address**
-- **Metadata**.
-
 ![](/img/how-tos/how-to-use-accounts-log/log-info.png)
+
+## FAQs / Troubleshooting
+
+<details>
+<summary>Why are no logs appearing on the Account Logs page?</summary>
+
+Ensure that the users have logged in to the system. Account logs are generated only when login activities occur.
+
+</details>
+
+<details>
+<summary>Why is a specific user's log not visible?</summary>
+
+Use the **Search bar** to search by username, IP address, or login result to locate the required log entry.
+
+</details>
+
+<details>
+<summary>Why is the search result not showing expected logs?</summary>
+
+Check that the correct **username**, **IP address**, or **result keyword** is entered in the search field.
+
+</details>
+
+<details>
+<summary>How can the filtered results be cleared?</summary>
+
+Click the **Clear** button next to the search bar to remove the search filter and display all logs again.
+
+</details>
+
+<details>
+<summary>Why is the IP address different for the same user?</summary>
+
+The IP address may change if the user logs in from a **different network**, **device**, or **location**.
+
+</details>
+
+<details>
+<summary>Why is the device and browser information different?</summary>
+
+The device and browser information may appear different because the user may access ZeuZ from different devices, operating systems, or web browsers at different times.
+
+</details>
+
+## Changelog
+
+- New UI has been introduced [[20250518](/blog/zeuz-platform-20250518/)]
+
+## Related Topics
+
+- [User management](https://docs.zeuz.ai/docs/zeuz-server/admin/Users/create-users/)
+
+---
