@@ -8,7 +8,7 @@ import MetaCard from '@site/src/components/MetaCard';
 **Fail Analysis** is the process of examining failed tasks or test cases to find the root cause, classify issues, and take corrective actions to prevent future failures.
 
 <MetaCard
-  availableFrom="202602"
+  availableFrom="202603"
   difficulty="🟢 Medium"
   lastUpdated="02 Mar, 2025"
   relatedTopics={["Run test cases", "Run history", "Run ID Details"]}

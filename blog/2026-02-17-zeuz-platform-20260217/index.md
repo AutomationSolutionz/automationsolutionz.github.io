@@ -1,6 +1,6 @@
 ---
 slug: zeuz-platform-202602
-title: ZeuZ Platform 202602
+title: ZeuZ Platform 202603
 authors: ['nayeem']
 tags: ['changelog']
 ---
@@ -17,6 +17,7 @@ Welcome to the February 2026 release of the ZeuZ platform! This update delivers 
 6. **New Prerequisites Management Page:** Visual table and tree views for dependency tracking, intelligent search, and bulk prerequisite editing.
 7. **Test Case Import System (New):** Introduced a ZIP-based import system that creates test cases via GraphQL, resolves step conflicts, processes actions in bulk, stores attachments, and tracks progress with metadata.
 8. **Project Management Enhancements:** Now fully launched! Previously in beta, this update streamlines ticket creation with auto-populated details for a faster, one-click experience. Includes Version/Milestone creation and a versatile new link component.
+9. **Delete RunID before a Date:** You can now delete all runids and folders before a specific date mentioned. Before removing you can generate a summary to view as well.
 
 ## 🐛 Bug Fixes
 
@@ -24,6 +25,8 @@ Welcome to the February 2026 release of the ZeuZ platform! This update delivers 
 2. **Data Store UI Fixes:** Enforced 100-file upload limit and improved backend error handling in the UI.
 3. **ZeuZ Secret Fix:** “Add your own public key” button is now fully functional.
 4. **Scheduler Fix:** Fixed an issue where the scheduler failed to trigger hourly deployments.
+5. Search by Milestone in Delete runid issue is fixed. The Search function is optimized as well.
+6. Email spamming issue on server upgrade issue is fixed.
 
 ## 🛠️ Improvements
 
@@ -31,6 +34,8 @@ Welcome to the February 2026 release of the ZeuZ platform! This update delivers 
 2. **Integrated Installer Performance:** Node update and install process is now asynchronous for smoother, faster operation.
 3. **Run History Load Optimization:** Database-level pagination and filtering dramatically reduce load time.
 4. **Test Case Import Reliability & Performance:** Improved import speed and reliability with post-import verification and optimized database connections.
+5. **Disk space optimization for new RunIDs:** New Run history will consume much less disk space than before.
+6. By optimizing several db tables, all search API performance is slightly improved that consumes lower cpu/ram, responds quicker
 
 <!-- truncate -->
 

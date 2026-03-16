@@ -10,7 +10,7 @@ The **Prerequisites** feature is designed to help users visualize, manage, and c
 The purpose of this feature is to provide a high-level view of test case relationships, allowing teams to clearly understand the execution order, or "chain of command", within their automation suite and ensure reliable test execution.
 
 <MetaCard
-  availableFrom="202602"
+  availableFrom="202603"
   difficulty="🟢 Easy"
   lastUpdated="19 Feb, 2026"
   relatedTopics={["Create test cases", "Test set"]}
