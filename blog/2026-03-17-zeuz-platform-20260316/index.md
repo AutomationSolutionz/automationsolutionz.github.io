@@ -1,5 +1,5 @@
 ---
-slug: zeuz-platform-202602
+slug: zeuz-platform-202603
 title: ZeuZ Platform 202603
 authors: ['nayeem']
 tags: ['changelog']
