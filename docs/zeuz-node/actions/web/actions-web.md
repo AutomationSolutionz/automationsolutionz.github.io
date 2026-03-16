@@ -5,7 +5,7 @@ title: Introduction of Web Actions
 
 :::tip
 
-- **Drivers**: Selenium
+- **Drivers**: Selenium, Playwright
 
 :::
 
