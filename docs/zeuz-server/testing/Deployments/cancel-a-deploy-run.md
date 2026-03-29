@@ -1,50 +1,81 @@
 ---
 id: cancel-a-deploy-run
-title: Cancel a deploy run
+title: Cancel Run 
 ---
 
-### Why is it necessary to cancel a deploy run of test cases in software testing?
+import MetaCard from '@site/src/components/MetaCard';
 
-In software testing, there are scenarios where it becomes necessary to cancel the deploy run of test cases. This decision is typically driven by various factors that may affect the validity or reliability of testing processes.  
+**Cancelling a deploy run** refers to stopping an ongoing deployment process before it is completed.
 
-One common reason for cancelling a **Deploy Run** is the discovery of critical defects or issues that render the software unstable or unusable. If such defects are identified during initial testing stages or even during the deploy run itself, it may be more efficient and cost-effective to halt the process and address the problems before proceeding further.  
+<MetaCard
+  availableFrom="20250518"
+  difficulty="🟢 Easy"
+  lastUpdated="25 Mar, 2026"
+  relatedTopics={["History", "Run tests", "Run ID details", "Runtime parameters"]}
+/>
 
-Another reason for canceling the **Deploy Run** could be the identification of major changes or updates in the software requirements or specifications. If the original testing plan is no longer aligned with the updated requirements, it is essential to reassess the test cases and their relevance, potentially leading to the cancellation of the current **Deploy Run**.  
+### Why it matters / Use Cases:
+- **Prevent Errors from Spreading**: Stops the deployment if a configuration or code issue is detected.
+- **Avoid Failed Test Executions**: Cancels runs when automated tests are failing to prevent invalid results.
+- **Correct Misconfigurations**: Allows updating incorrect settings before redeploying.
+- **Save Time and Resources**: Stops unnecessary deployments, reducing server load and resource usage.
 
-Ultimately, cancelling the **Deploy Run** of test cases allows organizations to maintain the integrity, and reliability of their testing efforts, ensuring that only accurate and valid results are obtained, and minimizing the risks associated with deploying faulty or incomplete software.
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Testing → Deployments → History**.
 
-## Steps
-
-1. From the **Menu Bar**, go to the **Testing** menu, then select the **History** option.
+## Features
+- Navigate to the **Results** page by clicking the "History" option from the menu bar.
 
 ![](/img/how-tos/how-to-cancel-a-deploy-run/history-button.png)
 
-2. Go to the **Results** page.
-
 ![](/img/how-tos/how-to-cancel-a-deploy-run/history-result.png)
 
-3. To cancel the deployment run of a specific test case, click on the **Run ID** of that test case within the desired test set. However, to cancel the deployment run of an entire test set, click on the **title** of the corresponding test set card. 
-    > *Run ID* refers to a unique identifier assigned to a specific test run, allowing for easy tracking and reference of the executed tests and their associated results.
-
-    > A *test set card* refers to a visual representation or container that displays key information about a specific test set.  
-
-- **Title of a test set card**
+- Click the required **Run ID** on the page.
 
 ![](/img/how-tos/how-to-cancel-a-deploy-run/set-title.png)
 
-- **Run ID of a test case within the desired test set**
-
-![](/img/how-tos/how-to-cancel-a-deploy-run/results-history.png)
-
-4. Go to the **Execution Details** page.
-    > *Execution Details* page provide comprehensive information about the test execution, including test case status, logs, and other relevant details for analysis and troubleshooting.
+- After clicking the required **Run ID**, it will redirect to the "Run ID details" page.
 
 ![](/img/how-tos/how-to-cancel-a-deploy-run/execution-history.png)
 
-5. Click on the **CANCEL RUN** button.  
-    > The function of *CANCEL RUN* button is to halt the ongoing test execution process, stopping further execution of test cases, and preserving the current state for analysis or debugging purposes.
+- Click the **Cancel** button available at the top right of the "Run ID details" page.
 
 ![](/img/how-tos/how-to-cancel-a-deploy-run/cancel-run.png)
 
+- The Run ID will be cancelled after clicking the **Cancel** button.
 
+## FAQs / Troubleshooting
 
+<details>
+<summary>Can a cancelled run be resumed?</summary>
+
+No, once a run is canceled, it cannot be resumed.
+
+</details>
+
+<details>
+<summary>What happens when you click the **Cancel** button on a Run ID?</summary>
+
+The Run ID will be cancelled after clicking the **Cancel** button.
+
+</details>
+
+<details>
+<summary>How to confirm that a run is canceled?</summary>
+
+Check the run status on the Results page; it should be updated as “Canceled” or similar.
+
+</details>
+
+## Changelog
+
+- New UI has been introduced [[20250518](/blog/zeuz-platform-20250518/)]
+
+## Related Topics
+
+- [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
+- [Run tests](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-tests/)
+- [Run ID details](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/run-id-details-page/)
+- [Runtime parameters](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/runtime-parameters/)
+
+---
