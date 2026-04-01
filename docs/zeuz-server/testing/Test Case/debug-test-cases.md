@@ -10,7 +10,7 @@ import MetaCard from '@site/src/components/MetaCard';
 <MetaCard
   availableFrom="20250712"
   difficulty="🟢 Easy"
-  lastUpdated="14 Dec, 2025"
+  lastUpdated="1 Apr, 2026"
   relatedTopics={["Create test case"]}
 />
 
@@ -67,15 +67,73 @@ before regular runs.
   - **Select specific steps**: It selects the specific steps of the test case that needs to be debugged.
 - Click **Select all steps** for the selection of all steps.
 - To debug specific steps, click to select the required ones.
+- However, **Actions** can be selected individually or all at once.
 
 ![](/img/how-tos/how-to-debug-test-cases/all-steps.png)
 
 ![](/img/how-tos/how-to-debug-test-cases/specific-steps.png)
 
+![](/img/how-tos/how-to-debug-test-cases/selected-actions.png)
+
+![](/img/how-tos/how-to-debug-test-cases/all-actions.png)
+
+### Node connection
+- To run a test case, a ZeuZ node must be up and running.
+- It must be running in the background.
+:::note
+If it is launched for the first time, the ZeuZ Node ID may not appear as online. Instead, a message may be displayed indicating that the ZeuZ node is disconnected.
+
+:::
+- If the message appears in red color, click on the **Node** icon and from there click on the **Connect** button.
+
+![](/img/how-tos/how-to-debug-test-cases/node-available.png)
+
+![](/img/how-tos/how-to-debug-test-cases/node-connect.png)
+
+- Once connected, a message will be displayed in the terminal.
+
+![](/img/how-tos/how-to-debug-test-cases/windows-online.png)
+
 ### Debug test cases
+- From the node selector dropdown, select a particular node ID .
 - To debug test cases, click the **Debug** button available below.
 
+![](/img/how-tos/how-to-debug-test-cases/node-dropdown.png)
+
 ![](/img/how-tos/how-to-debug-test-cases/debug-test-case.png)
+
+## Additional features
+### Error test case
+- If any steps or actions are not defined, the test case cannot be executed and is considered incomplete.
+
+![](/img/how-tos/how-to-debug-test-cases/terminal-error.png)
+
+- To fix the error, go back to the test case, insert the missing action, move it to the correct position, and provide the required value.
+
+### Runtime parameters
+- This is the feature where we do not have to define variables inside the test cases but rather at runtime we can select the values of that variable.
+- On the right panel, runtime parameters option is available, allowing custom parameters to be defined. These are similar to variables; however, variables are defined within test cases, whereas runtime parameters are selected during deployment or execution.
+
+![](/img/how-tos/how-to-debug-test-cases/runtime-new.png)
+
+- If there is already have a runtime parameter, we can select that and add new values to it. however, we can select a particular value or we can add new values to it and can also select a different value.
+
+![](/img/how-tos/how-to-debug-test-cases/new-tag.png)
+
+![](/img/how-tos/how-to-debug-test-cases/tag-two.png)
+
+- When a different value is selected and the Debug button is clicked, that value is displayed. If another value is selected and Debug is clicked again, the updated value will be shown accordingly.
+
+## Variables
+- We can also navigate the variables that are generated at runtime.
+
+![](/img/how-tos/how-to-debug-test-cases/variable-panel.png)
+
+![](/img/how-tos/how-to-debug-test-cases/variable-paneltwo.png)
+
+- ZeuZ includes a wide range of useful built-in variables that can be easily utilized within test cases. These variables can be referenced directly, and nested variables and complex structures can be accessed and navigated as needed.
+
+![](/img/how-tos/how-to-debug-test-cases/nested-variable.png)
 
 ## FAQs / Troubleshooting
 
