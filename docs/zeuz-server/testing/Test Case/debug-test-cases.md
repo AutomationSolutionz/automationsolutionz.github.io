@@ -10,7 +10,7 @@ import MetaCard from '@site/src/components/MetaCard';
 <MetaCard
   availableFrom="20250712"
   difficulty="🟢 Easy"
-  lastUpdated="1 Apr, 2026"
+  lastUpdated="2 Apr, 2026"
   relatedTopics={["Create test case"]}
 />
 
@@ -27,7 +27,6 @@ before regular runs.
 - A test case must be properly defined before debugging.
 - The application under test should be running and accessible.
 - The necessary environment, test data, and configurations must be prepared.
-- Any debug settings, such as breakpoints or step-by-step execution options, must be configured before starting the debug.
 
 ## Quick-Start
 1. Open a test case.
@@ -96,7 +95,7 @@ If it is launched for the first time, the ZeuZ Node ID may not appear as online.
 
 ### Debug test cases
 - From the node selector dropdown, select a particular node ID .
-- To debug test cases, click the **Debug** button available below.
+- To debug test cases, click the **Run Selected Actions** button available below.
 
 ![](/img/how-tos/how-to-debug-test-cases/node-dropdown.png)
 
