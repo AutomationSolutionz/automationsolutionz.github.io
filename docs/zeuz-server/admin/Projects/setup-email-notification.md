@@ -33,13 +33,13 @@ Setting up **email notification** means configuring the system in ZeuZ to automa
 ## Features
 - First, navigate to the **Projects** page by clicking the "Project List" option from the menu bar.
 
-![](/img/how-tos/how-to-setup-email-notification/list-project.png)
+![](/img/how-tos/how-to-setup-email-notification/modified-project.png)
 
-![](/img/how-tos/how-to-setup-email-notification/page-project.png) 
+![](/img/how-tos/how-to-setup-email-notification/project-setup.png) 
 
 - Click the **Email Setup** button.   
 
-![](/img/how-tos/how-to-setup-email-notification/email-setup.png)
+![](/img/how-tos/how-to-setup-email-notification/project-email.png)
 
 - Navigate to the **Team wise Email Settings** page.
 - Click the required **Team**.
