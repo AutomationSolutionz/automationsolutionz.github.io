@@ -10,7 +10,7 @@ import MetaCard from '@site/src/components/MetaCard';
 <MetaCard
   availableFrom="202603"
   difficulty="🟢 Easy"
-  lastUpdated="12 Apr, 2026"
+  lastUpdated="13 Apr, 2026"
   relatedTopics={["Create test cases", "Run ID details"]}
 />
 
@@ -92,6 +92,32 @@ import MetaCard from '@site/src/components/MetaCard';
 ![](/img/API/desired-action.png)
 
 - While running the actions, first unselect the initial action, then select the newly added action, and click the **Run Selected Actions** button again.
+
+## Run actions within the platform
+- After adding the actions, click the **Next** button available at the top right of the page.
+- Click the **Run Test Case** button.
+- It will then redirect to the **Run ID Details** page of the test case.
+
+![](/img/API/next-button.png)
+
+![](/img/API/button-run.png)
+
+![](/img/API/onboard-summary.png)
+
+- After closing the Run ID details page, the platform will display a message stating that the **Test Case Completed Successfully!**. Then, click to **Continue to Next Step**.
+
+![](/img/API/next-step.png)
+
+- Lastly, at the top, a confirmation message **“Congratulations!”** indicates that the user has officially completed the onboarding. It also confirms that the first automated test case has been executed successfully, which means the basic setup and execution process is working correctly.
+- Under the **Recommended Next Steps** section, the platform suggests further actions, such as, Create Advanced Workflows and Examine Automation Run Result.
+- At the bottom, two action buttons are available, such as, Continue Automating and See Run Report.
+
+![](/img/API/congratulation-report.png)
+
+:::note
+ZeuZ follows a process similar to Postman for API services.
+
+:::
 
 ## FAQs / Troubleshooting
 
