@@ -28,13 +28,12 @@ This document defines ZeuZ’s complete terminology framework, AI capabilities, 
 - **Higher Delivery Success Rate**: Increases the likelihood of completing initiatives on time and within scope.
 
 ## Prerequisites
-- Access to ZeuZ Server with permissions for **Project → View → POD → Milestone Planning → Kanban**.
+- Access to ZeuZ Server with permissions for **Project → View → POD → Milestone Planning → Sprint View**.
 
 ## Features
 ### ZeuZ POD Structure
 - A **POD** is ZeuZ’s fundamental team unit—an autonomous, cross-functional delivery cell typically consisting of multiple developer / QA with complementary skills. PODs are designed to own complete features or services end-to-end.
 - A **POD** has the following characteristics:  
-  - Self-organizing with AI-assisted guidance
   - Shared delivery accountability
   - Complementary skill matrices
   - Collective ownership of outcomes.
