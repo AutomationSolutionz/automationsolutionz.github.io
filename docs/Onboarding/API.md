@@ -1,6 +1,6 @@
 ---
-id: Onboarding
-title: API
+id: API
+title: API Onboarding
 ---
 
 import MetaCard from '@site/src/components/MetaCard';
