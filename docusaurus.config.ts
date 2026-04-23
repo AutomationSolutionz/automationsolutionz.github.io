@@ -13,10 +13,10 @@ const config: Config = {
     trailingSlash: true,
 
     // Set the production url of your site here
-    url: "https://docs.zeuz.ai",
+    url: "https://zeuz.ai",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: "/",
+    baseUrl: "/docs/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -170,7 +170,7 @@ const config: Config = {
             contextualSearch: false,
 
             // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-            externalUrlRegex: 'docs\\.zeuz\\.ai',
+            externalUrlRegex: 'zeuz\\.ai',
 
             // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
             // replaceSearchResultPathname: {
