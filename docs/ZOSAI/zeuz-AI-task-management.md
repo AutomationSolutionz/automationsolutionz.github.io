@@ -38,7 +38,7 @@ This document defines ZeuZ’s complete terminology framework, AI capabilities, 
   - Complementary skill matrices
   - Collective ownership of outcomes.
 - Click the **+ New POD** button to create a new POD.
-- When creating a new **POD**, a name can be assigned to it, for example, **Test 123**. An optional parameter allows the addition of milestones to define which milestone the POD will work on. Any available milestone can be selected if required.
+- When creating a new **POD**, a name can be assigned to it, for example, **ZeuZ R&D Team**. An optional parameter allows the addition of milestones to define which milestone the POD will work on. Any available milestone can be selected if required.
 
 ![](/img/zeuz-AI-management/new-pod.png)
 
@@ -79,12 +79,12 @@ This document defines ZeuZ’s complete terminology framework, AI capabilities, 
 ![](/img/zeuz-AI-management/hide-show.png)
 
 - Tasks can be added to the current or upcoming milestone based on priority. Important tasks from the backlog can be selected and moved into a new milestone using a simple drag-and-drop functionality. Similarly, if a task was previously assigned to an earlier milestone but remains incomplete, it can also be moved to the new milestone.
-- This process allows tasks to be distributed effectively across milestones. Once all tasks are moved into the **Test Sprit Planning** milestone, an overall view of the milestone can be reviewed. For this, navigation to the **Kanban** page is required, where the complete status and flow of tasks can be analyzed.
+- This process allows tasks to be distributed effectively across milestones. Once all tasks are moved into the **Test Sprit Planning** milestone, an overall view of the milestone can be reviewed. For this, navigation to the **Sprint View** page is required, where the complete status and flow of tasks can be analyzed.
 
 ![](/img/zeuz-AI-management/drag-pod.png)
 
 ### Sprint view
-- On the Kanban page, the milestone that was planned along with the tasks added to it can be opened and managed easily. For example, if a milestone named **Test Sprit Planning** was created, it can be searched directly from the Kanban page.
+- On the **Sprint View** page, the milestone that was planned along with the tasks added to it can be opened and managed easily. For example, if a milestone named **Test Sprit Planning** was created, it can be searched directly from the Sprint View page.
 - Once selected, all tasks under that milestone will be displayed across different columns. There are two main viewing concepts available in the column view.
 
 ![](/img/zeuz-AI-management/kanban-page.png)
@@ -153,6 +153,15 @@ Example: 10 hours allocated, only 7 hours assigned.
   - **8 and above**: High complexity, meaning the developer is working on more challenging and time-consuming tasks.
 
 ![](/img/zeuz-AI-management/average-complexity.png)
+
+### Velocity
+- Two concepts of velocity are there one **Velocity** and the other one is **Required Velocity**.
+- **Velocity** refers to how much work a user can complete within a specific period and how efficiently the work is performed.
+- **Velocity** is calculated based on the tasks a user has completed during the last 30 days and the complexity of those tasks. For example, suppose a user completed 5 tasks with an average complexity of 8, and it took 20 hours to complete them. In that case, the user’s velocity is calculated by dividing the total task complexity by the total time spent.
+- This means velocity measures how much work complexity a user can complete within a certain amount of time. The calculation is based on data from the last 30 days.
+- **Required Velocity** refers to the level of productivity needed to complete the remaining assigned tasks within the available time.
+- For example, suppose a user was assigned 10 tasks and has already completed 5 tasks. The remaining 5 tasks still need to be finished. Based on the complexity of those remaining tasks and the time available to complete them, another velocity is calculated. This is called Required Velocity.
+- For instance, if the user’s actual velocity over the last 30 days was 2 or 3, but completing the upcoming tasks on time requires a velocity of 4, it means the user will need to increase work speed or productivity.
 
 ## Changelog
 
