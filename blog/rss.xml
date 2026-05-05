@@ -4,10 +4,466 @@
         <title>ZeuZ Resources Blog</title>
         <link>https://docs.zeuz.ai/blog/</link>
         <description>ZeuZ Resources Blog</description>
-        <lastBuildDate>Tue, 17 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ZeuZ Platform 202604]]></title>
+            <link>https://docs.zeuz.ai/blog/zeuz-platform-202604/</link>
+            <guid>https://docs.zeuz.ai/blog/zeuz-platform-202604/</guid>
+            <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to the April 2026 release of the ZeuZ platform! This update introduces deep observability with Grafana & Prometheus integration, a fully revamped Dashboard, the new UI Mockup Generator addon for Agentic Implement, a redesigned Milestone View with Risk/Complexity/Velocity insights, Log Export & Share, expanded onboarding platforms, a new flexible Test Case Edit page, the Linux Inspector, plus important workflow enhancements and bug fixes.]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the April 2026 release of the ZeuZ platform! This update introduces deep observability with Grafana &amp; Prometheus integration, a fully revamped Dashboard, the new UI Mockup Generator addon for Agentic Implement, a redesigned Milestone View with Risk/Complexity/Velocity insights, Log Export &amp; Share, expanded onboarding platforms, a new flexible Test Case Edit page, the Linux Inspector, plus important workflow enhancements and bug fixes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features">🚀 New Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#-new-features" class="hash-link" aria-label="Direct link to 🚀 New Features" title="Direct link to 🚀 New Features">​</a></h2>
+<ol>
+<li><strong>Grafana &amp; Prometheus Integration:</strong> Added secure integration with Grafana and Prometheus. Monitor servers, analyze metrics, and create custom dashboards in Grafana.</li>
+<li><strong>Django Memory Profiling:</strong> Introduced memory profiling within Django to help identify functions responsible for high memory usage.</li>
+<li><strong>Run ID Cleanup by Date:</strong> Automatically remove run IDs older than a specified date from the database and file storage. Includes summary, confirmation prompt, and post-cleanup notification.</li>
+<li><strong>Dashboard's New Look:</strong> Revamped dashboard with grid-based layout, customization menu, drag-and-drop reordering, and new project management/team insight widgets.</li>
+<li><strong>UI Mockup Generator (New Addon for Agentic Implement):</strong> AI-driven mockup generation with design variants, iterative refinement, and seamless handoff to Agentic Implement.</li>
+<li><strong>Milestone View's New Look:</strong> Redesigned Milestone View with Status View, Developer/QA View, Complexity, Risk, Global Risk, and Velocity concepts.</li>
+<li><strong>Log Export &amp; Share (Phase 1):</strong> Unified log download and share experience across onboarding setup cards and connected ZeuZ Nodes setup view.</li>
+<li><strong>Time Summary for Linked Items in Requirements:</strong> New aggregated spent/remaining time view with structured worklog breakdown and segmented progress visualization.</li>
+<li><strong>Onboarding Platform Expansion:</strong> Onboarding now supports API, Windows, Database, Security, and Accessibility testing, with ZAI Chatbot for Android, Web, iOS, Windows, and API testing.</li>
+<li><strong>POD Management System Page:</strong> Introduced Product Oriented Delivery (POD) Management System for cross-functional team organization.</li>
+<li><strong>Milestone Planning Page:</strong> New page for efficient milestone and ticket management with drag-and-drop interface.</li>
+<li><strong>Team Worklog Page (Redesigned):</strong> Fully redesigned worklog experience with multi-user selection, bar charts, ticket slider, and key information cards.</li>
+<li><strong>New Testcase Edit Page:</strong> Completely revamped Test Case Edit page with a customizable, drag-and-drop workspace powered by <code>flexlayout-react</code>.</li>
+<li><strong>Linux Inspector (New):</strong> Dedicated Linux Inspector panel for building and debugging automated tests for Linux desktop applications.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-bug-fixes">🐛 Bug Fixes<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#-bug-fixes" class="hash-link" aria-label="Direct link to 🐛 Bug Fixes" title="Direct link to 🐛 Bug Fixes">​</a></h2>
+<ol>
+<li><strong>Email Notification URL Issue:</strong> Fixed a bug where URLs were incorrectly set to localhost.</li>
+<li><strong>Frontend Multi-Selector Issue:</strong> Resolved an issue where multi-selector components broke after a package update.</li>
+<li>Fixed UI styling issues in <strong>User Management</strong> page.</li>
+<li>Resolved auto-save issues in Project Management → Ticket title and Ticket description.</li>
+<li>Fixed <code>Cannot read properties of undefined</code> errors in History page, Set pages (ECharts resize listeners), and Test case edit page (VP selector).</li>
+<li><strong>AI &amp; Execution Fixes:</strong> Fixed WebSocket errors after client disconnects, user query truncation, AI execution error handling stability, missing <code>session_complete</code> events, and GraphQL context URL fetching issue.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-improvements">🛠️ Improvements<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#%EF%B8%8F-improvements" class="hash-link" aria-label="Direct link to 🛠️ Improvements" title="Direct link to 🛠️ Improvements">​</a></h2>
+<ol>
+<li><strong>Performance Improvements:</strong> Optimized key APIs and database tables to reduce response latency.</li>
+<li><strong>Modernized Follower UI</strong> in Project Management.</li>
+<li><strong>AI Chatbot &amp; Planning:</strong> Optional AI plan review flow, interactive review actions, iterative feedback loop, persistent docs search visibility, smarter replanning, conditional DOM fetching with <code>skip_dom</code>, improved WebSocket stability, markdown rendering, chatbot UI, and stop-generation visibility.</li>
+<li><strong>XPath &amp; Performance:</strong> Improved XPath variable handling consistency, optimized sibling property retrieval, and reduced unnecessary DOM operations.</li>
+<li><strong>Node Selector:</strong> Improved node auto-selection and persistence behavior, simplified configuration handling for reusable integrations.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-grafana--prometheus-integration">1. Grafana &amp; Prometheus Integration<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#1-grafana--prometheus-integration" class="hash-link" aria-label="Direct link to 1. Grafana &amp; Prometheus Integration" title="Direct link to 1. Grafana &amp; Prometheus Integration">​</a></h2>
+<p>Added secure integration with Grafana and Prometheus. Monitor servers, analyze metrics, and create custom dashboards in Grafana.</p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/abdc5da6-9f01-4cf2-a419-f0b81f43636f-725fbc53a2198f341c196a25564b6a98.bin" width="2918" height="1552" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-django-memory-profiling">2. Django Memory Profiling<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#2-django-memory-profiling" class="hash-link" aria-label="Direct link to 2. Django Memory Profiling" title="Direct link to 2. Django Memory Profiling">​</a></h2>
+<p>Introduced memory profiling within Django to help identify functions responsible for high memory usage.</p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/33e68b16-878d-4e97-922f-027ff0937251-cb2e099c034b00a35d2b4de02ad923ae.bin" width="2860" height="1536" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/83c3307f-aed8-4ee9-9039-92ade7c14e61-0fbdeea359adb6f94e144bb3b0edf8f1.bin" width="2338" height="1392" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/135e834f-51bf-486f-b744-0982a880da5b-0f553a3aeff6f6894d02832b03617db8.bin" width="2338" height="1406" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-run-id-cleanup-by-date">3. Run ID Cleanup by Date<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#3-run-id-cleanup-by-date" class="hash-link" aria-label="Direct link to 3. Run ID Cleanup by Date" title="Direct link to 3. Run ID Cleanup by Date">​</a></h2>
+<p>Automatically remove run IDs older than a specified date from the database and file storage. Includes summary, confirmation prompt, and post-cleanup notification.</p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/00d4ee56-7db5-4028-96d1-1eec1118be07-1fa9430f1602029d1444b8753c2c94d0.bin" width="1800" height="1546" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/12d2293d-f7a6-4f32-9ae4-2b4b4ac8cf86-ab3230983c725013e8d36b7d67f513a9.bin" width="1786" height="922" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/5494c165-35d5-4fc8-86a5-0bacada1701b-2db872032250c740e998ccccce75911b.bin" width="1782" height="1196" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-dashboards-new-look">4. Dashboard's New Look<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#4-dashboards-new-look" class="hash-link" aria-label="Direct link to 4. Dashboard's New Look" title="Direct link to 4. Dashboard's New Look">​</a></h2>
+<p>The dashboard has been revamped to bring much more useful info front-and-center so that you can see most of the valuable details about your project and testing right from the homepage.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="new-layout--customization">New Layout &amp; Customization<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#new-layout--customization" class="hash-link" aria-label="Direct link to New Layout &amp; Customization" title="Direct link to New Layout &amp; Customization">​</a></h4>
+<ul>
+<li><strong>Grid-Based Interface:</strong> Transitioned to a structured grid layout with consistent card sizing, spacing, and subtle borders for a more stable visual experience.</li>
+<li><strong>Layout Customization:</strong> Introduced a new customization menu allowing users to toggle widget visibility, reorder cards via drag-and-drop, and save custom layout presets.</li>
+<li><strong>Testing Widgets:</strong> Existing testing-related widgets have been refreshed to match the new visual system.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="project-management--team-insights">Project Management &amp; Team Insights<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#project-management--team-insights" class="hash-link" aria-label="Direct link to Project Management &amp; Team Insights" title="Direct link to Project Management &amp; Team Insights">​</a></h4>
+<ul>
+<li><strong>New Personal Widgets:</strong> Added dedicated cards for <strong>My Recent Items</strong>, <strong>Completed This Week</strong>, and <strong>Open Tickets/Bugs</strong>.</li>
+<li><strong>Team Activity:</strong> Introduced <strong>Recent Team/Project Activity</strong> and <strong>Recent Replies</strong> to track discussions and project-wide updates.</li>
+<li><strong>Milestone Tracking:</strong> Added an <strong>Active Milestone Progress</strong> card to monitor development, testing, and time remaining for current milestones.</li>
+<li><strong>Resource Management:</strong> New <strong>Team Workload Summary</strong> widget comparing logged vs. expected pod work hours.</li>
+<li><strong>Feature Discovery:</strong> Added a rotating tips widget to highlight platform features and best practices.</li>
+<li><strong>CRM Integration:</strong> Added a <strong>CRM Pending Activities/Issues</strong> card for streamlined client management tracking.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/1f3c1ce3-f466-416c-8bd6-bc2743fad0b3-1c3cb4b7111ea83aa340c140f9b83694.bin" width="1732" height="1268" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-new-addon-for-agentic-implement-ui-mockup-generator">5. New Addon for Agentic Implement: UI Mockup Generator<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#5-new-addon-for-agentic-implement-ui-mockup-generator" class="hash-link" aria-label="Direct link to 5. New Addon for Agentic Implement: UI Mockup Generator" title="Direct link to 5. New Addon for Agentic Implement: UI Mockup Generator">​</a></h2>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New Features<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#new-features" class="hash-link" aria-label="Direct link to New Features" title="Direct link to New Features">​</a></h4>
+<ul>
+<li><strong>AI-Driven Mockup Generation:</strong> Introduced a sub-feature within <strong>Agentic Implement</strong> that creates visual HTML mockups for tickets. The AI automatically selects between a React mini-app (interactive) or HTML+TailwindCSS (static) based on requirements.</li>
+<li><strong>Design Variants:</strong> Users can now generate 1–5 distinct visual interpretations (labeled A–E) per ticket to compare different design approaches.</li>
+<li><strong>Iterative Refinement:</strong> Added a versioning system that allows users to refine a selected mockup via natural language feedback. Each iteration creates a new version, with a version switcher for easy comparison.</li>
+<li><strong>Seamless Handoff:</strong> Completed mockups are automatically injected into the <strong>Agentic Implement</strong> planning prompt, serving as a visual reference for final code implementation.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="user-experience--interface">User Experience &amp; Interface<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#user-experience--interface" class="hash-link" aria-label="Direct link to User Experience &amp; Interface" title="Direct link to User Experience &amp; Interface">​</a></h4>
+<ul>
+<li><strong>Mockup Drawer:</strong> A new drawer in the project management page containing configuration tools, real-time generation progress, and a preview gallery.</li>
+<li><strong>Visual Previews:</strong> Integrated thumbnail previews and a "Live Preview" button to view mockups in a new browser tab.</li>
+<li><strong>Design Selection:</strong> Implemented an intuitive "click-to-select" card system to designate the active design to use as reference for implementation.</li>
+<li><strong>Design Fidelity:</strong> Added codebase analysis support to extract project-specific color palettes and design patterns for more accurate mockups.</li>
+<li><strong>Unified Discussions:</strong> Feedback for both mockups and implementation is centralized within a single shared discussion thread per ticket.</li>
+</ul>
+<p>Agentic Implement panel with a sub-panel for UI Mockup Generator:</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://docs.zeuz.ai/assets/images/9c726b40-2dbd-4eb6-89e2-f41b92c25b6b-3dc4801981c14c12027d60170833c902.bin" width="275" height="167" class="img_ev3q"></p>
+<p><code>MockupDrawer</code> in the empty state, with the input for the initial number of design variants to generate:</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://docs.zeuz.ai/assets/images/9e117474-de99-4711-b581-d1792201bca0-2bab2b4261fd67453ddcac1e969011c1.bin" width="729" height="597" class="img_ev3q"></p>
+<p>Mockup generation task in progress:</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://docs.zeuz.ai/assets/images/601b1001-44bf-4b45-800f-61f98ac08e19-337d1fc3fb29d4d432f912f85254b2c7.bin" width="702" height="562" class="img_ev3q"></p>
+<p>Mockup generator awaiting plan approval from user:</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://docs.zeuz.ai/assets/images/d03371e1-57c9-4448-9d2b-45b483ba76cd-b58b2b1f1e83bc1af83da56d0ce3f63e.bin" width="703" height="507" class="img_ev3q"></p>
+<p><code>MockupDrawer</code> showing a generated result card with thumbnail, preview button and the refinement prompt box:</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://docs.zeuz.ai/assets/images/268c9e08-b47c-4c76-8ea0-6424d06ea875-fc5dc8a59027e9e9b54d02bb02d4373d.bin" width="1024" height="1134" class="img_ev3q"></p>
+<p>Agentic Implement system posts the mockup plan and result summary in the ticket's discussion box:</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://docs.zeuz.ai/assets/images/17baa22b-2676-4908-9d8e-bbddfbeb255f-e8898d4897ef8b73dd8c4d5323a2d6f4.bin" width="1047" height="1267" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-milestone-views-new-look">6. Milestone View's New Look<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#6-milestone-views-new-look" class="hash-link" aria-label="Direct link to 6. Milestone View's New Look" title="Direct link to 6. Milestone View's New Look">​</a></h2>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-view">Milestone View<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#milestone-view" class="hash-link" aria-label="Direct link to Milestone View" title="Direct link to Milestone View">​</a></h4>
+<ul>
+<li>On the <strong>Milestone View</strong> page, the milestone that was planned along with the tasks added to it can be opened and managed easily. For example, if a milestone named <strong>Test Sprit Planning</strong> was created, it can be searched directly from the Milestone View page.</li>
+<li>Once selected, all tasks under that milestone will be displayed across different columns. There are two main viewing concepts available in the column view.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/66427b7a-558c-4f9b-9244-4b75189f3900-db5530afbf3bac978e0431701d0649dd.bin" width="1919" height="785" class="img_ev3q"></p>
+<ul>
+<li>The first view is the <strong>Status View</strong>, where tasks are distributed based on their current progress. This allows users to see whether tasks are overdue, not started, started, or not tested.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/167d5770-03db-4808-8290-b0d99dd5c6d4-8d0bb0376e6c1f7e4b920fa600ec20f0.bin" width="1918" height="742" class="img_ev3q"></p>
+<ul>
+<li>The second view is the <strong>Developer/QA View</strong>, where tasks are grouped based on the assigned developer or QA member. For example, several tasks may be assigned to Towhid Al Foysal, while other team members may have none. This provides a clear workload distribution view.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/58abb51a-bd8e-4053-a748-a5f3bb94ba21-4cfa47b37569f711f8bd0d7bd548a689.bin" width="1914" height="751" class="img_ev3q"></p>
+<ul>
+<li>Additional customization features are also available. Users can resize the task cards into <strong>large</strong>, <strong>medium</strong>, or <strong>small</strong> views according to preference.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/d23f7dac-b00b-4371-92be-5b4a4f072ca5-c1503b145465708aa564d7a83b6796b3.bin" width="513" height="867" class="img_ev3q"></p>
+<ul>
+<li>The <strong>Display Fields</strong> option allows users to control which information is shown on each task card. For example, the title, feature name, and due date may currently be visible. If milestone information is also needed, it can be added simply by selecting the milestone checkbox. Other fields such as found version or fixed version can also be enabled as required.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/7afc6384-e14b-4718-aef2-06becd818545-f8818d8bc02819542e8aa8b337a6501c.bin" width="466" height="607" class="img_ev3q"></p>
+<ul>
+<li>Users can also control which status columns are visible. For example, if only the <strong>Requirement with no task</strong> tasks need to be viewed, all other columns can be unchecked, and only the selected column will remain visible.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/fe4e8601-e278-4322-8fa6-f62d786e70aa-f2297eceb1c2c8901b1335730351eeca.bin" width="1902" height="859" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="card-view">Card View<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#card-view" class="hash-link" aria-label="Direct link to Card View" title="Direct link to Card View">​</a></h4>
+<ul>
+<li>When a card is clicked, it expands to display additional details. After expansion, it also shows whether any linked items are associated with that card.</li>
+<li>These linked items help users understand the task dependencies and overall progress. The progress bar available on the card provides a visual indication of the current completion status.</li>
+<li>For each requirement, most of the important information is presented on the card. While not every detail may be shown directly, approximately <strong>90%</strong> of the relevant information is displayed through available filters and view options.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/5dff7ccf-348b-48b5-afdb-fc12413c57a7-6011a411053b16b0c693e8f3a209fa30.bin" width="664" height="462" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="new-concept-of-milestone-view">New Concept of Milestone View<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#new-concept-of-milestone-view" class="hash-link" aria-label="Direct link to New Concept of Milestone View" title="Direct link to New Concept of Milestone View">​</a></h4>
+<ul>
+<li>Two new concepts have been introduced in the Sprint view system: <strong>Complexity</strong> and <strong>Risk</strong>.</li>
+<li>The <strong>Risk</strong> concept is based on the working time allocated to each user. For every pod member, estimated working hours are assigned for development, testing, or other activities. Based on this allocated time, the system calculates the individual risk level for each user, which is displayed through the user's profile picture.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/7b6efec4-fdde-4811-b3b3-4daa973da17f-e9a634478bcab1db5c4955fb95c23200.bin" width="957" height="620" class="img_ev3q"></p>
+<ul>
+<li>When the profile picture is hovered over, detailed information appears. For example, if it shows <strong>Towhid Al Foysal booked 106.9%</strong>, it means the user is overbooked. If the display shows <strong>13.9hrs</strong> of <strong>13.0hrs</strong>, it indicates that <strong>13 hours</strong> were allocated, but assigned tasks already require <strong>13.9 hours</strong>. This means the user is overbooked by <strong>0.9 hours</strong>, which is why the indicator appears in red.</li>
+<li>The risk levels are calculated as follows:<!-- -->
+<ul>
+<li><strong>Green — Below 70%:</strong> The user has enough available capacity and can take more tasks. Example: 10 hours allocated, only 7 hours assigned.</li>
+<li><strong>Orange — Between 70% and 90%:</strong> The user is at medium risk. Additional tasks can still be assigned, but heavy or large tasks should be avoided.</li>
+<li><strong>Red — Above 90%:</strong> The user is highly utilized or overloaded. Taking new tasks may not be practical.</li>
+</ul>
+</li>
+<li>These colored indicators are shown on the bottom-right side of the task card to help quickly understand each developer's workload. The calculation is based on the time allocated in the pod compared with the estimated hours of assigned tasks.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/eb2db80e-d880-4190-9f4c-f7496c9d8bdd-57c8b1a8b78b1d61b1b27556753d793c.bin" width="1047" height="618" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/0faf45f0-0a93-4405-bddf-3d632d3177da-2af3c4fcaa09a0e55782601e28668178.bin" width="792" height="455" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/fa681494-94ae-4d50-8cac-c239cf1fef4e-75cb25180be5136df2feb130fbfa8080.bin" width="1031" height="610" class="img_ev3q"></p>
+<ul>
+<li>
+<p>Another concept is <strong>Global Risk</strong>. This represents the overall average risk level of all users within a milestone. For example, in the <strong>Test Sprit Planning</strong> milestone, the system combines the allocated hours of all developers and QA members, calculates each individual risk, and then shows an average percentage.</p>
+</li>
+<li>
+<p>This global risk helps determine whether the milestone workload is balanced, overloaded, or still has available capacity. In simple terms, it provides an overview of how much work remains and whether the team's total workload is manageable, based on the combined individual risk values.</p>
+</li>
+<li>
+<p>Lastly, another important feature is <strong>Complexity</strong>.</p>
+</li>
+<li>
+<p>When a requirement is created, its complexity level can be updated. This helps measure how difficult the requirement is to complete. The complexity is rated on a scale of <strong>1 to 10</strong>.</p>
+</li>
+<li>
+<p>For example:</p>
+<ul>
+<li>If the requirement is very easy, it may be marked as <strong>2</strong>.</li>
+<li>If the requirement is very difficult and requires significant time and effort, it may be marked as <strong>8</strong>, <strong>9</strong>, or <strong>10</strong>.</li>
+</ul>
+</li>
+<li>
+<p>In the Sprint view, when the display is changed to <strong>Status by Developer</strong>, the system shows the <strong>average complexity</strong> of the tasks assigned to each developer.</p>
+</li>
+<li>
+<p>The average complexity is categorized as follows:</p>
+<ul>
+<li><strong>Below 6:</strong> Low complexity, meaning the developer is working on easier tasks.</li>
+<li><strong>6 to below 8:</strong> Medium complexity, meaning the developer is handling moderately difficult tasks.</li>
+<li><strong>8 and above:</strong> High complexity, meaning the developer is working on more challenging and time-consuming tasks.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/30e4e7bb-2920-41d4-835e-65d7ba3869ce-c2fd75b258b2a6cdf735bb2686770ee7.bin" width="933" height="668" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="velocity">Velocity<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#velocity" class="hash-link" aria-label="Direct link to Velocity" title="Direct link to Velocity">​</a></h4>
+<ul>
+<li>Two concepts of velocity are available: <strong>Velocity</strong> and <strong>Required Velocity</strong>.</li>
+<li><strong>Velocity</strong> refers to how much work a user can complete within a specific period and how efficiently the work is performed.</li>
+<li>Velocity is calculated based on the tasks a user completed during the last <strong>30 days</strong> and the complexity of those tasks.</li>
+<li>For example, suppose a user completed <strong>5 tasks</strong> with an average complexity of <strong>8</strong>, and it took <strong>20 hours</strong> to complete them. In that case, the user's velocity is calculated by dividing the total task complexity by the total time spent.</li>
+<li>This means velocity measures how much work complexity a user can complete within a certain amount of time. The calculation is based on data from the last <strong>30 days</strong>.</li>
+<li><strong>Required Velocity</strong> refers to the level of productivity needed to complete the remaining assigned tasks within the available time.</li>
+<li>For example, suppose a user was assigned <strong>10 tasks</strong> and has already completed <strong>5 tasks</strong>. The remaining <strong>5 tasks</strong> still need to be finished. Based on the complexity of those remaining tasks and the time available to complete them, another velocity is calculated. This is called <strong>Required Velocity</strong>.</li>
+<li>For instance, if the user's actual velocity over the last <strong>30 days</strong> was <strong>2</strong> or <strong>3</strong>, but completing the upcoming tasks on time requires a velocity of <strong>4</strong>, it means the user needs to increase work speed or productivity.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/5e5ffd73-93e8-4662-8caf-088cd5a64f24-f328c937edf3d0e6abea830fbdb574c7.bin" width="1920" height="763" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-log-export--share-phase-1">7. Log Export &amp; Share (Phase 1)<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#7-log-export--share-phase-1" class="hash-link" aria-label="Direct link to 7. Log Export &amp; Share (Phase 1)" title="Direct link to 7. Log Export &amp; Share (Phase 1)">​</a></h2>
+<p>ZeuZ has introduced a new <strong>Log Export &amp; Share</strong> experience to help users quickly share onboarding and node setup issues with the ZeuZ team.</p>
+<p>The new experience is available in:</p>
+<ul>
+<li>Onboarding setup cards</li>
+<li>Connected ZeuZ Nodes setup view on the Nodes page</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="whats-included-in-phase-1">What's Included in Phase 1<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#whats-included-in-phase-1" class="hash-link" aria-label="Direct link to What's Included in Phase 1" title="Direct link to What's Included in Phase 1">​</a></h4>
+<p><strong>1. Unified Log Download &amp; Share (Onboarding + Node Installer)</strong>
+Users now get the same core log actions across both onboarding setup cards and the node installer setup panel on the Nodes page:</p>
+<ul>
+<li><strong>Export logs</strong> as a downloadable text file</li>
+<li><strong>Share with ZeuZ</strong> using pre-filled email</li>
+</ul>
+<p>Exported/shared logs include setup context (for example node ID, timestamp, status, and relevant setup details) so support can diagnose issues faster without requiring manual log collection.</p>
+<p><strong>2. Faster Support Workflow</strong>
+This feature reduces the time needed to report setup problems by giving users immediate, one-click log handoff options. Support and engineering teams can now receive clearer setup context without asking users to manually collect logs.</p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/17096d56-9fa0-42cb-8f4b-ca40f5f0a6d0-0054ef04714ffd4a2f1ce01d433675eb.bin" width="1483" height="704" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/53b87d7c-c010-45d7-b2c0-ff5eaf2036d2-c66502eb6bf32ae0edd5e0a17f6a167b.bin" width="1845" height="576" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-time-summary-for-linked-items-in-requirements">8. Time Summary for Linked Items in Requirements<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#8-time-summary-for-linked-items-in-requirements" class="hash-link" aria-label="Direct link to 8. Time Summary for Linked Items in Requirements" title="Direct link to 8. Time Summary for Linked Items in Requirements">​</a></h2>
+<p>We have introduced a new <strong>Time Summary of Linked Items</strong> feature inside Requirement view in Project Management. This enhancement gives teams an instant cumulative view of effort across linked items and helps project owners understand progress without opening each linked record one by one.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="highlights">Highlights<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#highlights" class="hash-link" aria-label="Direct link to Highlights" title="Direct link to Highlights">​</a></h4>
+<p><strong>1. Aggregated Spent and Remaining Time Across Linked Items</strong>
+Displays cumulative <strong>spent time</strong> and <strong>left time</strong> by combining all linked itmes under the requirement.</p>
+<p><strong>2. Structured Worklog Breakdown of Spent Time</strong>
+Presents spent time by work categories (such as Development, Meeting, Testing, Documentation, Research, and Uncategorized) to provide clear effort distribution.</p>
+<p><strong>3. Segmented Progress Visualization</strong>
+Presents a color-coded progress indicator reflecting the overall work completion rate.</p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/bfae1ccc-b28e-478b-bcdf-ae772c05b2b5-7b7b1e6a7751c48076cfeef5dd6922cf.bin" width="1731" height="608" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-onboarding-platform-expansion--now-live">9. Onboarding Platform Expansion – Now Live<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#9-onboarding-platform-expansion--now-live" class="hash-link" aria-label="Direct link to 9. Onboarding Platform Expansion – Now Live" title="Direct link to 9. Onboarding Platform Expansion – Now Live">​</a></h2>
+<p>We are extending the onboarding experience to support more platform-specific automation workflows. This update broadens onboarding coverage while preserving a consistent guided setup experience across platforms. Also Now We Added our ZAI Chatbot for <strong>Android</strong>, <strong>Web</strong>, <strong>iOS</strong>, <strong>Windows</strong>, <strong>API</strong> Testing.</p>
+<p>Newly introduced onboarding platforms:</p>
+<ul>
+<li>API</li>
+<li>Windows</li>
+<li>Database</li>
+<li>Security</li>
+<li>Accessibility</li>
+</ul>
+<p>All onboarding steps remain consistent across platforms, with platform-specific behavior primarily in the <strong>Run Your App</strong> step.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="whats-included-in-this-update">What's Included in This Update<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#whats-included-in-this-update" class="hash-link" aria-label="Direct link to What's Included in This Update" title="Direct link to What's Included in This Update">​</a></h4>
+<p><strong>1. Expanded Platform Selection</strong>
+Users can now start onboarding for API, Windows, Database, Security, and Accessibility testing.</p>
+<p><strong>2. Consistent Guided Journey Across Steps</strong>
+The overall onboarding journey remains unified, including platform selection, node setup, test case creation, and execution flow, reducing learning overhead.</p>
+<p><strong>3. Platform-Specific "Run Your App" Experience</strong>
+The <strong>Run Your App</strong> step adapts by platform to capture relevant inputs and validation context for each automation domain, while keeping the rest of the onboarding flow familiar and predictable.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="platform-specific-ui-in-run-your-app">Platform-Specific UI in "Run Your App"<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#platform-specific-ui-in-run-your-app" class="hash-link" aria-label="Direct link to Platform-Specific UI in &quot;Run Your App&quot;" title="Direct link to Platform-Specific UI in &quot;Run Your App&quot;">​</a></h4>
+<p>As covered in our previous onboarding changelog, the overall onboarding journey remains the same. Across these newly introduced platforms, the primary visual and functional variation appears in the <strong>Run Your App</strong> step based on the selected platform.</p>
+<p><strong>API – Run Your App</strong>
+For API onboarding, the <strong>Run Your App</strong> step is tailored as an API request builder. Users configure request method and endpoint URL, add headers, and define request payload format (raw, x-www-form-urlencoded, or form-data). This helps teams move from endpoint configuration to an auto-generated API test case with initial action rows already prepared, reducing manual setup effort.</p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/5479b69d-91e9-4f23-9dc3-cec402a2355a-7a69ef50a3e4c7aa85a8ffa4baf5d223.bin" width="1919" height="860" class="img_ev3q"></p>
+<p><strong>Database – Run Your App</strong>
+For Database onboarding, the <strong>Run Your App</strong> step is tailored as a database connection setup form. Users provide database type, host, port, credentials, and optional engine-specific settings (such as Oracle service details or ODBC options). This helps teams capture the exact connection context required to generate a ready-to-run database connection action with minimal onboarding friction.</p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/37e95a8a-e1a2-4e5a-b974-b141c72f7d98-222e1bc3dc1267236759484688a0b0dd.bin" width="1896" height="736" class="img_ev3q"></p>
+<p>This platform-aware behavior in a single step keeps onboarding familiar while ensuring each automation domain captures the right initial execution inputs to get started.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-pod-management-system-page">10. POD Management System Page<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#10-pod-management-system-page" class="hash-link" aria-label="Direct link to 10. POD Management System Page" title="Direct link to 10. POD Management System Page">​</a></h2>
+<p>Introduced <strong>Product Oriented Delivery (POD) Management System</strong> for cross-functional team organization.</p>
+<p><strong>Core Features:</strong></p>
+<ul>
+<li>Complete UI architecture including:<!-- -->
+<ul>
+<li>POD listing</li>
+<li>Create/Update modals</li>
+<li>Dedicated POD view page</li>
+</ul>
+</li>
+<li>Server-side <strong>search, filtering, pagination</strong>, and <strong>alphabetical sorting</strong></li>
+</ul>
+<p><strong>UX Enhancements:</strong></p>
+<ul>
+<li>Display of member <strong>profile pictures</strong> in POD cards</li>
+<li>Real-time validation to prevent duplicate POD names</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/64f3ef77-5007-422e-8544-0811eed02ab6-bfa6fdb99cbaa6cf8987c3c045f26f47.bin" width="1677" height="992" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/93b43784-e58b-4328-a1cc-ed00c49009e8-422ea609d300462c153a42cc787ebf5b.bin" width="650" height="751" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/1bfe0b1a-a44c-43c8-b3ab-60b50b35d408-289b328e21b9aefa62acd92aaec701b9.bin" width="935" height="869" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/15efa3bf-582f-45a1-8e9c-87834be951ff-32017b1dad8209ae2764be5112c58ada.bin" width="939" height="507" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="11-milestone-planning-page">11. Milestone Planning Page<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#11-milestone-planning-page" class="hash-link" aria-label="Direct link to 11. Milestone Planning Page" title="Direct link to 11. Milestone Planning Page">​</a></h2>
+<ul>
+<li>New page for efficient milestone and ticket management</li>
+<li>Easily move tickets across milestones (including expired → active)</li>
+<li>Synchronization with POD structure and planning</li>
+<li>Built-in <strong>time estimation handling</strong></li>
+<li>Smooth <strong>drag-and-drop interface</strong> for faster operations</li>
+<li>Designed for long-term planning (backlog → upcoming milestones → monthly/weekly planning)</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/a5f2e921-1683-4c71-a1dc-52686799a624-64f65450388f6f5903868f5082437135.bin" width="1677" height="992" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/3c56090e-66ae-401c-94b4-b5cf96ebe9cf-c9616b75f50a9f67a5ed3e4fd2759c33.bin" width="1677" height="992" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/edf38a69-e765-4d2e-8182-3c98b259e1b9-adc3fe407454c66ab9ba1c1b2ea138a1.bin" width="388" height="516" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="12-team-worklog-page-redesigned">12. Team Worklog Page (Redesigned)<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#12-team-worklog-page-redesigned" class="hash-link" aria-label="Direct link to 12. Team Worklog Page (Redesigned)" title="Direct link to 12. Team Worklog Page (Redesigned)">​</a></h2>
+<ul>
+<li>Fully redesigned worklog experience with a strong focus on usability and insights</li>
+<li>Support for <strong>multi-user selection</strong> to analyze team performance</li>
+<li>Added interactive <strong>bar charts</strong> for visualizing time and workload</li>
+<li>Introduced <strong>ticket slider</strong> for quick navigation through tasks</li>
+<li>Auto-populates <strong>last selected filters</strong> for a smoother workflow</li>
+<li>Added <strong>key information cards</strong> (e.g., total time spent, workload, overdue items)</li>
+<li>Improved <strong>progress tracking visualization</strong></li>
+<li>Significant overall <strong>UX improvements</strong> for faster and clearer interaction</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/904e7b25-d6c7-4ebe-b591-31734e4f7801-7cc9b50139a833d4e54c494cd51c7f66.bin" width="1677" height="1505" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/be367342-0cba-4bfa-bda5-ed54bba5716f-5e6f897ab060a4d09196c737903cdf01.bin" width="1677" height="992" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="13-new-testcase-edit-page">13. New Testcase Edit Page<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#13-new-testcase-edit-page" class="hash-link" aria-label="Direct link to 13. New Testcase Edit Page" title="Direct link to 13. New Testcase Edit Page">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Image" src="https://docs.zeuz.ai/assets/images/b3c5c6c0-88ba-4df4-b2b5-5c2f830edf4a-a7a47a96a73fc6fcf92c38cfdece7fa6.bin" width="1914" height="918" class="img_ev3q"></p>
+<p><strong>New Feature: Flexible Panel Layout for Test Case Editor</strong>
+We have introduced a completely revamped Test Case Edit page featuring a highly customizable, drag-and-drop workspace powered by <code>flexlayout-react</code>. This new interface is designed to centralize testing workflows, debugging, collaboration, and AI assistance into a single unified workspace.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-additions">Key Additions<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#key-additions" class="hash-link" aria-label="Direct link to Key Additions" title="Direct link to Key Additions">​</a></h4>
+<ul>
+<li><strong>Dynamic Workspace Layouts:</strong> Move, dock, and resize panels to suit your workflow.</li>
+<li><strong>Predefined Presets:</strong> Jumpstart your testing with built-in layout presets tailored for different roles and tasks (Beginner, Debug, Android, iOS, Linux, Collaboration, AI Assistant).</li>
+<li><strong>Custom Layout Management:</strong> Configure your ideal workspace and save it as a custom layout. Rename, update, or delete your custom layouts from the Layout Settings.</li>
+<li><strong>Auto-Save Functionality:</strong> Your layout changes are automatically saved as temporary drafts ("Unsaved Changes"), preventing accidental loss of your setup.</li>
+<li><strong>Unified Testing Tools:</strong> Integrated multiple essential tools into dockable panels:<!-- -->
+<ul>
+<li><em>Collaboration:</em> Discussions, Follow, Review, Links.</li>
+<li><em>Tools &amp; Inspectors:</em> Action Library, Outline, Details, Device Inspectors (Android, iOS, Linux), Versions, Attachments.</li>
+<li><em>Execution &amp; Debugging:</em> Debug, Logs, Run History, Runtime Parameters.</li>
+<li><em>AI Integration:</em> zAI Chat, zAI Explain, zAI Suggest.</li>
+<li><em>Tracking:</em> Worklog.</li>
+</ul>
+</li>
+<li><strong>Interactive Tour:</strong> Added an interactive onboarding tour that highlights essential interface areas to help new users navigate the workspace.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-use-the-test-case-edit-page">How to Use the Test Case Edit Page<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#how-to-use-the-test-case-edit-page" class="hash-link" aria-label="Direct link to How to Use the Test Case Edit Page" title="Direct link to How to Use the Test Case Edit Page">​</a></h4>
+<p><strong>1. Navigating the Workspace</strong>
+When you open a Test Case, you are greeted with a default layout consisting of multiple panels. The workspace is fully modular:</p>
+<ul>
+<li><strong>Move Panels:</strong> Click and hold the tab of any panel, then drag it to a new location. A drop indicator will show where the panel will dock.</li>
+<li><strong>Resize Panels:</strong> Hover over the border between two panels until the resize cursor appears, then click and drag to resize.</li>
+<li><strong>Stack Panels:</strong> Drag a panel on top of another panel's header to stack them into tabbed views.</li>
+<li><strong>Pop-out/Close:</strong> Most panels can be closed using the 'x' on their tab. Use the Layout Settings to bring them back.</li>
+</ul>
+<p><strong>2. Using Layout Presets</strong>
+If you are performing a specific task (e.g., debugging an Android test or collaborating with your team), you can switch to a preset layout:</p>
+<ol>
+<li>Click the <strong>Layout Settings</strong> icon in the header bar.</li>
+<li>Under <strong>Presets</strong>, choose the layout that matches your goal (e.g., <em>Debug</em>, <em>Android</em>, <em>Collaboration</em>).</li>
+<li>The workspace will automatically adapt to show the most relevant panels.</li>
+</ol>
+<p><strong>3. Managing Custom Layouts</strong>
+You can create a workspace layout tailored precisely to your preferences.</p>
+<ul>
+<li><strong>Saving a Layout:</strong>
+<ol>
+<li>Arrange the panels exactly how you want them.</li>
+<li>Notice the "Unsaved Changes" card in the Layout Settings.</li>
+<li>Click <strong>Save as…</strong>, provide a name and optional description, and save it. It will now appear under <strong>Custom</strong>.</li>
+</ol>
+</li>
+<li><strong>Updating a Layout:</strong> If you are using a custom layout and make changes to it, open the Layout Settings and click the <strong>Update with current layout</strong> (Save icon) on the layout's card.</li>
+<li><strong>Renaming/Deleting:</strong> Use the Edit and Trash icons next to your custom layouts to manage them.</li>
+</ul>
+<p><strong>4. Managing Panel Visibility</strong>
+If you accidentally close a panel or want to add a new tool to your current layout:</p>
+<ol>
+<li>Open the <strong>Layout Settings</strong>.</li>
+<li>Scroll down to the <strong>Visible Panels</strong> section.</li>
+<li>Toggle panels on or off by clicking their names.</li>
+<li>Click <strong>Apply Changes</strong>. The newly enabled panels will be added to the center of your layout, ready to be docked wherever you please.</li>
+</ol>
+<p><strong>5. Interactive Tour</strong>
+If you're ever lost or need a quick refresher on where things are:</p>
+<ul>
+<li>Click the <strong>Quick Tour</strong> button (usually represented by an info or question mark icon) in the header.</li>
+<li>The tour will guide you through the Title, Debug Panel, Run Options, Discussions, zAI Chat, Worklog, and Layout Settings.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="panel-directory">Panel Directory<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#panel-directory" class="hash-link" aria-label="Direct link to Panel Directory" title="Direct link to Panel Directory">​</a></h4>
+<p>The Test Case Editor provides a wide array of specialized panels. Here is a brief introduction to what each panel does, categorized for easy reference:</p>
+<p><strong>Collaboration</strong></p>
+<ul>
+<li><strong>Discussions:</strong> A chat-like interface to collaborate, ask questions, or share context with your team regarding this specific test case.</li>
+<li><strong>Follow:</strong> Manage which users are following this test case to receive updates and notifications on changes.</li>
+<li><strong>Review:</strong> Facilitates the review process, allowing peers to approve or request changes to the test case.</li>
+<li><strong>Links:</strong> Manage and view linked items such as requirements, defects, or related test cases.</li>
+</ul>
+<p><strong>Tools</strong></p>
+<ul>
+<li><strong>Action Library:</strong> A searchable library of actions (pre-defined test steps) you can drag and drop into your test case.</li>
+<li><strong>Outline:</strong> A high-level overview of your test steps, making it easier to navigate large test cases.</li>
+<li><strong>Details:</strong> View and edit core metadata properties of the test case (status, priority, tags, etc.).</li>
+<li><strong>Android Inspector:</strong> Tools to inspect Android UI elements directly while building or debugging steps.</li>
+<li><strong>iOS Inspector:</strong> Tools to inspect iOS UI elements directly while building or debugging steps.</li>
+<li><strong>Linux Inspector:</strong> Tools to inspect Linux environments or commands while building or debugging steps.</li>
+<li><strong>Versions:</strong> Review the version history and changes made to this test case over time.</li>
+<li><strong>Attachments:</strong> Upload, view, and manage files, images, or documents attached to the test case.</li>
+</ul>
+<p><strong>Execution</strong></p>
+<ul>
+<li><strong>Debug:</strong> Run your test case step-by-step or execute only selected actions to verify they work as expected before running full test suites.</li>
+<li><strong>Logs:</strong> View real-time or historical execution logs to troubleshoot failing steps.</li>
+<li><strong>Run History:</strong> See a list of past executions of this test case, including their status and duration.</li>
+<li><strong>Runtime Parameters:</strong> Configure variables and parameters that affect how the test case executes in different environments.</li>
+</ul>
+<p><strong>AI Assistants</strong></p>
+<ul>
+<li><strong>zAI Chat:</strong> An integrated AI chatbot that can answer questions, suggest improvements, or help you write test steps.</li>
+<li><strong>zAI Explain:</strong> Automatically generates human-readable explanations of complex test steps or entire test cases.</li>
+<li><strong>zAI Suggest:</strong> Provides intelligent suggestions for next steps or missing assertions based on your current test case flow.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="14-linux-inspector">14. Linux Inspector<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#14-linux-inspector" class="hash-link" aria-label="Direct link to 14. Linux Inspector" title="Direct link to 14. Linux Inspector">​</a></h2>
+<p><strong>New Feature: Dedicated Linux Inspector Panel</strong>
+We have introduced a dedicated <code>Linux Inspector</code> panel to streamline building and debugging automated tests for Linux desktop applications. This tool provides deep visibility into the UI structure of your Linux environments.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-additions-1">Key Additions<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#key-additions-1" class="hash-link" aria-label="Direct link to Key Additions" title="Direct link to Key Additions">​</a></h4>
+<ul>
+<li><strong>Node Detection &amp; Status:</strong> Automatically detects active ZeuZ nodes running on Linux machines and displays connection status.</li>
+<li><strong>Real-time Screen Capture:</strong> Capture screenshots and fetch the UI element hierarchy of your Linux desktop with a single click.</li>
+<li><strong>Interactive Device Screen:</strong> Click directly on the captured screenshot to select and highlight UI elements.</li>
+<li><strong>Element Tree Navigation:</strong> Explore the nested DOM/UI structure of the captured screen via an interactive tree view.</li>
+<li><strong>Attributes Inspector:</strong> A dedicated properties box that displays detailed metadata and attributes for any selected UI element, crucial for identifying stable locators.</li>
+<li><strong>Advanced Search Functionality:</strong> Search for specific elements within the captured screen. Navigate through results using keyboard shortcuts (<code>Enter</code> for next, <code>Shift+Enter</code> for previous).</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-use-the-linux-inspector">How to Use the Linux Inspector<a href="https://docs.zeuz.ai/blog/zeuz-platform-202604/#how-to-use-the-linux-inspector" class="hash-link" aria-label="Direct link to How to Use the Linux Inspector" title="Direct link to How to Use the Linux Inspector">​</a></h4>
+<p><strong>1. Connecting to a Node</strong></p>
+<ul>
+<li>Ensure a ZeuZ node is actively running on the target Linux machine.</li>
+<li>Open the <strong>Linux Inspector</strong> panel. If a node is available, the inspector will automatically detect it and display the <code>Node ID</code> and platform status at the top.</li>
+<li>If no node is detected, you will see a prompt to "Start a node in this machine."</li>
+</ul>
+<p><strong>2. Capturing the Screen</strong></p>
+<ul>
+<li>Click the <strong>Capture</strong> button (camera icon) located in the top-right corner of the inspector.</li>
+<li>The inspector will take a fresh screenshot of the Linux desktop and download the underlying UI element tree.</li>
+</ul>
+<p><strong>3. Inspecting UI Elements</strong>
+You can find and select elements in two ways:</p>
+<ul>
+<li><strong>Visual Selection:</strong> Hover over and click directly on any UI component within the captured screenshot. An overlay will highlight your selection, and the corresponding node will be focused in the Element Tree.</li>
+<li><strong>Tree Navigation:</strong> Expand and navigate through the <strong>Element Tree</strong> view on the side. Clicking a node in the tree will automatically highlight that element's bounding box on the screenshot.</li>
+</ul>
+<p><strong>4. Viewing Element Attributes</strong></p>
+<ul>
+<li>Once you select an element, the <strong>Attributes Box</strong> will appear.</li>
+<li>This box reveals detailed properties of the element (e.g., IDs, classes, text content, bounds). You can use this information to create robust locators for your automated test steps.</li>
+<li>You can close the Attributes Box at any time using its close button.</li>
+</ul>
+<p><strong>5. Searching for Specific Elements</strong></p>
+<ul>
+<li>Open the <strong>Search Box</strong> within the inspector to quickly find elusive UI components.</li>
+<li>Type in your search query to find elements by their name or attributes.</li>
+<li>Use the <strong>Next</strong> and <strong>Previous</strong> buttons, or keyboard shortcuts (<code>Enter</code> to go forward, <code>Shift + Enter</code> to go backward) to cycle through the matches. The active match will be selected in the tree and highlighted on the screen.</li>
+</ul>]]></content:encoded>
+            <category>Changelog</category>
+        </item>
         <item>
             <title><![CDATA[ZeuZ Platform 202603]]></title>
             <link>https://docs.zeuz.ai/blog/zeuz-platform-202603/</link>
