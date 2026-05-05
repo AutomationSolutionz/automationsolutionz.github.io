@@ -163,8 +163,6 @@ Example: 10 hours allocated, only 7 hours assigned.
 - For example, suppose a user was assigned 10 tasks and has already completed 5 tasks. The remaining 5 tasks still need to be finished. Based on the complexity of those remaining tasks and the time available to complete them, another velocity is calculated. This is called Required Velocity.
 - For instance, if the user’s actual velocity over the last 30 days was 2 or 3, but completing the upcoming tasks on time requires a velocity of 4, it means the user will need to increase work speed or productivity.
 
-![](/img/zeuz-AI-management/velocity-sprint.png)
-
 ## Changelog
 
 - Now fully launched! Previously in beta, this update streamlines ticket creation with auto-populated details for a faster, one-click experience. Includes Version/Milestone creation and a versatile new link component [[202603](/blog/zeuz-platform-202603)]
