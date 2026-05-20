@@ -148,7 +148,7 @@ Report generation may take 1–2 minutes, especially for large projects with man
 
 ## Changelog
 
-- Automatability Report Redesign: New analytics dashboard with statistics cards, velocity and priority charts, email reports, PDF export, and advanced filtering. [[202602](/blog/zeuz-platform-202602/)]
+- Automatability Report Redesign: New analytics dashboard with statistics cards, velocity and priority charts, email reports, PDF export, and advanced filtering. [[202603](/blog/zeuz-platform-202603/)]
 
 ## Related Topics
 
@@ -157,9 +157,6 @@ Report generation may take 1–2 minutes, especially for large projects with man
 - [History](https://docs.zeuz.ai/docs/zeuz-server/testing/Deployments/history-page/)
 
 ---
-
-
-
 
 
 

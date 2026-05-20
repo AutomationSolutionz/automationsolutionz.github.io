@@ -3,8 +3,6 @@ id: actions-mobile
 title: Mobile Actions
 ---
 
-import Link from '@docusaurus/Link';
-
 :::tip
 
 - **Drivers**: Appium, Selenium (hybrid apps, iOS Safari)
@@ -20,7 +18,7 @@ hybrid action that can run on both Android and iOS.
 
 ### Browser Automation
 
-<Link to="actions-web#ios-safari">Safari iOS</Link> automation is acheived through Selenium.
+[Safari iOS](web/actions-web.md) automation is acheived through Selenium.
 
 ## Examples of Mobile actions
 

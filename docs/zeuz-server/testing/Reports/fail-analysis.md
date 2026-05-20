@@ -209,7 +209,7 @@ Yes, GitHub issues can be viewed and filtered by status, milestones, or labels o
 
 ## Changelog
 
-- Fail Analysis Page Redesign: Modern UI with multi-card selection, full step visibility, runtime parameters, saved preferences, and quick unassignment [[202602](/blog/zeuz-platform-202602)]
+- Fail Analysis Page Redesign: Modern UI with multi-card selection, full step visibility, runtime parameters, saved preferences, and quick unassignment [[202603](/blog/zeuz-platform-202603/)]
 
 ## Related Topics
 

@@ -133,7 +133,7 @@ has a unique feature to perform this in a simple way.
 There is one very powerful feature of variable access in ZeuZ Node that's not
 covered in this section. It is immensely helpful when you're working with nested
 structures of data (specially in case of REST API and database actions). See the
-next section [Data Collector](data-collector) to learn more about it.
+next section [Data Collector](data-collector.md) to learn more about it.
 
 ## ZeuZ variables
 

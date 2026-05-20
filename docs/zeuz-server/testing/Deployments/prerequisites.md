@@ -102,7 +102,7 @@ Removing a prerequisite does not delete the test case; it only removes the depen
 
 ## Changelog
 
-- New Prerequisites Management Page: Visual table and tree views for dependency tracking, intelligent search, and bulk prerequisite editing [[202602](/blog/zeuz-platform-202602/)]
+- New Prerequisites Management Page: Visual table and tree views for dependency tracking, intelligent search, and bulk prerequisite editing [[202603](/blog/zeuz-platform-202603/)]
 
 ## Related Topics
 

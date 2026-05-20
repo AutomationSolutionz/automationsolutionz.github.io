@@ -274,7 +274,7 @@ From `Framework.Built_In_Automation.Shared_Resources.secrets` import `secret`.
 
 ## Changelog
 
-- Feature has been introduced [[20251001](/blog/zeuz-platform-20251001/)]
+- Feature has been introduced [[20251015](/blog/zeuz-platform-20251015/)]
 
 ## Related Topics
 
@@ -284,5 +284,3 @@ From `Framework.Built_In_Automation.Shared_Resources.secrets` import `secret`.
 - [Create test cases](https://docs.zeuz.ai/docs/zeuz-server/testing/Test%20Case/create-test-cases/)
 
 ---
-
-
