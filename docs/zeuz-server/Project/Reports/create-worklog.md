@@ -37,27 +37,39 @@ all entries. The interface distinguishes between time spent and planned/estimate
 ## Features
 ### Create a worklog entry for the selected user
 - Navigate to the **Worklog Summary** page.
-- Click to select a **User**.
-- Quickly filter worklog data using predefined date options such as **Yesterday**, **Today**, **Tomorrow**, **7 Days**, **+1 Year**, or a **Customer** range.
-- The worklog can also be accessed by selecting a **Milestone** and a **Date range**.
-- If the **Everything** option is selected, it displays the complete range of activities such as **Tasks**, 
-**Bugs**, **Documents**, **Test Cases**, and **Run History** for the selected user within the chosen time 
-period.
-- If **Date Filtered** is selected, it allows users to focus on **Tasks**, **Bugs**, **Documents**, **Test Cases**, or **Run History** that occured within the selected date range.
-- Click **Search** to apply the selected filters and view the results.
+- When using it for the first time, no **User** will be selected, so click to choose a **User**.
 
-![](/img/how-tos/how-to-create-a-worklog/worklog-selecteduser.png)
+![](/img/how-tos/how-to-create-a-worklog/worklog-page.png)
 
-![](/img/how-tos/how-to-create-a-worklog/filtered-options.png)
+- Quickly filter worklog data using predefined date options such as **Today**, **Yesterday**, **Tomorrow**, **+7 Days**, **+-1 Year**, or **AI Standup** range.
+
+![](/img/how-tos/how-to-create-a-worklog/new-days.png)
+
+- The worklog can also be accessed by selecting a **Milestone** and a **Date range**.However, if **Date Filtered** is selected, it allows users to focus on **Tasks**, **Bugs**, and **Test Cases** that occured within the selected date range.
+
+![](/img/how-tos/how-to-create-a-worklog/new-milestone.png)
+
+- Additionally, the **Type of work** and the **Status** can also be selected when creating a worklog in ZeuZ.
+
+![](/img/how-tos/how-to-create-a-worklog/new-dates.png)
 
 ### Visual pie charts
 - The interface displays visual pie charts to represent data clearly.
 - The **left pie chart** represents **spent time**, broken down by work types such as development, meetings, 
 documentation, research, and testing, along with total hours spent.
-- The **right pie chart** represents **estimated time**, showing planned effort distribution across selected work types and total estimated hours.
-- At the center, the **overload indicator** shows that the selected user is overloaded by a certain number of hours, meaning the actual time spent on work exceeds the planned or estimated capacity for the selected period.
+- The **right pie chart** represents **Time Required**, showing planned effort distribution across selected work types and total estimated hours.
 
-![](/img/how-tos/how-to-create-a-worklog/spent-estimated.png)
+![](/img/how-tos/how-to-create-a-worklog/edited-chart.png)
+
+- However, the following information is displayed at the top:  
+  - **Total Time Spent**: It refers to the actual amount of time that has been logged by users while working on tasks or items
+  - **Total Required Time**: It refers to the total estimated effort needed to complete all tasks or items. In simple terms, it shows how much time is planned to finish the work, based on task estimates.
+  - **Workload**: Workload refers to the total amount of work assigned to a user or team, usually measured in hours.
+  - **Items Worked On**: It represents the total number of tasks or work items to which a user has actively contributed in ZeuZ.
+  - **Overdue Items**: It refer to tasks or work items that have passed their assigned due date but are not yet completed.
+  - **Incomplete Items**: It refer to work tasks, test cases, or deliverables that have been started but have not yet been fully finished or marked as completed.
+
+![](/img/how-tos/how-to-create-a-worklog/workload-capacity.png)
 
 ## FAQs / Troubleshooting
 

@@ -23,6 +23,8 @@ import MetaCard from '@site/src/components/MetaCard';
 ## Quick-Start
 - Click on the **Start Now** button available in the "Automate Testing in 5 Guided Steps" page.
 
+![](/img/API/five-guided.png)
+
 ## Features
 ### Select a platform
 - Click on the **API** button in the "Web Apps" section.

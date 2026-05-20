@@ -23,9 +23,9 @@ import MetaCard from '@site/src/components/MetaCard';
 ## Quick-Start
 - Click on the **Start Now** button available in the "Automate Testing in 5 Guided Steps" page.
 
-## Features
-### Web without Chatbot
+![](/img/web-onboarding/five-guided.png)
 
+## Features
 ### Select a platform
 - Click on the **Web** button in the "Web Apps" section.
 - After selecting the Web apps, click on the **Next** button located at the top-right corner.
@@ -44,7 +44,7 @@ import MetaCard from '@site/src/components/MetaCard';
 ![](/img/web-onboarding/web-terminal.png)
 
 ### Run your app
-- On the left side, there is an input field labeled **Enter Website URL to Test**, where the user can provide the website address, such as `https://example.com`. A **Continue** button is placed next to the field to proceed to the next step.
+- On the left side, there is an input field labeled **Enter Website URL to Test**, where the user can provide the website address, such as `https://zeuz.com`. A **Continue** button is placed next to the field to proceed to the next step.
 - On the right side, a setup progress panel is visible showing the automation environment status. The panel confirms that **Chrome for Testing** has been successfully installed and the system is marked as **Ready**, indicating that web automation is prepared.
 - The log section shows the completed setup steps, including checking the installation, installing Chrome for Testing, and confirming successful setup.
 - At the bottom, the progress bar has reached **100%**, followed by a green confirmation message stating **Setup Complete** and **Web environment is ready for automation**.

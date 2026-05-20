@@ -18,9 +18,6 @@ It provides key metrics, summaries, and information to help you understand what'
   relatedTopics={["History", "Scheduler", "Test set", "GitHub integration"]}
 />
 
-<br />
-
-![](/img/dashboard-page/full-dashboard.png)
 
 ### Why it matters / Use Cases:
 
@@ -37,6 +34,38 @@ It provides key metrics, summaries, and information to help you understand what'
 - The dashboard doesn’t require any setup. However, to get the most out of it, we recommend maintaining milestones and integrating GitHub.
 
 ## Features
+### Project Management Dashboard
+- It provides a quick overview of recent activity, task status, and user workload.
+- At the top, the **"My Recent Items"** section shows recently accessed work items such as requirements, tasks, and bugs (e.g., *TASK-101*, *BUG-202*, *REQ-303*), allowing quick navigation to recent work.
+- The **Daily Summary** panel provides a high-level project status:  
+  - The active milestone (M31) is **0% complete** and delayed.
+  - Several **requirements are overdue**.
+  - No recent team activity or completed items are recorded.
+  - It also suggests **priority actions**, such as updating requirements and initiating pending tasks.
+-  In the middle, the **Completed This Week** section lists finished items:  
+  - **5 tasks, 2 bugs, and 1 requirement** are completed.
+  - Completed items (e.g., *TASK-99*, *BUG-201*) are marked with status indicators.
+- On the right, the **My Open Tickets** section shows all ongoing work:  
+  - **3 tasks, 4 bugs, and 2 requirements** remain open.
+  - These represent ongoing items that require attention. 
+- The Quick Actions area provides shortcuts to:   
+  - Create a new task, requirement, or bug.
+  - Access the personal worklog.
+
+![](/img/dashboard-page/quick-actions.png)
+
+- Under **Team Activity**:  
+  - Recent actions such as comments, bug resolutions, and requirement updates are listed.
+  - The Recent **Replies to Me** panel shows direct communication updates from team members.
+- In the **Manager View** section:  
+  - **Active Milestone Progress** shows overall completion (55%), with separate development (65%) and testing (40%) progress.
+  - It also highlights remaining work, including open bugs and pending tasks, along with days remaining.
+- Finally, the Team Workload Summary displays capacity usage:  
+  - **Frontend Team** is within capacity (150h / 200h).
+  - **Backend Team** is **overloaded** (170h / 160h).
+  - **QA Team** has available capacity (45h / 120h).
+
+![](/img/dashboard-page/team-activity.png)
 
 ### ZeuZ Node Area
 **1. ZeuZ Node Description Box**
