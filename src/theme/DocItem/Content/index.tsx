@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react';
+import React, { type CSSProperties, type ReactNode } from 'react';
 import Content from '@theme-original/DocItem/Content';
 import type ContentType from '@theme/DocItem/Content';
 import type { WrapperProps } from '@docusaurus/types';
@@ -10,7 +10,7 @@ function buildPathString(prefix = '', suffix = '') {
 }
 
 function DocPageButtons() {
-    const buttonBase = {
+    const buttonBase: CSSProperties = {
         display: "inline-flex",
         alignItems: "center",
         gap: "8px",
@@ -113,7 +113,7 @@ function DocPageButtons() {
     return (
         <div style={buttonGroup}>
             {buttons.map((btn, i) => {
-                let style = { ...buttonBase };
+                let style: CSSProperties = { ...buttonBase };
 
                 if (i === 0) style = { ...style, ...buttonFirst };
                 else if (i === buttons.length - 1) style = { ...style, ...buttonLast };
