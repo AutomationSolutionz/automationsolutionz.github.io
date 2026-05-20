@@ -17,7 +17,7 @@ This release focuses mainly on bug fixes and stability with a few small features
 4. **Enhancement of Integrated Installer**: Node-level and category-level status checks and installations, system monitoring, and simulator management.
 5. **Milestone Page Redesign**: Cleaner experience, dedicated discussion threads, and improved visibility.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 1. Improved Runtime Parameter Create/Edit Modal
 Our previous implementation had some inconvenience like user had to click the tag icon to edit tag. This is now fixed. You can now click on tag name to edit it. As soon as you click on the tag name an input field will appear.

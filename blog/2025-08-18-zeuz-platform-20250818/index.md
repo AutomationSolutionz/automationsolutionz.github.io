@@ -25,7 +25,7 @@ Welcome to the August 2025 release of the ZeuZ platform!
 - **Unified “Links” Tab**: Consolidated tabs for Requirements, Tasks, Bugs, and Test Cases in `Links` tab across multiple pages.  
 - **Set, History, and Fail Analysis Page Update**: Improved visual representation of pass, fail, block, etc., in donut charts with smooth pop-up details.  
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 🐛 Bug Fixes
 

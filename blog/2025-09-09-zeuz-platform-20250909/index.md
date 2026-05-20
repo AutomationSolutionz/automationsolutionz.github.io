@@ -14,7 +14,7 @@ Welcome to the September 2025 release of the ZeuZ platform!
 - **Cleanup Scheduler:** Automated system to manage storage space and maintain database performance by periodically removing old test run data and log files.
 - **Notification System Redesigned:** A new UI notification system with clear stats, color-coded categories, quick navigation, and faster ways to find and act on updates.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 🐛 Bug Fixes
 - **Global Attachment page:** `memory leak`, `delete attachment` & `download attachment` bugs fixed.

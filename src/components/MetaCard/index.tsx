@@ -1,13 +1,21 @@
 import React from "react";
 import "./MetaCard.css";
 
+type MetaCardProps = {
+    tags?: string[];
+    availableFrom?: string;
+    difficulty?: string;
+    lastUpdated?: string;
+    relatedTopics?: string[];
+};
+
 const MetaCard = ({
     tags = [],
     availableFrom,
     difficulty,
     lastUpdated,
     relatedTopics = []
-}) => {
+}: MetaCardProps) => {
     return (
         <div className="meta-card">
             <ul className="meta-list">

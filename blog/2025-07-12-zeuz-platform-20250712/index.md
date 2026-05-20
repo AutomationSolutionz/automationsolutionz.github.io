@@ -24,7 +24,7 @@ Welcome to the July 2025 release of the ZeuZ platform! 🚀 This release brings 
 - Enhanced ZAI Chatbot with Q&A, history, and improved capabilities
 - Minor UI and feature updates/fixes
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 🐛 Bug Fixes
 

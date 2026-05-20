@@ -19,7 +19,7 @@ This release introduces seven major new features that significantly enhance user
 6. Integrated Installer – A one-click installation system for managing essential development tools and prerequisites directly within the application.
 7. Groups – A comprehensive group-based permission system with centralized access control and flexible permission management.
 
-<!-- truncate -->
+{/* truncate */}
 
 
 ## 🐛 Bug Fixes

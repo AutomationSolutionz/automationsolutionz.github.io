@@ -41,7 +41,7 @@ Welcome to the April 2026 release of the ZeuZ platform! This update introduces d
 4. **XPath & Performance:** Improved XPath variable handling consistency, optimized sibling property retrieval, and reduced unnecessary DOM operations.
 5. **Node Selector:** Improved node auto-selection and persistence behavior, simplified configuration handling for reusable integrations.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 1. Grafana & Prometheus Integration
 Added secure integration with Grafana and Prometheus. Monitor servers, analyze metrics, and create custom dashboards in Grafana.

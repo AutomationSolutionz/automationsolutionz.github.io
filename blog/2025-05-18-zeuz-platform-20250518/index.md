@@ -23,7 +23,7 @@ Welcome to the May 2025 release of the ZeuZ platform! 🚀 We're thrilled to int
 - 🔁 Rerun existing RunID capability
 - 📈 Fail analysis reporting
 
-<!-- truncate -->
+{/* truncate */}
 
 **Bug Fixes**
 

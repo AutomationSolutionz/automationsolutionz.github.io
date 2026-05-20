@@ -9,35 +9,16 @@ This action enables the extraction of text or strings from images. By default, t
 
 **Data:**
 
-<table>
- <tr>
-  <th>Parameter</th>
-  <th>Type</th>
-  <th>Value</th>
-</tr>
-<tr>
-  <td>image</td>
-  <td>input parameter</td>
-  <td>
-  ***Path to the image file.
-  Examples: "E:\user\files\Sample.jpg" or %|Sample.jpg|%
-  </td>
-</tr>
+| Parameter | Type | Value |
+| --- | --- | --- |
+| image | input parameter | Path to the image file. Examples: `E:\user\files\Sample.jpg` or `%\|Sample.jpg\|%`. |
+| prompt | optional parameter | Enter your prompt. |
+| output format | optional parameter | Enter your output format. It can be `json`, `list`, `csv`, `html`, `exact text`, or a custom structure like the JSON example below. |
+| extract image to data | utility action | The variable name that will store the extracted strings. By default, the output will be JSON. |
 
-<tr>
-  <td>prompt</td>
-  <td>optional parameter</td>
-  <td>***Enter your prompt***</td>
-</tr>
+Example custom JSON output format:
 
-<tr>
- <td>output format</td>
- <td>optional parameter</td>
- Enter your output format. It can be json, list, csv, html.
-Examples:
-
-“exact text” or
-```
+```json
 {
     "key": "value",
     "key": "value",
@@ -49,14 +30,6 @@ Examples:
     ]
 }
 ```
-</tr>
-
-<tr>
- <td>extract image to data</td>
- <td>utility action</td>
- <td>***The variable name that will store the extracted strings. By default the output will be a JSON format.***</td>
-</tr>
-</table>
 
 ### Default Format Scenario
 
@@ -64,25 +37,10 @@ If no prompt or output format is specified, the data will be returned in **JSON*
 
 **Data:**
 
-<table>
- <tr>
-  <th>Parameter</th>
-  <th>Type</th>
-  <th>Value</th>
-</tr>
-
-<tr>
-  <td>image</td>
-  <td>input parameter</td>
-  <td>"E:\user\files\Sample.jpg"</td>
-</tr>
-
-<tr>
-  <td>extract image to data</td>
-  <td>utility action</td>
-  <td>my_text</td>
-</tr>
-</table>
+| Parameter | Type | Value |
+| --- | --- | --- |
+| image | input parameter | `E:\user\files\Sample.jpg` |
+| extract image to data | utility action | `my_text` |
 
 Output will be in this **JSON** structure:
 
@@ -282,28 +240,11 @@ To extract exact text from an image, specify "exact text" in the output format, 
 
 **Data:**
 
-<table>
- <th>Parameter</th>
- <th>Type</th>
- <th>Value</th>
-  <tr>
-   <td>image</td>
-   <td>input parameter</td>
-   <td>"E:\user\files\Sample.jpg"</td>
- </tr>
-
- <tr>
-  <td>output format</td>
-  <td>optional parameter</td>
-  <td>exact text</td>
-</tr>
-
-<tr>
- <td>extract image to data</td>
- <td>utility action</td>
- <td>my_text</td>
-</tr>
-</table>
+| Parameter | Type | Value |
+| --- | --- | --- |
+| image | input parameter | `E:\user\files\Sample.jpg` |
+| output format | optional parameter | `exact text` |
+| extract image to data | utility action | `my_text` |
 
 ### Example 1:
 
@@ -339,28 +280,11 @@ Output format can be JSON, LIST, HTML, CSV.
 
 **Data:**
 
-<table>
- <th>Parameter</th>
- <th>Type</th>
- <th>Value</th>
-  <tr>
-    <td>image</td>
-    <td>input parameter</td>
-    <td>"E:\users\files\Invoice.jpg"</td>
-  </tr>
-
-  <tr>
-    <td>prompt</td>
-    <td>Optional parameter</td>
-    <td>Return only Total price</td>
-  </tr>
-
-  <tr>
-    <td>extract image to data</td>
-    <td>utility action</td>
-    <td>my_text</td>
-  </tr>
-</table>
+| Parameter | Type | Value |
+| --- | --- | --- |
+| image | input parameter | `E:\users\files\Invoice.jpg` |
+| prompt | optional parameter | Return only Total price |
+| extract image to data | utility action | `my_text` |
 
 ### Example 1:
 
@@ -374,28 +298,11 @@ my_text = "$154.06"
 
 **Data:**
 
-<table>
- <th>Parameter</th>
- <th>Type</th>
- <th>Value</th>
-  <tr>
-   <td>image</td>
-   <td>input parameter</td>
-   <td>"E:\user\files\card.jpg"</td>
-  </tr>
-
-  <tr>
-   <td>prompt</td>
-   <td>Optional parameter</td>
-   <td>Return only id and name in html format.</td>
-  </tr>
-
-  <tr>
-   <td>extract image to data</td>
-   <td>utility action</td>
-   <td>my_text</td>
-  </tr>
-</table>
+| Parameter | Type | Value |
+| --- | --- | --- |
+| image | input parameter | `E:\user\files\card.jpg` |
+| prompt | optional parameter | Return only id and name in HTML format. |
+| extract image to data | utility action | `my_text` |
 
 ### Example 2:
 
@@ -546,28 +453,11 @@ content="width=device-width, initial-scale=1.0">
 
 **Data:**
 
-<table>
- <th>Parameter</th>
- <th>Type</th>
- <th>Value</th>
- <tr>
-  <td>image</td>
-  <td>input parameter</td>
-  <td>"E:\user\files\card.jpg"</td>
- </tr>
-
- <tr>
-  <td>output format</td>
-  <td>Optional parameter</td>
-  <td>[id, name, iss date, exp date]</td>
- </tr>
-
- <tr>
-  <td>extract image to data</td>
-  <td>utility action</td>
-  <td>my_text</td>
- </tr>
-</table>
+| Parameter | Type | Value |
+| --- | --- | --- |
+| image | input parameter | `E:\user\files\card.jpg` |
+| output format | optional parameter | `[id, name, iss date, exp date]` |
+| extract image to data | utility action | `my_text` |
 
 ### Example 2:
 
@@ -665,35 +555,12 @@ my_text = <h2>Driver License</h2>
 
 **Data:**
 
-<table>
- <th>Parameter</th>
- <th>Type</th>
- <th>Value</th>
-
-  <tr>
-   <td>image</td>
-   <td>input parameter</td>
-   <td>"E:\user\files\invoice.jpg"</td>
-  </tr>
-
-  <tr>
-   <td>prompt</td>
-   <td>Optional parameter</td>
-   <td>Return only total information.</td>
-  </tr>
-
-  <tr>
-   <td>output format</td>
-   <td>Optional parameter</td>
-   <td>["text1", "text2"]</td>
-  </tr>
-
-  <tr>
-   <td>extract image to data</td>
-   <td>utility action</td>
-   <td>my_text</td>
-  </tr>
-</table>
+| Parameter | Type | Value |
+| --- | --- | --- |
+| image | input parameter | `E:\user\files\invoice.jpg` |
+| prompt | optional parameter | Return only total information. |
+| output format | optional parameter | `["text1", "text2"]` |
+| extract image to data | utility action | `my_text` |
 
 ### Example 2:
 

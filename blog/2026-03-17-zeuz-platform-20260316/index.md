@@ -37,7 +37,7 @@ Welcome to the February 2026 release of the ZeuZ platform! This update delivers 
 5. **Disk space optimization for new RunIDs:** New Run history will consume much less disk space than before.
 6. By optimizing several db tables, all search API performance is slightly improved that consumes lower cpu/ram, responds quicker
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 1. New Onboarding Experience
 We’re excited to introduce our redesigned onboarding flow, built to ensure every new user gets up and running quickly and correctly. The experience is clean, intuitive, and optimized for all supported platforms.
