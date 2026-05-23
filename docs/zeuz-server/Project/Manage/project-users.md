@@ -14,8 +14,6 @@ The **Project User Management** page lets project admins review active and inact
   relatedTopics={["Email Setup"]}
 />
 
-![](/img/project-users/project-users.png)
-
 ### Why it matters / Use Cases:
 - Project admins can quickly see which users are active or inactive in the current project.
 - User search helps find users by their name.
