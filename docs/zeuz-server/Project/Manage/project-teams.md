@@ -14,8 +14,6 @@ The **Project Team Management** page allows project admins to manage teams for t
   relatedTopics={["Email Setup"]}
 />
 
-![](/img/project-teams/project-teams.png)
-
 ### Why it matters / Use Cases:
 - Project admins can keep project teams organized without using the super-admin area.
 - Teams can be searched, reviewed, and updated from a single page.
