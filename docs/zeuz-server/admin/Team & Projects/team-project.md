@@ -1,6 +1,7 @@
 ---
+sidebar_position: 1
 id: team-project
-title: Team and Project Management
+title: Manage Team & Project
 ---
 
 import MetaCard from '@site/src/components/MetaCard';

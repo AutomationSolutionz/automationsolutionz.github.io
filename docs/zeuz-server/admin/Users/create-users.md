@@ -1,6 +1,7 @@
 ---
+sidebar_position: 1
 id: create-users
-title: User Management
+title: List
 ---
 
 import MetaCard from '@site/src/components/MetaCard';

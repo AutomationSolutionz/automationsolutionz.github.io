@@ -1,6 +1,7 @@
 ---
+sidebar_position: 1
 id: project-dashboard
-title: Project Admin Dashboard
+title: Dashboard
 ---
 
 import MetaCard from '@site/src/components/MetaCard';

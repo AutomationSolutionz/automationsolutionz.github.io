@@ -1,6 +1,7 @@
 ---
+sidebar_position: 3
 id: project-users
-title: Project User Management
+title: User
 ---
 
 import MetaCard from '@site/src/components/MetaCard';

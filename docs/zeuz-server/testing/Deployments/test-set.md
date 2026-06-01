@@ -1,6 +1,7 @@
 ---
+sidebar_position: 3
 id: test-set
-title: Test Set
+title: Set
 ---
 
 import MetaCard from '@site/src/components/MetaCard';

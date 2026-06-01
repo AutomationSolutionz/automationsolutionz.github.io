@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 id: scheduler
 title: Scheduler
 ---

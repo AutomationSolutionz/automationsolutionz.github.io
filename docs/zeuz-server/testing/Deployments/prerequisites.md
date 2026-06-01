@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 id: prerequisites
 title: Prerequisites
 ---

@@ -1,6 +1,7 @@
 ---
+sidebar_position: 1
 id: sso-microsoft-entra-id
-title: Microsoft Entra ID / Azure Active Directory
+title: SSO
 ---
 
 :::note

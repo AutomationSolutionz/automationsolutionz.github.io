@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 id: use-accounts-log
 title: Account Logs
 ---

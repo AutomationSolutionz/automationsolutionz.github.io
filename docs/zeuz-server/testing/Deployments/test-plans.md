@@ -1,6 +1,7 @@
 ---
+sidebar_position: 2
 id: test-plans
-title: Test Plan
+title: Plan
 ---
 
 import MetaCard from '@site/src/components/MetaCard';

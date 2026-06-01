@@ -1,7 +1,7 @@
 ---
 id: zeuz-studio
 title: ZeuZ Studio
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 import MetaCard from '@site/src/components/MetaCard';

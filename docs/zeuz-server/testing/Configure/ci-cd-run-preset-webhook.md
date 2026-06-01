@@ -1,6 +1,7 @@
 ---
+sidebar_position: 1
 id: ci-cd-run-preset-webhook
-title: CICD Run preset / Webhook
+title: Run/CI Presets
 ---
 
 import MetaCard from '@site/src/components/MetaCard';
