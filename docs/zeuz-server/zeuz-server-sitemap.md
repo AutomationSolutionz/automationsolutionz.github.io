@@ -1,7 +1,6 @@
 ---
 id: zeuz-server-sitemap
 title: Zeuz Server Sitemap
-sidebar_position: 2
 ---
 
 ## Zeuz Features
