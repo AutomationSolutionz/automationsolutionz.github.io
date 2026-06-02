@@ -12,7 +12,7 @@ The **Team and Project Management** page provides super admins with a centralize
   availableFrom="To be added later"
   difficulty="🟢 Easy"
   lastUpdated="13 May, 2026"
-  relatedTopics={["Email Setup"]}
+  relatedTopics={["Email Setup", "Dashboard", "Team", "User"]}
 />
 
 ### Why it matters / Use Cases:
@@ -92,3 +92,119 @@ The **Team and Project Management** page provides super admins with a centralize
 ![](/img/team-project/related-items.png)
 
 ### Manage Project Teams
+- The **Manage Teams** action displays assigned teams and available teams side by side.
+- You can:  
+  - Review the teams already assigned to the project.
+  - Search for available teams by team name.
+  - Link an available team to the project.
+  - Unlink an assigned team from the project.
+- Use this when a team starts or stops working on a project.
+
+![](/img/team-project/manage-teams.png)
+
+![](/img/team-project/assign-action.png)
+
+### Email Setup
+- The Email Setup action allows configuration of SMTP email for a team within the selected project.
+- First, select the **Team**, then update the email fields:  
+  - **From Address**.
+  - **Host/SMTP Address**.
+  - **Port**.
+  - **Username**.
+  - **Password**.
+  - **TTLS**.
+- You can test the email setup before saving it. If the selected project has no linked teams, the page indicates that no teams are available.
+
+![](/img/team-project/email-button.png)
+
+![](/img/team-project/detailed-email.png)
+
+### Project Settings
+- The **Project Settings** action controls test case versioning behavior for that project.
+- The settings include:  
+  - **Version Control**: Turn version control ON or OFF.
+  - **Number of versions allowed for a test case**: Set how many saved versions are kept.
+  - **Only enabled test cases**: Choose whether only enabled test cases should be considered.
+
+![](/img/team-project/project-button.png)
+
+![](/img/team-project/project-settings.png)
+
+### Teams List
+- The Teams tab displays the team name, team ID, linked project, member count, public key status, and edit action.
+- You can:  
+  - Search by team name.
+  - Sort teams by name or member count.
+  - Identify the current team with the Current tag.
+  - Identify teams linked to the current project using the Current Project tag.
+  - Check whether a public key is set.
+
+![](/img/team-project/teams-list.png)
+
+### Create or Edit Team
+- Select New Team to create a team, or use the Edit action to update an existing team.
+- The Team form includes:  
+  - **Team Name**: Only letters, numbers, spaces, and hyphens are allowed.
+  - **Project**: Optional when creating a team and locked when editing an existing team.
+  - **Public Key**: Paste the team's public key if your process uses one.
+  - **Members**: Search for users and select at least one member.
+- The form cannot be submitted until a valid team name and at least one member are selected.
+
+![](/img/team-project/edit-team.png)
+
+![](/img/team-project/team-form.png)
+
+### Switch Old UI
+- The Switch Old Menu opens the older project and team management pages. It should only be used when a required workflow is not yet available in the new interface.
+
+## FAQs / Troubleshooting
+### FAQs
+
+<details>
+<summary>What can I manage from this page?</summary>
+
+You can manage projects, project owners, teams, team members, project-team links, project email setup, and project settings.
+
+</details>
+
+<details>
+<summary>Why do I see a Current tag?</summary>
+
+The Current tag shows the project or team currently selected in your ZeuZ session.
+
+</details>
+
+<details>
+<summary>Can one team be linked to a project later?</summary>
+
+Yes. Open the project action for Manage Teams, then link the team from the Available Teams list.
+
+</details>
+
+<details>
+<summary>Can I create a team without assigning it to a project?</summary>
+
+Yes. The project field is optional when creating a team. You can link the team to a project later.
+
+</details>
+
+### Troubleshooting
+- **Project or team data is not loading**: Refresh the page and confirm that access to the management area is still available.
+- **Owner or member search shows no results**: Check the spelling, then confirm that the user already exists in ZeuZ.
+- **Project creation fails**: Confirm that the name uses only letters, numbers, spaces, and hyphens, and that at least one owner is selected.
+- **Team creation fails**: Confirm that the name is valid and that at least one member is selected.
+- **A team is missing from Email Setup**: Link the team to the project first.
+- **Email test fails**: Confirm the SMTP host, port, credentials, from address, and TTLS settings.
+
+## Changelog
+
+- To be added later.
+
+## Related Topics
+
+- [Email setup](https://docs.zeuz.ai/docs/zeuz-server/admin/Team%20&%20Projects/setup-email-notification/)
+- [Dashboard](https://docs.zeuz.ai/docs/zeuz-server/Project/Manage/project-dashboard/)
+- [Team](https://docs.zeuz.ai/docs/zeuz-server/Project/Manage/project-teams/)
+- [User](https://docs.zeuz.ai/docs/zeuz-server/Project/Manage/project-users/)
+
+---

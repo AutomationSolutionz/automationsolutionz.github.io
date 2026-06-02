@@ -1,7 +1,7 @@
 ---
 id: best-practices
 title: Best Practices
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 ## Introduction to ZeuZ
