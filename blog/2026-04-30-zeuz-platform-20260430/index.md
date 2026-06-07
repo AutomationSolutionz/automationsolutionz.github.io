@@ -1,7 +1,7 @@
 ---
 slug: zeuz-platform-202604
 title: ZeuZ Platform 202604
-authors: ['nayeem']
+authors: ['mahbd']
 tags: ['changelog']
 ---
 
