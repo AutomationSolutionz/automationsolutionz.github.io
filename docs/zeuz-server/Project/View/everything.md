@@ -101,6 +101,10 @@ The **Everything** feature is a centralized workspace that allows users to searc
 
 ![](/img/everything/everything-chart.png)
 
+- A search field has been added to the **Milestone**, **Labels**, and **Author** columns.
+
+![](/img/everything/test-field.png)
+
 ## FAQs / Troubleshooting
 ### FAQS
 
