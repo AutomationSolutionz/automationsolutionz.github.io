@@ -5,6 +5,8 @@ title: Playwright Actions
 
 ---
 
+## Purpose
+
 This document outlines **Playwright actions** in ZeuZ Node and the implementation of driver switching between **Playwright** and **Selenium**. This feature allows for global or granular control over which driver executes your web actions, supported by a seamless background connection mechanism.
 
 Playwright actions are designed to mimic the behavior of their Selenium counterparts. They use the same step data format, action names, element parameters, optional parameters, and saved variable patterns wherever a matching Selenium action exists. This lets existing test case, test set, test step, and action data stay unchanged when switching from Selenium to Playwright through `BROWSER_DRIVER`, the `browser driver` optional parameter, or by changing `selenium action` to `playwright action`.
@@ -51,8 +53,9 @@ The `BROWSER_DRIVER` parameter sets the execution engine for the entire test cas
 The `browser driver` parameter provides fine-grained control and takes the **highest priority** if both parameters are present.
 
 * **Usage:** This can be added to any specific web action.
-* **Override Logic:** It is designed to override global driver preferences for specific steps.
-* **Example:** If an action is defined as a `selenium action` but includes this optional parameter set to `playwright`, the action is converted to `playwright action` internally.
+* **Override Logic:** It overrides global driver preferences for specific steps.
+* **Result:** It has the same execution effect as changing the action subfield from `selenium action` to `playwright action`, or from `playwright action` to `selenium action`, but without editing the original action row.
+* **Example:** If an action is defined as a `selenium action` but includes this optional parameter set to `playwright`, the action is converted to `playwright action` internally at runtime.
 
 | Parameter | Type | Value |
 | --- | --- | --- |

@@ -5,6 +5,8 @@ title: Sessions
 
 ---
 
+## Purpose
+
 This feature introduces **session-based browser isolation**, allowing you to spawn and interact with multiple fresh browser windows independently within the same test. It follows a "session" model similar to how database actions are handled in the framework.
 
 ---
@@ -66,4 +68,3 @@ To close a specific session while keeping others active, use the `session` param
 
 * **Legacy Behavior**: If the `session` parameter is omitted, the framework defaults to the legacy single-instance behavior.
 * **Selenium Support**: Support for the `driverid` parameter is maintained for Selenium-specific workflows.
-
