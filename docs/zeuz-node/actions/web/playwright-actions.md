@@ -5,12 +5,36 @@ title: Playwright Actions
 
 ---
 
+import MetaCard from '@site/src/components/MetaCard';
+
+<MetaCard
+  availableFrom="202605"
+  difficulty="🟢 Medium"
+  lastUpdated="16 June, 2026"
+  relatedTopics={["Introduction of Web action", "Go to link", "Go to webpage"]}
+/>
+
 ## Purpose
 
 This document outlines **Playwright actions** in ZeuZ Node and the implementation of driver switching between **Playwright** and **Selenium**. This feature allows for global or granular control over which driver executes your web actions, supported by a seamless background connection mechanism.
 
 Playwright actions are designed to mimic the behavior of their Selenium counterparts. They use the same step data format, action names, element parameters, optional parameters, and saved variable patterns wherever a matching Selenium action exists. This lets existing test case, test set, test step, and action data stay unchanged when switching from Selenium to Playwright through `BROWSER_DRIVER`, the `browser driver` optional parameter, or by changing `selenium action` to `playwright action`.
 
+### Why it matters / Use Cases:
+- **Provides flexible driver switching**: Users can switch between **Playwright** and **Selenium** globally or for specific actions without rewriting test cases.
+- **Reduces test maintenance effort**: Since Playwright actions follow the same structure as Selenium actions, existing test cases, test steps, and action data remain unchanged.
+- **Supports gradual migration**: Teams using Selenium can adopt Playwright step by step instead of migrating all automation at once.
+- **Improves execution performance**: Playwright often provides faster and more reliable browser automation, especially for modern web applications.
+- **Ensures compatibility with existing workflows**: The same action names, parameters, and saved variable patterns can be reused, making the transition smooth.
+- **Enables granular execution control**: Specific steps can run on Playwright while others continue using Selenium, depending on testing requirements.
+
+## Prerequisites
+- **ZeuZ Node** must be properly configured to support Playwright execution.
+- **Runtime parameter** must be properly configured to enable and execute Playwright actions.
+- Users should have a valid **web test case** or **test step** already created in ZeuZ.
+- Existing actions should follow the supported **Selenium-compatible action structure** for seamless switching.
+- The browser driver or relevant optional parameter must be configured to switch between **Playwright** and **Selenium**.
+- Required **action data**, **element parameters**, and **optional parameters** should be properly defined before execution.
 ---
 
 ## Implemented Playwright Actions
@@ -46,6 +70,10 @@ The `BROWSER_DRIVER` parameter sets the execution engine for the entire test cas
 * **Behavior:** Ensures all web actions in the test case are executed through the chosen driver, regardless of the individual step definitions.
 * **Example:** If a test case contains steps defined as `selenium action` but `BROWSER_DRIVER` is set to `playwright`, Node will internally convert those actions to `playwright action` at runtime.
 
+![](/img/playwright/runtime-playwright.png)
+
+![](/img/playwright/playwright-selenium.png)
+
 [📹 Video](https://drive.google.com/file/d/1H-h4aB87e4rCgNiqmd9-_vg_FookhNt-/view?usp=sharing)
 
 ### 2. Granular Optional Parameter: `browser driver`
@@ -55,12 +83,17 @@ The `browser driver` parameter provides fine-grained control and takes the **hig
 * **Usage:** This can be added to any specific web action.
 * **Override Logic:** It overrides global driver preferences for specific steps.
 * **Result:** It has the same execution effect as changing the action subfield from `selenium action` to `playwright action`, or from `playwright action` to `selenium action`, but without editing the original action row.
+
+![](/img/playwright/input-playwright.png)
+
 * **Example:** If an action is defined as a `selenium action` but includes this optional parameter set to `playwright`, the action is converted to `playwright action` internally at runtime.
 
 | Parameter | Type | Value |
 | --- | --- | --- |
 | browser driver | optional parameter | playwright |
 | click | selenium action | login_btn |
+
+![](/img/playwright/browser-playwright.png)
 
 [📹 Video](https://drive.google.com/file/d/1Qu0wG2ujY5XdAbiIGotr1AuvYyFnRZKi/view?usp=sharing)
 
@@ -115,3 +148,50 @@ The system maintains a live bridge between drivers to ensure that switching does
 > 
 > 
 > This seamless switching utilizes the **Chrome DevTools Protocol (CDP)** to establish a remote debugging bridge. Consequently, this feature only works on **Chromium-based browsers**.
+
+## FAQs / Troubleshooting
+
+<details>
+<summary>How do I enable Playwright for test execution?</summary>
+
+Configure the required runtime parameter or set the browser driver to Playwright before execution.
+
+</details>
+
+<details>
+<summary>Can I switch between Selenium and Playwright without changing test steps?</summary>
+
+Yes. Since Playwright actions follow the same structure as Selenium actions, existing test steps can be reused without modification.
+
+</details>
+
+<details>
+<summary>Why is the test still running on Selenium instead of Playwright?</summary>
+
+Check whether the driver was correctly switched through BROWSER_DRIVER, the browser_driver optional parameter, or by selecting the Playwright action.
+
+</details>
+
+<details>
+<summary>Do I need to rewrite existing Selenium test cases for Playwright?</summary>
+
+No. In most cases, existing test cases, test steps, and action data remain unchanged.
+
+</details>
+
+<details>
+<summary>Can both Selenium and Playwright be used in the same test case?</summary>
+
+</details>
+
+## Changelog
+
+- New feature has been added [[202605](/blog/zeuz-platform-202605/)]
+
+## Related Topics
+
+- [Introduction to web action](https://docs.zeuz.ai/docs/zeuz-node/actions/Web/actions-web/)
+- [Go to link](https://docs.zeuz.ai/docs/zeuz-node/actions/Web/go-to-link/)
+- [Go to webpage](https://docs.zeuz.ai/docs/zeuz-node/actions/Web/go-to-webpage/)
+
+---
