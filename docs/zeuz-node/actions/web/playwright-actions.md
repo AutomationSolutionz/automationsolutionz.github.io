@@ -182,6 +182,8 @@ No. In most cases, existing test cases, test steps, and action data remain uncha
 <details>
 <summary>Can both Selenium and Playwright be used in the same test case?</summary>
 
+Yes. ZeuZ supports granular driver switching, allowing different steps within the same test case to use different drivers.
+
 </details>
 
 ## Changelog
