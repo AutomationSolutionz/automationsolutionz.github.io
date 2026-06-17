@@ -9,7 +9,7 @@ import MetaCard from '@site/src/components/MetaCard';
 A **Pipeline** in CRM represents a product or service offered by the organization. When a new client is added, they are placed into the appropriate pipeline based on the product they are interested in or using. For example, if a client is interested in the ZeuZ Server product, they can be added to the ZeuZ Server pipeline. Organizations that offer multiple products can create multiple pipelines to keep clients, activities, opportunities, meetings, and follow-ups organized by product. The purpose of a pipeline is to separate and manage customer interactions efficiently, making it easier to track progress and activities for each product line.
 
 <MetaCard
-  availableFrom="To be added later"
+  availableFrom="202605"
   difficulty="🟢 Medium"
   lastUpdated="09 June, 2026"
 />
@@ -225,7 +225,7 @@ Only authorized users with valid login credentials and granted workspace permiss
 
 ## Changelog
 
-- To be added later.
+- New feature has been added [[202605](/blog/zeuz-platform-202605)].
 
 ---
 
