@@ -9,11 +9,26 @@ import MetaCard from '@site/src/components/MetaCard';
 **AI Standup** is an automated reporting feature that supports or replaces traditional daily standup meetings by collecting development activity and generating structured summaries including manual input. Its purpose is to improve team visibility by showing daily progress, comparing planned commitments with completed work, and highlighting items such as pull requests and ongoing tasks that require attention, allowing teams to track progress and manage work more efficiently. This page primarily displays two sections: Daily Standup and Team Report.
 
 <MetaCard
-  availableFrom="To be added later"
+  availableFrom="202605"
   difficulty="🟢 Medium"
-  lastUpdated="tba"
+  lastUpdated="18 June, 2026"
   relatedTopics={["Worklog"]}
 />
+
+### Why it matters / Use Cases:
+- **Reduces manual standup effort**: AI Standup minimizes or replaces daily standup meetings by automatically collecting and summarizing progress updates.
+- **Improves team visibility**: It gives teams and managers a clear view of daily progress, making it easier to understand who is working on what.
+- **Tracks planned vs completed work**: It helps compare committed tasks with completed tasks to measure progress and identify delays.
+- **Highlights blockers quickly**: Pending tasks, unresolved issues, or ongoing work are surfaced early so teams can take action faster.
+- **Supports remote team collaboration**: It keeps distributed teams aligned by providing structured daily reports without requiring everyone to join a meeting.
+
+## Prerequisites
+- Access to ZeuZ Server with permissions for **Project → View → AI-Standup**.
+- Project activities must be available in the system.
+- Team members should have assigned work items.
+- Development tools should be integrated.
+- Manual input access should be enabled.
+- Team members must have access to the AI Standup page.
 
 ## Features
 ### Daily Standup
@@ -33,7 +48,7 @@ import MetaCard from '@site/src/components/MetaCard';
 - To configure the settings, select **Open Settings**. This opens a sidebar where the Daily Standup configuration can be managed. The same sidebar can also be opened from the Settings button available on the page.
 - The Daily Standup Settings include the following options:  
   - **GitHub Repositories**: Select the repositories that should be included in the report. The available repositories are displayed based on the configured code repository integrations. For example, a team may select the ZeuZ Server repository and the ZeuZ Python Node repository if work is being performed in both.
-  - **Meeting Time**: Define the time when the standup report should be generated. For example, if the daily status meeting takes place at 10:00 AM, the report can be configured to generate automatically at 9:30 AM so that managers can review the latest progress before the meeting.
+  - **Meeting Time**: Define the time when the standup report should be generated. For example, if the daily status meeting takes place at 10:00 AM, the report can be configured to generate automatically at 9:45 AM so that managers can review the latest progress before the meeting.
   - **Timezone**: Select the timezone that should be used for report generation.
   - **Automatic Reports**: This option is currently disabled but will be available in a future release to enable automatic report generation.
 - After configuring the required settings, select **Save Settings** to complete the setup.
@@ -68,6 +83,8 @@ import MetaCard from '@site/src/components/MetaCard';
   - **Pull Request Activity**: Information about assigned pull requests and their current review status.
   - **CRM Activity**: Related CRM activities, including follow-ups, updates, and recent customer interactions.
 
+![](/img/AI-standup/manager-summary.png)
+
 ![](/img/AI-standup/specific-report.png)
 
 ### Team Report
@@ -88,9 +105,46 @@ import MetaCard from '@site/src/components/MetaCard';
 ### AI Standup History
 - Users can also view the history of previously generated reports at any time.
 
+## FAQs / Troubleshooting
+### FAQs
+
+<details>
+<summary>What is AI Standup used for?</summary>
+
+AI Standup is used to automate daily progress reporting by collecting development activities and generating structured standup summaries.
+
+</details>
+
+<details>
+<summary>Can AI Standup replace daily standup meetings?</summary>
+
+Yes, it can support or partially replace traditional standup meetings by providing automated daily updates.
+
+</details>
+
+<details>
+<summary>What information does AI Standup include?</summary>
+
+It includes daily progress, planned versus completed work, pull requests, ongoing tasks, and manual input from team members.
+
+</details>
+
+<details>
+<summary>Can users add manual updates?</summary>
+
+Yes, manual input can be included to provide additional context that may not be captured automatically.
+
+</details>
+
+### Troubleshooting
+- **AI Standup report is not showing recent updates**: Check whether development activities such as tasks, commits, or pull requests are being tracked correctly in the system.
+- **Planned work is not appearing in the report**: Ensure that work items are properly assigned and commitments are updated before the standup report is generated.
+- **Pull requests or activity data are missing**: Verify that the required development tools or integrations are connected and syncing properly.
+- **Standup summary seems incomplete**: Add manual input to include important updates or context not captured automatically.
+
 ## Changelog
 
-- To be added later
+- Daily Standup is now the default AI Standup view, with PR review visibility and reviewer assignment support [[202605](/blog/zeuz-platform-202605/)]
 
 ## Related Topics
 
