@@ -9,7 +9,7 @@ import MetaCard from '@site/src/components/MetaCard';
 The **Team and Project Management** page provides super admins with a centralized location to review projects, create new projects, manage project ownership, connect teams to projects, configure team email settings, and maintain project-level settings.
 
 <MetaCard
-  availableFrom="To be added later"
+  availableFrom="202605"
   difficulty="🟢 Easy"
   lastUpdated="13 May, 2026"
   relatedTopics={["Email Setup", "Dashboard", "Team", "User"]}
@@ -198,7 +198,7 @@ Yes. The project field is optional when creating a team. You can link the team t
 
 ## Changelog
 
-- To be added later.
+- Centralized project, team, user, and project settings management [[202605](/blog/zeuz-platform-202605/)].
 
 ## Related Topics
 

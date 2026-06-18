@@ -9,10 +9,10 @@ import MetaCard from '@site/src/components/MetaCard';
 The **Project Admin Dashboard** is the project-level management page for the currently selected project. It gives project admins a quick view of teams, users, active users, and project configuration, with tools to create teams, add users, configure team email, and update test case versioning.
 
 <MetaCard
-  availableFrom="To be added later"
+  availableFrom="202605"
   difficulty="🟢 Easy"
   lastUpdated="14 May, 2026"
-  relatedTopics={["Email Setup"]}
+  relatedTopics={["Email Setup", "User"]}
 />
 
 ![](/img/project-dashboard/project-dashboard.png)
@@ -155,10 +155,11 @@ Open the Test Case Versioning tab and update the version control, allowed versio
 
 ## Changelog
 
-- To be added later.
+- Centralized project, team, user, and project settings management [[202605](/blog/zeuz-platform-202605/)]
 
 ## Related Topics
 
-- To be added later.
+- [Email setup](https://docs.zeuz.ai/docs/zeuz-server/admin/Team%20&%20Projects/setup-email-notification/)
+- [User](https://docs.zeuz.ai/docs/zeuz-server/Project/Manage/project-users/)
 
 ---

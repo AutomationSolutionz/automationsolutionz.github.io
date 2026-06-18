@@ -9,10 +9,10 @@ import MetaCard from '@site/src/components/MetaCard';
 **Email Setup** lets admins configure the SMTP settings used by a team. It is available from Team & Project Management and from project-level team management pages.
 
 <MetaCard
-  availableFrom="To be added later"
+  availableFrom="202605"
   difficulty="🟢 Easy"
   lastUpdated="13 May, 2026"
-  relatedTopics={["Create team and project"]}
+  relatedTopics={["Manage team and project", "Users", "Teams", "Dashboard"]}
 />
 
 ### Why it matters / Use Cases:
@@ -124,10 +124,13 @@ The project-level email action is team-specific, so you must choose which linked
 
 ## Changelog
 
-- To be added later.
+- Centralized project, team, user, and project settings management [[202605](/blog/zeuz-platform-2026/)].
 
 ## Related Topics
 
-- To be added later.
+- [Manage team and project](https://docs.zeuz.ai/docs/zeuz-server/admin/Team%20&%20Projects/team-project/).
+- [User](https://docs.zeuz.ai/docs/zeuz-server/Project/Manage/project-users/)
+- [Team](https://docs.zeuz.ai/docs/zeuz-server/Project/Manage/project-teams/)
+- [Dashboard](https://docs.zeuz.ai/docs/zeuz-server/Project/Manage/project-dashboard/)
 
 ---

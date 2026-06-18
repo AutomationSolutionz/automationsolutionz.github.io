@@ -9,7 +9,7 @@ import MetaCard from '@site/src/components/MetaCard';
 The **Project User Management** page lets project admins review active and inactive users for the selected project and create new users assigned to one or more project teams.
 
 <MetaCard
-  availableFrom="To be added later"
+  availableFrom="202605"
   difficulty="🟢 Easy"
   lastUpdated="13 May, 2026"
   relatedTopics={["Email Setup"]}
@@ -109,10 +109,10 @@ This page is focused on reviewing users and creating new users. Use the availabl
 
 ## Changelog
 
-- To be added later.
+- Centralized project, team, user, and project settings management [[202605](/blog/zeuz-platform-202605/)].
 
 ## Related Topics
 
-- To be added later.
+- [Email setup](https://docs.zeuz.ai/docs/zeuz-server/admin/Team%20&%20Projects/setup-email-notification/).
 
 ---
