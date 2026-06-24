@@ -44,6 +44,26 @@ Suppose we need to perform two different tasks within a single test case. After 
 
 ---
 
+## Runtime Parameter: `zeuz_auto_teardown`
+
+`zeuz_auto_teardown` controls when Zeuz automatically tears down browser sessions during a deployed run. Use it when browser state must either be isolated between test cases or intentionally preserved across selected test cases.
+
+| Value | Behavior |
+|-------|----------|
+| `on` | Default behavior. Teardown runs at run start and after each test case. Values `yes`, `true`, and `enable` also behave like `on`. |
+| `off` | Disables automatic teardown. Values `no`, `false`, and `disable` also behave like `off`. Manual teardown actions still run. |
+| `on_run_end` | Skips teardown between test cases and runs teardown only after the last selected test case in the non-debug run. |
+| `on_run_start_and_end` | Runs teardown before the first test case and after the last test case, but not between test cases. |
+
+![](/img/how-tos/how-to-add-runtime-parameters/zeuz_auto_teardown.png)
+
+Example uses:
+- Use `on_run_end` when a group of test cases intentionally shares one browser session, such as prerequisite flows where TC B depends on browser state from TC A.
+- Use `on_run_start_and_end` when you want to clear any leftover browser from a previous run, keep the session open across the selected test cases, then close it at the end.
+- Use `off` only when cleanup is handled manually or the browser must remain open after execution for investigation.
+
+---
+
 ## Additional Tips for this Action
 - Use this action at the end of every test case to ensure proper cleanup, if necessary.
 - Verify that no unsaved data or confirmation prompts are blocking the browser from closing.
