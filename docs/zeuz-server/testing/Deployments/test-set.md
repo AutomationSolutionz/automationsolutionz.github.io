@@ -50,13 +50,8 @@ A Test Set is a collection of logically grouped test cases. Test sets can be exe
    2. Shows the total number of test cases in the set, as well as the number of test cases that have been passed, failed, blocked, and submitted.
    3. The execution time of the test set.
    4. The preset of the test set is defined. However, if we click on the preset that has been connected to the test set then it will show the following run configuration information, such as:
-
-    |                    |  Properties    |                       |
-    |--------------------|----------------|-----------------------|
-    |  1. Node           |  2. Testers    |  3. Emails            |
-    |  4. Version        |  5. Milestone  |  6. Objective         |
-    |  7. Browser        |  8. Mobile     |  9. External service  |
-
+      - **Description of the Test Set**.
+      - **Schedule of the Test Set**.  
     The benefit here is that if the preset of a set is selected, it will display the test cases associated with that set.  
    5. It also displays the plan, if there is one.  
    6. The description is available; if there is a description, it will be displayed, otherwise, the field will remain blank.  
@@ -75,36 +70,143 @@ When sorted by "Status", failed test cases appear first, followed by blocked, pa
 
 ![](/img/how-tos/how-to-create-test-sets/set-version.png)
 
+### View Tab of the Test Set Page
+- At first, the specific test set must be selected by clicking on it, which will open the **Test Set** page.
+- At the top of the page, there is a title bar that displays the test set name, the creator, and the creation date of the test set. However, the name of the set can be updated by clicking on it.
 
-## Add or remove test cases
-1. First, click on the **Test Set Name** of the specific test set card available on the **Set** page.
+![](/img/how-tos/how-to-create-test-sets/set-title.png)
 
-![](/img/how-tos/how-to-create-test-sets/card-set.png)
+- Again, at the top of the page, the following options are available:  
+  - **Copy test set**: By clicking the **Copy test set** option, the Copy Test Set window will appear. It requires the test set name and description. After clicking the **Copy** button, a notification will appear, such as: “Test set with the name ‘Regression Set’ was created successfully.”
 
-2. Go to the **Test Set (Add/Remove)** page and click on the **Add** tab.
-3. Click the "checkbox" to select test cases for adding to the test set.
-4. Next, click on the "Add Selected" button.
- 
-![](/img/how-tos/how-to-create-test-sets/add-tab.png)
+  ![](/img/how-tos/how-to-create-test-sets/copy-test.png)
 
-5. Click on the **View** tab to see whether the required **Test cases** are added or not.
+  ![](/img/how-tos/how-to-create-test-sets/copy-set.png)
+
+  ![](/img/how-tos/how-to-create-test-sets/copy-notification.png)
+
+  - **Reorder options**: It is used to change the execution order of the test cases within the test set.This allows users to arrange test cases in a specific sequence based on their testing needs. Also, by clicking the **Reorder option**, a **Drag & Drop** feature becomes available, allowing users to arrange the test cases by dragging them.
+
+  ![](/img/how-tos/how-to-create-test-sets/reorder-set.png)
+
+  - **Export test set**: An **Export test set** is the process of extracting a collection of grouped test cases from a test management system and saving them in an external file format such as Excel or CSV for sharing, reporting, backup, or offline analysis.
+
+  ![](/img/how-tos/how-to-create-test-sets/export-set.png)
+
+  - **Delete test set**: A **Delete test set** refers to the action of permanently removing a test set and all its associated test cases from a test management system.
+
+  ![](/img/how-tos/how-to-create-test-sets/delete-set.png)
+
+  - **Run test set**: A **Run test set** is the process of executing all test cases grouped inside a test set in a test management system to validate the functionality of an application.During a test run, each test case is executed, and its result is recorded as passed, failed, or submitted.
+
+  ![](/img/how-tos/how-to-create-test-sets/run-set.png)
+
+- Below the title, there are two tabs:  
+  - **View**: Displays all existing test cases.
+  - **Add**: Used to add new test cases.
+
+  ![](/img/how-tos/how-to-create-test-sets/view-add.png)
+
+- A **Search bar** is available to quickly find test cases by ID, label, user, folder, or feature.
+
+![](/img/how-tos/how-to-create-test-sets/search-set.png)
+
+- The **Remove Selected** button allows users to delete multiple selected test cases at once.
+
+![](/img/how-tos/how-to-create-test-sets/remove-selected.png)
+
+- After clicking the **Settings** button on the right side, a dropdown-style filter menu appears containing multiple selectable checkboxes. These options are used to refine **Search filters**, **Columns**, and **Row actions**. From the settings option, the user can choose which columns to display. By selecting or deselecting checkboxes, columns can be added or removed as needed. The table view can be toggled according to preference. Additionally, the user can configure which action buttons should appear within each row.
+
+![](/img/how-tos/how-to-create-test-sets/set-settings.png)
+
+- The **View** tab contains a table that displays all the test cases with the columns selected through the Settings option, such as:  
+  - **Selection Checkbox**: Available at the left side of each row, allowing users to select one or multiple test cases for bulk actions.
+  - **ID**: Displays the unique test case ID, such as **TEST-0447**, **TEST-0448**, and others.
+  - **Title**: Shows the name or description of each test case, helping users identify the purpose of the test.
+  - **P (Priority)**: Indicates the priority level of the test case, such as **P1**, **P2** etc.
+  - **Status**: Displays the current execution status of the test case. Here, some test cases are marked as Ready, meaning they are prepared for execution.
+  - **Folder**: Shows the folder where the test cases are stored.
+  - **Feature**: Indicates the feature or module associated with the test case.
+  - **Labels**: Reserved for tags or labels used to categorize test cases.
+  - **Progress**: Displays the execution progress using a progress bar.
+  - **Time Left**: Shows the estimated remaining execution time.
+  - **Type**: Displays the execution type using an icon, such as, **Automation** or **Manual**.
+  - **Time**: Shows the execution duration or recorded time.
+:::note
+Additional information can be displayed in the table by selecting the desired options from the Settings menu, if needed.
+
+:::
+- **Actions**: Provides action buttons for each test case, such as:  
+  - **Remove test case**: Removes the test case from the test set.
+  - **Copy test case**: Creates a copy of the selected test case of the required test set.
 
 ![](/img/how-tos/how-to-create-test-sets/view-tab.png)
 
-6. To remove a test case, select the checkbox next to the desired test case, then click on the "Delete Selected" button. The selected test case will be deleted.
+### Add Tab of the Test Set Page
+- At the top of the page, a **Search bar** is available to quickly find test cases by ID, label, user, folder, feature, and other criteria.
 
-![](/img/how-tos/how-to-create-test-sets/remove-set.png)
+![](/img/how-tos/how-to-create-test-sets/add-search.png)
 
+- A **date range** picker used to filter test cases based on a selected date range. It contains the following components:  
+  - **Start Date-End Date**: Located at the top left, this field allows users to select a start date and an end date for filtering test cases.
+  - **Calendar Icon**: Opens the calendar popup for date selection.
+  - **Dual Calendar View**: The popup displays two months side by side, making it easier to select dates across different months.
+  - **Navigation Arrows**: The arrows at the top allow users to move to previous or next months.
+  - **Date Selection**: Users can click on specific dates to define the desired date range.
 
-## Deploy test sets
-1. Click on the **Deploy** button of the required **Test Set**.
+![](/img/how-tos/how-to-create-test-sets/date-range.png)
 
-![](/img/how-tos/how-to-deploy-test-sets/set-deploy.png)
+- **Sorting dropdown menu**: It is used to arrange test cases based on modification time or test case ID. It contains the following options:  
+  - **Last Modification**: This is the currently selected sorting option. It sorts the test cases based on their most recent modification date, allowing users to view recently updated test cases first.
+  - **Test case ID DESC**: Sorts the test cases in **descending** order by test case ID, meaning higher IDs appear first.
+  - **Test case ID ASC**: Sorts the test cases in **ascending** order by test case ID, meaning lower IDs appear first.
 
-2. Go to the **Run Tests/Deploy** page.
-3. Click on the **Run** button.
+  ![](/img/how-tos/how-to-create-test-sets/last-modification.png)
 
-See [related topics](#related-topics) to learn more about running your tests.
+- **Add Selected Button**: Allows users to add the selected test cases after applying the filter.
+
+![](/img/how-tos/how-to-create-test-sets/add-selected.png)
+
+- **Add by ID**: It means adding test cases to a test set by entering their unique **test case IDs** instead of selecting them manually from the list. By using the **Add by ID** option, users can directly input one or multiple test case IDs, and the system automatically adds those specific test cases to the selected test set.
+
+![](/img/how-tos/how-to-create-test-sets/add-ID.png)
+
+![](/img/how-tos/how-to-create-test-sets/test-ID.png)
+
+- **View Settings**: The function of the Settings button has already been described in the **View** tab section. It works the same way in the **Add** tab as it does in the **View** tab.
+
+![](/img/how-tos/how-to-create-test-sets/add-settings.png)
+
+- The **Add** tab contains a table that displays all test cases with the columns selected through the **Settings** option. The **Add** tab includes the same columns as the View tab, with one exception: under the **Actions** column, only the **Copy test case** icon is available, which allows users to create a copy of the selected test case. 
+- Additional information can be displayed in the table by selecting the desired options from the **Settings** menu, if needed.
+
+![](/img/how-tos/how-to-create-test-sets/copy-action.png)
+
+## Add test cases to the Test Set
+- First, click on the **Test Set Name** of the specific test set card available on the **Set** page.
+
+![](/img/how-tos/how-to-create-test-sets/card-set.png)
+
+- Users can add test cases to the test set by navigating to the **Add**
+- Click the **Checkbox** to select test cases for adding to the test set.
+- Next, click on the **+ Add Selected** button.
+ 
+![](/img/how-tos/how-to-create-test-sets/adding-test.png)
+
+- Click on the **View** tab to see whether the required **Test cases** are added or not.
+
+![](/img/how-tos/how-to-create-test-sets/view-addition.png)
+
+- The test cases can also be reordered by using the **Drag & Drop** button.
+
+![](/img/how-tos/how-to-create-test-sets/drag-set.png)
+
+![](/img/how-tos/how-to-create-test-sets/drag-reorder.png)
+
+- During **reordering**, the system highlights the test cases whose positions have been changed, making it easier to identify the affected test cases. This is useful because users may sometimes forget which test cases were reordered, especially when test case IDs are difficult to remember or multiple test cases have similar titles. The highlighted rows help users clearly see which test cases were affected due to the changed order.
+- After completing the reordering, clicking the **Save Order** button saves the new sequence successfully.
+
+![](/img/how-tos/how-to-create-test-sets/save-apply.png)
 
 ## FAQs / Troubleshooting
 
