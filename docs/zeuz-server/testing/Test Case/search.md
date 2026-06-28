@@ -31,88 +31,117 @@ The **Search** feature enables users to quickly locate specific test cases withi
 
 ## Features
 ### Search bar
-- A text box labeled *Search Test Cases...* allows users to enter keywords to locate specific test cases.
-- By clicking the dropdown arrow, users can also search test cases using keywords such as **Title**, **ID**, **Priority**, **Status**, and more.
-- Clicking the search icon executes a search for test cases based on the entered keywords.
-- Test cases can also be searched using the "Filter by Date" option.
+- A text box labeled *Search Test Cases...* allows users to enter keywords to locate specific test cases. It contains the following components:  
+  - **Search Bar**: Located at the top left, this allows users to search for test cases by **ID**, **label**, **user**, **folder**, **feature**, and other criteria.
+  - **Search Icon**: Clicking the search icon executes a search for test cases based on the entered keywords.
+  - **Status Filters**: Next to the search bar, filter buttons such as **All**, **Dev**, and **Ready** are available to display test cases based on their current status.
+  - **Date Range Filter**: The **Start date** and **End date** field allows users to filter test cases within a specific date range.
+  - **Calendar Icon**: Opens the calendar for selecting start and end dates.
+  - **Applied Filters Section**: Displays all currently active filters. Here, three types of statuses are available, such as: **All**, **Dev** and **Ready**.
+  - **Clear All Button**: Removes all applied filters at once and resets the filter settings.
 
 ![](/img/search/search-testcase.png)
 
 ### Sorting and filtering test cases
+- A **Preset** option is visible, which is used to apply previously saved filter configurations.
 - A dropdown menu is open that allows users to sort test cases based on different criteria, such as **Test Case ID in descending order (DESC)**, **Test Case ID in ascending order (ASC)**, or **Last Modification date**.
-- Next to the sorting dropdown, a **Preset** option is visible, which is used to apply previously saved filter configurations.
 - An additional numeric dropdown (for example, **100**) indicates the maximum number of test cases displayed per page.
 
 ![](/img/search/sorting-filtering.png)
 
-### Select or deselect all test cases
-- This option allows users to select all test cases in the list with a single action or deselect them if they are already selected. It is commonly used when performing bulk actions, such as applying filters, updating statuses, or executing multiple test cases at once.
-- After clicking the **Select/Deselect All Test Cases** option, all available test cases are selected.
-
-![](/img/search/select-test.png)
-
-- However, if the test cases are already selected, then clicking the **Select/Deselect All Test Cases** option will deselect all selected test cases.
+### Settings Menu
+- It allows users used to customize the search interface by selecting which filter options will be visible in the table. It contains the following components:  
+  - **Sidebar Section**: Contains the **Folder / Feature** Tree option, which is currently enabled. This allows the folder and feature structure to be displayed in the sidebar.
+  - **Search Filter Types Section**: Displays multiple checkbox options that allow users to choose which search filters should appear in the search panel.
+  - **Other Filters**: Users can enable or disable additional filter options by selecting or deselecting the corresponding checkboxes.
+  - **Columns**: Users can choose which columns to display in the table, such as, **Priority**, **Author**, **Feature** and more.
+  - **Row Actions**: Users can control which action buttons appear in each table row, such as, **Copy**, **Move to Folder**, **Link to Prerequisite** and more
 
 ![](/img/search/deselect-test.png)
 
-### Create filter preset
-- On the left side, an icon labeled **Create Filter Preset** allows users to save the current filter and sorting configuration for future use.
-- First, the filter criteria must be defined.
-:::note
-If the filter criteria is not defined, a notification message appears stating, "Please enter a filter criteria".
+![](/img/search/other-filters.png)
 
-:::
+### Preset Section
+- The Preset button is used to save and reuse predefined filter or search configurations. 
+- Its main purpose is to help users avoid manually setting the same filters repeatedly. Users can save a specific combination of filters, columns, or settings as a preset and quickly apply it whenever needed.
 
-![](/img/search/filter-criteria.png)
+![](/img/search/saved-presets.png)
 
-- Once a specific filter criterion is defined, click the **Create Filter Preset** option to open the **Create Filter Preset** window. The following fields need to be filled out:  
-  - At the top, a required **Preset Name** field is provided where users must enter a name for the filter preset.
-  - Below this, a table lists existing filter presets, showing the **Filter Name** and an **Action** column with a **Delete** button to remove an existing preset.
-  - At the bottom of the window, the **Create** button saves the new filter preset, while the **Close** button exits the window without saving changes.
+- To create a new preset, click the **Preset** button, and the "Create Filter Preset" window will appear. It contains the following fields:  
+  - **Create Filter Preset Window**: A popup window used to create and manage filter presets for saving frequently used filter configurations.
+  - **Preset Name Field**: A required input field where users must enter the name of the preset.
+  - **Action Column**: Contains action buttons for managing the listed filters.
+  - **Delete Button**: Removes the selected filter from the preset list.
+  - **Cancel Button**: Closes the window without saving any changes.
+  - **Create Button**: Saves the preset with the entered name and selected filters.
 
-![](/img/search/filter-preset.png)
+![](/img/search/preset-button.png)
 
 ![](/img/search/new-filter.png)
 
-### Manage prerequisites
-- At the top, there is a purple button labeled **MANAGE PREREQUISITES**, which opens the feature for handling prerequisite test cases.
-- First, select at least one test case.
-- After selecting the test cases, click on the **Manage Prerequisites** option.
-- Then, the **Manage Prerequisites** window opens, providing a field to search for test cases. Users can enter keywords to find specific test cases to link as prerequisites.
-- On the right is a red **Unlink Prerequisites** button, which allows users to remove previously linked prerequisite test cases.
+### Select and Deselect Options
+- To select all test cases, click the **Select All** button.
 
-![](/img/search/select-prerequisites.png)
+![](/img/search/select-all.png)
 
-![](/img/search/manage-prerequisites.png)
+- To deselect all test cases, click the **Deselect All** button after all test cases are selected.
+
+![](/img/search/deselect-all.png)
+
+- To select specific test cases, click the checkboxes of the required test cases.
+
+![](/img/search/specific-tests.png)
 
 ### More option
-After clicking the **More** option, the following options become available:  
-- **Download csv of description and expectation**
-- **Move to folder**
-- **Move to feature**
-- **Batch Update**
-- **Steps**
-- **Actions**
-- **Actions New**
-- **Delete Test Cases**
-- **Sample Test Cases**
-- **Export Selected Test Cases**
-- **Import Testcases**
-- **Create Test Cases from JIRA**.
+- It provides various actions and management options for the selected test cases. The available options are:  
+  - **Download CSV of description and expectation**: Downloads a CSV file containing the descriptions and expected results of the selected test cases.
+  - **Move to folder**: Moves the selected test cases to a different folder.
+  - **Move to feature**: Moves the selected test cases to another feature.
+  - **Batch Update**: Allows multiple selected test cases to be updated at once.
+  - **Steps**: Manages or updates the steps of the selected test cases.
+  - **Actions**: Allows actions to be added or modified for the selected test cases.
+  - **Actions New**: Opens the newer version of the actions management interface.
+  - **Delete Test Cases**: Permanently deletes the selected test cases.
+  - **Manage Prerequisites**: Allows prerequisites to be added, removed, or modified for the selected test cases.
+  - **Export Selected as JSON**: Exports the selected test cases in JSON format.
+  - **Export Selected as Excel**: Exports the selected test cases in Excel format.
+  - **Export Selected as XML**: Exports the selected test cases in XML format.
+  - **Export Selected as XML-v2**: Exports the selected test cases in the updated XML version 2 format.
+  - **Import Testcases**: Imports test cases from an external source.
+  - **Create Test Cases from JIRA**: Creates test cases by importing issues from JIRA.
 
 ![](/img/search/more-menu.png)
 
 ### Create a folder
-- At the top of the test case search page, a plus icon with the tooltip **Create top level Folder** allows users to create a new top-level folder in the hierarchy.
-- The plus sign next to folders suggests that folders can be expanded to view subfolders if any exist.
+- At the top of the test case search page, a plus icon with the tooltip **Create top-level Folder** allows users to create a new top-level folder in the hierarchy.
+- Here, **Search folders** refers to a feature that allows users to quickly find specific folders by entering a folder name or keyword instead of manually browsing through all the folders.
+- The **plus** sign next to folders suggests that folders can be expanded to view subfolders if any exist.
 
 ![](/img/search/folder-level.png)
 
+- A **folder action** menu appears after right-clicking on a specific folder. The available options are:  
+  - **Create Folder**: Creates a new folder inside the selected folder to organize test cases or features.
+  - **Rename Folder**: Allows users to change the name of the selected folder.
+  - **Delete Folder**: Permanently removes the selected folder from the system.
+  - **Make Root**: Moves the selected folder to the root level, making it a top-level folder instead of a subfolder.
+  - **Create Test Case**: Creates a new test case directly inside the selected folder.
+
+![](/img/search/right-folder.png)
+
 ### Create a feature
-- At the top, a button labeled **Create top level Feature**, represented by a folder icon with a plus sign, allows users to create a new top-level feature.
+- At the top, a button labeled **Create top-level Feature**, represented by a folder icon with a plus sign, allows users to create a new top-level feature.
+- Here, **Search features** refers to a feature that allows users to quickly find specific features by entering a feature name or keyword instead of manually browsing through all available features.
 - The plus icon next to a feature is used to expand the folder when subfolders are present.
 
 ![](/img/search/feature-level.png)
+
+- A **feature action** menu appears after right-clicking on a specific folder. The available options are:  
+  - **Create Feature**: It allows users to create a new feature within the project structure.
+  - **Rename Feature**: It allows users to change the name of an existing feature.
+  - **Delete Feature**: It allows users to permanently remove an existing feature from the project structure.
+  - **Make Root**: It efers to an option that moves the selected feature to the root level of the feature structure.
+
+![](/img/search/right-feature.png)
 
 ## FAQs / Troubleshooting
 
