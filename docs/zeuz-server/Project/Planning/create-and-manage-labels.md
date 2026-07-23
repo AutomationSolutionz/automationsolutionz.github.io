@@ -46,45 +46,82 @@ adapting the tool to their needs.
 **color** in the form that appears.
 
 ## Features
-### Create a new label
+### Create / Search Labels
 - Navigate to the **Labels** page.
-- To create a new label, click the **+ New Label** button.
+- To search for a label, enter the **label name** or **label ID** in the search box. The displayed labels are automatically filtered based on our search criteria.
+
+![](/img/how-tos/how-to-create-and-manage-labels/labels-search.png)
+
+- To create a new label, click the **Create Label (+)** button to open the "Create Label" window. 
 - Enter the required fields below, such as:  
-  - **Label Name Field**: At the top, a text box labeled *Label Name....* is where the user types the name of the new label (e.g., *Test Label*).
-  - **Color Picker**:  
-    - A small color box with a dropdown lets the user select a color for the label.
-    - Clicking the color box opens a color palette where users can pick any color using the gradient area and rainbow slider.
-    - The hexadecimal code of the selected color is displayed below (e.g., `#ff0000` for red).
-    - Buttons such as, **choose** and **cancel** allow confirming or cancelling the color section.
-  - **Action Buttons**:  
-    - **CREATE LABEL**: Saves and creates the new label with the entered name and selected color.
-    - **CANCEL**: Closes the form without saving.
+  - The "Create Label" window allows us to create a new label by entering a **Label name** and selecting a **Color**. 
+  - Click the color box to open the color picker, where we can choose a color visually or enter a color value in **HEX**, **HSB**, or **RGB** format. 
+  - We can also adjust the color's opacity using the opacity slider.
+  - After entering the required information, click **Create** to save the label or **Cancel** to discard the changes.
+  
+![](/img/how-tos/how-to-create-and-manage-labels/label-create.png)
 
-![](/img/how-tos/how-to-create-and-manage-labels/label-details.png)
+![](/img/how-tos/how-to-create-and-manage-labels/label-color.png)
 
-### Delete a label
+- Click the **Refresh Labels** button to update the label list and display the latest labels available in the system.
+
+![](/img/how-tos/how-to-create-and-manage-labels/refresh-labels.png)
+ 
+### Edit a Label
+- Click the specific label that needs to be edited.
+- To edit a label, click the **Edit Label** button corresponding to the label we want to modify.
+- After clicking the **Edit Label** button, the "Edit Label" window appears.
+- Enter the required fields below, such as:  
+  - The "Edit Label" window allows you to update an existing label by modifying its **Label name** and **Color**. 
+  - Click the color box to open the color picker, where we can choose a new color visually or specify it using **HEX**, **HSB**, or **RGB** values.
+  - We can also adjust the color's opacity using the opacity slider.
+  - After making the desired changes, click **Save** to apply the updates or **Cancel** to discard the changes.
+
+![](/img/how-tos/how-to-create-and-manage-labels/label-edit.png)
+
+![](/img/how-tos/how-to-create-and-manage-labels/edited-label.png)
+
+### Delete a Label
 - To delete a label, click the **Delete** button located on the right side of that specific label.
-- A confirmation pop-up appears when a user tries to delete a label. It prompts the user to confirm the deletion. Two options are available:  
-  - **OK**: Confirms and deletes the label.
-  - **Cancel**: Closes the pop-up without deleting anything.
+- The **Delete Label** confirmation dialog is displayed when we choose to delete a label. 
+- Review the confirmation message, which indicates that the label will be removed from all linked items.
+- Click **Delete** to permanently remove the label, or **Cancel** to close the dialog without deleting the label.
 
 ![](/img/how-tos/how-to-create-and-manage-labels/label-delete.png)
 
-![](/img/how-tos/how-to-create-and-manage-labels/sure-delete.png)
+![](/img/how-tos/how-to-create-and-manage-labels/delete-remove.png)
 
-### Create/Edit label
-- Click the specific label that needs to be edited.
-- Navigate to the **Create/Edit Label** page.
-- It allows a user to modify an existing label or create a new one.
-- On the page:  
-  - The **Details** tab is selected, indicating that the user is working with the basic label information.
-  - A field labeled **New Label Name** allows the user to type or update the name of the label.
-  - A section named **Label Color** provides a color selection area where the user can choose a visual color for the label.
-  - A **Save** button appears below the fields, allowing the user to confirm and store the changes.
-- On the right side, audit information is shown. It records who created the label and who last modified it, along with the respective dates.
-- The **Requirements**, **Tasks**, **Bugs** and **Test cases** tabs indicate where the label can be associated.
+### Managing Labels in the Table
+- The **Labels Table** provides an overview of all available labels in the system.
+- The table displays the following details:  
+  - **Label**: Displays the name of the label.
+  - **ID**: Displays the unique identifier assigned to the label.
+  - **Created By (CB)**: Displays the user who created the label.
+  - **Modified By (MB)**: Displays the user who last modified the label.
+  - **Created Date**: Displays when the label was created.
+  - **Modified Date**: Displays when the label was last updated.
+  - **Actions**: Provides options to edit or delete the label.
 
-![](/img/how-tos/how-to-create-and-manage-labels/edit-label.png)
+![](/img/how-tos/how-to-create-and-manage-labels/label-table.png)
+
+- Each column supports sorting, and selected columns provide filtering options to help locate specific labels, such as:  
+  - **Click to sort ascending**: It arranges the values in the selected column in ascending order.
+  - **Click to sort descending**: It arranges the values in the selected column in descending order.
+  - **Click to cancel sorting**:  It means removing the applied sorting from the selected column and returning the table to its default order (or the original order defined by the application).
+
+![](/img/how-tos/how-to-create-and-manage-labels/label-ascending.png)
+
+![](/img/how-tos/how-to-create-and-manage-labels/label-descending.png)
+
+![](/img/how-tos/how-to-create-and-manage-labels/cancel-sorting.png)
+
+### Label Filter
+- The **Label Filter** panel allows users to filter the labels displayed in the **Labels Table**.
+- Enter a keyword in the **Search** box to find a specific label, then select one or more labels using the corresponding checkboxes.
+- Click **OK** to apply the selected filters and update the table.
+- Click **Reset** to clear all selected filters and display all labels.
+
+![](/img/how-tos/how-to-create-and-manage-labels/label-filter.png)
 
 ## FAQs / Troubleshooting
 ### FAQs
