@@ -1,13 +1,13 @@
-import React, { type CSSProperties, type ReactNode } from 'react';
-import Content from '@theme-original/DocItem/Content';
-import type ContentType from '@theme/DocItem/Content';
-import type { WrapperProps } from '@docusaurus/types';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React, { type CSSProperties, type ReactNode } from "react";
+import Content from "@theme-original/DocItem/Content";
+import type ContentType from "@theme/DocItem/Content";
+import type { WrapperProps } from "@docusaurus/types";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-function buildPathString(prefix = '', suffix = '') {
+function buildPathString(prefix = "", suffix = "") {
     // Remove trailing slash from pathname
-    const cleanPath = window.location.pathname.replace(/\/$/, '');
+    const cleanPath = window.location.pathname.replace(/\/$/, "");
     return `${prefix}${cleanPath}${suffix}`;
 }
 
@@ -63,9 +63,9 @@ function DocPageButtons() {
 
     // Static assets must go through useBaseUrl, otherwise they resolve against
     // the domain root and miss the /docs/ baseUrl the site is served under.
-    const openaiIcon = useBaseUrl('/img/icons/openai.svg');
-    const claudeIcon = useBaseUrl('/img/icons/claude.svg');
-    const shareIcon = useBaseUrl('/img/icons/share.svg');
+    // const openaiIcon = useBaseUrl('/img/icons/openai.svg');
+    // const claudeIcon = useBaseUrl('/img/icons/claude.svg');
+    // const shareIcon = useBaseUrl('/img/icons/share.svg');
 
     // Public origin, so the links stay correct if the site ever moves domain.
     const { siteConfig } = useDocusaurusContext();
@@ -84,7 +84,7 @@ function DocPageButtons() {
             });
         } else {
             window.location.href = `mailto:?subject=${encodeURIComponent(
-                shareData.title
+                shareData.title,
             )}&body=${encodeURIComponent(shareData.text + " " + shareData.url)}`;
         }
     };
@@ -93,11 +93,11 @@ function DocPageButtons() {
         {
             label: "Open in ChatGPT",
             subLabel: "Ask ChatGPT about this page",
-            icon: openaiIcon,
+            icon: "https://zeuzaistore.s3.amazonaws.com/docs/icons/openai.svg",
             onClick: () => {
                 const prefix = siteConfig.url;
                 const docURL = buildPathString(prefix);
-                const prompt = `Read ${docURL} and answer questions about the content`
+                const prompt = `Read ${docURL} and answer questions about the content`;
                 const url = `https://chatgpt.com/?prompt=${prompt}`;
                 window.open(url, "_blank");
             },
@@ -105,18 +105,18 @@ function DocPageButtons() {
         {
             label: "Open in Claude",
             subLabel: "Ask Claude about this page",
-            icon: claudeIcon,
+            icon: "https://zeuzaistore.s3.amazonaws.com/docs/icons/claude.svg",
             onClick: () => {
                 const prefix = siteConfig.url;
                 const docURL = buildPathString(prefix);
-                const prompt = `Read ${docURL} and answer questions about the content`
+                const prompt = `Read ${docURL} and answer questions about the content`;
                 const url = `https://claude.ai/new?q=${prompt}`;
                 window.open(url, "_blank");
             },
         },
         {
             label: "Share",
-            icon: shareIcon,
+            icon: "https://zeuzaistore.s3.amazonaws.com/docs/icons/share.svg",
             onClick: handleShare,
         },
     ];
@@ -150,8 +150,8 @@ function DocPageButtons() {
                                     height: "20px",
                                     flexShrink: 0,
                                     borderRadius: 0,
-                                    border: 'none',
-                                    boxShadow: 'none',
+                                    border: "none",
+                                    boxShadow: "none",
                                 }}
                             />
                         ) : null}
@@ -159,9 +159,7 @@ function DocPageButtons() {
                         <div style={{ display: "flex", flexDirection: "column", lineHeight: "1.2" }}>
                             <span style={{ fontWeight: 500 }}>{btn.label}</span>
                             {btn.subLabel ? (
-                                <span style={{ fontSize: "12px", color: "#666" }}>
-                                    {btn.subLabel}
-                                </span>
+                                <span style={{ fontSize: "12px", color: "#666" }}>{btn.subLabel}</span>
                             ) : null}
                         </div>
                     </button>
@@ -170,7 +168,6 @@ function DocPageButtons() {
         </div>
     );
 }
-
 
 type Props = WrapperProps<typeof ContentType>;
 
