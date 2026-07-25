@@ -1,7 +1,15 @@
 ---
 id: scroll-to-an-element
-title: Scroll to an Element
+title: "Scroll to an Element to Bring It Into View"
+sidebar_label: "Scroll to an Element"
+description: "Use the Scroll to an Element Action in ZeuZ to bring an off-screen web element into view using JS, WebDriver, or Action Chain scroll methods in ZeuZ automation."
+keywords: ["Scroll to an Element Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Scroll to an Element Action | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 This action scrolls the web page to bring a specific element into view. It is particularly useful when interacting with elements that are not initially visible because they are outside the viewport, ensuring the smooth execution of automated tests involving such elements.

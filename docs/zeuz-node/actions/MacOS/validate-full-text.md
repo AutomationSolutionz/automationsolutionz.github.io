@@ -1,6 +1,14 @@
 ---
-title: Validate Full Text
+title: "Validate Full Text: Exact Match Checks on macOS"
+sidebar_label: "Validate Full Text"
+description: "Use the Validate Full Text Mac Action in ZeuZ to confirm a macOS element's text matches an expected value exactly, without any partial matching step by step."
+keywords: ["Validate Full Text Mac Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Validate Full Text Mac Action | ZeuZ macOS Test Guide Docs</title>
+</head>
 
 ## Purpose
 This action is used to validate the exact full text of a UI element in a macOS application using Appium. It verifies that the visible text of the specified element exactly matches the expected value. This is useful for confirming messages, titles, labels, or placeholder text.

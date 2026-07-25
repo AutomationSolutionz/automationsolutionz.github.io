@@ -1,7 +1,15 @@
 ---
 id: zAI-suggest-step-description-expected
-title: zAI - Test Step Guidance
+title: "zAI - Test Step Guidance: Auto-Suggest Descriptions"
+sidebar_label: "zAI - Test Step Guidance"
+description: "Use zAI Test Step Guidance in ZeuZ to auto-generate consistent step descriptions and expected results, cutting down manual test case writing time step by step."
+keywords: ["zAI Test Step Guidance"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>zAI Test Step Guidance | Auto-Suggest Step Descriptions</title>
+</head>
 
 ## Description
 

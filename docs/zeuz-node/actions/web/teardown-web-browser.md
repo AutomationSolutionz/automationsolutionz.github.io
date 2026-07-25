@@ -1,7 +1,15 @@
 ---
 id: teardown-web-browser
-title: Teardown Web Browser
+title: "Teardown Web Browser: Clean Up After a Test"
+sidebar_label: "Teardown Web Browser"
+description: "Use the Teardown Web Browser Action in ZeuZ to close the browser, stop the Selenium driver, and clear shared variables at the end of a test case step by step."
+keywords: ["Teardown Web Browser Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Teardown Web Browser Action | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 This action closes the currently active web browser. It is useful for cleaning up at the end of a test case or when no further actions on the browser are needed. This action ensures that no residual browser instances are left running, which can consume system resources or interfere with subsequent tests.

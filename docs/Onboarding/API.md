@@ -1,9 +1,17 @@
 ---
 id: API
-title: API Onboarding
+title: "API Onboarding: Automate Your First API Test in ZeuZ"
+sidebar_label: "API Onboarding"
+description: "Follow this ZeuZ API Onboarding guide to connect a Node, build an API request, add actions, and run your very first automated API test case successfully today."
+keywords: ["API Onboarding"]
 ---
 
 import MetaCard from '@site/src/components/MetaCard';
+
+{/* seo:meta-title */}
+<head>
+  <title>API Onboarding Guide | Build Your First API Test Case Docs</title>
+</head>
 
 **Onboarding** refers to the process where new users sign up and log in, ensuring that all systems are properly prepared so they can execute test cases smoothly for the first time.
 

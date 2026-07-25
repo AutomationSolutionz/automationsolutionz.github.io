@@ -1,7 +1,15 @@
 ---
 id: action-gui-controls-ocr-get-text-using-image
-title: OCR - Get text using image
+title: "OCR: Get Text Using an Image Reference"
+sidebar_label: "OCR - Get text using image"
+description: "Use OCR Get Text Using Image in ZeuZ to extract text positioned near an attached reference image, with direction and text gap controls for accuracy with ease."
+keywords: ["OCR Get Text Using Image"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>OCR Get Text Using Image | ZeuZ GUI Control Action Guide</title>
+</head>
 
 ## Description
 

@@ -1,7 +1,15 @@
 ---
 id: delete-request
-title: DELETE Request
+title: "DELETE Request Action: Test API Resource Deletion"
+sidebar_label: "DELETE Request"
+description: "Use the ZeuZ DELETE Request Action to send HTTP DELETE calls, confirm resource removal, and validate response status codes in automated API tests step by step."
+keywords: ["DELETE Request Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>DELETE Request Action | Test API Resource Deletion Guide</title>
+</head>
 
 ## Purpose
 The "DELETE Request" action is used to send an HTTP DELETE request to a specified API endpoint to remove a resource from the server. This action is useful for verifying that deletion operations are correctly processed and ensuring the resource is no longer available after deletion. The response data is typically validated to confirm that the deletion was successful, often returning a confirmation message or status.

@@ -1,7 +1,15 @@
 ---
 id: validate-exact-text
-title: Validate Exact Text
+title: "Validate Exact Text of a Web Element"
+sidebar_label: "Validate Exact Text"
+description: "Use the Validate Exact Text Action in ZeuZ to confirm a web element's full text matches the expected value exactly, with no partial matches allowed with ease."
+keywords: ["Validate Exact Text Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Validate Exact Text Action | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 The "Validate Exact Text" action ensures that the full text of a specified element matches the provided text exactly. This action compares the entire content of the element with the expected text and passes only if there is an exact match. Partial matches or differences in spacing, capitalization, or special characters will result in a failure. It is particularly useful for verifying static content, headers, labels, or other elements where precise text validation is required.

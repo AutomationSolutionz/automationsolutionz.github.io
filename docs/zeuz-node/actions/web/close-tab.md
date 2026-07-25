@@ -1,7 +1,15 @@
 ---
 id: close-tab
-title: Close Tab
+title: "Close Tab: Close One or More Browser Tabs"
+sidebar_label: "Close Tab"
+description: "Use the Close Browser Tab Action in ZeuZ to close one or several open browser tabs by title or index during an automated web test case run in ZeuZ automation."
+keywords: ["Close Browser Tab Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Close Browser Tab Action | ZeuZ Web Testing Guide Today</title>
+</head>
 
 ## Purpose
 This action allows users to close one or multiple browser tabs. It provides flexibility by enabling tabs to be closed either by their titles or indices. This can be particularly useful in scenarios where unnecessary tabs need to be removed to streamline browser activity.

@@ -1,7 +1,15 @@
 ---
 id: wait-for-timer
-title: Wait for Timer
+title: "Wait for Timer Action: Set Test Case Time Limits"
+sidebar_label: "Wait for Timer"
+description: "Use the ZeuZ Wait for Timer Action to set a maximum duration for a test case or step, so slow automation runs fail instead of hanging indefinitely step by step."
+keywords: ["Wait for Timer Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Wait for Timer Action | Set Test Case Time Limits Guide</title>
+</head>
 
 ## Purpose
 This action defines the total time within which a test case or step must complete its execution. If the automation does not finish within the specified time, the test case will fail. This action is crucial for ensuring that tests run efficiently and within acceptable time limits, particularly in performance-sensitive scenarios.

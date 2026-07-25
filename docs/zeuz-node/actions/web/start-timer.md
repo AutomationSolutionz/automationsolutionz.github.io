@@ -1,7 +1,15 @@
 ---
 id: start-timer
-title: Start Timer
+title: "Start Timer: Control Test Case Execution Timing"
+sidebar_label: "Start Timer"
+description: "Use the Start Timer Web Action in ZeuZ to delay or advance the moment a test case begins, giving precise control over overall automation timing step by step."
+keywords: ["Start Timer Web Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Start Timer Web Action | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 This action sets a timer to control when a test case will start. The value in the "value" field determines the timing in seconds. A negative value (e.g., -5) triggers the action 5 seconds earlier, while a positive value (e.g, 5) delays execution by 5 seconds. This allows precise control over test case timing in relation to other actions or events.

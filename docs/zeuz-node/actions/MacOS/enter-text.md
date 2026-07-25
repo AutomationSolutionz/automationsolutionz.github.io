@@ -1,7 +1,15 @@
 ---
 id: enter-text
-title: Enter Text
+title: "Enter Text: Fill macOS Fields Without Clearing"
+sidebar_label: "Enter Text"
+description: "Use the Enter Text Mac Action in ZeuZ to type text into a macOS field by attribute, without deleting any content that is already in that field step by step."
+keywords: ["Enter Text Mac Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Enter Text Mac Action | ZeuZ macOS Testing Guide Basics</title>
+</head>
 
 ## Purpose
 This action is used to enter text into a specified text field. The text field is identified using attributes such as `title`, `label`, `value`, or `identifier`. Unlike the "Clear and Enter Text" action, this action does not delete any pre-existing text before entering new text.

@@ -1,7 +1,15 @@
 ---
 id: select-element-by-index
-title: Select Element by Index
+title: "Select Element by Index in a Dropdown List"
+sidebar_label: "Select Element by Index"
+description: "Use Select Element by Index in ZeuZ to choose a dropdown option by its position number, starting from zero, using Selenium's Select class methods step by step."
+keywords: ["Select Element by Index"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Select Element by Index | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 This action utilizes the Select class in Selenium WebDriver to choose an option from a dropdown by its index. The action selects an option based on its position within the dropdown list rather than its visible text, making it particularly useful for handling dynamic dropdowns.

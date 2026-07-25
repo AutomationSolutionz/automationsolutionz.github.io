@@ -1,7 +1,15 @@
 ---
 id: navigate-refresh
-title: Navigate - Refresh
+title: "Navigate - Refresh: Reload the Current Webpage"
+sidebar_label: "Navigate - Refresh"
+description: "Use the Navigate Refresh Action in ZeuZ to simulate the browser's refresh button and reload the current page during an automated web test case step by step."
+keywords: ["Navigate Refresh Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Navigate Refresh Action | ZeuZ Web Testing Guide Basics</title>
+</head>
 
 ## Purpose
 This action simulates the browser's **refresh** button, allowing the current page to reload. It is equivalent to pressing the **refresh** button in the browser, which is useful for updating or reloading page content.

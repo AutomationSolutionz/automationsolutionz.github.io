@@ -1,7 +1,15 @@
 ---
 id: deselect-all
-title: Deselect All
+title: "Deselect All: Clear a Multi-Select Dropdown"
+sidebar_label: "Deselect All"
+description: "Use the Deselect All Dropdown Action in ZeuZ to clear every selected option inside a multiple-select dropdown element during automated web tests step by step."
+keywords: ["Deselect All Dropdown Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Deselect All Dropdown Action | ZeuZ Web Test Guide Docs</title>
+</head>
 
 ## Purpose
 This action is used to clear all selected entries in a dropdown list. It works only when the `SELECT` element supports multiple selections by having the attribute `multiple="multiple`. If the `SELECT` element does not support multiple selections, the action throws a `NotImplementedError`.

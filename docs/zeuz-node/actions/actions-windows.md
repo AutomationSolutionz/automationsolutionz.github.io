@@ -1,7 +1,15 @@
 ---
 id: actions-windows
-title: Windows Actions
+title: "Windows Automation Actions: Test Desktop Apps"
+sidebar_label: "Windows Actions"
+description: "Explore ZeuZ's Windows Automation Actions for clicking, typing, launching apps, and validating elements across Windows desktop applications in ZeuZ automation."
+keywords: ["Windows Automation Actions"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Windows Automation Actions | ZeuZ Desktop Test Guide Docs</title>
+</head>
 
 ## Description
 **Windows Actions** are predefined operations that automate tasks and interactions within the Windows operating system or its applications. These actions include clicking buttons, typing text, interacting with UI elements like dropdowns and checkboxes, validating elements, taking screenshots, and managing window states such as maximizing or closing. They are essential in test automation frameworks like ZeuZ for efficient and reliable testing of Windows-based applications.

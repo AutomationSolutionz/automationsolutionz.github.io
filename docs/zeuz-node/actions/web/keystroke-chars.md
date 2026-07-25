@@ -1,7 +1,15 @@
 ---
 id: keystroke-chars
-title: Keystroke Chars
+title: "Keystroke Chars: Type Characters into Web Fields"
+sidebar_label: "Keystroke Chars"
+description: "Use the Keystroke Chars Action in ZeuZ to type specific characters into an input field by ID, class, or title during an automated web test run step by step."
+keywords: ["Keystroke Chars Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Keystroke Chars Action | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 This action simulates typing specific characters or keystrokes into an input field or textarea by using its identifier. It is used to replicate user keyboard input, making it useful for automating text entry in forms or web applications.

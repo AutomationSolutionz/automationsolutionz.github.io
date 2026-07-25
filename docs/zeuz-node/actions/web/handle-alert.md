@@ -1,7 +1,15 @@
 ---
 id: handle-alert
-title: Handle Alert
+title: "Handle Alert: Accept or Decline Browser Alerts"
+sidebar_label: "Handle Alert"
+description: "Use the Handle Alert Action in ZeuZ to accept or decline a blocking browser alert box, with a configurable wait time for the alert to first appear step by step."
+keywords: ["Handle Alert Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Handle Alert Action | ZeuZ Web Testing Reference Basics</title>
+</head>
 
 ## Purpose
 This action handles browser alerts that block other web page actions until addressed. It can accept, reject, or interact with alerts by extracting their text or sending input. By default, the action waits up to 5 seconds for the alert to appear, but the wait time can be customized.

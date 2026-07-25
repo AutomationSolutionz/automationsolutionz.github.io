@@ -1,7 +1,15 @@
 ---
 id: action-gui-controls-ocr-get-text-using-coords
-title: OCR - Get text using coordinates
+title: "OCR: Get Text Using Coordinates"
+sidebar_label: "OCR - Get text using coordinates"
+description: "Use OCR Get Text Using Coordinates in ZeuZ to crop a screen region by top, left, bottom, and right values, then extract the text found inside it step by step."
+keywords: ["OCR Get Text Using Coordinates"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>OCR Get Text Using Coordinates | ZeuZ GUI Action Docs Guide</title>
+</head>
 
 ## Description
 

@@ -1,7 +1,15 @@
 ---
 id: ai-web-recorder
-title: AI Web Recorder
+title: "AI Web Recorder: Automate Test Case Creation"
+sidebar_label: "AI Web Recorder"
+description: "Learn how the ZeuZ AI Web Recorder captures real user actions on any webpage and automatically generates reliable, self-healing web test cases for your QA team."
+keywords: ["AI Web Recorder"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>AI Web Recorder | Auto-Generate Web Test Cases Fast Guide</title>
+</head>
 
 ## Description
 

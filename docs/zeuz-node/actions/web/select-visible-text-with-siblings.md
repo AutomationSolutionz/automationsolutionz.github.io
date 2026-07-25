@@ -1,7 +1,15 @@
 ---
 id: select-visible-text-with-siblings
-title: Select Visible Text with Siblings
+title: "Select Visible Text with Siblings for Tricky Dropdowns"
+sidebar_label: "Select Visible Text with Siblings"
+description: "Use Select Visible Text with Siblings in ZeuZ to pick a dropdown option by visible text using a nearby sibling element as an extra reference point step by step."
+keywords: ["Select Visible Text with Siblings"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Select Visible Text with Siblings | ZeuZ Web Action Guide</title>
+</head>
 
 ## Purpose
 This action selects a dropdown option by matching its visible text while using a sibling element as a reference. It is particularly useful in cases where direct identification of the dropdown is challenging, leveraging sibling elements under the same parent for accurate identification.

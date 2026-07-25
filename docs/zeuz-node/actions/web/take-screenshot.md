@@ -1,7 +1,15 @@
 ---
 id: take-screenshot
-title: Take Screenshot
+title: "Take Screenshot of the Current Webpage"
+sidebar_label: "Take Screenshot"
+description: "Use the Take Screenshot Web Action in ZeuZ to capture the current page and store the resulting file name in a variable for use later in a test step by step."
+keywords: ["Take Screenshot Web Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Take Screenshot Web Action | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 The "Take Screenshot" action captures a screenshot of the current webpage and stores the screenshot file's path in the variable `zeuz_screenshot`. The screenshot file can later be referenced using the variable `%|zeuz_screenshot|%` in subsequent actions, enabling easy access to the file for further use in the test case. This action is particularly useful for capturing visual evidence of the state of a web page during automated tests.

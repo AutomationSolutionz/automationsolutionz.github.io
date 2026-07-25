@@ -3,6 +3,8 @@
     "position": 5,
     "link": {
         "type": "generated-index",
-        "description": "ZeuZ applications and utilities."
+        "title": "ZeuZ Apps: AI Recorder and Inspector Tools",
+        "description": "Explore the ZeuZ Apps directory, including the AI Web Recorder, AI Mobile Inspector, and AI Windows Inspector, built to speed up test case authoring with ease.",
+        "keywords": ["ZeuZ Apps"]
     }
 }

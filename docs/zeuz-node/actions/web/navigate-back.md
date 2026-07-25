@@ -1,7 +1,15 @@
 ---
 id: navigate-back
-title: Navigate - Back
+title: "Navigate - Back: Simulate the Browser Back Button"
+sidebar_label: "Navigate - Back"
+description: "Use the Navigate Back Action in ZeuZ to simulate the browser's back button and return to the previously visited page during an automated test step by step."
+keywords: ["Navigate Back Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Navigate Back Action | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 This action simulates the browser's **back** button, enabling navigation to the previous page in the browser's history. It functions the same as pressing the browser's **back** button to return to the last visited page.

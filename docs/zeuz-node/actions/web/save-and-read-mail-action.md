@@ -1,7 +1,15 @@
 ---
 id: save-and-read-mail-action
-title: Save and Read Mail Action
+title: "Save and Read Mail Action: Automate Email Checks"
+sidebar_label: "Save and Read Mail Action"
+description: "Use the Save and Read Mail Action in ZeuZ to connect via IMAP, filter emails by sender or subject, and save the message details to a variable step by step."
+keywords: ["Save and Read Mail Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Save and Read Mail Action | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Description
 

@@ -1,7 +1,15 @@
 ---
 id: click-and-download-attachments
-title: Click and Download Attachments
+title: "Click and Download Attachments from a Webpage"
+sidebar_label: "Click and Download Attachments"
+description: "Use Click and Download Attachments in ZeuZ to click a file link, download it to a chosen folder, and optionally attach it to an automated test report with ease."
+keywords: ["Click and Download Attachments"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Click and Download Attachments | ZeuZ Web Test Action Guide</title>
+</head>
 
 ## Purpose
 The "Click and Download Attachments" action enables users to interact with attachment elements on a webpage, allowing them to download files to a specified directory or attach files to reports. This action facilitates automated file management by ensuring that downloads and attachments are handled efficiently without manual intervention.

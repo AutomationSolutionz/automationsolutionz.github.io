@@ -1,7 +1,15 @@
 ---
 id: deselect-element-by-index
-title: Deselect Element by Index
+title: "Deselect Element by Index in a Dropdown List"
+sidebar_label: "Deselect Element by Index"
+description: "Use Deselect Element by Index in ZeuZ to remove a selected dropdown option by its position number within multi-select HTML select elements in ZeuZ automation."
+keywords: ["Deselect Element by Index"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Deselect Element by Index | ZeuZ Web Testing Action Guide</title>
+</head>
 
 ## Purpose
 This action uses the `Select` class in Selenium WebDriver to deselect an option in a dropdown list by its index. It is designed to work with HTML `<SELECT>` elements that allow multiple selections (`multiple="multiple"`).

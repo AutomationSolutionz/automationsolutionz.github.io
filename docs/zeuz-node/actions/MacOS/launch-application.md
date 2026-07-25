@@ -1,6 +1,14 @@
 ---
-title: Launch Application
+title: "Launch Application: Open macOS Apps by Bundle ID"
+sidebar_label: "Launch Application"
+description: "Use the Launch Application Mac Action in ZeuZ to open a macOS app by its bundle ID, a required first step before running any automated Mac test step by step."
+keywords: ["Launch Application Mac Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Launch Application Mac Action | ZeuZ macOS Testing Guide</title>
+</head>
 
 ## Purpose
 This action launches a specific application on **macOS** using its **bundle ID**. A **bundle ID** (or **bundle indentifier**) uniquely identifies an application within Apple's ecosystem. Providing the correct **bundle ID** enables automated testing or application launching.

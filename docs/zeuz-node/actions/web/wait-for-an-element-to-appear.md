@@ -1,7 +1,15 @@
 ---
 id: wait-for-an-element-to-appear
-title: Wait for an Element to Appear
+title: "Wait for an Element to Appear on a Webpage"
+sidebar_label: "Wait for an Element to Appear"
+description: "Use Wait for an Element to Appear in ZeuZ to pause a test case until a specified web element loads, avoiding failures on slow-loading pages in ZeuZ automation."
+keywords: ["Wait for an Element to Appear"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Wait for an Element to Appear | ZeuZ Web Test Action Guide</title>
+</head>
 
 ## Purpose
 The "Wait for an Element to Appear" action ensures that a specific element becomes visible on a webpage within a set time limit. This action is particularly useful handling pages or dynamic content that may take time to load, as it ensures the test proceeds only when the desired element is visible. If the element appears within the specified duration, the action passes; otherwise, it fails.

@@ -1,7 +1,15 @@
 ---
 id: check-or-uncheck-multiple-elements
-title: Check or Uncheck Multiple Elements
+title: "Check or Uncheck Multiple Elements Individually"
+sidebar_label: "Check or Uncheck Multiple Elements"
+description: "Use Check or Uncheck Multiple Elements in ZeuZ to selectively check or uncheck specific checkboxes within one form using their unique attributes step by step."
+keywords: ["Check or Uncheck Multiple Elements"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Check or Uncheck Multiple Elements | ZeuZ Web Action Guide</title>
+</head>
 
 ## Purpose
 This action is designed to selectively check or uncheck multiple checkboxes under a specified parent element on a webpage. By using unique attributes to identify each checkbox, users can control which boxes to check or uncheck individually.

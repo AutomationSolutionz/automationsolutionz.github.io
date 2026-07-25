@@ -1,7 +1,15 @@
 ---
 id: click-an-element
-title: Click an Element
+title: "Click an Element: Automate Web Button Clicks"
+sidebar_label: "Click an Element"
+description: "Use the Click an Element Web Action in ZeuZ to click buttons or links by ID, class, or text match, with a JavaScript click option for tricky browsers with ease."
+keywords: ["Click an Element Web Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Click an Element Web Action | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 The "Click an Element" action allows interaction with elements on a webpage, such as buttons or links. The element can be located using its ID, class, or visible text to perform the click action.

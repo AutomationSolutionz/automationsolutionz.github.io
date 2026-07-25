@@ -1,7 +1,15 @@
 ---
 id: navigate-forward
-title: Navigate - Forward
+title: "Navigate - Forward: Simulate the Browser Forward Button"
+sidebar_label: "Navigate - Forward"
+description: "Use the Navigate Forward Action in ZeuZ to simulate the browser's forward button and move to the next page visited during an automated test run step by step."
+keywords: ["Navigate Forward Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Navigate Forward Action | ZeuZ Web Testing Guide Basics</title>
+</head>
 
 ## Purpose
 This action simulates the browser's **forward** button, enabling navigation to the next page in the browser's history. It is equivalent to pressing the **forward** button on the browser to move to the page visited after the current one.

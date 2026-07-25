@@ -1,8 +1,16 @@
 ---
 sidebar_position: 4
 id: history-page
-title: History 
+title: "Test History Page: Track Test Case Results"
+sidebar_label: "History"
+description: "Use the ZeuZ Test History Page to review pass, fail, block, and skip results through donut charts and expandable cards for every test run ID in ZeuZ automation."
+keywords: ["Test History Page"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Test History Page | Track ZeuZ Test Case Results Now Fast</title>
+</head>
 
 ## Description
 

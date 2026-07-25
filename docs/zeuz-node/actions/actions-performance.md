@@ -1,7 +1,15 @@
 ---
 id: actions-performance
-title: Performance Actions
+title: "Performance Testing Actions: Load Test APIs"
+sidebar_label: "Performance Actions"
+description: "Explore ZeuZ's Performance Testing Actions built on Lorust for GET, POST, PUT, and DELETE load tests that measure API behavior under heavy traffic step by step."
+keywords: ["Performance Testing Actions"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Performance Testing Actions | ZeuZ Load Test Reference Docs</title>
+</head>
 
 :::tip
 

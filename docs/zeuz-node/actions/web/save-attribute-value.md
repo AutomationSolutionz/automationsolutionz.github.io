@@ -1,7 +1,15 @@
 ---
 id: save-attribute-value
-title: Save Attribute Value
+title: "Save Attribute Value from a Web Element"
+sidebar_label: "Save Attribute Value"
+description: "Use the Save Attribute Value Action in ZeuZ to extract an ID, class, or text attribute from a web element and store it for later validation steps step by step."
+keywords: ["Save Attribute Value Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Save Attribute Value Action | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 The "Save Attribute Value" action is used to extract and save the value of a specific attribute from a designated element on a webpage or application. This is particularly useful for validating UI elements, debugging, and performing dynamic comparisons in test automation.

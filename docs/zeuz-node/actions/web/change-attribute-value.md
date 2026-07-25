@@ -1,7 +1,15 @@
 ---
 id: change-attribute-value
-title: Change Attribute Value
+title: "Change Attribute Value: Edit HTML Attributes in Tests"
+sidebar_label: "Change Attribute Value"
+description: "Use the Change Attribute Value Action in ZeuZ to locate a web element and overwrite any HTML attribute except class during automated test runs step by step."
+keywords: ["Change Attribute Value Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Change Attribute Value Action | ZeuZ Web Test Guide Docs</title>
+</head>
 
 ## Purpose
 This action modifies the value of any HTML attribute (except for the `class` attribute). It locates the element on the webpage using a specified identifier, identifies the target attribute, and updates its value with the provided input.

@@ -1,7 +1,15 @@
 ---
 id: validate-partial-text
-title: Validate Partial Text
+title: "Validate Partial Text of a Web Element"
+sidebar_label: "Validate Partial Text"
+description: "Use the Validate Partial Text Web Action in ZeuZ to confirm a web element contains expected text even when the surrounding content changes in ZeuZ automation."
+keywords: ["Validate Partial Text Web Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Validate Partial Text Web Action | ZeuZ Web Testing Guide</title>
+</head>
 
 ## Purpose
 The "Validate Partial Text" action verifies whether a text field or text view contains the expected data, even if the match is partial. It retrieves text from a specified element using its ID or other attributes and compares it with the provided string. If the retrieved text partially matches the expected text, the validation is successful. For non-unique element identifiers, an index can be used to specify the exact element to check, making this action particularly useful for validating dynamic or repetitive content.

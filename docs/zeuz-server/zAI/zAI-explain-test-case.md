@@ -1,7 +1,15 @@
 ---
 id: zAI-explain-test-case
-title: zAI - Explain Test Case
+title: "zAI - Explain Test Case: Understand Any Test Instantly"
+sidebar_label: "zAI - Explain Test Case"
+description: "Use zAI Explain Test Case in ZeuZ to generate a clear, plain-language breakdown of any test case, making complex automation easier to review in ZeuZ automation."
+keywords: ["zAI Explain Test Case"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>zAI Explain Test Case | Understand Any Test Case Fast Now</title>
+</head>
 
 ## Description
 

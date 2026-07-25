@@ -1,7 +1,15 @@
 ---
 id: switch-browser
-title: Switch Browser
+title: "Switch Browser Between Multiple Open Instances"
+sidebar_label: "Switch Browser"
+description: "Use the Switch Browser Action in ZeuZ to move control between multiple open browser instances by referencing each instance's unique driver ID step by step."
+keywords: ["Switch Browser Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Switch Browser Action | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 This action allows switching between multiple browser instances by using their unique `driver_id`. When multiple browsers are open during automated testing, each instance is identified by its own `driver_id`, and this action enables users to switch control between them, allowing interaction with the desired browser without terminating existing sessions. It is particularly useful for managing multiple browser sessions within the same test.

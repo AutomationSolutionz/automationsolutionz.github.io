@@ -1,7 +1,15 @@
 ---
 id: check-or-uncheck-all-elements
-title: Check or Uncheck All Elements
+title: "Check or Uncheck All Elements in a Form"
+sidebar_label: "Check or Uncheck All Elements"
+description: "Use Check or Uncheck All Elements in ZeuZ to automatically select or clear every checkbox found under a specified parent form element at once step by step."
+keywords: ["Check or Uncheck All Elements"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Check or Uncheck All Elements | ZeuZ Web Test Action Guide</title>
+</head>
 
 ## Purpose
 This action automates the process of checking or unchecking all checkboxes under a specified parent element on a webpage. It enables users to locate checkboxes using shared attributes and perform bulk operations efficiently.

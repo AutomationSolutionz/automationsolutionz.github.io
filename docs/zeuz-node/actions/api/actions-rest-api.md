@@ -1,7 +1,15 @@
 ---
 id: actions-rest-api
-title: Introduction of REST/API Actions
+title: "REST API Actions: Automate API Testing in ZeuZ"
+sidebar_label: "Introduction of REST/API Actions"
+description: "Explore ZeuZ's REST API Actions, covering GET, POST, PUT, and DELETE requests, response parsing, and OAuth2 tokens for building automated API tests with ease."
+keywords: ["REST API Actions"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>REST API Actions | Automate GET, POST, PUT Requests Guide</title>
+</head>
 
 :::tip
 

@@ -1,7 +1,15 @@
 ---
 id: if-an-item-is-found-or-not
-title: If an Item is Found or Not
+title: "If an Item is Found or Not: Conditional Web Actions"
+sidebar_label: "If an Item is Found or Not"
+description: "Use If an Item is Found or Not in ZeuZ to run different sets of actions depending on whether a web element exists, like an if-else statement in ZeuZ automation."
+keywords: ["If an Item is Found or Not"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>If an Item is Found or Not | ZeuZ Web Test Action Guide</title>
+</head>
 
 ## Purpose
 The "If an Item is Found or Not" action is used to evaluate conditions before performing specific actions on a webpage. It ensures that appropriate actions are taken based on element availability, logs relevant information, and validates partial text. This improves automation reliability by preventing unneccesary actions or errors.

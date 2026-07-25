@@ -1,7 +1,15 @@
 ---
 id: get-method
-title: GET Method
+title: "GET Method Action: Retrieve and Validate API Data"
+sidebar_label: "GET Method"
+description: "Use the ZeuZ GET Method Action to send HTTP GET requests, retrieve server data, and validate the returned API response inside automated test cases step by step."
+keywords: ["GET Method Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>GET Method Action | Retrieve and Validate API Data Guide</title>
+</head>
 
 ## Purpose
 The "GET Method" action is used to send an HTTP GET request to a specified API endpoint and retrieve data. This action is useful for fetching data from a server, verifying API responses, and integrating backend data into automated test cases. The response data can be stored in a variable for further validation and processing.

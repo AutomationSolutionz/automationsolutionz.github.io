@@ -1,7 +1,15 @@
 ---
 id: select-by-visible-text
-title: Select by Visible Text
+title: "Select by Visible Text in an HTML Dropdown"
+sidebar_label: "Select by Visible Text"
+description: "Use Select by Visible Text in ZeuZ to choose a dropdown option by its displayed label instead of its index or value, via Selenium's Select class step by step."
+keywords: ["Select by Visible Text"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Select by Visible Text | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 The "Select by Visible Text" action allows you to select or deselect an option from a dropdown menu by matching the visible text displayed to the user. It works with the HTML `<select>` tag and utilizes Selenium WebDriver's `Select` class to identify the desired option. Instead of relying on the option's index or value, this action matches the displayed text, making it ideal for scenarios where visible text is the primary selection criterion. This ensures accurate and user-friendly interaction with dropdown menus.

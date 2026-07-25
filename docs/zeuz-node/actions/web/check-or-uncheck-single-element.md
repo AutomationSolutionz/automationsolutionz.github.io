@@ -1,7 +1,15 @@
 ---
 id: check-or-uncheck-single-element
-title: Check or Uncheck Single Element
+title: "Check or Uncheck a Single Checkbox Element"
+sidebar_label: "Check or Uncheck Single Element"
+description: "Use Check or Uncheck Single Element in ZeuZ to toggle one checkbox to a desired state, skipping the step automatically if it is already correct step by step."
+keywords: ["Check or Uncheck Single Element"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Check or Uncheck Single Element | ZeuZ Web Test Action Guide</title>
+</head>
 
 ## Purpose
 The "Check or Uncheck Single Element" action is used to interact with a checkbox element on a webpage. It ensures that the checkbox is set to the desired state (checked or unchecked). If the checkbox is already in the correct state, no action is taken, avoiding unnecessary changes. This action is particularly useful for form submissions or configurations where checkbox states must align with the specified requirements.

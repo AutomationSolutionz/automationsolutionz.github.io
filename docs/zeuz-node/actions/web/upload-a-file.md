@@ -1,7 +1,15 @@
 ---
 id: upload-a-file
-title: Upload a File
+title: "Upload a File Through an OS-Level Dialog"
+sidebar_label: "Upload a File"
+description: "Use the Upload a File Web Action in ZeuZ to automate OS-level file upload dialogs that Selenium cannot control, using system-level input simulation with ease."
+keywords: ["Upload a File Web Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Upload a File Web Action | ZeuZ Web Testing Guide Today</title>
+</head>
 
 ## Purpose
 This action automates file uploads using Selenium. It handles cases where the file upload button is located directly on the webpage, as well as scenarios requiring interaction with operating system-level file upload dialogs, utilizing the Microsoft System API and PyAutoGUI. 

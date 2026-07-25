@@ -1,6 +1,14 @@
 ---
-title: Save Text
+title: "Save Text: Capture Element Content on macOS"
+sidebar_label: "Save Text"
+description: "Use the Save Text Mac Action in ZeuZ to capture the text of a macOS element into a variable for later comparisons or reuse in a test case step step by step."
+keywords: ["Save Text Mac Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Save Text Mac Action | ZeuZ macOS Testing Reference Guide</title>
+</head>
 
 ## Purpose
 This action is used to **extract visible text** from a UI element and **save it** for later use, such as validating a created item like an event, note, or message. The saved variable can be referenced using `%|YourVariableName|%`.

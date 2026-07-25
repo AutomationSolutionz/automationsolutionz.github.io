@@ -1,7 +1,15 @@
 ---
 id: actions-mac
-title: Introduction of Mac Actions
+title: "Mac Automation Actions: Introduction and Overview"
+sidebar_label: "Introduction of Mac Actions"
+description: "Explore ZeuZ's Mac Automation Actions for clicking, typing, launching apps, and validating elements when testing macOS applications end to end step by step."
+keywords: ["Mac Automation Actions"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Mac Automation Actions | ZeuZ macOS Testing Guide Today</title>
+</head>
 
 ## Description
 

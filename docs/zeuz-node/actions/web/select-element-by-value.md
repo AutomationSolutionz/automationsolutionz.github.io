@@ -1,7 +1,15 @@
 ---
 id: select-element-by-value
-title: Select Element by Value
+title: "Select Element by Value in an HTML Dropdown"
+sidebar_label: "Select Element by Value"
+description: "Use Select Element by Value in ZeuZ to choose a dropdown option by matching its underlying value attribute using Selenium's Select class methods step by step."
+keywords: ["Select Element by Value"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Select Element by Value | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 This action utilizes the `Select` class in Selenium WebDriver to choose an option in a dropdown based on the `value` attribute of the `<option>` tag. It offers an alternative to selecting by visible text or index by enabling selection using the option's `value` attribute.

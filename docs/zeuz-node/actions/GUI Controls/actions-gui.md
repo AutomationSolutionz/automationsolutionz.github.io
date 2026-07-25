@@ -1,7 +1,15 @@
 ---
 id: actions-gui
-title: Graphical UI Control Actions
+title: "Graphical UI Control Actions Overview"
+sidebar_label: "Graphical UI Control Actions"
+description: "Explore ZeuZ's Graphical UI Control Actions for clicking, dragging, hovering, and OCR-based text extraction across image-based desktop interfaces step by step."
+keywords: ["Graphical UI Control Actions"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Graphical UI Control Actions | ZeuZ Automation Guide Docs</title>
+</head>
 
 ## Description
 Graphical User Interface (GUI) control actions are user interactions with apllication elements like buttons, menus, and text fields to perform tasks. These actions include clicking, hovering, typing, selecting, scrolling, and dragging, providing an intuitive way to navigate and operate software efficiently. They enhance usability by simplifying complex tasks into visual commands. In testing and automation, tools like Selenium or ZeuZ simulate these actions to ensure the application functions correctly and responds to user input.

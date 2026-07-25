@@ -1,7 +1,15 @@
 ---
 id: extract-table-data
-title: Extract Table Data
+title: "Extract Table Data from an HTML Table"
+sidebar_label: "Extract Table Data"
+description: "Use the Extract Table Data Action in ZeuZ to pull rows and cells from an HTML table into a structured list of lists for automated data validation step by step."
+keywords: ["Extract Table Data Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Extract Table Data Action | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 This action extracts data from an HTML table element, which includes tags such as `<table>`, `<tbody>`, `<tr>`, and `<td>`. The data is captured in a structured format as a list of lists, where each inner list represents a row in the table. This approach facilitates the organized and programmatic processing of table data.

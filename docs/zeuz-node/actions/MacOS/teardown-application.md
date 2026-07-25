@@ -1,6 +1,14 @@
 ---
-title: Teardown Application
+title: "Teardown Application: Clean Up After Mac Tests"
+sidebar_label: "Teardown Application"
+description: "Use the Teardown Application Action in ZeuZ to close a macOS app, stop the Appium session, and clear shared variables cleanly at test case end step by step."
+keywords: ["Teardown Application Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Teardown Application Action | ZeuZ macOS Test Cleanup Guide</title>
+</head>
 
 ## Purpose
 This action is responsible for properly closing an application that is currently running on the screen. It ensures a clean and complete termination of the testing session by performing the following steps:

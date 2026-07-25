@@ -1,7 +1,15 @@
 ---
 id: clear-and-enter-text
-title: Clear and Enter Text
+title: "Clear and Enter Text: Reset and Fill Mac Fields"
+sidebar_label: "Clear and Enter Text"
+description: "Use the Clear and Enter Text Mac Action in ZeuZ to erase existing field content and type new text during automated macOS application testing in ZeuZ automation."
+keywords: ["Clear and Enter Text Mac Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Clear and Enter Text Mac Action | ZeuZ macOS Docs Guide</title>
+</head>
 
 ## Purpose
 This action is used to clear any existing text from an input field and enter new text. It is particularly useful in scenarios where the field must be reset before entering updated or new input. The element can be identified using attributes such as `title`, `label`, `value` or `identifier`.

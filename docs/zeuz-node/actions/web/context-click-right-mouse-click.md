@@ -1,7 +1,15 @@
 ---
 id: context-click-right-mouse-click
-title: Context Click (Right Mouse Click)
+title: "Context Click (Right Mouse Click) on Web Elements"
+sidebar_label: "Context Click (Right Mouse Click)"
+description: "Use Context Click Right Mouse Click in ZeuZ to trigger a right-click on a web element and open its context menu during automated browser testing step by step."
+keywords: ["Context Click Right Mouse Click"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Context Click Right Mouse Click | ZeuZ Web Action Guide</title>
+</head>
 
 ## Purpose
 This action performs a context click (right click) on a specified web element using its properties. It is useful for opening context menus or triggering specific actions associated with a right-click.

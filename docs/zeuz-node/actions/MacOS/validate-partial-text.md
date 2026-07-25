@@ -1,6 +1,14 @@
 ---
-title: Validate Partial Text
+title: "Validate Partial Text: Flexible Checks on macOS"
+sidebar_label: "Validate Partial Text"
+description: "Use the Validate Partial Text Mac Action in ZeuZ to confirm a macOS element contains expected text, even when the surrounding string varies in ZeuZ automation."
+keywords: ["Validate Partial Text Mac Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Validate Partial Text Mac Action | ZeuZ macOS Docs Guide</title>
+</head>
 
 ## Purpose
 This action is used to partially match and validate the text content of a UI element using its `identifier`, `label`, `title` or `value`. It is useful for validating UI changes such as field values, messages, or status updates that may not be static.

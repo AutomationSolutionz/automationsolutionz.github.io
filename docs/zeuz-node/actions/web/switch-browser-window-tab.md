@@ -1,7 +1,15 @@
 ---
 id: switch-browser-window-tab
-title: Switch Browser Window/Tab
+title: "Switch Browser Window/Tab During a Test"
+sidebar_label: "Switch Browser Window/Tab"
+description: "Use Switch Browser Window Tab in ZeuZ to move between open browser tabs by title or index, including jumping straight to the most recent tab in ZeuZ automation."
+keywords: ["Switch Browser Window Tab"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Switch Browser Window Tab | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 This action enables switching between browser tabs or windows using either their titles or index values. It facilitates efficient automation of navigation in multi-tab environments.

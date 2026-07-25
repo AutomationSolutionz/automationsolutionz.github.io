@@ -1,9 +1,17 @@
 ---
 id: windows
-title: Windows Onboarding
+title: "Windows Onboarding: Automate Your First Desktop Test"
+sidebar_label: "Windows Onboarding"
+description: "Follow this ZeuZ Windows Onboarding guide to connect a Node, launch a desktop app, add actions, and build your first automated Windows test case step by step."
+keywords: ["Windows Onboarding"]
 ---
 
 import MetaCard from '@site/src/components/MetaCard';
+
+{/* seo:meta-title */}
+<head>
+  <title>Windows Onboarding Guide | Automate Desktop Apps Fast Docs</title>
+</head>
 
 **Onboarding** refers to the process where new users sign up and log in, ensuring that all systems are properly prepared so they can execute test cases smoothly for the first time.
 

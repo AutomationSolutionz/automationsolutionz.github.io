@@ -1,7 +1,15 @@
 ---
 id: post-request
-title: HTTP POST Request
+title: "POST Request Action: Create Resources via API"
+sidebar_label: "HTTP POST Request"
+description: "Use the ZeuZ POST Request Action to send HTTP POST calls, create new resources on a server, and verify the returned response in automated test cases with ease."
+keywords: ["POST Request Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>POST Request Action | Create New Resources via API Guide</title>
+</head>
 
 ## Purpose
 The "POST Request" action is used to send an HTTP POST request to a specified API endpoint to create a new resource on the server. This action is valuable for adding new data, verifying successful resource creation, and integrating backend data creation into automated test cases. The response data is typically validated to confirm the creation was successful, often including a unique `id` and a `createdAt` timestamp.

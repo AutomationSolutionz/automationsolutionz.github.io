@@ -1,6 +1,14 @@
 ---
-title: Right Click Action
+title: "Right Click Action: Trigger macOS Context Menus"
+sidebar_label: "Right Click Action"
+description: "Use the Right Click Mac Action in ZeuZ to simulate a right-click on a macOS element identified by title, label, value, or identifier attributes step by step."
+keywords: ["Right Click Mac Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Right Click Mac Action | ZeuZ macOS Testing Guide Today</title>
+</head>
 
 ## Purpose
 This action is used to perform a right-click on an element by using its properties. The element to be clicked must be specified. Properties that can be used to locate the element include `title`, `label`, `value` and `identifier`. Once the element is identified, the action executes a right-click on it.

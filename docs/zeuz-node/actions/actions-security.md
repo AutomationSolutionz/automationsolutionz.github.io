@@ -1,7 +1,15 @@
 ---
 id: actions-security
-title: Security Actions
+title: "Security Testing Actions: Scan Apps and Networks"
+sidebar_label: "Security Actions"
+description: "Explore ZeuZ's Security Testing Actions using Arachni, Nikto, Nmap, and Wapiti to scan web apps, servers, and networks for security vulnerabilities with ease."
+keywords: ["Security Testing Actions"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Security Testing Actions | ZeuZ Vulnerability Scanning Guide</title>
+</head>
 
 ## Description
 Security actions are measures taken to protect systems, networks, applications, or data from unauthorized access, exploitation, or disruption. These include authentication methods like passwords or multi-factor authentication, authorization to manage user permissions, encryption to secure data, and tools like vulnerability scanners to identify system weaknesses. Additional actions include patch management, intrusion detection, access control, incident response, audits for compliance, and backup procedures to prevent data loss. Together, these actions ensure the security and integrity of systems and data.

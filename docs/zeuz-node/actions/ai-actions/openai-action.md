@@ -1,7 +1,15 @@
 ---
 id: openai-action
-title: OpenAI action
+title: "OpenAI Action: Bring AI Tasks into ZeuZ Tests"
+sidebar_label: "OpenAI action"
+description: "Learn what the OpenAI Action in ZeuZ does, using OpenAI's AI models to process inputs and generate intelligent outputs inside automated test cases step by step."
+keywords: ["OpenAI Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>OpenAI Action | Bring AI Tasks into ZeuZ Test Cases Guide</title>
+</head>
 
 ## Description
 

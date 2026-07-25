@@ -1,7 +1,15 @@
 ---
 id: switch-iframe
-title: Switch iframe
+title: "Switch Iframe to Automate Embedded Content"
+sidebar_label: "Switch iframe"
+description: "Use the Switch Iframe Action in ZeuZ to move the WebDriver's focus into an embedded iframe so its inner elements can be automated directly in ZeuZ automation."
+keywords: ["Switch Iframe Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Switch Iframe Action | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 The "Switch iframe" action allows automation scripts to interact with elements inside an iframe by shifting the driver's focus from the main document to the specified iframe.

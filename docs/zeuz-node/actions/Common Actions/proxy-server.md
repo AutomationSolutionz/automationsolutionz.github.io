@@ -1,7 +1,15 @@
 ---
 id: proxy-server
-title: Proxy Server
+title: "Proxy Server Action: Capture Network Logs in Tests"
+sidebar_label: "Proxy Server"
+description: "Use the ZeuZ Proxy Server Action to start a local proxy, capture every network request and response during a run, and save the traffic to a CSV file with ease."
+keywords: ["Proxy Server Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Proxy Server Action | Capture Network Logs in Tests Guide</title>
+</head>
 
 ## Purpose
 This action captures the network log of a webpage during automated testing. It records all network requests and responses, enabling testers to analyze API calls, detect errors, and troubleshoot performance issues.

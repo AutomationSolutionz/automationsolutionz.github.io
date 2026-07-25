@@ -1,7 +1,15 @@
 ---
 id: zAI-chatbot
-title: zAI Chatbot
+title: "zAI Chatbot: Build Test Steps with AI Guidance"
+sidebar_label: "zAI Chatbot"
+description: "Use the ZeuZ zAI Chatbot to describe actions in plain language and get matching automated test steps generated automatically inside the builder step by step."
+keywords: ["zAI Chatbot"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>zAI Chatbot | Build Test Steps with AI Guidance Fast Guide</title>
+</head>
 
 ## Description
 The **zAI Chatbot** in the **ZeuZ** platform is an AI-powered virtual assistant designed to help users interact with and navigate the ZeuZ test automation environment more efficiently. It provides real-time assistance by answering questions, guiding users through various features, and offering step-by-step instructions for tasks such as creating test cases, managing runtime parameters, or connecting nodes. Additionally, it helps troubleshoot issues, suggests best practices, and supports automation workflows by interpreting user commands in natural language. This chatbot significantly improves user experience by reducing the learning curve and making the ZeuZ platform more accessible, especially for beginners.

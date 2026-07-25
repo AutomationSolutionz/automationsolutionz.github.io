@@ -1,7 +1,15 @@
 ---
 id: action-gui-controls-ocr-get-text-using-text
-title: OCR - Get text using text
+title: "OCR: Get Text Using a Reference Text String"
+sidebar_label: "OCR - Get text using text"
+description: "Use OCR Get Text Using Text in ZeuZ to locate a reference string on screen and extract nearby text using direction, gap, and match-method settings step by step."
+keywords: ["OCR Get Text Using Text"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>OCR Get Text Using Text | ZeuZ GUI Control Action Guide</title>
+</head>
 
 ## Description
 

@@ -1,7 +1,15 @@
 ---
 id: click-an-element
-title: Click an Element
+title: "Click an Element: Simulate Clicks on macOS"
+sidebar_label: "Click an Element"
+description: "Use the Click an Element Mac Action in ZeuZ to simulate clicks on buttons and links using title, label, value, or identifier element attributes step by step."
+keywords: ["Click an Element Mac Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Click an Element Mac Action | ZeuZ macOS Test Guide Docs</title>
+</head>
 
 ## Purpose
 This action is used to simulate a click event on a specified element on the screen. The element can be located using its attributes such as `title`, `label`, `value`, or `identifier`. This action is essential for interacting with buttons, links, and other clickable elements in applications.

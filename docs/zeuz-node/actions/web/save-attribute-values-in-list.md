@@ -1,7 +1,15 @@
 ---
 id: save-attribute-values-in-list
-title: Save Attribute Values in List
+title: "Save Attribute Values in List from Multiple Elements"
+sidebar_label: "Save Attribute Values in List"
+description: "Use Save Attribute Values in List in ZeuZ to collect attribute data from multiple web elements or table rows and store it as a structured list step by step."
+keywords: ["Save Attribute Values in List"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Save Attribute Values in List | ZeuZ Web Test Action Guide</title>
+</head>
 
 ## Purpose
 The "Save Attribute Values in List" action is designed to extract data from a table or webpage and store it as a structured list. This action can capture multiple items and organize them into nested lists, accomodating scenarios with multiple rows or sets of data. By scanning the specified elements, the action retrieves the data and formats it systematically, enabling efficient management and seamless access for further automation or analysis.

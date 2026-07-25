@@ -1,7 +1,15 @@
 ---
 id: go-to-webpage
-title: Go to Webpage
+title: "Go to Webpage: Launch a Browser and Load a URL"
+sidebar_label: "Go to Webpage"
+description: "Use the Go to Webpage Action in ZeuZ to launch a browser, navigate to a URL, and configure element wait times for reliable automated web test runs step by step."
+keywords: ["Go to Webpage Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Go to Webpage Action | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 The "Go to Webpage" action enables users to open a specified browser and navigate to a given URL. This action accepts the URL, configures the browser's capabilities (such as version or platform), and loads the webpage. Additionally, it includes a default wait time of 10 seconds to allow elements on the page to load, ensuring smooth automation throughout the test case.

@@ -1,7 +1,15 @@
 ---
 id: enter-text
-title: Enter Text
+title: "Enter Text: Fill Web Input Fields Automatically"
+sidebar_label: "Enter Text"
+description: "Use the Enter Text Web Action in ZeuZ to type text into an input field identified by ID, class, title, or value during automated web test runs step by step."
+keywords: ["Enter Text Web Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Enter Text Web Action | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 The "Enter Text" action allows users to type text into a specific field on a webpage or application, such as a login box, search bar, or form field. To perform this action, you must provide an identifier for the input field, such as its `ID`, `class`, `type`, `title`, or `value`. The automation tool then locates the input field using the specified identifier and writes the provided text into it.

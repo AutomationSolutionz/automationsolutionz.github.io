@@ -1,7 +1,15 @@
 ---
 id: double-click-an-element
-title: Double click an Element
+title: "Double Click an Element: Automate Web Interactions"
+sidebar_label: "Double click an Element"
+description: "Use Double Click an Element in ZeuZ to perform a double-click on a web element identified by ID, class, type, or title during automated testing step by step."
+keywords: ["Double Click an Element"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Double Click an Element | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 This action is used to double-click on a web element by identifying it using specific properties such as ID, class, type, or title. It locates the element based on these attributes and performs a double-click action.

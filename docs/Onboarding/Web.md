@@ -1,9 +1,17 @@
 ---
 id: Web
-title: Web Onboarding
+title: "Web Onboarding: Automate Your First Web Test in ZeuZ"
+sidebar_label: "Web Onboarding"
+description: "Follow this ZeuZ Web Onboarding guide to set up a Node, record browser actions, add validations, and execute your first automated web test case step by step."
+keywords: ["Web Onboarding"]
 ---
 
 import MetaCard from '@site/src/components/MetaCard';
+
+{/* seo:meta-title */}
+<head>
+  <title>Web Onboarding Guide | Build Your First Web Test Case Docs</title>
+</head>
 
 **Onboarding** refers to the process where new users sign up and log in, ensuring that all systems are properly prepared so they can execute test cases smoothly for the first time.
 

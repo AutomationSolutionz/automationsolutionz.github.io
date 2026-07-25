@@ -1,7 +1,15 @@
 ---
 id: put-request
-title: HTTP PUT Request
+title: "PUT Request Action: Update API Resources in Tests"
+sidebar_label: "HTTP PUT Request"
+description: "Use the ZeuZ PUT Request Action to send HTTP PUT calls, update existing resources on a server, and confirm the updated response in your automated API tests."
+keywords: ["PUT Request Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>PUT Request Action | Update Existing API Resources Guide</title>
+</head>
 
 ## Purpose
 The "PUT Request" action is used to send an HTTP PUT request to a specified API endpoint to update resource data. This action is useful for modifying data on the server, verifying that updates are applied correctly, and integrating backend data changes into automated test cases. The response data is typically validated to confirm that the changes were successful, often including an "updatedAt" timestamp.

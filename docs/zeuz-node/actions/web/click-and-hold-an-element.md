@@ -1,7 +1,15 @@
 ---
 id: click-and-hold-an-element
-title: Click and Hold an Element
+title: "Click and Hold an Element for Extended Interaction"
+sidebar_label: "Click and Hold an Element"
+description: "Use Click and Hold an Element in ZeuZ to press and hold on a web element by ID, class, or type, useful for drag or extended-selection interactions step by step."
+keywords: ["Click and Hold an Element"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Click and Hold an Element | ZeuZ Web Testing Action Guide</title>
+</head>
 
 ## Purpose
 This action is used to perform a click-and-hold operation on a specified web element. It is commonly used for tasks such as drag-and-drop, extended selection, or triggering specific actions tied to click-and-hold gestures.

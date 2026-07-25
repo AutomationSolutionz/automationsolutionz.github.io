@@ -1,7 +1,15 @@
 ---
 id: open-a-new-tab
-title: Open a New Tab
+title: "Open a New Tab Within the Same Browser Session"
+sidebar_label: "Open a New Tab"
+description: "Use the Open a New Tab Action in ZeuZ to load a new webpage inside a fresh browser tab while keeping the existing session and other tabs intact step by step."
+keywords: ["Open a New Tab Action"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Open a New Tab Action | ZeuZ Web Testing Reference Guide</title>
+</head>
 
 ## Purpose
 The "Open a New Tab" action opens a new browser tab within the same window. This action is useful when you want to open a new webpage without navigating away from or closing the current one.

@@ -1,9 +1,15 @@
 ---
-
 id: sessions
-title: Sessions
-
+title: "Sessions: Run Multiple Isolated Browser Windows"
+sidebar_label: "Sessions"
+description: "Use Browser Session Isolation in ZeuZ to spawn and control several independent browser windows in one test, with Selenium and Playwright support step by step."
+keywords: ["Browser Session Isolation"]
 ---
+
+{/* seo:meta-title */}
+<head>
+  <title>Browser Session Isolation | ZeuZ Web Testing Guide Docs</title>
+</head>
 
 ## Purpose
 

@@ -3,6 +3,8 @@
     "position": 3,
     "link": {
         "type": "generated-index",
-        "description": "ZeuZ applications and utilities."
+        "title": "Android Test Automation Setup Guide",
+        "description": "Set up Android test automation with this guide covering Android Test Automation Setup steps, Android Studio installation, and emulator or device configuration.",
+        "keywords": ["Android Test Automation Setup"]
     }
 }
