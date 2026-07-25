@@ -2,6 +2,8 @@ import React, { type CSSProperties, type ReactNode } from 'react';
 import Content from '@theme-original/DocItem/Content';
 import type ContentType from '@theme/DocItem/Content';
 import type { WrapperProps } from '@docusaurus/types';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 function buildPathString(prefix = '', suffix = '') {
     // Remove trailing slash from pathname
@@ -59,6 +61,15 @@ function DocPageButtons() {
 
     const [hoverIndex, setHoverIndex] = React.useState(-1);
 
+    // Static assets must go through useBaseUrl, otherwise they resolve against
+    // the domain root and miss the /docs/ baseUrl the site is served under.
+    const openaiIcon = useBaseUrl('/img/icons/openai.svg');
+    const claudeIcon = useBaseUrl('/img/icons/claude.svg');
+    const shareIcon = useBaseUrl('/img/icons/share.svg');
+
+    // Public origin, so the links stay correct if the site ever moves domain.
+    const { siteConfig } = useDocusaurusContext();
+
     // Share handler
     const handleShare = () => {
         const shareData = {
@@ -82,9 +93,9 @@ function DocPageButtons() {
         {
             label: "Open in ChatGPT",
             subLabel: "Ask ChatGPT about this page",
-            icon: "/img/icons/openai.svg",
+            icon: openaiIcon,
             onClick: () => {
-                const prefix = 'https://docs.zeuz.ai';
+                const prefix = siteConfig.url;
                 const docURL = buildPathString(prefix);
                 const prompt = `Read ${docURL} and answer questions about the content`
                 const url = `https://chatgpt.com/?prompt=${prompt}`;
@@ -94,9 +105,9 @@ function DocPageButtons() {
         {
             label: "Open in Claude",
             subLabel: "Ask Claude about this page",
-            icon: "/img/icons/claude.svg",
+            icon: claudeIcon,
             onClick: () => {
-                const prefix = 'https://docs.zeuz.ai';
+                const prefix = siteConfig.url;
                 const docURL = buildPathString(prefix);
                 const prompt = `Read ${docURL} and answer questions about the content`
                 const url = `https://claude.ai/new?q=${prompt}`;
@@ -105,7 +116,7 @@ function DocPageButtons() {
         },
         {
             label: "Share",
-            icon: "/img/icons/share.svg",
+            icon: shareIcon,
             onClick: handleShare,
         },
     ];
