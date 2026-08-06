@@ -169,6 +169,7 @@ The **Create / Edit Test Case** page allows users to create a new test case or m
 ![](/img/how-tos/how-to-create-test-cases/view-action.png)
 
 
+
 - The **More** menu for a test step in the Edit Test Case page of ZeuZ provides additional options for managing the selected test step, including editing its properties, managing versions and attachments, organizing actions, and performing step-level operations.
 - Rename:
 Allows users to change the name of the selected test step.
