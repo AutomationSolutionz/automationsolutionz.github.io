@@ -105,9 +105,6 @@ The **Create / Edit Test Case** page allows users to create a new test case or m
   - Displays the number of test cases that currently use the selected test step.
   - Clicking the **information (i)** icon displays the description and expected result associated with the selected test step, allowing users to review additional details without opening the step.
   - Clicking the **Remove Step** button removes the selected test step from the current test case.
-- To add an action, click the Add Action option under the desired step.
-
-![](/img/how-tos/how-to-create-test-cases/action-add.png)
 
 ![](/img/how-tos/how-to-create-test-cases/selected-steps.png)
 
@@ -120,9 +117,6 @@ The **Create / Edit Test Case** page allows users to create a new test case or m
 
 ![](/img/how-tos/how-to-create-test-cases/guideline-test.png) 
 
-## How to Edit a Test Case 
-- The "Edit Test Case" page enables users to modify an existing test case by updating its details, editing test steps and actions, configuring execution settings, and validating changes before execution.
-- To edit a test case, first select the desired test case from the "Create New Test Case" page. Alternatively, a specific test case can be selected from the "Test Case Search" page for editing.
 
 ### Main Components 
 - **Test Case Header**: Located at the top of the page, the header displays the following elements:  
