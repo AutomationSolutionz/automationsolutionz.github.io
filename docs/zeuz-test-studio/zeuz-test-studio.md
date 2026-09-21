@@ -1,6 +1,4 @@
 ---
-id: zeuz-test-studio
-title: ZeuZ Test Studio
 ---
 
 import MetaCard from '@site/src/components/MetaCard';
@@ -24,33 +22,6 @@ lastUpdated="30 Aug, 2026"
 - **End-to-end test workflow**: Supports the process from understanding requirements and creating test cases to automating and executing them.
 - **Test execution and validation**: Enables automated test execution and provides execution information for evaluating results.
 - **Efficient and scalable testing**: Helps teams increase automation coverage while maintaining a consistent and organized testing workflow.
-
-## Features
-- First, install **ZeuZ Studio** on your desktop.
-- After installing the app, users are first directed to the **onboarding progress**.
-- - The onboarding progress at the top shows three steps:  
-  - **Workspace**,
-  - **Projects**,
-  - **Connectors**.
-
-### Onboarding
-#### Workspace
-- This is the first step of the **Test Studio onboarding process**. It allows users to select the workspace they want to use for their **Test Studio** activities. It provides the following options:  
-  - **Select an existing workspace**: Users can choose from the available workspaces, such as **Ayesha's workspace** or **test workspace**.
-  - **Create a new workspace**: Users can create a new workspace if an appropriate workspace does not already exist.
-  - **Continue**: After selecting a workspace, click **Continue** to proceed to the next onboarding step.
-  - **Skip setup**: Users can skip the onboarding setup if they do not want to configure the workspace at this time.
-
-  ![](/img/zeuz-test-studio/choose-workspace.png)
-
-#### Projects
-- This is the second step of the **Test Studio onboarding process**. It asks whether the team has a code repository that can be linked to Test Studio. Here, users have the following options:  
-  - **Yes, link a repository**: Link an existing local Git repository to the selected workspace.
-  - **No, not now**: Skip repository setup and continue without linking a repository.
-  - **Back**: Return to the previous **Workspace** step.
-  - **Skip setup**: Skip the onboarding setup entirely.
-
-  ![](/img/zeuz-test-studio/project-repository.png)
 
 #### Connectors
 - This is the **third and final step of the Test Studio onboarding process**. It allows users to connect external tools that Test Studio can use to access relevant project information, documentation, requirements, and design resources. The available connectors are:  
