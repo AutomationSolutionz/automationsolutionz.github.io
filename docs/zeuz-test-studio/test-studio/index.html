@@ -1,0 +1,505 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-zeuz-test-studio/test-studio" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.2"><title data-rh=true>test-studio | ZeuZ Resources</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://docs.zeuz.ai/img/zeuz-social-card.png /><meta data-rh=true name=twitter:image content=https://docs.zeuz.ai/img/zeuz-social-card.png /><meta data-rh=true property=og:url content=https://docs.zeuz.ai/docs/zeuz-test-studio/test-studio/ /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="test-studio | ZeuZ Resources"/><meta data-rh=true name=description content="ZeuZ Test Studio is an AI-powered testing environment that integrates test case management, test automation, and test execution within a unified platform. It enables testers to progress from interpreting test requirements to creating, organizing, automating, and executing test cases through a structured workflow."/><meta data-rh=true property=og:description content="ZeuZ Test Studio is an AI-powered testing environment that integrates test case management, test automation, and test execution within a unified platform. It enables testers to progress from interpreting test requirements to creating, organizing, automating, and executing test cases through a structured workflow."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://docs.zeuz.ai/docs/zeuz-test-studio/test-studio/ /><link data-rh=true rel=alternate href=https://docs.zeuz.ai/docs/zeuz-test-studio/test-studio/ hreflang=en /><link data-rh=true rel=alternate href=https://docs.zeuz.ai/docs/zeuz-test-studio/test-studio/ hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://docs.zeuz.ai/docs/zeuz-test-studio/test-studio","name":"test-studio","position":1}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="ZeuZ Resources RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="ZeuZ Resources Atom Feed"><link rel=stylesheet href=/assets/css/styles.260601c2.css /><script src=/assets/js/runtime~main.f15af333.js defer></script><script src=/assets/js/main.7660265b.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-20c")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/logo.svg /><link rel=preload as=image href=/img/icons/openai.svg /><link rel=preload as=image href=/img/icons/claude.svg /><link rel=preload as=image href=/img/icons/share.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo.svg alt="ZeuZ logo" class="zeuz_logo themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/logo.svg alt="ZeuZ logo" class="zeuz_logo themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate"></b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/>Docs</a><a class="navbar__item navbar__link" href=/blog/tags/changelog/>Changelog</a><a class="navbar__item navbar__link" href=/blog/>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><svg aria-hidden=true class=searchIcon_T3tP focusable=false viewBox="0 0 16 16"><path fill=currentColor d="M6.02945 10.20327a4.17382 4.17382 0 1 1 4.17382-4.17382 4.15609 4.15609 0 0 1-4.17382 4.17382Zm9.69195 4.2199-4.8225-4.82338A5.88021 5.88021 0 0 0 12.058 6.02856 6.00467 6.00467 0 1 0 9.59979 10.8989l4.82338 4.82338a.89729.89729 0 0 0 1.29912 0 .89749.89749 0 0 0-.00087-1.29909Z"/></svg><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/><span class=linkLabel_WmDU>Welcome</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/best-practices/><span class=linkLabel_WmDU>Best Practices</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/node/><span class=categoryLinkLabel_W154>Node</span></a><button aria-label="Expand sidebar category 'Node'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/apps/><span class=categoryLinkLabel_W154>Apps</span></a><button aria-label="Expand sidebar category 'Apps'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs/Onboarding/API/><span class=categoryLinkLabel_W154>Onboarding</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/known-issues/><span class=linkLabel_WmDU>Known Issues</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/zeuz-server/><span class=categoryLinkLabel_W154>Introduction</span></a><button aria-label="Expand sidebar category 'Introduction'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/docs/zeuz-test-studio/zeuz-test-studio/><span class=categoryLinkLabel_W154>zeuz-test-studio</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/zeuz-test-studio/zeuz-test-studio/><span class=linkLabel_WmDU>Onboarding</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/zeuz-test-studio/test-studio/><span class=linkLabel_WmDU>test-studio</span></a></ul></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>zeuz-test-studio</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>test-studio</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div style=display:flex;align-items:stretch;margin-bottom:8px><button style="display:inline-flex;align-items:center;gap:8px;padding:6px 12px;font-size:14px;border-width:1px;border-style:solid;border-color:#ccc;background-color:#f9f9f9;color:#333;cursor:pointer;transition:all 0.2s ease;user-select:none;text-align:left;border-top-right-radius:0;border-bottom-right-radius:0;border-top-left-radius:20px;border-bottom-left-radius:20px;border-right:0" aria-label="Open in ChatGPT"><img src=/img/icons/openai.svg alt="Open in ChatGPT" style=width:20px;height:20px;flex-shrink:0;border-radius:0;border:none;box-shadow:none /><div style=display:flex;flex-direction:column;line-height:1.2><span style=font-weight:500>Open in ChatGPT</span><span style=font-size:12px;color:#666>Ask ChatGPT about this page</span></div></button><button style="display:inline-flex;align-items:center;gap:8px;padding:6px 12px;font-size:14px;border-width:1px;border-style:solid;border-color:#ccc;background-color:#f9f9f9;color:#333;cursor:pointer;transition:all 0.2s ease;user-select:none;text-align:left;border-radius:0;border-right:0" aria-label="Open in Claude"><img src=/img/icons/claude.svg alt="Open in Claude" style=width:20px;height:20px;flex-shrink:0;border-radius:0;border:none;box-shadow:none /><div style=display:flex;flex-direction:column;line-height:1.2><span style=font-weight:500>Open in Claude</span><span style=font-size:12px;color:#666>Ask Claude about this page</span></div></button><button style="display:inline-flex;align-items:center;gap:8px;padding:6px 12px;font-size:14px;border-width:1px;border-style:solid;border-color:#ccc;background-color:#f9f9f9;color:#333;cursor:pointer;transition:all 0.2s ease;user-select:none;text-align:left;border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:20px;border-bottom-right-radius:20px" aria-label=Share><img src=/img/icons/share.svg alt=Share style=width:20px;height:20px;flex-shrink:0;border-radius:0;border:none;box-shadow:none /><div style=display:flex;flex-direction:column;line-height:1.2><span style=font-weight:500>Share</span></div></button></div><div class="theme-doc-markdown markdown"><header><h1>test-studio</h1></header><p><strong>ZeuZ Test Studio</strong> is an AI-powered testing environment that integrates test case management, test automation, and test execution within a unified platform. It enables testers to progress from interpreting test requirements to creating, organizing, automating, and executing test cases through a structured workflow.</p>
+<p><strong>Test Studio</strong> uses AI to collect relevant context, analyze application behavior and testing requirements, organize test information, and scaffold automation. This enables testers to develop and prepare test cases more efficiently while maintaining a close relationship between each test case and its associated automation.</p>
+<p>The platform also supports the execution of automated test cases and provides detailed execution information to help testers evaluate test outcomes. By combining AI-assisted capabilities with an end-to-end test case workflow, ZeuZ Test Studio offers a more efficient, consistent, and organized approach to software test management and automation.</p>
+<div class=meta-card><ul class=meta-list><li><span class=meta-label>📅 Available from:</span> <a href=#changelog>202605</a><li><span class=meta-label>🎯 Difficulty:</span> <!-- -->🟢 Easy<li><span class=meta-label>🕒 Last Updated:</span> <!-- -->30 Aug, 2026</ul></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=why-it-matters--use-cases>Why it matters / Use Cases:<a href=#why-it-matters--use-cases class=hash-link aria-label="Direct link to Why it matters / Use Cases:" title="Direct link to Why it matters / Use Cases:" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>AI-assisted test creation</strong>: Helps interpret requirements and application context to create structured test cases.</li>
+<li class=""><strong>Test automation</strong>: Helps build automation from test cases, reducing the effort required to prepare automated tests.</li>
+<li class=""><strong>Centralized test management</strong>: Allows testers to create, organize, and maintain test cases together with their associated automation.</li>
+<li class=""><strong>End-to-end test workflow</strong>: Supports the process from understanding requirements and creating test cases to automating and executing them.</li>
+<li class=""><strong>Test execution and validation</strong>: Enables automated test execution and provides execution information for evaluating results.</li>
+<li class=""><strong>Efficient and scalable testing</strong>: Helps teams increase automation coverage while maintaining a consistent and organized testing workflow.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=connectors>Connectors<a href=#connectors class=hash-link aria-label="Direct link to Connectors" title="Direct link to Connectors" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>This is the <strong>third and final step of the Test Studio onboarding process</strong>. It allows users to connect external tools that Test Studio can use to access relevant project information, documentation, requirements, and design resources. The available connectors are:</p>
+<ul>
+<li class=""><strong>GitHub</strong>: Connect GitHub to access repositories and pull request information.</li>
+<li class=""><strong>Notion</strong>: Connect Notion to access project documentation and test plans.</li>
+<li class=""><strong>Jira</strong>: Connect Jira to access tickets and acceptance criteria.</li>
+<li class=""><strong>Google Drive</strong>: Connect Google Drive to access documents, spreadsheets, and recordings.</li>
+<li class=""><strong>Figma</strong>: Provides access to design frames and user flows.</li>
+</ul>
+</li>
+<li class="">
+<p>Users can select <strong>Connect</strong> beside the required tool and complete its connection process. After configuring the required connectors, click <strong>Finish setup</strong> to complete onboarding.</p>
+</li>
+<li class="">
+<p>The <strong>Back</strong> option returns to the previous Projects step, while <strong>Skip setup</strong> allows users to skip the onboarding configuration.</p>
+<p><img decoding=async loading=lazy src=/assets/images/connect-tools-45a7c87d105aaf7e7f5df96c1379567d.png width=665 height=703 class=img_ev3q /></p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=workspace>Workspace<a href=#workspace class=hash-link aria-label="Direct link to Workspace" title="Direct link to Workspace" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>After completing the <strong>Test Studio</strong> setup, users are directed to the Ready Your <strong>Workspace</strong> page.</p>
+</li>
+<li class="">
+<p>The <strong>Ready Your Workspace</strong> page appears when users start a new chat in Test Studio. It ensures that the required setup is completed before users begin working with AI-assisted testing. The page contains three main configuration areas:</p>
+<ol>
+<li class=""><strong>Codex Authentication</strong>:<!-- -->
+<ul>
+<li class="">Confirms whether Codex authentication is configured.</li>
+<li class="">When the status shows <strong>Ready</strong>, Test Studio can use the configured Codex authentication.</li>
+<li class=""><strong>Setup</strong> can be used to configure authentication, while <strong>Check again</strong> verifies the current authentication status.</li>
+<li class="">The page also indicates that Test Studio does not copy Codex tokens and that Codex remains the refresh authority.</li>
+</ul>
+</li>
+<li class=""><strong>Workspace</strong>:<!-- -->
+<ul>
+<li class="">Users must select an existing workspace or create a new one.</li>
+<li class="">The selected workspace provides the working environment for the Test Studio session.</li>
+<li class=""><strong>Create workspace</strong> allows users to create a new workspace when required.</li>
+</ul>
+</li>
+<li class=""><strong>Knowledge Sources (Optional)</strong>:<!-- -->
+<ul>
+<li class="">Users can provide additional project context by connecting a code repository or adding local documents and folders.</li>
+<li class="">Available options include:<!-- -->
+<ul>
+<li class=""><strong>Link repository</strong>: Connects a code repository.</li>
+<li class=""><strong>Add documents</strong>: Adds relevant documents from the local machine.</li>
+<li class=""><strong>Add folder</strong>: Adds a local folder as a knowledge source.</li>
+<li class=""><strong>Skip for now</strong>: Continues without adding knowledge sources.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img decoding=async loading=lazy src=/assets/images/start-chat-592f76f9b7cff55b77f0019d3bb67f4a.png width=1184 height=929 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>If users navigate to <strong>Workspaces</strong> from the left-side panel, they can view the data created during the onboarding process.</p>
+</li>
+<li class="">
+<p>Users can also create a new workspace by selecting <strong>+ New workspace</strong> from the left-side panel.</p>
+<p><img decoding=async loading=lazy src=/assets/images/create-option-e9ab8d4e01512c92c59b653bcd8a9d71.png width=1918 height=712 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/workspace-name-f3cf043288070d736296cd692a7fc9f9.png width=553 height=464 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>After creating a new workspace, it will be displayed under <strong>Workspaces</strong>.</p>
+<p><img decoding=async loading=lazy src=/assets/images/testing-workspace-d627bdd4ccf0f30ba2843a71246edd2b.png width=409 height=344 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>After creating a new workspace, users can also link a local repository by clicking <strong>Link Local Project</strong>.</p>
+<p><img decoding=async loading=lazy src=/assets/images/link-local-0131b2b8925ff42844fc4365b5812d9f.png width=1900 height=589 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>After linking a local repository, users can <strong>analyze the knowledge source</strong>. This process scans the entire repository and uses AI to build a structured summary of the project, similar to a blueprint, helping Test Studio understand the application's structure and relevant context.</p>
+<p><img decoding=async loading=lazy src=/assets/images/linked-knowledge-74a92ec5f0d8c89a3a61aedc6be25fe2.png width=1119 height=587 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/build-product-ffdd85399010db5f3afb83cc64ad2d29.png width=1210 height=865 class=img_ev3q /></p>
+</li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></span>note</div><div class=admonitionContent_BuS1><p>The “Analyze Knowledge Sources” button remains unavailable until a local repository is linked.<p><img decoding=async loading=lazy src=/assets/images/unavailable-button-55db8bb61684a4cf211316c9b5c0d722.png width=1149 height=571 class=img_ev3q /></div></div>
+<ul>
+<li class="">
+<p>The <strong>Collaborators</strong> option allows users to invite other users to the workspace and assign them specific permissions. Click Invite to add users from the relevant project. When inviting a user, select the required permission level:</p>
+<ul>
+<li class=""><strong>Read</strong>: Allows the user to view the workspace and its content.</li>
+<li class=""><strong>Write</strong>: Allows the user to view the workspace and create test cases.</li>
+<li class=""><strong>Admin</strong>: Provides full access to the workspace.</li>
+</ul>
+</li>
+<li class="">
+<p>After selecting the required permission, click <strong>Invite</strong> to send the invitation. The invited user is initially shown as <strong>Pending</strong>. Once the user accepts the invitation, the status is updated to indicate that the invitation has been accepted.</p>
+</li>
+<li class="">
+<p>The <strong>Remove collaborator</strong> option allows workspace administrators to remove a collaborator from the workspace, removing the user’s access and assigned permissions.</p>
+<p><img decoding=async loading=lazy src=/assets/images/collaborators-invite-39e229fb3aeecd9e97e9eefa10e028a6.png width=1248 height=780 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/invite-collaborator-921ccf4583d3481e61cd06894fcd0b9a.png width=1261 height=605 class=img_ev3q /></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></span>note</div><div class=admonitionContent_BuS1><p>Users with access to the specific workspace can also be invited using the <strong>Search users</strong> option.</div></div>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=settings>Settings<a href=#settings class=hash-link aria-label="Direct link to Settings" title="Direct link to Settings" translate=no>​</a></h3>
+<ul>
+<li class="">Click the button next to the profile icon.</li>
+<li class="">After clicking the <strong>Settings</strong> button, users are directed to the "Account Settings" page.</li>
+<li class="">The "Account Settings" page is part of the two sections <strong>Personal</strong> and <strong>Integrations</strong> settings in Test Studio. The two sections contain the following parts, as mentioned below:</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=personal>Personal<a href=#personal class=hash-link aria-label="Direct link to Personal" title="Direct link to Personal" translate=no>​</a></h4>
+<ul>
+<li class="">It refers to the settings that are specific to the individual user rather than to the entire workspace or organization.<!-- -->
+<ul>
+<li class="">
+<p><strong>Account:</strong></p>
+<ul>
+<li class=""><strong>Profile</strong>: Displays the user's profile information, including the username and associated ZeuZ workspace. The <strong>Sign out</strong> option allows the user to sign out of the account.</li>
+<li class=""><strong>Setup</strong>: Provides the <strong>Run setup again</strong> option, which allows users to repeat the workspace, project, and connector setup process without deleting existing data.</li>
+<li class=""><strong>Analytics</strong>: Includes the <strong>Share usage and error reports</strong> option. When enabled, anonymous usage and error information can be shared to help identify and resolve issues. The description states that prompts, files, test data, and tool output are not included.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/user-profile-24365401199935e61a6c8ae89a61434d.png width=1643 height=591 class=img_ev3q /></p>
+</li>
+<li class="">
+<p><strong>Appearance:</strong></p>
+<ul>
+<li class="">It allows users to customize how Test Studio looks and behaves on their device. It provides options for changing the theme, interface language, zoom level, font sizes, and sidebar navigation. The page contains the following sections:<!-- -->
+<ul>
+<li class=""><strong>Theme</strong>: Allows users to choose between <strong>Light</strong>, <strong>Dark</strong>, or <strong>System</strong> mode.</li>
+<li class=""><strong>Language</strong>: Allows users to change the interface language. The available options shown are <strong>English</strong>, <strong>বাংলা</strong>, and <strong>हिन्दी</strong>.</li>
+<li class=""><strong>Default zoom level (Page zoom)</strong>: Sets the default zoom level for the interface, for example: 50%, 100%, 150% etc.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/appearance-point-b6deeeb1ff8ce68017c5c0ae84cafe05.png width=1636 height=353 class=img_ev3q /></p>
+<ul>
+<li class=""><strong>Typography</strong>: It is under the <strong>Appearance</strong> point. It allows users to customize the text appearance in Test Studio, including the interface, code, and integrated terminal. It provides the following options:<!-- -->
+<ul>
+<li class=""><strong>UI font size</strong>: Controls the text size across the Test Studio interface and shell. Users can choose <strong>Small</strong>, <strong>Medium</strong>, or <strong>Large</strong>.</li>
+<li class=""><strong>Code font size</strong>: Controls the size of monospaced text, code blocks, and repository details. Users can choose <strong>Small</strong>, <strong>Medium</strong>, or <strong>Large</strong>.</li>
+<li class=""><strong>Terminal font family</strong>: Allows users to specify the font family used in the integrated terminal.</li>
+<li class=""><strong>Terminal font size</strong>: Allows users to set the terminal text size from <strong>8 to 32</strong> pixels.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/typography-point-fd0bb9184e3f624d2fba089837b824c4.png width=1712 height=548 class=img_ev3q /></p>
+<ul>
+<li class=""><strong>Sidebar navigation</strong>: The Sidebar navigation section allows users to control which destinations are displayed directly in the left-side navigation panel. Users can <strong>enable</strong> or <strong>disable</strong> individual options using the toggle switches.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/side-bar-12ef9d8187c97668b2906133f52d1f35.png width=1740 height=1000 class=img_ev3q /></p>
+</li>
+<li class="">
+<p><strong>Chat:</strong></p>
+<ul>
+<li class="">It is the settings area for managing conversation-related features, including <strong>voice-input stop words</strong>, <strong>quick actions</strong>, and <strong>archived conversations</strong>. The page contains the following options:<!-- -->
+<ul>
+<li class=""><strong>Voice input</strong>: Users can define <strong>“stop words”</strong> that end a voice recording. The stop phrase is removed from the message and works only when spoken at the end of a sentence. The default phrases are <strong>“stop listening”</strong> and <strong>“stop recording”</strong>.Users can add new phrases, remove existing ones, or reset them to the defaults.</li>
+<li class=""><strong>Quick actions</strong>: The <strong>Suggest follow-ups</strong> option displays relevant follow-up requests after an answer. Selecting a suggestion sends it immediately.</li>
+<li class=""><strong>Archieved chats</strong>: This section displays conversations removed from the sidebar and allows users to restore them. Currently, there are no archived conversations.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/quick-chat-5abaf2d51fb9185636fb75425283d765.png width=1649 height=737 class=img_ev3q /></p>
+</li>
+<li class="">
+<p><strong>Keyboard shortcuts:</strong></p>
+<ul>
+<li class="">The <strong>Keyboard shortcuts</strong> page displays the available keyboard shortcuts in Test Studio. These shortcuts allow users to perform common actions quickly using key combinations instead of navigating through the interface. The page includes:<!-- -->
+<ul>
+<li class=""><strong>Search keyboard shortcuts</strong>: Allows users to quickly find a specific shortcut.</li>
+<li class=""><strong>Shortcut list</strong>: Displays available actions along with their assigned key combinations.</li>
+<li class=""><strong>Edit option</strong>: Allows users to customize the keyboard combination for an action.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/key-board-57827b1f306a36edc42d254fb45f0ba8.png width=1639 height=1022 class=img_ev3q /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=integrations>Integrations<a href=#integrations class=hash-link aria-label="Direct link to Integrations" title="Direct link to Integrations" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>In Test Studio, <strong>Integrations</strong> means the settings used to connect Test Studio with external systems and supporting services. It includes the following options:</p>
+<ul>
+<li class="">
+<p><strong>Server & Agents</strong>: The <strong>Server & Agents</strong> section allows users to configure how Test Studio communicates with the ZeuZ server and which local agent is used to process commands. This section contains the following components:</p>
+<ul>
+<li class="">
+<p><strong>Server URL</strong>: The <strong>Server URL</strong> section allows users to specify the ZeuZ API server that the Test Studio browser or desktop application should communicate with.</p>
+<ul>
+<li class=""><strong>Server URL field</strong>: Used to enter the URL of the required ZeuZ API server. For example, the field contains <a href=http://qa.zeuz.ai target=_blank rel="noopener noreferrer" class="">http://qa.zeuz.ai</a>, indicating that the application is configured to communicate with a server running locally.</li>
+<li class=""><strong>Save server URL</strong>: Saves the entered server URL and applies it to the application.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>CLI instance</strong>: The <strong>CLI Instance</strong> section allows users to select the local agent that receives prompts from Test Studio. It contains the following options:</p>
+<ul>
+<li class=""><strong>Selected agent</strong>: Displays the currently selected agent.</li>
+<li class=""><strong>Presence</strong>: Indicates the availability of the selected agent. The status <strong>Online</strong> means the agent is currently connected and available.</li>
+<li class=""><strong>Current command</strong>: Displays the command currently being processed by the agent.</li>
+<li class=""><strong>Refresh</strong>: Refreshes the agent status and retrieves the latest information.</li>
+<li class=""><strong>Cancel run</strong>: Allows users to cancel an active run. It is disabled when there is no active run.</li>
+<li class=""><strong>Codex authentication</strong>: The Codex authentication section displays the authentication status required for Codex. For example,
+if the status is <strong>“READY”</strong>, it indicates that the authentication is currently available. The Codex Authentication section contains the following additional options:<br/>
+<strong>Setup</strong>: Allows users to configure Codex authentication.<!-- -->
+<ul>
+<li class=""><strong>Check again</strong>: Checks the current authentication status again.</li>
+<li class="">The screen also indicates how long the authentication token remains valid.</li>
+</ul>
+</li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></span>note</div><div class=admonitionContent_BuS1><p>The note at the bottom clarifies that <strong>Test Studio</strong> does not copy <strong>Codex</strong> tokens and that Codex remains responsible for refreshing its authentication.</div></div>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/server-agent-fd93b1ea5418e72a656728b61c6144f5.png width=1714 height=957 class=img_ev3q /></p>
+</li>
+<li class="">
+<p><strong>Connectors & tools</strong>: It refers to the integrations that allow Test Studio to connect with external services and use them as part of the testing workflow. It contains the following options:<br/>
+<strong>Connectors</strong>: Connectors can provide Test Studio with additional project context and information from external services. For example,</p>
+<ul>
+<li class=""><strong>GitHub</strong>: Provides access to code repositories and development-related information.</li>
+<li class=""><strong>Notion</strong>: Provides project documentation and knowledge.</li>
+<li class=""><strong>Jira</strong>: Provides project issues, requirements, and task-related information.</li>
+<li class=""><strong>Google Drive</strong>: Provides access to relevant documents and project resources.</li>
+<li class=""><strong>Figma</strong>: Intended to provide design-related context;currently shown as <strong>Coming Soon</strong>.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>MCP servers</strong>: It allows Test Studio’s chat agent to connect to external tools and services through on-demand gateway tools, enabling the agent to access additional capabilities when required. The following options are mentioned below:</p>
+<ul>
+<li class=""><strong>Add MCP server</strong>: Connects another MCP-compatible server to Test Studio. Fill in the following field to add an MCP server:<!-- -->
+<ul>
+<li class=""><strong>Name</strong>: A user-defined name for identifying the connection.</li>
+<li class=""><strong>Transport</strong>: Selects how Test Studio communicates with the MCP server.</li>
+<li class=""><strong>URL</strong>: The MCP server endpoint, shown as <a href=https://qa.zeuz.ai/mcp target=_blank rel="noopener noreferrer" class="">https://qa.zeuz.ai/mcp</a>.</li>
+<li class=""><strong>Header key</strong>: The authentication header sent with requests, such as X-API-KEY.</li>
+<li class=""><strong>Header value</strong>: The corresponding secret or API key.</li>
+<li class=""><strong>Save server</strong>: Saves the configuration and adds the server to Test Studio.</li>
+<li class=""><strong>Cancel</strong>: Closes the dialog without saving.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/mcp-server-5b84fc40592de70bfdda82f5e23239dd.png width=499 height=628 class=img_ev3q /></p>
+<ul>
+<li class=""><strong>ZeuZ (zeuz) Built-in</strong>: The default ZeuZ MCP integration.</li>
+<li class=""><strong>Streamable HTTP</strong>: The connection uses the HTTP-based MCP transport.</li>
+<li class=""><a href=https://qa.zeuz.ai/mcp target=_blank rel="noopener noreferrer" class="">https://qa.zeuz.ai/mcp</a>: The MCP server endpoint.</li>
+<li class=""><strong>Ready</strong>: The server is configured and available.</li>
+<li class=""><strong>Available after sign-in</strong>: Users must sign in before the agent can use this integration.</li>
+<li class=""><strong>Uses your ZeuZ API key</strong>: Authentication is performed with the user’s ZeuZ API key.</li>
+<li class=""><strong>Security and local execution</strong>: Saved credentials are encrypted on the server. MCP servers configured with the stdio transport run locally on the machine hosting the Test Studio harness or daemon.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/connector-tool-8777f9c98de9a6a603a4c183bf8bc788.png width=1708 height=939 class=img_ev3q /></p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>The navigation area at the top of the Settings page displays two options:</p>
+<ul>
+<li class="">
+<p><strong>Back to chat</strong>: Takes users back to the main chat interface.</p>
+</li>
+<li class="">
+<p><strong>Search settings</strong>: Allows users to search for a specific setting or option instead of navigating through the settings menu manually.</p>
+<p><img decoding=async loading=lazy src=/assets/images/settings-top-9f305fbae8fda682119f7cdfbbead5cc.png width=1491 height=391 class=img_ev3q /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=new-chat>New Chat<a href=#new-chat class=hash-link aria-label="Direct link to New Chat" title="Direct link to New Chat" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>The <strong>New chat</strong> option is available in the sidebar. However, after opening a new chat, users need to select a model.</p>
+</li>
+<li class="">
+<p>The model selection includes models provided by ZeuZ as well as available GPT models. If users are logged in to Codex locally, the models available through their Codex account are also displayed. After selecting a model, users can adjust the thinking level according to their requirements. For example, users can select “GPT-5.3-Codex-Spark” and set the thinking level to “Low.” Once the model and thinking level are selected, users can start the chat.</p>
+<p><img decoding=async loading=lazy src=/assets/images/select-gpt-79e637f73e91a93bd159996d3e30c815.png width=1801 height=1034 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>Users can provide human-readable prompts in the chat, and Test Studio uses those instructions to create the requested test. For example, users can enter a prompt such as, “Go to this webpage and log in using the provided credentials.” After clicking Send, Test Studio processes the prompt and generates the corresponding test. For example, go to  <a href=https://demo.zeuz.ai/web/level/one/scenarios/login2# target=_blank rel="noopener noreferrer" class="">https://demo.zeuz.ai/web/level/one/scenarios/login2#</a> then login with zeuzTest and zeuzPass.</p>
+<p><img decoding=async loading=lazy src=/assets/images/enter-login-64645eab01ea8ae2a2d15ef8755ab7e3.png width=1919 height=918 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/browser-successful-a6a8d747413f3019f70338c95ff94b62.png width=1917 height=1036 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>Users can add models through <strong>AI Providers</strong> under the <strong>Admin</strong> option. Once a model is added, it becomes available in the Test Studio application for users to select and use.</p>
+</li>
+<li class="">
+<p>After clicking <strong>AI Providers</strong>, the <strong>New Configuration</strong> window appears.</p>
+</li>
+<li class="">
+<p>The New Configuration form allows administrators to add a new AI model by specifying its provider, model details, and authentication information. It contains the following fields and options:</p>
+<ul>
+<li class=""><strong>Provider</strong>: Selects the AI provider for the model.</li>
+<li class=""><strong>Display name</strong>: Specifies the name that will be displayed for the model in the application.</li>
+<li class=""><strong>Model ID</strong>: Specifies the identifier of the AI model used by the provider.</li>
+<li class=""><strong>API Key</strong>: Allows users to provide the API key required to access the selected AI provider.</li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></span>note</div><div class=admonitionContent_BuS1><p>The API key is kept secure and is not visible to other users.</div></div>
+<ul>
+<li class=""><strong>Use this server's OpenAI key</strong>: Allows the configuration to use the server's OpenAI API key instead of entering a separate key.</li>
+<li class=""><strong>Advanced options</strong>: Provides additional configuration settings for the model.</li>
+<li class=""><strong>Cancel</strong>: Cancels the configuration without saving.</li>
+<li class=""><strong>Save</strong>: Saves the new model configuration.</li>
+</ul>
+</li>
+<li class="">
+<p>After successfully configuring a new model, users can assign it to other features that support model assignment.</p>
+<p><img decoding=async loading=lazy src=/assets/images/ai-provider-488971072e3ee29a7d4a9ee46d48f607.png width=1108 height=571 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/new-configuration-cb9bf4451242a6b45d2fc5cb32a75b4a.png width=1382 height=262 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/configuration-created-e464d5a1a855d1f703715d556ee3c48a.png width=544 height=945 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/new-model-79c5faf3496d02ddf72fb8fe69d620a8.png width=1264 height=622 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>In <strong>New chat</strong>, Test Studio performs the requested actions based on the user’s instructions. The sidebar opens automatically when needed, and the browser is launched automatically without requiring users to open it manually. Users can provide instructions in natural language, and Test Studio performs the corresponding actions live. For example, if a user says “Open the live browser,” Test Studio opens the browser and performs the requested action. Users can also instruct Test Studio to convert the completed workflow into a test case by saying, “Convert this to a test case.”</p>
+<p><img decoding=async loading=lazy src=/assets/images/chat-image-f556c236b8b66de1478c2082126459af.png width=1919 height=1018 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>Users can also attach files, and the Context Window section is available.</p>
+</li>
+<li class="">
+<p>The <strong>Context Window</strong> section displays information about the model's context usage and token consumption for the current chat. It contains the following details:</p>
+<ul>
+<li class=""><strong>Used</strong>: Shows the amount of context currently used.</li>
+<li class=""><strong>Remaining</strong>: Shows the remaining available context capacity.</li>
+<li class=""><strong>Window</strong>: Shows the model's total context window capacity.</li>
+<li class=""><strong>Compacts at</strong>: Indicates the token limit at which the conversation context may be compacted.</li>
+<li class=""><strong>Model</strong>: Displays the model currently being used.</li>
+</ul>
+</li>
+<li class="">
+<p>The <strong>Last turn</strong> section provides token usage details for the most recent interaction:</p>
+<ul>
+<li class=""><strong>Input</strong>: Number of input tokens processed.</li>
+<li class=""><strong>Output</strong>: Number of output tokens generated.</li>
+<li class=""><strong>Reasoning</strong>: Tokens used for the model's reasoning.</li>
+<li class=""><strong>Cache read</strong>: Tokens retrieved from the cache.</li>
+<li class=""><strong>Cache write</strong>: Tokens written to the cache.</li>
+<li class=""><strong>Total tokens</strong>: Total token usage for the last turn.</li>
+<li class=""><strong>Cost</strong>: Estimated cost of the last turn.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/attached-image-e9aed276f54fcdd947b274f7f46706f7.png width=953 height=156 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/context-window-794825d6c1338673aa45e910a4c53dc2.png width=949 height=412 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>The top navigation bar displays the currently selected machine and allows users to access or switch to a recently used workspace.</p>
+</li>
+<li class="">
+<p>It also provides the <strong>Toggle Bottom Panel</strong> and <strong>Toggle Right Panel</strong> options.</p>
+<p><img decoding=async loading=lazy src="data:image/png;base64,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" width=454 height=123 class=img_ev3q /></p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=test-cases>Test Cases<a href=#test-cases class=hash-link aria-label="Direct link to Test Cases" title="Direct link to Test Cases" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>The <strong>Test Cases</strong> section displays the available test cases. For example, a test case may belong to the Login feature and contain all the steps required to verify the login functionality. Users can also run a test case directly from this section.</p>
+<p><img decoding=async loading=lazy src=/assets/images/run-login-d880b06b1276485fe96e0a2a266773bb.png width=1920 height=1030 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>By selecting a specific test case, users can view its details and test steps. For example, the test case may launch a browser, log in to the <strong>AI Demo</strong> application using valid credentials, and verify the welcome message. Also, the <strong>Readable</strong> option displays a summary of the test case.</p>
+<p><img decoding=async loading=lazy src=/assets/images/data-sources-cc10458ca6b0f297092267b54bd5afb3.png width=1920 height=572 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>The <strong>Readable view</strong> is a human-readable representation of a test case. It presents the test case in a clear, structured format instead of displaying the underlying code and the <strong>Code view</strong> option allows users to view the code associated with the selected test case.</p>
+<p><img decoding=async loading=lazy src=/assets/images/readable-code-0b3497777a0733505b74f2b5e6bc8a99.png width=1617 height=273 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>The <strong>Readable view</strong> shows the following information such as:</p>
+<ul>
+<li class=""><strong>What the test does</strong>.</li>
+<li class=""><strong>Test steps</strong>.</li>
+<li class=""><strong>Data sources</strong>.</li>
+<li class=""><strong>Test case details</strong>.</li>
+<li class=""><strong>Last run information</strong>.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/readable-view-a32542ec08c153a3380be73af6f3a110.png width=1630 height=590 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>The <strong>Code view</strong> shows the following information such as:</p>
+<ul>
+<li class=""><strong>Test case title</strong>.</li>
+<li class=""><strong>File path</strong>.</li>
+<li class=""><strong>Test description</strong>.</li>
+<li class=""><strong>Imports</strong>.</li>
+<li class=""><strong>Test case class</strong>.</li>
+<li class=""><strong>Test case information</strong>.</li>
+<li class=""><strong>Steps</strong></li>
+<li class=""><strong>Last run information</strong>.</li>
+<li class=""><strong>Details of the test case</strong>.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/code-view-cb6836052c67cdd74886c3732267ceb5.png width=1579 height=578 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>After clicking the <strong>Edit Test Code</strong> button available at the top right side, users are directed to the "Test Case Workspace", where they can view and edit the files associated with the selected test case.</p>
+<p><img decoding=async loading=lazy src=/assets/images/edit-test-fc1b6a2138bd7eed3c7de2df282dfb80.png width=1632 height=557 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>At the top-right corner, there is a <strong>Save changes</strong> button. After editing the code and making the required changes, click the <strong>Save changes</strong> button to save the updates.</p>
+<p><img decoding=async loading=lazy src=/assets/images/save-credentials-a181064170c9cc78008081f46b7c1d84.png width=1630 height=544 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>The <strong>Explorer</strong> panel on the left contains two options:</p>
+<ul>
+<li class=""><strong>This Test Case</strong>: It displays only the files and code related to the selected test case.</li>
+<li class=""><strong>Full Repository</strong>: It provides access to the complete repository, including all relevant files, test cases, and steps.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/explorer-menu-067c4e69a2857ce3fdec348d54dcc5a1.png width=1246 height=449 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/this-test-6c598d64571087a490904cb54e510853.png width=1140 height=471 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/full-repository-42a044b9b5b1ddf4768d4a4a7d34f6f8.png width=1132 height=614 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>The <strong>Run test</strong> option is available in the top-right corner. Clicking the <strong>Run test</strong> button executes the selected test case.</p>
+<p><img decoding=async loading=lazy src=/assets/images/run-test-081c463ccd3c3dae1995b10e44e55c73.png width=1627 height=321 class=img_ev3q /></p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=attachments>Attachments<a href=#attachments class=hash-link aria-label="Direct link to Attachments" title="Direct link to Attachments" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>The <strong>Attachments</strong> section allows users to store and manage files that may be required by test cases within the workspace. It contains the following components:</p>
+<ul>
+<li class=""><strong>Keep test evidence close</strong>: Allows users to keep screenshots and other files alongside their workspace work.</li>
+<li class=""><strong>Upload shared context</strong>: Allows users to upload files that can be shared with teammates and used by test runs when required.</li>
+<li class=""><strong>Manage workspace files</strong>: Allows users to review, download, edit, and remove attachments from a central location.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/attachment-option-55d52c6bcbaccf5040383e79bccc3856.png width=1790 height=332 class=img_ev3q /></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=upload-files>Upload Files:<a href=#upload-files class=hash-link aria-label="Direct link to Upload Files:" title="Direct link to Upload Files:" translate=no>​</a></h4>
+<ul>
+<li class="">The upload area allows users to add files in two ways:<!-- -->
+<ul>
+<li class="">Drag and drop files into the upload area.</li>
+<li class="">Click <strong>Upload files</strong> to select files from the device.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/attachment-drop-4229cbc1de1e65d1579ee741273d4ac6.png width=1637 height=608 class=img_ev3q /></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=uploaded-files>Uploaded Files:<a href=#uploaded-files class=hash-link aria-label="Direct link to Uploaded Files:" title="Direct link to Uploaded Files:" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Uploaded files</strong> are are files added and registered in the workspace so that test cases can use them as test data or resources during execution. It contains the following information:<!-- -->
+<ul>
+<li class=""><strong>File size</strong>: It indicates the amount of storage space occupied by an uploaded file.</li>
+<li class=""><strong>Uploaded by</strong>: It indicates the user who added the file to the workspace.</li>
+<li class=""><strong>Upload date</strong>: It indicates the date on which the file was added to the workspace.</li>
+<li class=""><strong>Usage</strong>: It indicates the number of test cases that currently use or reference the uploaded file.</li>
+<li class=""><strong>Description</strong>: It provides additional information about the uploaded file, such as its purpose or how it is intended to be used.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/attachment-description-561f8ad201e4a5c6ed76727e954e693c.png width=1371 height=730 class=img_ev3q /></p>
+<ul>
+<li class="">The available actions for the uploaded file include:<!-- -->
+<ul>
+<li class=""><strong>Download</strong>: Downloads the file.</li>
+<li class=""><strong>Edit</strong>: Allows users to modify the file information.</li>
+<li class=""><strong>Delete</strong>: Removes the attachment from the workspace.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/additional-options-8b5a1f61942ace70d2cf5daf869f1a4a.png width=1627 height=781 class=img_ev3q /></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></span>note</div><div class=admonitionContent_BuS1><ul>
+<li class="">In the <strong>Edit Description</strong> window, enter the required description in the Description field and click Save to apply the changes.</li>
+</ul><p><img decoding=async loading=lazy src=/assets/images/edit-description-5fdc6e40a939e1047346886a303cf38e.png width=407 height=382 class=img_ev3q /></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=sidebar-options>Sidebar Options<a href=#sidebar-options class=hash-link aria-label="Direct link to Sidebar Options" title="Direct link to Sidebar Options" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>After clicking the Chat Options menu, three options are available:</p>
+<ul>
+<li class=""><strong>Pin chat</strong>: It allows users to pin a chat so that it remains easily accessible in the chat list.</li>
+<li class=""><strong>Rename chat</strong>: It allows users to change the name of a chat.</li>
+<li class=""><strong>Archive chat</strong>: It allows users to remove a chat from the active chat list without deleting it.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/chat-options-b92575e71eebfa9314d557babe6dacde.png width=676 height=304 class=img_ev3q /></p>
+<p><img decoding=async loading=lazy src=/assets/images/chat-rename-68ade3837220c55b63fa1c547318fa27.png width=836 height=260 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>The left-side panel displays the chat history under the <strong>Chats</strong> section. It also includes the <strong>Search chats</strong> option, which allows users to search for a specific chat. Additionally, the <strong>Pinned chats</strong> option provides access to chats that users have pinned for easier access.</p>
+<p><img decoding=async loading=lazy src=/assets/images/search-chats-9a49db5552545a18e6235d941ef76cb2.png width=381 height=277 class=img_ev3q /></p>
+</li>
+<li class="">
+<p>There is another option called <strong>Others</strong> in the left-side panel. It is a navigation group that contains additional destinations that are not displayed directly in the main sidebar. It includes the following options:</p>
+<ul>
+<li class=""><strong>Knowledge search</strong>: Provides access to the knowledge search functionality.</li>
+<li class=""><strong>Work</strong>: Provides access to work-related items and activities.</li>
+<li class=""><strong>Sets</strong>: Provides access to test sets.</li>
+<li class=""><strong>Automations</strong>: Provides access to automation-related items.</li>
+<li class=""><strong>Variables</strong>: Provides access to variables used in testing.</li>
+<li class=""><strong>Databases</strong>: Provides access to database-related resources.</li>
+</ul>
+<p><img decoding=async loading=lazy src=/assets/images/others-option-1165cc09650c1c63f29ce9458a752c8b.png width=862 height=346 class=img_ev3q /></p>
+</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/zeuz-test-studio/zeuz-test-studio/><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Onboarding</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#why-it-matters--use-cases class="table-of-contents__link toc-highlight">Why it matters / Use Cases:</a><li><a href=#workspace class="table-of-contents__link toc-highlight">Workspace</a><li><a href=#settings class="table-of-contents__link toc-highlight">Settings</a><li><a href=#new-chat class="table-of-contents__link toc-highlight">New Chat</a><li><a href=#test-cases class="table-of-contents__link toc-highlight">Test Cases</a><li><a href=#attachments class="table-of-contents__link toc-highlight">Attachments</a><li><a href=#sidebar-options class="table-of-contents__link toc-highlight">Sidebar Options</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro/>Setup a trial account</a><li class=footer__item><a class=footer__link-item href=/docs/intro/>Setup ZeuZ Node</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://discord.gg/7DpMYcPWCc target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://www.linkedin.com/company/automation-solutionz target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://www.facebook.com/automationsolutionz/ target=_blank rel="noopener noreferrer" class=footer__link-item>Facebook<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://www.youtube.com/@zeuzai target=_blank rel="noopener noreferrer" class=footer__link-item>YouTube<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog/>Blog</a><li class=footer__item><a href=https://github.com/AutomationSolutionz/ target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/AutomationSolutionz/Zeuz_Python_Node/releases/ target=_blank rel="noopener noreferrer" class=footer__link-item>Download ZeuZ Node<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://demo.zeuz.ai/ target=_blank rel="noopener noreferrer" class=footer__link-item>ZeuZ demo / playground<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Automation Solutionz.</div></div></div></footer></div></body>
