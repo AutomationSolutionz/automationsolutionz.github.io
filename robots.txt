@@ -1,10 +1,2 @@
-# robots.txt — https://zeuz.ai
-# Last reviewed: 2026-09-26
-
-
 User-agent: *
-Allow: /
-Disallow: /thank-you/
-
-
-Sitemap: https://zeuz.ai/sitemap.xml
+Disallow: /
