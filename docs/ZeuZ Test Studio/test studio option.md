@@ -1,4 +1,6 @@
 ---
+id: test-studio
+title: Test Studio
 ---
 
 import MetaCard from '@site/src/components/MetaCard';
@@ -23,78 +25,11 @@ lastUpdated="30 Aug, 2026"
 - **Test execution and validation**: Enables automated test execution and provides execution information for evaluating results.
 - **Efficient and scalable testing**: Helps teams increase automation coverage while maintaining a consistent and organized testing workflow.
 
-#### Connectors
-- This is the **third and final step of the Test Studio onboarding process**. It allows users to connect external tools that Test Studio can use to access relevant project information, documentation, requirements, and design resources. The available connectors are:  
-   - **GitHub**: Connect GitHub to access repositories and pull request information.
-   - **Notion**: Connect Notion to access project documentation and test plans.
-   - **Jira**: Connect Jira to access tickets and acceptance criteria.
-   - **Google Drive**: Connect Google Drive to access documents, spreadsheets, and recordings.
-   - **Figma**: Provides access to design frames and user flows.
-- Users can select **Connect** beside the required tool and complete its connection process. After configuring the required connectors, click **Finish setup** to complete onboarding.
-- The **Back** option returns to the previous Projects step, while **Skip setup** allows users to skip the onboarding configuration.
-
-  ![](/img/zeuz-test-studio/connect-tools.png)
-
 ### Workspace
-- After completing the **Test Studio** setup, users are directed to the Ready Your **Workspace** page.
-- The **Ready Your Workspace** page appears when users start a new chat in Test Studio. It ensures that the required setup is completed before users begin working with AI-assisted testing. The page contains three main configuration areas:  
-  1. **Codex Authentication**: 
-       - Confirms whether Codex authentication is configured.
-       - When the status shows **Ready**, Test Studio can use the configured Codex authentication.
-       - **Setup** can be used to configure authentication, while **Check again** verifies the current authentication status.
-       - The page also indicates that Test Studio does not copy Codex tokens and that Codex remains the refresh authority.
-  2. **Workspace**:  
-       - Users must select an existing workspace or create a new one.
-       - The selected workspace provides the working environment for the Test Studio session.
-       - **Create workspace** allows users to create a new workspace when required.
-  3.  **Knowledge Sources (Optional)**:  
-        - Users can provide additional project context by connecting a code repository or adding local documents and folders.
-        - Available options include:  
-          - **Link repository**: Connects a code repository.
-          - **Add documents**: Adds relevant documents from the local machine.
-          - **Add folder**: Adds a local folder as a knowledge source.
-          - **Skip for now**: Continues without adding knowledge sources.
-
-  ![](/img/zeuz-test-studio/start-chat.png)
-
-- If users navigate to **Workspaces** from the left-side panel, they can view the data created during the onboarding process.
-- Users can also create a new workspace by selecting **+ New workspace** from the left-side panel.
-
-  ![](/img/zeuz-test-studio/create-option.png)
-
-  ![](/img/zeuz-test-studio/workspace-name.png)
 
 - After creating a new workspace, it will be displayed under **Workspaces**.
 
   ![](/img/zeuz-test-studio/testing-workspace.png)
-
-- After creating a new workspace, users can also link a local repository by clicking **Link Local Project**.
-
-  ![](/img/zeuz-test-studio/link-local.png)
-
-- After linking a local repository, users can **analyze the knowledge source**. This process scans the entire repository and uses AI to build a structured summary of the project, similar to a blueprint, helping Test Studio understand the application's structure and relevant context.
-
-  ![](/img/zeuz-test-studio/linked-knowledge.png)
-
-  ![](/img/zeuz-test-studio/build-product.png)
-
-:::note
-The “Analyze Knowledge Sources” button remains unavailable until a local repository is linked.
-
-  ![](/img/zeuz-test-studio/unavailable-button.png)
-
-:::
-
-- The **Collaborators** option allows users to invite other users to the workspace and assign them specific permissions. Click Invite to add users from the relevant project. When inviting a user, select the required permission level:  
-  - **Read**: Allows the user to view the workspace and its content.
-  - **Write**: Allows the user to view the workspace and create test cases.
-  - **Admin**: Provides full access to the workspace.
-- After selecting the required permission, click **Invite** to send the invitation. The invited user is initially shown as **Pending**. Once the user accepts the invitation, the status is updated to indicate that the invitation has been accepted.
-- The **Remove collaborator** option allows workspace administrators to remove a collaborator from the workspace, removing the user’s access and assigned permissions.
-
-  ![](/img/zeuz-test-studio/collaborators-invite.png)
-
-  ![](/img/zeuz-test-studio/invite-collaborator.png)
 
   :::note
   Users with access to the specific workspace can also be invited using the **Search users** option.

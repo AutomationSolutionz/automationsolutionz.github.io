@@ -1,5 +1,5 @@
 ---
-id: zeuz-test-studio
+id: onboarding
 title: Onboarding
 ---
 
