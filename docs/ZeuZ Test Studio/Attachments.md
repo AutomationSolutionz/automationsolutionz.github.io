@@ -22,7 +22,7 @@ lastUpdated="27 Sep, 2026"
 
 ## Prerequisites
 - **Required File**: The file to be used in the test case should be available on the local machine.
-- **Supported File**: The file should be in a format supported by the intended test scenario, such as an image or document.
+- **Supported File**: All types of files should be supported.
 - **Upload Permission**: Users must have permission to upload files to the workspace.
 - **Test Case Requirement**: If the file is intended for a test case, the test should reference the attachment using its exact registered filename.
 
