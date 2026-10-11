@@ -25,7 +25,6 @@ lastUpdated="29 Sep, 2026"
 - **Test Repository**: A test repository should be connected to the workspace to access and manage test cases.
 - **Test Cases**: At least one test case should be available in the repository.
 - **Required Test Data**: Any variables or resources required by the test case should be configured.
-- **Branch**: A valid repository branch should be available for running the test cases.
 
 ## Features
 - To access Test Cases, click **Test Cases** option from the left-side panel.
@@ -171,9 +170,5 @@ Review the test steps, test data, configuration, and execution details to identi
 Ensure that the changes were saved successfully and that the correct branch or version of the test case is being viewed.
 
 </details>
-
-## Changelog
-
-- A dedicated workspace for creating, refining, comparing, and versioning AI-generated UI mockups [[202605](/blog/zeuz-platform-202605/)]
 
 ---
