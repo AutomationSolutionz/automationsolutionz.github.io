@@ -20,7 +20,7 @@ lastUpdated="11 Oct, 2026"
 - **Simplify test maintenance**: Update a variable in one place instead of changing the same value in multiple test cases.
 - **Manage workspace-specific values**: Maintain variables based on the workspace being used.
 
-## Prequisites
+## Prerequisites
 - **Required permissions**: Permission to create or manage variables in the workspace.
 - **Test configuration**: The test case should be configured to use the required variables.
 - **Sensitive data identification**: For sensitive data, users should identify which variables need to be marked as sensitive.
