@@ -39,9 +39,9 @@ lastUpdated="25 Oct, 2026"
 
 ![Databases welcome page with the Initialize vault button](/img/zeuz-test-studio/database-vault.png)
 
-When operating-system secure storage protects the vault, it has no master password. Do not expect a password field on every installation.
+5. When operating-system secure storage protects the vault, it has no master password. Do not expect a password field on every installation.
 
-After initialization, an empty viewer displays **No database connections yet** and **New connection**.
+6. After initialization, an empty viewer displays **No database connections yet** and **New connection**.
 
 ![Database viewer with no saved connections](/img/zeuz-test-studio/database-empty-state.png)
 
