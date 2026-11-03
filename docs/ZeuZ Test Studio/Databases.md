@@ -9,7 +9,7 @@ The **Databases** section in Test Studio lets users connect to a database, inspe
 
 <MetaCard
 difficulty="🟡 Intermediate"
-lastUpdated="25 Oct, 2026"
+lastUpdated="29 Oct, 2026"
 />
 
 ### Why it matters / Use Cases
@@ -38,6 +38,10 @@ lastUpdated="25 Oct, 2026"
 4. On subsequent visits, use **Unlock vault** if the vault is locked.
 
 ![Databases welcome page with the Initialize vault button](/img/zeuz-test-studio/database-vault.png)
+
+After the vault has been initialized, a locked vault displays **Unlock vault** instead of **Initialize vault**.
+
+![Initialized database vault showing Unlock vault](/img/zeuz-test-studio/database-vault-locked.png)
 
 5. When operating-system secure storage protects the vault, it has no master password. Do not expect a password field on every installation.
 
@@ -94,6 +98,30 @@ Timeouts must be between `1000` and `300000` milliseconds. Use TLS settings supp
 Testing does not save the profile or open a browsing session. If the dialog says credentials and temporary file selections were cleared after submission, re-enter them before retrying or saving. A successful tested draft may allow saving without re-entry; follow the dialog's current state.
 :::
 
+### Practice with a Local SQLite Database
+
+Use this example to explore the viewer with fictional data. SQLite opens a local file and does not require a database server, host, port, username, or password.
+
+1. Download the [sample SQLite database](/downloads/test-studio-demo.sqlite) and save it on your machine.
+2. Choose **Local connection** and enter `Documentation SQLite Demo` as the **Connection name**.
+3. Select `sqlite` as the **Database type**.
+4. Click **Open existing file** and choose the downloaded `test-studio-demo.sqlite` file.
+5. Leave **Allow administrative changes** off. Click **Test connection** and wait for **Connection successful**.
+6. Click **Save connection**, then **Connect**.
+7. Select `orders` in **Objects**. The **Data** tab displays five sample orders. Order `12345` has status `shipped`.
+
+![Connected SQLite demo showing five sample orders in the Data tab](/img/zeuz-test-studio/database-sqlite-data.png)
+
+Open **Properties** to inspect the table's five columns, its primary key on `id`, the index on `status`, and the foreign key from `customer_id` to `customers.id`.
+
+![Orders properties showing columns, index, foreign key, and table definition](/img/zeuz-test-studio/database-sqlite-properties.png)
+
+Open **Diagram** to see the relationship between `orders` and `customers`. This example contains two related objects and one relationship.
+
+![SQLite relationship diagram linking orders.customer_id to customers.id](/img/zeuz-test-studio/database-sqlite-diagram.png)
+
+The sample also includes an `order_summary` view. Its data is fictional and intended for practice.
+
 ### Connect and Manage Profiles
 
 1. Select a saved profile from **Connections**.
@@ -113,7 +141,7 @@ Deleting a connection removes its saved profile. For shared connections, review 
 - **Data**: Inspect records in a grid. Use paging controls to view additional records.
 - **Search text columns**: Enter text and apply the search to narrow the data shown.
 - **Filters**: Use column actions, a **Filter expression**, or **Advanced filters**. Advanced filters support groups such as **Match all (AND)** and **Match any (OR)**. Clear filters and ordering when checking whether records are missing.
-- **Object details / Structure**: Inspect available columns, types, nullability, primary keys, indexes, foreign keys, and definitions.
+- **Properties**: Inspect available columns, types, nullability, primary keys, indexes, foreign keys, and definitions.
 - **Selected cell value**: Inspect a value or use **Copy cell** and **Copy row as JSON**. Binary values may expose only a bounded preview; copying does not fetch the full binary value.
 - **Diagram**: Inspect direct outgoing foreign-key relationships from the selected table or view. This is not a complete database relationship map, and document databases do not support it.
 
