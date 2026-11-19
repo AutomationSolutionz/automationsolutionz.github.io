@@ -1,4 +1,5 @@
 ---
+sidebar_position: 16
 id: chat-experience
 title: Chat experience
 ---

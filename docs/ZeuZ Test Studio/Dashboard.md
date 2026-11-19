@@ -1,4 +1,5 @@
 ---
+sidebar_position: 17
 id: dashboard
 title: Dashboard
 ---

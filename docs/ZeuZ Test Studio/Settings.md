@@ -1,4 +1,5 @@
 ---
+sidebar_position: 20
 id: settings
 title: Settings
 ---

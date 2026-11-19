@@ -1,4 +1,5 @@
 ---
+sidebar_position: 10
 id: automations
 title: Automations
 ---
