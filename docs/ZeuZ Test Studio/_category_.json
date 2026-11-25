@@ -1,6 +1,7 @@
 {
   "link": {
-    "type": "doc",
-    "id": "test-studio"
+    "type": "generated-index",
+    "title": "ZeuZ Test Studio",
+    "description": "Documentation and guides for ZeuZ Test Studio features."
   }
 }

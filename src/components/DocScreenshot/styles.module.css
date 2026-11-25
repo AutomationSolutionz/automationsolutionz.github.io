@@ -1,0 +1,27 @@
+.figure {
+  margin: 1.25rem 0;
+}
+
+.figure a {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  cursor: zoom-in;
+}
+
+.figure .image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: none;
+}
+
+.figure .image:hover {
+  transform: none;
+}
+
+.figure a:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 4px;
+}
